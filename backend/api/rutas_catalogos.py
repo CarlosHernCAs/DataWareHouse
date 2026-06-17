@@ -130,14 +130,30 @@ async def reactivar_variedad_dim(id_variedad: int) -> RespuestaOperacionVariedad
 
 @enrutador_catalogos.get(
     "/geografia",
-    summary="Lista la geografía vigente",
+    summary="Lista la geografía vigente (filtros server-side)",
     dependencies=[Depends(require_rol("viewer"))],
 )
 async def obtener_geografia(
     pagina: int = Query(default=1, ge=1),
-    tamano: int = Query(default=20, ge=1, le=10000),
+    # Tope reducido a 200 — antes 10000 generaba payloads de ~36k filas
+    # innecesariamente. Filtros server-side hacen viable la página de 50.
+    tamano: int = Query(default=50, ge=1, le=200),
+    texto: str | None = Query(
+        default=None,
+        min_length=1,
+        max_length=80,
+        description="Substring sobre fundo, sector, válvula, código SAP, cama (accent-insensitive).",
+    ),
+    fundo: str | None = Query(default=None, max_length=80),
+    sector: str | None = Query(default=None, max_length=80),
 ) -> RespuestaPaginadaCatalogo:
-    resultado = await listar_geografia(pagina=pagina, tamano=tamano)
+    resultado = await listar_geografia(
+        pagina=pagina,
+        tamano=tamano,
+        texto=texto,
+        fundo=fundo,
+        sector=sector,
+    )
     return _construir_respuesta_paginada(resultado, RespuestaGeografia)
 
 

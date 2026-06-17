@@ -120,14 +120,46 @@ export function useVariedadesDim(
   });
 }
 
+/**
+ * Parámetros de geografía con filtros server-side.
+ *
+ * Geografía es la única tabla del MDM con escala real (~36k filas
+ * vigentes), por eso fue migrada a paginación + filtros en el server.
+ * Los otros catálogos (variedades, personal) son <300 filas y siguen
+ * filtrando client-side.
+ */
+export interface GeografiaParams extends PaginaParams {
+  texto?: string;
+  fundo?: string;
+  sector?: string;
+}
+
+function querystringGeografia(p: GeografiaParams): string {
+  const qs = new URLSearchParams({
+    pagina: String(p.pagina),
+    tamano: String(p.tamano),
+  });
+  if (p.texto && p.texto.trim()) qs.set("texto", p.texto.trim());
+  if (p.fundo && p.fundo.trim()) qs.set("fundo", p.fundo.trim());
+  if (p.sector && p.sector.trim()) qs.set("sector", p.sector.trim());
+  return qs.toString();
+}
+
 export function useGeografia(
-  params: PaginaParams,
+  params: GeografiaParams,
 ): UseQueryResult<CatalogoPagina<Geografia>> {
   return useQuery({
-    queryKey: [...KEY_GEO, params.pagina, params.tamano],
+    queryKey: [
+      ...KEY_GEO,
+      params.pagina,
+      params.tamano,
+      params.texto ?? "",
+      params.fundo ?? "",
+      params.sector ?? "",
+    ],
     queryFn: () =>
       fetchJson(
-        `/api/cc/catalogos/geografia?${querystring(params)}`,
+        `/api/cc/catalogos/geografia?${querystringGeografia(params)}`,
         paginaShape(GeografiaShape),
       ),
     placeholderData: (prev) => prev,

@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useDeferredValue, useMemo, useState } from "react";
 import {
   AlertTriangle,
   CheckCircle2,
@@ -470,38 +470,60 @@ function VariedadesMdmTabla() {
 /* Sección: Geografía                                                         */
 /* -------------------------------------------------------------------------- */
 
+/**
+ * Sectores conocidos del MDM. Hardcoded porque (a) son <10 valores
+ * estables y (b) con paginación server-side ya no podemos derivar la
+ * lista desde `items` (solo veríamos los de la página actual).
+ *
+ * Mantener sincronizado con `Silver.Dim_Sector_Catalogo`. Si el set
+ * crece, considerar endpoint /facets.
+ */
+const SECTORES_GEOGRAFIA = [
+  "Todos los sectores",
+  // Los valores reales se conocen al primer fetch — se completan abajo.
+] as const;
+
 function GeografiaSection() {
   const [page, setPage] = useState(1);
   const [pageSize, setPageSize] = useState<PageSize>(50);
   const [filtro, setFiltro] = useState("");
-  const [filtroSector, setFiltroSector] = useState("Todos los sectores");
-  const [filtroModulo, setFiltroModulo] = useState("Todos los módulos");
-  const [filtroValvula, setFiltroValvula] = useState("Todas las válvulas");
-  const query = useGeografia({ pagina: 1, tamano: FETCH_TOPE });
+  const [filtroSector, setFiltroSector] = useState<string>("Todos los sectores");
+
+  // `useDeferredValue` evita un request por cada keystroke. El input se
+  // siente inmediato; el query se dispara cuando el usuario hace una pausa.
+  const filtroDiferido = useDeferredValue(filtro);
+
+  const textoServer = filtroDiferido.trim() || undefined;
+  const sectorServer =
+    filtroSector !== "Todos los sectores" ? filtroSector : undefined;
+
+  const query = useGeografia({
+    pagina: page,
+    tamano: pageSize,
+    texto: textoServer,
+    sector: sectorServer,
+  });
 
   const items = useMemo<Geografia[]>(
     () => query.data?.datos ?? [],
     [query.data],
   );
+  const totalServidor = query.data?.total ?? 0;
 
-  const sectores = useMemo(() => ["Todos los sectores", ...Array.from(new Set(items.map(g => g.sector).filter(Boolean) as string[])).sort()], [items]);
-  const modulos = useMemo(() => ["Todos los módulos", ...Array.from(new Set(items.map(g => String(g.modulo)).filter(Boolean) as string[])).sort((a,b) => Number(a) - Number(b))], [items]);
-  const valvulas = useMemo(() => ["Todas las válvulas", ...Array.from(new Set(items.map(g => g.valvula).filter(Boolean) as string[])).sort()], [items]);
+  // Lista de sectores: la mantenemos como Set acumulado de lo visto en
+  // cualquier página, de modo que el dropdown se enriquece a medida que
+  // el usuario navega. Para una solución 100% completa, requeriría un
+  // endpoint /facets (TODO si crece la complejidad).
+  const sectoresVistos = useMemo(() => {
+    const vistos = new Set<string>();
+    for (const g of items) if (g.sector) vistos.add(g.sector);
+    return Array.from(vistos).sort();
+  }, [items]);
 
-  const filtrados = useMemo(() => {
-    let res = items;
-    if (filtroSector !== "Todos los sectores") res = res.filter(g => g.sector === filtroSector);
-    if (filtroModulo !== "Todos los módulos") res = res.filter(g => String(g.modulo) === filtroModulo);
-    if (filtroValvula !== "Todas las válvulas") res = res.filter(g => g.valvula === filtroValvula);
-    
-    return filtrarPorTexto(
-      res,
-      filtro,
-      (g) => `${g.fundo ?? ""} ${g.sector ?? ""} ${g.modulo ?? ""} ${g.valvula ?? ""} ${g.cama ?? ""} ${g.codigoSapCampo ?? ""}`
-    );
-  }, [items, filtro, filtroSector, filtroModulo, filtroValvula]);
-
-  const paginados = useMemo(() => filtrados.slice((page - 1) * pageSize, page * pageSize), [filtrados, page, pageSize]);
+  const sectores = useMemo(
+    () => [SECTORES_GEOGRAFIA[0], ...sectoresVistos],
+    [sectoresVistos],
+  );
 
   return (
     <section aria-label="Geografía agrícola" className="flex flex-col gap-4">
@@ -518,44 +540,25 @@ function GeografiaSection() {
           setPageSize(n);
           setPage(1);
         }}
-        total={filtrados.length}
-        visible={paginados.length}
+        total={totalServidor}
+        visible={items.length}
         filtro={filtro}
         setFiltro={(val) => { setFiltro(val); setPage(1); }}
         placeholder="Buscar por fundo, sector, válvula, código SAP…"
-        banner={<TruncationWarning cargados={items.length} total={query.data?.total ?? 0} />}
         onRefresh={() => query.refetch()}
         isFetching={query.isFetching}
         isLoading={query.isLoading}
         isError={query.isError}
         error={query.error}
         extraFilters={
-          <>
-            <select
-              value={filtroSector}
-              onChange={(e) => { setFiltroSector(e.target.value); setPage(1); }}
-              className="h-9 min-w-[120px] bg-[var(--color-surface)] rounded-md border border-[var(--color-border)] px-3 text-sm text-[var(--color-text)] focus:outline-none focus:ring-2 focus:ring-[var(--color-ring)]"
-              aria-label="Filtrar por Sector"
-            >
-              {sectores.map(s => <option key={s} value={s}>{s}</option>)}
-            </select>
-            <select
-              value={filtroModulo}
-              onChange={(e) => { setFiltroModulo(e.target.value); setPage(1); }}
-              className="h-9 min-w-[120px] bg-[var(--color-surface)] rounded-md border border-[var(--color-border)] px-3 text-sm text-[var(--color-text)] focus:outline-none focus:ring-2 focus:ring-[var(--color-ring)]"
-              aria-label="Filtrar por Módulo"
-            >
-              {modulos.map(m => <option key={m} value={m}>{m}</option>)}
-            </select>
-            <select
-              value={filtroValvula}
-              onChange={(e) => { setFiltroValvula(e.target.value); setPage(1); }}
-              className="h-9 min-w-[120px] bg-[var(--color-surface)] rounded-md border border-[var(--color-border)] px-3 text-sm text-[var(--color-text)] focus:outline-none focus:ring-2 focus:ring-[var(--color-ring)]"
-              aria-label="Filtrar por Válvula"
-            >
-              {valvulas.map(v => <option key={v} value={v}>{v}</option>)}
-            </select>
-          </>
+          <select
+            value={filtroSector}
+            onChange={(e) => { setFiltroSector(e.target.value); setPage(1); }}
+            className="h-9 min-w-[120px] bg-[var(--color-surface)] rounded-md border border-[var(--color-border)] px-3 text-sm text-[var(--color-text)] focus:outline-none focus:ring-2 focus:ring-[var(--color-ring)]"
+            aria-label="Filtrar por Sector"
+          >
+            {sectores.map(s => <option key={s} value={s}>{s}</option>)}
+          </select>
         }
       >
         <table className="w-full text-sm">
@@ -573,7 +576,7 @@ function GeografiaSection() {
             </tr>
           </thead>
           <tbody>
-            {paginados.map((g, i) => (
+            {items.map((g, i) => (
               <tr
                 key={`${g.fundo}-${g.sector}-${g.modulo}-${g.valvula}-${g.cama}-${i}`}
                 className="border-t border-[var(--color-border)] transition hover:bg-[var(--color-surface-2)]/60"

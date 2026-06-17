@@ -84,14 +84,30 @@ async def cambiar_estado_dim_variedad(id_variedad: int, es_activa: bool) -> dict
     return resultado
 
 
-async def listar_geografia(pagina: int = 1, tamano: int = 20) -> dict:
-    """Lee Silver.Dim_Geografia vigente con paginación server-side."""
+async def listar_geografia(
+    pagina: int = 1,
+    tamano: int = 50,
+    texto: str | None = None,
+    fundo: str | None = None,
+    sector: str | None = None,
+) -> dict:
+    """
+    Lee Silver.Dim_Geografia vigente con paginación y filtros server-side.
+
+    La caché está indexada por la combinación completa de filtros — cada
+    filtro distinto se cachea por separado. Como la dimensión es estática
+    (cambia mensualmente), TTL de 1h es seguro.
+    """
+    clave = f"geografia:{pagina}:{tamano}:{texto or ''}:{fundo or ''}:{sector or ''}"
     return await _con_cache(
-        f"geografia:{pagina}:{tamano}",
+        clave,
         _TTL_CATALOGOS,
         repo.listar_geografia,
         pagina=pagina,
         tamano=tamano,
+        texto=texto,
+        fundo=fundo,
+        sector=sector,
     )
 
 

@@ -46,32 +46,10 @@ _CATALOGOS = {
         """,
         "mensaje_error": "Error al listar Dim_Variedad Silver",
     },
-    "geografia": {
-        "sql_datos": """
-            SELECT
-                fn.Fundo            AS fundo,
-                sc.Sector           AS sector,
-                md.Modulo           AS modulo,
-                tr.Turno            AS turno,
-                vl.Valvula          AS valvula,
-                cm.Cama_Normalizada AS cama,
-                g.Es_Test_Block      AS es_test_block,
-                g.Codigo_SAP_Campo   AS codigo_sap_campo,
-                g.Es_Vigente         AS es_vigente,
-                COUNT(*) OVER()     AS total_rows
-            FROM Silver.Dim_Geografia g WITH (NOLOCK)
-            JOIN Silver.Dim_Fundo_Catalogo fn WITH (NOLOCK) ON g.ID_Fundo_Catalogo = fn.ID_Fundo_Catalogo
-            JOIN Silver.Dim_Sector_Catalogo sc WITH (NOLOCK) ON g.ID_Sector_Catalogo = sc.ID_Sector_Catalogo
-            JOIN Silver.Dim_Modulo_Catalogo md WITH (NOLOCK) ON g.ID_Modulo_Catalogo = md.ID_Modulo_Catalogo
-            JOIN Silver.Dim_Turno_Catalogo tr WITH (NOLOCK) ON g.ID_Turno_Catalogo = tr.ID_Turno_Catalogo
-            JOIN Silver.Dim_Valvula_Catalogo vl WITH (NOLOCK) ON g.ID_Valvula_Catalogo = vl.ID_Valvula_Catalogo
-            JOIN Silver.Dim_Cama_Catalogo cm WITH (NOLOCK) ON g.ID_Cama_Catalogo = cm.ID_Cama_Catalogo
-            WHERE g.Es_Vigente = 1
-            ORDER BY fn.Fundo, sc.Sector, md.Modulo, tr.Turno, vl.Valvula, cm.Cama_Normalizada
-            OFFSET :offset ROWS FETCH NEXT :tamano ROWS ONLY
-        """,
-        "mensaje_error": "Error al listar geografía",
-    },
+    # Nota: la entrada "geografia" del dict fue migrada a la función
+    # `listar_geografia` aparte porque acepta filtros server-side
+    # (texto, fundo, sector) y un WHERE dinámico. Las otras 3 tablas
+    # siguen aquí porque su volumen (<300 filas) no justifica filtros.
     "personal": {
         "sql_datos": """
             SELECT
@@ -221,9 +199,82 @@ def cambiar_estado_dim_variedad(id_variedad: int, es_activa: bool) -> dict:
         raise ErrorBaseDatos()
 
 
-def listar_geografia(pagina: int = 1, tamano: int = 20) -> dict:
-    """Lee Silver.Dim_Geografia vigente con paginación server-side."""
-    return _listar_catalogo("geografia", pagina=pagina, tamano=tamano)
+def listar_geografia(
+    pagina: int = 1,
+    tamano: int = 50,
+    texto: str | None = None,
+    fundo: str | None = None,
+    sector: str | None = None,
+) -> dict:
+    """
+    Lee Silver.Dim_Geografia vigente con paginación y filtros server-side.
+
+    Filtros opcionales:
+        - texto: substring sobre fundo, sector, válvula, código SAP, cama.
+          Usa `COLLATE Modern_Spanish_CI_AI` para que "garcia" matchee
+          "García" (la collation default de las columnas es _CI_AS,
+          accent-sensitive).
+        - fundo: match exacto sobre fn.Fundo.
+        - sector: match exacto sobre sc.Sector.
+
+    Tabla con ~36k filas vigentes — la única catalogo del MDM que
+    justifica filtros server-side. Las otras (variedades, personal)
+    son <300 filas y se filtran client-side.
+    """
+    desplazamiento = (pagina - 1) * tamano
+    # Normalizar strings vacíos a None para que la cláusula `:texto IS NULL`
+    # del WHERE simétricamente desactive el filtro.
+    texto_norm = texto.strip() if texto and texto.strip() else None
+    fundo_norm = fundo.strip() if fundo and fundo.strip() else None
+    sector_norm = sector.strip() if sector and sector.strip() else None
+
+    sql = """
+        SELECT
+            fn.Fundo            AS fundo,
+            sc.Sector           AS sector,
+            md.Modulo           AS modulo,
+            tr.Turno            AS turno,
+            vl.Valvula          AS valvula,
+            cm.Cama_Normalizada AS cama,
+            g.Es_Test_Block     AS es_test_block,
+            g.Codigo_SAP_Campo  AS codigo_sap_campo,
+            g.Es_Vigente        AS es_vigente,
+            COUNT(*) OVER()     AS total_rows
+        FROM Silver.Dim_Geografia g WITH (NOLOCK)
+        JOIN Silver.Dim_Fundo_Catalogo fn WITH (NOLOCK) ON g.ID_Fundo_Catalogo = fn.ID_Fundo_Catalogo
+        JOIN Silver.Dim_Sector_Catalogo sc WITH (NOLOCK) ON g.ID_Sector_Catalogo = sc.ID_Sector_Catalogo
+        JOIN Silver.Dim_Modulo_Catalogo md WITH (NOLOCK) ON g.ID_Modulo_Catalogo = md.ID_Modulo_Catalogo
+        JOIN Silver.Dim_Turno_Catalogo tr WITH (NOLOCK) ON g.ID_Turno_Catalogo = tr.ID_Turno_Catalogo
+        JOIN Silver.Dim_Valvula_Catalogo vl WITH (NOLOCK) ON g.ID_Valvula_Catalogo = vl.ID_Valvula_Catalogo
+        JOIN Silver.Dim_Cama_Catalogo cm WITH (NOLOCK) ON g.ID_Cama_Catalogo = cm.ID_Cama_Catalogo
+        WHERE g.Es_Vigente = 1
+          AND (:texto IS NULL OR (
+                fn.Fundo            COLLATE Modern_Spanish_CI_AI LIKE '%' + :texto + '%'
+             OR sc.Sector           COLLATE Modern_Spanish_CI_AI LIKE '%' + :texto + '%'
+             OR ISNULL(vl.Valvula, '')           COLLATE Modern_Spanish_CI_AI LIKE '%' + :texto + '%'
+             OR ISNULL(g.Codigo_SAP_Campo, '')   COLLATE Modern_Spanish_CI_AI LIKE '%' + :texto + '%'
+             OR ISNULL(cm.Cama_Normalizada, '')  COLLATE Modern_Spanish_CI_AI LIKE '%' + :texto + '%'
+          ))
+          AND (:fundo  IS NULL OR fn.Fundo  = :fundo)
+          AND (:sector IS NULL OR sc.Sector = :sector)
+        ORDER BY fn.Fundo, sc.Sector, md.Modulo, tr.Turno, vl.Valvula, cm.Cama_Normalizada
+        OFFSET :offset ROWS FETCH NEXT :tamano ROWS ONLY
+    """
+    params = {
+        "offset": desplazamiento,
+        "tamano": tamano,
+        "texto":  texto_norm,
+        "fundo":  fundo_norm,
+        "sector": sector_norm,
+    }
+    try:
+        with obtener_engine().connect() as con:
+            return _paginar(con, sql_datos=sql, params=params, pagina=pagina, tamano=tamano)
+    except SQLAlchemyError:
+        log.exception("Error al listar geografía", extra={
+            "texto": texto_norm, "fundo": fundo_norm, "sector": sector_norm,
+        })
+        raise ErrorBaseDatos()
 
 
 def listar_personal(pagina: int = 1, tamano: int = 20) -> dict:
