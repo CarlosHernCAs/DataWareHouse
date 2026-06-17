@@ -1,0 +1,265 @@
+{
+  "nodes": [
+    {
+      "id": "file:graphify-out/cache/ast/bc70025475aaad04a2cc3c2af5326dc823a40dcc12cdb9e9e098cb04f5f0a440.json",
+      "type": "config",
+      "name": "bc70025475aaad04a2cc3c2af5326dc823a40dcc12cdb9e9e098cb04f5f0a440.json",
+      "filePath": "graphify-out/cache/ast/bc70025475aaad04a2cc3c2af5326dc823a40dcc12cdb9e9e098cb04f5f0a440.json",
+      "summary": "File mapped from graphify-out/cache/ast/bc70025475aaad04a2cc3c2af5326dc823a40dcc12cdb9e9e098cb04f5f0a440.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:graphify-out/cache/ast/bd241c4b0dfe231782fd78d63bf77cb70decc36a36320ae246b54f18f3ff7893.json",
+      "type": "config",
+      "name": "bd241c4b0dfe231782fd78d63bf77cb70decc36a36320ae246b54f18f3ff7893.json",
+      "filePath": "graphify-out/cache/ast/bd241c4b0dfe231782fd78d63bf77cb70decc36a36320ae246b54f18f3ff7893.json",
+      "summary": "File mapped from graphify-out/cache/ast/bd241c4b0dfe231782fd78d63bf77cb70decc36a36320ae246b54f18f3ff7893.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:graphify-out/cache/ast/bd7c674984203d648dbdd9d6241598df034875dbe5c7af6411241605d506ab8b.json",
+      "type": "config",
+      "name": "bd7c674984203d648dbdd9d6241598df034875dbe5c7af6411241605d506ab8b.json",
+      "filePath": "graphify-out/cache/ast/bd7c674984203d648dbdd9d6241598df034875dbe5c7af6411241605d506ab8b.json",
+      "summary": "File mapped from graphify-out/cache/ast/bd7c674984203d648dbdd9d6241598df034875dbe5c7af6411241605d506ab8b.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:graphify-out/cache/ast/bdb5976829998e4b9ba0d6f8fbfb152e798bf5053bdb30cda39fc8e3bf43b436.json",
+      "type": "config",
+      "name": "bdb5976829998e4b9ba0d6f8fbfb152e798bf5053bdb30cda39fc8e3bf43b436.json",
+      "filePath": "graphify-out/cache/ast/bdb5976829998e4b9ba0d6f8fbfb152e798bf5053bdb30cda39fc8e3bf43b436.json",
+      "summary": "File mapped from graphify-out/cache/ast/bdb5976829998e4b9ba0d6f8fbfb152e798bf5053bdb30cda39fc8e3bf43b436.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:graphify-out/cache/ast/bde078467ec928d05db035e44e07ba5e8408bb8195e39ea77398babe93fe4de3.json",
+      "type": "config",
+      "name": "bde078467ec928d05db035e44e07ba5e8408bb8195e39ea77398babe93fe4de3.json",
+      "filePath": "graphify-out/cache/ast/bde078467ec928d05db035e44e07ba5e8408bb8195e39ea77398babe93fe4de3.json",
+      "summary": "File mapped from graphify-out/cache/ast/bde078467ec928d05db035e44e07ba5e8408bb8195e39ea77398babe93fe4de3.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:graphify-out/cache/ast/bdf51e7646528eb8936713375fd8b845cd94ebef553fb76ece59c087ffcc037d.json",
+      "type": "config",
+      "name": "bdf51e7646528eb8936713375fd8b845cd94ebef553fb76ece59c087ffcc037d.json",
+      "filePath": "graphify-out/cache/ast/bdf51e7646528eb8936713375fd8b845cd94ebef553fb76ece59c087ffcc037d.json",
+      "summary": "File mapped from graphify-out/cache/ast/bdf51e7646528eb8936713375fd8b845cd94ebef553fb76ece59c087ffcc037d.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:graphify-out/cache/ast/be6eacbbd2db6f58007f9b5d30bb6ded170744d385f9bc4cfdd1cc8d41f1bfcf.json",
+      "type": "config",
+      "name": "be6eacbbd2db6f58007f9b5d30bb6ded170744d385f9bc4cfdd1cc8d41f1bfcf.json",
+      "filePath": "graphify-out/cache/ast/be6eacbbd2db6f58007f9b5d30bb6ded170744d385f9bc4cfdd1cc8d41f1bfcf.json",
+      "summary": "File mapped from graphify-out/cache/ast/be6eacbbd2db6f58007f9b5d30bb6ded170744d385f9bc4cfdd1cc8d41f1bfcf.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:graphify-out/cache/ast/bec26c693a0ef3101285bfd1ae0bd35cf5526ee517a8d308d1db2f6ecaa79deb.json",
+      "type": "config",
+      "name": "bec26c693a0ef3101285bfd1ae0bd35cf5526ee517a8d308d1db2f6ecaa79deb.json",
+      "filePath": "graphify-out/cache/ast/bec26c693a0ef3101285bfd1ae0bd35cf5526ee517a8d308d1db2f6ecaa79deb.json",
+      "summary": "File mapped from graphify-out/cache/ast/bec26c693a0ef3101285bfd1ae0bd35cf5526ee517a8d308d1db2f6ecaa79deb.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:graphify-out/cache/ast/c0c16928a062571d305637258c759125f5a679bb75e68c41671a5a3e5580e0a1.json",
+      "type": "config",
+      "name": "c0c16928a062571d305637258c759125f5a679bb75e68c41671a5a3e5580e0a1.json",
+      "filePath": "graphify-out/cache/ast/c0c16928a062571d305637258c759125f5a679bb75e68c41671a5a3e5580e0a1.json",
+      "summary": "File mapped from graphify-out/cache/ast/c0c16928a062571d305637258c759125f5a679bb75e68c41671a5a3e5580e0a1.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:graphify-out/cache/ast/c0c45da2a1991f4de982ae800ebe9b15983a6ea2124ae88958fb11d2fddea738.json",
+      "type": "config",
+      "name": "c0c45da2a1991f4de982ae800ebe9b15983a6ea2124ae88958fb11d2fddea738.json",
+      "filePath": "graphify-out/cache/ast/c0c45da2a1991f4de982ae800ebe9b15983a6ea2124ae88958fb11d2fddea738.json",
+      "summary": "File mapped from graphify-out/cache/ast/c0c45da2a1991f4de982ae800ebe9b15983a6ea2124ae88958fb11d2fddea738.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:graphify-out/cache/ast/c1372e9648e6c3d8ac2d26a1d130443c68e894283dd348b8ef65e49351df81a4.json",
+      "type": "config",
+      "name": "c1372e9648e6c3d8ac2d26a1d130443c68e894283dd348b8ef65e49351df81a4.json",
+      "filePath": "graphify-out/cache/ast/c1372e9648e6c3d8ac2d26a1d130443c68e894283dd348b8ef65e49351df81a4.json",
+      "summary": "File mapped from graphify-out/cache/ast/c1372e9648e6c3d8ac2d26a1d130443c68e894283dd348b8ef65e49351df81a4.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:graphify-out/cache/ast/c1565f10bc173ce2f196e8bbf2da6f6f4e94a8474fdb3cf330659357938d6cdc.json",
+      "type": "config",
+      "name": "c1565f10bc173ce2f196e8bbf2da6f6f4e94a8474fdb3cf330659357938d6cdc.json",
+      "filePath": "graphify-out/cache/ast/c1565f10bc173ce2f196e8bbf2da6f6f4e94a8474fdb3cf330659357938d6cdc.json",
+      "summary": "File mapped from graphify-out/cache/ast/c1565f10bc173ce2f196e8bbf2da6f6f4e94a8474fdb3cf330659357938d6cdc.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:graphify-out/cache/ast/c19f7b48d7852ff4cfce16ae68a8cab6665d78357d4d1f4918813869851e5039.json",
+      "type": "config",
+      "name": "c19f7b48d7852ff4cfce16ae68a8cab6665d78357d4d1f4918813869851e5039.json",
+      "filePath": "graphify-out/cache/ast/c19f7b48d7852ff4cfce16ae68a8cab6665d78357d4d1f4918813869851e5039.json",
+      "summary": "File mapped from graphify-out/cache/ast/c19f7b48d7852ff4cfce16ae68a8cab6665d78357d4d1f4918813869851e5039.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:graphify-out/cache/ast/c2364672e4406666abc424d2acf15dc399e5a8ca4a55f6a62586ee54b187a139.json",
+      "type": "config",
+      "name": "c2364672e4406666abc424d2acf15dc399e5a8ca4a55f6a62586ee54b187a139.json",
+      "filePath": "graphify-out/cache/ast/c2364672e4406666abc424d2acf15dc399e5a8ca4a55f6a62586ee54b187a139.json",
+      "summary": "File mapped from graphify-out/cache/ast/c2364672e4406666abc424d2acf15dc399e5a8ca4a55f6a62586ee54b187a139.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:graphify-out/cache/ast/c28c3f808f129d4882034fbb20d538ecf6d9c07345ddfff9d621aaf74c5318cb.json",
+      "type": "config",
+      "name": "c28c3f808f129d4882034fbb20d538ecf6d9c07345ddfff9d621aaf74c5318cb.json",
+      "filePath": "graphify-out/cache/ast/c28c3f808f129d4882034fbb20d538ecf6d9c07345ddfff9d621aaf74c5318cb.json",
+      "summary": "File mapped from graphify-out/cache/ast/c28c3f808f129d4882034fbb20d538ecf6d9c07345ddfff9d621aaf74c5318cb.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:graphify-out/cache/ast/c2b9d372cf5c00b920cc990ba83a0aea5b9f54417a7c8e055a8b258d60e48c17.json",
+      "type": "config",
+      "name": "c2b9d372cf5c00b920cc990ba83a0aea5b9f54417a7c8e055a8b258d60e48c17.json",
+      "filePath": "graphify-out/cache/ast/c2b9d372cf5c00b920cc990ba83a0aea5b9f54417a7c8e055a8b258d60e48c17.json",
+      "summary": "File mapped from graphify-out/cache/ast/c2b9d372cf5c00b920cc990ba83a0aea5b9f54417a7c8e055a8b258d60e48c17.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:graphify-out/cache/ast/c41f9c5cf39684039d17ea1efec3b262affff11b7658f984601754f8a8453209.json",
+      "type": "config",
+      "name": "c41f9c5cf39684039d17ea1efec3b262affff11b7658f984601754f8a8453209.json",
+      "filePath": "graphify-out/cache/ast/c41f9c5cf39684039d17ea1efec3b262affff11b7658f984601754f8a8453209.json",
+      "summary": "File mapped from graphify-out/cache/ast/c41f9c5cf39684039d17ea1efec3b262affff11b7658f984601754f8a8453209.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:graphify-out/cache/ast/c4330cfca27d1ae71132d1248194e3fb9352ac5d5d811438314ff6b441c751a1.json",
+      "type": "config",
+      "name": "c4330cfca27d1ae71132d1248194e3fb9352ac5d5d811438314ff6b441c751a1.json",
+      "filePath": "graphify-out/cache/ast/c4330cfca27d1ae71132d1248194e3fb9352ac5d5d811438314ff6b441c751a1.json",
+      "summary": "File mapped from graphify-out/cache/ast/c4330cfca27d1ae71132d1248194e3fb9352ac5d5d811438314ff6b441c751a1.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:graphify-out/cache/ast/c46292abecf52db0e8386e0356af34ba9018086d27d8cec39e2fa40de0407549.json",
+      "type": "config",
+      "name": "c46292abecf52db0e8386e0356af34ba9018086d27d8cec39e2fa40de0407549.json",
+      "filePath": "graphify-out/cache/ast/c46292abecf52db0e8386e0356af34ba9018086d27d8cec39e2fa40de0407549.json",
+      "summary": "File mapped from graphify-out/cache/ast/c46292abecf52db0e8386e0356af34ba9018086d27d8cec39e2fa40de0407549.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:graphify-out/cache/ast/c468638118ee22b7690cc9a2622ba8fcf50bf5755a6aa4e9bcc8c7b6d1659402.json",
+      "type": "config",
+      "name": "c468638118ee22b7690cc9a2622ba8fcf50bf5755a6aa4e9bcc8c7b6d1659402.json",
+      "filePath": "graphify-out/cache/ast/c468638118ee22b7690cc9a2622ba8fcf50bf5755a6aa4e9bcc8c7b6d1659402.json",
+      "summary": "File mapped from graphify-out/cache/ast/c468638118ee22b7690cc9a2622ba8fcf50bf5755a6aa4e9bcc8c7b6d1659402.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

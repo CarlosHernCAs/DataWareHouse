@@ -1,0 +1,148 @@
+{
+  "projectRoot": "d:/Proyecto2026/ACP_DWH/ACP Proyecciones/Portal_MDM_NEXTJS/Portal-Nextjs/portal-mdm",
+  "batchFiles": [
+    {
+      "path": "app/(admin)/quality/page.tsx",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/(admin)/quality/quality-client.tsx",
+      "language": "typescript",
+      "sizeLines": 638,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/api/cc/quality/[tabla]/[id]/rechazar/route.ts",
+      "language": "typescript",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/api/cc/quality/[tabla]/[id]/resolver/route.ts",
+      "language": "typescript",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/api/cc/quality/list/route.ts",
+      "language": "typescript",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "components/control-center/quarantine-bulk-bar.tsx",
+      "language": "typescript",
+      "sizeLines": 338,
+      "fileCategory": "code"
+    },
+    {
+      "path": "components/control-center/quarantine-composite-editor.tsx",
+      "language": "typescript",
+      "sizeLines": 351,
+      "fileCategory": "code"
+    },
+    {
+      "path": "components/control-center/quarantine-drawer.tsx",
+      "language": "typescript",
+      "sizeLines": 464,
+      "fileCategory": "code"
+    },
+    {
+      "path": "components/control-center/quarantine-empty-state.tsx",
+      "language": "typescript",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "components/ui/label.tsx",
+      "language": "typescript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "hooks/use-quality.ts",
+      "language": "typescript",
+      "sizeLines": 140,
+      "fileCategory": "code"
+    },
+    {
+      "path": "lib/quarantine/parse-composite.ts",
+      "language": "typescript",
+      "sizeLines": 197,
+      "fileCategory": "code"
+    },
+    {
+      "path": "lib/schemas/quality.ts",
+      "language": "typescript",
+      "sizeLines": 116,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "app/(admin)/quality/page.tsx": [
+      "app/(admin)/quality/quality-client.tsx"
+    ],
+    "app/(admin)/quality/quality-client.tsx": [
+      "components/charts/kpi-card.tsx",
+      "components/control-center/quarantine-bulk-bar.tsx",
+      "components/control-center/quarantine-drawer.tsx",
+      "components/control-center/quarantine-empty-state.tsx",
+      "components/ui/button.tsx",
+      "components/ui/input.tsx",
+      "components/ui/page-header.tsx",
+      "components/ui/skeleton.tsx",
+      "hooks/use-control-center.ts",
+      "hooks/use-quality.ts",
+      "lib/format.ts",
+      "lib/schemas/quality.ts",
+      "lib/utils.ts"
+    ],
+    "app/api/cc/quality/[tabla]/[id]/rechazar/route.ts": [
+      "lib/api/server-fetch.ts",
+      "lib/schemas/quality.ts"
+    ],
+    "app/api/cc/quality/[tabla]/[id]/resolver/route.ts": [
+      "lib/api/server-fetch.ts",
+      "lib/schemas/quality.ts"
+    ],
+    "app/api/cc/quality/list/route.ts": [
+      "lib/api/server-fetch.ts",
+      "lib/schemas/quality.ts"
+    ],
+    "components/control-center/quarantine-bulk-bar.tsx": [
+      "components/ui/button.tsx",
+      "components/ui/label.tsx",
+      "hooks/use-quality.ts",
+      "hooks/use-toast.ts",
+      "lib/schemas/quality.ts",
+      "lib/utils.ts"
+    ],
+    "components/control-center/quarantine-composite-editor.tsx": [
+      "lib/quarantine/parse-composite.ts",
+      "lib/utils.ts"
+    ],
+    "components/control-center/quarantine-drawer.tsx": [
+      "components/control-center/quarantine-composite-editor.tsx",
+      "components/ui/button.tsx",
+      "components/ui/label.tsx",
+      "components/ui/status-badge.tsx",
+      "hooks/use-quality.ts",
+      "hooks/use-toast.ts",
+      "lib/format.ts",
+      "lib/quarantine/parse-composite.ts",
+      "lib/schemas/quality.ts",
+      "lib/utils.ts"
+    ],
+    "components/control-center/quarantine-empty-state.tsx": [],
+    "components/ui/label.tsx": [
+      "lib/utils.ts"
+    ],
+    "hooks/use-quality.ts": [
+      "lib/schemas/quality.ts"
+    ],
+    "lib/quarantine/parse-composite.ts": [],
+    "lib/schemas/quality.ts": []
+  }
+}

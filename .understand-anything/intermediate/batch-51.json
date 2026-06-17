@@ -1,0 +1,952 @@
+{
+  "nodes": [
+    {
+      "id": "file:acp_mdm_portal/scratch/diagnostico_kilos_bajos.py",
+      "type": "file",
+      "name": "diagnostico_kilos_bajos.py",
+      "filePath": "acp_mdm_portal/scratch/diagnostico_kilos_bajos.py",
+      "summary": "File mapped from acp_mdm_portal/scratch/diagnostico_kilos_bajos.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:acp_mdm_portal/scratch/final_audit_future.py",
+      "type": "file",
+      "name": "final_audit_future.py",
+      "filePath": "acp_mdm_portal/scratch/final_audit_future.py",
+      "summary": "File mapped from acp_mdm_portal/scratch/final_audit_future.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/scratch/final_audit_future.py:final_audit",
+      "type": "function",
+      "name": "final_audit",
+      "filePath": "acp_mdm_portal/scratch/final_audit_future.py",
+      "lineRange": [
+        6,
+        15
+      ],
+      "summary": "Function final_audit defined in acp_mdm_portal/scratch/final_audit_future.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:acp_mdm_portal/scratch/find_peak_load.py",
+      "type": "file",
+      "name": "find_peak_load.py",
+      "filePath": "acp_mdm_portal/scratch/find_peak_load.py",
+      "summary": "File mapped from acp_mdm_portal/scratch/find_peak_load.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:acp_mdm_portal/scratch/identificar_faltantes.py",
+      "type": "file",
+      "name": "identificar_faltantes.py",
+      "filePath": "acp_mdm_portal/scratch/identificar_faltantes.py",
+      "summary": "File mapped from acp_mdm_portal/scratch/identificar_faltantes.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:acp_mdm_portal/scratch/identificar_faltantes.py:identificar_faltantes",
+      "type": "function",
+      "name": "identificar_faltantes",
+      "filePath": "acp_mdm_portal/scratch/identificar_faltantes.py",
+      "lineRange": [
+        8,
+        65
+      ],
+      "summary": "Function identificar_faltantes defined in acp_mdm_portal/scratch/identificar_faltantes.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:acp_mdm_portal/scratch/identify_future_pesos.py",
+      "type": "file",
+      "name": "identify_future_pesos.py",
+      "filePath": "acp_mdm_portal/scratch/identify_future_pesos.py",
+      "summary": "File mapped from acp_mdm_portal/scratch/identify_future_pesos.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/scratch/identify_future_pesos.py:identify_future_data",
+      "type": "function",
+      "name": "identify_future_data",
+      "filePath": "acp_mdm_portal/scratch/identify_future_pesos.py",
+      "lineRange": [
+        6,
+        26
+      ],
+      "summary": "Function identify_future_data defined in acp_mdm_portal/scratch/identify_future_pesos.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:acp_mdm_portal/scratch/inspect_june_data.py",
+      "type": "file",
+      "name": "inspect_june_data.py",
+      "filePath": "acp_mdm_portal/scratch/inspect_june_data.py",
+      "summary": "File mapped from acp_mdm_portal/scratch/inspect_june_data.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/scratch/inspect_june_data.py:inspect_june",
+      "type": "function",
+      "name": "inspect_june",
+      "filePath": "acp_mdm_portal/scratch/inspect_june_data.py",
+      "lineRange": [
+        6,
+        22
+      ],
+      "summary": "Function inspect_june defined in acp_mdm_portal/scratch/inspect_june_data.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:acp_mdm_portal/scratch/inspect_peladas_future.py",
+      "type": "file",
+      "name": "inspect_peladas_future.py",
+      "filePath": "acp_mdm_portal/scratch/inspect_peladas_future.py",
+      "summary": "File mapped from acp_mdm_portal/scratch/inspect_peladas_future.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/scratch/inspect_peladas_future.py:inspect_peladas_future",
+      "type": "function",
+      "name": "inspect_peladas_future",
+      "filePath": "acp_mdm_portal/scratch/inspect_peladas_future.py",
+      "lineRange": [
+        6,
+        16
+      ],
+      "summary": "Function inspect_peladas_future defined in acp_mdm_portal/scratch/inspect_peladas_future.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:acp_mdm_portal/scratch/leer_datos_calculo.py",
+      "type": "file",
+      "name": "leer_datos_calculo.py",
+      "filePath": "acp_mdm_portal/scratch/leer_datos_calculo.py",
+      "summary": "File mapped from acp_mdm_portal/scratch/leer_datos_calculo.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:acp_mdm_portal/scratch/leer_excel_proyecciones.py",
+      "type": "file",
+      "name": "leer_excel_proyecciones.py",
+      "filePath": "acp_mdm_portal/scratch/leer_excel_proyecciones.py",
+      "summary": "File mapped from acp_mdm_portal/scratch/leer_excel_proyecciones.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:acp_mdm_portal/scratch/nemesis_population.py",
+      "type": "file",
+      "name": "nemesis_population.py",
+      "filePath": "acp_mdm_portal/scratch/nemesis_population.py",
+      "summary": "File mapped from acp_mdm_portal/scratch/nemesis_population.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:acp_mdm_portal/scratch/nemesis_population.py:poblar_nemesis",
+      "type": "function",
+      "name": "poblar_nemesis",
+      "filePath": "acp_mdm_portal/scratch/nemesis_population.py",
+      "lineRange": [
+        9,
+        65
+      ],
+      "summary": "Function poblar_nemesis defined in acp_mdm_portal/scratch/nemesis_population.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:acp_mdm_portal/scratch/poblar_modulos_especificos.py",
+      "type": "file",
+      "name": "poblar_modulos_especificos.py",
+      "filePath": "acp_mdm_portal/scratch/poblar_modulos_especificos.py",
+      "summary": "File mapped from acp_mdm_portal/scratch/poblar_modulos_especificos.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:acp_mdm_portal/scratch/poblar_modulos_especificos.py:poblar_modulos_completos",
+      "type": "function",
+      "name": "poblar_modulos_completos",
+      "filePath": "acp_mdm_portal/scratch/poblar_modulos_especificos.py",
+      "lineRange": [
+        10,
+        87
+      ],
+      "summary": "Function poblar_modulos_completos defined in acp_mdm_portal/scratch/poblar_modulos_especificos.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:acp_mdm_portal/scratch/poblar_sistema_proyecciones.py",
+      "type": "file",
+      "name": "poblar_sistema_proyecciones.py",
+      "filePath": "acp_mdm_portal/scratch/poblar_sistema_proyecciones.py",
+      "summary": "File mapped from acp_mdm_portal/scratch/poblar_sistema_proyecciones.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:acp_mdm_portal/scratch/poblar_sistema_proyecciones.py:generar_fechas_semanales",
+      "type": "function",
+      "name": "generar_fechas_semanales",
+      "filePath": "acp_mdm_portal/scratch/poblar_sistema_proyecciones.py",
+      "lineRange": [
+        40,
+        50
+      ],
+      "summary": "Function generar_fechas_semanales defined in acp_mdm_portal/scratch/poblar_sistema_proyecciones.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/scratch/poblar_sistema_proyecciones.py:id_tiempo",
+      "type": "function",
+      "name": "id_tiempo",
+      "filePath": "acp_mdm_portal/scratch/poblar_sistema_proyecciones.py",
+      "lineRange": [
+        55,
+        56
+      ],
+      "summary": "Function id_tiempo defined in acp_mdm_portal/scratch/poblar_sistema_proyecciones.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/scratch/poblar_sistema_proyecciones.py:curva_maduracion",
+      "type": "function",
+      "name": "curva_maduracion",
+      "filePath": "acp_mdm_portal/scratch/poblar_sistema_proyecciones.py",
+      "lineRange": [
+        80,
+        92
+      ],
+      "summary": "Function curva_maduracion defined in acp_mdm_portal/scratch/poblar_sistema_proyecciones.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/scratch/poblar_sistema_proyecciones.py:generar_conteo",
+      "type": "function",
+      "name": "generar_conteo",
+      "filePath": "acp_mdm_portal/scratch/poblar_sistema_proyecciones.py",
+      "lineRange": [
+        95,
+        131
+      ],
+      "summary": "Function generar_conteo defined in acp_mdm_portal/scratch/poblar_sistema_proyecciones.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/scratch/poblar_sistema_proyecciones.py:generar_peladas",
+      "type": "function",
+      "name": "generar_peladas",
+      "filePath": "acp_mdm_portal/scratch/poblar_sistema_proyecciones.py",
+      "lineRange": [
+        134,
+        169
+      ],
+      "summary": "Function generar_peladas defined in acp_mdm_portal/scratch/poblar_sistema_proyecciones.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/scratch/poblar_sistema_proyecciones.py:generar_pesos",
+      "type": "function",
+      "name": "generar_pesos",
+      "filePath": "acp_mdm_portal/scratch/poblar_sistema_proyecciones.py",
+      "lineRange": [
+        172,
+        196
+      ],
+      "summary": "Function generar_pesos defined in acp_mdm_portal/scratch/poblar_sistema_proyecciones.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/scratch/poblar_sistema_proyecciones.py:generar_cosecha_sap",
+      "type": "function",
+      "name": "generar_cosecha_sap",
+      "filePath": "acp_mdm_portal/scratch/poblar_sistema_proyecciones.py",
+      "lineRange": [
+        199,
+        235
+      ],
+      "summary": "Function generar_cosecha_sap defined in acp_mdm_portal/scratch/poblar_sistema_proyecciones.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/scratch/poblar_sistema_proyecciones.py:generar_proyecciones",
+      "type": "function",
+      "name": "generar_proyecciones",
+      "filePath": "acp_mdm_portal/scratch/poblar_sistema_proyecciones.py",
+      "lineRange": [
+        238,
+        273
+      ],
+      "summary": "Function generar_proyecciones defined in acp_mdm_portal/scratch/poblar_sistema_proyecciones.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/scratch/poblar_sistema_proyecciones.py:insertar_df",
+      "type": "function",
+      "name": "insertar_df",
+      "filePath": "acp_mdm_portal/scratch/poblar_sistema_proyecciones.py",
+      "lineRange": [
+        276,
+        307
+      ],
+      "summary": "Function insertar_df defined in acp_mdm_portal/scratch/poblar_sistema_proyecciones.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:acp_mdm_portal/scratch/probar_sixweek_db.py",
+      "type": "file",
+      "name": "probar_sixweek_db.py",
+      "filePath": "acp_mdm_portal/scratch/probar_sixweek_db.py",
+      "summary": "File mapped from acp_mdm_portal/scratch/probar_sixweek_db.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/scratch/probar_sixweek_db.py:probar_sem_27",
+      "type": "function",
+      "name": "probar_sem_27",
+      "filePath": "acp_mdm_portal/scratch/probar_sixweek_db.py",
+      "lineRange": [
+        9,
+        42
+      ],
+      "summary": "Function probar_sem_27 defined in acp_mdm_portal/scratch/probar_sixweek_db.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:acp_mdm_portal/scratch/run_migration_fase35.py",
+      "type": "file",
+      "name": "run_migration_fase35.py",
+      "filePath": "acp_mdm_portal/scratch/run_migration_fase35.py",
+      "summary": "File mapped from acp_mdm_portal/scratch/run_migration_fase35.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:acp_mdm_portal/scratch/scan_catalogs.py",
+      "type": "file",
+      "name": "scan_catalogs.py",
+      "filePath": "acp_mdm_portal/scratch/scan_catalogs.py",
+      "summary": "File mapped from acp_mdm_portal/scratch/scan_catalogs.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:acp_mdm_portal/scratch/search_similar_week.py",
+      "type": "file",
+      "name": "search_similar_week.py",
+      "filePath": "acp_mdm_portal/scratch/search_similar_week.py",
+      "summary": "File mapped from acp_mdm_portal/scratch/search_similar_week.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:acp_mdm_portal/scratch/simular_excel.py",
+      "type": "file",
+      "name": "simular_excel.py",
+      "filePath": "acp_mdm_portal/scratch/simular_excel.py",
+      "summary": "File mapped from acp_mdm_portal/scratch/simular_excel.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:acp_mdm_portal/scratch/simular_excel.py:simular",
+      "type": "function",
+      "name": "simular",
+      "filePath": "acp_mdm_portal/scratch/simular_excel.py",
+      "lineRange": [
+        12,
+        136
+      ],
+      "summary": "Function simular defined in acp_mdm_portal/scratch/simular_excel.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:acp_mdm_portal/scratch/super_poblamiento.py",
+      "type": "file",
+      "name": "super_poblamiento.py",
+      "filePath": "acp_mdm_portal/scratch/super_poblamiento.py",
+      "summary": "File mapped from acp_mdm_portal/scratch/super_poblamiento.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:acp_mdm_portal/scratch/super_poblamiento.py:super_poblar",
+      "type": "function",
+      "name": "super_poblar",
+      "filePath": "acp_mdm_portal/scratch/super_poblamiento.py",
+      "lineRange": [
+        9,
+        91
+      ],
+      "summary": "Function super_poblar defined in acp_mdm_portal/scratch/super_poblamiento.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:acp_mdm_portal/scratch/test_etl_optimizations.py",
+      "type": "file",
+      "name": "test_etl_optimizations.py",
+      "filePath": "acp_mdm_portal/scratch/test_etl_optimizations.py",
+      "summary": "File mapped from acp_mdm_portal/scratch/test_etl_optimizations.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:acp_mdm_portal/scratch/test_etl_optimizations.py:test_indices",
+      "type": "function",
+      "name": "test_indices",
+      "filePath": "acp_mdm_portal/scratch/test_etl_optimizations.py",
+      "lineRange": [
+        26,
+        59
+      ],
+      "summary": "Function test_indices defined in acp_mdm_portal/scratch/test_etl_optimizations.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/scratch/test_etl_optimizations.py:test_lookup_geografia",
+      "type": "function",
+      "name": "test_lookup_geografia",
+      "filePath": "acp_mdm_portal/scratch/test_etl_optimizations.py",
+      "lineRange": [
+        62,
+        137
+      ],
+      "summary": "Function test_lookup_geografia defined in acp_mdm_portal/scratch/test_etl_optimizations.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:acp_mdm_portal/scratch/test_etl_optimizations.py:test_latencia_gold",
+      "type": "function",
+      "name": "test_latencia_gold",
+      "filePath": "acp_mdm_portal/scratch/test_etl_optimizations.py",
+      "lineRange": [
+        140,
+        190
+      ],
+      "summary": "Function test_latencia_gold defined in acp_mdm_portal/scratch/test_etl_optimizations.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:acp_mdm_portal/scratch/test_event_bus.py",
+      "type": "file",
+      "name": "test_event_bus.py",
+      "filePath": "acp_mdm_portal/scratch/test_event_bus.py",
+      "summary": "File mapped from acp_mdm_portal/scratch/test_event_bus.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/scratch/test_event_bus.py:simular_carga_fact",
+      "type": "function",
+      "name": "simular_carga_fact",
+      "filePath": "acp_mdm_portal/scratch/test_event_bus.py",
+      "lineRange": [
+        15,
+        24
+      ],
+      "summary": "Function simular_carga_fact defined in acp_mdm_portal/scratch/test_event_bus.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:acp_mdm_portal/scratch/test_performance.py",
+      "type": "file",
+      "name": "test_performance.py",
+      "filePath": "acp_mdm_portal/scratch/test_performance.py",
+      "summary": "File mapped from acp_mdm_portal/scratch/test_performance.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:acp_mdm_portal/scratch/test_proyeccion_w11.py",
+      "type": "file",
+      "name": "test_proyeccion_w11.py",
+      "filePath": "acp_mdm_portal/scratch/test_proyeccion_w11.py",
+      "summary": "File mapped from acp_mdm_portal/scratch/test_proyeccion_w11.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:acp_mdm_portal/scratch/test_sql_directo.py",
+      "type": "file",
+      "name": "test_sql_directo.py",
+      "filePath": "acp_mdm_portal/scratch/test_sql_directo.py",
+      "summary": "File mapped from acp_mdm_portal/scratch/test_sql_directo.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:acp_mdm_portal/scratch/test_sql_directo.py:get_conn",
+      "type": "function",
+      "name": "get_conn",
+      "filePath": "acp_mdm_portal/scratch/test_sql_directo.py",
+      "lineRange": [
+        9,
+        16
+      ],
+      "summary": "Function get_conn defined in acp_mdm_portal/scratch/test_sql_directo.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/scratch/test_sql_directo.py:run_test",
+      "type": "function",
+      "name": "run_test",
+      "filePath": "acp_mdm_portal/scratch/test_sql_directo.py",
+      "lineRange": [
+        18,
+        75
+      ],
+      "summary": "Function run_test defined in acp_mdm_portal/scratch/test_sql_directo.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:acp_mdm_portal/scratch/test_weekly_sql.py",
+      "type": "file",
+      "name": "test_weekly_sql.py",
+      "filePath": "acp_mdm_portal/scratch/test_weekly_sql.py",
+      "summary": "File mapped from acp_mdm_portal/scratch/test_weekly_sql.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/scratch/test_weekly_sql.py:test_sql",
+      "type": "function",
+      "name": "test_sql",
+      "filePath": "acp_mdm_portal/scratch/test_weekly_sql.py",
+      "lineRange": [
+        6,
+        24
+      ],
+      "summary": "Function test_sql defined in acp_mdm_portal/scratch/test_weekly_sql.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:acp_mdm_portal/scratch/verificar_fix_lookup.py",
+      "type": "file",
+      "name": "verificar_fix_lookup.py",
+      "filePath": "acp_mdm_portal/scratch/verificar_fix_lookup.py",
+      "summary": "File mapped from acp_mdm_portal/scratch/verificar_fix_lookup.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/scratch/verificar_fix_lookup.py:verificar_fix",
+      "type": "function",
+      "name": "verificar_fix",
+      "filePath": "acp_mdm_portal/scratch/verificar_fix_lookup.py",
+      "lineRange": [
+        9,
+        27
+      ],
+      "summary": "Function verificar_fix defined in acp_mdm_portal/scratch/verificar_fix_lookup.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:acp_mdm_portal/scratch/final_audit_future.py",
+      "target": "function:acp_mdm_portal/scratch/final_audit_future.py:final_audit",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/scratch/identificar_faltantes.py",
+      "target": "function:acp_mdm_portal/scratch/identificar_faltantes.py:identificar_faltantes",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/scratch/identify_future_pesos.py",
+      "target": "function:acp_mdm_portal/scratch/identify_future_pesos.py:identify_future_data",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/scratch/inspect_june_data.py",
+      "target": "function:acp_mdm_portal/scratch/inspect_june_data.py:inspect_june",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/scratch/inspect_peladas_future.py",
+      "target": "function:acp_mdm_portal/scratch/inspect_peladas_future.py:inspect_peladas_future",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/scratch/nemesis_population.py",
+      "target": "function:acp_mdm_portal/scratch/nemesis_population.py:poblar_nemesis",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/scratch/poblar_modulos_especificos.py",
+      "target": "function:acp_mdm_portal/scratch/poblar_modulos_especificos.py:poblar_modulos_completos",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/scratch/poblar_sistema_proyecciones.py",
+      "target": "function:acp_mdm_portal/scratch/poblar_sistema_proyecciones.py:generar_fechas_semanales",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/scratch/poblar_sistema_proyecciones.py",
+      "target": "function:acp_mdm_portal/scratch/poblar_sistema_proyecciones.py:id_tiempo",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/scratch/poblar_sistema_proyecciones.py",
+      "target": "function:acp_mdm_portal/scratch/poblar_sistema_proyecciones.py:curva_maduracion",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/scratch/poblar_sistema_proyecciones.py",
+      "target": "function:acp_mdm_portal/scratch/poblar_sistema_proyecciones.py:generar_conteo",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/scratch/poblar_sistema_proyecciones.py",
+      "target": "function:acp_mdm_portal/scratch/poblar_sistema_proyecciones.py:generar_peladas",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/scratch/poblar_sistema_proyecciones.py",
+      "target": "function:acp_mdm_portal/scratch/poblar_sistema_proyecciones.py:generar_pesos",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/scratch/poblar_sistema_proyecciones.py",
+      "target": "function:acp_mdm_portal/scratch/poblar_sistema_proyecciones.py:generar_cosecha_sap",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/scratch/poblar_sistema_proyecciones.py",
+      "target": "function:acp_mdm_portal/scratch/poblar_sistema_proyecciones.py:generar_proyecciones",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/scratch/poblar_sistema_proyecciones.py",
+      "target": "function:acp_mdm_portal/scratch/poblar_sistema_proyecciones.py:insertar_df",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/scratch/probar_sixweek_db.py",
+      "target": "function:acp_mdm_portal/scratch/probar_sixweek_db.py:probar_sem_27",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/scratch/simular_excel.py",
+      "target": "function:acp_mdm_portal/scratch/simular_excel.py:simular",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/scratch/super_poblamiento.py",
+      "target": "function:acp_mdm_portal/scratch/super_poblamiento.py:super_poblar",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/scratch/test_etl_optimizations.py",
+      "target": "function:acp_mdm_portal/scratch/test_etl_optimizations.py:test_indices",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/scratch/test_etl_optimizations.py",
+      "target": "function:acp_mdm_portal/scratch/test_etl_optimizations.py:test_lookup_geografia",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/scratch/test_etl_optimizations.py",
+      "target": "function:acp_mdm_portal/scratch/test_etl_optimizations.py:test_latencia_gold",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/scratch/test_event_bus.py",
+      "target": "function:acp_mdm_portal/scratch/test_event_bus.py:simular_carga_fact",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/scratch/test_sql_directo.py",
+      "target": "function:acp_mdm_portal/scratch/test_sql_directo.py:get_conn",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/scratch/test_sql_directo.py",
+      "target": "function:acp_mdm_portal/scratch/test_sql_directo.py:run_test",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/scratch/test_weekly_sql.py",
+      "target": "function:acp_mdm_portal/scratch/test_weekly_sql.py:test_sql",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/scratch/verificar_fix_lookup.py",
+      "target": "function:acp_mdm_portal/scratch/verificar_fix_lookup.py:verificar_fix",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    }
+  ]
+}

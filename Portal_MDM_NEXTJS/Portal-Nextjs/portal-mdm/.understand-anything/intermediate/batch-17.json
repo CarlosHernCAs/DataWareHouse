@@ -1,0 +1,265 @@
+{
+  "nodes": [
+    {
+      "id": "document:.claude/skills/understand/languages/cpp.md",
+      "type": "document",
+      "name": "cpp.md",
+      "filePath": ".claude/skills/understand/languages/cpp.md",
+      "summary": "Documentation file outlining specifications and guides in cpp.md.",
+      "tags": [
+        "docs",
+        "documentation",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/understand/languages/csharp.md",
+      "type": "document",
+      "name": "csharp.md",
+      "filePath": ".claude/skills/understand/languages/csharp.md",
+      "summary": "Documentation file outlining specifications and guides in csharp.md.",
+      "tags": [
+        "docs",
+        "documentation",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/understand/languages/css.md",
+      "type": "document",
+      "name": "css.md",
+      "filePath": ".claude/skills/understand/languages/css.md",
+      "summary": "Documentation file outlining specifications and guides in css.md.",
+      "tags": [
+        "docs",
+        "documentation",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/understand/languages/dockerfile.md",
+      "type": "document",
+      "name": "dockerfile.md",
+      "filePath": ".claude/skills/understand/languages/dockerfile.md",
+      "summary": "Documentation file outlining specifications and guides in dockerfile.md.",
+      "tags": [
+        "docs",
+        "documentation",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/understand/languages/go.md",
+      "type": "document",
+      "name": "go.md",
+      "filePath": ".claude/skills/understand/languages/go.md",
+      "summary": "Documentation file outlining specifications and guides in go.md.",
+      "tags": [
+        "docs",
+        "documentation",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/understand/languages/graphql.md",
+      "type": "document",
+      "name": "graphql.md",
+      "filePath": ".claude/skills/understand/languages/graphql.md",
+      "summary": "Documentation file outlining specifications and guides in graphql.md.",
+      "tags": [
+        "docs",
+        "documentation",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/understand/languages/html.md",
+      "type": "document",
+      "name": "html.md",
+      "filePath": ".claude/skills/understand/languages/html.md",
+      "summary": "Documentation file outlining specifications and guides in html.md.",
+      "tags": [
+        "docs",
+        "documentation",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/understand/languages/java.md",
+      "type": "document",
+      "name": "java.md",
+      "filePath": ".claude/skills/understand/languages/java.md",
+      "summary": "Documentation file outlining specifications and guides in java.md.",
+      "tags": [
+        "docs",
+        "documentation",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/understand/languages/javascript.md",
+      "type": "document",
+      "name": "javascript.md",
+      "filePath": ".claude/skills/understand/languages/javascript.md",
+      "summary": "Documentation file outlining specifications and guides in javascript.md.",
+      "tags": [
+        "docs",
+        "documentation",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/understand/languages/json.md",
+      "type": "document",
+      "name": "json.md",
+      "filePath": ".claude/skills/understand/languages/json.md",
+      "summary": "Documentation file outlining specifications and guides in json.md.",
+      "tags": [
+        "docs",
+        "documentation",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/understand/languages/kotlin.md",
+      "type": "document",
+      "name": "kotlin.md",
+      "filePath": ".claude/skills/understand/languages/kotlin.md",
+      "summary": "Documentation file outlining specifications and guides in kotlin.md.",
+      "tags": [
+        "docs",
+        "documentation",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/understand/languages/markdown.md",
+      "type": "document",
+      "name": "markdown.md",
+      "filePath": ".claude/skills/understand/languages/markdown.md",
+      "summary": "Documentation file outlining specifications and guides in markdown.md.",
+      "tags": [
+        "docs",
+        "documentation",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/understand/languages/php.md",
+      "type": "document",
+      "name": "php.md",
+      "filePath": ".claude/skills/understand/languages/php.md",
+      "summary": "Documentation file outlining specifications and guides in php.md.",
+      "tags": [
+        "docs",
+        "documentation",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/understand/languages/protobuf.md",
+      "type": "document",
+      "name": "protobuf.md",
+      "filePath": ".claude/skills/understand/languages/protobuf.md",
+      "summary": "Documentation file outlining specifications and guides in protobuf.md.",
+      "tags": [
+        "docs",
+        "documentation",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/understand/languages/python.md",
+      "type": "document",
+      "name": "python.md",
+      "filePath": ".claude/skills/understand/languages/python.md",
+      "summary": "Documentation file outlining specifications and guides in python.md.",
+      "tags": [
+        "docs",
+        "documentation",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/understand/languages/ruby.md",
+      "type": "document",
+      "name": "ruby.md",
+      "filePath": ".claude/skills/understand/languages/ruby.md",
+      "summary": "Documentation file outlining specifications and guides in ruby.md.",
+      "tags": [
+        "docs",
+        "documentation",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/understand/languages/rust.md",
+      "type": "document",
+      "name": "rust.md",
+      "filePath": ".claude/skills/understand/languages/rust.md",
+      "summary": "Documentation file outlining specifications and guides in rust.md.",
+      "tags": [
+        "docs",
+        "documentation",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/understand/languages/shell.md",
+      "type": "document",
+      "name": "shell.md",
+      "filePath": ".claude/skills/understand/languages/shell.md",
+      "summary": "Documentation file outlining specifications and guides in shell.md.",
+      "tags": [
+        "docs",
+        "documentation",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/understand/languages/sql.md",
+      "type": "document",
+      "name": "sql.md",
+      "filePath": ".claude/skills/understand/languages/sql.md",
+      "summary": "Documentation file outlining specifications and guides in sql.md.",
+      "tags": [
+        "docs",
+        "documentation",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/understand/languages/swift.md",
+      "type": "document",
+      "name": "swift.md",
+      "filePath": ".claude/skills/understand/languages/swift.md",
+      "summary": "Documentation file outlining specifications and guides in swift.md.",
+      "tags": [
+        "docs",
+        "documentation",
+        "module"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

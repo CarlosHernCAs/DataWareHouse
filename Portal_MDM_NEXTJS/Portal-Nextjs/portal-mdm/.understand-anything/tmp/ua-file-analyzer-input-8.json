@@ -1,0 +1,145 @@
+{
+  "projectRoot": "d:/Proyecto2026/ACP_DWH/ACP Proyecciones/Portal_MDM_NEXTJS/Portal-Nextjs/portal-mdm",
+  "batchFiles": [
+    {
+      "path": "app/(admin)/catalogos/catalogos-client.tsx",
+      "language": "typescript",
+      "sizeLines": 895,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/(admin)/configuracion/configuracion-client.tsx",
+      "language": "typescript",
+      "sizeLines": 764,
+      "fileCategory": "code"
+    },
+    {
+      "path": "components/control-center/cambiar-clave-dialog.tsx",
+      "language": "typescript",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "components/control-center/nueva-variedad-dialog.tsx",
+      "language": "typescript",
+      "sizeLines": 85,
+      "fileCategory": "code"
+    },
+    {
+      "path": "components/control-center/nuevo-usuario-dialog.tsx",
+      "language": "typescript",
+      "sizeLines": 137,
+      "fileCategory": "code"
+    },
+    {
+      "path": "components/ui/form-dialog.tsx",
+      "language": "typescript",
+      "sizeLines": 266,
+      "fileCategory": "code"
+    },
+    {
+      "path": "components/ui/form-field.tsx",
+      "language": "typescript",
+      "sizeLines": 116,
+      "fileCategory": "code"
+    },
+    {
+      "path": "components/ui/input.tsx",
+      "language": "typescript",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "hooks/use-catalogos.ts",
+      "language": "typescript",
+      "sizeLines": 245,
+      "fileCategory": "code"
+    },
+    {
+      "path": "hooks/use-configuracion.ts",
+      "language": "typescript",
+      "sizeLines": 218,
+      "fileCategory": "code"
+    },
+    {
+      "path": "hooks/use-toast.ts",
+      "language": "typescript",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "app/(admin)/catalogos/catalogos-client.tsx": [
+      "components/control-center/nueva-variedad-dialog.tsx",
+      "components/ui/badge.tsx",
+      "components/ui/button.tsx",
+      "components/ui/input.tsx",
+      "components/ui/skeleton.tsx",
+      "hooks/use-catalogos.ts",
+      "hooks/use-toast.ts",
+      "lib/format.ts",
+      "lib/schemas/catalogos.ts",
+      "lib/utils.ts"
+    ],
+    "app/(admin)/configuracion/configuracion-client.tsx": [
+      "components/control-center/cambiar-clave-dialog.tsx",
+      "components/control-center/nuevo-usuario-dialog.tsx",
+      "components/providers/preferencias-provider.tsx",
+      "components/ui/badge.tsx",
+      "components/ui/button.tsx",
+      "components/ui/input.tsx",
+      "components/ui/skeleton.tsx",
+      "hooks/use-configuracion.ts",
+      "hooks/use-toast.ts",
+      "lib/format.ts",
+      "lib/schemas/configuracion.ts",
+      "lib/utils.ts"
+    ],
+    "components/control-center/cambiar-clave-dialog.tsx": [
+      "components/ui/button.tsx",
+      "components/ui/form-dialog.tsx",
+      "components/ui/form-field.tsx",
+      "hooks/use-configuracion.ts",
+      "hooks/use-toast.ts",
+      "lib/schemas/configuracion.ts"
+    ],
+    "components/control-center/nueva-variedad-dialog.tsx": [
+      "components/ui/button.tsx",
+      "components/ui/form-dialog.tsx",
+      "components/ui/form-field.tsx",
+      "components/ui/input.tsx",
+      "hooks/use-catalogos.ts",
+      "hooks/use-toast.ts",
+      "lib/schemas/catalogos.ts"
+    ],
+    "components/control-center/nuevo-usuario-dialog.tsx": [
+      "components/ui/button.tsx",
+      "components/ui/form-dialog.tsx",
+      "components/ui/form-field.tsx",
+      "components/ui/input.tsx",
+      "hooks/use-configuracion.ts",
+      "hooks/use-toast.ts",
+      "lib/schemas/configuracion.ts"
+    ],
+    "components/ui/form-dialog.tsx": [
+      "components/ui/button.tsx",
+      "hooks/use-toast.ts",
+      "lib/utils.ts"
+    ],
+    "components/ui/form-field.tsx": [
+      "components/ui/input.tsx",
+      "components/ui/label.tsx",
+      "lib/utils.ts"
+    ],
+    "components/ui/input.tsx": [
+      "lib/utils.ts"
+    ],
+    "hooks/use-catalogos.ts": [
+      "lib/schemas/catalogos.ts"
+    ],
+    "hooks/use-configuracion.ts": [
+      "lib/schemas/configuracion.ts"
+    ],
+    "hooks/use-toast.ts": []
+  }
+}

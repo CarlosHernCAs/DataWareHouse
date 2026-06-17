@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Prototipo interactivo · Home Analista</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --color-bg:#0f172a; --color-surface:#1e293b; --color-surface-2:#334155; --color-border:#1e3a5f;
+    --color-primary:#2563eb; --color-primary-2:#0369a1;
+    --color-warning:#d97706; --color-success:#059669; --color-destructive:#dc2626; --color-info:#0284c7;
+    --color-text:#f8fafc; --color-text-muted:#94a3b8; --color-ring:#60a5fa;
+    --radius-md:8px; --radius-lg:12px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Inter,system-ui,sans-serif;background:var(--color-bg);color:var(--color-text);-webkit-font-smoothing:antialiased;line-height:1.5}
+  .mono{font-family:"JetBrains Mono",monospace}.tnum{font-variant-numeric:tabular-nums}
+  button{font-family:inherit}
+
+  .app{display:grid;grid-template-columns:240px 1fr;min-height:100vh}
+  .sidebar{background:#0b1322;border-right:1px solid var(--color-border);padding:18px 14px;display:flex;flex-direction:column;gap:4px}
+  .brand{display:flex;align-items:center;gap:10px;padding:6px 8px 18px}
+  .brand .logo{width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,var(--color-primary),var(--color-primary-2));display:grid;place-items:center;font-weight:800}
+  .brand b{font-size:14px}.brand small{display:block;color:var(--color-text-muted);font-size:11px;font-weight:500}
+  .navlabel{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--color-text-muted);padding:14px 10px 6px;font-weight:700}
+  .nav a{display:flex;align-items:center;gap:11px;padding:9px 10px;border-radius:var(--radius-md);color:var(--color-text-muted);text-decoration:none;font-size:13.5px;font-weight:500}
+  .nav a svg{width:17px;height:17px}
+  .nav a:hover{background:var(--color-surface);color:var(--color-text)}
+  .nav a.active{background:color-mix(in oklab,var(--color-primary) 18%,transparent);color:#fff}
+  .nav a.active svg{color:var(--color-ring)}
+  .user{margin-top:auto;display:flex;align-items:center;gap:10px;padding:10px;border-top:1px solid var(--color-border)}
+  .avatar{width:30px;height:30px;border-radius:50%;background:var(--color-surface-2);display:grid;place-items:center;font-size:12px;font-weight:700}
+
+  .main{display:flex;flex-direction:column;min-width:0}
+  .topbar{height:56px;border-bottom:1px solid var(--color-border);display:flex;align-items:center;gap:14px;padding:0 24px}
+  .crumb{color:var(--color-text-muted);font-size:13px}.crumb b{color:var(--color-text);font-weight:600}
+  .content{padding:24px;display:flex;flex-direction:column;gap:20px;max-width:1320px;width:100%}
+
+  .hero{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap}
+  .hero h1{font-size:24px;font-weight:800;letter-spacing:-.4px}
+  .hero .sub{margin-top:5px;color:var(--color-text-muted);font-size:13.5px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .pill{display:inline-flex;align-items:center;gap:6px;padding:3px 9px;border-radius:999px;font-size:11.5px;font-weight:600;border:1px solid var(--color-border);background:var(--color-surface)}
+  .pill.saved{color:#6ee7b7;border-color:color-mix(in oklab,var(--color-success) 45%,transparent);background:color-mix(in oklab,var(--color-success) 14%,transparent)}
+  .dot{width:6px;height:6px;border-radius:50%;background:currentColor;display:inline-block}
+  .actions{display:flex;align-items:center;gap:10px}
+  .seg{display:inline-flex;background:var(--color-surface);border:1px solid var(--color-border);border-radius:10px;padding:3px}
+  .seg button{border:0;background:transparent;color:var(--color-text-muted);font-size:12.5px;font-weight:600;padding:7px 14px;border-radius:7px;cursor:pointer;display:flex;align-items:center;gap:7px}
+  .seg button.on{background:var(--color-primary);color:#fff}
+  .seg button svg{width:14px;height:14px}
+  .btn{display:inline-flex;align-items:center;gap:7px;border-radius:9px;font-size:12.5px;font-weight:600;padding:8px 14px;cursor:pointer;border:1px solid transparent}
+  .btn svg{width:15px;height:15px}
+  .btn.primary{background:var(--color-primary);color:#fff}
+  .btn.ghost{background:var(--color-surface);border-color:var(--color-border);color:var(--color-text)}
+  .btn:disabled{opacity:.5;cursor:not-allowed}
+
+  .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .kpi{position:relative;overflow:hidden;background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:15px 16px}
+  .kpi .k-top{display:flex;align-items:center;justify-content:space-between;color:var(--color-text-muted);font-size:11.5px;font-weight:600;text-transform:uppercase;letter-spacing:.07em}
+  .kpi .k-ico{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;background:color-mix(in oklab,var(--color-primary) 16%,transparent);color:var(--color-ring)}
+  .kpi .k-val{font-size:26px;font-weight:800;letter-spacing:-.5px;margin-top:10px}
+  .kpi .k-val small{font-size:13px;font-weight:600;color:var(--color-text-muted)}
+  .kpi .k-delta{font-size:12px;font-weight:700;margin-top:3px}
+  .up{color:#34d399}.down{color:#f87171}
+  .kpi .spark{position:absolute;right:0;bottom:0;width:120px;height:46px;opacity:.55}
+
+  .section-row{display:flex;align-items:center;justify-content:space-between}
+  .section-row h2{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--color-text-muted)}
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;grid-auto-rows:172px}
+  .grid.edit{padding:16px;border:1px dashed color-mix(in oklab,var(--color-primary) 45%,var(--color-border));border-radius:var(--radius-lg);background:color-mix(in oklab,var(--color-primary) 5%,transparent)}
+  .card{display:flex;flex-direction:column;background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);overflow:hidden;transition:border-color .18s,box-shadow .18s}
+  .card:hover{border-color:color-mix(in oklab,var(--color-primary) 55%,var(--color-border));box-shadow:0 8px 28px -12px rgba(0,0,0,.6)}
+  .card .head{display:flex;align-items:center;gap:9px;padding:11px 13px;border-bottom:1px solid var(--color-border)}
+  .chip{display:inline-flex;align-items:center;gap:5px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:3px 7px;border-radius:6px;background:var(--color-surface-2);color:var(--color-text-muted)}
+  .chip svg{width:11px;height:11px}
+  .chip.linea,.chip.area{color:#93c5fd;background:color-mix(in oklab,#3b82f6 18%,transparent)}
+  .chip.barra{color:#a7f3d0;background:color-mix(in oklab,#10b981 18%,transparent)}
+  .chip.pie{color:#fcd34d;background:color-mix(in oklab,#f59e0b 18%,transparent)}
+  .chip.forecast{color:#c4b5fd;background:color-mix(in oklab,#8b5cf6 18%,transparent)}
+  .chip.tabla{color:#fda4af;background:color-mix(in oklab,#f43f5e 18%,transparent)}
+  .card .title{font-size:13px;font-weight:600;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .card .grip{color:var(--color-text-muted);opacity:0;transition:opacity .15s;cursor:grab;font-size:13px}
+  .card:hover .grip{opacity:.55}
+  .grid.edit .grip{opacity:.7}
+  .card .body{flex:1;padding:12px 13px;min-height:0;display:flex;flex-direction:column;justify-content:center}
+  .col-1{grid-column:span 1}.col-2{grid-column:span 2}.row-2{grid-row:span 2}
+  .editbtns{display:none;gap:4px}
+  .grid.edit .editbtns{display:flex}
+  .ebtn{width:24px;height:24px;border-radius:6px;border:1px solid var(--color-border);background:var(--color-surface-2);display:grid;place-items:center;color:var(--color-text-muted);cursor:pointer}
+  .ebtn.del{color:#f87171}
+  .ebtn svg{width:13px;height:13px}
+
+  .bignum{font-size:38px;font-weight:800;letter-spacing:-1px;line-height:1}
+  .bignum small{font-size:15px;color:var(--color-text-muted);font-weight:600}
+  .subtle{color:var(--color-text-muted);font-size:12px;margin-top:6px}
+  .badge-mini{font-size:10px;font-weight:700;padding:2px 7px;border-radius:999px;background:color-mix(in oklab,var(--color-primary) 18%,transparent);color:var(--color-ring)}
+  table.mini{width:100%;border-collapse:collapse;font-size:12px}
+  table.mini th{text-align:left;color:var(--color-text-muted);font-size:10px;text-transform:uppercase;letter-spacing:.06em;padding:5px 6px;border-bottom:1px solid var(--color-border)}
+  table.mini td{padding:5px 6px;border-bottom:1px solid color-mix(in oklab,var(--color-border) 60%,transparent)}
+  table.mini td.num{text-align:right;font-family:"JetBrains Mono",monospace}
+
+  .add-tile{border:2px dashed color-mix(in oklab,var(--color-text-muted) 40%,transparent);border-radius:var(--radius-lg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:var(--color-text-muted);cursor:pointer;background:transparent}
+  .add-tile:hover{border-color:var(--color-primary);color:var(--color-ring);background:color-mix(in oklab,var(--color-primary) 8%,transparent)}
+  .add-tile svg{width:26px;height:26px}
+
+  /* modal */
+  .overlay{position:fixed;inset:0;background:rgba(2,6,23,.66);backdrop-filter:blur(3px);display:none;align-items:center;justify-content:center;z-index:50;padding:20px}
+  .overlay.open{display:flex}
+  .modal{width:100%;max-width:520px;background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);box-shadow:0 30px 80px -20px rgba(0,0,0,.8);overflow:hidden;animation:pop .18s ease-out}
+  @keyframes pop{from{opacity:0;transform:translateY(8px) scale(.98)}to{opacity:1;transform:none}}
+  .modal h3{font-size:16px;font-weight:700;padding:18px 20px;border-bottom:1px solid var(--color-border)}
+  .mbody{padding:18px 20px;display:flex;flex-direction:column;gap:14px;max-height:62vh;overflow:auto}
+  .field{display:flex;flex-direction:column;gap:6px}
+  .field label{font-size:12px;font-weight:600;color:var(--color-text-muted)}
+  .field input,.field select{background:var(--color-bg);border:1px solid var(--color-border);border-radius:var(--radius-md);padding:9px 11px;color:var(--color-text);font-size:13px;font-family:inherit}
+  .field input:focus,.field select:focus{outline:2px solid var(--color-ring);outline-offset:1px}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .typegrid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+  .typebtn{display:flex;flex-direction:column;align-items:center;gap:5px;padding:10px 6px;border:1px solid var(--color-border);border-radius:var(--radius-md);background:var(--color-bg);color:var(--color-text-muted);cursor:pointer;font-size:10.5px;font-weight:600}
+  .typebtn svg{width:18px;height:18px}
+  .typebtn.sel{border-color:var(--color-primary);background:color-mix(in oklab,var(--color-primary) 14%,transparent);color:#fff}
+  .mfoot{padding:14px 20px;border-top:1px solid var(--color-border);display:flex;justify-content:flex-end;gap:10px}
+  .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--color-surface);border:1px solid var(--color-border);border-left:3px solid var(--color-success);border-radius:var(--radius-md);padding:11px 18px;font-size:13px;box-shadow:0 16px 40px -10px rgba(0,0,0,.7);opacity:0;transition:.25s;z-index:60}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+  @media (max-width:1100px){.kpis{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:repeat(2,1fr)}.typegrid{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand"><div class="logo">A</div><div><b>ACP DWH</b><small>Portal MDM</small></div></div>
+    <div class="navlabel">Analista</div>
+    <nav class="nav">
+      <a class="active" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Mi Workspace</a>
+      <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>Proyecciones</a>
+      <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>Explorar</a>
+      <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>Modelos</a>
+      <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/></svg>Reportes</a>
+    </nav>
+    <div class="user"><div class="avatar">CL</div><div><div style="font-size:12.5px;font-weight:600">Carlo López</div><div style="font-size:11px;color:var(--color-text-muted)">Analista</div></div></div>
+  </aside>
+
+  <div class="main">
+    <div class="topbar"><div class="crumb">Analista / <b>Mi Workspace</b></div></div>
+    <div class="content">
+      <div class="hero">
+        <div>
+          <h1>👋 Buenos días, Carlo</h1>
+          <div class="sub">
+            <span id="today"></span><span class="dot" style="opacity:.4"></span>
+            <span><b id="wcount"></b> widgets activos</span>
+            <span class="pill saved"><span class="dot"></span> <span id="savedTxt">Datos en vivo</span></span>
+          </div>
+        </div>
+        <div class="actions">
+          <div class="seg" id="seg">
+            <button data-mode="view" class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>Ver</button>
+            <button data-mode="edit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>Editar</button>
+          </div>
+          <button class="btn primary" id="addBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5v14"/></svg>Añadir widget</button>
+        </div>
+      </div>
+
+      <div class="kpis" id="kpis"></div>
+
+      <div class="section-row"><h2>Mis widgets</h2><span class="pill" id="modeHint">Grid adaptable</span></div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ADD / EDIT MODAL -->
+<div class="overlay" id="overlay">
+  <div class="modal">
+    <h3 id="modalTitle">Nuevo widget</h3>
+    <div class="mbody">
+      <div class="field">
+        <label>Tipo de visualización</label>
+        <div class="typegrid" id="typeGrid"></div>
+      </div>
+      <div class="field">
+        <label>Título del widget</label>
+        <input id="fTitle" placeholder="ej: Cosecha por variedad" />
+      </div>
+      <div class="field">
+        <label>Fuente de datos (vista del DWH)</label>
+        <select id="fSource"></select>
+      </div>
+      <div class="two">
+        <div class="field"><label>Métrica / Eje Y</label><select id="fMetric"></select></div>
+        <div class="field"><label>Dimensión / Eje X</label><select id="fDim"></select></div>
+      </div>
+      <div class="two">
+        <div class="field"><label>Tamaño en el grid</label>
+          <select id="fSize"><option value="col-1">Pequeño (1×1)</option><option value="col-2" selected>Mediano (2×1)</option><option value="col-2 row-2">Grande (2×2)</option></select>
+        </div>
+        <div class="field"><label>Volatilidad de datos</label>
+          <select id="fVol"><option value="0.6">Estable</option><option value="1" selected>Normal</option><option value="1.8">Alta</option></select>
+        </div>
+      </div>
+    </div>
+    <div class="mfoot">
+      <button class="btn ghost" id="cancelBtn">Cancelar</button>
+      <button class="btn primary" id="saveBtn">Agregar widget</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ============================================================
+   Prototipo interactivo — Home del analista
+   - Gráficos SVG que fluctúan en vivo (ondas + ruido suave).
+   - "Añadir widget": modal que crea el cuadro con la fuente
+     y métrica elegidas y datos sintéticos coherentes.
+   ============================================================ */
+const ICONS = {
+  linea:'<path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/>',
+  area:'<path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6v8H7z" fill="currentColor" stroke="none"/>',
+  barra:'<path d="M3 3v18h18"/><rect x="7" y="10" width="3" height="7"/><rect x="12" y="6" width="3" height="11"/><rect x="17" y="13" width="3" height="4"/>',
+  pie:'<path d="M21 12A9 9 0 1 1 12 3v9z"/>',
+  kpi:'<path d="M4 4h16v16H4z"/><path d="M8 14l3-3 2 2 3-4"/>',
+  forecast:'<path d="M22 12h-4l-3 9L9 3l-3 9H2"/>',
+  tabla:'<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/>'
+};
+const TYPES = [
+  {v:'kpi',label:'KPI'},{v:'linea',label:'Línea'},{v:'area',label:'Área'},{v:'barra',label:'Barras'},
+  {v:'pie',label:'Donut'},{v:'forecast',label:'Forecast'},{v:'tabla',label:'Tabla'}
+];
+const SOURCES = {
+  'vw_cosecha_diaria':{label:'Cosecha diaria', metrics:['kg_cosechados','jabas','rendimiento'], dims:['fecha','variedad','fundo']},
+  'vw_rendimiento_fundo':{label:'Rendimiento por fundo', metrics:['kg_por_planta','kg_por_ha'], dims:['fundo','sector','variedad']},
+  'vw_calidad_tabla':{label:'Calidad por tabla', metrics:['pct_aprobado','registros'], dims:['tabla','estado']},
+  'vw_jornales':{label:'Jornales / labor', metrics:['jornales','jornales_ha'], dims:['fecha','labor','cuadrilla']},
+  'vw_proyeccion_var':{label:'Proyección por variedad', metrics:['proyectado_kg'], dims:['semana','variedad']}
+};
+const COLORS = ['#60a5fa','#34d399','#fbbf24','#f472b6','#a78bfa'];
+
+let clock = 0;
+let editMode = false;
+let widgets = seedWidgets();
+
+/* ---------- generación de datos fluctuantes ---------- */
+function noise(seed,i){ return Math.sin(i*1.73 + seed*2.6) * 0.5 + Math.sin(i*0.61 + seed*5.1)*0.5; }
+function series(seed, n, vol){
+  const arr=[];
+  for(let i=0;i<n;i++){
+    const wave = Math.sin(i*0.55 + seed + clock*0.9);
+    const drift = Math.sin(clock*0.35 + seed)*0.4;
+    arr.push(50 + wave*22*vol + noise(seed,i)*14*vol + drift*18);
+  }
+  return arr;
+}
+function liveNumber(base, seed, vol){ return base * (1 + Math.sin(clock*0.8+seed)*0.04*vol + noise(seed,3)*0.02*vol); }
+
+/* ---------- renderers (devuelven HTML del body) ---------- */
+function pts(vals,w,h){
+  const min=Math.min(...vals), max=Math.max(...vals), r=(max-min)||1;
+  return vals.map((v,i)=>`${(i/(vals.length-1))*w},${h-((v-min)/r)*(h-12)-6}`).join(' ');
+}
+function gridLines(w,h){return `<g stroke="var(--color-border)" stroke-width="1">${[.33,.66].map(f=>`<line x1="0" y1="${h*f}" x2="${w}" y2="${h*f}"/>`).join('')}</g>`;}
+
+function renderBody(wd){
+  const vol = wd.vol;
+  if(wd.type==='kpi'){
+    const val = liveNumber(wd.base, wd.seed, vol);
+    const delta = (Math.sin(clock*0.7+wd.seed)*6+ (wd.seed*3.1%7)-1).toFixed(1);
+    const up = +delta>=0;
+    const sp = series(wd.seed,9,vol);
+    return `<div class="bignum tnum">${fmt(val)}<small> ${wd.unit}</small></div>
+      <div class="subtle"><span class="${up?'up':'down'}" style="font-weight:700">${up?'▲':'▼'} ${Math.abs(delta)}%</span> vs. periodo ant.</div>
+      <svg viewBox="0 0 200 34" preserveAspectRatio="none" style="width:100%;height:30px;margin-top:6px;opacity:.7"><polyline fill="none" stroke="${up?'#34d399':'#f87171'}" stroke-width="2" points="${pts(sp,200,34)}"/></svg>`;
+  }
+  if(wd.type==='tabla'){
+    const rows = wd.cats.map((c,i)=>{const v=liveNumber(800+i*180,wd.seed+i,vol);return `<tr><td>${c}</td><td class="num">${fmt(v)}</td></tr>`;}).join('');
+    return `<div style="width:100%;align-self:flex-start"><table class="mini"><thead><tr><th>${wd.dim}</th><th style="text-align:right">${wd.metric}</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+  }
+  if(wd.type==='pie'){
+    let segs = wd.cats.map((c,i)=>Math.abs(40+Math.sin(clock*0.5+wd.seed+i)*18*vol));
+    const tot=segs.reduce((a,b)=>a+b,0); let off=25;
+    const circles = segs.map((s,i)=>{const p=s/tot*100;const c=`<circle cx="21" cy="21" r="15.9" fill="none" stroke="${COLORS[i%5]}" stroke-width="6" stroke-dasharray="${p.toFixed(1)} ${(100-p).toFixed(1)}" stroke-dashoffset="${off.toFixed(1)}"/>`;off-=p;return c;}).join('');
+    const legend = wd.cats.map((c,i)=>`<span><span class="dot" style="color:${COLORS[i%5]}"></span> ${c} ${(segs[i]/tot*100).toFixed(0)}%</span>`).join('');
+    return `<div style="display:flex;flex-direction:row;align-items:center;gap:12px;height:100%">
+      <svg width="84" height="84" viewBox="0 0 42 42"><circle cx="21" cy="21" r="15.9" fill="none" stroke="var(--color-surface-2)" stroke-width="6"/>${circles}</svg>
+      <div style="font-size:11px;display:flex;flex-direction:column;gap:5px">${legend}</div></div>`;
+  }
+  if(wd.type==='forecast'){
+    const hist=series(wd.seed,7,vol), fc=series(wd.seed+1,5,vol).map(v=>v+12);
+    const all=hist.concat(fc); const min=Math.min(...all),max=Math.max(...all),r=(max-min)||1;
+    const W=320,H=wd.big?200:110;
+    const map=(v,i,n,x0,x1)=>`${x0+(i/(n-1))*(x1-x0)},${H-((v-min)/r)*(H-14)-7}`;
+    const hp=hist.map((v,i)=>map(v,i,hist.length,0,W*0.55)).join(' ');
+    const fp=fc.map((v,i)=>map(v,i,fc.length,W*0.55,W)).join(' ');
+    const band=`${fc.map((v,i)=>map(v+9,i,fc.length,W*0.55,W)).join(' ')} ${fc.map((v,i)=>map(v-9,i,fc.length,W*0.55,W)).reverse().join(' ')}`;
+    return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" style="width:100%;height:100%">${gridLines(W,H)}
+      <polyline points="${band}" fill="color-mix(in oklab,#8b5cf6 20%,transparent)" stroke="none"/>
+      <polyline fill="none" stroke="#60a5fa" stroke-width="2.5" points="${hp}"/>
+      <polyline fill="none" stroke="#a78bfa" stroke-width="2.5" stroke-dasharray="5 4" points="${fp}"/></svg>
+      <div class="subtle" style="display:flex;gap:14px;margin-top:6px"><span><span class="dot" style="color:#60a5fa"></span>Histórico</span><span><span class="dot" style="color:#a78bfa"></span>Proyectado</span></div>`;
+  }
+  if(wd.type==='barra'){
+    const vals=series(wd.seed,6,vol).map(Math.abs); const min=Math.min(...vals),max=Math.max(...vals),r=(max-min)||1;
+    const W=320,H=110, bw=W/vals.length-10;
+    const bars=vals.map((v,i)=>{const bh=((v-min)/r)*(H-16)+10;return `<rect x="${i*(W/vals.length)+5}" y="${H-bh}" width="${bw}" height="${bh}" rx="3" fill="${i%2?'#3b82f6':'#2563eb'}"/>`;}).join('');
+    return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" style="width:100%;height:100%">${bars}</svg>`;
+  }
+  // linea / area
+  const nSeries = wd.big?3:(wd.type==='area'?1:2);
+  const W=320,H=wd.big?200:110;
+  let svg=gridLines(W,H);
+  for(let s=0;s<nSeries;s++){
+    const v=series(wd.seed+s*3,9,vol); const p=pts(v,W,H);
+    if(wd.type==='area'&&s===0) svg+=`<polygon points="0,${H} ${p} ${W},${H}" fill="color-mix(in oklab,${COLORS[s]} 22%,transparent)" stroke="none"/>`;
+    svg+=`<polyline fill="none" stroke="${COLORS[s]}" stroke-width="2.5" points="${p}"/>`;
+  }
+  return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" style="width:100%;height:100%">${svg}</svg>`;
+}
+
+function fmt(n){return Math.round(n).toLocaleString('es-PE');}
+
+/* ---------- grid render (shells) ---------- */
+function renderGrid(){
+  const g=document.getElementById('grid');
+  g.className='grid'+(editMode?' edit':'');
+  g.innerHTML = widgets.map(wd=>`
+    <div class="card ${wd.size}" data-id="${wd.id}">
+      <div class="head">
+        ${editMode?'<span class="grip">⋮⋮</span>':''}
+        <span class="chip ${wd.type}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">${ICONS[wd.type]}</svg>${TYPES.find(t=>t.v===wd.type).label}</span>
+        <span class="title">${wd.title}</span>
+        ${wd.tag?`<span class="badge-mini">${wd.tag}</span>`:''}
+        ${!editMode?'<span class="grip">⋮⋮</span>':''}
+        <div class="editbtns">
+          <button class="ebtn" title="Editar" onclick="openModal('${wd.id}')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button>
+          <button class="ebtn del" title="Eliminar" onclick="removeWidget('${wd.id}')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6"/></svg></button>
+        </div>
+      </div>
+      <div class="body" id="body-${wd.id}"></div>
+    </div>`).join('') + (editMode?`<button class="add-tile ${''}" onclick="openModal()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5v14"/></svg><span style="font-size:12px;font-weight:600">Agregar</span></button>`:'');
+  document.getElementById('wcount').textContent=widgets.length;
+  document.getElementById('modeHint').textContent = editMode?'Arrastra · edita · elimina':'Grid adaptable';
+}
+
+/* ---------- KPIs strip ---------- */
+const KPIS=[
+  {label:'Cosecha total',unit:'t',base:1284,seed:1,color:'#34d399'},
+  {label:'Rendimiento',unit:'kg/pl',base:2.31,seed:2,color:'#60a5fa',dec:true},
+  {label:'Proyección 30d',unit:'t',base:418,seed:3,color:'#c4b5fd'},
+  {label:'Calidad datos',unit:'%',base:98,seed:4,color:'#fbbf24',dec:true}
+];
+function renderKpiShells(){
+  document.getElementById('kpis').innerHTML=KPIS.map((k,i)=>`
+    <div class="kpi">
+      <div class="k-top"><span>${k.label}</span><span class="k-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></span></div>
+      <div class="k-val tnum" id="kv-${i}"></div><div class="k-delta" id="kd-${i}"></div>
+      <svg class="spark" id="ks-${i}" viewBox="0 0 120 46" preserveAspectRatio="none"></svg>
+    </div>`).join('');
+}
+function tickKpis(){
+  KPIS.forEach((k,i)=>{
+    const v=liveNumber(k.base,k.seed,1);
+    const d=(Math.sin(clock*0.6+k.seed)*7+2).toFixed(1); const up=+d>=0;
+    document.getElementById('kv-'+i).innerHTML = (k.dec?v.toFixed(k.unit==='%'?1:2):fmt(v))+`<small> ${k.unit}</small>`;
+    const dd=document.getElementById('kd-'+i); dd.className='k-delta '+(up?'up':'down'); dd.innerHTML=`${up?'▲':'▼'} ${Math.abs(d)}%`;
+    document.getElementById('ks-'+i).innerHTML=`<polyline fill="none" stroke="${k.color}" stroke-width="2" points="${pts(series(k.seed,9,1),120,46)}"/>`;
+  });
+}
+
+/* ---------- animation loop ---------- */
+function loop(){
+  clock += 0.045;
+  widgets.forEach(wd=>{const el=document.getElementById('body-'+wd.id); if(el) el.innerHTML=renderBody(wd);});
+  tickKpis();
+  requestAnimationFrame(()=>setTimeout(loop,55));
+}
+
+/* ---------- seed widgets ---------- */
+function seedWidgets(){
+  return [
+    {id:wid(),type:'kpi',title:'Hectáreas activas',unit:'ha',base:342,seed:1.2,vol:1,size:'col-1'},
+    {id:wid(),type:'linea',title:'Cosecha diaria por variedad',seed:2.4,vol:1,size:'col-2',big:false},
+    {id:wid(),type:'pie',title:'Mix de variedad',cats:['Sekoya','Rocío','Otras'],seed:3.1,vol:1,size:'col-1'},
+    {id:wid(),type:'barra',title:'Top fundos por rendimiento',seed:4.6,vol:1.2,size:'col-2'},
+    {id:wid(),type:'forecast',title:'Proyección · próximas 8 semanas',tag:'Holt-Winters',seed:5.0,vol:1,size:'col-2 row-2',big:true},
+    {id:wid(),type:'kpi',title:'Jornales / ha',unit:'',base:7.8,seed:6.3,vol:1.4,size:'col-1'},
+    {id:wid(),type:'tabla',title:'Últimos lotes',dim:'Lote',metric:'Kg',cats:['L-0421','L-0420','L-0419','L-0418'],seed:7.7,vol:1,size:'col-1'}
+  ];
+}
+function wid(){return 'w'+Math.random().toString(36).slice(2,8);}
+
+/* ---------- modal logic ---------- */
+let modalType='linea', editingId=null;
+function buildTypeGrid(){
+  document.getElementById('typeGrid').innerHTML=TYPES.map(t=>`
+    <button class="typebtn ${t.v===modalType?'sel':''}" data-type="${t.v}">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">${ICONS[t.v]}</svg>${t.label}</button>`).join('');
+  document.querySelectorAll('.typebtn').forEach(b=>b.onclick=()=>{modalType=b.dataset.type;buildTypeGrid();});
+}
+function buildSources(){
+  const s=document.getElementById('fSource');
+  s.innerHTML=Object.entries(SOURCES).map(([k,v])=>`<option value="${k}">${v.label}</option>`).join('');
+  s.onchange=fillCols; fillCols();
+}
+function fillCols(){
+  const src=SOURCES[document.getElementById('fSource').value];
+  document.getElementById('fMetric').innerHTML=src.metrics.map(m=>`<option>${m}</option>`).join('');
+  document.getElementById('fDim').innerHTML=src.dims.map(d=>`<option>${d}</option>`).join('');
+}
+function openModal(id){
+  editingId=id||null;
+  document.getElementById('modalTitle').textContent=id?'Editar widget':'Nuevo widget';
+  document.getElementById('saveBtn').textContent=id?'Guardar cambios':'Agregar widget';
+  const wd = id?widgets.find(w=>w.id===id):null;
+  modalType = wd?wd.type:'linea';
+  buildTypeGrid(); buildSources();
+  document.getElementById('fTitle').value = wd?wd.title:'';
+  document.getElementById('fSize').value = wd?wd.size:'col-2';
+  document.getElementById('fVol').value = wd?String(wd.vol):'1';
+  document.getElementById('overlay').classList.add('open');
+}
+function closeModal(){document.getElementById('overlay').classList.remove('open');}
+function saveWidget(){
+  const title=document.getElementById('fTitle').value.trim()||SOURCES[document.getElementById('fSource').value].label;
+  const size=document.getElementById('fSize').value;
+  const vol=parseFloat(document.getElementById('fVol').value);
+  const metric=document.getElementById('fMetric').value, dim=document.getElementById('fDim').value;
+  const big = size.includes('row-2');
+  const base={kpi:Math.round(200+Math.random()*900),seed:Math.random()*9};
+  if(editingId){
+    const wd=widgets.find(w=>w.id===editingId);
+    Object.assign(wd,{type:modalType,title,size,vol,metric,dim,big});
+  }else{
+    widgets.push({id:wid(),type:modalType,title,size,vol,big,seed:Math.random()*9,
+      unit:modalType==='kpi'?(metric.includes('pct')?'%':'u'):'',base:base.kpi,
+      cats:['Sekoya','Rocío','Zafiro','Otras'],dim,metric});
+  }
+  closeModal(); renderGrid();
+  showToast(editingId?'Widget actualizado':'Widget agregado a tu workspace');
+}
+function removeWidget(id){widgets=widgets.filter(w=>w.id!==id);renderGrid();showToast('Widget eliminado');}
+function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove('show'),2200);}
+
+/* ---------- wire up ---------- */
+document.getElementById('today').textContent=new Date().toLocaleDateString('es-PE',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+document.getElementById('addBtn').onclick=()=>openModal();
+document.getElementById('cancelBtn').onclick=closeModal;
+document.getElementById('saveBtn').onclick=saveWidget;
+document.getElementById('overlay').onclick=e=>{if(e.target.id==='overlay')closeModal();};
+document.querySelectorAll('#seg button').forEach(b=>b.onclick=()=>{
+  editMode=b.dataset.mode==='edit';
+  document.querySelectorAll('#seg button').forEach(x=>x.classList.toggle('on',x===b));
+  renderGrid();
+});
+renderKpiShells(); renderGrid(); loop();
+</script>
+</body>
+</html>

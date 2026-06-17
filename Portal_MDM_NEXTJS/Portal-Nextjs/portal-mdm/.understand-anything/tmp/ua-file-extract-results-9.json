@@ -1,0 +1,1573 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 9,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "app/(admin)/bitacora/bitacora-client.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 753,
+      "nonEmptyLines": 714,
+      "functions": [
+        {
+          "name": "BitacoraClient",
+          "startLine": 58,
+          "endLine": 291,
+          "params": []
+        },
+        {
+          "name": "VentanaSwitcher",
+          "startLine": 297,
+          "endLine": 330,
+          "params": [
+            "{\n  value,\n  onChange,\n}"
+          ]
+        },
+        {
+          "name": "TabButton",
+          "startLine": 332,
+          "endLine": 357,
+          "params": [
+            "{\n  active,\n  onClick,\n  children,\n}"
+          ]
+        },
+        {
+          "name": "EstadoChip",
+          "startLine": 359,
+          "endLine": 393,
+          "params": [
+            "{\n  estado,\n  active,\n  onClick,\n}"
+          ]
+        },
+        {
+          "name": "PorCorridaTable",
+          "startLine": 403,
+          "endLine": 427,
+          "params": [
+            "{ items, onOpen }"
+          ]
+        },
+        {
+          "name": "CorridaGroup",
+          "startLine": 429,
+          "endLine": 509,
+          "params": [
+            "{\n  idCorrida,\n  entries,\n  onOpen,\n}"
+          ]
+        },
+        {
+          "name": "PorTablaTable",
+          "startLine": 511,
+          "endLine": 591,
+          "params": [
+            "{\n  items,\n  onOpen,\n  embedded,\n}"
+          ]
+        },
+        {
+          "name": "fmtDur",
+          "startLine": 593,
+          "endLine": 599,
+          "params": [
+            "seg"
+          ]
+        },
+        {
+          "name": "TableSkeleton",
+          "startLine": 603,
+          "endLine": 611,
+          "params": []
+        },
+        {
+          "name": "EmptyState",
+          "startLine": 613,
+          "endLine": 648,
+          "params": [
+            "{\n  filtrosActivos,\n  onClear,\n}"
+          ]
+        },
+        {
+          "name": "ErrorBlock",
+          "startLine": 650,
+          "endLine": 677,
+          "params": [
+            "{\n  message,\n  onRetry,\n}"
+          ]
+        },
+        {
+          "name": "PaginationBar",
+          "startLine": 681,
+          "endLine": 753,
+          "params": [
+            "{\n  page,\n  totalPages,\n  total,\n  pageSize,\n  onPage,\n  onPageSize,\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "BitacoraClient",
+          "line": 58,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "BitacoraClient",
+          "callee": "useState",
+          "lineNumber": 59
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "useState",
+          "lineNumber": 60
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "useState",
+          "lineNumber": 62
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "useState",
+          "lineNumber": 63
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "useState",
+          "lineNumber": 64
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "useState",
+          "lineNumber": 65
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "useState",
+          "lineNumber": 66
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "useState",
+          "lineNumber": 67
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "useEffect",
+          "lineNumber": 69
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "setTimeout",
+          "lineNumber": 70
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "setTableQuery",
+          "lineNumber": 71
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "tableInput.trim",
+          "lineNumber": 71
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "setPage",
+          "lineNumber": 72
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "clearTimeout",
+          "lineNumber": 74
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "useBitacoraResumen",
+          "lineNumber": 77
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "useBitacoraList",
+          "lineNumber": 78
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "Array.from",
+          "lineNumber": 81
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "useMemo",
+          "lineNumber": 85
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "Math.max",
+          "lineNumber": 90
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "Math.ceil",
+          "lineNumber": 90
+        },
+        {
+          "caller": "toggleEstado",
+          "callee": "setEstadosSel",
+          "lineNumber": 96
+        },
+        {
+          "caller": "toggleEstado",
+          "callee": "next.has",
+          "lineNumber": 98
+        },
+        {
+          "caller": "toggleEstado",
+          "callee": "next.delete",
+          "lineNumber": 98
+        },
+        {
+          "caller": "toggleEstado",
+          "callee": "next.add",
+          "lineNumber": 99
+        },
+        {
+          "caller": "toggleEstado",
+          "callee": "setPage",
+          "lineNumber": 102
+        },
+        {
+          "caller": "clearFilters",
+          "callee": "setEstadosSel",
+          "lineNumber": 106
+        },
+        {
+          "caller": "clearFilters",
+          "callee": "setTableInput",
+          "lineNumber": 107
+        },
+        {
+          "caller": "clearFilters",
+          "callee": "setTableQuery",
+          "lineNumber": 108
+        },
+        {
+          "caller": "clearFilters",
+          "callee": "setPage",
+          "lineNumber": 109
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "list.refetch",
+          "lineNumber": 121
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "cn",
+          "lineNumber": 127
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "VENTANAS.find",
+          "lineNumber": 136
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "formatPercent",
+          "lineNumber": 145
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "formatNumber",
+          "lineNumber": 161
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "formatNumber",
+          "lineNumber": 167
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "formatNumber",
+          "lineNumber": 173
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "setTab",
+          "lineNumber": 190
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "setTab",
+          "lineNumber": 196
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "setTableInput",
+          "lineNumber": 215
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "ESTADOS_FILTRABLES.map",
+          "lineNumber": 226
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "estadosSel.has",
+          "lineNumber": 230
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "toggleEstado",
+          "lineNumber": 231
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "list.refetch",
+          "lineNumber": 258
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "setPageSize",
+          "lineNumber": 279
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "setPage",
+          "lineNumber": 280
+        },
+        {
+          "caller": "BitacoraClient",
+          "callee": "setDetailId",
+          "lineNumber": 287
+        },
+        {
+          "caller": "VentanaSwitcher",
+          "callee": "VENTANAS.map",
+          "lineNumber": 310
+        },
+        {
+          "caller": "VentanaSwitcher",
+          "callee": "onChange",
+          "lineNumber": 316
+        },
+        {
+          "caller": "VentanaSwitcher",
+          "callee": "cn",
+          "lineNumber": 317
+        },
+        {
+          "caller": "TabButton",
+          "callee": "cn",
+          "lineNumber": 347
+        },
+        {
+          "caller": "EstadoChip",
+          "callee": "cn",
+          "lineNumber": 382
+        },
+        {
+          "caller": "PorCorridaTable",
+          "callee": "useMemo",
+          "lineNumber": 404
+        },
+        {
+          "caller": "PorCorridaTable",
+          "callee": "map.get",
+          "lineNumber": 408
+        },
+        {
+          "caller": "PorCorridaTable",
+          "callee": "arr.push",
+          "lineNumber": 409
+        },
+        {
+          "caller": "PorCorridaTable",
+          "callee": "map.set",
+          "lineNumber": 410
+        },
+        {
+          "caller": "PorCorridaTable",
+          "callee": "Array.from(map.entries()).map",
+          "lineNumber": 412
+        },
+        {
+          "caller": "PorCorridaTable",
+          "callee": "Array.from",
+          "lineNumber": 412
+        },
+        {
+          "caller": "PorCorridaTable",
+          "callee": "map.entries",
+          "lineNumber": 412
+        },
+        {
+          "caller": "PorCorridaTable",
+          "callee": "groups.map",
+          "lineNumber": 417
+        },
+        {
+          "caller": "CorridaGroup",
+          "callee": "useState",
+          "lineNumber": 438
+        },
+        {
+          "caller": "CorridaGroup",
+          "callee": "entries.filter",
+          "lineNumber": 439
+        },
+        {
+          "caller": "CorridaGroup",
+          "callee": "entries.filter",
+          "lineNumber": 440
+        },
+        {
+          "caller": "CorridaGroup",
+          "callee": "entries.filter",
+          "lineNumber": 441
+        },
+        {
+          "caller": "CorridaGroup",
+          "callee": "entries.reduce",
+          "lineNumber": 442
+        },
+        {
+          "caller": "CorridaGroup",
+          "callee": "entries\n    .map((e) => e.fechaInicio)\n    .filter((v): v is string => Boolean(v))\n    .sort",
+          "lineNumber": 443
+        },
+        {
+          "caller": "CorridaGroup",
+          "callee": "entries\n    .map((e) => e.fechaInicio)\n    .filter",
+          "lineNumber": 443
+        },
+        {
+          "caller": "CorridaGroup",
+          "callee": "entries\n    .map",
+          "lineNumber": 443
+        },
+        {
+          "caller": "CorridaGroup",
+          "callee": "Boolean",
+          "lineNumber": 445
+        },
+        {
+          "caller": "CorridaGroup",
+          "callee": "setOpen",
+          "lineNumber": 451
+        },
+        {
+          "caller": "CorridaGroup",
+          "callee": "cn",
+          "lineNumber": 455
+        },
+        {
+          "caller": "CorridaGroup",
+          "callee": "cn",
+          "lineNumber": 462
+        },
+        {
+          "caller": "CorridaGroup",
+          "callee": "formatDateTime",
+          "lineNumber": 476
+        },
+        {
+          "caller": "CorridaGroup",
+          "callee": "formatNumber",
+          "lineNumber": 500
+        },
+        {
+          "caller": "PorTablaTable",
+          "callee": "cn",
+          "lineNumber": 518
+        },
+        {
+          "caller": "PorTablaTable",
+          "callee": "items.map",
+          "lineNumber": 538
+        },
+        {
+          "caller": "PorTablaTable",
+          "callee": "formatNumber",
+          "lineNumber": 548
+        },
+        {
+          "caller": "PorTablaTable",
+          "callee": "cn",
+          "lineNumber": 551
+        },
+        {
+          "caller": "PorTablaTable",
+          "callee": "formatNumber",
+          "lineNumber": 558
+        },
+        {
+          "caller": "PorTablaTable",
+          "callee": "formatDateTime",
+          "lineNumber": 561
+        },
+        {
+          "caller": "PorTablaTable",
+          "callee": "fmtDur",
+          "lineNumber": 564
+        },
+        {
+          "caller": "PorTablaTable",
+          "callee": "onOpen",
+          "lineNumber": 577
+        },
+        {
+          "caller": "fmtDur",
+          "callee": "Math.floor",
+          "lineNumber": 596
+        },
+        {
+          "caller": "TableSkeleton",
+          "callee": "Array.from({ length: 6 }).map",
+          "lineNumber": 606
+        },
+        {
+          "caller": "TableSkeleton",
+          "callee": "Array.from",
+          "lineNumber": 606
+        },
+        {
+          "caller": "PaginationBar",
+          "callee": "Math.min",
+          "lineNumber": 697
+        },
+        {
+          "caller": "PaginationBar",
+          "callee": "formatNumber",
+          "lineNumber": 705
+        },
+        {
+          "caller": "PaginationBar",
+          "callee": "formatNumber",
+          "lineNumber": 705
+        },
+        {
+          "caller": "PaginationBar",
+          "callee": "formatNumber",
+          "lineNumber": 705
+        },
+        {
+          "caller": "PaginationBar",
+          "callee": "onPageSize",
+          "lineNumber": 713
+        },
+        {
+          "caller": "PaginationBar",
+          "callee": "Number",
+          "lineNumber": 713
+        },
+        {
+          "caller": "PaginationBar",
+          "callee": "PAGE_SIZE_OPTIONS.map",
+          "lineNumber": 718
+        },
+        {
+          "caller": "PaginationBar",
+          "callee": "onPage",
+          "lineNumber": 729
+        },
+        {
+          "caller": "PaginationBar",
+          "callee": "Math.max",
+          "lineNumber": 729
+        },
+        {
+          "caller": "PaginationBar",
+          "callee": "onPage",
+          "lineNumber": 742
+        },
+        {
+          "caller": "PaginationBar",
+          "callee": "Math.min",
+          "lineNumber": 742
+        }
+      ],
+      "metrics": {
+        "importCount": 11,
+        "exportCount": 1,
+        "functionCount": 12,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/(admin)/bitacora/page.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 7,
+      "functions": [
+        {
+          "name": "BitacoraPage",
+          "startLine": 7,
+          "endLine": 9,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "metadata",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "dynamic",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "BitacoraPage",
+          "line": 7,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/api/cc/bitacora/[id]/route.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 28,
+      "nonEmptyLines": 25,
+      "functions": [
+        {
+          "name": "GET",
+          "startLine": 7,
+          "endLine": 28,
+          "params": [
+            "_req",
+            "ctx"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "GET",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "GET",
+          "callee": "Number.parseInt",
+          "lineNumber": 12
+        },
+        {
+          "caller": "GET",
+          "callee": "Number.isFinite",
+          "lineNumber": 13
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 14
+        },
+        {
+          "caller": "GET",
+          "callee": "await fastapiFetch",
+          "lineNumber": 17
+        },
+        {
+          "caller": "GET",
+          "callee": "FastApiLogCarga.parse",
+          "lineNumber": 18
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 19
+        },
+        {
+          "caller": "GET",
+          "callee": "mapBitacoraEntry",
+          "lineNumber": 19
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 22
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 23
+        },
+        {
+          "caller": "GET",
+          "callee": "String",
+          "lineNumber": 24
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/api/cc/bitacora/list/route.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 60,
+      "nonEmptyLines": 53,
+      "functions": [
+        {
+          "name": "clampInt",
+          "startLine": 16,
+          "endLine": 21,
+          "params": [
+            "raw",
+            "min",
+            "max",
+            "fallback"
+          ]
+        },
+        {
+          "name": "GET",
+          "startLine": 23,
+          "endLine": 60,
+          "params": [
+            "req"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "GET",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "clampInt",
+          "callee": "Number.parseInt",
+          "lineNumber": 18
+        },
+        {
+          "caller": "clampInt",
+          "callee": "Number.isFinite",
+          "lineNumber": 19
+        },
+        {
+          "caller": "clampInt",
+          "callee": "Math.min",
+          "lineNumber": 20
+        },
+        {
+          "caller": "clampInt",
+          "callee": "Math.max",
+          "lineNumber": 20
+        },
+        {
+          "caller": "GET",
+          "callee": "clampInt",
+          "lineNumber": 25
+        },
+        {
+          "caller": "GET",
+          "callee": "url.searchParams.get",
+          "lineNumber": 25
+        },
+        {
+          "caller": "GET",
+          "callee": "clampInt",
+          "lineNumber": 26
+        },
+        {
+          "caller": "GET",
+          "callee": "url.searchParams.get",
+          "lineNumber": 26
+        },
+        {
+          "caller": "GET",
+          "callee": "url.searchParams.get(\"tabla\")?.trim",
+          "lineNumber": 27
+        },
+        {
+          "caller": "GET",
+          "callee": "url.searchParams.get",
+          "lineNumber": 27
+        },
+        {
+          "caller": "GET",
+          "callee": "url.searchParams.get(\"desde\")?.trim",
+          "lineNumber": 28
+        },
+        {
+          "caller": "GET",
+          "callee": "url.searchParams.get",
+          "lineNumber": 28
+        },
+        {
+          "caller": "GET",
+          "callee": "url.searchParams.get(\"hasta\")?.trim",
+          "lineNumber": 29
+        },
+        {
+          "caller": "GET",
+          "callee": "url.searchParams.get",
+          "lineNumber": 29
+        },
+        {
+          "caller": "GET",
+          "callee": "url.searchParams.get(\"id_corrida\")?.trim",
+          "lineNumber": 30
+        },
+        {
+          "caller": "GET",
+          "callee": "url.searchParams.get",
+          "lineNumber": 30
+        },
+        {
+          "caller": "GET",
+          "callee": "url.searchParams.getAll(\"estado\").flatMap",
+          "lineNumber": 33
+        },
+        {
+          "caller": "GET",
+          "callee": "url.searchParams.getAll",
+          "lineNumber": 33
+        },
+        {
+          "caller": "GET",
+          "callee": "v.split",
+          "lineNumber": 33
+        },
+        {
+          "caller": "GET",
+          "callee": "estadosRaw\n    .map((e) => e.trim())\n    .filter(Boolean)\n    .filter",
+          "lineNumber": 34
+        },
+        {
+          "caller": "GET",
+          "callee": "estadosRaw\n    .map((e) => e.trim())\n    .filter",
+          "lineNumber": 34
+        },
+        {
+          "caller": "GET",
+          "callee": "estadosRaw\n    .map",
+          "lineNumber": 34
+        },
+        {
+          "caller": "GET",
+          "callee": "e.trim",
+          "lineNumber": 35
+        },
+        {
+          "caller": "GET",
+          "callee": "BitacoraEstado.safeParse",
+          "lineNumber": 37
+        },
+        {
+          "caller": "GET",
+          "callee": "qs.set",
+          "lineNumber": 40
+        },
+        {
+          "caller": "GET",
+          "callee": "String",
+          "lineNumber": 40
+        },
+        {
+          "caller": "GET",
+          "callee": "qs.set",
+          "lineNumber": 41
+        },
+        {
+          "caller": "GET",
+          "callee": "String",
+          "lineNumber": 41
+        },
+        {
+          "caller": "GET",
+          "callee": "qs.append",
+          "lineNumber": 42
+        },
+        {
+          "caller": "GET",
+          "callee": "qs.set",
+          "lineNumber": 43
+        },
+        {
+          "caller": "GET",
+          "callee": "qs.set",
+          "lineNumber": 44
+        },
+        {
+          "caller": "GET",
+          "callee": "qs.set",
+          "lineNumber": 45
+        },
+        {
+          "caller": "GET",
+          "callee": "qs.set",
+          "lineNumber": 46
+        },
+        {
+          "caller": "GET",
+          "callee": "await fastapiFetch",
+          "lineNumber": 49
+        },
+        {
+          "caller": "GET",
+          "callee": "qs.toString",
+          "lineNumber": 49
+        },
+        {
+          "caller": "GET",
+          "callee": "FastApiBitacoraPagina.parse",
+          "lineNumber": 50
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 51
+        },
+        {
+          "caller": "GET",
+          "callee": "mapBitacoraPage",
+          "lineNumber": 51
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 54
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 55
+        },
+        {
+          "caller": "GET",
+          "callee": "String",
+          "lineNumber": 56
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/api/cc/bitacora/resumen/route.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 32,
+      "nonEmptyLines": 28,
+      "functions": [
+        {
+          "name": "GET",
+          "startLine": 12,
+          "endLine": 32,
+          "params": [
+            "req"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "GET",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "GET",
+          "callee": "url.searchParams.get",
+          "lineNumber": 14
+        },
+        {
+          "caller": "GET",
+          "callee": "Number.parseInt",
+          "lineNumber": 15
+        },
+        {
+          "caller": "GET",
+          "callee": "VENTANAS_VALIDAS.has",
+          "lineNumber": 16
+        },
+        {
+          "caller": "GET",
+          "callee": "await fastapiFetch",
+          "lineNumber": 19
+        },
+        {
+          "caller": "GET",
+          "callee": "FastApiResumenBitacora.parse",
+          "lineNumber": 22
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 23
+        },
+        {
+          "caller": "GET",
+          "callee": "mapBitacoraResumen",
+          "lineNumber": 23
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 26
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 27
+        },
+        {
+          "caller": "GET",
+          "callee": "String",
+          "lineNumber": 28
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/control-center/bitacora-detail-drawer.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 283,
+      "nonEmptyLines": 262,
+      "functions": [
+        {
+          "name": "BitacoraDetailDrawer",
+          "startLine": 32,
+          "endLine": 60,
+          "params": [
+            "{ idLog, onClose }"
+          ]
+        },
+        {
+          "name": "DrawerBody",
+          "startLine": 64,
+          "endLine": 127,
+          "params": [
+            "{ idLog, onClose }"
+          ]
+        },
+        {
+          "name": "DetailBody",
+          "startLine": 131,
+          "endLine": 232,
+          "params": [
+            "{ data }"
+          ]
+        },
+        {
+          "name": "formatDuracion",
+          "startLine": 236,
+          "endLine": 242,
+          "params": [
+            "seg"
+          ]
+        },
+        {
+          "name": "Kv",
+          "startLine": 244,
+          "endLine": 259,
+          "params": [
+            "{ label, value, mono }"
+          ]
+        },
+        {
+          "name": "MetricTile",
+          "startLine": 267,
+          "endLine": 283,
+          "params": [
+            "{ label, value, tone }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "BitacoraDetailDrawer",
+          "line": 32,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "BitacoraDetailDrawer",
+          "callee": "onClose",
+          "lineNumber": 36
+        },
+        {
+          "caller": "BitacoraDetailDrawer",
+          "callee": "cn",
+          "lineNumber": 39
+        },
+        {
+          "caller": "BitacoraDetailDrawer",
+          "callee": "cn",
+          "lineNumber": 46
+        },
+        {
+          "caller": "DrawerBody",
+          "callee": "useId",
+          "lineNumber": 65
+        },
+        {
+          "caller": "DrawerBody",
+          "callee": "useBitacoraDetail",
+          "lineNumber": 66
+        },
+        {
+          "caller": "DrawerBody",
+          "callee": "refetch",
+          "lineNumber": 111
+        },
+        {
+          "caller": "DetailBody",
+          "callee": "useToast",
+          "lineNumber": 132
+        },
+        {
+          "caller": "DetailBody",
+          "callee": "formatDuracion",
+          "lineNumber": 133
+        },
+        {
+          "caller": "copyError",
+          "callee": "navigator.clipboard.writeText(data.mensajeError).then",
+          "lineNumber": 137
+        },
+        {
+          "caller": "copyError",
+          "callee": "navigator.clipboard.writeText",
+          "lineNumber": 137
+        },
+        {
+          "caller": "copyError",
+          "callee": "toast",
+          "lineNumber": 138
+        },
+        {
+          "caller": "copyError",
+          "callee": "toast",
+          "lineNumber": 139
+        },
+        {
+          "caller": "DetailBody",
+          "callee": "formatDateTime",
+          "lineNumber": 167
+        },
+        {
+          "caller": "DetailBody",
+          "callee": "formatDateTime",
+          "lineNumber": 171
+        },
+        {
+          "caller": "DetailBody",
+          "callee": "formatNumber",
+          "lineNumber": 183
+        },
+        {
+          "caller": "DetailBody",
+          "callee": "formatNumber",
+          "lineNumber": 188
+        },
+        {
+          "caller": "formatDuracion",
+          "callee": "Math.floor",
+          "lineNumber": 239
+        },
+        {
+          "caller": "Kv",
+          "callee": "cn",
+          "lineNumber": 249
+        },
+        {
+          "caller": "MetricTile",
+          "callee": "cn",
+          "lineNumber": 278
+        }
+      ],
+      "metrics": {
+        "importCount": 7,
+        "exportCount": 1,
+        "functionCount": 6,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/control-center/bitacora-status-badge.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 18,
+      "functions": [
+        {
+          "name": "BitacoraStatusBadge",
+          "startLine": 8,
+          "endLine": 19,
+          "params": [
+            "{ estado }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "BitacoraStatusBadge",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "BitacoraStatusBadge",
+          "callee": "toneFromBitacora",
+          "lineNumber": 9
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "hooks/use-bitacora.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 125,
+      "nonEmptyLines": 115,
+      "functions": [
+        {
+          "name": "fetchJson",
+          "startLine": 27,
+          "endLine": 46,
+          "params": [
+            "path",
+            "schema"
+          ]
+        },
+        {
+          "name": "useBitacoraList",
+          "startLine": 58,
+          "endLine": 96,
+          "params": [
+            "params"
+          ]
+        },
+        {
+          "name": "useBitacoraResumen",
+          "startLine": 100,
+          "endLine": 113,
+          "params": [
+            "ventana"
+          ]
+        },
+        {
+          "name": "useBitacoraDetail",
+          "startLine": 115,
+          "endLine": 125,
+          "params": [
+            "idLog"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "useBitacoraList",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "useBitacoraResumen",
+          "line": 100,
+          "isDefault": false
+        },
+        {
+          "name": "useBitacoraDetail",
+          "line": 115,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "fetchJson",
+          "callee": "fetch",
+          "lineNumber": 28
+        },
+        {
+          "caller": "fetchJson",
+          "callee": "res.json",
+          "lineNumber": 32
+        },
+        {
+          "caller": "fetchJson",
+          "callee": "String",
+          "lineNumber": 34
+        },
+        {
+          "caller": "fetchJson",
+          "callee": "schema.parse",
+          "lineNumber": 45
+        },
+        {
+          "caller": "fetchJson",
+          "callee": "res.json",
+          "lineNumber": 45
+        },
+        {
+          "caller": "useBitacoraList",
+          "callee": "(estado ?? []).slice().sort().join",
+          "lineNumber": 62
+        },
+        {
+          "caller": "useBitacoraList",
+          "callee": "(estado ?? []).slice().sort",
+          "lineNumber": 62
+        },
+        {
+          "caller": "useBitacoraList",
+          "callee": "(estado ?? []).slice",
+          "lineNumber": 62
+        },
+        {
+          "caller": "useBitacoraList",
+          "callee": "useQuery",
+          "lineNumber": 64
+        },
+        {
+          "caller": "useBitacoraList",
+          "callee": "qs.set",
+          "lineNumber": 77
+        },
+        {
+          "caller": "useBitacoraList",
+          "callee": "String",
+          "lineNumber": 77
+        },
+        {
+          "caller": "useBitacoraList",
+          "callee": "qs.set",
+          "lineNumber": 78
+        },
+        {
+          "caller": "useBitacoraList",
+          "callee": "String",
+          "lineNumber": 78
+        },
+        {
+          "caller": "useBitacoraList",
+          "callee": "qs.set",
+          "lineNumber": 79
+        },
+        {
+          "caller": "useBitacoraList",
+          "callee": "estado.join",
+          "lineNumber": 79
+        },
+        {
+          "caller": "useBitacoraList",
+          "callee": "qs.set",
+          "lineNumber": 80
+        },
+        {
+          "caller": "useBitacoraList",
+          "callee": "qs.set",
+          "lineNumber": 81
+        },
+        {
+          "caller": "useBitacoraList",
+          "callee": "qs.set",
+          "lineNumber": 82
+        },
+        {
+          "caller": "useBitacoraList",
+          "callee": "qs.set",
+          "lineNumber": 83
+        },
+        {
+          "caller": "useBitacoraList",
+          "callee": "fetchJson",
+          "lineNumber": 84
+        },
+        {
+          "caller": "useBitacoraList",
+          "callee": "qs.toString",
+          "lineNumber": 84
+        },
+        {
+          "caller": "useBitacoraList",
+          "callee": "data?.items.some",
+          "lineNumber": 89
+        },
+        {
+          "caller": "useBitacoraResumen",
+          "callee": "useQuery",
+          "lineNumber": 103
+        },
+        {
+          "caller": "useBitacoraResumen",
+          "callee": "fetchJson",
+          "lineNumber": 106
+        },
+        {
+          "caller": "useBitacoraDetail",
+          "callee": "useQuery",
+          "lineNumber": 118
+        },
+        {
+          "caller": "useBitacoraDetail",
+          "callee": "fetchJson",
+          "lineNumber": 121
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/schemas/bitacora.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 168,
+      "nonEmptyLines": 150,
+      "functions": [
+        {
+          "name": "mapBitacoraEntry",
+          "startLine": 110,
+          "endLine": 127,
+          "params": [
+            "raw"
+          ]
+        },
+        {
+          "name": "mapBitacoraPage",
+          "startLine": 129,
+          "endLine": 138,
+          "params": [
+            "raw"
+          ]
+        },
+        {
+          "name": "mapBitacoraResumen",
+          "startLine": 140,
+          "endLine": 153,
+          "params": [
+            "raw"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "BitacoraEstado",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "VENTANAS_BITACORA",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "FastApiLogCarga",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "FastApiBitacoraPagina",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "FastApiResumenBitacora",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "BitacoraEntry",
+          "line": 70,
+          "isDefault": false
+        },
+        {
+          "name": "BitacoraPage",
+          "line": 86,
+          "isDefault": false
+        },
+        {
+          "name": "BitacoraResumen",
+          "line": 94,
+          "isDefault": false
+        },
+        {
+          "name": "mapBitacoraEntry",
+          "line": 110,
+          "isDefault": false
+        },
+        {
+          "name": "mapBitacoraPage",
+          "line": 129,
+          "isDefault": false
+        },
+        {
+          "name": "mapBitacoraResumen",
+          "line": 140,
+          "isDefault": false
+        },
+        {
+          "name": "BitacoraListInput",
+          "line": 159,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "mapBitacoraPage",
+          "callee": "raw.items.map",
+          "lineNumber": 133
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 12,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    }
+  ]
+}

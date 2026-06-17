@@ -1,0 +1,1288 @@
+{
+  "nodes": [
+    {
+      "id": "file:app/(admin)/quality/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "app/(admin)/quality/page.tsx",
+      "summary": "Source code file implementing components or logic for page.tsx.",
+      "tags": [
+        "code",
+        "typescript",
+        "admin-view"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/(admin)/quality/page.tsx:QualityPage",
+      "type": "function",
+      "name": "QualityPage",
+      "summary": "Function QualityPage implementing specific routines inside page.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        6,
+        8
+      ]
+    },
+    {
+      "id": "file:app/(admin)/quality/quality-client.tsx",
+      "type": "file",
+      "name": "quality-client.tsx",
+      "filePath": "app/(admin)/quality/quality-client.tsx",
+      "summary": "Source code file implementing components or logic for quality-client.tsx.",
+      "tags": [
+        "code",
+        "typescript",
+        "admin-view"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:app/(admin)/quality/quality-client.tsx:QualityClient",
+      "type": "function",
+      "name": "QualityClient",
+      "summary": "Function QualityClient implementing specific routines inside quality-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        33,
+        194
+      ]
+    },
+    {
+      "id": "function:app/(admin)/quality/quality-client.tsx:QualityKpiStrip",
+      "type": "function",
+      "name": "QualityKpiStrip",
+      "summary": "Function QualityKpiStrip implementing specific routines inside quality-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        212,
+        269
+      ]
+    },
+    {
+      "id": "function:app/(admin)/quality/quality-client.tsx:Toolbar",
+      "type": "function",
+      "name": "Toolbar",
+      "summary": "Function Toolbar implementing specific routines inside quality-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        282,
+        341
+      ]
+    },
+    {
+      "id": "function:app/(admin)/quality/quality-client.tsx:QuarantineTable",
+      "type": "function",
+      "name": "QuarantineTable",
+      "summary": "Function QuarantineTable implementing specific routines inside quality-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        355,
+        459
+      ]
+    },
+    {
+      "id": "function:app/(admin)/quality/quality-client.tsx:ValueCell",
+      "type": "function",
+      "name": "ValueCell",
+      "summary": "Function ValueCell implementing specific routines inside quality-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        461,
+        477
+      ]
+    },
+    {
+      "id": "function:app/(admin)/quality/quality-client.tsx:MotivoCell",
+      "type": "function",
+      "name": "MotivoCell",
+      "summary": "Function MotivoCell implementing specific routines inside quality-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        479,
+        495
+      ]
+    },
+    {
+      "id": "function:app/(admin)/quality/quality-client.tsx:RowCheckbox",
+      "type": "function",
+      "name": "RowCheckbox",
+      "summary": "Function RowCheckbox implementing specific routines inside quality-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        505,
+        517
+      ]
+    },
+    {
+      "id": "function:app/(admin)/quality/quality-client.tsx:SelectAllCheckbox",
+      "type": "function",
+      "name": "SelectAllCheckbox",
+      "summary": "Function SelectAllCheckbox implementing specific routines inside quality-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        525,
+        543
+      ]
+    },
+    {
+      "id": "function:app/(admin)/quality/quality-client.tsx:Pagination",
+      "type": "function",
+      "name": "Pagination",
+      "summary": "Function Pagination implementing specific routines inside quality-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        556,
+        600
+      ]
+    },
+    {
+      "id": "function:app/(admin)/quality/quality-client.tsx:TableError",
+      "type": "function",
+      "name": "TableError",
+      "summary": "Function TableError implementing specific routines inside quality-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        620,
+        637
+      ]
+    },
+    {
+      "id": "file:app/api/cc/quality/[tabla]/[id]/rechazar/route.ts",
+      "type": "file",
+      "name": "route.ts",
+      "filePath": "app/api/cc/quality/[tabla]/[id]/rechazar/route.ts",
+      "summary": "Source code file implementing components or logic for route.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "api-route"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/api/cc/quality/[tabla]/[id]/rechazar/route.ts:PATCH",
+      "type": "function",
+      "name": "PATCH",
+      "summary": "Function PATCH implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        19,
+        50
+      ]
+    },
+    {
+      "id": "file:app/api/cc/quality/[tabla]/[id]/resolver/route.ts",
+      "type": "file",
+      "name": "route.ts",
+      "filePath": "app/api/cc/quality/[tabla]/[id]/resolver/route.ts",
+      "summary": "Source code file implementing components or logic for route.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "api-route"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/api/cc/quality/[tabla]/[id]/resolver/route.ts:PATCH",
+      "type": "function",
+      "name": "PATCH",
+      "summary": "Function PATCH implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        20,
+        54
+      ]
+    },
+    {
+      "id": "file:app/api/cc/quality/list/route.ts",
+      "type": "file",
+      "name": "route.ts",
+      "filePath": "app/api/cc/quality/list/route.ts",
+      "summary": "Source code file implementing components or logic for route.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "api-route"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/api/cc/quality/list/route.ts:GET",
+      "type": "function",
+      "name": "GET",
+      "summary": "Function GET implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        23,
+        53
+      ]
+    },
+    {
+      "id": "file:components/control-center/quarantine-bulk-bar.tsx",
+      "type": "file",
+      "name": "quarantine-bulk-bar.tsx",
+      "filePath": "components/control-center/quarantine-bulk-bar.tsx",
+      "summary": "Source code file implementing components or logic for quarantine-bulk-bar.tsx.",
+      "tags": [
+        "code",
+        "typescript",
+        "ui-component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:components/control-center/quarantine-bulk-bar.tsx:QuarantineBulkBar",
+      "type": "function",
+      "name": "QuarantineBulkBar",
+      "summary": "Function QuarantineBulkBar implementing specific routines inside quarantine-bulk-bar.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        30,
+        94
+      ]
+    },
+    {
+      "id": "function:components/control-center/quarantine-bulk-bar.tsx:BulkConfirmDialog",
+      "type": "function",
+      "name": "BulkConfirmDialog",
+      "summary": "Function BulkConfirmDialog implementing specific routines inside quarantine-bulk-bar.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        110,
+        338
+      ]
+    },
+    {
+      "id": "file:components/control-center/quarantine-composite-editor.tsx",
+      "type": "file",
+      "name": "quarantine-composite-editor.tsx",
+      "filePath": "components/control-center/quarantine-composite-editor.tsx",
+      "summary": "Source code file implementing components or logic for quarantine-composite-editor.tsx.",
+      "tags": [
+        "code",
+        "typescript",
+        "ui-component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:components/control-center/quarantine-composite-editor.tsx:QuarantineCompositeEditor",
+      "type": "function",
+      "name": "QuarantineCompositeEditor",
+      "summary": "Function QuarantineCompositeEditor implementing specific routines inside quarantine-composite-editor.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        50,
+        120
+      ]
+    },
+    {
+      "id": "function:components/control-center/quarantine-composite-editor.tsx:CompositeHeader",
+      "type": "function",
+      "name": "CompositeHeader",
+      "summary": "Function CompositeHeader implementing specific routines inside quarantine-composite-editor.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        126,
+        152
+      ]
+    },
+    {
+      "id": "function:components/control-center/quarantine-composite-editor.tsx:FieldRow",
+      "type": "function",
+      "name": "FieldRow",
+      "summary": "Function FieldRow implementing specific routines inside quarantine-composite-editor.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        154,
+        251
+      ]
+    },
+    {
+      "id": "function:components/control-center/quarantine-composite-editor.tsx:CompositePreview",
+      "type": "function",
+      "name": "CompositePreview",
+      "summary": "Function CompositePreview implementing specific routines inside quarantine-composite-editor.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        253,
+        290
+      ]
+    },
+    {
+      "id": "function:components/control-center/quarantine-composite-editor.tsx:SimpleEditor",
+      "type": "function",
+      "name": "SimpleEditor",
+      "summary": "Function SimpleEditor implementing specific routines inside quarantine-composite-editor.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        292,
+        344
+      ]
+    },
+    {
+      "id": "function:components/control-center/quarantine-drawer.tsx:QuarantineDrawer",
+      "type": "function",
+      "name": "QuarantineDrawer",
+      "summary": "Function QuarantineDrawer implementing specific routines inside quarantine-drawer.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        45,
+        79
+      ]
+    },
+    {
+      "id": "function:components/control-center/quarantine-drawer.tsx:ModalBody",
+      "type": "function",
+      "name": "ModalBody",
+      "summary": "Function ModalBody implementing specific routines inside quarantine-drawer.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        88,
+        406
+      ]
+    },
+    {
+      "id": "function:components/control-center/quarantine-drawer.tsx:Kv",
+      "type": "function",
+      "name": "Kv",
+      "summary": "Function Kv implementing specific routines inside quarantine-drawer.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        416,
+        431
+      ]
+    },
+    {
+      "id": "function:components/control-center/quarantine-drawer.tsx:ModeRadio",
+      "type": "function",
+      "name": "ModeRadio",
+      "summary": "Function ModeRadio implementing specific routines inside quarantine-drawer.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        441,
+        464
+      ]
+    },
+    {
+      "id": "function:components/control-center/quarantine-empty-state.tsx:QuarantineEmptyState",
+      "type": "function",
+      "name": "QuarantineEmptyState",
+      "summary": "Function QuarantineEmptyState implementing specific routines inside quarantine-empty-state.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        8,
+        34
+      ]
+    },
+    {
+      "id": "function:hooks/use-quality.ts:fetchJson",
+      "type": "function",
+      "name": "fetchJson",
+      "summary": "Function fetchJson implementing specific routines inside use-quality.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        26,
+        53
+      ]
+    },
+    {
+      "id": "function:hooks/use-quality.ts:useQuarantineList",
+      "type": "function",
+      "name": "useQuarantineList",
+      "summary": "Function useQuarantineList implementing specific routines inside use-quality.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        61,
+        79
+      ]
+    },
+    {
+      "id": "function:hooks/use-quality.ts:useResolveQuarantine",
+      "type": "function",
+      "name": "useResolveQuarantine",
+      "summary": "Function useResolveQuarantine implementing specific routines inside use-quality.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        88,
+        110
+      ]
+    },
+    {
+      "id": "function:hooks/use-quality.ts:useRejectQuarantine",
+      "type": "function",
+      "name": "useRejectQuarantine",
+      "summary": "Function useRejectQuarantine implementing specific routines inside use-quality.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        118,
+        140
+      ]
+    },
+    {
+      "id": "function:lib/quarantine/parse-composite.ts:parseComposite",
+      "type": "function",
+      "name": "parseComposite",
+      "summary": "Function parseComposite implementing specific routines inside parse-composite.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        57,
+        92
+      ]
+    },
+    {
+      "id": "function:lib/quarantine/parse-composite.ts:assembleComposite",
+      "type": "function",
+      "name": "assembleComposite",
+      "summary": "Function assembleComposite implementing specific routines inside parse-composite.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        95,
+        102
+      ]
+    },
+    {
+      "id": "function:lib/quarantine/parse-composite.ts:buildField",
+      "type": "function",
+      "name": "buildField",
+      "summary": "Function buildField implementing specific routines inside parse-composite.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        122,
+        138
+      ]
+    },
+    {
+      "id": "function:lib/quarantine/parse-composite.ts:deriveSecondary",
+      "type": "function",
+      "name": "deriveSecondary",
+      "summary": "Function deriveSecondary implementing specific routines inside parse-composite.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        170,
+        197
+      ]
+    },
+    {
+      "id": "function:lib/schemas/quality.ts:mapQuarantineRecord",
+      "type": "function",
+      "name": "mapQuarantineRecord",
+      "summary": "Function mapQuarantineRecord implementing specific routines inside quality.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        92,
+        106
+      ]
+    },
+    {
+      "id": "function:lib/schemas/quality.ts:mapQuarantineAction",
+      "type": "function",
+      "name": "mapQuarantineAction",
+      "summary": "Function mapQuarantineAction implementing specific routines inside quality.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        108,
+        116
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:app/(admin)/quality/page.tsx",
+      "target": "function:app/(admin)/quality/page.tsx:QualityPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/(admin)/quality/page.tsx",
+      "target": "function:app/(admin)/quality/page.tsx:QualityPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/(admin)/quality/page.tsx",
+      "target": "file:app/(admin)/quality/quality-client.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/(admin)/quality/quality-client.tsx",
+      "target": "function:app/(admin)/quality/quality-client.tsx:QualityClient",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/(admin)/quality/quality-client.tsx",
+      "target": "function:app/(admin)/quality/quality-client.tsx:QualityClient",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/(admin)/quality/quality-client.tsx",
+      "target": "function:app/(admin)/quality/quality-client.tsx:QualityKpiStrip",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/(admin)/quality/quality-client.tsx",
+      "target": "function:app/(admin)/quality/quality-client.tsx:Toolbar",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/(admin)/quality/quality-client.tsx",
+      "target": "function:app/(admin)/quality/quality-client.tsx:QuarantineTable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/(admin)/quality/quality-client.tsx",
+      "target": "function:app/(admin)/quality/quality-client.tsx:ValueCell",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/(admin)/quality/quality-client.tsx",
+      "target": "function:app/(admin)/quality/quality-client.tsx:MotivoCell",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/(admin)/quality/quality-client.tsx",
+      "target": "function:app/(admin)/quality/quality-client.tsx:RowCheckbox",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/(admin)/quality/quality-client.tsx",
+      "target": "function:app/(admin)/quality/quality-client.tsx:SelectAllCheckbox",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/(admin)/quality/quality-client.tsx",
+      "target": "function:app/(admin)/quality/quality-client.tsx:Pagination",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/(admin)/quality/quality-client.tsx",
+      "target": "function:app/(admin)/quality/quality-client.tsx:TableError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/(admin)/quality/quality-client.tsx",
+      "target": "file:components/charts/kpi-card.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/(admin)/quality/quality-client.tsx",
+      "target": "file:components/control-center/quarantine-bulk-bar.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/(admin)/quality/quality-client.tsx",
+      "target": "file:components/control-center/quarantine-drawer.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/(admin)/quality/quality-client.tsx",
+      "target": "file:components/control-center/quarantine-empty-state.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/(admin)/quality/quality-client.tsx",
+      "target": "file:components/ui/button.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/(admin)/quality/quality-client.tsx",
+      "target": "file:components/ui/input.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/(admin)/quality/quality-client.tsx",
+      "target": "file:components/ui/page-header.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/(admin)/quality/quality-client.tsx",
+      "target": "file:components/ui/skeleton.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/(admin)/quality/quality-client.tsx",
+      "target": "file:hooks/use-control-center.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/(admin)/quality/quality-client.tsx",
+      "target": "file:hooks/use-quality.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/(admin)/quality/quality-client.tsx",
+      "target": "file:lib/format.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/(admin)/quality/quality-client.tsx",
+      "target": "file:lib/schemas/quality.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/(admin)/quality/quality-client.tsx",
+      "target": "file:lib/utils.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "function:app/(admin)/quality/quality-client.tsx:QualityClient",
+      "target": "function:hooks/use-control-center.ts:useQualityKpis",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/quality/quality-client.tsx:QualityClient",
+      "target": "function:hooks/use-quality.ts:useQuarantineList",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/quality/quality-client.tsx:QualityClient",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/quality/quality-client.tsx:QualityKpiStrip",
+      "target": "function:lib/format.ts:formatNumber",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/quality/quality-client.tsx:QualityKpiStrip",
+      "target": "function:lib/format.ts:formatNumber",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/quality/quality-client.tsx:QualityKpiStrip",
+      "target": "function:lib/format.ts:formatNumber",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/quality/quality-client.tsx:QualityKpiStrip",
+      "target": "function:lib/format.ts:formatNumber",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/quality/quality-client.tsx:Toolbar",
+      "target": "function:lib/format.ts:formatNumber",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/quality/quality-client.tsx:Toolbar",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/quality/quality-client.tsx:QuarantineTable",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/quality/quality-client.tsx:QuarantineTable",
+      "target": "function:lib/format.ts:formatDateTime",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/quality/quality-client.tsx:ValueCell",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/quality/quality-client.tsx:Pagination",
+      "target": "function:lib/format.ts:formatNumber",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/quality/quality-client.tsx:Pagination",
+      "target": "function:lib/format.ts:formatNumber",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/quality/quality-client.tsx:Pagination",
+      "target": "function:lib/format.ts:formatNumber",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/api/cc/quality/[tabla]/[id]/rechazar/route.ts",
+      "target": "function:app/api/cc/quality/[tabla]/[id]/rechazar/route.ts:PATCH",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/api/cc/quality/[tabla]/[id]/rechazar/route.ts",
+      "target": "function:app/api/cc/quality/[tabla]/[id]/rechazar/route.ts:PATCH",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/api/cc/quality/[tabla]/[id]/rechazar/route.ts",
+      "target": "file:lib/api/server-fetch.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/api/cc/quality/[tabla]/[id]/rechazar/route.ts",
+      "target": "file:lib/schemas/quality.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "function:app/api/cc/quality/[tabla]/[id]/rechazar/route.ts:PATCH",
+      "target": "function:lib/schemas/quality.ts:mapQuarantineAction",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/api/cc/quality/[tabla]/[id]/resolver/route.ts",
+      "target": "function:app/api/cc/quality/[tabla]/[id]/resolver/route.ts:PATCH",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/api/cc/quality/[tabla]/[id]/resolver/route.ts",
+      "target": "function:app/api/cc/quality/[tabla]/[id]/resolver/route.ts:PATCH",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/api/cc/quality/[tabla]/[id]/resolver/route.ts",
+      "target": "file:lib/api/server-fetch.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/api/cc/quality/[tabla]/[id]/resolver/route.ts",
+      "target": "file:lib/schemas/quality.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "function:app/api/cc/quality/[tabla]/[id]/resolver/route.ts:PATCH",
+      "target": "function:lib/schemas/quality.ts:mapQuarantineAction",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/api/cc/quality/list/route.ts",
+      "target": "function:app/api/cc/quality/list/route.ts:GET",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/api/cc/quality/list/route.ts",
+      "target": "function:app/api/cc/quality/list/route.ts:GET",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/api/cc/quality/list/route.ts",
+      "target": "file:lib/api/server-fetch.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/api/cc/quality/list/route.ts",
+      "target": "file:lib/schemas/quality.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/control-center/quarantine-bulk-bar.tsx",
+      "target": "function:components/control-center/quarantine-bulk-bar.tsx:QuarantineBulkBar",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/control-center/quarantine-bulk-bar.tsx",
+      "target": "function:components/control-center/quarantine-bulk-bar.tsx:QuarantineBulkBar",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:components/control-center/quarantine-bulk-bar.tsx",
+      "target": "function:components/control-center/quarantine-bulk-bar.tsx:BulkConfirmDialog",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/control-center/quarantine-bulk-bar.tsx",
+      "target": "file:components/ui/button.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/control-center/quarantine-bulk-bar.tsx",
+      "target": "file:components/ui/label.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/control-center/quarantine-bulk-bar.tsx",
+      "target": "file:hooks/use-quality.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/control-center/quarantine-bulk-bar.tsx",
+      "target": "file:hooks/use-toast.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/control-center/quarantine-bulk-bar.tsx",
+      "target": "file:lib/schemas/quality.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/control-center/quarantine-bulk-bar.tsx",
+      "target": "file:lib/utils.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "function:components/control-center/quarantine-bulk-bar.tsx:BulkConfirmDialog",
+      "target": "function:hooks/use-quality.ts:useResolveQuarantine",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/quarantine-bulk-bar.tsx:BulkConfirmDialog",
+      "target": "function:hooks/use-quality.ts:useRejectQuarantine",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/quarantine-bulk-bar.tsx:BulkConfirmDialog",
+      "target": "function:hooks/use-toast.ts:useToast",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/quarantine-bulk-bar.tsx:BulkConfirmDialog",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/quarantine-bulk-bar.tsx:BulkConfirmDialog",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:components/control-center/quarantine-composite-editor.tsx",
+      "target": "function:components/control-center/quarantine-composite-editor.tsx:QuarantineCompositeEditor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/control-center/quarantine-composite-editor.tsx",
+      "target": "function:components/control-center/quarantine-composite-editor.tsx:QuarantineCompositeEditor",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:components/control-center/quarantine-composite-editor.tsx",
+      "target": "function:components/control-center/quarantine-composite-editor.tsx:CompositeHeader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/control-center/quarantine-composite-editor.tsx",
+      "target": "function:components/control-center/quarantine-composite-editor.tsx:FieldRow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/control-center/quarantine-composite-editor.tsx",
+      "target": "function:components/control-center/quarantine-composite-editor.tsx:CompositePreview",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/control-center/quarantine-composite-editor.tsx",
+      "target": "function:components/control-center/quarantine-composite-editor.tsx:SimpleEditor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/control-center/quarantine-composite-editor.tsx",
+      "target": "file:lib/quarantine/parse-composite.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/control-center/quarantine-composite-editor.tsx",
+      "target": "file:lib/utils.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "function:components/control-center/quarantine-composite-editor.tsx:QuarantineCompositeEditor",
+      "target": "function:lib/quarantine/parse-composite.ts:parseComposite",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/quarantine-composite-editor.tsx:FieldRow",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/quarantine-composite-editor.tsx:FieldRow",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/quarantine-composite-editor.tsx:FieldRow",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/quarantine-composite-editor.tsx:CompositePreview",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/quarantine-drawer.tsx:QuarantineDrawer",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/quarantine-drawer.tsx:QuarantineDrawer",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/quarantine-drawer.tsx:ModalBody",
+      "target": "function:lib/quarantine/parse-composite.ts:parseComposite",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/quarantine-drawer.tsx:ModalBody",
+      "target": "function:hooks/use-quality.ts:useResolveQuarantine",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/quarantine-drawer.tsx:ModalBody",
+      "target": "function:hooks/use-quality.ts:useRejectQuarantine",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/quarantine-drawer.tsx:ModalBody",
+      "target": "function:hooks/use-toast.ts:useToast",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/quarantine-drawer.tsx:ModalBody",
+      "target": "function:lib/quarantine/parse-composite.ts:assembleComposite",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/quarantine-drawer.tsx:ModalBody",
+      "target": "function:lib/format.ts:formatDateTime",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/quarantine-drawer.tsx:Kv",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/quarantine-drawer.tsx:ModeRadio",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

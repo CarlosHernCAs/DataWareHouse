@@ -1,0 +1,1892 @@
+{
+  "nodes": [
+    {
+      "id": "function:app/(admin)/dwh/dwh-client.tsx:DwhExplorerClient",
+      "type": "function",
+      "name": "DwhExplorerClient",
+      "summary": "Function DwhExplorerClient implementing specific routines inside dwh-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        83,
+        417
+      ]
+    },
+    {
+      "id": "function:app/(admin)/dwh/dwh-client.tsx:buildContextItems",
+      "type": "function",
+      "name": "buildContextItems",
+      "summary": "Function buildContextItems implementing specific routines inside dwh-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        434,
+        490
+      ]
+    },
+    {
+      "id": "function:app/(admin)/dwh/dwh-client.tsx:computeDownstreamPath",
+      "type": "function",
+      "name": "computeDownstreamPath",
+      "summary": "Function computeDownstreamPath implementing specific routines inside dwh-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        499,
+        517
+      ]
+    },
+    {
+      "id": "function:app/(admin)/dwh/dwh-client.tsx:computeConnectedPath",
+      "type": "function",
+      "name": "computeConnectedPath",
+      "summary": "Function computeConnectedPath implementing specific routines inside dwh-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        519,
+        552
+      ]
+    },
+    {
+      "id": "function:app/(admin)/dwh/dwh-client.tsx:HeaderActions",
+      "type": "function",
+      "name": "HeaderActions",
+      "summary": "Function HeaderActions implementing specific routines inside dwh-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        565,
+        630
+      ]
+    },
+    {
+      "id": "function:app/(admin)/dwh/dwh-client.tsx:useFreshnessLabel",
+      "type": "function",
+      "name": "useFreshnessLabel",
+      "summary": "Function useFreshnessLabel implementing specific routines inside dwh-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        632,
+        644
+      ]
+    },
+    {
+      "id": "function:app/(admin)/dwh/dwh-client.tsx:KpiStrip",
+      "type": "function",
+      "name": "KpiStrip",
+      "summary": "Function KpiStrip implementing specific routines inside dwh-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        654,
+        689
+      ]
+    },
+    {
+      "id": "function:app/(admin)/dwh/dwh-client.tsx:Toolbar",
+      "type": "function",
+      "name": "Toolbar",
+      "summary": "Function Toolbar implementing specific routines inside dwh-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        719,
+        907
+      ]
+    },
+    {
+      "id": "function:app/(admin)/dwh/dwh-client.tsx:ViewBtn",
+      "type": "function",
+      "name": "ViewBtn",
+      "summary": "Function ViewBtn implementing specific routines inside dwh-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        909,
+        936
+      ]
+    },
+    {
+      "id": "function:app/(admin)/dwh/dwh-client.tsx:ErrorPanel",
+      "type": "function",
+      "name": "ErrorPanel",
+      "summary": "Function ErrorPanel implementing specific routines inside dwh-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        940,
+        963
+      ]
+    },
+    {
+      "id": "function:app/(admin)/dwh/dwh-client.tsx:EmptyPanel",
+      "type": "function",
+      "name": "EmptyPanel",
+      "summary": "Function EmptyPanel implementing specific routines inside dwh-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        965,
+        987
+      ]
+    },
+    {
+      "id": "function:app/(admin)/dwh/dwh-client.tsx:exportLineagePng",
+      "type": "function",
+      "name": "exportLineagePng",
+      "summary": "Function exportLineagePng implementing specific routines inside dwh-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        991,
+        1041
+      ]
+    },
+    {
+      "id": "function:app/(admin)/dwh/page.tsx:DwhPage",
+      "type": "function",
+      "name": "DwhPage",
+      "summary": "Function DwhPage implementing specific routines inside page.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        6,
+        8
+      ]
+    },
+    {
+      "id": "function:app/(admin)/dwh/use-dwh-url-state.ts:useDwhUrlState",
+      "type": "function",
+      "name": "useDwhUrlState",
+      "summary": "Function useDwhUrlState implementing specific routines inside use-dwh-url-state.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        67,
+        231
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-compare-panel.tsx:DwhComparePanel",
+      "type": "function",
+      "name": "DwhComparePanel",
+      "summary": "Function DwhComparePanel implementing specific routines inside dwh-compare-panel.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        42,
+        91
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-compare-panel.tsx:Column",
+      "type": "function",
+      "name": "Column",
+      "summary": "Function Column implementing specific routines inside dwh-compare-panel.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        93,
+        143
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-compare-panel.tsx:Metric",
+      "type": "function",
+      "name": "Metric",
+      "summary": "Function Metric implementing specific routines inside dwh-compare-panel.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        145,
+        169
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-compare-panel.tsx:ComparisonStrip",
+      "type": "function",
+      "name": "ComparisonStrip",
+      "summary": "Function ComparisonStrip implementing specific routines inside dwh-compare-panel.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        171,
+        213
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-compare-panel.tsx:Pill",
+      "type": "function",
+      "name": "Pill",
+      "summary": "Function Pill implementing specific routines inside dwh-compare-panel.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        220,
+        245
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-explain-stale-dialog.tsx:DwhExplainStaleDialog",
+      "type": "function",
+      "name": "DwhExplainStaleDialog",
+      "summary": "Function DwhExplainStaleDialog implementing specific routines inside dwh-explain-stale-dialog.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        63,
+        298
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-explain-stale-dialog.tsx:ReasonRow",
+      "type": "function",
+      "name": "ReasonRow",
+      "summary": "Function ReasonRow implementing specific routines inside dwh-explain-stale-dialog.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        304,
+        345
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-explain-stale-dialog.tsx:NodeListItem",
+      "type": "function",
+      "name": "NodeListItem",
+      "summary": "Function NodeListItem implementing specific routines inside dwh-explain-stale-dialog.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        347,
+        367
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-explain-stale-dialog.tsx:dotFor",
+      "type": "function",
+      "name": "dotFor",
+      "summary": "Function dotFor implementing specific routines inside dwh-explain-stale-dialog.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        406,
+        417
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-fact-list.tsx:DwhFactList",
+      "type": "function",
+      "name": "DwhFactList",
+      "summary": "Function DwhFactList implementing specific routines inside dwh-fact-list.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        37,
+        184
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-fact-panel.tsx:DwhFactPanel",
+      "type": "function",
+      "name": "DwhFactPanel",
+      "summary": "Function DwhFactPanel implementing specific routines inside dwh-fact-panel.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        60,
+        199
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-fact-panel.tsx:FactDetail",
+      "type": "function",
+      "name": "FactDetail",
+      "summary": "Function FactDetail implementing specific routines inside dwh-fact-panel.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        203,
+        238
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-fact-panel.tsx:NonFactDetail",
+      "type": "function",
+      "name": "NonFactDetail",
+      "summary": "Function NonFactDetail implementing specific routines inside dwh-fact-panel.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        240,
+        263
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-fact-panel.tsx:Metric",
+      "type": "function",
+      "name": "Metric",
+      "summary": "Function Metric implementing specific routines inside dwh-fact-panel.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        272,
+        295
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-fact-panel.tsx:Section",
+      "type": "function",
+      "name": "Section",
+      "summary": "Function Section implementing specific routines inside dwh-fact-panel.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        297,
+        315
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-fact-panel.tsx:TableList",
+      "type": "function",
+      "name": "TableList",
+      "summary": "Function TableList implementing specific routines inside dwh-fact-panel.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        317,
+        331
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-keyboard-help.tsx:DwhKeyboardHelp",
+      "type": "function",
+      "name": "DwhKeyboardHelp",
+      "summary": "Function DwhKeyboardHelp implementing specific routines inside dwh-keyboard-help.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        31,
+        98
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-lineage-graph.tsx:EdgeLabel",
+      "type": "function",
+      "name": "EdgeLabel",
+      "summary": "Function EdgeLabel implementing specific routines inside dwh-lineage-graph.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        604,
+        682
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-lineage-graph.tsx:DwhNodeRect",
+      "type": "function",
+      "name": "DwhNodeRect",
+      "summary": "Function DwhNodeRect implementing specific routines inside dwh-lineage-graph.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        705,
+        934
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-lineage-graph.tsx:NodeSparkline",
+      "type": "function",
+      "name": "NodeSparkline",
+      "summary": "Function NodeSparkline implementing specific routines inside dwh-lineage-graph.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        940,
+        990
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-lineage-graph.tsx:mockSeries",
+      "type": "function",
+      "name": "mockSeries",
+      "summary": "Function mockSeries implementing specific routines inside dwh-lineage-graph.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        992,
+        1011
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-lineage-graph.tsx:ViewportControls",
+      "type": "function",
+      "name": "ViewportControls",
+      "summary": "Function ViewportControls implementing specific routines inside dwh-lineage-graph.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        1017,
+        1052
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-lineage-graph.tsx:CtrlBtn",
+      "type": "function",
+      "name": "CtrlBtn",
+      "summary": "Function CtrlBtn implementing specific routines inside dwh-lineage-graph.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        1054,
+        1082
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-lineage-graph.tsx:nodeMatchesFilter",
+      "type": "function",
+      "name": "nodeMatchesFilter",
+      "summary": "Function nodeMatchesFilter implementing specific routines inside dwh-lineage-graph.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        1102,
+        1114
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-lineage-graph.tsx:computeLayout",
+      "type": "function",
+      "name": "computeLayout",
+      "summary": "Function computeLayout implementing specific routines inside dwh-lineage-graph.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        1131,
+        1162
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-lineage-graph.tsx:DwhLineageLegend",
+      "type": "function",
+      "name": "DwhLineageLegend",
+      "summary": "Function DwhLineageLegend implementing specific routines inside dwh-lineage-graph.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        1172,
+        1223
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-minimap.tsx:DwhMinimap",
+      "type": "function",
+      "name": "DwhMinimap",
+      "summary": "Function DwhMinimap implementing specific routines inside dwh-minimap.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        55,
+        221
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-node-context-menu.tsx:DwhNodeContextMenu",
+      "type": "function",
+      "name": "DwhNodeContextMenu",
+      "summary": "Function DwhNodeContextMenu implementing specific routines inside dwh-node-context-menu.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        41,
+        155
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-quick-search.tsx:DwhQuickSearch",
+      "type": "function",
+      "name": "DwhQuickSearch",
+      "summary": "Function DwhQuickSearch implementing specific routines inside dwh-quick-search.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        46,
+        241
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-saved-views-menu.tsx:DwhSavedViewsMenu",
+      "type": "function",
+      "name": "DwhSavedViewsMenu",
+      "summary": "Function DwhSavedViewsMenu implementing specific routines inside dwh-saved-views-menu.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        26,
+        152
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-saved-views-menu.tsx:ViewRow",
+      "type": "function",
+      "name": "ViewRow",
+      "summary": "Function ViewRow implementing specific routines inside dwh-saved-views-menu.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        154,
+        193
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-saved-views-menu.tsx:buildSummary",
+      "type": "function",
+      "name": "buildSummary",
+      "summary": "Function buildSummary implementing specific routines inside dwh-saved-views-menu.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        195,
+        205
+      ]
+    },
+    {
+      "id": "function:components/control-center/etl-status-badge.tsx:EtlStatusBadge",
+      "type": "function",
+      "name": "EtlStatusBadge",
+      "summary": "Function EtlStatusBadge implementing specific routines inside etl-status-badge.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        9,
+        20
+      ]
+    },
+    {
+      "id": "function:components/control-center/severity-chip.tsx:SeverityIcon",
+      "type": "function",
+      "name": "SeverityIcon",
+      "summary": "Function SeverityIcon implementing specific routines inside severity-chip.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        26,
+        34
+      ]
+    },
+    {
+      "id": "function:components/control-center/severity-chip.tsx:SeverityChip",
+      "type": "function",
+      "name": "SeverityChip",
+      "summary": "Function SeverityChip implementing specific routines inside severity-chip.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        42,
+        56
+      ]
+    },
+    {
+      "id": "function:components/ui/badge.tsx:Badge",
+      "type": "function",
+      "name": "Badge",
+      "summary": "Function Badge implementing specific routines inside badge.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        31,
+        35
+      ]
+    },
+    {
+      "id": "file:components/ui/status-badge.tsx",
+      "type": "file",
+      "name": "status-badge.tsx",
+      "filePath": "components/ui/status-badge.tsx",
+      "summary": "Source code file implementing components or logic for status-badge.tsx.",
+      "tags": [
+        "code",
+        "typescript",
+        "ui-component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:components/ui/status-badge.tsx:StatusBadge",
+      "type": "function",
+      "name": "StatusBadge",
+      "summary": "Function StatusBadge implementing specific routines inside status-badge.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        63,
+        154
+      ]
+    },
+    {
+      "id": "file:hooks/use-dwh-keyboard-nav.ts",
+      "type": "file",
+      "name": "use-dwh-keyboard-nav.ts",
+      "filePath": "hooks/use-dwh-keyboard-nav.ts",
+      "summary": "Source code file implementing components or logic for use-dwh-keyboard-nav.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "react-hook"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:hooks/use-dwh-keyboard-nav.ts:useDwhKeyboardNav",
+      "type": "function",
+      "name": "useDwhKeyboardNav",
+      "summary": "Function useDwhKeyboardNav implementing specific routines inside use-dwh-keyboard-nav.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        46,
+        177
+      ]
+    },
+    {
+      "id": "file:hooks/use-dwh.ts",
+      "type": "file",
+      "name": "use-dwh.ts",
+      "filePath": "hooks/use-dwh.ts",
+      "summary": "Source code file implementing components or logic for use-dwh.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "react-hook"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:hooks/use-dwh.ts:useDwhExplorer",
+      "type": "function",
+      "name": "useDwhExplorer",
+      "summary": "Function useDwhExplorer implementing specific routines inside use-dwh.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        15,
+        43
+      ]
+    },
+    {
+      "id": "file:hooks/use-pinned-nodes.ts",
+      "type": "file",
+      "name": "use-pinned-nodes.ts",
+      "filePath": "hooks/use-pinned-nodes.ts",
+      "summary": "Source code file implementing components or logic for use-pinned-nodes.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "react-hook"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:hooks/use-pinned-nodes.ts:subscribe",
+      "type": "function",
+      "name": "subscribe",
+      "summary": "Function subscribe implementing specific routines inside use-pinned-nodes.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        56,
+        67
+      ]
+    },
+    {
+      "id": "function:hooks/use-pinned-nodes.ts:writeAndNotify",
+      "type": "function",
+      "name": "writeAndNotify",
+      "summary": "Function writeAndNotify implementing specific routines inside use-pinned-nodes.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        73,
+        86
+      ]
+    },
+    {
+      "id": "function:hooks/use-pinned-nodes.ts:usePinnedNodes",
+      "type": "function",
+      "name": "usePinnedNodes",
+      "summary": "Function usePinnedNodes implementing specific routines inside use-pinned-nodes.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        99,
+        130
+      ]
+    },
+    {
+      "id": "file:hooks/use-saved-views.ts",
+      "type": "file",
+      "name": "use-saved-views.ts",
+      "filePath": "hooks/use-saved-views.ts",
+      "summary": "Source code file implementing components or logic for use-saved-views.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "react-hook"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:hooks/use-saved-views.ts:parseList",
+      "type": "function",
+      "name": "parseList",
+      "summary": "Function parseList implementing specific routines inside use-saved-views.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        35,
+        60
+      ]
+    },
+    {
+      "id": "function:hooks/use-saved-views.ts:subscribe",
+      "type": "function",
+      "name": "subscribe",
+      "summary": "Function subscribe implementing specific routines inside use-saved-views.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        75,
+        86
+      ]
+    },
+    {
+      "id": "function:hooks/use-saved-views.ts:writeAndNotify",
+      "type": "function",
+      "name": "writeAndNotify",
+      "summary": "Function writeAndNotify implementing specific routines inside use-saved-views.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        88,
+        99
+      ]
+    },
+    {
+      "id": "function:hooks/use-saved-views.ts:useSavedViews",
+      "type": "function",
+      "name": "useSavedViews",
+      "summary": "Function useSavedViews implementing specific routines inside use-saved-views.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        110,
+        151
+      ]
+    },
+    {
+      "id": "file:hooks/use-status-flash.ts",
+      "type": "file",
+      "name": "use-status-flash.ts",
+      "filePath": "hooks/use-status-flash.ts",
+      "summary": "Source code file implementing components or logic for use-status-flash.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "react-hook"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:hooks/use-status-flash.ts:reducer",
+      "type": "function",
+      "name": "reducer",
+      "summary": "Function reducer implementing specific routines inside use-status-flash.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        38,
+        54
+      ]
+    },
+    {
+      "id": "function:hooks/use-status-flash.ts:useStatusFlash",
+      "type": "function",
+      "name": "useStatusFlash",
+      "summary": "Function useStatusFlash implementing specific routines inside use-status-flash.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        56,
+        117
+      ]
+    },
+    {
+      "id": "file:lib/schemas/dwh.ts",
+      "type": "file",
+      "name": "dwh.ts",
+      "filePath": "lib/schemas/dwh.ts",
+      "summary": "Source code file implementing components or logic for dwh.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "library"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:lib/status.ts",
+      "type": "file",
+      "name": "status.ts",
+      "filePath": "lib/status.ts",
+      "summary": "Source code file implementing components or logic for status.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "library"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:lib/status.ts:toneFromLevel",
+      "type": "function",
+      "name": "toneFromLevel",
+      "summary": "Function toneFromLevel implementing specific routines inside status.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        106,
+        108
+      ]
+    },
+    {
+      "id": "function:lib/status.ts:toneFromCorrida",
+      "type": "function",
+      "name": "toneFromCorrida",
+      "summary": "Function toneFromCorrida implementing specific routines inside status.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        111,
+        126
+      ]
+    },
+    {
+      "id": "function:lib/status.ts:toneFromBitacora",
+      "type": "function",
+      "name": "toneFromBitacora",
+      "summary": "Function toneFromBitacora implementing specific routines inside status.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        129,
+        146
+      ]
+    },
+    {
+      "id": "function:lib/status.ts:toneFromSeverity",
+      "type": "function",
+      "name": "toneFromSeverity",
+      "summary": "Function toneFromSeverity implementing specific routines inside status.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        149,
+        153
+      ]
+    },
+    {
+      "id": "function:lib/status.ts:statusTone",
+      "type": "function",
+      "name": "statusTone",
+      "summary": "Function statusTone implementing specific routines inside status.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        159,
+        162
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "function:app/(admin)/dwh/dwh-client.tsx:DwhExplorerClient",
+      "target": "function:app/(admin)/dwh/use-dwh-url-state.ts:useDwhUrlState",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/dwh/dwh-client.tsx:DwhExplorerClient",
+      "target": "function:hooks/use-toast.ts:useToast",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/dwh/dwh-client.tsx:DwhExplorerClient",
+      "target": "function:hooks/use-dwh.ts:useDwhExplorer",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/dwh/dwh-client.tsx:DwhExplorerClient",
+      "target": "function:hooks/use-pinned-nodes.ts:usePinnedNodes",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/dwh/dwh-client.tsx:DwhExplorerClient",
+      "target": "function:hooks/use-status-flash.ts:useStatusFlash",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/dwh/dwh-client.tsx:DwhExplorerClient",
+      "target": "function:hooks/use-dwh-keyboard-nav.ts:useDwhKeyboardNav",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/dwh/dwh-client.tsx:DwhExplorerClient",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/dwh/dwh-client.tsx:DwhExplorerClient",
+      "target": "function:hooks/use-toast.ts:toast",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/dwh/dwh-client.tsx:DwhExplorerClient",
+      "target": "function:hooks/use-toast.ts:toast",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/dwh/dwh-client.tsx:HeaderActions",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/dwh/dwh-client.tsx:HeaderActions",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/dwh/dwh-client.tsx:HeaderActions",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/dwh/dwh-client.tsx:Toolbar",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/dwh/dwh-client.tsx:Toolbar",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/dwh/dwh-client.tsx:Toolbar",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/dwh/dwh-client.tsx:ViewBtn",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-compare-panel.tsx:DwhComparePanel",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-compare-panel.tsx:Column",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-compare-panel.tsx:Column",
+      "target": "function:lib/format.ts:formatNumber",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-compare-panel.tsx:Column",
+      "target": "function:lib/format.ts:formatNumber",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-compare-panel.tsx:Column",
+      "target": "function:lib/format.ts:formatDateTime",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-compare-panel.tsx:Metric",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-compare-panel.tsx:Pill",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-explain-stale-dialog.tsx:DwhExplainStaleDialog",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-explain-stale-dialog.tsx:DwhExplainStaleDialog",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-explain-stale-dialog.tsx:DwhExplainStaleDialog",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-explain-stale-dialog.tsx:DwhExplainStaleDialog",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-explain-stale-dialog.tsx:DwhExplainStaleDialog",
+      "target": "function:lib/format.ts:formatDateTime",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-explain-stale-dialog.tsx:DwhExplainStaleDialog",
+      "target": "function:lib/format.ts:formatNumber",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-explain-stale-dialog.tsx:ReasonRow",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-explain-stale-dialog.tsx:ReasonRow",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-explain-stale-dialog.tsx:NodeListItem",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-explain-stale-dialog.tsx:NodeListItem",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-fact-list.tsx:DwhFactList",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-fact-list.tsx:DwhFactList",
+      "target": "function:lib/format.ts:formatNumber",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-fact-list.tsx:DwhFactList",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-fact-list.tsx:DwhFactList",
+      "target": "function:lib/format.ts:formatNumber",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-fact-list.tsx:DwhFactList",
+      "target": "function:lib/format.ts:formatDateTime",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-fact-panel.tsx:DwhFactPanel",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-fact-panel.tsx:DwhFactPanel",
+      "target": "function:lib/format.ts:formatNumber",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-fact-panel.tsx:DwhFactPanel",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-fact-panel.tsx:DwhFactPanel",
+      "target": "function:lib/format.ts:formatNumber",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-fact-panel.tsx:DwhFactPanel",
+      "target": "function:lib/format.ts:formatNumber",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-fact-panel.tsx:DwhFactPanel",
+      "target": "function:lib/format.ts:formatDateTime",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-fact-panel.tsx:Metric",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-fact-panel.tsx:Metric",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-keyboard-help.tsx:DwhKeyboardHelp",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-keyboard-help.tsx:DwhKeyboardHelp",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-lineage-graph.tsx:DwhNodeRect",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-lineage-graph.tsx:DwhNodeRect",
+      "target": "function:lib/format.ts:formatDateTime",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-lineage-graph.tsx:DwhNodeRect",
+      "target": "function:lib/format.ts:formatNumber",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-lineage-graph.tsx:DwhNodeRect",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-lineage-graph.tsx:DwhNodeRect",
+      "target": "function:lib/format.ts:formatNumber",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-lineage-graph.tsx:CtrlBtn",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-lineage-graph.tsx:DwhLineageLegend",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-node-context-menu.tsx:DwhNodeContextMenu",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-node-context-menu.tsx:DwhNodeContextMenu",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-quick-search.tsx:DwhQuickSearch",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-quick-search.tsx:DwhQuickSearch",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-quick-search.tsx:DwhQuickSearch",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-quick-search.tsx:DwhQuickSearch",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-saved-views-menu.tsx:DwhSavedViewsMenu",
+      "target": "function:hooks/use-saved-views.ts:useSavedViews",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-saved-views-menu.tsx:DwhSavedViewsMenu",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-saved-views-menu.tsx:DwhSavedViewsMenu",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-saved-views-menu.tsx:DwhSavedViewsMenu",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/etl-status-badge.tsx:EtlStatusBadge",
+      "target": "function:lib/status.ts:toneFromCorrida",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/severity-chip.tsx:SeverityIcon",
+      "target": "function:lib/status.ts:toneFromSeverity",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/severity-chip.tsx:SeverityChip",
+      "target": "function:lib/status.ts:toneFromSeverity",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/ui/badge.tsx:Badge",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:components/ui/status-badge.tsx",
+      "target": "function:components/ui/status-badge.tsx:StatusBadge",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/ui/status-badge.tsx",
+      "target": "function:components/ui/status-badge.tsx:StatusBadge",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:components/ui/status-badge.tsx",
+      "target": "file:lib/status.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/ui/status-badge.tsx",
+      "target": "file:lib/utils.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "function:components/ui/status-badge.tsx:StatusBadge",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/ui/status-badge.tsx:StatusBadge",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/ui/status-badge.tsx:StatusBadge",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/ui/status-badge.tsx:StatusBadge",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/ui/status-badge.tsx:StatusBadge",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/ui/status-badge.tsx:StatusBadge",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/ui/status-badge.tsx:StatusBadge",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:hooks/use-dwh-keyboard-nav.ts",
+      "target": "function:hooks/use-dwh-keyboard-nav.ts:useDwhKeyboardNav",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:hooks/use-dwh-keyboard-nav.ts",
+      "target": "function:hooks/use-dwh-keyboard-nav.ts:useDwhKeyboardNav",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:hooks/use-dwh-keyboard-nav.ts",
+      "target": "file:lib/schemas/dwh.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:hooks/use-dwh.ts",
+      "target": "function:hooks/use-dwh.ts:useDwhExplorer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:hooks/use-dwh.ts",
+      "target": "function:hooks/use-dwh.ts:useDwhExplorer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:hooks/use-dwh.ts",
+      "target": "file:lib/schemas/dwh.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:hooks/use-pinned-nodes.ts",
+      "target": "function:hooks/use-pinned-nodes.ts:subscribe",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:hooks/use-pinned-nodes.ts",
+      "target": "function:hooks/use-pinned-nodes.ts:writeAndNotify",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:hooks/use-pinned-nodes.ts",
+      "target": "function:hooks/use-pinned-nodes.ts:usePinnedNodes",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:hooks/use-pinned-nodes.ts",
+      "target": "function:hooks/use-pinned-nodes.ts:usePinnedNodes",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:hooks/use-saved-views.ts",
+      "target": "function:hooks/use-saved-views.ts:parseList",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:hooks/use-saved-views.ts",
+      "target": "function:hooks/use-saved-views.ts:subscribe",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:hooks/use-saved-views.ts",
+      "target": "function:hooks/use-saved-views.ts:writeAndNotify",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:hooks/use-saved-views.ts",
+      "target": "function:hooks/use-saved-views.ts:useSavedViews",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:hooks/use-saved-views.ts",
+      "target": "function:hooks/use-saved-views.ts:useSavedViews",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:hooks/use-saved-views.ts",
+      "target": "file:app/(admin)/dwh/use-dwh-url-state.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:hooks/use-status-flash.ts",
+      "target": "function:hooks/use-status-flash.ts:reducer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:hooks/use-status-flash.ts",
+      "target": "function:hooks/use-status-flash.ts:useStatusFlash",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:hooks/use-status-flash.ts",
+      "target": "function:hooks/use-status-flash.ts:useStatusFlash",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:hooks/use-status-flash.ts",
+      "target": "file:lib/schemas/dwh.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:lib/status.ts",
+      "target": "function:lib/status.ts:toneFromLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:lib/status.ts",
+      "target": "function:lib/status.ts:toneFromLevel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/status.ts",
+      "target": "function:lib/status.ts:toneFromCorrida",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:lib/status.ts",
+      "target": "function:lib/status.ts:toneFromCorrida",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/status.ts",
+      "target": "function:lib/status.ts:toneFromBitacora",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:lib/status.ts",
+      "target": "function:lib/status.ts:toneFromBitacora",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/status.ts",
+      "target": "function:lib/status.ts:toneFromSeverity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:lib/status.ts",
+      "target": "function:lib/status.ts:toneFromSeverity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/status.ts",
+      "target": "function:lib/status.ts:statusTone",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:lib/status.ts",
+      "target": "function:lib/status.ts:statusTone",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/status.ts",
+      "target": "file:lib/schemas/control-center.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

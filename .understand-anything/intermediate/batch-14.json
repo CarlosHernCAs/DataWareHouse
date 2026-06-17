@@ -1,0 +1,44 @@
+{
+  "nodes": [
+    {
+      "id": "file:backend/scratch/sql_alertas.sql",
+      "type": "table",
+      "name": "sql_alertas.sql",
+      "filePath": "backend/scratch/sql_alertas.sql",
+      "summary": "File mapped from backend/scratch/sql_alertas.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:backend/scratch/sql_indices_auditoria.sql",
+      "type": "table",
+      "name": "sql_indices_auditoria.sql",
+      "filePath": "backend/scratch/sql_indices_auditoria.sql",
+      "summary": "File mapped from backend/scratch/sql_indices_auditoria.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:backend/scratch/sql_indices_cuarentena.sql",
+      "type": "table",
+      "name": "sql_indices_cuarentena.sql",
+      "filePath": "backend/scratch/sql_indices_cuarentena.sql",
+      "summary": "File mapped from backend/scratch/sql_indices_cuarentena.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

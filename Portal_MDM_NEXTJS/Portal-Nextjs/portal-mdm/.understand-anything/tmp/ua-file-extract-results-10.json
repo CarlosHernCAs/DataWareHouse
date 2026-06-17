@@ -1,0 +1,780 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 6,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "app/(admin)/etl-monitor/lanzar/launch-client.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 604,
+      "nonEmptyLines": 558,
+      "functions": [
+        {
+          "name": "LaunchEtlClient",
+          "startLine": 46,
+          "endLine": 165,
+          "params": []
+        },
+        {
+          "name": "ActiveCorridaBanner",
+          "startLine": 175,
+          "endLine": 215,
+          "params": [
+            "{ loading, active, hasActive }"
+          ]
+        },
+        {
+          "name": "ModeSelector",
+          "startLine": 225,
+          "endLine": 255,
+          "params": [
+            "{ mode, onChange, disabled }"
+          ]
+        },
+        {
+          "name": "ModeCard",
+          "startLine": 266,
+          "endLine": 289,
+          "params": [
+            "{ active, onClick, icon, title, description, hint }"
+          ]
+        },
+        {
+          "name": "FactsPicker",
+          "startLine": 305,
+          "endLine": 391,
+          "params": [
+            "{\n  loading,\n  error,\n  facts,\n  selected,\n  onToggle,\n  onSelectAll,\n  onClear,\n  disabled,\n  onRetry,\n}"
+          ]
+        },
+        {
+          "name": "FactRow",
+          "startLine": 393,
+          "endLine": 456,
+          "params": [
+            "{\n  fact,\n  selected,\n  onToggle,\n}"
+          ]
+        },
+        {
+          "name": "FlagsPanel",
+          "startLine": 466,
+          "endLine": 498,
+          "params": [
+            "{ value, onChange, disabled }"
+          ]
+        },
+        {
+          "name": "FlagToggle",
+          "startLine": 507,
+          "endLine": 529,
+          "params": [
+            "{ checked, onChange, title, description }"
+          ]
+        },
+        {
+          "name": "CommentField",
+          "startLine": 539,
+          "endLine": 558,
+          "params": [
+            "{ value, onChange, disabled }"
+          ]
+        },
+        {
+          "name": "FooterActions",
+          "startLine": 569,
+          "endLine": 604,
+          "params": [
+            "{ canSubmit, pending, mode, facts }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "LaunchEtlClient",
+          "line": 46,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "LaunchEtlClient",
+          "callee": "useRouter",
+          "lineNumber": 47
+        },
+        {
+          "caller": "LaunchEtlClient",
+          "callee": "useToast",
+          "lineNumber": 48
+        },
+        {
+          "caller": "LaunchEtlClient",
+          "callee": "useState",
+          "lineNumber": 50
+        },
+        {
+          "caller": "LaunchEtlClient",
+          "callee": "useState",
+          "lineNumber": 51
+        },
+        {
+          "caller": "LaunchEtlClient",
+          "callee": "useState",
+          "lineNumber": 52
+        },
+        {
+          "caller": "LaunchEtlClient",
+          "callee": "useState",
+          "lineNumber": 53
+        },
+        {
+          "caller": "LaunchEtlClient",
+          "callee": "useFactCatalog",
+          "lineNumber": 55
+        },
+        {
+          "caller": "LaunchEtlClient",
+          "callee": "useActiveCorridas",
+          "lineNumber": 56
+        },
+        {
+          "caller": "LaunchEtlClient",
+          "callee": "useLaunchCorrida",
+          "lineNumber": 57
+        },
+        {
+          "caller": "LaunchEtlClient",
+          "callee": "useMemo",
+          "lineNumber": 59
+        },
+        {
+          "caller": "LaunchEtlClient",
+          "callee": "Array.from",
+          "lineNumber": 62
+        },
+        {
+          "caller": "toggleFact",
+          "callee": "setSelectedFacts",
+          "lineNumber": 68
+        },
+        {
+          "caller": "toggleFact",
+          "callee": "next.has",
+          "lineNumber": 70
+        },
+        {
+          "caller": "toggleFact",
+          "callee": "next.delete",
+          "lineNumber": 70
+        },
+        {
+          "caller": "toggleFact",
+          "callee": "next.add",
+          "lineNumber": 71
+        },
+        {
+          "caller": "selectAll",
+          "callee": "setSelectedFacts",
+          "lineNumber": 77
+        },
+        {
+          "caller": "selectAll",
+          "callee": "facts.map",
+          "lineNumber": 77
+        },
+        {
+          "caller": "clearAll",
+          "callee": "setSelectedFacts",
+          "lineNumber": 81
+        },
+        {
+          "caller": "onSubmit",
+          "callee": "e.preventDefault",
+          "lineNumber": 85
+        },
+        {
+          "caller": "onSubmit",
+          "callee": "launch.mutate",
+          "lineNumber": 88
+        },
+        {
+          "caller": "onSubmit",
+          "callee": "comentario.trim",
+          "lineNumber": 90
+        },
+        {
+          "caller": "onSubmit",
+          "callee": "toast",
+          "lineNumber": 99
+        },
+        {
+          "caller": "onSubmit",
+          "callee": "router.push",
+          "lineNumber": 107
+        },
+        {
+          "caller": "onSubmit",
+          "callee": "toast",
+          "lineNumber": 110
+        },
+        {
+          "caller": "onSubmit",
+          "callee": "String",
+          "lineNumber": 113
+        },
+        {
+          "caller": "LaunchEtlClient",
+          "callee": "catalog.refetch",
+          "lineNumber": 145
+        },
+        {
+          "caller": "ActiveCorridaBanner",
+          "callee": "active.slice(0, 3).map",
+          "lineNumber": 202
+        },
+        {
+          "caller": "ActiveCorridaBanner",
+          "callee": "active.slice",
+          "lineNumber": 202
+        },
+        {
+          "caller": "ActiveCorridaBanner",
+          "callee": "c.id.slice",
+          "lineNumber": 208
+        },
+        {
+          "caller": "ModeSelector",
+          "callee": "onChange",
+          "lineNumber": 238
+        },
+        {
+          "caller": "ModeSelector",
+          "callee": "onChange",
+          "lineNumber": 246
+        },
+        {
+          "caller": "ModeCard",
+          "callee": "cn",
+          "lineNumber": 272
+        },
+        {
+          "caller": "FactsPicker",
+          "callee": "Array.from({ length: 6 }).map",
+          "lineNumber": 355
+        },
+        {
+          "caller": "FactsPicker",
+          "callee": "Array.from",
+          "lineNumber": 355
+        },
+        {
+          "caller": "FactsPicker",
+          "callee": "facts.map",
+          "lineNumber": 379
+        },
+        {
+          "caller": "FactsPicker",
+          "callee": "selected.has",
+          "lineNumber": 383
+        },
+        {
+          "caller": "FactsPicker",
+          "callee": "onToggle",
+          "lineNumber": 384
+        },
+        {
+          "caller": "FactRow",
+          "callee": "cn",
+          "lineNumber": 405
+        },
+        {
+          "caller": "FactRow",
+          "callee": "fact.dependencias.join",
+          "lineNumber": 439
+        },
+        {
+          "caller": "FactRow",
+          "callee": "fact.dependencias.join",
+          "lineNumber": 440
+        },
+        {
+          "caller": "FactRow",
+          "callee": "fact.marts.join",
+          "lineNumber": 447
+        },
+        {
+          "caller": "FactRow",
+          "callee": "fact.marts.join",
+          "lineNumber": 448
+        },
+        {
+          "caller": "FlagsPanel",
+          "callee": "onChange",
+          "lineNumber": 479
+        },
+        {
+          "caller": "FlagsPanel",
+          "callee": "onChange",
+          "lineNumber": 485
+        },
+        {
+          "caller": "FlagsPanel",
+          "callee": "onChange",
+          "lineNumber": 491
+        },
+        {
+          "caller": "FlagToggle",
+          "callee": "cn",
+          "lineNumber": 510
+        },
+        {
+          "caller": "FlagToggle",
+          "callee": "onChange",
+          "lineNumber": 520
+        },
+        {
+          "caller": "CommentField",
+          "callee": "onChange",
+          "lineNumber": 546
+        }
+      ],
+      "metrics": {
+        "importCount": 9,
+        "exportCount": 1,
+        "functionCount": 10,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/(admin)/etl-monitor/lanzar/page.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 21,
+      "nonEmptyLines": 19,
+      "functions": [
+        {
+          "name": "LaunchEtlPage",
+          "startLine": 8,
+          "endLine": 21,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "metadata",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "LaunchEtlPage",
+          "line": 8,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/api/cc/etl/active/route.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 26,
+      "nonEmptyLines": 24,
+      "functions": [
+        {
+          "name": "GET",
+          "startLine": 12,
+          "endLine": 26,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "GET",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "GET",
+          "callee": "await fastapiFetch",
+          "lineNumber": 14
+        },
+        {
+          "caller": "GET",
+          "callee": "z.array(FastApiCorridaActiva).parse",
+          "lineNumber": 15
+        },
+        {
+          "caller": "GET",
+          "callee": "z.array",
+          "lineNumber": 15
+        },
+        {
+          "caller": "GET",
+          "callee": "parsed.map",
+          "lineNumber": 16
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 17
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 20
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 21
+        },
+        {
+          "caller": "GET",
+          "callee": "String",
+          "lineNumber": 22
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/api/cc/etl/facts/route.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 28,
+      "nonEmptyLines": 26,
+      "functions": [
+        {
+          "name": "GET",
+          "startLine": 12,
+          "endLine": 28,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "GET",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "GET",
+          "callee": "await fastapiFetch",
+          "lineNumber": 14
+        },
+        {
+          "caller": "GET",
+          "callee": "z.array(FastApiFactDisponible).parse",
+          "lineNumber": 15
+        },
+        {
+          "caller": "GET",
+          "callee": "z.array",
+          "lineNumber": 15
+        },
+        {
+          "caller": "GET",
+          "callee": "parsed\n      .map(mapFactDisponible)\n      .sort",
+          "lineNumber": 16
+        },
+        {
+          "caller": "GET",
+          "callee": "parsed\n      .map",
+          "lineNumber": 16
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 19
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 22
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 23
+        },
+        {
+          "caller": "GET",
+          "callee": "String",
+          "lineNumber": 24
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "hooks/use-etl-launch.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 98,
+      "nonEmptyLines": 91,
+      "functions": [
+        {
+          "name": "fetchJson",
+          "startLine": 29,
+          "endLine": 56,
+          "params": [
+            "path",
+            "schema",
+            "init"
+          ]
+        },
+        {
+          "name": "useFactCatalog",
+          "startLine": 58,
+          "endLine": 64,
+          "params": []
+        },
+        {
+          "name": "useActiveCorridas",
+          "startLine": 66,
+          "endLine": 77,
+          "params": []
+        },
+        {
+          "name": "useLaunchCorrida",
+          "startLine": 79,
+          "endLine": 98,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "useFactCatalog",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "useActiveCorridas",
+          "line": 66,
+          "isDefault": false
+        },
+        {
+          "name": "useLaunchCorrida",
+          "line": 79,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "fetchJson",
+          "callee": "fetch",
+          "lineNumber": 34
+        },
+        {
+          "caller": "fetchJson",
+          "callee": "res.json",
+          "lineNumber": 42
+        },
+        {
+          "caller": "fetchJson",
+          "callee": "String",
+          "lineNumber": 44
+        },
+        {
+          "caller": "fetchJson",
+          "callee": "schema.parse",
+          "lineNumber": 55
+        },
+        {
+          "caller": "fetchJson",
+          "callee": "res.json",
+          "lineNumber": 55
+        },
+        {
+          "caller": "useFactCatalog",
+          "callee": "useQuery",
+          "lineNumber": 59
+        },
+        {
+          "caller": "useFactCatalog",
+          "callee": "fetchJson",
+          "lineNumber": 61
+        },
+        {
+          "caller": "useFactCatalog",
+          "callee": "z.array",
+          "lineNumber": 61
+        },
+        {
+          "caller": "useActiveCorridas",
+          "callee": "useQuery",
+          "lineNumber": 67
+        },
+        {
+          "caller": "useActiveCorridas",
+          "callee": "fetchJson",
+          "lineNumber": 69
+        },
+        {
+          "caller": "useActiveCorridas",
+          "callee": "z.array",
+          "lineNumber": 69
+        },
+        {
+          "caller": "useLaunchCorrida",
+          "callee": "useQueryClient",
+          "lineNumber": 84
+        },
+        {
+          "caller": "useLaunchCorrida",
+          "callee": "useMutation",
+          "lineNumber": 85
+        },
+        {
+          "caller": "useLaunchCorrida",
+          "callee": "fetchJson",
+          "lineNumber": 87
+        },
+        {
+          "caller": "useLaunchCorrida",
+          "callee": "JSON.stringify",
+          "lineNumber": 90
+        },
+        {
+          "caller": "useLaunchCorrida",
+          "callee": "qc.invalidateQueries",
+          "lineNumber": 93
+        },
+        {
+          "caller": "useLaunchCorrida",
+          "callee": "qc.invalidateQueries",
+          "lineNumber": 94
+        },
+        {
+          "caller": "useLaunchCorrida",
+          "callee": "qc.invalidateQueries",
+          "lineNumber": 95
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/schemas/etl-launch.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 138,
+      "nonEmptyLines": 124,
+      "functions": [
+        {
+          "name": "mapFactDisponible",
+          "startLine": 99,
+          "endLine": 111,
+          "params": [
+            "raw"
+          ]
+        },
+        {
+          "name": "mapCorridaActiva",
+          "startLine": 113,
+          "endLine": 125,
+          "params": [
+            "raw"
+          ]
+        },
+        {
+          "name": "mapCorridaIniciada",
+          "startLine": 127,
+          "endLine": 138,
+          "params": [
+            "raw"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "FastApiFactDisponible",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "FastApiCorridaActiva",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "FastApiCorridaIniciada",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "FactDisponible",
+          "line": 53,
+          "isDefault": false
+        },
+        {
+          "name": "CorridaActiva",
+          "line": 64,
+          "isDefault": false
+        },
+        {
+          "name": "CorridaIniciada",
+          "line": 75,
+          "isDefault": false
+        },
+        {
+          "name": "LanzarCorridaInput",
+          "line": 85,
+          "isDefault": false
+        },
+        {
+          "name": "mapFactDisponible",
+          "line": 99,
+          "isDefault": false
+        },
+        {
+          "name": "mapCorridaActiva",
+          "line": 113,
+          "isDefault": false
+        },
+        {
+          "name": "mapCorridaIniciada",
+          "line": 127,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    }
+  ]
+}

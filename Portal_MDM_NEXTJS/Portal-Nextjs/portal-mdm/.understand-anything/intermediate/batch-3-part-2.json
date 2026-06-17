@@ -1,0 +1,1502 @@
+{
+  "nodes": [
+    {
+      "id": "function:app/(admin)/layout.tsx:AdminLayout",
+      "type": "function",
+      "name": "AdminLayout",
+      "summary": "Function AdminLayout implementing specific routines inside layout.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        7,
+        25
+      ]
+    },
+    {
+      "id": "function:app/(admin)/workflows/homologation-client.tsx:HomologationClient",
+      "type": "function",
+      "name": "HomologationClient",
+      "summary": "Function HomologationClient implementing specific routines inside homologation-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        53,
+        504
+      ]
+    },
+    {
+      "id": "function:app/(admin)/workflows/page.tsx:WorkflowsPage",
+      "type": "function",
+      "name": "WorkflowsPage",
+      "summary": "Function WorkflowsPage implementing specific routines inside page.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        10,
+        35
+      ]
+    },
+    {
+      "id": "function:app/(analyst)/layout.tsx:AnalystLayout",
+      "type": "function",
+      "name": "AnalystLayout",
+      "summary": "Function AnalystLayout implementing specific routines inside layout.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        6,
+        23
+      ]
+    },
+    {
+      "id": "function:app/(auth)/login/login-form.tsx:LoginForm",
+      "type": "function",
+      "name": "LoginForm",
+      "summary": "Function LoginForm implementing specific routines inside login-form.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        12,
+        167
+      ]
+    },
+    {
+      "id": "function:app/(auth)/login/page.tsx:LoginPage",
+      "type": "function",
+      "name": "LoginPage",
+      "summary": "Function LoginPage implementing specific routines inside page.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        11,
+        24
+      ]
+    },
+    {
+      "id": "function:app/(executive)/layout.tsx:ExecutiveLayout",
+      "type": "function",
+      "name": "ExecutiveLayout",
+      "summary": "Function ExecutiveLayout implementing specific routines inside layout.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        6,
+        23
+      ]
+    },
+    {
+      "id": "function:app/api/auth/login/route.ts:POST",
+      "type": "function",
+      "name": "POST",
+      "summary": "Function POST implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        6,
+        61
+      ]
+    },
+    {
+      "id": "function:app/api/auth/logout/route.ts:POST",
+      "type": "function",
+      "name": "POST",
+      "summary": "Function POST implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        4,
+        8
+      ]
+    },
+    {
+      "id": "function:app/api/auth/me/route.ts:GET",
+      "type": "function",
+      "name": "GET",
+      "summary": "Function GET implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        4,
+        15
+      ]
+    },
+    {
+      "id": "function:app/page.tsx:RootPage",
+      "type": "function",
+      "name": "RootPage",
+      "summary": "Function RootPage implementing specific routines inside page.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        5,
+        9
+      ]
+    },
+    {
+      "id": "function:components/providers/alert-stream-mount.tsx:AlertStreamMount",
+      "type": "function",
+      "name": "AlertStreamMount",
+      "summary": "Function AlertStreamMount implementing specific routines inside alert-stream-mount.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        13,
+        16
+      ]
+    },
+    {
+      "id": "function:components/providers/session-expired-handler.tsx:SessionExpiredHandler",
+      "type": "function",
+      "name": "SessionExpiredHandler",
+      "summary": "Function SessionExpiredHandler implementing specific routines inside session-expired-handler.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        33,
+        93
+      ]
+    },
+    {
+      "id": "file:hooks/use-alert-stream.tsx",
+      "type": "file",
+      "name": "use-alert-stream.tsx",
+      "filePath": "hooks/use-alert-stream.tsx",
+      "summary": "Source code file implementing components or logic for use-alert-stream.tsx.",
+      "tags": [
+        "code",
+        "typescript",
+        "react-hook"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:hooks/use-alert-stream.tsx:useAlertStream",
+      "type": "function",
+      "name": "useAlertStream",
+      "summary": "Function useAlertStream implementing specific routines inside use-alert-stream.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        65,
+        209
+      ]
+    },
+    {
+      "id": "file:lib/api/client.ts",
+      "type": "file",
+      "name": "client.ts",
+      "filePath": "lib/api/client.ts",
+      "summary": "Source code file implementing components or logic for client.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "library"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:lib/api/client.ts:apiFetch",
+      "type": "function",
+      "name": "apiFetch",
+      "summary": "Function apiFetch implementing specific routines inside client.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        33,
+        68
+      ]
+    },
+    {
+      "id": "class:lib/api/client.ts:ApiError",
+      "type": "class",
+      "name": "ApiError",
+      "summary": "Class ApiError defining object structures inside client.ts.",
+      "tags": [
+        "class",
+        "object-model"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        8,
+        16
+      ]
+    },
+    {
+      "id": "file:lib/api/define-resource.ts",
+      "type": "file",
+      "name": "define-resource.ts",
+      "filePath": "lib/api/define-resource.ts",
+      "summary": "Source code file implementing components or logic for define-resource.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "library"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:lib/api/define-resource.ts:fetchJson",
+      "type": "function",
+      "name": "fetchJson",
+      "summary": "Function fetchJson implementing specific routines inside define-resource.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        45,
+        67
+      ]
+    },
+    {
+      "id": "function:lib/api/define-resource.ts:defineResource",
+      "type": "function",
+      "name": "defineResource",
+      "summary": "Function defineResource implementing specific routines inside define-resource.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        104,
+        146
+      ]
+    },
+    {
+      "id": "file:lib/api/homologation.ts",
+      "type": "file",
+      "name": "homologation.ts",
+      "filePath": "lib/api/homologation.ts",
+      "summary": "Source code file implementing components or logic for homologation.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "library"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:lib/api/homologation.ts:getPendingHomologations",
+      "type": "function",
+      "name": "getPendingHomologations",
+      "summary": "Function getPendingHomologations implementing specific routines inside homologation.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        29,
+        50
+      ]
+    },
+    {
+      "id": "function:lib/api/homologation.ts:resolveHomologation",
+      "type": "function",
+      "name": "resolveHomologation",
+      "summary": "Function resolveHomologation implementing specific routines inside homologation.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        52,
+        66
+      ]
+    },
+    {
+      "id": "function:lib/api/homologation.ts:rejectHomologation",
+      "type": "function",
+      "name": "rejectHomologation",
+      "summary": "Function rejectHomologation implementing specific routines inside homologation.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        68,
+        80
+      ]
+    },
+    {
+      "id": "function:lib/api/homologation.ts:getCatalogOptions",
+      "type": "function",
+      "name": "getCatalogOptions",
+      "summary": "Function getCatalogOptions implementing specific routines inside homologation.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        85,
+        139
+      ]
+    },
+    {
+      "id": "function:lib/api/homologation.ts:getReinjectionStats",
+      "type": "function",
+      "name": "getReinjectionStats",
+      "summary": "Function getReinjectionStats implementing specific routines inside homologation.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        154,
+        158
+      ]
+    },
+    {
+      "id": "function:lib/api/homologation.ts:runReinjection",
+      "type": "function",
+      "name": "runReinjection",
+      "summary": "Function runReinjection implementing specific routines inside homologation.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        160,
+        166
+      ]
+    },
+    {
+      "id": "file:lib/api/session-events.ts",
+      "type": "file",
+      "name": "session-events.ts",
+      "filePath": "lib/api/session-events.ts",
+      "summary": "Source code file implementing components or logic for session-events.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "library"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:lib/api/session-events.ts:dispatchSessionExpired",
+      "type": "function",
+      "name": "dispatchSessionExpired",
+      "summary": "Function dispatchSessionExpired implementing specific routines inside session-events.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        24,
+        29
+      ]
+    },
+    {
+      "id": "function:lib/api/session-events.ts:resetSessionExpired",
+      "type": "function",
+      "name": "resetSessionExpired",
+      "summary": "Function resetSessionExpired implementing specific routines inside session-events.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        31,
+        33
+      ]
+    },
+    {
+      "id": "function:lib/api/session-events.ts:isUnauthorizedError",
+      "type": "function",
+      "name": "isUnauthorizedError",
+      "summary": "Function isUnauthorizedError implementing specific routines inside session-events.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        48,
+        56
+      ]
+    },
+    {
+      "id": "class:lib/api/session-events.ts:UnauthorizedError",
+      "type": "class",
+      "name": "UnauthorizedError",
+      "summary": "Class UnauthorizedError defining object structures inside session-events.ts.",
+      "tags": [
+        "class",
+        "object-model"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        40,
+        46
+      ]
+    },
+    {
+      "id": "file:lib/auth/cookie-config.ts",
+      "type": "file",
+      "name": "cookie-config.ts",
+      "filePath": "lib/auth/cookie-config.ts",
+      "summary": "Source code file implementing components or logic for cookie-config.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "library"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:lib/auth/cookie-config.ts:cookieOptions",
+      "type": "function",
+      "name": "cookieOptions",
+      "summary": "Function cookieOptions implementing specific routines inside cookie-config.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        3,
+        11
+      ]
+    },
+    {
+      "id": "file:lib/auth/rbac.ts",
+      "type": "file",
+      "name": "rbac.ts",
+      "filePath": "lib/auth/rbac.ts",
+      "summary": "Source code file implementing components or logic for rbac.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "library"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:lib/auth/rbac.ts:isRoleAllowed",
+      "type": "function",
+      "name": "isRoleAllowed",
+      "summary": "Function isRoleAllowed implementing specific routines inside rbac.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        47,
+        52
+      ]
+    },
+    {
+      "id": "function:lib/auth/rbac.ts:isPublicPath",
+      "type": "function",
+      "name": "isPublicPath",
+      "summary": "Function isPublicPath implementing specific routines inside rbac.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        54,
+        56
+      ]
+    },
+    {
+      "id": "function:lib/auth/rbac.ts:isValidRole",
+      "type": "function",
+      "name": "isValidRole",
+      "summary": "Function isValidRole implementing specific routines inside rbac.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        58,
+        60
+      ]
+    },
+    {
+      "id": "file:lib/auth/require-role.ts",
+      "type": "file",
+      "name": "require-role.ts",
+      "filePath": "lib/auth/require-role.ts",
+      "summary": "Source code file implementing components or logic for require-role.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "library"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:lib/auth/require-role.ts:requireRole",
+      "type": "function",
+      "name": "requireRole",
+      "summary": "Function requireRole implementing specific routines inside require-role.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        13,
+        19
+      ]
+    },
+    {
+      "id": "file:lib/auth/roles.ts",
+      "type": "file",
+      "name": "roles.ts",
+      "filePath": "lib/auth/roles.ts",
+      "summary": "Source code file implementing components or logic for roles.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "library"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:lib/auth/roles.ts:isBackendRol",
+      "type": "function",
+      "name": "isBackendRol",
+      "summary": "Function isBackendRol implementing specific routines inside roles.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        56,
+        61
+      ]
+    },
+    {
+      "id": "function:lib/auth/roles.ts:parseRole",
+      "type": "function",
+      "name": "parseRole",
+      "summary": "Function parseRole implementing specific routines inside roles.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        96,
+        112
+      ]
+    },
+    {
+      "id": "file:lib/auth/session.ts",
+      "type": "file",
+      "name": "session.ts",
+      "filePath": "lib/auth/session.ts",
+      "summary": "Source code file implementing components or logic for session.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "library"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:lib/auth/session.ts:getSession",
+      "type": "function",
+      "name": "getSession",
+      "summary": "Function getSession implementing specific routines inside session.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        22,
+        75
+      ]
+    },
+    {
+      "id": "file:lib/routes.ts",
+      "type": "file",
+      "name": "routes.ts",
+      "filePath": "lib/routes.ts",
+      "summary": "Source code file implementing components or logic for routes.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "library"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:lib/routes.ts:rolePrefixes",
+      "type": "function",
+      "name": "rolePrefixes",
+      "summary": "Function rolePrefixes implementing specific routines inside routes.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        176,
+        178
+      ]
+    },
+    {
+      "id": "function:lib/routes.ts:buildNavGroups",
+      "type": "function",
+      "name": "buildNavGroups",
+      "summary": "Function buildNavGroups implementing specific routines inside routes.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        204,
+        223
+      ]
+    },
+    {
+      "id": "function:lib/routes.ts:findRoute",
+      "type": "function",
+      "name": "findRoute",
+      "summary": "Function findRoute implementing specific routines inside routes.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        226,
+        230
+      ]
+    },
+    {
+      "id": "file:lib/schemas/auth.ts",
+      "type": "file",
+      "name": "auth.ts",
+      "filePath": "lib/schemas/auth.ts",
+      "summary": "Source code file implementing components or logic for auth.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "library"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:lib/schemas/homologation.ts",
+      "type": "file",
+      "name": "homologation.ts",
+      "filePath": "lib/schemas/homologation.ts",
+      "summary": "Source code file implementing components or logic for homologation.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "library"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:proxy.ts",
+      "type": "file",
+      "name": "proxy.ts",
+      "filePath": "proxy.ts",
+      "summary": "Source code file implementing components or logic for proxy.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:proxy.ts:proxy",
+      "type": "function",
+      "name": "proxy",
+      "summary": "Function proxy implementing specific routines inside proxy.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        18,
+        44
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "function:app/(admin)/layout.tsx:AdminLayout",
+      "target": "function:lib/auth/require-role.ts:requireRole",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/layout.tsx:AdminLayout",
+      "target": "function:lib/routes.ts:buildNavGroups",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/workflows/homologation-client.tsx:HomologationClient",
+      "target": "function:hooks/use-toast.ts:useToast",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/workflows/homologation-client.tsx:HomologationClient",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/workflows/homologation-client.tsx:HomologationClient",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/workflows/homologation-client.tsx:HomologationClient",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/workflows/homologation-client.tsx:HomologationClient",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/workflows/homologation-client.tsx:HomologationClient",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/workflows/homologation-client.tsx:HomologationClient",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/workflows/homologation-client.tsx:HomologationClient",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/workflows/page.tsx:WorkflowsPage",
+      "target": "function:lib/api/homologation.ts:getPendingHomologations",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/workflows/page.tsx:WorkflowsPage",
+      "target": "function:lib/api/homologation.ts:getReinjectionStats",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(analyst)/layout.tsx:AnalystLayout",
+      "target": "function:lib/auth/require-role.ts:requireRole",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(analyst)/layout.tsx:AnalystLayout",
+      "target": "function:lib/routes.ts:buildNavGroups",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(auth)/login/login-form.tsx:LoginForm",
+      "target": "function:lib/api/session-events.ts:resetSessionExpired",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(auth)/login/login-form.tsx:LoginForm",
+      "target": "function:lib/auth/rbac.ts:isValidRole",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(auth)/login/page.tsx:LoginPage",
+      "target": "function:lib/auth/session.ts:getSession",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(executive)/layout.tsx:ExecutiveLayout",
+      "target": "function:lib/auth/require-role.ts:requireRole",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(executive)/layout.tsx:ExecutiveLayout",
+      "target": "function:lib/routes.ts:buildNavGroups",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/api/auth/login/route.ts:POST",
+      "target": "function:lib/auth/cookie-config.ts:cookieOptions",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/api/auth/logout/route.ts:POST",
+      "target": "function:lib/auth/cookie-config.ts:cookieOptions",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/api/auth/me/route.ts:GET",
+      "target": "function:lib/auth/session.ts:getSession",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/page.tsx:RootPage",
+      "target": "function:lib/auth/session.ts:getSession",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/providers/alert-stream-mount.tsx:AlertStreamMount",
+      "target": "function:hooks/use-alert-stream.tsx:useAlertStream",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:hooks/use-alert-stream.tsx",
+      "target": "function:hooks/use-alert-stream.tsx:useAlertStream",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:hooks/use-alert-stream.tsx",
+      "target": "function:hooks/use-alert-stream.tsx:useAlertStream",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:hooks/use-alert-stream.tsx",
+      "target": "file:components/control-center/severity-chip.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:hooks/use-alert-stream.tsx",
+      "target": "file:lib/api/session-events.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:hooks/use-alert-stream.tsx",
+      "target": "file:lib/schemas/control-center.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:lib/api/client.ts",
+      "target": "function:lib/api/client.ts:apiFetch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:lib/api/client.ts",
+      "target": "function:lib/api/client.ts:apiFetch",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/api/client.ts",
+      "target": "class:lib/api/client.ts:ApiError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:lib/api/client.ts",
+      "target": "class:lib/api/client.ts:ApiError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/api/define-resource.ts",
+      "target": "function:lib/api/define-resource.ts:fetchJson",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:lib/api/define-resource.ts",
+      "target": "function:lib/api/define-resource.ts:defineResource",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:lib/api/define-resource.ts",
+      "target": "function:lib/api/define-resource.ts:defineResource",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/api/define-resource.ts",
+      "target": "file:lib/api/session-events.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "function:lib/api/define-resource.ts:fetchJson",
+      "target": "function:lib/api/session-events.ts:dispatchSessionExpired",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/api/homologation.ts",
+      "target": "function:lib/api/homologation.ts:getPendingHomologations",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:lib/api/homologation.ts",
+      "target": "function:lib/api/homologation.ts:getPendingHomologations",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/api/homologation.ts",
+      "target": "function:lib/api/homologation.ts:resolveHomologation",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:lib/api/homologation.ts",
+      "target": "function:lib/api/homologation.ts:resolveHomologation",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/api/homologation.ts",
+      "target": "function:lib/api/homologation.ts:rejectHomologation",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:lib/api/homologation.ts",
+      "target": "function:lib/api/homologation.ts:rejectHomologation",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/api/homologation.ts",
+      "target": "function:lib/api/homologation.ts:getCatalogOptions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:lib/api/homologation.ts",
+      "target": "function:lib/api/homologation.ts:getCatalogOptions",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/api/homologation.ts",
+      "target": "function:lib/api/homologation.ts:getReinjectionStats",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:lib/api/homologation.ts",
+      "target": "function:lib/api/homologation.ts:getReinjectionStats",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/api/homologation.ts",
+      "target": "function:lib/api/homologation.ts:runReinjection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:lib/api/homologation.ts",
+      "target": "function:lib/api/homologation.ts:runReinjection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/api/homologation.ts",
+      "target": "file:lib/api/client.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:lib/api/homologation.ts",
+      "target": "file:lib/schemas/homologation.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "function:lib/api/homologation.ts:resolveHomologation",
+      "target": "function:lib/api/client.ts:apiFetch",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:lib/api/homologation.ts:rejectHomologation",
+      "target": "function:lib/api/client.ts:apiFetch",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:lib/api/homologation.ts:getReinjectionStats",
+      "target": "function:lib/api/client.ts:apiFetch",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:lib/api/homologation.ts:runReinjection",
+      "target": "function:lib/api/client.ts:apiFetch",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/api/session-events.ts",
+      "target": "function:lib/api/session-events.ts:dispatchSessionExpired",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:lib/api/session-events.ts",
+      "target": "function:lib/api/session-events.ts:dispatchSessionExpired",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/api/session-events.ts",
+      "target": "function:lib/api/session-events.ts:resetSessionExpired",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:lib/api/session-events.ts",
+      "target": "function:lib/api/session-events.ts:resetSessionExpired",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/api/session-events.ts",
+      "target": "function:lib/api/session-events.ts:isUnauthorizedError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:lib/api/session-events.ts",
+      "target": "function:lib/api/session-events.ts:isUnauthorizedError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/api/session-events.ts",
+      "target": "class:lib/api/session-events.ts:UnauthorizedError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:lib/api/session-events.ts",
+      "target": "class:lib/api/session-events.ts:UnauthorizedError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/auth/cookie-config.ts",
+      "target": "function:lib/auth/cookie-config.ts:cookieOptions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:lib/auth/cookie-config.ts",
+      "target": "function:lib/auth/cookie-config.ts:cookieOptions",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/auth/rbac.ts",
+      "target": "function:lib/auth/rbac.ts:isRoleAllowed",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:lib/auth/rbac.ts",
+      "target": "function:lib/auth/rbac.ts:isRoleAllowed",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/auth/rbac.ts",
+      "target": "function:lib/auth/rbac.ts:isPublicPath",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:lib/auth/rbac.ts",
+      "target": "function:lib/auth/rbac.ts:isPublicPath",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/auth/rbac.ts",
+      "target": "function:lib/auth/rbac.ts:isValidRole",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:lib/auth/rbac.ts",
+      "target": "function:lib/auth/rbac.ts:isValidRole",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/auth/rbac.ts",
+      "target": "file:lib/routes.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:lib/auth/require-role.ts",
+      "target": "function:lib/auth/require-role.ts:requireRole",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:lib/auth/require-role.ts",
+      "target": "function:lib/auth/require-role.ts:requireRole",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/auth/require-role.ts",
+      "target": "file:lib/auth/rbac.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:lib/auth/require-role.ts",
+      "target": "file:lib/auth/session.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "function:lib/auth/require-role.ts:requireRole",
+      "target": "function:lib/auth/session.ts:getSession",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/auth/roles.ts",
+      "target": "function:lib/auth/roles.ts:isBackendRol",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:lib/auth/roles.ts",
+      "target": "function:lib/auth/roles.ts:isBackendRol",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/auth/roles.ts",
+      "target": "function:lib/auth/roles.ts:parseRole",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:lib/auth/roles.ts",
+      "target": "function:lib/auth/roles.ts:parseRole",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/auth/roles.ts",
+      "target": "file:lib/auth/rbac.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:lib/auth/session.ts",
+      "target": "function:lib/auth/session.ts:getSession",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:lib/auth/session.ts",
+      "target": "function:lib/auth/session.ts:getSession",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/auth/session.ts",
+      "target": "file:lib/auth/rbac.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:lib/auth/session.ts",
+      "target": "file:lib/auth/roles.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "function:lib/auth/session.ts:getSession",
+      "target": "function:lib/auth/roles.ts:parseRole",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/routes.ts",
+      "target": "function:lib/routes.ts:rolePrefixes",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:lib/routes.ts",
+      "target": "function:lib/routes.ts:rolePrefixes",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/routes.ts",
+      "target": "function:lib/routes.ts:buildNavGroups",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:lib/routes.ts",
+      "target": "function:lib/routes.ts:buildNavGroups",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/routes.ts",
+      "target": "function:lib/routes.ts:findRoute",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:lib/routes.ts",
+      "target": "function:lib/routes.ts:findRoute",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:lib/routes.ts",
+      "target": "file:lib/auth/rbac.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:proxy.ts",
+      "target": "function:proxy.ts:proxy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:proxy.ts",
+      "target": "function:proxy.ts:proxy",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:proxy.ts",
+      "target": "file:lib/auth/rbac.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:proxy.ts",
+      "target": "file:lib/auth/roles.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "function:proxy.ts:proxy",
+      "target": "function:lib/auth/rbac.ts:isPublicPath",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:proxy.ts:proxy",
+      "target": "function:lib/auth/roles.ts:parseRole",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:proxy.ts:proxy",
+      "target": "function:lib/auth/rbac.ts:isRoleAllowed",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

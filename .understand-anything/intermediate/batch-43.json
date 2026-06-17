@@ -1,0 +1,70 @@
+{
+  "nodes": [
+    {
+      "id": "file:tools/senior-data-engineer/references/data_modeling_patterns.md",
+      "type": "document",
+      "name": "data_modeling_patterns.md",
+      "filePath": "tools/senior-data-engineer/references/data_modeling_patterns.md",
+      "summary": "File mapped from tools/senior-data-engineer/references/data_modeling_patterns.md with category docs.",
+      "tags": [
+        "docs",
+        "markdown",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:tools/senior-data-engineer/references/data_pipeline_architecture.md",
+      "type": "document",
+      "name": "data_pipeline_architecture.md",
+      "filePath": "tools/senior-data-engineer/references/data_pipeline_architecture.md",
+      "summary": "File mapped from tools/senior-data-engineer/references/data_pipeline_architecture.md with category docs.",
+      "tags": [
+        "docs",
+        "markdown",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:tools/senior-data-engineer/references/dataops_best_practices.md",
+      "type": "document",
+      "name": "dataops_best_practices.md",
+      "filePath": "tools/senior-data-engineer/references/dataops_best_practices.md",
+      "summary": "File mapped from tools/senior-data-engineer/references/dataops_best_practices.md with category docs.",
+      "tags": [
+        "docs",
+        "markdown",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:tools/senior-data-engineer/references/troubleshooting.md",
+      "type": "document",
+      "name": "troubleshooting.md",
+      "filePath": "tools/senior-data-engineer/references/troubleshooting.md",
+      "summary": "File mapped from tools/senior-data-engineer/references/troubleshooting.md with category docs.",
+      "tags": [
+        "docs",
+        "markdown",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tools/senior-data-engineer/references/workflows.md",
+      "type": "document",
+      "name": "workflows.md",
+      "filePath": "tools/senior-data-engineer/references/workflows.md",
+      "summary": "File mapped from tools/senior-data-engineer/references/workflows.md with category docs.",
+      "tags": [
+        "docs",
+        "markdown",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": []
+}

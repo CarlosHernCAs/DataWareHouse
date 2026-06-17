@@ -1,0 +1,2877 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 28,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "app/(admin)/layout.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 25,
+      "nonEmptyLines": 23,
+      "functions": [
+        {
+          "name": "AdminLayout",
+          "startLine": 7,
+          "endLine": 25,
+          "params": [
+            "{\r\n  children,\r\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "AdminLayout",
+          "line": 7,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AdminLayout",
+          "callee": "requireRole",
+          "lineNumber": 12
+        },
+        {
+          "caller": "AdminLayout",
+          "callee": "buildNavGroups",
+          "lineNumber": 18
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/(admin)/workflows/homologation-client.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 504,
+      "nonEmptyLines": 472,
+      "functions": [
+        {
+          "name": "HomologationClient",
+          "startLine": 53,
+          "endLine": 504,
+          "params": [
+            "{ initialData, reinyeccionCount }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "HomologationClient",
+          "line": 53,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "HomologationClient",
+          "callee": "useToast",
+          "lineNumber": 54
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "useState",
+          "lineNumber": 55
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "useState",
+          "lineNumber": 56
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "useState",
+          "lineNumber": 57
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "useState",
+          "lineNumber": 58
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "useState",
+          "lineNumber": 59
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "useState",
+          "lineNumber": 62
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "useState",
+          "lineNumber": 66
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "useState",
+          "lineNumber": 67
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "useState",
+          "lineNumber": 68
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "useState",
+          "lineNumber": 71
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "useEffect",
+          "lineNumber": 74
+        },
+        {
+          "caller": "loadCatalog",
+          "callee": "getCatalogOptions",
+          "lineNumber": 78
+        },
+        {
+          "caller": "loadCatalog",
+          "callee": "setCatalogCache",
+          "lineNumber": 79
+        },
+        {
+          "caller": "loadCatalog",
+          "callee": "console.error",
+          "lineNumber": 81
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "loadCatalog",
+          "lineNumber": 85
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "useMemo",
+          "lineNumber": 88
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "Array.from(new Set(initialData.map(d => d.tabla))).sort",
+          "lineNumber": 88
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "Array.from",
+          "lineNumber": 88
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "initialData.map",
+          "lineNumber": 88
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "useMemo",
+          "lineNumber": 89
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "Array.from(new Set(initialData.map(d => d.campo))).sort",
+          "lineNumber": 89
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "Array.from",
+          "lineNumber": 89
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "initialData.map",
+          "lineNumber": 89
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "useMemo",
+          "lineNumber": 91
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "data.filter",
+          "lineNumber": 92
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "d.texto_crudo.toLowerCase().includes",
+          "lineNumber": 96
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "d.texto_crudo.toLowerCase",
+          "lineNumber": 96
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "search.toLowerCase",
+          "lineNumber": 96
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "d.tabla.toLowerCase().includes",
+          "lineNumber": 97
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "d.tabla.toLowerCase",
+          "lineNumber": 97
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "search.toLowerCase",
+          "lineNumber": 97
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "useState",
+          "lineNumber": 106
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "setLastFilterSig",
+          "lineNumber": 109
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "setPageState",
+          "lineNumber": 110
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "Math.ceil",
+          "lineNumber": 114
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "useMemo",
+          "lineNumber": 115
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "filteredData.slice",
+          "lineNumber": 117
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "useState",
+          "lineNumber": 123
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "setInitialDataSeen",
+          "lineNumber": 125
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "initialData\r\n      .filter((d) => d.score >= 0.95)\r\n      .map",
+          "lineNumber": 126
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "initialData\r\n      .filter",
+          "lineNumber": 126
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "setSelectedIds",
+          "lineNumber": 129
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "initialData.forEach",
+          "lineNumber": 132
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "setCorrections",
+          "lineNumber": 136
+        },
+        {
+          "caller": "toggleSelect",
+          "callee": "next.has",
+          "lineNumber": 141
+        },
+        {
+          "caller": "toggleSelect",
+          "callee": "next.delete",
+          "lineNumber": 141
+        },
+        {
+          "caller": "toggleSelect",
+          "callee": "next.add",
+          "lineNumber": 142
+        },
+        {
+          "caller": "toggleSelect",
+          "callee": "setSelectedIds",
+          "lineNumber": 143
+        },
+        {
+          "caller": "toggleAll",
+          "callee": "setSelectedIds",
+          "lineNumber": 147
+        },
+        {
+          "caller": "toggleAll",
+          "callee": "setSelectedIds",
+          "lineNumber": 148
+        },
+        {
+          "caller": "toggleAll",
+          "callee": "filteredData.map",
+          "lineNumber": 148
+        },
+        {
+          "caller": "handleSaveSelected",
+          "callee": "setGlobalLoading",
+          "lineNumber": 153
+        },
+        {
+          "caller": "handleSaveSelected",
+          "callee": "Array.from",
+          "lineNumber": 157
+        },
+        {
+          "caller": "handleSaveSelected",
+          "callee": "data.find",
+          "lineNumber": 158
+        },
+        {
+          "caller": "handleSaveSelected",
+          "callee": "resolveHomologation",
+          "lineNumber": 162
+        },
+        {
+          "caller": "handleSaveSelected",
+          "callee": "toast",
+          "lineNumber": 170
+        },
+        {
+          "caller": "handleSaveSelected",
+          "callee": "setData",
+          "lineNumber": 177
+        },
+        {
+          "caller": "handleSaveSelected",
+          "callee": "prev.filter",
+          "lineNumber": 177
+        },
+        {
+          "caller": "handleSaveSelected",
+          "callee": "selectedIds.has",
+          "lineNumber": 177
+        },
+        {
+          "caller": "handleSaveSelected",
+          "callee": "setSelectedIds",
+          "lineNumber": 178
+        },
+        {
+          "caller": "handleSaveSelected",
+          "callee": "setGlobalLoading",
+          "lineNumber": 179
+        },
+        {
+          "caller": "handleRejectSelected",
+          "callee": "setGlobalLoading",
+          "lineNumber": 184
+        },
+        {
+          "caller": "handleRejectSelected",
+          "callee": "Array.from",
+          "lineNumber": 187
+        },
+        {
+          "caller": "handleRejectSelected",
+          "callee": "data.find",
+          "lineNumber": 188
+        },
+        {
+          "caller": "handleRejectSelected",
+          "callee": "rejectHomologation",
+          "lineNumber": 191
+        },
+        {
+          "caller": "handleRejectSelected",
+          "callee": "toast",
+          "lineNumber": 197
+        },
+        {
+          "caller": "handleRejectSelected",
+          "callee": "setData",
+          "lineNumber": 202
+        },
+        {
+          "caller": "handleRejectSelected",
+          "callee": "prev.filter",
+          "lineNumber": 202
+        },
+        {
+          "caller": "handleRejectSelected",
+          "callee": "selectedIds.has",
+          "lineNumber": 202
+        },
+        {
+          "caller": "handleRejectSelected",
+          "callee": "setSelectedIds",
+          "lineNumber": 203
+        },
+        {
+          "caller": "handleRejectSelected",
+          "callee": "setGlobalLoading",
+          "lineNumber": 204
+        },
+        {
+          "caller": "handleReinject",
+          "callee": "setGlobalLoading",
+          "lineNumber": 208
+        },
+        {
+          "caller": "handleReinject",
+          "callee": "runReinjection",
+          "lineNumber": 210
+        },
+        {
+          "caller": "handleReinject",
+          "callee": "toast",
+          "lineNumber": 211
+        },
+        {
+          "caller": "handleReinject",
+          "callee": "toast",
+          "lineNumber": 216
+        },
+        {
+          "caller": "handleReinject",
+          "callee": "setGlobalLoading",
+          "lineNumber": 218
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "setSearch",
+          "lineNumber": 264
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "tableOptions.map",
+          "lineNumber": 274
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "fieldOptions.map",
+          "lineNumber": 283
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "setTableFilter",
+          "lineNumber": 287
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "setFieldFilter",
+          "lineNumber": 287
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "setSearch",
+          "lineNumber": 287
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "paginatedData.map",
+          "lineNumber": 339
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "d.tabla.toLowerCase().includes",
+          "lineNumber": 341
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "d.tabla.toLowerCase",
+          "lineNumber": 341
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "cn",
+          "lineNumber": 345
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "selectedIds.has",
+          "lineNumber": 347
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "selectedIds.has",
+          "lineNumber": 353
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "toggleSelect",
+          "lineNumber": 354
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "cn",
+          "lineNumber": 359
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "setCorrections",
+          "lineNumber": 380
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "cn",
+          "lineNumber": 382
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "options.map",
+          "lineNumber": 389
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "setCorrections",
+          "lineNumber": 398
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "cn",
+          "lineNumber": 409
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "Math.round",
+          "lineNumber": 411
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "cn",
+          "lineNumber": 412
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "cn",
+          "lineNumber": 414
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "setPageState",
+          "lineNumber": 454
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "Math.max",
+          "lineNumber": 454
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "Array.from",
+          "lineNumber": 462
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "Math.min",
+          "lineNumber": 462
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "setPageState",
+          "lineNumber": 477
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "cn",
+          "lineNumber": 478
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "setPageState",
+          "lineNumber": 491
+        },
+        {
+          "caller": "HomologationClient",
+          "callee": "Math.min",
+          "lineNumber": 491
+        }
+      ],
+      "metrics": {
+        "importCount": 10,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/(admin)/workflows/page.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 29,
+      "functions": [
+        {
+          "name": "WorkflowsPage",
+          "startLine": 10,
+          "endLine": 35,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "metadata",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "WorkflowsPage",
+          "line": 10,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "WorkflowsPage",
+          "callee": "cookies",
+          "lineNumber": 11
+        },
+        {
+          "caller": "WorkflowsPage",
+          "callee": "cookieStore.get",
+          "lineNumber": 12
+        },
+        {
+          "caller": "WorkflowsPage",
+          "callee": "Promise.all",
+          "lineNumber": 15
+        },
+        {
+          "caller": "WorkflowsPage",
+          "callee": "getPendingHomologations",
+          "lineNumber": 16
+        },
+        {
+          "caller": "WorkflowsPage",
+          "callee": "getReinjectionStats",
+          "lineNumber": 17
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/(analyst)/layout.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 21,
+      "functions": [
+        {
+          "name": "AnalystLayout",
+          "startLine": 6,
+          "endLine": 23,
+          "params": [
+            "{\r\n  children,\r\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "AnalystLayout",
+          "line": 6,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AnalystLayout",
+          "callee": "requireRole",
+          "lineNumber": 11
+        },
+        {
+          "caller": "AnalystLayout",
+          "callee": "buildNavGroups",
+          "lineNumber": 17
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/(auth)/login/login-form.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 167,
+      "nonEmptyLines": 153,
+      "functions": [
+        {
+          "name": "LoginForm",
+          "startLine": 12,
+          "endLine": 167,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "LoginForm",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "LoginForm",
+          "callee": "useRouter",
+          "lineNumber": 13
+        },
+        {
+          "caller": "LoginForm",
+          "callee": "useSearchParams",
+          "lineNumber": 14
+        },
+        {
+          "caller": "LoginForm",
+          "callee": "params.get",
+          "lineNumber": 15
+        },
+        {
+          "caller": "LoginForm",
+          "callee": "params.get",
+          "lineNumber": 16
+        },
+        {
+          "caller": "LoginForm",
+          "callee": "useState",
+          "lineNumber": 18
+        },
+        {
+          "caller": "LoginForm",
+          "callee": "useForm",
+          "lineNumber": 20
+        },
+        {
+          "caller": "LoginForm",
+          "callee": "zodResolver",
+          "lineNumber": 21
+        },
+        {
+          "caller": "LoginForm",
+          "callee": "form.handleSubmit",
+          "lineNumber": 26
+        },
+        {
+          "caller": "LoginForm",
+          "callee": "setServerError",
+          "lineNumber": 27
+        },
+        {
+          "caller": "LoginForm",
+          "callee": "fetch",
+          "lineNumber": 29
+        },
+        {
+          "caller": "LoginForm",
+          "callee": "JSON.stringify",
+          "lineNumber": 32
+        },
+        {
+          "caller": "LoginForm",
+          "callee": "res.json().catch",
+          "lineNumber": 36
+        },
+        {
+          "caller": "LoginForm",
+          "callee": "res.json",
+          "lineNumber": 36
+        },
+        {
+          "caller": "LoginForm",
+          "callee": "setServerError",
+          "lineNumber": 37
+        },
+        {
+          "caller": "LoginForm",
+          "callee": "resetSessionExpired",
+          "lineNumber": 43
+        },
+        {
+          "caller": "LoginForm",
+          "callee": "fetch(\"/api/auth/me\", { cache: \"no-store\" }).catch",
+          "lineNumber": 45
+        },
+        {
+          "caller": "LoginForm",
+          "callee": "fetch",
+          "lineNumber": 45
+        },
+        {
+          "caller": "LoginForm",
+          "callee": "meRes.json().catch",
+          "lineNumber": 50
+        },
+        {
+          "caller": "LoginForm",
+          "callee": "meRes.json",
+          "lineNumber": 50
+        },
+        {
+          "caller": "LoginForm",
+          "callee": "isValidRole",
+          "lineNumber": 53
+        },
+        {
+          "caller": "LoginForm",
+          "callee": "router.replace",
+          "lineNumber": 55
+        },
+        {
+          "caller": "LoginForm",
+          "callee": "router.refresh",
+          "lineNumber": 56
+        },
+        {
+          "caller": "LoginForm",
+          "callee": "setServerError",
+          "lineNumber": 58
+        },
+        {
+          "caller": "LoginForm",
+          "callee": "Boolean",
+          "lineNumber": 111
+        },
+        {
+          "caller": "LoginForm",
+          "callee": "form.register",
+          "lineNumber": 115
+        },
+        {
+          "caller": "LoginForm",
+          "callee": "Boolean",
+          "lineNumber": 132
+        },
+        {
+          "caller": "LoginForm",
+          "callee": "form.register",
+          "lineNumber": 136
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/(auth)/login/page.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 21,
+      "functions": [
+        {
+          "name": "LoginPage",
+          "startLine": 11,
+          "endLine": 24,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "metadata",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "LoginPage",
+          "line": 11,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "LoginPage",
+          "callee": "getSession",
+          "lineNumber": 12
+        },
+        {
+          "caller": "LoginPage",
+          "callee": "redirect",
+          "lineNumber": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/(executive)/layout.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 21,
+      "functions": [
+        {
+          "name": "ExecutiveLayout",
+          "startLine": 6,
+          "endLine": 23,
+          "params": [
+            "{\r\n  children,\r\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ExecutiveLayout",
+          "line": 6,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ExecutiveLayout",
+          "callee": "requireRole",
+          "lineNumber": 11
+        },
+        {
+          "caller": "ExecutiveLayout",
+          "callee": "buildNavGroups",
+          "lineNumber": 17
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/api/auth/login/route.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 61,
+      "nonEmptyLines": 52,
+      "functions": [
+        {
+          "name": "POST",
+          "startLine": 6,
+          "endLine": 61,
+          "params": [
+            "request"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "POST",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "POST",
+          "callee": "request.json",
+          "lineNumber": 9
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 11
+        },
+        {
+          "caller": "POST",
+          "callee": "loginSchema.safeParse",
+          "lineNumber": 14
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 16
+        },
+        {
+          "caller": "POST",
+          "callee": "formData.append",
+          "lineNumber": 24
+        },
+        {
+          "caller": "POST",
+          "callee": "formData.append",
+          "lineNumber": 25
+        },
+        {
+          "caller": "POST",
+          "callee": "fetch",
+          "lineNumber": 28
+        },
+        {
+          "caller": "POST",
+          "callee": "apiRes.json",
+          "lineNumber": 37
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 41
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 44
+        },
+        {
+          "caller": "POST",
+          "callee": "loginResponseSchema.parse",
+          "lineNumber": 49
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 51
+        },
+        {
+          "caller": "POST",
+          "callee": "response.cookies.set",
+          "lineNumber": 52
+        },
+        {
+          "caller": "POST",
+          "callee": "cookieOptions",
+          "lineNumber": 52
+        },
+        {
+          "caller": "POST",
+          "callee": "console.error",
+          "lineNumber": 55
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 56
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/api/auth/logout/route.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 7,
+      "functions": [
+        {
+          "name": "POST",
+          "startLine": 4,
+          "endLine": 8,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "POST",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 5
+        },
+        {
+          "caller": "POST",
+          "callee": "response.cookies.set",
+          "lineNumber": 6
+        },
+        {
+          "caller": "POST",
+          "callee": "cookieOptions",
+          "lineNumber": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/api/auth/me/route.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 14,
+      "functions": [
+        {
+          "name": "GET",
+          "startLine": 4,
+          "endLine": 15,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "GET",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "GET",
+          "callee": "getSession",
+          "lineNumber": 5
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 7
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 9
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/page.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 8,
+      "functions": [
+        {
+          "name": "RootPage",
+          "startLine": 5,
+          "endLine": 9,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RootPage",
+          "line": 5,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "RootPage",
+          "callee": "getSession",
+          "lineNumber": 6
+        },
+        {
+          "caller": "RootPage",
+          "callee": "redirect",
+          "lineNumber": 7
+        },
+        {
+          "caller": "RootPage",
+          "callee": "redirect",
+          "lineNumber": 8
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/providers/alert-stream-mount.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 16,
+      "nonEmptyLines": 13,
+      "functions": [
+        {
+          "name": "AlertStreamMount",
+          "startLine": 13,
+          "endLine": 16,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AlertStreamMount",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AlertStreamMount",
+          "callee": "useAlertStream",
+          "lineNumber": 14
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/providers/session-expired-handler.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 93,
+      "nonEmptyLines": 80,
+      "functions": [
+        {
+          "name": "SessionExpiredHandler",
+          "startLine": 33,
+          "endLine": 93,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SessionExpiredHandler",
+          "line": 33,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "SessionExpiredHandler",
+          "callee": "useRouter",
+          "lineNumber": 34
+        },
+        {
+          "caller": "SessionExpiredHandler",
+          "callee": "usePathname",
+          "lineNumber": 35
+        },
+        {
+          "caller": "SessionExpiredHandler",
+          "callee": "useQueryClient",
+          "lineNumber": 36
+        },
+        {
+          "caller": "SessionExpiredHandler",
+          "callee": "useRef",
+          "lineNumber": 37
+        },
+        {
+          "caller": "SessionExpiredHandler",
+          "callee": "useRef",
+          "lineNumber": 41
+        },
+        {
+          "caller": "SessionExpiredHandler",
+          "callee": "useEffect",
+          "lineNumber": 44
+        },
+        {
+          "caller": "onExpired",
+          "callee": "queryClient.cancelQueries",
+          "lineNumber": 53
+        },
+        {
+          "caller": "onExpired",
+          "callee": "queryClient.clear",
+          "lineNumber": 57
+        },
+        {
+          "caller": "onExpired",
+          "callee": "fetch(\"/api/auth/logout\", {\n        method: \"POST\",\n        credentials: \"include\",\n        keepalive: true,\n      }).catch",
+          "lineNumber": 60
+        },
+        {
+          "caller": "onExpired",
+          "callee": "fetch",
+          "lineNumber": 60
+        },
+        {
+          "caller": "onExpired",
+          "callee": "toast.error",
+          "lineNumber": 67
+        },
+        {
+          "caller": "onExpired",
+          "callee": "current.startsWith",
+          "lineNumber": 75
+        },
+        {
+          "caller": "onExpired",
+          "callee": "encodeURIComponent",
+          "lineNumber": 78
+        },
+        {
+          "caller": "onExpired",
+          "callee": "router.replace",
+          "lineNumber": 79
+        },
+        {
+          "caller": "SessionExpiredHandler",
+          "callee": "window.addEventListener",
+          "lineNumber": 86
+        },
+        {
+          "caller": "SessionExpiredHandler",
+          "callee": "window.removeEventListener",
+          "lineNumber": 88
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/ui/select.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 146,
+      "nonEmptyLines": 137,
+      "exports": [
+        {
+          "name": "Select",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "SelectGroup",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "SelectValue",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "SelectTrigger",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "SelectScrollUpButton",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "SelectScrollDownButton",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "SelectContent",
+          "line": 64,
+          "isDefault": false
+        },
+        {
+          "name": "SelectLabel",
+          "line": 99,
+          "isDefault": false
+        },
+        {
+          "name": "SelectItem",
+          "line": 111,
+          "isDefault": false
+        },
+        {
+          "name": "SelectSeparator",
+          "line": 136,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 10,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "hooks/use-alert-stream.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 209,
+      "nonEmptyLines": 183,
+      "functions": [
+        {
+          "name": "pickHighestSeverity",
+          "startLine": 59,
+          "endLine": 63,
+          "params": [
+            "alerts"
+          ]
+        },
+        {
+          "name": "useAlertStream",
+          "startLine": 65,
+          "endLine": 209,
+          "params": [
+            "{\n  enabled = true,\n  url = \"/api/cc/alerts/stream\",\n  toastOnNew = true,\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "useAlertStream",
+          "line": 65,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "pickHighestSeverity",
+          "callee": "alerts.some",
+          "lineNumber": 60
+        },
+        {
+          "caller": "pickHighestSeverity",
+          "callee": "alerts.some",
+          "lineNumber": 61
+        },
+        {
+          "caller": "useAlertStream",
+          "callee": "useQueryClient",
+          "lineNumber": 70
+        },
+        {
+          "caller": "useAlertStream",
+          "callee": "useRouter",
+          "lineNumber": 71
+        },
+        {
+          "caller": "useAlertStream",
+          "callee": "useRef",
+          "lineNumber": 72
+        },
+        {
+          "caller": "useAlertStream",
+          "callee": "useRef",
+          "lineNumber": 73
+        },
+        {
+          "caller": "useAlertStream",
+          "callee": "useRef",
+          "lineNumber": 74
+        },
+        {
+          "caller": "useAlertStream",
+          "callee": "useEffect",
+          "lineNumber": 76
+        },
+        {
+          "caller": "notify",
+          "callee": "router.push",
+          "lineNumber": 89
+        },
+        {
+          "caller": "notify",
+          "callee": "showToast",
+          "lineNumber": 95
+        },
+        {
+          "caller": "notify",
+          "callee": "pickHighestSeverity",
+          "lineNumber": 105
+        },
+        {
+          "caller": "notify",
+          "callee": "newAlerts.filter",
+          "lineNumber": 107
+        },
+        {
+          "caller": "notify",
+          "callee": "newAlerts.filter",
+          "lineNumber": 110
+        },
+        {
+          "caller": "notify",
+          "callee": "parts.push",
+          "lineNumber": 114
+        },
+        {
+          "caller": "notify",
+          "callee": "parts.push",
+          "lineNumber": 115
+        },
+        {
+          "caller": "notify",
+          "callee": "showToast",
+          "lineNumber": 117
+        },
+        {
+          "caller": "notify",
+          "callee": "parts.join",
+          "lineNumber": 118
+        },
+        {
+          "caller": "applyAlerts",
+          "callee": "queryClient.setQueryData",
+          "lineNumber": 126
+        },
+        {
+          "caller": "applyAlerts",
+          "callee": "alerts.map",
+          "lineNumber": 129
+        },
+        {
+          "caller": "applyAlerts",
+          "callee": "alerts.map",
+          "lineNumber": 134
+        },
+        {
+          "caller": "applyAlerts",
+          "callee": "prev.has",
+          "lineNumber": 137
+        },
+        {
+          "caller": "applyAlerts",
+          "callee": "newAlerts.push",
+          "lineNumber": 138
+        },
+        {
+          "caller": "applyAlerts",
+          "callee": "notify",
+          "lineNumber": 141
+        },
+        {
+          "caller": "connect",
+          "callee": "source.addEventListener",
+          "lineNumber": 149
+        },
+        {
+          "caller": "connect",
+          "callee": "JSON.parse",
+          "lineNumber": 151
+        },
+        {
+          "caller": "connect",
+          "callee": "parsed.map",
+          "lineNumber": 153
+        },
+        {
+          "caller": "connect",
+          "callee": "queryClient.setQueryData",
+          "lineNumber": 154
+        },
+        {
+          "caller": "connect",
+          "callee": "source.addEventListener",
+          "lineNumber": 161
+        },
+        {
+          "caller": "connect",
+          "callee": "JSON.parse",
+          "lineNumber": 163
+        },
+        {
+          "caller": "connect",
+          "callee": "applyAlerts",
+          "lineNumber": 164
+        },
+        {
+          "caller": "connect",
+          "callee": "source?.close",
+          "lineNumber": 175
+        },
+        {
+          "caller": "connect",
+          "callee": "Math.min",
+          "lineNumber": 178
+        },
+        {
+          "caller": "connect",
+          "callee": "Math.random",
+          "lineNumber": 178
+        },
+        {
+          "caller": "connect",
+          "callee": "window.setTimeout",
+          "lineNumber": 179
+        },
+        {
+          "caller": "connect",
+          "callee": "Math.min",
+          "lineNumber": 180
+        },
+        {
+          "caller": "onSessionExpired",
+          "callee": "window.clearTimeout",
+          "lineNumber": 189
+        },
+        {
+          "caller": "onSessionExpired",
+          "callee": "source?.close",
+          "lineNumber": 192
+        },
+        {
+          "caller": "useAlertStream",
+          "callee": "window.addEventListener",
+          "lineNumber": 195
+        },
+        {
+          "caller": "useAlertStream",
+          "callee": "connect",
+          "lineNumber": 197
+        },
+        {
+          "caller": "useAlertStream",
+          "callee": "window.clearTimeout",
+          "lineNumber": 202
+        },
+        {
+          "caller": "useAlertStream",
+          "callee": "source?.close",
+          "lineNumber": 204
+        },
+        {
+          "caller": "useAlertStream",
+          "callee": "window.removeEventListener",
+          "lineNumber": 206
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/api/client.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 76,
+      "nonEmptyLines": 65,
+      "functions": [
+        {
+          "name": "apiFetch",
+          "startLine": 33,
+          "endLine": 68,
+          "params": [
+            "path",
+            "options"
+          ]
+        },
+        {
+          "name": "safeJson",
+          "startLine": 70,
+          "endLine": 76,
+          "params": [
+            "text"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ApiError",
+          "startLine": 8,
+          "endLine": 16,
+          "methods": [
+            "constructor"
+          ],
+          "properties": [
+            "status",
+            "body"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ApiError",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "apiFetch",
+          "line": 33,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "constructor",
+          "callee": "super",
+          "lineNumber": 12
+        },
+        {
+          "caller": "apiFetch",
+          "callee": "fetch",
+          "lineNumber": 36
+        },
+        {
+          "caller": "apiFetch",
+          "callee": "JSON.stringify",
+          "lineNumber": 44
+        },
+        {
+          "caller": "apiFetch",
+          "callee": "res.text",
+          "lineNumber": 48
+        },
+        {
+          "caller": "apiFetch",
+          "callee": "safeJson",
+          "lineNumber": 49
+        },
+        {
+          "caller": "apiFetch",
+          "callee": "String",
+          "lineNumber": 54
+        },
+        {
+          "caller": "safeJson",
+          "callee": "JSON.parse",
+          "lineNumber": 72
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/api/define-resource.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 146,
+      "nonEmptyLines": 133,
+      "functions": [
+        {
+          "name": "fetchJson",
+          "startLine": 45,
+          "endLine": 67,
+          "params": [
+            "path",
+            "schema"
+          ]
+        },
+        {
+          "name": "defineResource",
+          "startLine": 104,
+          "endLine": 146,
+          "params": [
+            "cfg"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "defineResource",
+          "line": 104,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "fetchJson",
+          "callee": "fetch",
+          "lineNumber": 46
+        },
+        {
+          "caller": "fetchJson",
+          "callee": "dispatchSessionExpired",
+          "lineNumber": 51
+        },
+        {
+          "caller": "fetchJson",
+          "callee": "res.json",
+          "lineNumber": 57
+        },
+        {
+          "caller": "fetchJson",
+          "callee": "String",
+          "lineNumber": 59
+        },
+        {
+          "caller": "fetchJson",
+          "callee": "schema.parse",
+          "lineNumber": 66
+        },
+        {
+          "caller": "fetchJson",
+          "callee": "res.json",
+          "lineNumber": 66
+        },
+        {
+          "caller": "resolvePath",
+          "callee": "(cfg.path as (p: TParams) => string)",
+          "lineNumber": 110
+        },
+        {
+          "caller": "fetchTyped",
+          "callee": "fetchJson",
+          "lineNumber": 118
+        },
+        {
+          "caller": "fetchTyped",
+          "callee": "resolvePath",
+          "lineNumber": 118
+        },
+        {
+          "caller": "queryOptions",
+          "callee": "buildKey",
+          "lineNumber": 121
+        },
+        {
+          "caller": "queryOptions",
+          "callee": "fetchTyped",
+          "lineNumber": 122
+        },
+        {
+          "caller": "useResourceQuery",
+          "callee": "useQuery",
+          "lineNumber": 130
+        },
+        {
+          "caller": "useResourceQuery",
+          "callee": "buildKey",
+          "lineNumber": 131
+        },
+        {
+          "caller": "useResourceQuery",
+          "callee": "fetchTyped",
+          "lineNumber": 132
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/api/homologation.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 166,
+      "nonEmptyLines": 147,
+      "functions": [
+        {
+          "name": "getPendingHomologations",
+          "startLine": 29,
+          "endLine": 50,
+          "params": [
+            "token"
+          ]
+        },
+        {
+          "name": "resolveHomologation",
+          "startLine": 52,
+          "endLine": 66,
+          "params": [
+            "tabla",
+            "id",
+            "valor_canonico",
+            "token"
+          ]
+        },
+        {
+          "name": "rejectHomologation",
+          "startLine": 68,
+          "endLine": 80,
+          "params": [
+            "tabla",
+            "id",
+            "token"
+          ]
+        },
+        {
+          "name": "getCatalogOptions",
+          "startLine": 85,
+          "endLine": 139,
+          "params": [
+            "campo",
+            "token"
+          ]
+        },
+        {
+          "name": "getReinjectionStats",
+          "startLine": 154,
+          "endLine": 158,
+          "params": [
+            "token"
+          ]
+        },
+        {
+          "name": "runReinjection",
+          "startLine": 160,
+          "endLine": 166,
+          "params": [
+            "token"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getPendingHomologations",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "resolveHomologation",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "rejectHomologation",
+          "line": 68,
+          "isDefault": false
+        },
+        {
+          "name": "getCatalogOptions",
+          "line": 85,
+          "isDefault": false
+        },
+        {
+          "name": "getReinjectionStats",
+          "line": 154,
+          "isDefault": false
+        },
+        {
+          "name": "runReinjection",
+          "line": 160,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getPendingHomologations",
+          "callee": "await apiFetch",
+          "lineNumber": 32
+        },
+        {
+          "caller": "getPendingHomologations",
+          "callee": "data.datos.map",
+          "lineNumber": 40
+        },
+        {
+          "caller": "getPendingHomologations",
+          "callee": "String",
+          "lineNumber": 41
+        },
+        {
+          "caller": "resolveHomologation",
+          "callee": "tabla.split(\".\").pop()?.toLowerCase",
+          "lineNumber": 59
+        },
+        {
+          "caller": "resolveHomologation",
+          "callee": "tabla.split(\".\").pop",
+          "lineNumber": 59
+        },
+        {
+          "caller": "resolveHomologation",
+          "callee": "tabla.split",
+          "lineNumber": 59
+        },
+        {
+          "caller": "resolveHomologation",
+          "callee": "apiFetch",
+          "lineNumber": 61
+        },
+        {
+          "caller": "rejectHomologation",
+          "callee": "tabla.split(\".\").pop()?.toLowerCase",
+          "lineNumber": 73
+        },
+        {
+          "caller": "rejectHomologation",
+          "callee": "tabla.split(\".\").pop",
+          "lineNumber": 73
+        },
+        {
+          "caller": "rejectHomologation",
+          "callee": "tabla.split",
+          "lineNumber": 73
+        },
+        {
+          "caller": "rejectHomologation",
+          "callee": "apiFetch",
+          "lineNumber": 75
+        },
+        {
+          "caller": "getCatalogOptions",
+          "callee": "campo.toLowerCase",
+          "lineNumber": 89
+        },
+        {
+          "caller": "getCatalogOptions",
+          "callee": "c.includes",
+          "lineNumber": 93
+        },
+        {
+          "caller": "getCatalogOptions",
+          "callee": "[\"personal\", \"nombre\", \"responsable\", \"trabajador\"].some",
+          "lineNumber": 97
+        },
+        {
+          "caller": "getCatalogOptions",
+          "callee": "c.includes",
+          "lineNumber": 98
+        },
+        {
+          "caller": "getCatalogOptions",
+          "callee": "c.includes",
+          "lineNumber": 104
+        },
+        {
+          "caller": "getCatalogOptions",
+          "callee": "c.includes",
+          "lineNumber": 105
+        },
+        {
+          "caller": "getCatalogOptions",
+          "callee": "c.includes",
+          "lineNumber": 106
+        },
+        {
+          "caller": "getCatalogOptions",
+          "callee": "c.includes",
+          "lineNumber": 107
+        },
+        {
+          "caller": "getCatalogOptions",
+          "callee": "c.includes",
+          "lineNumber": 108
+        },
+        {
+          "caller": "getCatalogOptions",
+          "callee": "c.includes",
+          "lineNumber": 109
+        },
+        {
+          "caller": "getCatalogOptions",
+          "callee": "c.includes",
+          "lineNumber": 112
+        },
+        {
+          "caller": "getCatalogOptions",
+          "callee": "c.includes",
+          "lineNumber": 114
+        },
+        {
+          "caller": "getCatalogOptions",
+          "callee": "c.includes",
+          "lineNumber": 116
+        },
+        {
+          "caller": "getCatalogOptions",
+          "callee": "c.includes",
+          "lineNumber": 118
+        },
+        {
+          "caller": "getCatalogOptions",
+          "callee": "c.includes",
+          "lineNumber": 120
+        },
+        {
+          "caller": "getCatalogOptions",
+          "callee": "await apiFetch",
+          "lineNumber": 127
+        },
+        {
+          "caller": "getCatalogOptions",
+          "callee": "res.datos\r\n      .map((d) => d[key])\r\n      .filter",
+          "lineNumber": 134
+        },
+        {
+          "caller": "getCatalogOptions",
+          "callee": "res.datos\r\n      .map",
+          "lineNumber": 134
+        },
+        {
+          "caller": "getCatalogOptions",
+          "callee": "Array.from(options).sort",
+          "lineNumber": 138
+        },
+        {
+          "caller": "getCatalogOptions",
+          "callee": "Array.from",
+          "lineNumber": 138
+        },
+        {
+          "caller": "getReinjectionStats",
+          "callee": "apiFetch",
+          "lineNumber": 155
+        },
+        {
+          "caller": "runReinjection",
+          "callee": "apiFetch",
+          "lineNumber": 161
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 6,
+        "functionCount": 6,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/api/session-events.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 56,
+      "nonEmptyLines": 50,
+      "functions": [
+        {
+          "name": "dispatchSessionExpired",
+          "startLine": 24,
+          "endLine": 29,
+          "params": []
+        },
+        {
+          "name": "resetSessionExpired",
+          "startLine": 31,
+          "endLine": 33,
+          "params": []
+        },
+        {
+          "name": "isUnauthorizedError",
+          "startLine": 48,
+          "endLine": 56,
+          "params": [
+            "err"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "UnauthorizedError",
+          "startLine": 40,
+          "endLine": 46,
+          "methods": [
+            "constructor"
+          ],
+          "properties": [
+            "isUnauthorized"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SESSION_EXPIRED_EVENT",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "dispatchSessionExpired",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "resetSessionExpired",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "UnauthorizedError",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "isUnauthorizedError",
+          "line": 48,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "dispatchSessionExpired",
+          "callee": "window.dispatchEvent",
+          "lineNumber": 28
+        },
+        {
+          "caller": "constructor",
+          "callee": "super",
+          "lineNumber": 43
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 5,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/auth/cookie-config.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 10,
+      "functions": [
+        {
+          "name": "cookieOptions",
+          "startLine": 3,
+          "endLine": 11,
+          "params": [
+            "maxAge"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "COOKIE_NAME",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "cookieOptions",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/auth/rbac.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 60,
+      "nonEmptyLines": 49,
+      "functions": [
+        {
+          "name": "isRoleAllowed",
+          "startLine": 47,
+          "endLine": 52,
+          "params": [
+            "role",
+            "pathname"
+          ]
+        },
+        {
+          "name": "isPublicPath",
+          "startLine": 54,
+          "endLine": 56,
+          "params": [
+            "pathname"
+          ]
+        },
+        {
+          "name": "isValidRole",
+          "startLine": 58,
+          "endLine": 60,
+          "params": [
+            "value"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ROLES",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "ROLE_ALLOWED_PREFIXES",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "ROLE_HOME",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "SHARED_AUTHENTICATED_PREFIXES",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "PUBLIC_PREFIXES",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "isRoleAllowed",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "isPublicPath",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "isValidRole",
+          "line": 58,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "isRoleAllowed",
+          "callee": "SHARED_AUTHENTICATED_PREFIXES.some",
+          "lineNumber": 48
+        },
+        {
+          "caller": "isRoleAllowed",
+          "callee": "pathname.startsWith",
+          "lineNumber": 48
+        },
+        {
+          "caller": "isRoleAllowed",
+          "callee": "ROLE_ALLOWED_PREFIXES[role].some",
+          "lineNumber": 51
+        },
+        {
+          "caller": "isRoleAllowed",
+          "callee": "pathname.startsWith",
+          "lineNumber": 51
+        },
+        {
+          "caller": "isPublicPath",
+          "callee": "PUBLIC_PREFIXES.some",
+          "lineNumber": 55
+        },
+        {
+          "caller": "isPublicPath",
+          "callee": "pathname.startsWith",
+          "lineNumber": 55
+        },
+        {
+          "caller": "isValidRole",
+          "callee": "(ROLES as string[]).includes",
+          "lineNumber": 59
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 8,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/auth/require-role.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 18,
+      "functions": [
+        {
+          "name": "requireRole",
+          "startLine": 13,
+          "endLine": 19,
+          "params": [
+            "expected"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "requireRole",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "requireRole",
+          "callee": "getSession",
+          "lineNumber": 14
+        },
+        {
+          "caller": "requireRole",
+          "callee": "redirect",
+          "lineNumber": 15
+        },
+        {
+          "caller": "requireRole",
+          "callee": "redirect",
+          "lineNumber": 17
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/auth/roles.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 112,
+      "nonEmptyLines": 100,
+      "functions": [
+        {
+          "name": "isBackendRol",
+          "startLine": 56,
+          "endLine": 61,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "parseRole",
+          "startLine": 96,
+          "endLine": 112,
+          "params": [
+            "claims"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "BACKEND_ROLES",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "isBackendRol",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "parseRole",
+          "line": 96,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "isBackendRol",
+          "callee": "(BACKEND_ROLES as readonly string[]).includes",
+          "lineNumber": 59
+        },
+        {
+          "caller": "parseRole",
+          "callee": "isBackendRol",
+          "lineNumber": 106
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/auth/session.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 75,
+      "nonEmptyLines": 66,
+      "functions": [
+        {
+          "name": "getSession",
+          "startLine": 22,
+          "endLine": 75,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "JWT_COOKIE_NAME",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "getSession",
+          "line": 22,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getSession",
+          "callee": "cookies",
+          "lineNumber": 25
+        },
+        {
+          "caller": "getSession",
+          "callee": "store.get",
+          "lineNumber": 26
+        },
+        {
+          "caller": "getSession",
+          "callee": "jwtVerify",
+          "lineNumber": 42
+        },
+        {
+          "caller": "getSession",
+          "callee": "new TextEncoder().encode",
+          "lineNumber": 44
+        },
+        {
+          "caller": "getSession",
+          "callee": "decodeJwt",
+          "lineNumber": 49
+        },
+        {
+          "caller": "getSession",
+          "callee": "parseRole",
+          "lineNumber": 51
+        },
+        {
+          "caller": "getSession",
+          "callee": "String",
+          "lineNumber": 62
+        },
+        {
+          "caller": "getSession",
+          "callee": "String",
+          "lineNumber": 68
+        },
+        {
+          "caller": "getSession",
+          "callee": "console.error",
+          "lineNumber": 72
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/routes.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 233,
+      "nonEmptyLines": 212,
+      "functions": [
+        {
+          "name": "rolePrefixes",
+          "startLine": 176,
+          "endLine": 178,
+          "params": [
+            "role"
+          ]
+        },
+        {
+          "name": "buildNavGroups",
+          "startLine": 204,
+          "endLine": 223,
+          "params": [
+            "role"
+          ]
+        },
+        {
+          "name": "findRoute",
+          "startLine": 226,
+          "endLine": 230,
+          "params": [
+            "pathname"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ROUTES",
+          "line": 65,
+          "isDefault": false
+        },
+        {
+          "name": "ROUTE_LIST",
+          "line": 173,
+          "isDefault": false
+        },
+        {
+          "name": "rolePrefixes",
+          "line": 176,
+          "isDefault": false
+        },
+        {
+          "name": "buildNavGroups",
+          "line": 204,
+          "isDefault": false
+        },
+        {
+          "name": "findRoute",
+          "line": 226,
+          "isDefault": false
+        },
+        {
+          "name": "Bell",
+          "line": 233,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "rolePrefixes",
+          "callee": "ROUTE_LIST.filter((r) => r.roles.includes(role)).map",
+          "lineNumber": 177
+        },
+        {
+          "caller": "rolePrefixes",
+          "callee": "ROUTE_LIST.filter",
+          "lineNumber": 177
+        },
+        {
+          "caller": "rolePrefixes",
+          "callee": "r.roles.includes",
+          "lineNumber": 177
+        },
+        {
+          "caller": "buildNavGroups",
+          "callee": "ROUTE_LIST.filter",
+          "lineNumber": 205
+        },
+        {
+          "caller": "buildNavGroups",
+          "callee": "r.roles.includes",
+          "lineNumber": 206
+        },
+        {
+          "caller": "buildNavGroups",
+          "callee": "SECTION_ORDER.flatMap",
+          "lineNumber": 209
+        },
+        {
+          "caller": "buildNavGroups",
+          "callee": "visible\n      .filter((r) => r.section === section)\n      .map",
+          "lineNumber": 210
+        },
+        {
+          "caller": "buildNavGroups",
+          "callee": "visible\n      .filter",
+          "lineNumber": 210
+        },
+        {
+          "caller": "buildNavGroups",
+          "callee": "React.createElement",
+          "lineNumber": 215
+        },
+        {
+          "caller": "findRoute",
+          "callee": "ROUTE_LIST.find",
+          "lineNumber": 227
+        },
+        {
+          "caller": "findRoute",
+          "callee": "pathname.startsWith",
+          "lineNumber": 228
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 6,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/schemas/auth.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 16,
+      "nonEmptyLines": 12,
+      "exports": [
+        {
+          "name": "loginSchema",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "loginResponseSchema",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/schemas/homologation.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 16,
+      "exports": [
+        {
+          "name": "homologationRecordSchema",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "homologationResponseSchema",
+          "line": 16,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "proxy.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 55,
+      "nonEmptyLines": 45,
+      "functions": [
+        {
+          "name": "proxy",
+          "startLine": 18,
+          "endLine": 44,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "redirectToLogin",
+          "startLine": 46,
+          "endLine": 50,
+          "params": [
+            "request"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "proxy",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "config",
+          "line": 52,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "proxy",
+          "callee": "isPublicPath",
+          "lineNumber": 21
+        },
+        {
+          "caller": "proxy",
+          "callee": "NextResponse.next",
+          "lineNumber": 21
+        },
+        {
+          "caller": "proxy",
+          "callee": "request.cookies.get",
+          "lineNumber": 23
+        },
+        {
+          "caller": "proxy",
+          "callee": "redirectToLogin",
+          "lineNumber": 24
+        },
+        {
+          "caller": "proxy",
+          "callee": "decodeJwt",
+          "lineNumber": 29
+        },
+        {
+          "caller": "proxy",
+          "callee": "parseRole",
+          "lineNumber": 30
+        },
+        {
+          "caller": "proxy",
+          "callee": "redirectToLogin",
+          "lineNumber": 33
+        },
+        {
+          "caller": "proxy",
+          "callee": "redirectToLogin",
+          "lineNumber": 36
+        },
+        {
+          "caller": "proxy",
+          "callee": "Date.now",
+          "lineNumber": 37
+        },
+        {
+          "caller": "proxy",
+          "callee": "redirectToLogin",
+          "lineNumber": 37
+        },
+        {
+          "caller": "proxy",
+          "callee": "isRoleAllowed",
+          "lineNumber": 39
+        },
+        {
+          "caller": "proxy",
+          "callee": "NextResponse.redirect",
+          "lineNumber": 40
+        },
+        {
+          "caller": "proxy",
+          "callee": "NextResponse.next",
+          "lineNumber": 43
+        },
+        {
+          "caller": "redirectToLogin",
+          "callee": "url.searchParams.set",
+          "lineNumber": 48
+        },
+        {
+          "caller": "redirectToLogin",
+          "callee": "NextResponse.redirect",
+          "lineNumber": 49
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    }
+  ]
+}

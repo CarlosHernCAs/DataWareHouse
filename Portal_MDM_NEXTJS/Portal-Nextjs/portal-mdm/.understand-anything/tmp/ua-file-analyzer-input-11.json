@@ -1,0 +1,50 @@
+{
+  "projectRoot": "d:/Proyecto2026/ACP_DWH/ACP Proyecciones/Portal_MDM_NEXTJS/Portal-Nextjs/portal-mdm",
+  "batchFiles": [
+    {
+      "path": "app/layout.tsx",
+      "language": "typescript",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "components/providers/preferencias-provider.tsx",
+      "language": "typescript",
+      "sizeLines": 184,
+      "fileCategory": "code"
+    },
+    {
+      "path": "components/providers/query-provider.tsx",
+      "language": "typescript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "components/providers/toast-provider.tsx",
+      "language": "typescript",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "components/ui/tooltip.tsx",
+      "language": "typescript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "app/layout.tsx": [
+      "app/globals.css",
+      "components/providers/preferencias-provider.tsx",
+      "components/providers/query-provider.tsx",
+      "components/providers/toast-provider.tsx",
+      "components/ui/tooltip.tsx"
+    ],
+    "components/providers/preferencias-provider.tsx": [],
+    "components/providers/query-provider.tsx": [],
+    "components/providers/toast-provider.tsx": [],
+    "components/ui/tooltip.tsx": [
+      "lib/utils.ts"
+    ]
+  }
+}

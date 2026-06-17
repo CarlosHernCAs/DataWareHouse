@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard tipo Power BI — Opciones</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #0a0f1e;
+    color: #e2e8f0;
+    min-height: 100vh;
+    padding: 2rem;
+  }
+  .header { text-align: center; margin-bottom: 2rem; }
+  .header h1 {
+    font-size: 1.6rem; font-weight: 700;
+    background: linear-gradient(135deg, #60a5fa, #a78bfa);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    margin-bottom: .4rem;
+  }
+  .header p { color: #94a3b8; font-size: .9rem; }
+
+  .answer-box {
+    background: #0d2137;
+    border: 1px solid #1e4a6e;
+    border-left: 4px solid #60a5fa;
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+    font-size: .9rem; line-height: 1.6; color: #cbd5e1;
+  }
+  .answer-box strong { color: #93c5fd; }
+
+  /* Options */
+  .options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .option-card {
+    background: #111827;
+    border: 1px solid #1e293b;
+    border-radius: 14px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform .15s, border-color .2s;
+    position: relative;
+  }
+  .option-card:hover { transform: translateY(-3px); }
+  .option-card.selected { border-color: #60a5fa; box-shadow: 0 0 0 1px #60a5fa; }
+
+  .option-header {
+    padding: 1.1rem 1.25rem .75rem;
+    border-bottom: 1px solid #1e293b;
+    display: flex; align-items: flex-start; gap: .75rem;
+  }
+  .option-letter {
+    width: 36px; height: 36px; border-radius: 9px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: .9rem; font-weight: 800; flex-shrink: 0;
+    margin-top: .1rem;
+  }
+  .letter-a { background: #1e3a5f; color: #60a5fa; }
+  .letter-b { background: #2e1065; color: #a78bfa; }
+  .letter-c { background: #14532d; color: #4ade80; }
+
+  .option-title-block { flex: 1; }
+  .option-title { font-size: 1rem; font-weight: 700; color: #f1f5f9; }
+  .option-subtitle { font-size: .78rem; color: #64748b; margin-top: .15rem; }
+
+  .rec-badge {
+    position: absolute; top: .85rem; right: .85rem;
+    font-size: .65rem; font-weight: 700; text-transform: uppercase;
+    background: #1e3a5f; color: #60a5fa;
+    padding: .15rem .5rem; border-radius: 9999px; letter-spacing: .05em;
+  }
+
+  .option-body { padding: 1rem 1.25rem; }
+
+  .mini-preview {
+    background: #0d1117;
+    border: 1px solid #1e293b;
+    border-radius: 8px;
+    padding: .75rem;
+    margin-bottom: .85rem;
+  }
+  .mini-topbar {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: .6rem;
+  }
+  .mini-topbar-title { font-size: .72rem; font-weight: 600; color: #94a3b8; }
+  .mini-pill {
+    font-size: .62rem; padding: .1rem .4rem; border-radius: 9999px;
+    font-weight: 600;
+  }
+  .pill-embedded { background: #1e3a5f; color: #60a5fa; }
+  .pill-custom  { background: #2e1065; color: #c4b5fd; }
+  .pill-widgets { background: #14532d; color: #86efac; }
+
+  /* Power BI embed mockup */
+  .pbi-frame {
+    background: #1e293b; border-radius: 6px; padding: .5rem;
+    display: grid; grid-template-columns: 1fr 1fr; gap: .4rem;
+  }
+  .pbi-widget {
+    background: #0a0f1e; border-radius: 4px;
+    height: 45px; display: flex; align-items: center; justify-content: center;
+    font-size: .62rem; color: #475569;
+  }
+  .pbi-bar-container { display: flex; align-items: flex-end; gap: 2px; height: 25px; }
+  .pbi-bar { width: 6px; border-radius: 2px 2px 0 0; }
+
+  /* Query builder mockup */
+  .qb-row {
+    display: flex; gap: .35rem; margin-bottom: .3rem;
+  }
+  .qb-select {
+    flex: 1; background: #1e293b; border: 1px solid #334155;
+    border-radius: 4px; padding: .2rem .4rem;
+    font-size: .65rem; color: #94a3b8;
+  }
+  .qb-btn {
+    background: #2e1065; color: #a78bfa;
+    border: none; border-radius: 4px;
+    padding: .2rem .5rem; font-size: .65rem; cursor: pointer;
+  }
+
+  /* Widget grid mockup */
+  .wg-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .35rem; }
+  .wg-widget {
+    background: #1e293b; border-radius: 5px;
+    height: 40px; display: flex; align-items: center;
+    justify-content: center; font-size: .65rem; color: #475569;
+    gap: .3rem;
+  }
+  .wg-dot { width: 5px; height: 5px; border-radius: 50%; }
+
+  /* Specs table */
+  .specs { width: 100%; border-collapse: collapse; margin-bottom: .75rem; }
+  .specs tr { border-bottom: 1px solid #1e293b; }
+  .specs tr:last-child { border-bottom: none; }
+  .specs td { padding: .4rem .1rem; font-size: .78rem; }
+  .specs td:first-child { color: #64748b; width: 45%; }
+  .specs td:last-child { color: #e2e8f0; font-weight: 500; }
+
+  .complexity-bar-wrap { margin-top: .25rem; }
+  .complexity-label { font-size: .68rem; color: #64748b; margin-bottom: .2rem; }
+  .complexity-bar { height: 4px; background: #1e293b; border-radius: 2px; }
+  .complexity-fill { height: 100%; border-radius: 2px; }
+  .c-low  { background: #22c55e; width: 25%; }
+  .c-med  { background: #eab308; width: 55%; }
+  .c-high { background: #ef4444; width: 90%; }
+
+  .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; margin-top: .5rem; }
+  .pros, .cons { background: #0d1117; border-radius: 6px; padding: .5rem .6rem; }
+  .pros-title { font-size: .65rem; font-weight: 700; color: #4ade80; margin-bottom: .3rem; text-transform: uppercase; }
+  .cons-title { font-size: .65rem; font-weight: 700; color: #f87171; margin-bottom: .3rem; text-transform: uppercase; }
+  .pros ul, .cons ul { list-style: none; }
+  .pros ul li, .cons ul li { font-size: .72rem; color: #94a3b8; padding: .15rem 0; display: flex; gap: .3rem; }
+  .pros ul li::before { content: "✓"; color: #4ade80; }
+  .cons ul li::before { content: "✗"; color: #f87171; }
+
+  /* Recommendation */
+  .recommendation {
+    background: #0d2137; border: 1px solid #1e4a6e;
+    border-left: 4px solid #60a5fa;
+    border-radius: 10px; padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .recommendation h3 { font-size: .95rem; font-weight: 700; color: #93c5fd; margin-bottom: .6rem; }
+  .recommendation p { font-size: .85rem; color: #94a3b8; line-height: 1.6; margin-bottom: .5rem; }
+  .recommendation strong { color: #e2e8f0; }
+
+  .question-box {
+    background: #111827; border: 1px solid #2e1065;
+    border-radius: 10px; padding: 1.25rem;
+    text-align: center;
+  }
+  .question-box p { font-size: .9rem; color: #c4b5fd; font-weight: 500; margin-bottom: .75rem; }
+  .q-options { display: flex; gap: .75rem; justify-content: center; flex-wrap: wrap; }
+  .q-opt {
+    background: #1e293b; border: 1px solid #334155;
+    border-radius: 8px; padding: .5rem 1rem;
+    font-size: .82rem; color: #94a3b8; cursor: pointer;
+    transition: all .15s;
+  }
+  .q-opt:hover { border-color: #a78bfa; color: #c4b5fd; background: #2e1065; }
+
+  hr { border: none; border-top: 1px solid #1e293b; margin: 1.5rem 0; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>¿Dashboard tipo Power BI? — Las 3 opciones reales</h1>
+  <p>Comparativa técnica honesta para el Portal MDM</p>
+</div>
+
+<!-- Respuesta directa -->
+<div class="answer-box">
+  <strong>Respuesta corta: Sí, se puede.</strong> Pero "tipo Power BI" puede significar 3 cosas muy distintas en complejidad y resultado.
+  La opción más potente es <strong>Opción A — Embed Power BI</strong> si ya tienen licencias Microsoft (muy probable en un entorno ACP/SAP).
+  Si no tienen licencias, la <strong>Opción C — Mini BI nativo</strong> cubre el 80% del caso de uso con 40% del esfuerzo.
+</div>
+
+<!-- 3 OPTIONS -->
+<div class="options-grid">
+
+  <!-- Opción A: Power BI Embedded -->
+  <div class="option-card" data-choice="a" onclick="toggleSelect(this)">
+    <span class="rec-badge">⭐ Recomendada si tienen licencias</span>
+    <div class="option-header">
+      <div class="option-letter letter-a">A</div>
+      <div class="option-title-block">
+        <div class="option-title">Power BI Embedded</div>
+        <div class="option-subtitle">Incrustar reportes PBI reales dentro del portal</div>
+      </div>
+    </div>
+    <div class="option-body">
+      <div class="mini-preview">
+        <div class="mini-topbar">
+          <span class="mini-topbar-title">Portal MDM</span>
+          <span class="mini-pill pill-embedded">powerbi-client-react</span>
+        </div>
+        <div class="pbi-frame">
+          <div class="pbi-widget">
+            <div class="pbi-bar-container">
+              <div class="pbi-bar" style="height:35px; background:#60a5fa"></div>
+              <div class="pbi-bar" style="height:20px; background:#60a5fa99"></div>
+              <div class="pbi-bar" style="height:28px; background:#60a5fa"></div>
+              <div class="pbi-bar" style="height:15px; background:#60a5fa99"></div>
+              <div class="pbi-bar" style="height:40px; background:#60a5fa"></div>
+            </div>
+          </div>
+          <div class="pbi-widget" style="font-size:.55rem; color:#64748b;">
+            🗺️ Mapa geografía
+          </div>
+          <div class="pbi-widget" style="grid-column: span 2; font-size:.58rem;">
+            📊 Tabla de hechos — Fact_Cosecha_SAP
+          </div>
+        </div>
+      </div>
+
+      <table class="specs">
+        <tr><td>Librería</td><td>powerbi-client-react</td></tr>
+        <tr><td>Licencias</td><td>Power BI Pro / Premium</td></tr>
+        <tr><td>Requiere</td><td>Azure AD + Service Principal</td></tr>
+        <tr><td>Datos en vivo</td><td>DirectQuery al DWH</td></tr>
+      </table>
+
+      <div class="complexity-bar-wrap">
+        <div class="complexity-label">Complejidad de implementación en el portal</div>
+        <div class="complexity-bar"><div class="complexity-fill c-low"></div></div>
+      </div>
+
+      <div class="pros-cons">
+        <div class="pros">
+          <div class="pros-title">Ventajas</div>
+          <ul>
+            <li>100% Power BI real</li>
+            <li>Filtros, drill-down, slicers nativos</li>
+            <li>Diseño en Power BI Desktop</li>
+            <li>El portal solo incrusta</li>
+          </ul>
+        </div>
+        <div class="cons">
+          <div class="cons-title">Limitantes</div>
+          <ul>
+            <li>Requiere licencias Microsoft</li>
+            <li>Los reportes se diseñan fuera del portal</li>
+            <li>Dependencia de Azure AD</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Opción B: Query Builder custom -->
+  <div class="option-card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="option-header">
+      <div class="option-letter letter-b">B</div>
+      <div class="option-title-block">
+        <div class="option-title">Query Builder propio</div>
+        <div class="option-subtitle">El analista construye gráficas eligiendo tabla + columnas</div>
+      </div>
+    </div>
+    <div class="option-body">
+      <div class="mini-preview">
+        <div class="mini-topbar">
+          <span class="mini-topbar-title">Nueva visualización</span>
+          <span class="mini-pill pill-custom">custom</span>
+        </div>
+        <div class="qb-row">
+          <div class="qb-select">Tabla: Fact_Cosecha_SAP ▾</div>
+        </div>
+        <div class="qb-row">
+          <div class="qb-select">Eje X: Fecha ▾</div>
+          <div class="qb-select">Eje Y: Cantidad ▾</div>
+        </div>
+        <div class="qb-row">
+          <div class="qb-select">Tipo: Línea ▾</div>
+          <div class="qb-select">Agrupar: Variedad ▾</div>
+          <button class="qb-btn">Generar →</button>
+        </div>
+      </div>
+
+      <table class="specs">
+        <tr><td>Librería visualización</td><td>Recharts (ya instalado)</td></tr>
+        <tr><td>Requiere</td><td>API endpoint de analytics</td></tr>
+        <tr><td>Datos en vivo</td><td>Consultas al DWH via API</td></tr>
+        <tr><td>Licencias</td><td>Ninguna</td></tr>
+      </table>
+
+      <div class="complexity-bar-wrap">
+        <div class="complexity-label">Complejidad de implementación en el portal</div>
+        <div class="complexity-bar"><div class="complexity-fill c-high"></div></div>
+      </div>
+
+      <div class="pros-cons">
+        <div class="pros">
+          <div class="pros-title">Ventajas</div>
+          <ul>
+            <li>Sin licencias externas</li>
+            <li>100% dentro del portal</li>
+            <li>Customizable al máximo</li>
+          </ul>
+        </div>
+        <div class="cons">
+          <div class="cons-title">Limitantes</div>
+          <ul>
+            <li>Muy complejo de construir bien</li>
+            <li>Riesgo de queries lentas/pesadas</li>
+            <li>Reinventar la rueda vs PBI</li>
+            <li>Meses de desarrollo</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Opción C: Mini BI con widgets configurables -->
+  <div class="option-card" data-choice="c" onclick="toggleSelect(this)">
+    <span class="rec-badge" style="background:#14532d; color:#4ade80">⭐ Rec. sin licencias</span>
+    <div class="option-header">
+      <div class="option-letter letter-c">C</div>
+      <div class="option-title-block">
+        <div class="option-title">Mini BI — Widgets configurables</div>
+        <div class="option-subtitle">Widgets predefinidos que el analista configura y arrastra</div>
+      </div>
+    </div>
+    <div class="option-body">
+      <div class="mini-preview">
+        <div class="mini-topbar">
+          <span class="mini-topbar-title">Mi Dashboard</span>
+          <span class="mini-pill pill-widgets">dnd-kit</span>
+        </div>
+        <div class="wg-grid">
+          <div class="wg-widget"><div class="wg-dot" style="background:#60a5fa"></div> KPI Calidad</div>
+          <div class="wg-widget"><div class="wg-dot" style="background:#4ade80"></div> Estado ETL</div>
+          <div class="wg-widget" style="grid-column: span 2; background:#1a2e1a; border: 1px dashed #334155; color:#334155; font-size:.6rem;">
+            + Agregar widget...
+          </div>
+        </div>
+      </div>
+
+      <table class="specs">
+        <tr><td>Librería drag-drop</td><td>dnd-kit (ligera, accesible)</td></tr>
+        <tr><td>Visualización</td><td>Recharts (ya instalado)</td></tr>
+        <tr><td>Widgets disponibles</td><td>~8–12 tipos predefinidos</td></tr>
+        <tr><td>Persistencia</td><td>BD o localStorage</td></tr>
+      </table>
+
+      <div class="complexity-bar-wrap">
+        <div class="complexity-label">Complejidad de implementación en el portal</div>
+        <div class="complexity-bar"><div class="complexity-fill c-med"></div></div>
+      </div>
+
+      <div class="pros-cons">
+        <div class="pros">
+          <div class="pros-title">Ventajas</div>
+          <ul>
+            <li>Sin licencias</li>
+            <li>Drag & drop real</li>
+            <li>Totalmente integrado al portal</li>
+            <li>Viable en Fase 1–2</li>
+          </ul>
+        </div>
+        <div class="cons">
+          <div class="cons-title">Limitantes</div>
+          <ul>
+            <li>No es "libre" como PBI</li>
+            <li>Widgets limitados a los que se construyan</li>
+            <li>Requiere endpoints analíticos</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Recommendation -->
+<div class="recommendation">
+  <h3>Mi recomendación para el Portal MDM ACP</h3>
+  <p>
+    <strong>Si ACP ya tiene licencias Power BI (muy probable dado el entorno SAP/Microsoft):</strong>
+    usar la Opción A. Los analistas diseñan reportes en Power BI Desktop conectado al DWH,
+    y el portal simplemente los incrusta con <code>powerbi-client-react</code>. Implementación en el portal:
+    ~2–3 días. El 100% del poder de Power BI disponible desde el día 1.
+  </p>
+  <p>
+    <strong>Si NO tienen licencias o quieren todo en el portal sin dependencias externas:</strong>
+    Opción C — Mini BI con widgets configurables. El analista elige de una librería de ~10 widgets
+    (KPI card, línea de tiempo, barra de calidad, tabla de cuarentena, etc.), los arrastra a su dashboard
+    y el layout se guarda por usuario. Cubre el 80% del caso de uso con una implementación razonable.
+  </p>
+  <p>
+    <strong>Opción B solo tiene sentido</strong> si necesitan una herramienta ad-hoc de queries completamente libre —
+    y en ese caso, Metabase o Superset self-hosted son mejores que construirlo desde cero.
+  </p>
+</div>
+
+<!-- Pregunta -->
+<hr>
+<div class="question-box">
+  <p>¿ACP tiene licencias de Power BI Pro o Premium actualmente?</p>
+  <div class="q-options">
+    <div class="q-opt" data-choice="pbi-si" onclick="toggleSelect(this)">Sí, tenemos Power BI</div>
+    <div class="q-opt" data-choice="pbi-no" onclick="toggleSelect(this)">No / No estoy seguro</div>
+    <div class="q-opt" data-choice="pbi-mini" onclick="toggleSelect(this)">Prefiero todo en el portal (Opción C)</div>
+  </div>
+</div>
+
+</body>
+</html>

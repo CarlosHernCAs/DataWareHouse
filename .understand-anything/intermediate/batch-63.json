@@ -1,0 +1,676 @@
+{
+  "nodes": [
+    {
+      "id": "file:scratch/insert_varieties.py",
+      "type": "file",
+      "name": "insert_varieties.py",
+      "filePath": "scratch/insert_varieties.py",
+      "summary": "File mapped from scratch/insert_varieties.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scratch/insert_varieties.py:insert_varieties",
+      "type": "function",
+      "name": "insert_varieties",
+      "filePath": "scratch/insert_varieties.py",
+      "lineRange": [
+        3,
+        59
+      ],
+      "summary": "Function insert_varieties defined in scratch/insert_varieties.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:scratch/inspeccionar_archivos_bronce.py",
+      "type": "file",
+      "name": "inspeccionar_archivos_bronce.py",
+      "filePath": "scratch/inspeccionar_archivos_bronce.py",
+      "summary": "File mapped from scratch/inspeccionar_archivos_bronce.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/inspeccionar_archivos_bronce.py:inspect_files",
+      "type": "function",
+      "name": "inspect_files",
+      "filePath": "scratch/inspeccionar_archivos_bronce.py",
+      "lineRange": [
+        9,
+        22
+      ],
+      "summary": "Function inspect_files defined in scratch/inspeccionar_archivos_bronce.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/inspeccionar_bronce_cols_valores.py",
+      "type": "file",
+      "name": "inspeccionar_bronce_cols_valores.py",
+      "filePath": "scratch/inspeccionar_bronce_cols_valores.py",
+      "summary": "File mapped from scratch/inspeccionar_bronce_cols_valores.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/inspeccionar_bronce_cols_valores.py:inspect_bronce_rows",
+      "type": "function",
+      "name": "inspect_bronce_rows",
+      "filePath": "scratch/inspeccionar_bronce_cols_valores.py",
+      "lineRange": [
+        9,
+        43
+      ],
+      "summary": "Function inspect_bronce_rows defined in scratch/inspeccionar_bronce_cols_valores.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/inspeccionar_ciclos_valores.py",
+      "type": "file",
+      "name": "inspeccionar_ciclos_valores.py",
+      "filePath": "scratch/inspeccionar_ciclos_valores.py",
+      "summary": "File mapped from scratch/inspeccionar_ciclos_valores.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/inspeccionar_ciclos_valores.py:inspect_ciclos",
+      "type": "function",
+      "name": "inspect_ciclos",
+      "filePath": "scratch/inspeccionar_ciclos_valores.py",
+      "lineRange": [
+        9,
+        42
+      ],
+      "summary": "Function inspect_ciclos defined in scratch/inspeccionar_ciclos_valores.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/inspeccionar_claves_valores_raw.py",
+      "type": "file",
+      "name": "inspeccionar_claves_valores_raw.py",
+      "filePath": "scratch/inspeccionar_claves_valores_raw.py",
+      "summary": "File mapped from scratch/inspeccionar_claves_valores_raw.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/inspeccionar_claves_valores_raw.py:inspect_keys",
+      "type": "function",
+      "name": "inspect_keys",
+      "filePath": "scratch/inspeccionar_claves_valores_raw.py",
+      "lineRange": [
+        9,
+        24
+      ],
+      "summary": "Function inspect_keys defined in scratch/inspeccionar_claves_valores_raw.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/inspeccionar_color_cinta.py",
+      "type": "file",
+      "name": "inspeccionar_color_cinta.py",
+      "filePath": "scratch/inspeccionar_color_cinta.py",
+      "summary": "File mapped from scratch/inspeccionar_color_cinta.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/inspeccionar_color_cinta.py:inspect_color",
+      "type": "function",
+      "name": "inspect_color",
+      "filePath": "scratch/inspeccionar_color_cinta.py",
+      "lineRange": [
+        9,
+        40
+      ],
+      "summary": "Function inspect_color defined in scratch/inspeccionar_color_cinta.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/inspeccionar_dim_cinta.py",
+      "type": "file",
+      "name": "inspeccionar_dim_cinta.py",
+      "filePath": "scratch/inspeccionar_dim_cinta.py",
+      "summary": "File mapped from scratch/inspeccionar_dim_cinta.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/inspeccionar_dim_cinta.py:inspect_cinta",
+      "type": "function",
+      "name": "inspect_cinta",
+      "filePath": "scratch/inspeccionar_dim_cinta.py",
+      "lineRange": [
+        9,
+        26
+      ],
+      "summary": "Function inspect_cinta defined in scratch/inspeccionar_dim_cinta.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/inspeccionar_fenologia.py",
+      "type": "file",
+      "name": "inspeccionar_fenologia.py",
+      "filePath": "scratch/inspeccionar_fenologia.py",
+      "summary": "File mapped from scratch/inspeccionar_fenologia.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scratch/inspeccionar_fenologia.py:inspect_db",
+      "type": "function",
+      "name": "inspect_db",
+      "filePath": "scratch/inspeccionar_fenologia.py",
+      "lineRange": [
+        9,
+        62
+      ],
+      "summary": "Function inspect_db defined in scratch/inspeccionar_fenologia.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:scratch/inspect_all_db_counts.py",
+      "type": "file",
+      "name": "inspect_all_db_counts.py",
+      "filePath": "scratch/inspect_all_db_counts.py",
+      "summary": "File mapped from scratch/inspect_all_db_counts.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/inspect_all_ev_excels.py",
+      "type": "file",
+      "name": "inspect_all_ev_excels.py",
+      "filePath": "scratch/inspect_all_ev_excels.py",
+      "summary": "File mapped from scratch/inspect_all_ev_excels.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/inspect_all_ev_excels.py:inspect_all",
+      "type": "function",
+      "name": "inspect_all",
+      "filePath": "scratch/inspect_all_ev_excels.py",
+      "lineRange": [
+        5,
+        32
+      ],
+      "summary": "Function inspect_all defined in scratch/inspect_all_ev_excels.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/inspect_all_excels.py",
+      "type": "file",
+      "name": "inspect_all_excels.py",
+      "filePath": "scratch/inspect_all_excels.py",
+      "summary": "File mapped from scratch/inspect_all_excels.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/inspect_all_excels.py:inspect",
+      "type": "function",
+      "name": "inspect",
+      "filePath": "scratch/inspect_all_excels.py",
+      "lineRange": [
+        4,
+        22
+      ],
+      "summary": "Function inspect defined in scratch/inspect_all_excels.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/inspect_bd_documentation.py",
+      "type": "file",
+      "name": "inspect_bd_documentation.py",
+      "filePath": "scratch/inspect_bd_documentation.py",
+      "summary": "File mapped from scratch/inspect_bd_documentation.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scratch/inspect_bronce_log_details.py",
+      "type": "file",
+      "name": "inspect_bronce_log_details.py",
+      "filePath": "scratch/inspect_bronce_log_details.py",
+      "summary": "File mapped from scratch/inspect_bronce_log_details.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/inspect_bronce_silver_tc_mismatch.py",
+      "type": "file",
+      "name": "inspect_bronce_silver_tc_mismatch.py",
+      "filePath": "scratch/inspect_bronce_silver_tc_mismatch.py",
+      "summary": "File mapped from scratch/inspect_bronce_silver_tc_mismatch.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/inspect_data_dir.py",
+      "type": "file",
+      "name": "inspect_data_dir.py",
+      "filePath": "scratch/inspect_data_dir.py",
+      "summary": "File mapped from scratch/inspect_data_dir.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/inspect_data_dir.py:inspect_data",
+      "type": "function",
+      "name": "inspect_data",
+      "filePath": "scratch/inspect_data_dir.py",
+      "lineRange": [
+        4,
+        13
+      ],
+      "summary": "Function inspect_data defined in scratch/inspect_data_dir.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/inspect_db.py",
+      "type": "file",
+      "name": "inspect_db.py",
+      "filePath": "scratch/inspect_db.py",
+      "summary": "File mapped from scratch/inspect_db.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scratch/inspect_ev_bronce.py",
+      "type": "file",
+      "name": "inspect_ev_bronce.py",
+      "filePath": "scratch/inspect_ev_bronce.py",
+      "summary": "File mapped from scratch/inspect_ev_bronce.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/inspect_excel_budget.py",
+      "type": "file",
+      "name": "inspect_excel_budget.py",
+      "filePath": "scratch/inspect_excel_budget.py",
+      "summary": "File mapped from scratch/inspect_excel_budget.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/inspect_excel.py",
+      "type": "file",
+      "name": "inspect_excel.py",
+      "filePath": "scratch/inspect_excel.py",
+      "summary": "File mapped from scratch/inspect_excel.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/inspect_excel.py:inspect",
+      "type": "function",
+      "name": "inspect",
+      "filePath": "scratch/inspect_excel.py",
+      "lineRange": [
+        4,
+        14
+      ],
+      "summary": "Function inspect defined in scratch/inspect_excel.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/inspect_formulas.py",
+      "type": "file",
+      "name": "inspect_formulas.py",
+      "filePath": "scratch/inspect_formulas.py",
+      "summary": "File mapped from scratch/inspect_formulas.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/inspect_formulas.py:inspect_excel",
+      "type": "function",
+      "name": "inspect_excel",
+      "filePath": "scratch/inspect_formulas.py",
+      "lineRange": [
+        4,
+        40
+      ],
+      "summary": "Function inspect_excel defined in scratch/inspect_formulas.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/inspect_geo.py",
+      "type": "file",
+      "name": "inspect_geo.py",
+      "filePath": "scratch/inspect_geo.py",
+      "summary": "File mapped from scratch/inspect_geo.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/inspect_graph.py",
+      "type": "file",
+      "name": "inspect_graph.py",
+      "filePath": "scratch/inspect_graph.py",
+      "summary": "File mapped from scratch/inspect_graph.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/inspect_historico_veg.py",
+      "type": "file",
+      "name": "inspect_historico_veg.py",
+      "filePath": "scratch/inspect_historico_veg.py",
+      "summary": "File mapped from scratch/inspect_historico_veg.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/inspect_historico_veg.py:inspect_file",
+      "type": "function",
+      "name": "inspect_file",
+      "filePath": "scratch/inspect_historico_veg.py",
+      "lineRange": [
+        5,
+        24
+      ],
+      "summary": "Function inspect_file defined in scratch/inspect_historico_veg.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/inspect_indexes_fenologicos.py",
+      "type": "file",
+      "name": "inspect_indexes_fenologicos.py",
+      "filePath": "scratch/inspect_indexes_fenologicos.py",
+      "summary": "File mapped from scratch/inspect_indexes_fenologicos.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/inspect_indexes.py",
+      "type": "file",
+      "name": "inspect_indexes.py",
+      "filePath": "scratch/inspect_indexes.py",
+      "summary": "File mapped from scratch/inspect_indexes.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/inspect_indexes.py:check_indexes",
+      "type": "function",
+      "name": "check_indexes",
+      "filePath": "scratch/inspect_indexes.py",
+      "lineRange": [
+        5,
+        20
+      ],
+      "summary": "Function check_indexes defined in scratch/inspect_indexes.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:scratch/insert_varieties.py",
+      "target": "function:scratch/insert_varieties.py:insert_varieties",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/inspeccionar_archivos_bronce.py",
+      "target": "function:scratch/inspeccionar_archivos_bronce.py:inspect_files",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/inspeccionar_bronce_cols_valores.py",
+      "target": "function:scratch/inspeccionar_bronce_cols_valores.py:inspect_bronce_rows",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/inspeccionar_ciclos_valores.py",
+      "target": "function:scratch/inspeccionar_ciclos_valores.py:inspect_ciclos",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/inspeccionar_claves_valores_raw.py",
+      "target": "function:scratch/inspeccionar_claves_valores_raw.py:inspect_keys",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/inspeccionar_color_cinta.py",
+      "target": "function:scratch/inspeccionar_color_cinta.py:inspect_color",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/inspeccionar_dim_cinta.py",
+      "target": "function:scratch/inspeccionar_dim_cinta.py:inspect_cinta",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/inspeccionar_fenologia.py",
+      "target": "function:scratch/inspeccionar_fenologia.py:inspect_db",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/inspect_all_ev_excels.py",
+      "target": "function:scratch/inspect_all_ev_excels.py:inspect_all",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/inspect_all_excels.py",
+      "target": "function:scratch/inspect_all_excels.py:inspect",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/inspect_data_dir.py",
+      "target": "function:scratch/inspect_data_dir.py:inspect_data",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/inspect_excel.py",
+      "target": "function:scratch/inspect_excel.py:inspect",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/inspect_formulas.py",
+      "target": "function:scratch/inspect_formulas.py:inspect_excel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/inspect_historico_veg.py",
+      "target": "function:scratch/inspect_historico_veg.py:inspect_file",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/inspect_indexes.py",
+      "target": "function:scratch/inspect_indexes.py:check_indexes",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    }
+  ]
+}

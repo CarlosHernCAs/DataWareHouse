@@ -1,0 +1,44 @@
+{
+  "nodes": [
+    {
+      "id": "file:ETL/data/salida/fase5_backlog_geografia/backlog_cama.csv",
+      "type": "schema",
+      "name": "backlog_cama.csv",
+      "filePath": "ETL/data/salida/fase5_backlog_geografia/backlog_cama.csv",
+      "summary": "File mapped from ETL/data/salida/fase5_backlog_geografia/backlog_cama.csv with category data.",
+      "tags": [
+        "data",
+        "csv",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:ETL/data/salida/fase5_backlog_geografia/backlog_geografia_base.csv",
+      "type": "schema",
+      "name": "backlog_geografia_base.csv",
+      "filePath": "ETL/data/salida/fase5_backlog_geografia/backlog_geografia_base.csv",
+      "summary": "File mapped from ETL/data/salida/fase5_backlog_geografia/backlog_geografia_base.csv with category data.",
+      "tags": [
+        "data",
+        "csv",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:ETL/data/salida/fase5_backlog_geografia/backlog_reglas_especiales.csv",
+      "type": "schema",
+      "name": "backlog_reglas_especiales.csv",
+      "filePath": "ETL/data/salida/fase5_backlog_geografia/backlog_reglas_especiales.csv",
+      "summary": "File mapped from ETL/data/salida/fase5_backlog_geografia/backlog_reglas_especiales.csv with category data.",
+      "tags": [
+        "data",
+        "csv",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": []
+}

@@ -1,0 +1,2148 @@
+{
+  "nodes": [
+    {
+      "id": "file:.agents/skills/impeccable/scripts/pin.mjs",
+      "type": "file",
+      "name": "pin.mjs",
+      "filePath": ".agents/skills/impeccable/scripts/pin.mjs",
+      "summary": "File mapped from .agents/skills/impeccable/scripts/pin.mjs with category code.",
+      "tags": [
+        "code",
+        "javascript",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/pin.mjs:findProjectRoot",
+      "type": "function",
+      "name": "findProjectRoot",
+      "filePath": ".agents/skills/impeccable/scripts/pin.mjs",
+      "lineRange": [
+        43,
+        58
+      ],
+      "summary": "Function findProjectRoot defined in .agents/skills/impeccable/scripts/pin.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/pin.mjs:findHarnessDirs",
+      "type": "function",
+      "name": "findHarnessDirs",
+      "filePath": ".agents/skills/impeccable/scripts/pin.mjs",
+      "lineRange": [
+        63,
+        74
+      ],
+      "summary": "Function findHarnessDirs defined in .agents/skills/impeccable/scripts/pin.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/pin.mjs:loadCommandMetadata",
+      "type": "function",
+      "name": "loadCommandMetadata",
+      "filePath": ".agents/skills/impeccable/scripts/pin.mjs",
+      "lineRange": [
+        79,
+        85
+      ],
+      "summary": "Function loadCommandMetadata defined in .agents/skills/impeccable/scripts/pin.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/pin.mjs:generatePinnedSkill",
+      "type": "function",
+      "name": "generatePinnedSkill",
+      "filePath": ".agents/skills/impeccable/scripts/pin.mjs",
+      "lineRange": [
+        90,
+        107
+      ],
+      "summary": "Function generatePinnedSkill defined in .agents/skills/impeccable/scripts/pin.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/pin.mjs:pin",
+      "type": "function",
+      "name": "pin",
+      "filePath": ".agents/skills/impeccable/scripts/pin.mjs",
+      "lineRange": [
+        112,
+        150
+      ],
+      "summary": "Function pin defined in .agents/skills/impeccable/scripts/pin.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/pin.mjs:unpin",
+      "type": "function",
+      "name": "unpin",
+      "filePath": ".agents/skills/impeccable/scripts/pin.mjs",
+      "lineRange": [
+        155,
+        186
+      ],
+      "summary": "Function unpin defined in .agents/skills/impeccable/scripts/pin.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.agents/skills/impeccable/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": ".agents/skills/impeccable/SKILL.md",
+      "summary": "File mapped from .agents/skills/impeccable/SKILL.md with category docs.",
+      "tags": [
+        "docs",
+        "markdown",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:.claude/launch.json",
+      "type": "config",
+      "name": "launch.json",
+      "filePath": ".claude/launch.json",
+      "summary": "File mapped from .claude/launch.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.claude/settings.local.json",
+      "type": "config",
+      "name": "settings.local.json",
+      "filePath": ".claude/settings.local.json",
+      "summary": "File mapped from .claude/settings.local.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.understand-anything/intermediate/batches.json",
+      "type": "config",
+      "name": "batches.json",
+      "filePath": ".understand-anything/intermediate/batches.json",
+      "summary": "File mapped from .understand-anything/intermediate/batches.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:.understand-anything/intermediate/scan-result.json",
+      "type": "config",
+      "name": "scan-result.json",
+      "filePath": ".understand-anything/intermediate/scan-result.json",
+      "summary": "File mapped from .understand-anything/intermediate/scan-result.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:acp_mdm_portal/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "acp_mdm_portal/__init__.py",
+      "summary": "File mapped from acp_mdm_portal/__init__.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:acp_mdm_portal/.streamlit/config.toml",
+      "type": "config",
+      "name": "config.toml",
+      "filePath": "acp_mdm_portal/.streamlit/config.toml",
+      "summary": "File mapped from acp_mdm_portal/.streamlit/config.toml with category config.",
+      "tags": [
+        "config",
+        "toml",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:acp_mdm_portal/app.py",
+      "type": "file",
+      "name": "app.py",
+      "filePath": "acp_mdm_portal/app.py",
+      "summary": "File mapped from acp_mdm_portal/app.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:acp_mdm_portal/docs/roadmap_futuro_analytics.md",
+      "type": "document",
+      "name": "roadmap_futuro_analytics.md",
+      "filePath": "acp_mdm_portal/docs/roadmap_futuro_analytics.md",
+      "summary": "File mapped from acp_mdm_portal/docs/roadmap_futuro_analytics.md with category docs.",
+      "tags": [
+        "docs",
+        "markdown",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:acp_mdm_portal/paginas/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "acp_mdm_portal/paginas/__init__.py",
+      "summary": "File mapped from acp_mdm_portal/paginas/__init__.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:acp_mdm_portal/paginas/auditoria.py",
+      "type": "file",
+      "name": "auditoria.py",
+      "filePath": "acp_mdm_portal/paginas/auditoria.py",
+      "summary": "File mapped from acp_mdm_portal/paginas/auditoria.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/auditoria.py:_cargar_historial",
+      "type": "function",
+      "name": "_cargar_historial",
+      "filePath": "acp_mdm_portal/paginas/auditoria.py",
+      "lineRange": [
+        41,
+        46
+      ],
+      "summary": "Function _cargar_historial defined in acp_mdm_portal/paginas/auditoria.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/auditoria.py:_a_dataframe",
+      "type": "function",
+      "name": "_a_dataframe",
+      "filePath": "acp_mdm_portal/paginas/auditoria.py",
+      "lineRange": [
+        49,
+        62
+      ],
+      "summary": "Function _a_dataframe defined in acp_mdm_portal/paginas/auditoria.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/auditoria.py:_formatear_duracion",
+      "type": "function",
+      "name": "_formatear_duracion",
+      "filePath": "acp_mdm_portal/paginas/auditoria.py",
+      "lineRange": [
+        65,
+        73
+      ],
+      "summary": "Function _formatear_duracion defined in acp_mdm_portal/paginas/auditoria.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/auditoria.py:_icono_estado",
+      "type": "function",
+      "name": "_icono_estado",
+      "filePath": "acp_mdm_portal/paginas/auditoria.py",
+      "lineRange": [
+        76,
+        77
+      ],
+      "summary": "Function _icono_estado defined in acp_mdm_portal/paginas/auditoria.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/auditoria.py:_render_kpis",
+      "type": "function",
+      "name": "_render_kpis",
+      "filePath": "acp_mdm_portal/paginas/auditoria.py",
+      "lineRange": [
+        82,
+        118
+      ],
+      "summary": "Function _render_kpis defined in acp_mdm_portal/paginas/auditoria.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/auditoria.py:_render_filtros",
+      "type": "function",
+      "name": "_render_filtros",
+      "filePath": "acp_mdm_portal/paginas/auditoria.py",
+      "lineRange": [
+        124,
+        180
+      ],
+      "summary": "Function _render_filtros defined in acp_mdm_portal/paginas/auditoria.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/auditoria.py:_preparar_vista",
+      "type": "function",
+      "name": "_preparar_vista",
+      "filePath": "acp_mdm_portal/paginas/auditoria.py",
+      "lineRange": [
+        185,
+        220
+      ],
+      "summary": "Function _preparar_vista defined in acp_mdm_portal/paginas/auditoria.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/auditoria.py:_render_tabla_historial",
+      "type": "function",
+      "name": "_render_tabla_historial",
+      "filePath": "acp_mdm_portal/paginas/auditoria.py",
+      "lineRange": [
+        223,
+        248
+      ],
+      "summary": "Function _render_tabla_historial defined in acp_mdm_portal/paginas/auditoria.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/auditoria.py:_render_detalle_tabla",
+      "type": "function",
+      "name": "_render_detalle_tabla",
+      "filePath": "acp_mdm_portal/paginas/auditoria.py",
+      "lineRange": [
+        253,
+        344
+      ],
+      "summary": "Function _render_detalle_tabla defined in acp_mdm_portal/paginas/auditoria.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/auditoria.py:_render_resumen_estados",
+      "type": "function",
+      "name": "_render_resumen_estados",
+      "filePath": "acp_mdm_portal/paginas/auditoria.py",
+      "lineRange": [
+        349,
+        389
+      ],
+      "summary": "Function _render_resumen_estados defined in acp_mdm_portal/paginas/auditoria.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/auditoria.py:render",
+      "type": "function",
+      "name": "render",
+      "filePath": "acp_mdm_portal/paginas/auditoria.py",
+      "lineRange": [
+        395,
+        440
+      ],
+      "summary": "Function render defined in acp_mdm_portal/paginas/auditoria.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:acp_mdm_portal/paginas/catalogos/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "acp_mdm_portal/paginas/catalogos/__init__.py",
+      "summary": "File mapped from acp_mdm_portal/paginas/catalogos/__init__.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:acp_mdm_portal/paginas/catalogos/geografia.py",
+      "type": "file",
+      "name": "geografia.py",
+      "filePath": "acp_mdm_portal/paginas/catalogos/geografia.py",
+      "summary": "File mapped from acp_mdm_portal/paginas/catalogos/geografia.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/catalogos/geografia.py:render",
+      "type": "function",
+      "name": "render",
+      "filePath": "acp_mdm_portal/paginas/catalogos/geografia.py",
+      "lineRange": [
+        7,
+        29
+      ],
+      "summary": "Function render defined in acp_mdm_portal/paginas/catalogos/geografia.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:acp_mdm_portal/paginas/catalogos/personal.py",
+      "type": "file",
+      "name": "personal.py",
+      "filePath": "acp_mdm_portal/paginas/catalogos/personal.py",
+      "summary": "File mapped from acp_mdm_portal/paginas/catalogos/personal.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/catalogos/personal.py:render",
+      "type": "function",
+      "name": "render",
+      "filePath": "acp_mdm_portal/paginas/catalogos/personal.py",
+      "lineRange": [
+        7,
+        27
+      ],
+      "summary": "Function render defined in acp_mdm_portal/paginas/catalogos/personal.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:acp_mdm_portal/paginas/catalogos/variedades.py",
+      "type": "file",
+      "name": "variedades.py",
+      "filePath": "acp_mdm_portal/paginas/catalogos/variedades.py",
+      "summary": "File mapped from acp_mdm_portal/paginas/catalogos/variedades.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/catalogos/variedades.py:_mensaje_error_usuario",
+      "type": "function",
+      "name": "_mensaje_error_usuario",
+      "filePath": "acp_mdm_portal/paginas/catalogos/variedades.py",
+      "lineRange": [
+        64,
+        90
+      ],
+      "summary": "Function _mensaje_error_usuario defined in acp_mdm_portal/paginas/catalogos/variedades.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/catalogos/variedades.py:_cargar",
+      "type": "function",
+      "name": "_cargar",
+      "filePath": "acp_mdm_portal/paginas/catalogos/variedades.py",
+      "lineRange": [
+        95,
+        102
+      ],
+      "summary": "Function _cargar defined in acp_mdm_portal/paginas/catalogos/variedades.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/catalogos/variedades.py:_render_kpis_mdm",
+      "type": "function",
+      "name": "_render_kpis_mdm",
+      "filePath": "acp_mdm_portal/paginas/catalogos/variedades.py",
+      "lineRange": [
+        107,
+        116
+      ],
+      "summary": "Function _render_kpis_mdm defined in acp_mdm_portal/paginas/catalogos/variedades.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/catalogos/variedades.py:_render_kpis_dim",
+      "type": "function",
+      "name": "_render_kpis_dim",
+      "filePath": "acp_mdm_portal/paginas/catalogos/variedades.py",
+      "lineRange": [
+        119,
+        128
+      ],
+      "summary": "Function _render_kpis_dim defined in acp_mdm_portal/paginas/catalogos/variedades.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/catalogos/variedades.py:_render_filtro",
+      "type": "function",
+      "name": "_render_filtro",
+      "filePath": "acp_mdm_portal/paginas/catalogos/variedades.py",
+      "lineRange": [
+        133,
+        172
+      ],
+      "summary": "Function _render_filtro defined in acp_mdm_portal/paginas/catalogos/variedades.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/catalogos/variedades.py:_render_formulario_crear",
+      "type": "function",
+      "name": "_render_formulario_crear",
+      "filePath": "acp_mdm_portal/paginas/catalogos/variedades.py",
+      "lineRange": [
+        177,
+        218
+      ],
+      "summary": "Function _render_formulario_crear defined in acp_mdm_portal/paginas/catalogos/variedades.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/catalogos/variedades.py:_render_banner_confirmacion",
+      "type": "function",
+      "name": "_render_banner_confirmacion",
+      "filePath": "acp_mdm_portal/paginas/catalogos/variedades.py",
+      "lineRange": [
+        226,
+        271
+      ],
+      "summary": "Function _render_banner_confirmacion defined in acp_mdm_portal/paginas/catalogos/variedades.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/catalogos/variedades.py:_render_acciones_dim",
+      "type": "function",
+      "name": "_render_acciones_dim",
+      "filePath": "acp_mdm_portal/paginas/catalogos/variedades.py",
+      "lineRange": [
+        274,
+        340
+      ],
+      "summary": "Function _render_acciones_dim defined in acp_mdm_portal/paginas/catalogos/variedades.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/catalogos/variedades.py:render",
+      "type": "function",
+      "name": "render",
+      "filePath": "acp_mdm_portal/paginas/catalogos/variedades.py",
+      "lineRange": [
+        345,
+        428
+      ],
+      "summary": "Function render defined in acp_mdm_portal/paginas/catalogos/variedades.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:acp_mdm_portal/paginas/configuracion/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "acp_mdm_portal/paginas/configuracion/__init__.py",
+      "summary": "File mapped from acp_mdm_portal/paginas/configuracion/__init__.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:acp_mdm_portal/paginas/configuracion/consola_admin.py",
+      "type": "file",
+      "name": "consola_admin.py",
+      "filePath": "acp_mdm_portal/paginas/configuracion/consola_admin.py",
+      "summary": "File mapped from acp_mdm_portal/paginas/configuracion/consola_admin.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/configuracion/consola_admin.py:render",
+      "type": "function",
+      "name": "render",
+      "filePath": "acp_mdm_portal/paginas/configuracion/consola_admin.py",
+      "lineRange": [
+        32,
+        131
+      ],
+      "summary": "Function render defined in acp_mdm_portal/paginas/configuracion/consola_admin.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:acp_mdm_portal/paginas/configuracion/parametros_pipeline.py",
+      "type": "file",
+      "name": "parametros_pipeline.py",
+      "filePath": "acp_mdm_portal/paginas/configuracion/parametros_pipeline.py",
+      "summary": "File mapped from acp_mdm_portal/paginas/configuracion/parametros_pipeline.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/configuracion/parametros_pipeline.py:cargar_parametros",
+      "type": "function",
+      "name": "cargar_parametros",
+      "filePath": "acp_mdm_portal/paginas/configuracion/parametros_pipeline.py",
+      "lineRange": [
+        20,
+        24
+      ],
+      "summary": "Function cargar_parametros defined in acp_mdm_portal/paginas/configuracion/parametros_pipeline.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/configuracion/parametros_pipeline.py:render",
+      "type": "function",
+      "name": "render",
+      "filePath": "acp_mdm_portal/paginas/configuracion/parametros_pipeline.py",
+      "lineRange": [
+        27,
+        123
+      ],
+      "summary": "Function render defined in acp_mdm_portal/paginas/configuracion/parametros_pipeline.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:acp_mdm_portal/paginas/configuracion/reglas_validacion.py",
+      "type": "file",
+      "name": "reglas_validacion.py",
+      "filePath": "acp_mdm_portal/paginas/configuracion/reglas_validacion.py",
+      "summary": "File mapped from acp_mdm_portal/paginas/configuracion/reglas_validacion.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/configuracion/reglas_validacion.py:_cargar_reglas",
+      "type": "function",
+      "name": "_cargar_reglas",
+      "filePath": "acp_mdm_portal/paginas/configuracion/reglas_validacion.py",
+      "lineRange": [
+        21,
+        25
+      ],
+      "summary": "Function _cargar_reglas defined in acp_mdm_portal/paginas/configuracion/reglas_validacion.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/configuracion/reglas_validacion.py:render",
+      "type": "function",
+      "name": "render",
+      "filePath": "acp_mdm_portal/paginas/configuracion/reglas_validacion.py",
+      "lineRange": [
+        28,
+        87
+      ],
+      "summary": "Function render defined in acp_mdm_portal/paginas/configuracion/reglas_validacion.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:acp_mdm_portal/paginas/cuarentena.py",
+      "type": "file",
+      "name": "cuarentena.py",
+      "filePath": "acp_mdm_portal/paginas/cuarentena.py",
+      "summary": "File mapped from acp_mdm_portal/paginas/cuarentena.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/cuarentena.py:_cargar_cuarentena",
+      "type": "function",
+      "name": "_cargar_cuarentena",
+      "filePath": "acp_mdm_portal/paginas/cuarentena.py",
+      "lineRange": [
+        31,
+        39
+      ],
+      "summary": "Function _cargar_cuarentena defined in acp_mdm_portal/paginas/cuarentena.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/cuarentena.py:cargar_cuarentena",
+      "type": "function",
+      "name": "cargar_cuarentena",
+      "filePath": "acp_mdm_portal/paginas/cuarentena.py",
+      "lineRange": [
+        44,
+        58
+      ],
+      "summary": "Function cargar_cuarentena defined in acp_mdm_portal/paginas/cuarentena.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/cuarentena.py:_exportar_excel",
+      "type": "function",
+      "name": "_exportar_excel",
+      "filePath": "acp_mdm_portal/paginas/cuarentena.py",
+      "lineRange": [
+        61,
+        65
+      ],
+      "summary": "Function _exportar_excel defined in acp_mdm_portal/paginas/cuarentena.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/cuarentena.py:render",
+      "type": "function",
+      "name": "render",
+      "filePath": "acp_mdm_portal/paginas/cuarentena.py",
+      "lineRange": [
+        68,
+        116
+      ],
+      "summary": "Function render defined in acp_mdm_portal/paginas/cuarentena.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:acp_mdm_portal/paginas/homologacion.py",
+      "type": "file",
+      "name": "homologacion.py",
+      "filePath": "acp_mdm_portal/paginas/homologacion.py",
+      "summary": "File mapped from acp_mdm_portal/paginas/homologacion.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/homologacion.py:cargar_sugerencias_pendientes",
+      "type": "function",
+      "name": "cargar_sugerencias_pendientes",
+      "filePath": "acp_mdm_portal/paginas/homologacion.py",
+      "lineRange": [
+        24,
+        44
+      ],
+      "summary": "Function cargar_sugerencias_pendientes defined in acp_mdm_portal/paginas/homologacion.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/homologacion.py:cargar_historial_homologacion",
+      "type": "function",
+      "name": "cargar_historial_homologacion",
+      "filePath": "acp_mdm_portal/paginas/homologacion.py",
+      "lineRange": [
+        47,
+        68
+      ],
+      "summary": "Function cargar_historial_homologacion defined in acp_mdm_portal/paginas/homologacion.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/homologacion.py:_cargar_geografia_completa",
+      "type": "function",
+      "name": "_cargar_geografia_completa",
+      "filePath": "acp_mdm_portal/paginas/homologacion.py",
+      "lineRange": [
+        72,
+        77
+      ],
+      "summary": "Function _cargar_geografia_completa defined in acp_mdm_portal/paginas/homologacion.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/homologacion.py:obtener_opciones_maestras",
+      "type": "function",
+      "name": "obtener_opciones_maestras",
+      "filePath": "acp_mdm_portal/paginas/homologacion.py",
+      "lineRange": [
+        80,
+        105
+      ],
+      "summary": "Function obtener_opciones_maestras defined in acp_mdm_portal/paginas/homologacion.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/homologacion.py:render",
+      "type": "function",
+      "name": "render",
+      "filePath": "acp_mdm_portal/paginas/homologacion.py",
+      "lineRange": [
+        110,
+        358
+      ],
+      "summary": "Function render defined in acp_mdm_portal/paginas/homologacion.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:acp_mdm_portal/paginas/inicio.py",
+      "type": "file",
+      "name": "inicio.py",
+      "filePath": "acp_mdm_portal/paginas/inicio.py",
+      "summary": "File mapped from acp_mdm_portal/paginas/inicio.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/inicio.py:_detectar_fase",
+      "type": "function",
+      "name": "_detectar_fase",
+      "filePath": "acp_mdm_portal/paginas/inicio.py",
+      "lineRange": [
+        23,
+        28
+      ],
+      "summary": "Function _detectar_fase defined in acp_mdm_portal/paginas/inicio.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/inicio.py:_generar_monitor_canvas",
+      "type": "function",
+      "name": "_generar_monitor_canvas",
+      "filePath": "acp_mdm_portal/paginas/inicio.py",
+      "lineRange": [
+        31,
+        436
+      ],
+      "summary": "Function _generar_monitor_canvas defined in acp_mdm_portal/paginas/inicio.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:acp_mdm_portal/paginas/proyecciones.py",
+      "type": "file",
+      "name": "proyecciones.py",
+      "filePath": "acp_mdm_portal/paginas/proyecciones.py",
+      "summary": "File mapped from acp_mdm_portal/paginas/proyecciones.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/proyecciones.py:_construir_df_matriz_inputs",
+      "type": "function",
+      "name": "_construir_df_matriz_inputs",
+      "filePath": "acp_mdm_portal/paginas/proyecciones.py",
+      "lineRange": [
+        41,
+        55
+      ],
+      "summary": "Function _construir_df_matriz_inputs defined in acp_mdm_portal/paginas/proyecciones.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/proyecciones.py:_parsear_matriz_inputs",
+      "type": "function",
+      "name": "_parsear_matriz_inputs",
+      "filePath": "acp_mdm_portal/paginas/proyecciones.py",
+      "lineRange": [
+        58,
+        69
+      ],
+      "summary": "Function _parsear_matriz_inputs defined in acp_mdm_portal/paginas/proyecciones.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/proyecciones.py:_exportar_a_excel",
+      "type": "function",
+      "name": "_exportar_a_excel",
+      "filePath": "acp_mdm_portal/paginas/proyecciones.py",
+      "lineRange": [
+        72,
+        110
+      ],
+      "summary": "Function _exportar_a_excel defined in acp_mdm_portal/paginas/proyecciones.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/proyecciones.py:_firma_matriz",
+      "type": "function",
+      "name": "_firma_matriz",
+      "filePath": "acp_mdm_portal/paginas/proyecciones.py",
+      "lineRange": [
+        113,
+        119
+      ],
+      "summary": "Function _firma_matriz defined in acp_mdm_portal/paginas/proyecciones.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/proyecciones.py:_calcular_diff_matriz",
+      "type": "function",
+      "name": "_calcular_diff_matriz",
+      "filePath": "acp_mdm_portal/paginas/proyecciones.py",
+      "lineRange": [
+        122,
+        153
+      ],
+      "summary": "Function _calcular_diff_matriz defined in acp_mdm_portal/paginas/proyecciones.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/proyecciones.py:_validar_matriz_cacheado",
+      "type": "function",
+      "name": "_validar_matriz_cacheado",
+      "filePath": "acp_mdm_portal/paginas/proyecciones.py",
+      "lineRange": [
+        157,
+        165
+      ],
+      "summary": "Function _validar_matriz_cacheado defined in acp_mdm_portal/paginas/proyecciones.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/proyecciones.py:_render_cabecera",
+      "type": "function",
+      "name": "_render_cabecera",
+      "filePath": "acp_mdm_portal/paginas/proyecciones.py",
+      "lineRange": [
+        170,
+        196
+      ],
+      "summary": "Function _render_cabecera defined in acp_mdm_portal/paginas/proyecciones.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/proyecciones.py:_opciones_validas",
+      "type": "function",
+      "name": "_opciones_validas",
+      "filePath": "acp_mdm_portal/paginas/proyecciones.py",
+      "lineRange": [
+        201,
+        217
+      ],
+      "summary": "Function _opciones_validas defined in acp_mdm_portal/paginas/proyecciones.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/proyecciones.py:_hidratar_filtros_desde_url",
+      "type": "function",
+      "name": "_hidratar_filtros_desde_url",
+      "filePath": "acp_mdm_portal/paginas/proyecciones.py",
+      "lineRange": [
+        234,
+        254
+      ],
+      "summary": "Function _hidratar_filtros_desde_url defined in acp_mdm_portal/paginas/proyecciones.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/proyecciones.py:_sincronizar_url_filtros",
+      "type": "function",
+      "name": "_sincronizar_url_filtros",
+      "filePath": "acp_mdm_portal/paginas/proyecciones.py",
+      "lineRange": [
+        257,
+        275
+      ],
+      "summary": "Function _sincronizar_url_filtros defined in acp_mdm_portal/paginas/proyecciones.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/proyecciones.py:_render_control_fecha",
+      "type": "function",
+      "name": "_render_control_fecha",
+      "filePath": "acp_mdm_portal/paginas/proyecciones.py",
+      "lineRange": [
+        278,
+        438
+      ],
+      "summary": "Function _render_control_fecha defined in acp_mdm_portal/paginas/proyecciones.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/proyecciones.py:_render_panel_configuracion",
+      "type": "function",
+      "name": "_render_panel_configuracion",
+      "filePath": "acp_mdm_portal/paginas/proyecciones.py",
+      "lineRange": [
+        441,
+        613
+      ],
+      "summary": "Function _render_panel_configuracion defined in acp_mdm_portal/paginas/proyecciones.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/proyecciones.py:_render_kpis",
+      "type": "function",
+      "name": "_render_kpis",
+      "filePath": "acp_mdm_portal/paginas/proyecciones.py",
+      "lineRange": [
+        619,
+        681
+      ],
+      "summary": "Function _render_kpis defined in acp_mdm_portal/paginas/proyecciones.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/proyecciones.py:_aplicar_ventana_semanas",
+      "type": "function",
+      "name": "_aplicar_ventana_semanas",
+      "filePath": "acp_mdm_portal/paginas/proyecciones.py",
+      "lineRange": [
+        687,
+        701
+      ],
+      "summary": "Function _aplicar_ventana_semanas defined in acp_mdm_portal/paginas/proyecciones.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/proyecciones.py:_render_grafico_cosecha",
+      "type": "function",
+      "name": "_render_grafico_cosecha",
+      "filePath": "acp_mdm_portal/paginas/proyecciones.py",
+      "lineRange": [
+        704,
+        844
+      ],
+      "summary": "Function _render_grafico_cosecha defined in acp_mdm_portal/paginas/proyecciones.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/proyecciones.py:_render_comparacion",
+      "type": "function",
+      "name": "_render_comparacion",
+      "filePath": "acp_mdm_portal/paginas/proyecciones.py",
+      "lineRange": [
+        849,
+        1023
+      ],
+      "summary": "Function _render_comparacion defined in acp_mdm_portal/paginas/proyecciones.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/proyecciones.py:_render_kpis_por_fundo",
+      "type": "function",
+      "name": "_render_kpis_por_fundo",
+      "filePath": "acp_mdm_portal/paginas/proyecciones.py",
+      "lineRange": [
+        1030,
+        1146
+      ],
+      "summary": "Function _render_kpis_por_fundo defined in acp_mdm_portal/paginas/proyecciones.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/proyecciones.py:_render_comparativa_organico_convencional",
+      "type": "function",
+      "name": "_render_comparativa_organico_convencional",
+      "filePath": "acp_mdm_portal/paginas/proyecciones.py",
+      "lineRange": [
+        1149,
+        1208
+      ],
+      "summary": "Function _render_comparativa_organico_convencional defined in acp_mdm_portal/paginas/proyecciones.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/proyecciones.py:_render_heatmap_modulo_semana",
+      "type": "function",
+      "name": "_render_heatmap_modulo_semana",
+      "filePath": "acp_mdm_portal/paginas/proyecciones.py",
+      "lineRange": [
+        1213,
+        1272
+      ],
+      "summary": "Function _render_heatmap_modulo_semana defined in acp_mdm_portal/paginas/proyecciones.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/proyecciones.py:_render_treemap_distribucion",
+      "type": "function",
+      "name": "_render_treemap_distribucion",
+      "filePath": "acp_mdm_portal/paginas/proyecciones.py",
+      "lineRange": [
+        1275,
+        1342
+      ],
+      "summary": "Function _render_treemap_distribucion defined in acp_mdm_portal/paginas/proyecciones.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/proyecciones.py:_render_vistas_analiticas",
+      "type": "function",
+      "name": "_render_vistas_analiticas",
+      "filePath": "acp_mdm_portal/paginas/proyecciones.py",
+      "lineRange": [
+        1345,
+        1366
+      ],
+      "summary": "Function _render_vistas_analiticas defined in acp_mdm_portal/paginas/proyecciones.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/proyecciones.py:_render_desglose",
+      "type": "function",
+      "name": "_render_desglose",
+      "filePath": "acp_mdm_portal/paginas/proyecciones.py",
+      "lineRange": [
+        1371,
+        1496
+      ],
+      "summary": "Function _render_desglose defined in acp_mdm_portal/paginas/proyecciones.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/proyecciones.py:render",
+      "type": "function",
+      "name": "render",
+      "filePath": "acp_mdm_portal/paginas/proyecciones.py",
+      "lineRange": [
+        1502,
+        1635
+      ],
+      "summary": "Function render defined in acp_mdm_portal/paginas/proyecciones.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:acp_mdm_portal/paginas/sistema.py",
+      "type": "file",
+      "name": "sistema.py",
+      "filePath": "acp_mdm_portal/paginas/sistema.py",
+      "summary": "File mapped from acp_mdm_portal/paginas/sistema.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/sistema.py:_consultar",
+      "type": "function",
+      "name": "_consultar",
+      "filePath": "acp_mdm_portal/paginas/sistema.py",
+      "lineRange": [
+        88,
+        93
+      ],
+      "summary": "Function _consultar defined in acp_mdm_portal/paginas/sistema.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/sistema.py:_es_sano",
+      "type": "function",
+      "name": "_es_sano",
+      "filePath": "acp_mdm_portal/paginas/sistema.py",
+      "lineRange": [
+        96,
+        98
+      ],
+      "summary": "Function _es_sano defined in acp_mdm_portal/paginas/sistema.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/sistema.py:_render_tarjeta_subsistema",
+      "type": "function",
+      "name": "_render_tarjeta_subsistema",
+      "filePath": "acp_mdm_portal/paginas/sistema.py",
+      "lineRange": [
+        103,
+        145
+      ],
+      "summary": "Function _render_tarjeta_subsistema defined in acp_mdm_portal/paginas/sistema.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/sistema.py:_render_panel_lock",
+      "type": "function",
+      "name": "_render_panel_lock",
+      "filePath": "acp_mdm_portal/paginas/sistema.py",
+      "lineRange": [
+        150,
+        198
+      ],
+      "summary": "Function _render_panel_lock defined in acp_mdm_portal/paginas/sistema.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/sistema.py:_render_panel_bd",
+      "type": "function",
+      "name": "_render_panel_bd",
+      "filePath": "acp_mdm_portal/paginas/sistema.py",
+      "lineRange": [
+        203,
+        261
+      ],
+      "summary": "Function _render_panel_bd defined in acp_mdm_portal/paginas/sistema.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/sistema.py:_render_panel_control",
+      "type": "function",
+      "name": "_render_panel_control",
+      "filePath": "acp_mdm_portal/paginas/sistema.py",
+      "lineRange": [
+        266,
+        314
+      ],
+      "summary": "Function _render_panel_control defined in acp_mdm_portal/paginas/sistema.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/sistema.py:_registrar_historial",
+      "type": "function",
+      "name": "_registrar_historial",
+      "filePath": "acp_mdm_portal/paginas/sistema.py",
+      "lineRange": [
+        319,
+        330
+      ],
+      "summary": "Function _registrar_historial defined in acp_mdm_portal/paginas/sistema.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/sistema.py:_render_historial",
+      "type": "function",
+      "name": "_render_historial",
+      "filePath": "acp_mdm_portal/paginas/sistema.py",
+      "lineRange": [
+        333,
+        355
+      ],
+      "summary": "Function _render_historial defined in acp_mdm_portal/paginas/sistema.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/sistema.py:_render_autorefresh",
+      "type": "function",
+      "name": "_render_autorefresh",
+      "filePath": "acp_mdm_portal/paginas/sistema.py",
+      "lineRange": [
+        360,
+        383
+      ],
+      "summary": "Function _render_autorefresh defined in acp_mdm_portal/paginas/sistema.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/sistema.py:_generar_dashboard_ssr",
+      "type": "function",
+      "name": "_generar_dashboard_ssr",
+      "filePath": "acp_mdm_portal/paginas/sistema.py",
+      "lineRange": [
+        388,
+        644
+      ],
+      "summary": "Function _generar_dashboard_ssr defined in acp_mdm_portal/paginas/sistema.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/sistema.py:_generar_dashboard_calidad_ssr",
+      "type": "function",
+      "name": "_generar_dashboard_calidad_ssr",
+      "filePath": "acp_mdm_portal/paginas/sistema.py",
+      "lineRange": [
+        648,
+        801
+      ],
+      "summary": "Function _generar_dashboard_calidad_ssr defined in acp_mdm_portal/paginas/sistema.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:acp_mdm_portal/paginas/sistema.py:render",
+      "type": "function",
+      "name": "render",
+      "filePath": "acp_mdm_portal/paginas/sistema.py",
+      "lineRange": [
+        806,
+        959
+      ],
+      "summary": "Function render defined in acp_mdm_portal/paginas/sistema.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:.agents/skills/impeccable/scripts/pin.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/pin.mjs:findProjectRoot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/pin.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/pin.mjs:findHarnessDirs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/pin.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/pin.mjs:loadCommandMetadata",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/pin.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/pin.mjs:generatePinnedSkill",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/pin.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/pin.mjs:pin",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/pin.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/pin.mjs:unpin",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/auditoria.py",
+      "target": "function:acp_mdm_portal/paginas/auditoria.py:_cargar_historial",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/auditoria.py",
+      "target": "function:acp_mdm_portal/paginas/auditoria.py:_a_dataframe",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/auditoria.py",
+      "target": "function:acp_mdm_portal/paginas/auditoria.py:_formatear_duracion",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/auditoria.py",
+      "target": "function:acp_mdm_portal/paginas/auditoria.py:_icono_estado",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/auditoria.py",
+      "target": "function:acp_mdm_portal/paginas/auditoria.py:_render_kpis",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/auditoria.py",
+      "target": "function:acp_mdm_portal/paginas/auditoria.py:_render_filtros",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/auditoria.py",
+      "target": "function:acp_mdm_portal/paginas/auditoria.py:_preparar_vista",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/auditoria.py",
+      "target": "function:acp_mdm_portal/paginas/auditoria.py:_render_tabla_historial",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/auditoria.py",
+      "target": "function:acp_mdm_portal/paginas/auditoria.py:_render_detalle_tabla",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/auditoria.py",
+      "target": "function:acp_mdm_portal/paginas/auditoria.py:_render_resumen_estados",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/auditoria.py",
+      "target": "function:acp_mdm_portal/paginas/auditoria.py:render",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/catalogos/geografia.py",
+      "target": "function:acp_mdm_portal/paginas/catalogos/geografia.py:render",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/catalogos/personal.py",
+      "target": "function:acp_mdm_portal/paginas/catalogos/personal.py:render",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/catalogos/variedades.py",
+      "target": "function:acp_mdm_portal/paginas/catalogos/variedades.py:_mensaje_error_usuario",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/catalogos/variedades.py",
+      "target": "function:acp_mdm_portal/paginas/catalogos/variedades.py:_cargar",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/catalogos/variedades.py",
+      "target": "function:acp_mdm_portal/paginas/catalogos/variedades.py:_render_kpis_mdm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/catalogos/variedades.py",
+      "target": "function:acp_mdm_portal/paginas/catalogos/variedades.py:_render_kpis_dim",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/catalogos/variedades.py",
+      "target": "function:acp_mdm_portal/paginas/catalogos/variedades.py:_render_filtro",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/catalogos/variedades.py",
+      "target": "function:acp_mdm_portal/paginas/catalogos/variedades.py:_render_formulario_crear",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/catalogos/variedades.py",
+      "target": "function:acp_mdm_portal/paginas/catalogos/variedades.py:_render_banner_confirmacion",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/catalogos/variedades.py",
+      "target": "function:acp_mdm_portal/paginas/catalogos/variedades.py:_render_acciones_dim",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/catalogos/variedades.py",
+      "target": "function:acp_mdm_portal/paginas/catalogos/variedades.py:render",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/configuracion/consola_admin.py",
+      "target": "function:acp_mdm_portal/paginas/configuracion/consola_admin.py:render",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/configuracion/parametros_pipeline.py",
+      "target": "function:acp_mdm_portal/paginas/configuracion/parametros_pipeline.py:cargar_parametros",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/configuracion/parametros_pipeline.py",
+      "target": "function:acp_mdm_portal/paginas/configuracion/parametros_pipeline.py:render",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/configuracion/reglas_validacion.py",
+      "target": "function:acp_mdm_portal/paginas/configuracion/reglas_validacion.py:_cargar_reglas",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/configuracion/reglas_validacion.py",
+      "target": "function:acp_mdm_portal/paginas/configuracion/reglas_validacion.py:render",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/cuarentena.py",
+      "target": "function:acp_mdm_portal/paginas/cuarentena.py:_cargar_cuarentena",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/cuarentena.py",
+      "target": "function:acp_mdm_portal/paginas/cuarentena.py:cargar_cuarentena",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/cuarentena.py",
+      "target": "function:acp_mdm_portal/paginas/cuarentena.py:_exportar_excel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/cuarentena.py",
+      "target": "function:acp_mdm_portal/paginas/cuarentena.py:render",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/homologacion.py",
+      "target": "function:acp_mdm_portal/paginas/homologacion.py:cargar_sugerencias_pendientes",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/homologacion.py",
+      "target": "function:acp_mdm_portal/paginas/homologacion.py:cargar_historial_homologacion",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/homologacion.py",
+      "target": "function:acp_mdm_portal/paginas/homologacion.py:_cargar_geografia_completa",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/homologacion.py",
+      "target": "function:acp_mdm_portal/paginas/homologacion.py:obtener_opciones_maestras",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/homologacion.py",
+      "target": "function:acp_mdm_portal/paginas/homologacion.py:render",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/inicio.py",
+      "target": "function:acp_mdm_portal/paginas/inicio.py:_detectar_fase",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/inicio.py",
+      "target": "function:acp_mdm_portal/paginas/inicio.py:_generar_monitor_canvas",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/proyecciones.py",
+      "target": "function:acp_mdm_portal/paginas/proyecciones.py:_construir_df_matriz_inputs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/proyecciones.py",
+      "target": "function:acp_mdm_portal/paginas/proyecciones.py:_parsear_matriz_inputs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/proyecciones.py",
+      "target": "function:acp_mdm_portal/paginas/proyecciones.py:_exportar_a_excel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/proyecciones.py",
+      "target": "function:acp_mdm_portal/paginas/proyecciones.py:_firma_matriz",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/proyecciones.py",
+      "target": "function:acp_mdm_portal/paginas/proyecciones.py:_calcular_diff_matriz",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/proyecciones.py",
+      "target": "function:acp_mdm_portal/paginas/proyecciones.py:_validar_matriz_cacheado",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/proyecciones.py",
+      "target": "function:acp_mdm_portal/paginas/proyecciones.py:_render_cabecera",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/proyecciones.py",
+      "target": "function:acp_mdm_portal/paginas/proyecciones.py:_opciones_validas",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/proyecciones.py",
+      "target": "function:acp_mdm_portal/paginas/proyecciones.py:_hidratar_filtros_desde_url",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/proyecciones.py",
+      "target": "function:acp_mdm_portal/paginas/proyecciones.py:_sincronizar_url_filtros",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/proyecciones.py",
+      "target": "function:acp_mdm_portal/paginas/proyecciones.py:_render_control_fecha",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/proyecciones.py",
+      "target": "function:acp_mdm_portal/paginas/proyecciones.py:_render_panel_configuracion",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/proyecciones.py",
+      "target": "function:acp_mdm_portal/paginas/proyecciones.py:_render_kpis",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/proyecciones.py",
+      "target": "function:acp_mdm_portal/paginas/proyecciones.py:_aplicar_ventana_semanas",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/proyecciones.py",
+      "target": "function:acp_mdm_portal/paginas/proyecciones.py:_render_grafico_cosecha",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/proyecciones.py",
+      "target": "function:acp_mdm_portal/paginas/proyecciones.py:_render_comparacion",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/proyecciones.py",
+      "target": "function:acp_mdm_portal/paginas/proyecciones.py:_render_kpis_por_fundo",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/proyecciones.py",
+      "target": "function:acp_mdm_portal/paginas/proyecciones.py:_render_comparativa_organico_convencional",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/proyecciones.py",
+      "target": "function:acp_mdm_portal/paginas/proyecciones.py:_render_heatmap_modulo_semana",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/proyecciones.py",
+      "target": "function:acp_mdm_portal/paginas/proyecciones.py:_render_treemap_distribucion",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/proyecciones.py",
+      "target": "function:acp_mdm_portal/paginas/proyecciones.py:_render_vistas_analiticas",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/proyecciones.py",
+      "target": "function:acp_mdm_portal/paginas/proyecciones.py:_render_desglose",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/proyecciones.py",
+      "target": "function:acp_mdm_portal/paginas/proyecciones.py:render",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/sistema.py",
+      "target": "function:acp_mdm_portal/paginas/sistema.py:_consultar",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/sistema.py",
+      "target": "function:acp_mdm_portal/paginas/sistema.py:_es_sano",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/sistema.py",
+      "target": "function:acp_mdm_portal/paginas/sistema.py:_render_tarjeta_subsistema",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/sistema.py",
+      "target": "function:acp_mdm_portal/paginas/sistema.py:_render_panel_lock",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/sistema.py",
+      "target": "function:acp_mdm_portal/paginas/sistema.py:_render_panel_bd",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/sistema.py",
+      "target": "function:acp_mdm_portal/paginas/sistema.py:_render_panel_control",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/sistema.py",
+      "target": "function:acp_mdm_portal/paginas/sistema.py:_registrar_historial",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/sistema.py",
+      "target": "function:acp_mdm_portal/paginas/sistema.py:_render_historial",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/sistema.py",
+      "target": "function:acp_mdm_portal/paginas/sistema.py:_render_autorefresh",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/sistema.py",
+      "target": "function:acp_mdm_portal/paginas/sistema.py:_generar_dashboard_ssr",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/sistema.py",
+      "target": "function:acp_mdm_portal/paginas/sistema.py:_generar_dashboard_calidad_ssr",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:acp_mdm_portal/paginas/sistema.py",
+      "target": "function:acp_mdm_portal/paginas/sistema.py:render",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    }
+  ]
+}

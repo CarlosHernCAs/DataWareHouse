@@ -1,0 +1,44 @@
+{
+  "nodes": [
+    {
+      "id": "file:tools/senior-frontend/references/frontend_best_practices.md",
+      "type": "document",
+      "name": "frontend_best_practices.md",
+      "filePath": "tools/senior-frontend/references/frontend_best_practices.md",
+      "summary": "File mapped from tools/senior-frontend/references/frontend_best_practices.md with category docs.",
+      "tags": [
+        "docs",
+        "markdown",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:tools/senior-frontend/references/nextjs_optimization_guide.md",
+      "type": "document",
+      "name": "nextjs_optimization_guide.md",
+      "filePath": "tools/senior-frontend/references/nextjs_optimization_guide.md",
+      "summary": "File mapped from tools/senior-frontend/references/nextjs_optimization_guide.md with category docs.",
+      "tags": [
+        "docs",
+        "markdown",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:tools/senior-frontend/references/react_patterns.md",
+      "type": "document",
+      "name": "react_patterns.md",
+      "filePath": "tools/senior-frontend/references/react_patterns.md",
+      "summary": "File mapped from tools/senior-frontend/references/react_patterns.md with category docs.",
+      "tags": [
+        "docs",
+        "markdown",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": []
+}

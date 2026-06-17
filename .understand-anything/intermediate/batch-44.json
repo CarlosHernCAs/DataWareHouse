@@ -1,0 +1,44 @@
+{
+  "nodes": [
+    {
+      "id": "file:tools/senior-data-scientist/references/experiment_design_frameworks.md",
+      "type": "document",
+      "name": "experiment_design_frameworks.md",
+      "filePath": "tools/senior-data-scientist/references/experiment_design_frameworks.md",
+      "summary": "File mapped from tools/senior-data-scientist/references/experiment_design_frameworks.md with category docs.",
+      "tags": [
+        "docs",
+        "markdown",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tools/senior-data-scientist/references/feature_engineering_patterns.md",
+      "type": "document",
+      "name": "feature_engineering_patterns.md",
+      "filePath": "tools/senior-data-scientist/references/feature_engineering_patterns.md",
+      "summary": "File mapped from tools/senior-data-scientist/references/feature_engineering_patterns.md with category docs.",
+      "tags": [
+        "docs",
+        "markdown",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tools/senior-data-scientist/references/statistical_methods_advanced.md",
+      "type": "document",
+      "name": "statistical_methods_advanced.md",
+      "filePath": "tools/senior-data-scientist/references/statistical_methods_advanced.md",
+      "summary": "File mapped from tools/senior-data-scientist/references/statistical_methods_advanced.md with category docs.",
+      "tags": [
+        "docs",
+        "markdown",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": []
+}

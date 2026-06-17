@@ -1,0 +1,93 @@
+import type { Metadata } from "next";
+import { Download, FileText, FlaskConical } from "lucide-react";
+import { PageHeader } from "@/components/ui/page-header";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+
+const REPORTS = [
+  {
+    id: "RPT-001",
+    title: "Reporte mensual de calidad MDM",
+    description: "Registros de cuarentena con estado, motivo y archivo origen.",
+    formats: ["CSV"],
+  },
+  {
+    id: "RPT-002",
+    title: "Performance de modelos predictivos",
+    description: "Métricas comparadas (AUC, F1) entre modelos en producción.",
+    formats: ["CSV"],
+  },
+  {
+    id: "RPT-003",
+    title: "Top 100 entidades con más cambios",
+    description: "Listado priorizado para revisión del equipo de gobierno.",
+    formats: ["CSV"],
+  },
+  {
+    id: "RPT-004",
+    title: "Auditoría de aprobaciones",
+    description: "Detalle de cargas ETL con estado, duración y rechazos.",
+    formats: ["CSV"],
+  },
+];
+
+export const metadata: Metadata = { title: "Reportes" };
+
+export default function ReportsPage() {
+  return (
+    <div className="flex flex-col gap-6">
+      <PageHeader
+        title="Reportes"
+        description="Plantillas pre-configuradas para análisis ejecutivo y auditoría."
+      />
+
+      <Badge
+        variant="warning"
+        className="w-fit gap-1.5"
+        title="Plantillas de ejemplo — la generación real de reportes está en roadmap"
+      >
+        <FlaskConical aria-hidden className="h-3 w-3" />
+        Datos de demostración
+      </Badge>
+
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+        {REPORTS.map((r) => (
+          <Card key={r.id}>
+            <CardHeader>
+              <div className="flex items-start gap-3">
+                <span
+                  aria-hidden
+                  className="bg-[var(--color-surface-2)] text-[var(--color-primary)] inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-md"
+                >
+                  <FileText className="h-5 w-5" />
+                </span>
+                <div className="flex flex-col gap-1">
+                  <CardTitle>{r.title}</CardTitle>
+                  <CardDescription>{r.description}</CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent className="flex items-center justify-between">
+              <span className="text-xs text-[var(--color-text-muted)]">
+                Formatos: {r.formats.join(" · ")}
+              </span>
+              <Button variant="outline" size="sm" asChild>
+                <a href={`/api/cc/reports/${r.id}`} download>
+                  <Download aria-hidden className="h-4 w-4" />
+                  Descargar
+                </a>
+              </Button>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    </div>
+  );
+}

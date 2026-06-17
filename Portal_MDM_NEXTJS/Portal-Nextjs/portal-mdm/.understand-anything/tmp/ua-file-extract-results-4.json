@@ -1,0 +1,4873 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 24,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "app/(admin)/dwh/dwh-client.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1044,
+      "nonEmptyLines": 984,
+      "functions": [
+        {
+          "name": "DwhExplorerClient",
+          "startLine": 83,
+          "endLine": 417,
+          "params": []
+        },
+        {
+          "name": "buildContextItems",
+          "startLine": 434,
+          "endLine": 490,
+          "params": [
+            "p"
+          ]
+        },
+        {
+          "name": "computeDownstreamPath",
+          "startLine": 499,
+          "endLine": 517,
+          "params": [
+            "rootIds",
+            "edges"
+          ]
+        },
+        {
+          "name": "computeConnectedPath",
+          "startLine": 519,
+          "endLine": 552,
+          "params": [
+            "rootId",
+            "edges"
+          ]
+        },
+        {
+          "name": "HeaderActions",
+          "startLine": 565,
+          "endLine": 630,
+          "params": [
+            "{\n  autoRefresh,\n  onToggleAutoRefresh,\n  onRefresh,\n  isFetching,\n  lastUpdated,\n  onExport,\n}"
+          ]
+        },
+        {
+          "name": "useFreshnessLabel",
+          "startLine": 632,
+          "endLine": 644,
+          "params": [
+            "updatedAt"
+          ]
+        },
+        {
+          "name": "KpiStrip",
+          "startLine": 654,
+          "endLine": 689,
+          "params": [
+            "{ loading, error, totals }"
+          ]
+        },
+        {
+          "name": "Toolbar",
+          "startLine": 719,
+          "endLine": 907,
+          "params": [
+            "p"
+          ]
+        },
+        {
+          "name": "ViewBtn",
+          "startLine": 909,
+          "endLine": 936,
+          "params": [
+            "{\n  active,\n  onClick,\n  icon,\n  label,\n}"
+          ]
+        },
+        {
+          "name": "ErrorPanel",
+          "startLine": 940,
+          "endLine": 963,
+          "params": [
+            "{\n  message,\n  onRetry,\n}"
+          ]
+        },
+        {
+          "name": "EmptyPanel",
+          "startLine": 965,
+          "endLine": 987,
+          "params": []
+        },
+        {
+          "name": "exportLineagePng",
+          "startLine": 991,
+          "endLine": 1041,
+          "params": [
+            "host"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DwhExplorerClient",
+          "line": 83,
+          "isDefault": false
+        },
+        {
+          "name": "DwhNode",
+          "line": 1044,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "useDwhUrlState",
+          "lineNumber": 84
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "useState",
+          "lineNumber": 85
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "useState",
+          "lineNumber": 86
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "useState",
+          "lineNumber": 87
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "useState",
+          "lineNumber": 88
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "useState",
+          "lineNumber": 89
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "useState",
+          "lineNumber": 90
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "useRef",
+          "lineNumber": 95
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "useRef",
+          "lineNumber": 96
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "useRef",
+          "lineNumber": 97
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "useRouter",
+          "lineNumber": 98
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "useToast",
+          "lineNumber": 99
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "useDwhExplorer",
+          "lineNumber": 102
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "usePinnedNodes",
+          "lineNumber": 104
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "useStatusFlash",
+          "lineNumber": 105
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "useMemo",
+          "lineNumber": 107
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "data?.nodes.find",
+          "lineNumber": 108
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "useMemo",
+          "lineNumber": 112
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "data.facts.find",
+          "lineNumber": 115
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "useMemo",
+          "lineNumber": 119
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "computeConnectedPath",
+          "lineNumber": 121
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "useMemo",
+          "lineNumber": 125
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "data.nodes\n      .filter((n) => n.status === \"failed\" || n.status === \"warning\")\n      .map",
+          "lineNumber": 127
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "data.nodes\n      .filter",
+          "lineNumber": 127
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "computeDownstreamPath",
+          "lineNumber": 131
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "useMemo",
+          "lineNumber": 134
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "data.nodes.filter",
+          "lineNumber": 136
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "useMemo",
+          "lineNumber": 142
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "url.q.trim().toLowerCase",
+          "lineNumber": 144
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "url.q.trim",
+          "lineNumber": 144
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "data.nodes.filter",
+          "lineNumber": 145
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "url.statuses.has",
+          "lineNumber": 146
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "n.label.toLowerCase().includes",
+          "lineNumber": 149
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "n.label.toLowerCase",
+          "lineNumber": 149
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "n.fullName.toLowerCase().includes",
+          "lineNumber": 150
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "n.fullName.toLowerCase",
+          "lineNumber": 150
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "n.facts.some",
+          "lineNumber": 151
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "f.toLowerCase().includes",
+          "lineNumber": 151
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "f.toLowerCase",
+          "lineNumber": 151
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "useMemo",
+          "lineNumber": 157
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "data?.nodes.find",
+          "lineNumber": 158
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "useDwhKeyboardNav",
+          "lineNumber": 163
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "url.setSelectedId",
+          "lineNumber": 166
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "setHelpOpen",
+          "lineNumber": 168
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "useEffect",
+          "lineNumber": 173
+        },
+        {
+          "caller": "handler",
+          "callee": "e.key.toLowerCase",
+          "lineNumber": 175
+        },
+        {
+          "caller": "handler",
+          "callee": "e.preventDefault",
+          "lineNumber": 176
+        },
+        {
+          "caller": "handler",
+          "callee": "setQuickSearchOpen",
+          "lineNumber": 177
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "window.addEventListener",
+          "lineNumber": 180
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "window.removeEventListener",
+          "lineNumber": 181
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "useEffect",
+          "lineNumber": 185
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "requestAnimationFrame",
+          "lineNumber": 187
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "graphRef.current?.scrollToNode",
+          "lineNumber": 188
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "cancelAnimationFrame",
+          "lineNumber": 190
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "useMemo",
+          "lineNumber": 194
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "setAutoRefresh",
+          "lineNumber": 215
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "refetch",
+          "lineNumber": 216
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "exportLineagePng",
+          "lineNumber": 221
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "setImpactOn",
+          "lineNumber": 252
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "setHelpOpen",
+          "lineNumber": 254
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "setQuickSearchOpen",
+          "lineNumber": 255
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "refetch",
+          "lineNumber": 269
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "cn",
+          "lineNumber": 275
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "url.setSelectedId",
+          "lineNumber": 298
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "url.setCompareId",
+          "lineNumber": 302
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "setCtxMenu",
+          "lineNumber": 305
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "url.setSelectedId",
+          "lineNumber": 317
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "url.setSelectedId",
+          "lineNumber": 332
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "url.setCompareId",
+          "lineNumber": 333
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "url.setCompareId",
+          "lineNumber": 335
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "url.setSelectedId",
+          "lineNumber": 342
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "pins.isPinned",
+          "lineNumber": 343
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "pins.toggle",
+          "lineNumber": 344
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "setExplainOpen",
+          "lineNumber": 345
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "toast",
+          "lineNumber": 348
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "url.setSelectedId",
+          "lineNumber": 364
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "data.nodes.find",
+          "lineNumber": 379
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "buildContextItems",
+          "lineNumber": 381
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "pins.isPinned",
+          "lineNumber": 384
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "url.setSelectedId",
+          "lineNumber": 385
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "pins.toggle",
+          "lineNumber": 386
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "url.setSelectedId",
+          "lineNumber": 389
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "url.setCompareId",
+          "lineNumber": 391
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "url.setSelectedId",
+          "lineNumber": 395
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "setExplainOpen",
+          "lineNumber": 396
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "router.push",
+          "lineNumber": 399
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "encodeURIComponent",
+          "lineNumber": 399
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "router.push",
+          "lineNumber": 401
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "encodeURIComponent",
+          "lineNumber": 401
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "data.nodes.find",
+          "lineNumber": 403
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "navigator.clipboard?.writeText",
+          "lineNumber": 405
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "toast",
+          "lineNumber": 406
+        },
+        {
+          "caller": "DwhExplorerClient",
+          "callee": "setCtxMenu",
+          "lineNumber": 412
+        },
+        {
+          "caller": "buildContextItems",
+          "callee": "p.nodes.find",
+          "lineNumber": 435
+        },
+        {
+          "caller": "buildContextItems",
+          "callee": "p.onLaunch",
+          "lineNumber": 464
+        },
+        {
+          "caller": "computeDownstreamPath",
+          "callee": "(adjOut.get(e.from) ?? adjOut.set(e.from, []).get(e.from)!).push",
+          "lineNumber": 503
+        },
+        {
+          "caller": "computeDownstreamPath",
+          "callee": "adjOut.get",
+          "lineNumber": 503
+        },
+        {
+          "caller": "computeDownstreamPath",
+          "callee": "adjOut.set(e.from, []).get",
+          "lineNumber": 503
+        },
+        {
+          "caller": "computeDownstreamPath",
+          "callee": "adjOut.set",
+          "lineNumber": 503
+        },
+        {
+          "caller": "computeDownstreamPath",
+          "callee": "queue.shift",
+          "lineNumber": 508
+        },
+        {
+          "caller": "computeDownstreamPath",
+          "callee": "adjOut.get",
+          "lineNumber": 509
+        },
+        {
+          "caller": "computeDownstreamPath",
+          "callee": "set.has",
+          "lineNumber": 510
+        },
+        {
+          "caller": "computeDownstreamPath",
+          "callee": "set.add",
+          "lineNumber": 511
+        },
+        {
+          "caller": "computeDownstreamPath",
+          "callee": "queue.push",
+          "lineNumber": 512
+        },
+        {
+          "caller": "computeConnectedPath",
+          "callee": "(adjOut.get(e.from) ?? adjOut.set(e.from, []).get(e.from)!).push",
+          "lineNumber": 523
+        },
+        {
+          "caller": "computeConnectedPath",
+          "callee": "adjOut.get",
+          "lineNumber": 523
+        },
+        {
+          "caller": "computeConnectedPath",
+          "callee": "adjOut.set(e.from, []).get",
+          "lineNumber": 523
+        },
+        {
+          "caller": "computeConnectedPath",
+          "callee": "adjOut.set",
+          "lineNumber": 523
+        },
+        {
+          "caller": "computeConnectedPath",
+          "callee": "(adjIn.get(e.to) ?? adjIn.set(e.to, []).get(e.to)!).push",
+          "lineNumber": 524
+        },
+        {
+          "caller": "computeConnectedPath",
+          "callee": "adjIn.get",
+          "lineNumber": 524
+        },
+        {
+          "caller": "computeConnectedPath",
+          "callee": "adjIn.set(e.to, []).get",
+          "lineNumber": 524
+        },
+        {
+          "caller": "computeConnectedPath",
+          "callee": "adjIn.set",
+          "lineNumber": 524
+        },
+        {
+          "caller": "computeConnectedPath",
+          "callee": "downQ.shift",
+          "lineNumber": 532
+        },
+        {
+          "caller": "computeConnectedPath",
+          "callee": "adjOut.get",
+          "lineNumber": 533
+        },
+        {
+          "caller": "computeConnectedPath",
+          "callee": "set.has",
+          "lineNumber": 534
+        },
+        {
+          "caller": "computeConnectedPath",
+          "callee": "set.add",
+          "lineNumber": 535
+        },
+        {
+          "caller": "computeConnectedPath",
+          "callee": "downQ.push",
+          "lineNumber": 536
+        },
+        {
+          "caller": "computeConnectedPath",
+          "callee": "upQ.shift",
+          "lineNumber": 543
+        },
+        {
+          "caller": "computeConnectedPath",
+          "callee": "adjIn.get",
+          "lineNumber": 544
+        },
+        {
+          "caller": "computeConnectedPath",
+          "callee": "set.has",
+          "lineNumber": 545
+        },
+        {
+          "caller": "computeConnectedPath",
+          "callee": "set.add",
+          "lineNumber": 546
+        },
+        {
+          "caller": "computeConnectedPath",
+          "callee": "upQ.push",
+          "lineNumber": 547
+        },
+        {
+          "caller": "HeaderActions",
+          "callee": "useFreshnessLabel",
+          "lineNumber": 573
+        },
+        {
+          "caller": "HeaderActions",
+          "callee": "cn",
+          "lineNumber": 588
+        },
+        {
+          "caller": "HeaderActions",
+          "callee": "cn",
+          "lineNumber": 598
+        },
+        {
+          "caller": "HeaderActions",
+          "callee": "cn",
+          "lineNumber": 624
+        },
+        {
+          "caller": "useFreshnessLabel",
+          "callee": "useState",
+          "lineNumber": 633
+        },
+        {
+          "caller": "useFreshnessLabel",
+          "callee": "useEffect",
+          "lineNumber": 634
+        },
+        {
+          "caller": "useFreshnessLabel",
+          "callee": "setInterval",
+          "lineNumber": 635
+        },
+        {
+          "caller": "useFreshnessLabel",
+          "callee": "force",
+          "lineNumber": 635
+        },
+        {
+          "caller": "useFreshnessLabel",
+          "callee": "clearInterval",
+          "lineNumber": 636
+        },
+        {
+          "caller": "useFreshnessLabel",
+          "callee": "Math.max",
+          "lineNumber": 639
+        },
+        {
+          "caller": "useFreshnessLabel",
+          "callee": "Math.floor",
+          "lineNumber": 639
+        },
+        {
+          "caller": "useFreshnessLabel",
+          "callee": "Date.now",
+          "lineNumber": 639
+        },
+        {
+          "caller": "useFreshnessLabel",
+          "callee": "Math.floor",
+          "lineNumber": 642
+        },
+        {
+          "caller": "useFreshnessLabel",
+          "callee": "Math.floor",
+          "lineNumber": 643
+        },
+        {
+          "caller": "KpiStrip",
+          "callee": "Array.from({ length: 4 }).map",
+          "lineNumber": 661
+        },
+        {
+          "caller": "KpiStrip",
+          "callee": "Array.from",
+          "lineNumber": 661
+        },
+        {
+          "caller": "Toolbar",
+          "callee": "p.onFilterChange",
+          "lineNumber": 735
+        },
+        {
+          "caller": "Toolbar",
+          "callee": "cn",
+          "lineNumber": 755
+        },
+        {
+          "caller": "Toolbar",
+          "callee": "cn",
+          "lineNumber": 768
+        },
+        {
+          "caller": "Toolbar",
+          "callee": "p.onDensityChange",
+          "lineNumber": 824
+        },
+        {
+          "caller": "Toolbar",
+          "callee": "p.onDensityChange",
+          "lineNumber": 830
+        },
+        {
+          "caller": "Toolbar",
+          "callee": "p.onViewChange",
+          "lineNumber": 843
+        },
+        {
+          "caller": "Toolbar",
+          "callee": "p.onViewChange",
+          "lineNumber": 849
+        },
+        {
+          "caller": "Toolbar",
+          "callee": "DWH_ALL_STATUSES.map",
+          "lineNumber": 862
+        },
+        {
+          "caller": "Toolbar",
+          "callee": "p.statuses.has",
+          "lineNumber": 863
+        },
+        {
+          "caller": "Toolbar",
+          "callee": "p.onToggleStatus",
+          "lineNumber": 870
+        },
+        {
+          "caller": "Toolbar",
+          "callee": "cn",
+          "lineNumber": 871
+        },
+        {
+          "caller": "ViewBtn",
+          "callee": "cn",
+          "lineNumber": 925
+        },
+        {
+          "caller": "exportLineagePng",
+          "callee": "host.querySelector",
+          "lineNumber": 993
+        },
+        {
+          "caller": "exportLineagePng",
+          "callee": "svg.cloneNode",
+          "lineNumber": 997
+        },
+        {
+          "caller": "exportLineagePng",
+          "callee": "getComputedStyle",
+          "lineNumber": 999
+        },
+        {
+          "caller": "exportLineagePng",
+          "callee": "styles.getPropertyValue(\"--color-surface\").trim",
+          "lineNumber": 1000
+        },
+        {
+          "caller": "exportLineagePng",
+          "callee": "styles.getPropertyValue",
+          "lineNumber": 1000
+        },
+        {
+          "caller": "exportLineagePng",
+          "callee": "clone.setAttribute",
+          "lineNumber": 1001
+        },
+        {
+          "caller": "exportLineagePng",
+          "callee": "clone.setAttribute",
+          "lineNumber": 1002
+        },
+        {
+          "caller": "exportLineagePng",
+          "callee": "new XMLSerializer().serializeToString",
+          "lineNumber": 1004
+        },
+        {
+          "caller": "exportLineagePng",
+          "callee": "URL.createObjectURL",
+          "lineNumber": 1008
+        },
+        {
+          "caller": "exportLineagePng",
+          "callee": "Number",
+          "lineNumber": 1012
+        },
+        {
+          "caller": "exportLineagePng",
+          "callee": "clone.getAttribute",
+          "lineNumber": 1012
+        },
+        {
+          "caller": "exportLineagePng",
+          "callee": "Number",
+          "lineNumber": 1013
+        },
+        {
+          "caller": "exportLineagePng",
+          "callee": "clone.getAttribute",
+          "lineNumber": 1013
+        },
+        {
+          "caller": "exportLineagePng",
+          "callee": "document.createElement",
+          "lineNumber": 1015
+        },
+        {
+          "caller": "exportLineagePng",
+          "callee": "canvas.getContext",
+          "lineNumber": 1018
+        },
+        {
+          "caller": "exportLineagePng",
+          "callee": "URL.revokeObjectURL",
+          "lineNumber": 1020
+        },
+        {
+          "caller": "exportLineagePng",
+          "callee": "ctx.fillRect",
+          "lineNumber": 1024
+        },
+        {
+          "caller": "exportLineagePng",
+          "callee": "ctx.drawImage",
+          "lineNumber": 1025
+        },
+        {
+          "caller": "exportLineagePng",
+          "callee": "URL.revokeObjectURL",
+          "lineNumber": 1026
+        },
+        {
+          "caller": "exportLineagePng",
+          "callee": "canvas.toBlob",
+          "lineNumber": 1027
+        },
+        {
+          "caller": "exportLineagePng",
+          "callee": "URL.createObjectURL",
+          "lineNumber": 1029
+        },
+        {
+          "caller": "exportLineagePng",
+          "callee": "document.createElement",
+          "lineNumber": 1030
+        },
+        {
+          "caller": "exportLineagePng",
+          "callee": "new Date().toISOString().slice",
+          "lineNumber": 1032
+        },
+        {
+          "caller": "exportLineagePng",
+          "callee": "new Date().toISOString",
+          "lineNumber": 1032
+        },
+        {
+          "caller": "exportLineagePng",
+          "callee": "document.body.appendChild",
+          "lineNumber": 1033
+        },
+        {
+          "caller": "exportLineagePng",
+          "callee": "a.click",
+          "lineNumber": 1034
+        },
+        {
+          "caller": "exportLineagePng",
+          "callee": "document.body.removeChild",
+          "lineNumber": 1035
+        },
+        {
+          "caller": "exportLineagePng",
+          "callee": "URL.revokeObjectURL",
+          "lineNumber": 1036
+        },
+        {
+          "caller": "exportLineagePng",
+          "callee": "URL.revokeObjectURL",
+          "lineNumber": 1039
+        }
+      ],
+      "metrics": {
+        "importCount": 24,
+        "exportCount": 2,
+        "functionCount": 12,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/(admin)/dwh/page.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 6,
+      "functions": [
+        {
+          "name": "DwhPage",
+          "startLine": 6,
+          "endLine": 8,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "metadata",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "DwhPage",
+          "line": 6,
+          "isDefault": true
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/(admin)/dwh/use-dwh-url-state.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 233,
+      "nonEmptyLines": 211,
+      "functions": [
+        {
+          "name": "useDwhUrlState",
+          "startLine": 67,
+          "endLine": 231,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "useDwhUrlState",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "DWH_ALL_STATUSES",
+          "line": 233,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "useDwhUrlState",
+          "callee": "useRouter",
+          "lineNumber": 68
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "usePathname",
+          "lineNumber": 69
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "useSearchParams",
+          "lineNumber": 70
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "search.get",
+          "lineNumber": 73
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "search.get",
+          "lineNumber": 74
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "search.get",
+          "lineNumber": 75
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "search.get",
+          "lineNumber": 76
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "search.get",
+          "lineNumber": 78
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "useMemo",
+          "lineNumber": 80
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "search.get",
+          "lineNumber": 81
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "raw.split(\",\").filter",
+          "lineNumber": 83
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "raw.split",
+          "lineNumber": 83
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "(ALL_LAYERS as string[]).includes",
+          "lineNumber": 84
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "useMemo",
+          "lineNumber": 89
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "search.get",
+          "lineNumber": 90
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "raw.split(\",\").filter",
+          "lineNumber": 92
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "raw.split",
+          "lineNumber": 92
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "(ALL_STATUSES as string[]).includes",
+          "lineNumber": 93
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "useCallback",
+          "lineNumber": 98
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "search.toString",
+          "lineNumber": 100
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "Object.entries",
+          "lineNumber": 101
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "next.delete",
+          "lineNumber": 102
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "next.set",
+          "lineNumber": 103
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "next.toString",
+          "lineNumber": 105
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "router.replace",
+          "lineNumber": 106
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "useCallback",
+          "lineNumber": 111
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "replace",
+          "lineNumber": 112
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "useCallback",
+          "lineNumber": 115
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "replace",
+          "lineNumber": 115
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "useCallback",
+          "lineNumber": 116
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "replace",
+          "lineNumber": 117
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "useCallback",
+          "lineNumber": 120
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "replace",
+          "lineNumber": 121
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "useCallback",
+          "lineNumber": 124
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "replace",
+          "lineNumber": 125
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "useCallback",
+          "lineNumber": 129
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "next.has",
+          "lineNumber": 132
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "next.delete",
+          "lineNumber": 132
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "next.add",
+          "lineNumber": 133
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "next.delete",
+          "lineNumber": 135
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "replace",
+          "lineNumber": 136
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "Array.from(next).join",
+          "lineNumber": 136
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "Array.from",
+          "lineNumber": 136
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "useCallback",
+          "lineNumber": 141
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "current.has",
+          "lineNumber": 146
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "current.delete",
+          "lineNumber": 146
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "current.add",
+          "lineNumber": 147
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "replace",
+          "lineNumber": 152
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "replace",
+          "lineNumber": 154
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "Array.from(current).join",
+          "lineNumber": 154
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "Array.from",
+          "lineNumber": 154
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "useCallback",
+          "lineNumber": 160
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "replace",
+          "lineNumber": 160
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "q.trim",
+          "lineNumber": 163
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "useCallback",
+          "lineNumber": 169
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "replace",
+          "lineNumber": 170
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "useCallback",
+          "lineNumber": 179
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "Array.from",
+          "lineNumber": 184
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "Array.from",
+          "lineNumber": 185
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "useCallback",
+          "lineNumber": 191
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "replace",
+          "lineNumber": 193
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "snap.statuses.join",
+          "lineNumber": 201
+        },
+        {
+          "caller": "useDwhUrlState",
+          "callee": "snap.collapsed.join",
+          "lineNumber": 202
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/control-center/dwh-compare-panel.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 245,
+      "nonEmptyLines": 231,
+      "functions": [
+        {
+          "name": "DwhComparePanel",
+          "startLine": 42,
+          "endLine": 91,
+          "params": [
+            "{\n  a,\n  b,\n  onSwap,\n  onClose,\n  className,\n}"
+          ]
+        },
+        {
+          "name": "Column",
+          "startLine": 93,
+          "endLine": 143,
+          "params": [
+            "{ node, side }"
+          ]
+        },
+        {
+          "name": "Metric",
+          "startLine": 145,
+          "endLine": 169,
+          "params": [
+            "{\n  label,\n  value,\n  warn,\n}"
+          ]
+        },
+        {
+          "name": "ComparisonStrip",
+          "startLine": 171,
+          "endLine": 213,
+          "params": [
+            "{ a, b }"
+          ]
+        },
+        {
+          "name": "signed",
+          "startLine": 215,
+          "endLine": 218,
+          "params": [
+            "n"
+          ]
+        },
+        {
+          "name": "Pill",
+          "startLine": 220,
+          "endLine": 245,
+          "params": [
+            "{\n  label,\n  value,\n  tone,\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DwhComparePanel",
+          "line": 42,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "DwhComparePanel",
+          "callee": "cn",
+          "lineNumber": 52
+        },
+        {
+          "caller": "Column",
+          "callee": "cn",
+          "lineNumber": 96
+        },
+        {
+          "caller": "Column",
+          "callee": "node.status.toUpperCase",
+          "lineNumber": 105
+        },
+        {
+          "caller": "Column",
+          "callee": "formatNumber",
+          "lineNumber": 119
+        },
+        {
+          "caller": "Column",
+          "callee": "formatNumber",
+          "lineNumber": 123
+        },
+        {
+          "caller": "Column",
+          "callee": "formatDateTime",
+          "lineNumber": 128
+        },
+        {
+          "caller": "Column",
+          "callee": "node.facts[0].replace",
+          "lineNumber": 136
+        },
+        {
+          "caller": "Metric",
+          "callee": "cn",
+          "lineNumber": 160
+        },
+        {
+          "caller": "ComparisonStrip",
+          "callee": "Date.parse",
+          "lineNumber": 175
+        },
+        {
+          "caller": "ComparisonStrip",
+          "callee": "Date.parse",
+          "lineNumber": 176
+        },
+        {
+          "caller": "ComparisonStrip",
+          "callee": "signed",
+          "lineNumber": 184
+        },
+        {
+          "caller": "ComparisonStrip",
+          "callee": "signed",
+          "lineNumber": 189
+        },
+        {
+          "caller": "ComparisonStrip",
+          "callee": "signed",
+          "lineNumber": 198
+        },
+        {
+          "caller": "ComparisonStrip",
+          "callee": "Math.round",
+          "lineNumber": 198
+        },
+        {
+          "caller": "signed",
+          "callee": "formatNumber",
+          "lineNumber": 217
+        },
+        {
+          "caller": "signed",
+          "callee": "formatNumber",
+          "lineNumber": 217
+        },
+        {
+          "caller": "signed",
+          "callee": "Math.abs",
+          "lineNumber": 217
+        },
+        {
+          "caller": "Pill",
+          "callee": "cn",
+          "lineNumber": 231
+        }
+      ],
+      "metrics": {
+        "importCount": 6,
+        "exportCount": 1,
+        "functionCount": 6,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/control-center/dwh-explain-stale-dialog.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 428,
+      "nonEmptyLines": 403,
+      "functions": [
+        {
+          "name": "DwhExplainStaleDialog",
+          "startLine": 63,
+          "endLine": 298,
+          "params": [
+            "{\n  open,\n  onOpenChange,\n  node,\n  nodes,\n  edges,\n}"
+          ]
+        },
+        {
+          "name": "ReasonRow",
+          "startLine": 304,
+          "endLine": 345,
+          "params": [
+            "{\n  icon,\n  title,\n  kind,\n  children,\n}"
+          ]
+        },
+        {
+          "name": "NodeListItem",
+          "startLine": 347,
+          "endLine": 367,
+          "params": [
+            "{ node }"
+          ]
+        },
+        {
+          "name": "toneFor",
+          "startLine": 400,
+          "endLine": 404,
+          "params": [
+            "status"
+          ]
+        },
+        {
+          "name": "dotFor",
+          "startLine": 406,
+          "endLine": 417,
+          "params": [
+            "status"
+          ]
+        },
+        {
+          "name": "formatAge",
+          "startLine": 419,
+          "endLine": 423,
+          "params": [
+            "hours"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DwhExplainStaleDialog",
+          "line": 63,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "Math.max",
+          "lineNumber": 73
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "Date.now",
+          "lineNumber": 73
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "Date.parse",
+          "lineNumber": 73
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "(() => {\n    const incoming = edges\n      .filter((e) => e.to === node.id)\n      .map((e) => nodes.find((n) => n.id === e.from))\n      .filter((n): n is DwhNode => !!n);\n    return incoming.filter((n) => n.status !== \"ok\");\n  })",
+          "lineNumber": 78
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "edges\n      .filter((e) => e.to === node.id)\n      .map((e) => nodes.find((n) => n.id === e.from))\n      .filter",
+          "lineNumber": 79
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "edges\n      .filter((e) => e.to === node.id)\n      .map",
+          "lineNumber": 79
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "edges\n      .filter",
+          "lineNumber": 79
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "nodes.find",
+          "lineNumber": 81
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "incoming.filter",
+          "lineNumber": 83
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "(() => {\n    const adj = new Map<string, string[]>();\n    for (const e of edges) {\n      (adj.get(e.from) ?? adj.set(e.from, []).get(e.from)!).push(e.to);\n    }\n    const visited = new Set<string>([node.id]);\n    const queue = [node.id];\n    while (queue.length) {\n      const cur = queue.shift()!;\n      for (const next of adj.get(cur) ?? []) {\n        if (!visited.has(next)) {\n          visited.add(next);\n          queue.push(next);\n        }\n      }\n    }\n    visited.delete(node.id);\n    return Array.from(visited)\n      .map((id) => nodes.find((n) => n.id === id))\n      .filter((n): n is DwhNode => !!n && n.status !== \"ok\");\n  })",
+          "lineNumber": 87
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "(adj.get(e.from) ?? adj.set(e.from, []).get(e.from)!).push",
+          "lineNumber": 90
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "adj.get",
+          "lineNumber": 90
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "adj.set(e.from, []).get",
+          "lineNumber": 90
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "adj.set",
+          "lineNumber": 90
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "queue.shift",
+          "lineNumber": 95
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "adj.get",
+          "lineNumber": 96
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "visited.has",
+          "lineNumber": 97
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "visited.add",
+          "lineNumber": 98
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "queue.push",
+          "lineNumber": 99
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "visited.delete",
+          "lineNumber": 103
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "Array.from(visited)\n      .map((id) => nodes.find((n) => n.id === id))\n      .filter",
+          "lineNumber": 104
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "Array.from(visited)\n      .map",
+          "lineNumber": 104
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "Array.from",
+          "lineNumber": 104
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "nodes.find",
+          "lineNumber": 105
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "toneFor",
+          "lineNumber": 110
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "cn",
+          "lineNumber": 116
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "cn",
+          "lineNumber": 124
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "cn",
+          "lineNumber": 135
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "cn",
+          "lineNumber": 140
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "formatDateTime",
+          "lineNumber": 179
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "formatAge",
+          "lineNumber": 182
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "formatNumber",
+          "lineNumber": 200
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "upstreamProblems.slice(0, 5).map",
+          "lineNumber": 216
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "upstreamProblems.slice",
+          "lineNumber": 216
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "downstreamImpacted.slice(0, 5).map",
+          "lineNumber": 236
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "downstreamImpacted.slice",
+          "lineNumber": 236
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "encodeURIComponent",
+          "lineNumber": 274
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "onOpenChange",
+          "lineNumber": 275
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "encodeURIComponent",
+          "lineNumber": 284
+        },
+        {
+          "caller": "DwhExplainStaleDialog",
+          "callee": "onOpenChange",
+          "lineNumber": 285
+        },
+        {
+          "caller": "ReasonRow",
+          "callee": "cn",
+          "lineNumber": 319
+        },
+        {
+          "caller": "ReasonRow",
+          "callee": "cn",
+          "lineNumber": 327
+        },
+        {
+          "caller": "NodeListItem",
+          "callee": "cn",
+          "lineNumber": 353
+        },
+        {
+          "caller": "NodeListItem",
+          "callee": "dotFor",
+          "lineNumber": 354
+        },
+        {
+          "caller": "NodeListItem",
+          "callee": "cn",
+          "lineNumber": 359
+        },
+        {
+          "caller": "NodeListItem",
+          "callee": "formatAge",
+          "lineNumber": 362
+        },
+        {
+          "caller": "NodeListItem",
+          "callee": "Date.now",
+          "lineNumber": 362
+        },
+        {
+          "caller": "NodeListItem",
+          "callee": "Date.parse",
+          "lineNumber": 362
+        },
+        {
+          "caller": "formatAge",
+          "callee": "Math.max",
+          "lineNumber": 420
+        },
+        {
+          "caller": "formatAge",
+          "callee": "Math.round",
+          "lineNumber": 420
+        },
+        {
+          "caller": "formatAge",
+          "callee": "Math.round",
+          "lineNumber": 421
+        },
+        {
+          "caller": "formatAge",
+          "callee": "Math.round",
+          "lineNumber": 422
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 6,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/control-center/dwh-fact-list.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 184,
+      "nonEmptyLines": 178,
+      "functions": [
+        {
+          "name": "DwhFactList",
+          "startLine": 37,
+          "endLine": 184,
+          "params": [
+            "{\n  nodes,\n  selectedId,\n  filter,\n  onSelect,\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DwhFactList",
+          "line": 37,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "DwhFactList",
+          "callee": "filter.trim().toLowerCase",
+          "lineNumber": 43
+        },
+        {
+          "caller": "DwhFactList",
+          "callee": "filter.trim",
+          "lineNumber": 43
+        },
+        {
+          "caller": "DwhFactList",
+          "callee": "nodes.filter",
+          "lineNumber": 45
+        },
+        {
+          "caller": "DwhFactList",
+          "callee": "n.label.toLowerCase().includes",
+          "lineNumber": 47
+        },
+        {
+          "caller": "DwhFactList",
+          "callee": "n.label.toLowerCase",
+          "lineNumber": 47
+        },
+        {
+          "caller": "DwhFactList",
+          "callee": "n.fullName.toLowerCase().includes",
+          "lineNumber": 48
+        },
+        {
+          "caller": "DwhFactList",
+          "callee": "n.fullName.toLowerCase",
+          "lineNumber": 48
+        },
+        {
+          "caller": "DwhFactList",
+          "callee": "n.facts.some",
+          "lineNumber": 49
+        },
+        {
+          "caller": "DwhFactList",
+          "callee": "f.toLowerCase().includes",
+          "lineNumber": 49
+        },
+        {
+          "caller": "DwhFactList",
+          "callee": "f.toLowerCase",
+          "lineNumber": 49
+        },
+        {
+          "caller": "DwhFactList",
+          "callee": "filtered.map",
+          "lineNumber": 97
+        },
+        {
+          "caller": "DwhFactList",
+          "callee": "cn",
+          "lineNumber": 102
+        },
+        {
+          "caller": "DwhFactList",
+          "callee": "onSelect",
+          "lineNumber": 109
+        },
+        {
+          "caller": "DwhFactList",
+          "callee": "formatNumber",
+          "lineNumber": 135
+        },
+        {
+          "caller": "DwhFactList",
+          "callee": "cn",
+          "lineNumber": 140
+        },
+        {
+          "caller": "DwhFactList",
+          "callee": "formatNumber",
+          "lineNumber": 146
+        },
+        {
+          "caller": "DwhFactList",
+          "callee": "formatDateTime",
+          "lineNumber": 152
+        },
+        {
+          "caller": "DwhFactList",
+          "callee": "n.facts.join",
+          "lineNumber": 161
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/control-center/dwh-fact-panel.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 339,
+      "nonEmptyLines": 318,
+      "functions": [
+        {
+          "name": "DwhFactPanel",
+          "startLine": 60,
+          "endLine": 199,
+          "params": [
+            "{\n  node,\n  fact,\n  onClose,\n  pinned = false,\n  onTogglePin,\n  onExplain,\n  onCompare,\n  className,\n}"
+          ]
+        },
+        {
+          "name": "FactDetail",
+          "startLine": 203,
+          "endLine": 238,
+          "params": [
+            "{ fact }"
+          ]
+        },
+        {
+          "name": "NonFactDetail",
+          "startLine": 240,
+          "endLine": 263,
+          "params": [
+            "{ node }"
+          ]
+        },
+        {
+          "name": "Metric",
+          "startLine": 272,
+          "endLine": 295,
+          "params": [
+            "{ label, value, tone = \"default\", wide }"
+          ]
+        },
+        {
+          "name": "Section",
+          "startLine": 297,
+          "endLine": 315,
+          "params": [
+            "{\n  title,\n  icon,\n  children,\n}"
+          ]
+        },
+        {
+          "name": "TableList",
+          "startLine": 317,
+          "endLine": 331,
+          "params": [
+            "{ items }"
+          ]
+        },
+        {
+          "name": "Empty",
+          "startLine": 333,
+          "endLine": 339,
+          "params": [
+            "{ children }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DwhFactPanel",
+          "line": 60,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "DwhFactPanel",
+          "callee": "cn",
+          "lineNumber": 73
+        },
+        {
+          "caller": "DwhFactPanel",
+          "callee": "node.status.toUpperCase",
+          "lineNumber": 84
+        },
+        {
+          "caller": "DwhFactPanel",
+          "callee": "formatNumber",
+          "lineNumber": 97
+        },
+        {
+          "caller": "DwhFactPanel",
+          "callee": "cn",
+          "lineNumber": 109
+        },
+        {
+          "caller": "DwhFactPanel",
+          "callee": "formatNumber",
+          "lineNumber": 132
+        },
+        {
+          "caller": "DwhFactPanel",
+          "callee": "formatNumber",
+          "lineNumber": 135
+        },
+        {
+          "caller": "DwhFactPanel",
+          "callee": "formatDateTime",
+          "lineNumber": 140
+        },
+        {
+          "caller": "DwhFactPanel",
+          "callee": "encodeURIComponent",
+          "lineNumber": 182
+        },
+        {
+          "caller": "Metric",
+          "callee": "cn",
+          "lineNumber": 275
+        },
+        {
+          "caller": "Metric",
+          "callee": "cn",
+          "lineNumber": 284
+        },
+        {
+          "caller": "TableList",
+          "callee": "items.map",
+          "lineNumber": 320
+        }
+      ],
+      "metrics": {
+        "importCount": 7,
+        "exportCount": 1,
+        "functionCount": 7,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/control-center/dwh-keyboard-help.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 98,
+      "nonEmptyLines": 91,
+      "functions": [
+        {
+          "name": "DwhKeyboardHelp",
+          "startLine": 31,
+          "endLine": 98,
+          "params": [
+            "{ open, onOpenChange }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DwhKeyboardHelp",
+          "line": 31,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "DwhKeyboardHelp",
+          "callee": "cn",
+          "lineNumber": 36
+        },
+        {
+          "caller": "DwhKeyboardHelp",
+          "callee": "cn",
+          "lineNumber": 44
+        },
+        {
+          "caller": "DwhKeyboardHelp",
+          "callee": "SHORTCUTS.map",
+          "lineNumber": 70
+        },
+        {
+          "caller": "DwhKeyboardHelp",
+          "callee": "s.keys.join",
+          "lineNumber": 72
+        },
+        {
+          "caller": "DwhKeyboardHelp",
+          "callee": "s.keys.map",
+          "lineNumber": 77
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/control-center/dwh-lineage-graph.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1223,
+      "nonEmptyLines": 1165,
+      "functions": [
+        {
+          "name": "EdgeLabel",
+          "startLine": 604,
+          "endLine": 682,
+          "params": [
+            "{\n  x,\n  y,\n  rows,\n  rejected,\n  tone,\n}"
+          ]
+        },
+        {
+          "name": "DwhNodeRect",
+          "startLine": 705,
+          "endLine": 934,
+          "params": [
+            "{\n  node,\n  x,\n  y,\n  geom,\n  selected,\n  compare,\n  dim,\n  highlighted,\n  pinned,\n  flashing,\n  critical,\n  onSelect,\n  onContextMenu,\n  onCompareClick,\n}"
+          ]
+        },
+        {
+          "name": "NodeSparkline",
+          "startLine": 940,
+          "endLine": 990,
+          "params": [
+            "{\n  x,\n  y,\n  w,\n  h,\n  seed,\n  latest,\n  status,\n}"
+          ]
+        },
+        {
+          "name": "mockSeries",
+          "startLine": 992,
+          "endLine": 1011,
+          "params": [
+            "seed",
+            "latest",
+            "n"
+          ]
+        },
+        {
+          "name": "ViewportControls",
+          "startLine": 1017,
+          "endLine": 1052,
+          "params": [
+            "{\n  zoom,\n  onZoomIn,\n  onZoomOut,\n  onReset,\n}"
+          ]
+        },
+        {
+          "name": "CtrlBtn",
+          "startLine": 1054,
+          "endLine": 1082,
+          "params": [
+            "{\n  label,\n  onClick,\n  disabled,\n  children,\n}"
+          ]
+        },
+        {
+          "name": "truncate",
+          "startLine": 1088,
+          "endLine": 1090,
+          "params": [
+            "s",
+            "max"
+          ]
+        },
+        {
+          "name": "shortFact",
+          "startLine": 1092,
+          "endLine": 1094,
+          "params": [
+            "s"
+          ]
+        },
+        {
+          "name": "formatRows",
+          "startLine": 1096,
+          "endLine": 1100,
+          "params": [
+            "n"
+          ]
+        },
+        {
+          "name": "nodeMatchesFilter",
+          "startLine": 1102,
+          "endLine": 1114,
+          "params": [
+            "nodes",
+            "id",
+            "lower"
+          ]
+        },
+        {
+          "name": "computeLayout",
+          "startLine": 1131,
+          "endLine": 1162,
+          "params": [
+            "nodes",
+            "geom",
+            "collapsedLayers"
+          ]
+        },
+        {
+          "name": "DwhLineageLegend",
+          "startLine": 1172,
+          "endLine": 1223,
+          "params": [
+            "{ className }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DwhLineageGraph",
+          "line": 134,
+          "isDefault": false
+        },
+        {
+          "name": "DwhLineageLegend",
+          "line": 1172,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "matchesFilter",
+          "callee": "n.label.toLowerCase().includes",
+          "lineNumber": 166
+        },
+        {
+          "caller": "matchesFilter",
+          "callee": "n.label.toLowerCase",
+          "lineNumber": 166
+        },
+        {
+          "caller": "matchesFilter",
+          "callee": "n.fullName.toLowerCase().includes",
+          "lineNumber": 167
+        },
+        {
+          "caller": "matchesFilter",
+          "callee": "n.fullName.toLowerCase",
+          "lineNumber": 167
+        },
+        {
+          "caller": "matchesFilter",
+          "callee": "n.facts.some",
+          "lineNumber": 168
+        },
+        {
+          "caller": "matchesFilter",
+          "callee": "f.toLowerCase().includes",
+          "lineNumber": 168
+        },
+        {
+          "caller": "matchesFilter",
+          "callee": "f.toLowerCase",
+          "lineNumber": 168
+        },
+        {
+          "caller": "passesStatus",
+          "callee": "statusFilter.has",
+          "lineNumber": 170
+        },
+        {
+          "caller": "isDimmed",
+          "callee": "criticalPathSet.has",
+          "lineNumber": 174
+        },
+        {
+          "caller": "isDimmed",
+          "callee": "pathSet.has",
+          "lineNumber": 175
+        },
+        {
+          "caller": "isDimmed",
+          "callee": "nodes.find",
+          "lineNumber": 176
+        },
+        {
+          "caller": "isDimmed",
+          "callee": "passesStatus",
+          "lineNumber": 178
+        },
+        {
+          "caller": "isDimmed",
+          "callee": "matchesFilter",
+          "lineNumber": 179
+        },
+        {
+          "caller": "isHighlighted",
+          "callee": "nodeMatchesFilter",
+          "lineNumber": 184
+        },
+        {
+          "caller": "onPointerDown",
+          "callee": "target.closest",
+          "lineNumber": 236
+        },
+        {
+          "caller": "onPointerDown",
+          "callee": "(e.target as Element).setPointerCapture",
+          "lineNumber": 237
+        },
+        {
+          "caller": "onPointerMove",
+          "callee": "setPan",
+          "lineNumber": 247
+        },
+        {
+          "caller": "zoomIn",
+          "callee": "setZoom",
+          "lineNumber": 256
+        },
+        {
+          "caller": "zoomIn",
+          "callee": "Math.min",
+          "lineNumber": 256
+        },
+        {
+          "caller": "zoomIn",
+          "callee": "(z + ZOOM_STEP).toFixed",
+          "lineNumber": 256
+        },
+        {
+          "caller": "zoomOut",
+          "callee": "setZoom",
+          "lineNumber": 258
+        },
+        {
+          "caller": "zoomOut",
+          "callee": "Math.max",
+          "lineNumber": 258
+        },
+        {
+          "caller": "zoomOut",
+          "callee": "(z - ZOOM_STEP).toFixed",
+          "lineNumber": 258
+        },
+        {
+          "caller": "resetView",
+          "callee": "setZoom",
+          "lineNumber": 260
+        },
+        {
+          "caller": "resetView",
+          "callee": "setPan",
+          "lineNumber": 261
+        },
+        {
+          "caller": "EdgeLabel",
+          "callee": "formatRows",
+          "lineNumber": 617
+        },
+        {
+          "caller": "DwhNodeRect",
+          "callee": "e.preventDefault",
+          "lineNumber": 762
+        },
+        {
+          "caller": "DwhNodeRect",
+          "callee": "onCompareClick",
+          "lineNumber": 763
+        },
+        {
+          "caller": "DwhNodeRect",
+          "callee": "onSelect",
+          "lineNumber": 766
+        },
+        {
+          "caller": "DwhNodeRect",
+          "callee": "e.preventDefault",
+          "lineNumber": 770
+        },
+        {
+          "caller": "DwhNodeRect",
+          "callee": "onContextMenu",
+          "lineNumber": 771
+        },
+        {
+          "caller": "DwhNodeRect",
+          "callee": "e.preventDefault",
+          "lineNumber": 775
+        },
+        {
+          "caller": "DwhNodeRect",
+          "callee": "onSelect",
+          "lineNumber": 776
+        },
+        {
+          "caller": "DwhNodeRect",
+          "callee": "cn",
+          "lineNumber": 779
+        },
+        {
+          "caller": "DwhNodeRect",
+          "callee": "truncate",
+          "lineNumber": 818
+        },
+        {
+          "caller": "DwhNodeRect",
+          "callee": "formatRows",
+          "lineNumber": 843
+        },
+        {
+          "caller": "DwhNodeRect",
+          "callee": "shortFact",
+          "lineNumber": 856
+        },
+        {
+          "caller": "DwhNodeRect",
+          "callee": "formatDateTime",
+          "lineNumber": 892
+        },
+        {
+          "caller": "DwhNodeRect",
+          "callee": "formatNumber",
+          "lineNumber": 900
+        },
+        {
+          "caller": "DwhNodeRect",
+          "callee": "cn",
+          "lineNumber": 906
+        },
+        {
+          "caller": "DwhNodeRect",
+          "callee": "formatNumber",
+          "lineNumber": 913
+        },
+        {
+          "caller": "DwhNodeRect",
+          "callee": "shortFact",
+          "lineNumber": 926
+        },
+        {
+          "caller": "NodeSparkline",
+          "callee": "useMemo",
+          "lineNumber": 960
+        },
+        {
+          "caller": "NodeSparkline",
+          "callee": "mockSeries",
+          "lineNumber": 960
+        },
+        {
+          "caller": "NodeSparkline",
+          "callee": "points.every",
+          "lineNumber": 961
+        },
+        {
+          "caller": "NodeSparkline",
+          "callee": "Math.max",
+          "lineNumber": 962
+        },
+        {
+          "caller": "NodeSparkline",
+          "callee": "points\n    .map((p, i) => {\n      const px = x + (i / (points.length - 1)) * w;\n      const py = y + h - (p / max) * h;\n      return `${i === 0 ? \"M\" : \"L\"} ${px.toFixed(2)} ${py.toFixed(2)}`;\n    })\n    .join",
+          "lineNumber": 971
+        },
+        {
+          "caller": "NodeSparkline",
+          "callee": "points\n    .map",
+          "lineNumber": 971
+        },
+        {
+          "caller": "NodeSparkline",
+          "callee": "px.toFixed",
+          "lineNumber": 975
+        },
+        {
+          "caller": "NodeSparkline",
+          "callee": "py.toFixed",
+          "lineNumber": 975
+        },
+        {
+          "caller": "mockSeries",
+          "callee": "seed.charCodeAt",
+          "lineNumber": 996
+        },
+        {
+          "caller": "mockSeries",
+          "callee": "Math.imul",
+          "lineNumber": 997
+        },
+        {
+          "caller": "mockSeries",
+          "callee": "Math.imul",
+          "lineNumber": 1003
+        },
+        {
+          "caller": "mockSeries",
+          "callee": "out.push",
+          "lineNumber": 1006
+        },
+        {
+          "caller": "mockSeries",
+          "callee": "Math.max",
+          "lineNumber": 1006
+        },
+        {
+          "caller": "mockSeries",
+          "callee": "Math.round",
+          "lineNumber": 1006
+        },
+        {
+          "caller": "ViewportControls",
+          "callee": "Math.round",
+          "lineNumber": 1041
+        },
+        {
+          "caller": "CtrlBtn",
+          "callee": "cn",
+          "lineNumber": 1072
+        },
+        {
+          "caller": "truncate",
+          "callee": "s.slice",
+          "lineNumber": 1089
+        },
+        {
+          "caller": "shortFact",
+          "callee": "s.replace(/^Fact_/, \"\").replace",
+          "lineNumber": 1093
+        },
+        {
+          "caller": "shortFact",
+          "callee": "s.replace",
+          "lineNumber": 1093
+        },
+        {
+          "caller": "formatRows",
+          "callee": "String",
+          "lineNumber": 1097
+        },
+        {
+          "caller": "formatRows",
+          "callee": "(n / 1000).toFixed",
+          "lineNumber": 1098
+        },
+        {
+          "caller": "formatRows",
+          "callee": "(n / 1_000_000).toFixed",
+          "lineNumber": 1099
+        },
+        {
+          "caller": "nodeMatchesFilter",
+          "callee": "nodes.find",
+          "lineNumber": 1107
+        },
+        {
+          "caller": "nodeMatchesFilter",
+          "callee": "n.label.toLowerCase().includes",
+          "lineNumber": 1110
+        },
+        {
+          "caller": "nodeMatchesFilter",
+          "callee": "n.label.toLowerCase",
+          "lineNumber": 1110
+        },
+        {
+          "caller": "nodeMatchesFilter",
+          "callee": "n.fullName.toLowerCase().includes",
+          "lineNumber": 1111
+        },
+        {
+          "caller": "nodeMatchesFilter",
+          "callee": "n.fullName.toLowerCase",
+          "lineNumber": 1111
+        },
+        {
+          "caller": "nodeMatchesFilter",
+          "callee": "n.facts.some",
+          "lineNumber": 1112
+        },
+        {
+          "caller": "nodeMatchesFilter",
+          "callee": "f.toLowerCase().includes",
+          "lineNumber": 1112
+        },
+        {
+          "caller": "nodeMatchesFilter",
+          "callee": "f.toLowerCase",
+          "lineNumber": 1112
+        },
+        {
+          "caller": "computeLayout",
+          "callee": "LAYER_ORDER.forEach",
+          "lineNumber": 1140
+        },
+        {
+          "caller": "computeLayout",
+          "callee": "nodes.filter",
+          "lineNumber": 1141
+        },
+        {
+          "caller": "computeLayout",
+          "callee": "collapsedLayers.has",
+          "lineNumber": 1142
+        },
+        {
+          "caller": "computeLayout",
+          "callee": "inLayer.forEach",
+          "lineNumber": 1150
+        },
+        {
+          "caller": "computeLayout",
+          "callee": "positions.set",
+          "lineNumber": 1152
+        },
+        {
+          "caller": "DwhLineageLegend",
+          "callee": "cn",
+          "lineNumber": 1182
+        },
+        {
+          "caller": "DwhLineageLegend",
+          "callee": "items.map",
+          "lineNumber": 1187
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 2,
+        "functionCount": 12,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/control-center/dwh-minimap.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 221,
+      "nonEmptyLines": 208,
+      "functions": [
+        {
+          "name": "DwhMinimap",
+          "startLine": 55,
+          "endLine": 221,
+          "params": [
+            "{\n  scrollContainerRef,\n  worldWidth,\n  worldHeight,\n  zoom,\n  nodes,\n  positions,\n  nodeWidth,\n  nodeHeight,\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DwhMinimap",
+          "line": 55,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "DwhMinimap",
+          "callee": "useState",
+          "lineNumber": 65
+        },
+        {
+          "caller": "DwhMinimap",
+          "callee": "useRef",
+          "lineNumber": 66
+        },
+        {
+          "caller": "DwhMinimap",
+          "callee": "Math.max",
+          "lineNumber": 69
+        },
+        {
+          "caller": "DwhMinimap",
+          "callee": "Math.max",
+          "lineNumber": 70
+        },
+        {
+          "caller": "DwhMinimap",
+          "callee": "Math.min",
+          "lineNumber": 71
+        },
+        {
+          "caller": "DwhMinimap",
+          "callee": "useCallback",
+          "lineNumber": 73
+        },
+        {
+          "caller": "DwhMinimap",
+          "callee": "setViewport",
+          "lineNumber": 82
+        },
+        {
+          "caller": "DwhMinimap",
+          "callee": "Math.max",
+          "lineNumber": 85
+        },
+        {
+          "caller": "DwhMinimap",
+          "callee": "Math.max",
+          "lineNumber": 86
+        },
+        {
+          "caller": "DwhMinimap",
+          "callee": "useLayoutEffect",
+          "lineNumber": 90
+        },
+        {
+          "caller": "DwhMinimap",
+          "callee": "recomputeViewport",
+          "lineNumber": 91
+        },
+        {
+          "caller": "DwhMinimap",
+          "callee": "useEffect",
+          "lineNumber": 94
+        },
+        {
+          "caller": "handler",
+          "callee": "recomputeViewport",
+          "lineNumber": 97
+        },
+        {
+          "caller": "DwhMinimap",
+          "callee": "host.addEventListener",
+          "lineNumber": 98
+        },
+        {
+          "caller": "DwhMinimap",
+          "callee": "ro.observe",
+          "lineNumber": 100
+        },
+        {
+          "caller": "DwhMinimap",
+          "callee": "host.removeEventListener",
+          "lineNumber": 102
+        },
+        {
+          "caller": "DwhMinimap",
+          "callee": "ro.disconnect",
+          "lineNumber": 103
+        },
+        {
+          "caller": "DwhMinimap",
+          "callee": "useCallback",
+          "lineNumber": 107
+        },
+        {
+          "caller": "DwhMinimap",
+          "callee": "host.scrollTo",
+          "lineNumber": 116
+        },
+        {
+          "caller": "DwhMinimap",
+          "callee": "Math.max",
+          "lineNumber": 117
+        },
+        {
+          "caller": "DwhMinimap",
+          "callee": "Math.max",
+          "lineNumber": 118
+        },
+        {
+          "caller": "onPointerDown",
+          "callee": "(e.currentTarget as SVGSVGElement).getBoundingClientRect",
+          "lineNumber": 127
+        },
+        {
+          "caller": "onPointerDown",
+          "callee": "moveTo",
+          "lineNumber": 144
+        },
+        {
+          "caller": "onPointerDown",
+          "callee": "(e.currentTarget as Element).setPointerCapture",
+          "lineNumber": 146
+        },
+        {
+          "caller": "onPointerMove",
+          "callee": "(e.currentTarget as SVGSVGElement).getBoundingClientRect",
+          "lineNumber": 150
+        },
+        {
+          "caller": "onPointerMove",
+          "callee": "moveTo",
+          "lineNumber": 156
+        },
+        {
+          "caller": "DwhMinimap",
+          "callee": "nodes.map",
+          "lineNumber": 187
+        },
+        {
+          "caller": "DwhMinimap",
+          "callee": "positions.get",
+          "lineNumber": 188
+        },
+        {
+          "caller": "DwhMinimap",
+          "callee": "Math.max",
+          "lineNumber": 192
+        },
+        {
+          "caller": "DwhMinimap",
+          "callee": "Math.max",
+          "lineNumber": 193
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/control-center/dwh-node-context-menu.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 155,
+      "nonEmptyLines": 146,
+      "functions": [
+        {
+          "name": "DwhNodeContextMenu",
+          "startLine": 41,
+          "endLine": 155,
+          "params": [
+            "{\n  open,\n  x,\n  y,\n  heading,\n  items,\n  onClose,\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DwhNodeContextMenu",
+          "line": 41,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "DwhNodeContextMenu",
+          "callee": "useRef",
+          "lineNumber": 49
+        },
+        {
+          "caller": "DwhNodeContextMenu",
+          "callee": "useEffect",
+          "lineNumber": 52
+        },
+        {
+          "caller": "DwhNodeContextMenu",
+          "callee": "el.getBoundingClientRect",
+          "lineNumber": 56
+        },
+        {
+          "caller": "DwhNodeContextMenu",
+          "callee": "Math.max",
+          "lineNumber": 61
+        },
+        {
+          "caller": "DwhNodeContextMenu",
+          "callee": "Math.max",
+          "lineNumber": 62
+        },
+        {
+          "caller": "DwhNodeContextMenu",
+          "callee": "useEffect",
+          "lineNumber": 68
+        },
+        {
+          "caller": "onMouse",
+          "callee": "ref.current?.contains",
+          "lineNumber": 71
+        },
+        {
+          "caller": "onMouse",
+          "callee": "onClose",
+          "lineNumber": 71
+        },
+        {
+          "caller": "onKey",
+          "callee": "onClose",
+          "lineNumber": 74
+        },
+        {
+          "caller": "onScroll",
+          "callee": "onClose",
+          "lineNumber": 76
+        },
+        {
+          "caller": "DwhNodeContextMenu",
+          "callee": "setTimeout",
+          "lineNumber": 78
+        },
+        {
+          "caller": "DwhNodeContextMenu",
+          "callee": "window.addEventListener",
+          "lineNumber": 79
+        },
+        {
+          "caller": "DwhNodeContextMenu",
+          "callee": "window.addEventListener",
+          "lineNumber": 80
+        },
+        {
+          "caller": "DwhNodeContextMenu",
+          "callee": "window.addEventListener",
+          "lineNumber": 81
+        },
+        {
+          "caller": "DwhNodeContextMenu",
+          "callee": "clearTimeout",
+          "lineNumber": 84
+        },
+        {
+          "caller": "DwhNodeContextMenu",
+          "callee": "window.removeEventListener",
+          "lineNumber": 85
+        },
+        {
+          "caller": "DwhNodeContextMenu",
+          "callee": "window.removeEventListener",
+          "lineNumber": 86
+        },
+        {
+          "caller": "DwhNodeContextMenu",
+          "callee": "window.removeEventListener",
+          "lineNumber": 87
+        },
+        {
+          "caller": "DwhNodeContextMenu",
+          "callee": "cn",
+          "lineNumber": 98
+        },
+        {
+          "caller": "DwhNodeContextMenu",
+          "callee": "items.map",
+          "lineNumber": 111
+        },
+        {
+          "caller": "DwhNodeContextMenu",
+          "callee": "it.onSelect",
+          "lineNumber": 122
+        },
+        {
+          "caller": "DwhNodeContextMenu",
+          "callee": "onClose",
+          "lineNumber": 123
+        },
+        {
+          "caller": "DwhNodeContextMenu",
+          "callee": "cn",
+          "lineNumber": 125
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/control-center/dwh-quick-search.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 252,
+      "nonEmptyLines": 235,
+      "functions": [
+        {
+          "name": "DwhQuickSearch",
+          "startLine": 46,
+          "endLine": 241,
+          "params": [
+            "{\n  open,\n  onOpenChange,\n  nodes,\n  onSelect,\n}"
+          ]
+        },
+        {
+          "name": "Hint",
+          "startLine": 243,
+          "endLine": 252,
+          "params": [
+            "{ k, label }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DwhQuickSearch",
+          "line": 46,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "useState",
+          "lineNumber": 52
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "useState",
+          "lineNumber": 53
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "useRef",
+          "lineNumber": 54
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "useRef",
+          "lineNumber": 55
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "useMemo",
+          "lineNumber": 58
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "q.trim().toLowerCase",
+          "lineNumber": 59
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "q.trim",
+          "lineNumber": 59
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "nodes.slice",
+          "lineNumber": 60
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "n.label.toLowerCase",
+          "lineNumber": 63
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "n.fullName.toLowerCase",
+          "lineNumber": 64
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "lbl.startsWith",
+          "lineNumber": 66
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "full.startsWith",
+          "lineNumber": 67
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "lbl.includes",
+          "lineNumber": 68
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "full.includes",
+          "lineNumber": 69
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "n.facts.some",
+          "lineNumber": 70
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "f.toLowerCase().includes",
+          "lineNumber": 70
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "f.toLowerCase",
+          "lineNumber": 70
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "scored.push",
+          "lineNumber": 71
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "scored\n      .sort((a, b) => b.score - a.score)\n      .slice(0, MAX_RESULTS)\n      .map",
+          "lineNumber": 73
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "scored\n      .sort((a, b) => b.score - a.score)\n      .slice",
+          "lineNumber": 73
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "scored\n      .sort",
+          "lineNumber": 73
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "useEffect",
+          "lineNumber": 80
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "setQ",
+          "lineNumber": 82
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "setActive",
+          "lineNumber": 83
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "setTimeout",
+          "lineNumber": 84
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "inputRef.current?.focus",
+          "lineNumber": 84
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "clearTimeout",
+          "lineNumber": 85
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "useEffect",
+          "lineNumber": 90
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "setActive",
+          "lineNumber": 91
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "Math.max",
+          "lineNumber": 91
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "useEffect",
+          "lineNumber": 95
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "list.querySelector",
+          "lineNumber": 99
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "item?.scrollIntoView",
+          "lineNumber": 100
+        },
+        {
+          "caller": "onKeyDown",
+          "callee": "e.preventDefault",
+          "lineNumber": 105
+        },
+        {
+          "caller": "onKeyDown",
+          "callee": "setActive",
+          "lineNumber": 106
+        },
+        {
+          "caller": "onKeyDown",
+          "callee": "Math.min",
+          "lineNumber": 106
+        },
+        {
+          "caller": "onKeyDown",
+          "callee": "e.preventDefault",
+          "lineNumber": 108
+        },
+        {
+          "caller": "onKeyDown",
+          "callee": "setActive",
+          "lineNumber": 109
+        },
+        {
+          "caller": "onKeyDown",
+          "callee": "Math.max",
+          "lineNumber": 109
+        },
+        {
+          "caller": "onKeyDown",
+          "callee": "e.preventDefault",
+          "lineNumber": 113
+        },
+        {
+          "caller": "onKeyDown",
+          "callee": "onSelect",
+          "lineNumber": 114
+        },
+        {
+          "caller": "onKeyDown",
+          "callee": "onOpenChange",
+          "lineNumber": 115
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "cn",
+          "lineNumber": 124
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "cn",
+          "lineNumber": 133
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "setQ",
+          "lineNumber": 153
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "setActive",
+          "lineNumber": 154
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "results.map",
+          "lineNumber": 175
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "setActive",
+          "lineNumber": 183
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "onSelect",
+          "lineNumber": 185
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "onOpenChange",
+          "lineNumber": 186
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "cn",
+          "lineNumber": 188
+        },
+        {
+          "caller": "DwhQuickSearch",
+          "callee": "cn",
+          "lineNumber": 201
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/control-center/dwh-saved-views-menu.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 205,
+      "nonEmptyLines": 195,
+      "functions": [
+        {
+          "name": "DwhSavedViewsMenu",
+          "startLine": 26,
+          "endLine": 152,
+          "params": [
+            "{\n  takeSnapshot,\n  applySnapshot,\n}"
+          ]
+        },
+        {
+          "name": "ViewRow",
+          "startLine": 154,
+          "endLine": 193,
+          "params": [
+            "{\n  view,\n  onApply,\n  onRemove,\n}"
+          ]
+        },
+        {
+          "name": "buildSummary",
+          "startLine": 195,
+          "endLine": 205,
+          "params": [
+            "snap"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DwhSavedViewsMenu",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "DwhSavedViewsMenu",
+          "callee": "useSavedViews",
+          "lineNumber": 30
+        },
+        {
+          "caller": "DwhSavedViewsMenu",
+          "callee": "useState",
+          "lineNumber": 31
+        },
+        {
+          "caller": "DwhSavedViewsMenu",
+          "callee": "useState",
+          "lineNumber": 32
+        },
+        {
+          "caller": "DwhSavedViewsMenu",
+          "callee": "useState",
+          "lineNumber": 33
+        },
+        {
+          "caller": "commit",
+          "callee": "takeSnapshot",
+          "lineNumber": 36
+        },
+        {
+          "caller": "commit",
+          "callee": "save",
+          "lineNumber": 37
+        },
+        {
+          "caller": "commit",
+          "callee": "setDraftName",
+          "lineNumber": 39
+        },
+        {
+          "caller": "commit",
+          "callee": "setPrompting",
+          "lineNumber": 40
+        },
+        {
+          "caller": "commit",
+          "callee": "setOpen",
+          "lineNumber": 41
+        },
+        {
+          "caller": "DwhSavedViewsMenu",
+          "callee": "cn",
+          "lineNumber": 52
+        },
+        {
+          "caller": "DwhSavedViewsMenu",
+          "callee": "cn",
+          "lineNumber": 71
+        },
+        {
+          "caller": "DwhSavedViewsMenu",
+          "callee": "views.map",
+          "lineNumber": 82
+        },
+        {
+          "caller": "DwhSavedViewsMenu",
+          "callee": "applySnapshot",
+          "lineNumber": 87
+        },
+        {
+          "caller": "DwhSavedViewsMenu",
+          "callee": "setOpen",
+          "lineNumber": 88
+        },
+        {
+          "caller": "DwhSavedViewsMenu",
+          "callee": "remove",
+          "lineNumber": 90
+        },
+        {
+          "caller": "DwhSavedViewsMenu",
+          "callee": "setDraftName",
+          "lineNumber": 103
+        },
+        {
+          "caller": "DwhSavedViewsMenu",
+          "callee": "e.preventDefault",
+          "lineNumber": 106
+        },
+        {
+          "caller": "DwhSavedViewsMenu",
+          "callee": "commit",
+          "lineNumber": 107
+        },
+        {
+          "caller": "DwhSavedViewsMenu",
+          "callee": "e.preventDefault",
+          "lineNumber": 110
+        },
+        {
+          "caller": "DwhSavedViewsMenu",
+          "callee": "setPrompting",
+          "lineNumber": 111
+        },
+        {
+          "caller": "DwhSavedViewsMenu",
+          "callee": "setDraftName",
+          "lineNumber": 112
+        },
+        {
+          "caller": "DwhSavedViewsMenu",
+          "callee": "draftName.trim",
+          "lineNumber": 122
+        },
+        {
+          "caller": "DwhSavedViewsMenu",
+          "callee": "e.preventDefault",
+          "lineNumber": 132
+        },
+        {
+          "caller": "DwhSavedViewsMenu",
+          "callee": "setPrompting",
+          "lineNumber": 133
+        },
+        {
+          "caller": "DwhSavedViewsMenu",
+          "callee": "cn",
+          "lineNumber": 136
+        },
+        {
+          "caller": "ViewRow",
+          "callee": "buildSummary",
+          "lineNumber": 164
+        },
+        {
+          "caller": "ViewRow",
+          "callee": "e.preventDefault",
+          "lineNumber": 168
+        },
+        {
+          "caller": "ViewRow",
+          "callee": "onApply",
+          "lineNumber": 169
+        },
+        {
+          "caller": "ViewRow",
+          "callee": "e.stopPropagation",
+          "lineNumber": 184
+        },
+        {
+          "caller": "ViewRow",
+          "callee": "onRemove",
+          "lineNumber": 185
+        },
+        {
+          "caller": "buildSummary",
+          "callee": "parts.push",
+          "lineNumber": 197
+        },
+        {
+          "caller": "buildSummary",
+          "callee": "parts.push",
+          "lineNumber": 199
+        },
+        {
+          "caller": "buildSummary",
+          "callee": "snap.statuses.join",
+          "lineNumber": 199
+        },
+        {
+          "caller": "buildSummary",
+          "callee": "parts.push",
+          "lineNumber": 201
+        },
+        {
+          "caller": "buildSummary",
+          "callee": "snap.collapsed.join",
+          "lineNumber": 201
+        },
+        {
+          "caller": "buildSummary",
+          "callee": "parts.push",
+          "lineNumber": 202
+        },
+        {
+          "caller": "buildSummary",
+          "callee": "parts.push",
+          "lineNumber": 203
+        },
+        {
+          "caller": "buildSummary",
+          "callee": "parts.join",
+          "lineNumber": 204
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/control-center/etl-status-badge.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 20,
+      "nonEmptyLines": 19,
+      "functions": [
+        {
+          "name": "EtlStatusBadge",
+          "startLine": 9,
+          "endLine": 20,
+          "params": [
+            "{ status }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "EtlStatusBadge",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "EtlStatusBadge",
+          "callee": "toneFromCorrida",
+          "lineNumber": 10
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/control-center/severity-chip.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 78,
+      "nonEmptyLines": 67,
+      "functions": [
+        {
+          "name": "SeverityIcon",
+          "startLine": 26,
+          "endLine": 34,
+          "params": [
+            "{ severity, className }"
+          ]
+        },
+        {
+          "name": "SeverityChip",
+          "startLine": 42,
+          "endLine": 56,
+          "params": [
+            "{\n  severity,\n  showLabel = true,\n  className,\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SEVERITY_LABEL",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "SeverityIcon",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "SeverityChip",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "severityIcon",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "severityTextColor",
+          "line": 68,
+          "isDefault": false
+        },
+        {
+          "name": "severityTint",
+          "line": 74,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "SeverityIcon",
+          "callee": "toneFromSeverity",
+          "lineNumber": 29
+        },
+        {
+          "caller": "SeverityChip",
+          "callee": "toneFromSeverity",
+          "lineNumber": 49
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 6,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/ui/badge.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 32,
+      "functions": [
+        {
+          "name": "Badge",
+          "startLine": 31,
+          "endLine": 35,
+          "params": [
+            "{ className, variant, ...props }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Badge",
+          "line": 31,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Badge",
+          "callee": "cn",
+          "lineNumber": 33
+        },
+        {
+          "caller": "Badge",
+          "callee": "badgeVariants",
+          "lineNumber": 33
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/ui/status-badge.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 154,
+      "nonEmptyLines": 141,
+      "functions": [
+        {
+          "name": "StatusBadge",
+          "startLine": 63,
+          "endLine": 154,
+          "params": [
+            "{\n  tone,\n  label,\n  icon,\n  spin,\n  variant = \"pill\",\n  size = \"md\",\n  pulse,\n  className,\n  ...rest\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "StatusBadge",
+          "line": 63,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "StatusBadge",
+          "callee": "cn",
+          "lineNumber": 85
+        },
+        {
+          "caller": "StatusBadge",
+          "callee": "cn",
+          "lineNumber": 94
+        },
+        {
+          "caller": "StatusBadge",
+          "callee": "cn",
+          "lineNumber": 104
+        },
+        {
+          "caller": "StatusBadge",
+          "callee": "cn",
+          "lineNumber": 119
+        },
+        {
+          "caller": "StatusBadge",
+          "callee": "cn",
+          "lineNumber": 130
+        },
+        {
+          "caller": "StatusBadge",
+          "callee": "cn",
+          "lineNumber": 139
+        },
+        {
+          "caller": "StatusBadge",
+          "callee": "cn",
+          "lineNumber": 150
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "hooks/use-dwh-keyboard-nav.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 177,
+      "nonEmptyLines": 163,
+      "functions": [
+        {
+          "name": "isEditableTarget",
+          "startLine": 38,
+          "endLine": 44,
+          "params": [
+            "t"
+          ]
+        },
+        {
+          "name": "useDwhKeyboardNav",
+          "startLine": 46,
+          "endLine": 177,
+          "params": [
+            "{\n  nodes,\n  selectedId,\n  onSelect,\n  searchInputRef,\n  onToggleHelp,\n  enabled = true,\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "useDwhKeyboardNav",
+          "line": 46,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "useDwhKeyboardNav",
+          "callee": "useMemo",
+          "lineNumber": 55
+        },
+        {
+          "caller": "useDwhKeyboardNav",
+          "callee": "out[n.layer].push",
+          "lineNumber": 57
+        },
+        {
+          "caller": "useDwhKeyboardNav",
+          "callee": "useCallback",
+          "lineNumber": 61
+        },
+        {
+          "caller": "useDwhKeyboardNav",
+          "callee": "onSelect",
+          "lineNumber": 67
+        },
+        {
+          "caller": "useDwhKeyboardNav",
+          "callee": "nodes.find",
+          "lineNumber": 73
+        },
+        {
+          "caller": "useDwhKeyboardNav",
+          "callee": "LAYERS.indexOf",
+          "lineNumber": 75
+        },
+        {
+          "caller": "useDwhKeyboardNav",
+          "callee": "byLayer[current.layer].findIndex",
+          "lineNumber": 82
+        },
+        {
+          "caller": "useDwhKeyboardNav",
+          "callee": "onSelect",
+          "lineNumber": 87
+        },
+        {
+          "caller": "useDwhKeyboardNav",
+          "callee": "useCallback",
+          "lineNumber": 94
+        },
+        {
+          "caller": "useDwhKeyboardNav",
+          "callee": "nodes.find",
+          "lineNumber": 97
+        },
+        {
+          "caller": "useDwhKeyboardNav",
+          "callee": "list.findIndex",
+          "lineNumber": 100
+        },
+        {
+          "caller": "useDwhKeyboardNav",
+          "callee": "onSelect",
+          "lineNumber": 104
+        },
+        {
+          "caller": "useDwhKeyboardNav",
+          "callee": "useEffect",
+          "lineNumber": 109
+        },
+        {
+          "caller": "handler",
+          "callee": "isEditableTarget",
+          "lineNumber": 114
+        },
+        {
+          "caller": "handler",
+          "callee": "e.preventDefault",
+          "lineNumber": 118
+        },
+        {
+          "caller": "handler",
+          "callee": "searchInputRef.current?.focus",
+          "lineNumber": 119
+        },
+        {
+          "caller": "handler",
+          "callee": "searchInputRef.current?.select",
+          "lineNumber": 120
+        },
+        {
+          "caller": "handler",
+          "callee": "e.preventDefault",
+          "lineNumber": 125
+        },
+        {
+          "caller": "handler",
+          "callee": "onToggleHelp",
+          "lineNumber": 126
+        },
+        {
+          "caller": "handler",
+          "callee": "(e.target as HTMLElement).blur",
+          "lineNumber": 133
+        },
+        {
+          "caller": "handler",
+          "callee": "e.preventDefault",
+          "lineNumber": 137
+        },
+        {
+          "caller": "handler",
+          "callee": "onSelect",
+          "lineNumber": 138
+        },
+        {
+          "caller": "handler",
+          "callee": "e.preventDefault",
+          "lineNumber": 148
+        },
+        {
+          "caller": "handler",
+          "callee": "moveLayer",
+          "lineNumber": 149
+        },
+        {
+          "caller": "handler",
+          "callee": "e.preventDefault",
+          "lineNumber": 152
+        },
+        {
+          "caller": "handler",
+          "callee": "moveLayer",
+          "lineNumber": 153
+        },
+        {
+          "caller": "handler",
+          "callee": "e.preventDefault",
+          "lineNumber": 156
+        },
+        {
+          "caller": "handler",
+          "callee": "moveWithin",
+          "lineNumber": 157
+        },
+        {
+          "caller": "handler",
+          "callee": "e.preventDefault",
+          "lineNumber": 160
+        },
+        {
+          "caller": "handler",
+          "callee": "moveWithin",
+          "lineNumber": 161
+        },
+        {
+          "caller": "handler",
+          "callee": "e.preventDefault",
+          "lineNumber": 167
+        },
+        {
+          "caller": "handler",
+          "callee": "onSelect",
+          "lineNumber": 168
+        },
+        {
+          "caller": "useDwhKeyboardNav",
+          "callee": "window.addEventListener",
+          "lineNumber": 174
+        },
+        {
+          "caller": "useDwhKeyboardNav",
+          "callee": "window.removeEventListener",
+          "lineNumber": 175
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "hooks/use-dwh.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 43,
+      "nonEmptyLines": 41,
+      "functions": [
+        {
+          "name": "useDwhExplorer",
+          "startLine": 15,
+          "endLine": 43,
+          "params": [
+            "opts"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "useDwhExplorer",
+          "line": 15,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "useDwhExplorer",
+          "callee": "useQuery",
+          "lineNumber": 19
+        },
+        {
+          "caller": "useDwhExplorer",
+          "callee": "fetch",
+          "lineNumber": 22
+        },
+        {
+          "caller": "useDwhExplorer",
+          "callee": "res.json",
+          "lineNumber": 29
+        },
+        {
+          "caller": "useDwhExplorer",
+          "callee": "String",
+          "lineNumber": 31
+        },
+        {
+          "caller": "useDwhExplorer",
+          "callee": "DwhExplorerPayload.parse",
+          "lineNumber": 38
+        },
+        {
+          "caller": "useDwhExplorer",
+          "callee": "res.json",
+          "lineNumber": 38
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "hooks/use-pinned-nodes.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 130,
+      "nonEmptyLines": 111,
+      "functions": [
+        {
+          "name": "getSnapshot",
+          "startLine": 32,
+          "endLine": 39,
+          "params": []
+        },
+        {
+          "name": "getServerSnapshot",
+          "startLine": 41,
+          "endLine": 43,
+          "params": []
+        },
+        {
+          "name": "parseSet",
+          "startLine": 45,
+          "endLine": 54,
+          "params": [
+            "raw"
+          ]
+        },
+        {
+          "name": "subscribe",
+          "startLine": 56,
+          "endLine": 67,
+          "params": [
+            "notify"
+          ]
+        },
+        {
+          "name": "writeAndNotify",
+          "startLine": 73,
+          "endLine": 86,
+          "params": [
+            "next"
+          ]
+        },
+        {
+          "name": "usePinnedNodes",
+          "startLine": 99,
+          "endLine": 130,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "usePinnedNodes",
+          "line": 99,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getSnapshot",
+          "callee": "window.localStorage.getItem",
+          "lineNumber": 34
+        },
+        {
+          "caller": "getSnapshot",
+          "callee": "parseSet",
+          "lineNumber": 37
+        },
+        {
+          "caller": "parseSet",
+          "callee": "JSON.parse",
+          "lineNumber": 48
+        },
+        {
+          "caller": "parseSet",
+          "callee": "Array.isArray",
+          "lineNumber": 49
+        },
+        {
+          "caller": "parseSet",
+          "callee": "parsed.filter",
+          "lineNumber": 50
+        },
+        {
+          "caller": "onStorage",
+          "callee": "notify",
+          "lineNumber": 59
+        },
+        {
+          "caller": "subscribe",
+          "callee": "window.addEventListener",
+          "lineNumber": 61
+        },
+        {
+          "caller": "subscribe",
+          "callee": "window.addEventListener",
+          "lineNumber": 62
+        },
+        {
+          "caller": "subscribe",
+          "callee": "window.removeEventListener",
+          "lineNumber": 64
+        },
+        {
+          "caller": "subscribe",
+          "callee": "window.removeEventListener",
+          "lineNumber": 65
+        },
+        {
+          "caller": "writeAndNotify",
+          "callee": "JSON.stringify",
+          "lineNumber": 76
+        },
+        {
+          "caller": "writeAndNotify",
+          "callee": "Array.from",
+          "lineNumber": 76
+        },
+        {
+          "caller": "writeAndNotify",
+          "callee": "window.localStorage.setItem",
+          "lineNumber": 77
+        },
+        {
+          "caller": "writeAndNotify",
+          "callee": "window.dispatchEvent",
+          "lineNumber": 82
+        },
+        {
+          "caller": "usePinnedNodes",
+          "callee": "useSyncExternalStore",
+          "lineNumber": 100
+        },
+        {
+          "caller": "usePinnedNodes",
+          "callee": "useCallback",
+          "lineNumber": 102
+        },
+        {
+          "caller": "usePinnedNodes",
+          "callee": "getSnapshot",
+          "lineNumber": 103
+        },
+        {
+          "caller": "usePinnedNodes",
+          "callee": "next.has",
+          "lineNumber": 105
+        },
+        {
+          "caller": "usePinnedNodes",
+          "callee": "next.delete",
+          "lineNumber": 106
+        },
+        {
+          "caller": "usePinnedNodes",
+          "callee": "next.values().next",
+          "lineNumber": 109
+        },
+        {
+          "caller": "usePinnedNodes",
+          "callee": "next.values",
+          "lineNumber": 109
+        },
+        {
+          "caller": "usePinnedNodes",
+          "callee": "next.delete",
+          "lineNumber": 110
+        },
+        {
+          "caller": "usePinnedNodes",
+          "callee": "next.add",
+          "lineNumber": 112
+        },
+        {
+          "caller": "usePinnedNodes",
+          "callee": "writeAndNotify",
+          "lineNumber": 114
+        },
+        {
+          "caller": "usePinnedNodes",
+          "callee": "useCallback",
+          "lineNumber": 117
+        },
+        {
+          "caller": "usePinnedNodes",
+          "callee": "writeAndNotify",
+          "lineNumber": 118
+        },
+        {
+          "caller": "usePinnedNodes",
+          "callee": "useCallback",
+          "lineNumber": 121
+        },
+        {
+          "caller": "usePinnedNodes",
+          "callee": "pinned.has",
+          "lineNumber": 121
+        },
+        {
+          "caller": "usePinnedNodes",
+          "callee": "Math.max",
+          "lineNumber": 128
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 6,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "hooks/use-saved-views.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 151,
+      "nonEmptyLines": 134,
+      "functions": [
+        {
+          "name": "parseList",
+          "startLine": 35,
+          "endLine": 60,
+          "params": [
+            "raw"
+          ]
+        },
+        {
+          "name": "getSnapshot",
+          "startLine": 62,
+          "endLine": 69,
+          "params": []
+        },
+        {
+          "name": "getServerSnapshot",
+          "startLine": 71,
+          "endLine": 73,
+          "params": []
+        },
+        {
+          "name": "subscribe",
+          "startLine": 75,
+          "endLine": 86,
+          "params": [
+            "notify"
+          ]
+        },
+        {
+          "name": "writeAndNotify",
+          "startLine": 88,
+          "endLine": 99,
+          "params": [
+            "next"
+          ]
+        },
+        {
+          "name": "useSavedViews",
+          "startLine": 110,
+          "endLine": 151,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "useSavedViews",
+          "line": 110,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "parseList",
+          "callee": "JSON.parse",
+          "lineNumber": 38
+        },
+        {
+          "caller": "parseList",
+          "callee": "Array.isArray",
+          "lineNumber": 39
+        },
+        {
+          "caller": "parseList",
+          "callee": "out.push",
+          "lineNumber": 53
+        },
+        {
+          "caller": "parseList",
+          "callee": "Object.freeze",
+          "lineNumber": 56
+        },
+        {
+          "caller": "getSnapshot",
+          "callee": "window.localStorage.getItem",
+          "lineNumber": 64
+        },
+        {
+          "caller": "getSnapshot",
+          "callee": "parseList",
+          "lineNumber": 67
+        },
+        {
+          "caller": "onStorage",
+          "callee": "notify",
+          "lineNumber": 78
+        },
+        {
+          "caller": "subscribe",
+          "callee": "window.addEventListener",
+          "lineNumber": 80
+        },
+        {
+          "caller": "subscribe",
+          "callee": "window.addEventListener",
+          "lineNumber": 81
+        },
+        {
+          "caller": "subscribe",
+          "callee": "window.removeEventListener",
+          "lineNumber": 83
+        },
+        {
+          "caller": "subscribe",
+          "callee": "window.removeEventListener",
+          "lineNumber": 84
+        },
+        {
+          "caller": "writeAndNotify",
+          "callee": "JSON.stringify",
+          "lineNumber": 91
+        },
+        {
+          "caller": "writeAndNotify",
+          "callee": "window.localStorage.setItem",
+          "lineNumber": 92
+        },
+        {
+          "caller": "writeAndNotify",
+          "callee": "window.dispatchEvent",
+          "lineNumber": 95
+        },
+        {
+          "caller": "useSavedViews",
+          "callee": "useSyncExternalStore",
+          "lineNumber": 111
+        },
+        {
+          "caller": "useSavedViews",
+          "callee": "useCallback",
+          "lineNumber": 113
+        },
+        {
+          "caller": "useSavedViews",
+          "callee": "rawName.trim().slice",
+          "lineNumber": 115
+        },
+        {
+          "caller": "useSavedViews",
+          "callee": "rawName.trim",
+          "lineNumber": 115
+        },
+        {
+          "caller": "useSavedViews",
+          "callee": "getSnapshot",
+          "lineNumber": 117
+        },
+        {
+          "caller": "useSavedViews",
+          "callee": "Date.now().toString",
+          "lineNumber": 120
+        },
+        {
+          "caller": "useSavedViews",
+          "callee": "Date.now",
+          "lineNumber": 120
+        },
+        {
+          "caller": "useSavedViews",
+          "callee": "Math.random().toString(36).slice",
+          "lineNumber": 120
+        },
+        {
+          "caller": "useSavedViews",
+          "callee": "Math.random().toString",
+          "lineNumber": 120
+        },
+        {
+          "caller": "useSavedViews",
+          "callee": "Math.random",
+          "lineNumber": 120
+        },
+        {
+          "caller": "useSavedViews",
+          "callee": "Date.now",
+          "lineNumber": 122
+        },
+        {
+          "caller": "useSavedViews",
+          "callee": "writeAndNotify",
+          "lineNumber": 125
+        },
+        {
+          "caller": "useSavedViews",
+          "callee": "Object.freeze",
+          "lineNumber": 125
+        },
+        {
+          "caller": "useSavedViews",
+          "callee": "useCallback",
+          "lineNumber": 131
+        },
+        {
+          "caller": "useSavedViews",
+          "callee": "rawName.trim().slice",
+          "lineNumber": 132
+        },
+        {
+          "caller": "useSavedViews",
+          "callee": "rawName.trim",
+          "lineNumber": 132
+        },
+        {
+          "caller": "useSavedViews",
+          "callee": "getSnapshot",
+          "lineNumber": 134
+        },
+        {
+          "caller": "useSavedViews",
+          "callee": "current.map",
+          "lineNumber": 135
+        },
+        {
+          "caller": "useSavedViews",
+          "callee": "writeAndNotify",
+          "lineNumber": 136
+        },
+        {
+          "caller": "useSavedViews",
+          "callee": "Object.freeze",
+          "lineNumber": 136
+        },
+        {
+          "caller": "useSavedViews",
+          "callee": "useCallback",
+          "lineNumber": 139
+        },
+        {
+          "caller": "useSavedViews",
+          "callee": "getSnapshot",
+          "lineNumber": 140
+        },
+        {
+          "caller": "useSavedViews",
+          "callee": "writeAndNotify",
+          "lineNumber": 141
+        },
+        {
+          "caller": "useSavedViews",
+          "callee": "Object.freeze",
+          "lineNumber": 141
+        },
+        {
+          "caller": "useSavedViews",
+          "callee": "current.filter",
+          "lineNumber": 141
+        },
+        {
+          "caller": "useSavedViews",
+          "callee": "Math.max",
+          "lineNumber": 149
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 6,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "hooks/use-status-flash.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 117,
+      "nonEmptyLines": 102,
+      "functions": [
+        {
+          "name": "reducer",
+          "startLine": 38,
+          "endLine": 54,
+          "params": [
+            "state",
+            "action"
+          ]
+        },
+        {
+          "name": "useStatusFlash",
+          "startLine": 56,
+          "endLine": 117,
+          "params": [
+            "nodes"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "useStatusFlash",
+          "line": 56,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "reducer",
+          "callee": "next.add",
+          "lineNumber": 42
+        },
+        {
+          "caller": "reducer",
+          "callee": "state.has",
+          "lineNumber": 46
+        },
+        {
+          "caller": "reducer",
+          "callee": "next.delete",
+          "lineNumber": 48
+        },
+        {
+          "caller": "useStatusFlash",
+          "callee": "useReducer",
+          "lineNumber": 57
+        },
+        {
+          "caller": "useStatusFlash",
+          "callee": "useRef",
+          "lineNumber": 58
+        },
+        {
+          "caller": "useStatusFlash",
+          "callee": "useRef",
+          "lineNumber": 59
+        },
+        {
+          "caller": "useStatusFlash",
+          "callee": "useEffect",
+          "lineNumber": 61
+        },
+        {
+          "caller": "useStatusFlash",
+          "callee": "nodes.map",
+          "lineNumber": 63
+        },
+        {
+          "caller": "useStatusFlash",
+          "callee": "prevRef.current.get",
+          "lineNumber": 73
+        },
+        {
+          "caller": "useStatusFlash",
+          "callee": "toFlash.push",
+          "lineNumber": 75
+        },
+        {
+          "caller": "useStatusFlash",
+          "callee": "setTimeout",
+          "lineNumber": 81
+        },
+        {
+          "caller": "useStatusFlash",
+          "callee": "dispatch",
+          "lineNumber": 82
+        },
+        {
+          "caller": "useStatusFlash",
+          "callee": "toFlash.map",
+          "lineNumber": 85
+        },
+        {
+          "caller": "useStatusFlash",
+          "callee": "timersRef.current.get",
+          "lineNumber": 86
+        },
+        {
+          "caller": "useStatusFlash",
+          "callee": "clearTimeout",
+          "lineNumber": 87
+        },
+        {
+          "caller": "useStatusFlash",
+          "callee": "setTimeout",
+          "lineNumber": 88
+        },
+        {
+          "caller": "useStatusFlash",
+          "callee": "dispatch",
+          "lineNumber": 89
+        },
+        {
+          "caller": "useStatusFlash",
+          "callee": "timersRef.current.delete",
+          "lineNumber": 90
+        },
+        {
+          "caller": "useStatusFlash",
+          "callee": "timersRef.current.set",
+          "lineNumber": 92
+        },
+        {
+          "caller": "cleanup",
+          "callee": "clearTimeout",
+          "lineNumber": 100
+        },
+        {
+          "caller": "useStatusFlash",
+          "callee": "useEffect",
+          "lineNumber": 108
+        },
+        {
+          "caller": "useStatusFlash",
+          "callee": "timers.values",
+          "lineNumber": 111
+        },
+        {
+          "caller": "useStatusFlash",
+          "callee": "clearTimeout",
+          "lineNumber": 111
+        },
+        {
+          "caller": "useStatusFlash",
+          "callee": "timers.clear",
+          "lineNumber": 112
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/schemas/dwh.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 73,
+      "nonEmptyLines": 66,
+      "exports": [
+        {
+          "name": "TableLayer",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "TableStatus",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "DwhNode",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "DwhEdge",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "FactSummary",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "DwhExplorerPayload",
+          "line": 61,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/status.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 162,
+      "nonEmptyLines": 149,
+      "functions": [
+        {
+          "name": "toneFromLevel",
+          "startLine": 106,
+          "endLine": 108,
+          "params": [
+            "level"
+          ]
+        },
+        {
+          "name": "toneFromCorrida",
+          "startLine": 111,
+          "endLine": 126,
+          "params": [
+            "status"
+          ]
+        },
+        {
+          "name": "toneFromBitacora",
+          "startLine": 129,
+          "endLine": 146,
+          "params": [
+            "estado"
+          ]
+        },
+        {
+          "name": "toneFromSeverity",
+          "startLine": 149,
+          "endLine": 153,
+          "params": [
+            "severity"
+          ]
+        },
+        {
+          "name": "statusTone",
+          "startLine": 159,
+          "endLine": 162,
+          "params": [
+            "level"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "TONE",
+          "line": 53,
+          "isDefault": false
+        },
+        {
+          "name": "toneFromLevel",
+          "line": 106,
+          "isDefault": false
+        },
+        {
+          "name": "toneFromCorrida",
+          "line": 111,
+          "isDefault": false
+        },
+        {
+          "name": "toneFromBitacora",
+          "line": 129,
+          "isDefault": false
+        },
+        {
+          "name": "toneFromSeverity",
+          "line": 149,
+          "isDefault": false
+        },
+        {
+          "name": "statusTone",
+          "line": 159,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 0
+      }
+    }
+  ]
+}

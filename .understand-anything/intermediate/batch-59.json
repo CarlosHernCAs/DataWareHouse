@@ -1,0 +1,1757 @@
+{
+  "nodes": [
+    {
+      "id": "file:ETL/tests/test_utils_capa1.py",
+      "type": "file",
+      "name": "test_utils_capa1.py",
+      "filePath": "ETL/tests/test_utils_capa1.py",
+      "summary": "File mapped from ETL/tests/test_utils_capa1.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:ETL/tests/test_utils_capa1.py:TestDNI",
+      "type": "class",
+      "name": "TestDNI",
+      "filePath": "ETL/tests/test_utils_capa1.py",
+      "lineRange": [
+        23,
+        45
+      ],
+      "summary": "Class TestDNI defined in ETL/tests/test_utils_capa1.py.",
+      "tags": [
+        "class",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:ETL/tests/test_utils_capa1.py:TestTipos",
+      "type": "class",
+      "name": "TestTipos",
+      "filePath": "ETL/tests/test_utils_capa1.py",
+      "lineRange": [
+        48,
+        78
+      ],
+      "summary": "Class TestTipos defined in ETL/tests/test_utils_capa1.py.",
+      "tags": [
+        "class",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:ETL/tests/test_utils_capa1.py:TestTextoTestBlock",
+      "type": "class",
+      "name": "TestTextoTestBlock",
+      "filePath": "ETL/tests/test_utils_capa1.py",
+      "lineRange": [
+        81,
+        98
+      ],
+      "summary": "Class TestTextoTestBlock defined in ETL/tests/test_utils_capa1.py.",
+      "tags": [
+        "class",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:ETL/tests/test_utils_capa1.py:TestComponenteGeografico",
+      "type": "class",
+      "name": "TestComponenteGeografico",
+      "filePath": "ETL/tests/test_utils_capa1.py",
+      "lineRange": [
+        101,
+        117
+      ],
+      "summary": "Class TestComponenteGeografico defined in ETL/tests/test_utils_capa1.py.",
+      "tags": [
+        "class",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/tools/audit_ev.py",
+      "type": "file",
+      "name": "audit_ev.py",
+      "filePath": "ETL/tools/audit_ev.py",
+      "summary": "File mapped from ETL/tools/audit_ev.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/tools/audit_ev2.py",
+      "type": "file",
+      "name": "audit_ev2.py",
+      "filePath": "ETL/tools/audit_ev2.py",
+      "summary": "File mapped from ETL/tools/audit_ev2.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/tools/audit_ev3.py",
+      "type": "file",
+      "name": "audit_ev3.py",
+      "filePath": "ETL/tools/audit_ev3.py",
+      "summary": "File mapped from ETL/tools/audit_ev3.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/tools/audit_gold_all.py",
+      "type": "file",
+      "name": "audit_gold_all.py",
+      "filePath": "ETL/tools/audit_gold_all.py",
+      "summary": "File mapped from ETL/tools/audit_gold_all.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/audit_gold_all.py:is_numeric",
+      "type": "function",
+      "name": "is_numeric",
+      "filePath": "ETL/tools/audit_gold_all.py",
+      "lineRange": [
+        11,
+        12
+      ],
+      "summary": "Function is_numeric defined in ETL/tools/audit_gold_all.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/audit_gold_all.py:audit_gold_all",
+      "type": "function",
+      "name": "audit_gold_all",
+      "filePath": "ETL/tools/audit_gold_all.py",
+      "lineRange": [
+        14,
+        47
+      ],
+      "summary": "Function audit_gold_all defined in ETL/tools/audit_gold_all.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/tools/audit_gold_json.py",
+      "type": "file",
+      "name": "audit_gold_json.py",
+      "filePath": "ETL/tools/audit_gold_json.py",
+      "summary": "File mapped from ETL/tools/audit_gold_json.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/audit_gold_json.py:audit_gold_nulls",
+      "type": "function",
+      "name": "audit_gold_nulls",
+      "filePath": "ETL/tools/audit_gold_json.py",
+      "lineRange": [
+        12,
+        44
+      ],
+      "summary": "Function audit_gold_nulls defined in ETL/tools/audit_gold_json.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/tools/auditar_campanas.py",
+      "type": "file",
+      "name": "auditar_campanas.py",
+      "filePath": "ETL/tools/auditar_campanas.py",
+      "summary": "File mapped from ETL/tools/auditar_campanas.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:ETL/tools/auditar_campanas.py:auditar_campanas",
+      "type": "function",
+      "name": "auditar_campanas",
+      "filePath": "ETL/tools/auditar_campanas.py",
+      "lineRange": [
+        8,
+        66
+      ],
+      "summary": "Function auditar_campanas defined in ETL/tools/auditar_campanas.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:ETL/tools/auditor_columnas_conteo.py",
+      "type": "file",
+      "name": "auditor_columnas_conteo.py",
+      "filePath": "ETL/tools/auditor_columnas_conteo.py",
+      "summary": "File mapped from ETL/tools/auditor_columnas_conteo.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/auditor_columnas_conteo.py:auditar_columnas_conteo",
+      "type": "function",
+      "name": "auditar_columnas_conteo",
+      "filePath": "ETL/tools/auditor_columnas_conteo.py",
+      "lineRange": [
+        5,
+        38
+      ],
+      "summary": "Function auditar_columnas_conteo defined in ETL/tools/auditor_columnas_conteo.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/tools/auditoria_detalle.py",
+      "type": "file",
+      "name": "auditoria_detalle.py",
+      "filePath": "ETL/tools/auditoria_detalle.py",
+      "summary": "File mapped from ETL/tools/auditoria_detalle.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:ETL/tools/auditoria_detalle.py:cols",
+      "type": "function",
+      "name": "cols",
+      "filePath": "ETL/tools/auditoria_detalle.py",
+      "lineRange": [
+        18,
+        27
+      ],
+      "summary": "Function cols defined in ETL/tools/auditoria_detalle.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/auditoria_detalle.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "ETL/tools/auditoria_detalle.py",
+      "lineRange": [
+        30,
+        63
+      ],
+      "summary": "Function main defined in ETL/tools/auditoria_detalle.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/tools/auditoria_flujo_bronce_silver_gold.py",
+      "type": "file",
+      "name": "auditoria_flujo_bronce_silver_gold.py",
+      "filePath": "ETL/tools/auditoria_flujo_bronce_silver_gold.py",
+      "summary": "File mapped from ETL/tools/auditoria_flujo_bronce_silver_gold.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:ETL/tools/auditoria_flujo_bronce_silver_gold.py:_existe_tabla",
+      "type": "function",
+      "name": "_existe_tabla",
+      "filePath": "ETL/tools/auditoria_flujo_bronce_silver_gold.py",
+      "lineRange": [
+        35,
+        41
+      ],
+      "summary": "Function _existe_tabla defined in ETL/tools/auditoria_flujo_bronce_silver_gold.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/auditoria_flujo_bronce_silver_gold.py:_cols",
+      "type": "function",
+      "name": "_cols",
+      "filePath": "ETL/tools/auditoria_flujo_bronce_silver_gold.py",
+      "lineRange": [
+        44,
+        52
+      ],
+      "summary": "Function _cols defined in ETL/tools/auditoria_flujo_bronce_silver_gold.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/auditoria_flujo_bronce_silver_gold.py:_count",
+      "type": "function",
+      "name": "_count",
+      "filePath": "ETL/tools/auditoria_flujo_bronce_silver_gold.py",
+      "lineRange": [
+        55,
+        56
+      ],
+      "summary": "Function _count defined in ETL/tools/auditoria_flujo_bronce_silver_gold.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/auditoria_flujo_bronce_silver_gold.py:_dist_estado",
+      "type": "function",
+      "name": "_dist_estado",
+      "filePath": "ETL/tools/auditoria_flujo_bronce_silver_gold.py",
+      "lineRange": [
+        59,
+        66
+      ],
+      "summary": "Function _dist_estado defined in ETL/tools/auditoria_flujo_bronce_silver_gold.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/auditoria_flujo_bronce_silver_gold.py:_cuarentena_tablas",
+      "type": "function",
+      "name": "_cuarentena_tablas",
+      "filePath": "ETL/tools/auditoria_flujo_bronce_silver_gold.py",
+      "lineRange": [
+        69,
+        75
+      ],
+      "summary": "Function _cuarentena_tablas defined in ETL/tools/auditoria_flujo_bronce_silver_gold.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/auditoria_flujo_bronce_silver_gold.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "ETL/tools/auditoria_flujo_bronce_silver_gold.py",
+      "lineRange": [
+        78,
+        142
+      ],
+      "summary": "Function main defined in ETL/tools/auditoria_flujo_bronce_silver_gold.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:ETL/tools/check_nulls_gold.py",
+      "type": "file",
+      "name": "check_nulls_gold.py",
+      "filePath": "ETL/tools/check_nulls_gold.py",
+      "summary": "File mapped from ETL/tools/check_nulls_gold.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/check_nulls_gold.py:check_nulls_gold",
+      "type": "function",
+      "name": "check_nulls_gold",
+      "filePath": "ETL/tools/check_nulls_gold.py",
+      "lineRange": [
+        11,
+        43
+      ],
+      "summary": "Function check_nulls_gold defined in ETL/tools/check_nulls_gold.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/tools/check_nulls.py",
+      "type": "file",
+      "name": "check_nulls.py",
+      "filePath": "ETL/tools/check_nulls.py",
+      "summary": "File mapped from ETL/tools/check_nulls.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:ETL/tools/check_nulls.py:check_nulls",
+      "type": "function",
+      "name": "check_nulls",
+      "filePath": "ETL/tools/check_nulls.py",
+      "lineRange": [
+        11,
+        51
+      ],
+      "summary": "Function check_nulls defined in ETL/tools/check_nulls.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/tools/fix_evaluacion_vegetativa.py",
+      "type": "file",
+      "name": "fix_evaluacion_vegetativa.py",
+      "filePath": "ETL/tools/fix_evaluacion_vegetativa.py",
+      "summary": "File mapped from ETL/tools/fix_evaluacion_vegetativa.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/tools/generate_docs.py",
+      "type": "file",
+      "name": "generate_docs.py",
+      "filePath": "ETL/tools/generate_docs.py",
+      "summary": "File mapped from ETL/tools/generate_docs.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:ETL/tools/generate_docs.py:make_engine",
+      "type": "function",
+      "name": "make_engine",
+      "filePath": "ETL/tools/generate_docs.py",
+      "lineRange": [
+        33,
+        40
+      ],
+      "summary": "Function make_engine defined in ETL/tools/generate_docs.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/generate_docs.py:load_schemas",
+      "type": "function",
+      "name": "load_schemas",
+      "filePath": "ETL/tools/generate_docs.py",
+      "lineRange": [
+        45,
+        55
+      ],
+      "summary": "Function load_schemas defined in ETL/tools/generate_docs.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/generate_docs.py:load_tables",
+      "type": "function",
+      "name": "load_tables",
+      "filePath": "ETL/tools/generate_docs.py",
+      "lineRange": [
+        58,
+        64
+      ],
+      "summary": "Function load_tables defined in ETL/tools/generate_docs.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/generate_docs.py:load_columns",
+      "type": "function",
+      "name": "load_columns",
+      "filePath": "ETL/tools/generate_docs.py",
+      "lineRange": [
+        67,
+        86
+      ],
+      "summary": "Function load_columns defined in ETL/tools/generate_docs.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/generate_docs.py:load_primary_keys",
+      "type": "function",
+      "name": "load_primary_keys",
+      "filePath": "ETL/tools/generate_docs.py",
+      "lineRange": [
+        89,
+        101
+      ],
+      "summary": "Function load_primary_keys defined in ETL/tools/generate_docs.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/generate_docs.py:load_indexes",
+      "type": "function",
+      "name": "load_indexes",
+      "filePath": "ETL/tools/generate_docs.py",
+      "lineRange": [
+        104,
+        126
+      ],
+      "summary": "Function load_indexes defined in ETL/tools/generate_docs.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/generate_docs.py:load_foreign_keys",
+      "type": "function",
+      "name": "load_foreign_keys",
+      "filePath": "ETL/tools/generate_docs.py",
+      "lineRange": [
+        129,
+        162
+      ],
+      "summary": "Function load_foreign_keys defined in ETL/tools/generate_docs.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/generate_docs.py:load_modules",
+      "type": "function",
+      "name": "load_modules",
+      "filePath": "ETL/tools/generate_docs.py",
+      "lineRange": [
+        165,
+        179
+      ],
+      "summary": "Function load_modules defined in ETL/tools/generate_docs.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/generate_docs.py:load_proc_params",
+      "type": "function",
+      "name": "load_proc_params",
+      "filePath": "ETL/tools/generate_docs.py",
+      "lineRange": [
+        182,
+        195
+      ],
+      "summary": "Function load_proc_params defined in ETL/tools/generate_docs.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/generate_docs.py:load_dependencies",
+      "type": "function",
+      "name": "load_dependencies",
+      "filePath": "ETL/tools/generate_docs.py",
+      "lineRange": [
+        198,
+        212
+      ],
+      "summary": "Function load_dependencies defined in ETL/tools/generate_docs.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/generate_docs.py:format_type",
+      "type": "function",
+      "name": "format_type",
+      "filePath": "ETL/tools/generate_docs.py",
+      "lineRange": [
+        217,
+        228
+      ],
+      "summary": "Function format_type defined in ETL/tools/generate_docs.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/generate_docs.py:safe_filename",
+      "type": "function",
+      "name": "safe_filename",
+      "filePath": "ETL/tools/generate_docs.py",
+      "lineRange": [
+        231,
+        232
+      ],
+      "summary": "Function safe_filename defined in ETL/tools/generate_docs.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/generate_docs.py:wikilink",
+      "type": "function",
+      "name": "wikilink",
+      "filePath": "ETL/tools/generate_docs.py",
+      "lineRange": [
+        235,
+        237
+      ],
+      "summary": "Function wikilink defined in ETL/tools/generate_docs.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/generate_docs.py:render_table_md",
+      "type": "function",
+      "name": "render_table_md",
+      "filePath": "ETL/tools/generate_docs.py",
+      "lineRange": [
+        242,
+        296
+      ],
+      "summary": "Function render_table_md defined in ETL/tools/generate_docs.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:ETL/tools/generate_docs.py:render_module_md",
+      "type": "function",
+      "name": "render_module_md",
+      "filePath": "ETL/tools/generate_docs.py",
+      "lineRange": [
+        299,
+        354
+      ],
+      "summary": "Function render_module_md defined in ETL/tools/generate_docs.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:ETL/tools/generate_docs.py:render_schema_md",
+      "type": "function",
+      "name": "render_schema_md",
+      "filePath": "ETL/tools/generate_docs.py",
+      "lineRange": [
+        357,
+        399
+      ],
+      "summary": "Function render_schema_md defined in ETL/tools/generate_docs.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/generate_docs.py:render_index_md",
+      "type": "function",
+      "name": "render_index_md",
+      "filePath": "ETL/tools/generate_docs.py",
+      "lineRange": [
+        402,
+        429
+      ],
+      "summary": "Function render_index_md defined in ETL/tools/generate_docs.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/generate_docs.py:render_erd_md",
+      "type": "function",
+      "name": "render_erd_md",
+      "filePath": "ETL/tools/generate_docs.py",
+      "lineRange": [
+        432,
+        449
+      ],
+      "summary": "Function render_erd_md defined in ETL/tools/generate_docs.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/generate_docs.py:render_ddl",
+      "type": "function",
+      "name": "render_ddl",
+      "filePath": "ETL/tools/generate_docs.py",
+      "lineRange": [
+        454,
+        570
+      ],
+      "summary": "Function render_ddl defined in ETL/tools/generate_docs.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:ETL/tools/generate_docs.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "ETL/tools/generate_docs.py",
+      "lineRange": [
+        575,
+        673
+      ],
+      "summary": "Function main defined in ETL/tools/generate_docs.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:ETL/tools/infer_carpeta.py",
+      "type": "file",
+      "name": "infer_carpeta.py",
+      "filePath": "ETL/tools/infer_carpeta.py",
+      "summary": "File mapped from ETL/tools/infer_carpeta.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/tools/inventario_db_completo.py",
+      "type": "file",
+      "name": "inventario_db_completo.py",
+      "filePath": "ETL/tools/inventario_db_completo.py",
+      "summary": "File mapped from ETL/tools/inventario_db_completo.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:ETL/tools/inventario_db_completo.py:inventario_completo",
+      "type": "function",
+      "name": "inventario_completo",
+      "filePath": "ETL/tools/inventario_db_completo.py",
+      "lineRange": [
+        4,
+        58
+      ],
+      "summary": "Function inventario_completo defined in ETL/tools/inventario_db_completo.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:ETL/tools/liberar_cuarentena.py",
+      "type": "file",
+      "name": "liberar_cuarentena.py",
+      "filePath": "ETL/tools/liberar_cuarentena.py",
+      "summary": "File mapped from ETL/tools/liberar_cuarentena.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:ETL/tools/liberar_cuarentena.py:liberar_cuarentena",
+      "type": "function",
+      "name": "liberar_cuarentena",
+      "filePath": "ETL/tools/liberar_cuarentena.py",
+      "lineRange": [
+        11,
+        70
+      ],
+      "summary": "Function liberar_cuarentena defined in ETL/tools/liberar_cuarentena.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:ETL/tools/list_fact_tables.py",
+      "type": "file",
+      "name": "list_fact_tables.py",
+      "filePath": "ETL/tools/list_fact_tables.py",
+      "summary": "File mapped from ETL/tools/list_fact_tables.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/list_fact_tables.py:list_fact_tables",
+      "type": "function",
+      "name": "list_fact_tables",
+      "filePath": "ETL/tools/list_fact_tables.py",
+      "lineRange": [
+        11,
+        20
+      ],
+      "summary": "Function list_fact_tables defined in ETL/tools/list_fact_tables.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/tools/list_gold_tables.py",
+      "type": "file",
+      "name": "list_gold_tables.py",
+      "filePath": "ETL/tools/list_gold_tables.py",
+      "summary": "File mapped from ETL/tools/list_gold_tables.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/list_gold_tables.py:list_gold_tables",
+      "type": "function",
+      "name": "list_gold_tables",
+      "filePath": "ETL/tools/list_gold_tables.py",
+      "lineRange": [
+        11,
+        20
+      ],
+      "summary": "Function list_gold_tables defined in ETL/tools/list_gold_tables.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/tools/metrics_gold.py",
+      "type": "file",
+      "name": "metrics_gold.py",
+      "filePath": "ETL/tools/metrics_gold.py",
+      "summary": "File mapped from ETL/tools/metrics_gold.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:ETL/tools/metrics_gold.py:is_numeric",
+      "type": "function",
+      "name": "is_numeric",
+      "filePath": "ETL/tools/metrics_gold.py",
+      "lineRange": [
+        12,
+        13
+      ],
+      "summary": "Function is_numeric defined in ETL/tools/metrics_gold.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/metrics_gold.py:metric_gold_tables",
+      "type": "function",
+      "name": "metric_gold_tables",
+      "filePath": "ETL/tools/metrics_gold.py",
+      "lineRange": [
+        15,
+        57
+      ],
+      "summary": "Function metric_gold_tables defined in ETL/tools/metrics_gold.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/tools/migration_runner.py",
+      "type": "file",
+      "name": "migration_runner.py",
+      "filePath": "ETL/tools/migration_runner.py",
+      "summary": "File mapped from ETL/tools/migration_runner.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:ETL/tools/migration_runner.py:_calcular_hash",
+      "type": "function",
+      "name": "_calcular_hash",
+      "filePath": "ETL/tools/migration_runner.py",
+      "lineRange": [
+        41,
+        44
+      ],
+      "summary": "Function _calcular_hash defined in ETL/tools/migration_runner.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/migration_runner.py:_tabla_migraciones_existe",
+      "type": "function",
+      "name": "_tabla_migraciones_existe",
+      "filePath": "ETL/tools/migration_runner.py",
+      "lineRange": [
+        47,
+        56
+      ],
+      "summary": "Function _tabla_migraciones_existe defined in ETL/tools/migration_runner.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/migration_runner.py:_obtener_aplicadas",
+      "type": "function",
+      "name": "_obtener_aplicadas",
+      "filePath": "ETL/tools/migration_runner.py",
+      "lineRange": [
+        59,
+        67
+      ],
+      "summary": "Function _obtener_aplicadas defined in ETL/tools/migration_runner.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/migration_runner.py:_listar_migraciones_disponibles",
+      "type": "function",
+      "name": "_listar_migraciones_disponibles",
+      "filePath": "ETL/tools/migration_runner.py",
+      "lineRange": [
+        70,
+        73
+      ],
+      "summary": "Function _listar_migraciones_disponibles defined in ETL/tools/migration_runner.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/migration_runner.py:_aplicar_migracion",
+      "type": "function",
+      "name": "_aplicar_migracion",
+      "filePath": "ETL/tools/migration_runner.py",
+      "lineRange": [
+        76,
+        144
+      ],
+      "summary": "Function _aplicar_migracion defined in ETL/tools/migration_runner.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:ETL/tools/migration_runner.py:ejecutar",
+      "type": "function",
+      "name": "ejecutar",
+      "filePath": "ETL/tools/migration_runner.py",
+      "lineRange": [
+        147,
+        224
+      ],
+      "summary": "Function ejecutar defined in ETL/tools/migration_runner.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:ETL/tools/refresh_gold_only.py",
+      "type": "file",
+      "name": "refresh_gold_only.py",
+      "filePath": "ETL/tools/refresh_gold_only.py",
+      "summary": "File mapped from ETL/tools/refresh_gold_only.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/refresh_gold_only.py:refresh_gold",
+      "type": "function",
+      "name": "refresh_gold",
+      "filePath": "ETL/tools/refresh_gold_only.py",
+      "lineRange": [
+        11,
+        19
+      ],
+      "summary": "Function refresh_gold defined in ETL/tools/refresh_gold_only.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/tools/reproceso_historico.py",
+      "type": "file",
+      "name": "reproceso_historico.py",
+      "filePath": "ETL/tools/reproceso_historico.py",
+      "summary": "File mapped from ETL/tools/reproceso_historico.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:ETL/tools/reproceso_historico.py:contar_registros",
+      "type": "function",
+      "name": "contar_registros",
+      "filePath": "ETL/tools/reproceso_historico.py",
+      "lineRange": [
+        48,
+        52
+      ],
+      "summary": "Function contar_registros defined in ETL/tools/reproceso_historico.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/reproceso_historico.py:resetear_tabla",
+      "type": "function",
+      "name": "resetear_tabla",
+      "filePath": "ETL/tools/reproceso_historico.py",
+      "lineRange": [
+        55,
+        71
+      ],
+      "summary": "Function resetear_tabla defined in ETL/tools/reproceso_historico.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/reproceso_historico.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "ETL/tools/reproceso_historico.py",
+      "lineRange": [
+        74,
+        101
+      ],
+      "summary": "Function main defined in ETL/tools/reproceso_historico.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/tools/reproceso_post_fixes_20260525.py",
+      "type": "file",
+      "name": "reproceso_post_fixes_20260525.py",
+      "filePath": "ETL/tools/reproceso_post_fixes_20260525.py",
+      "summary": "File mapped from ETL/tools/reproceso_post_fixes_20260525.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:ETL/tools/reproceso_post_fixes_20260525.py:_conteos",
+      "type": "function",
+      "name": "_conteos",
+      "filePath": "ETL/tools/reproceso_post_fixes_20260525.py",
+      "lineRange": [
+        59,
+        75
+      ],
+      "summary": "Function _conteos defined in ETL/tools/reproceso_post_fixes_20260525.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/reproceso_post_fixes_20260525.py:_imprimir_conteos",
+      "type": "function",
+      "name": "_imprimir_conteos",
+      "filePath": "ETL/tools/reproceso_post_fixes_20260525.py",
+      "lineRange": [
+        78,
+        81
+      ],
+      "summary": "Function _imprimir_conteos defined in ETL/tools/reproceso_post_fixes_20260525.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/reproceso_post_fixes_20260525.py:_ejecutar_sql_reparacion",
+      "type": "function",
+      "name": "_ejecutar_sql_reparacion",
+      "filePath": "ETL/tools/reproceso_post_fixes_20260525.py",
+      "lineRange": [
+        84,
+        94
+      ],
+      "summary": "Function _ejecutar_sql_reparacion defined in ETL/tools/reproceso_post_fixes_20260525.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/reproceso_post_fixes_20260525.py:_reprocesar_silver",
+      "type": "function",
+      "name": "_reprocesar_silver",
+      "filePath": "ETL/tools/reproceso_post_fixes_20260525.py",
+      "lineRange": [
+        97,
+        110
+      ],
+      "summary": "Function _reprocesar_silver defined in ETL/tools/reproceso_post_fixes_20260525.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/reproceso_post_fixes_20260525.py:_refrescar_marts",
+      "type": "function",
+      "name": "_refrescar_marts",
+      "filePath": "ETL/tools/reproceso_post_fixes_20260525.py",
+      "lineRange": [
+        113,
+        124
+      ],
+      "summary": "Function _refrescar_marts defined in ETL/tools/reproceso_post_fixes_20260525.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/reproceso_post_fixes_20260525.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "ETL/tools/reproceso_post_fixes_20260525.py",
+      "lineRange": [
+        127,
+        155
+      ],
+      "summary": "Function main defined in ETL/tools/reproceso_post_fixes_20260525.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/tools/restaurar_todos_los_excels.py",
+      "type": "file",
+      "name": "restaurar_todos_los_excels.py",
+      "filePath": "ETL/tools/restaurar_todos_los_excels.py",
+      "summary": "File mapped from ETL/tools/restaurar_todos_los_excels.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:ETL/tools/restaurar_todos_los_excels.py:restaurar_excels",
+      "type": "function",
+      "name": "restaurar_excels",
+      "filePath": "ETL/tools/restaurar_todos_los_excels.py",
+      "lineRange": [
+        6,
+        56
+      ],
+      "summary": "Function restaurar_excels defined in ETL/tools/restaurar_todos_los_excels.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:ETL/tests/test_utils_capa1.py",
+      "target": "class:ETL/tests/test_utils_capa1.py:TestDNI",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tests/test_utils_capa1.py",
+      "target": "class:ETL/tests/test_utils_capa1.py:TestTipos",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tests/test_utils_capa1.py",
+      "target": "class:ETL/tests/test_utils_capa1.py:TestTextoTestBlock",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tests/test_utils_capa1.py",
+      "target": "class:ETL/tests/test_utils_capa1.py:TestComponenteGeografico",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/audit_gold_all.py",
+      "target": "function:ETL/tools/audit_gold_all.py:is_numeric",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/audit_gold_all.py",
+      "target": "function:ETL/tools/audit_gold_all.py:audit_gold_all",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/audit_gold_json.py",
+      "target": "function:ETL/tools/audit_gold_json.py:audit_gold_nulls",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/auditar_campanas.py",
+      "target": "function:ETL/tools/auditar_campanas.py:auditar_campanas",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/auditor_columnas_conteo.py",
+      "target": "function:ETL/tools/auditor_columnas_conteo.py:auditar_columnas_conteo",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/auditoria_detalle.py",
+      "target": "function:ETL/tools/auditoria_detalle.py:cols",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/auditoria_detalle.py",
+      "target": "function:ETL/tools/auditoria_detalle.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/auditoria_flujo_bronce_silver_gold.py",
+      "target": "function:ETL/tools/auditoria_flujo_bronce_silver_gold.py:_existe_tabla",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/auditoria_flujo_bronce_silver_gold.py",
+      "target": "function:ETL/tools/auditoria_flujo_bronce_silver_gold.py:_cols",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/auditoria_flujo_bronce_silver_gold.py",
+      "target": "function:ETL/tools/auditoria_flujo_bronce_silver_gold.py:_count",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/auditoria_flujo_bronce_silver_gold.py",
+      "target": "function:ETL/tools/auditoria_flujo_bronce_silver_gold.py:_dist_estado",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/auditoria_flujo_bronce_silver_gold.py",
+      "target": "function:ETL/tools/auditoria_flujo_bronce_silver_gold.py:_cuarentena_tablas",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/auditoria_flujo_bronce_silver_gold.py",
+      "target": "function:ETL/tools/auditoria_flujo_bronce_silver_gold.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/check_nulls_gold.py",
+      "target": "function:ETL/tools/check_nulls_gold.py:check_nulls_gold",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/check_nulls.py",
+      "target": "function:ETL/tools/check_nulls.py:check_nulls",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/generate_docs.py",
+      "target": "function:ETL/tools/generate_docs.py:make_engine",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/generate_docs.py",
+      "target": "function:ETL/tools/generate_docs.py:load_schemas",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/generate_docs.py",
+      "target": "function:ETL/tools/generate_docs.py:load_tables",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/generate_docs.py",
+      "target": "function:ETL/tools/generate_docs.py:load_columns",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/generate_docs.py",
+      "target": "function:ETL/tools/generate_docs.py:load_primary_keys",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/generate_docs.py",
+      "target": "function:ETL/tools/generate_docs.py:load_indexes",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/generate_docs.py",
+      "target": "function:ETL/tools/generate_docs.py:load_foreign_keys",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/generate_docs.py",
+      "target": "function:ETL/tools/generate_docs.py:load_modules",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/generate_docs.py",
+      "target": "function:ETL/tools/generate_docs.py:load_proc_params",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/generate_docs.py",
+      "target": "function:ETL/tools/generate_docs.py:load_dependencies",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/generate_docs.py",
+      "target": "function:ETL/tools/generate_docs.py:format_type",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/generate_docs.py",
+      "target": "function:ETL/tools/generate_docs.py:safe_filename",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/generate_docs.py",
+      "target": "function:ETL/tools/generate_docs.py:wikilink",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/generate_docs.py",
+      "target": "function:ETL/tools/generate_docs.py:render_table_md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/generate_docs.py",
+      "target": "function:ETL/tools/generate_docs.py:render_module_md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/generate_docs.py",
+      "target": "function:ETL/tools/generate_docs.py:render_schema_md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/generate_docs.py",
+      "target": "function:ETL/tools/generate_docs.py:render_index_md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/generate_docs.py",
+      "target": "function:ETL/tools/generate_docs.py:render_erd_md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/generate_docs.py",
+      "target": "function:ETL/tools/generate_docs.py:render_ddl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/generate_docs.py",
+      "target": "function:ETL/tools/generate_docs.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/inventario_db_completo.py",
+      "target": "function:ETL/tools/inventario_db_completo.py:inventario_completo",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/liberar_cuarentena.py",
+      "target": "function:ETL/tools/liberar_cuarentena.py:liberar_cuarentena",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/list_fact_tables.py",
+      "target": "function:ETL/tools/list_fact_tables.py:list_fact_tables",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/list_gold_tables.py",
+      "target": "function:ETL/tools/list_gold_tables.py:list_gold_tables",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/metrics_gold.py",
+      "target": "function:ETL/tools/metrics_gold.py:is_numeric",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/metrics_gold.py",
+      "target": "function:ETL/tools/metrics_gold.py:metric_gold_tables",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/migration_runner.py",
+      "target": "function:ETL/tools/migration_runner.py:_calcular_hash",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/migration_runner.py",
+      "target": "function:ETL/tools/migration_runner.py:_tabla_migraciones_existe",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/migration_runner.py",
+      "target": "function:ETL/tools/migration_runner.py:_obtener_aplicadas",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/migration_runner.py",
+      "target": "function:ETL/tools/migration_runner.py:_listar_migraciones_disponibles",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/migration_runner.py",
+      "target": "function:ETL/tools/migration_runner.py:_aplicar_migracion",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/migration_runner.py",
+      "target": "function:ETL/tools/migration_runner.py:ejecutar",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/refresh_gold_only.py",
+      "target": "function:ETL/tools/refresh_gold_only.py:refresh_gold",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/reproceso_historico.py",
+      "target": "function:ETL/tools/reproceso_historico.py:contar_registros",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/reproceso_historico.py",
+      "target": "function:ETL/tools/reproceso_historico.py:resetear_tabla",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/reproceso_historico.py",
+      "target": "function:ETL/tools/reproceso_historico.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/reproceso_post_fixes_20260525.py",
+      "target": "function:ETL/tools/reproceso_post_fixes_20260525.py:_conteos",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/reproceso_post_fixes_20260525.py",
+      "target": "function:ETL/tools/reproceso_post_fixes_20260525.py:_imprimir_conteos",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/reproceso_post_fixes_20260525.py",
+      "target": "function:ETL/tools/reproceso_post_fixes_20260525.py:_ejecutar_sql_reparacion",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/reproceso_post_fixes_20260525.py",
+      "target": "function:ETL/tools/reproceso_post_fixes_20260525.py:_reprocesar_silver",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/reproceso_post_fixes_20260525.py",
+      "target": "function:ETL/tools/reproceso_post_fixes_20260525.py:_refrescar_marts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/reproceso_post_fixes_20260525.py",
+      "target": "function:ETL/tools/reproceso_post_fixes_20260525.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/restaurar_todos_los_excels.py",
+      "target": "function:ETL/tools/restaurar_todos_los_excels.py:restaurar_excels",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    }
+  ]
+}

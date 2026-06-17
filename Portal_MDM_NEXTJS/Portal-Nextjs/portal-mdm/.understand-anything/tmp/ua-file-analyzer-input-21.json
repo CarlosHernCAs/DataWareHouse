@@ -1,0 +1,182 @@
+{
+  "projectRoot": "d:/Proyecto2026/ACP_DWH/ACP Proyecciones/Portal_MDM_NEXTJS/Portal-Nextjs/portal-mdm",
+  "batchFiles": [
+    {
+      "path": ".agents/skills/understand-chat/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 55,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/understand-dashboard/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 105,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/understand-diff/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 72,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/understand-domain/extract-domain-context.py",
+      "language": "python",
+      "sizeLines": 428,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/skills/understand-domain/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 140,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/understand-explain/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 58,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/understand-knowledge/merge-knowledge-graph.py",
+      "language": "python",
+      "sizeLines": 397,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/skills/understand-knowledge/parse-knowledge-base.py",
+      "language": "python",
+      "sizeLines": 509,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/skills/understand-knowledge/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 132,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/understand-onboard/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 55,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/understand/build-fingerprints.mjs",
+      "language": "javascript",
+      "sizeLines": 90,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/skills/understand/compute-batches.mjs",
+      "language": "javascript",
+      "sizeLines": 588,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/skills/understand/extract-import-map.mjs",
+      "language": "javascript",
+      "sizeLines": 1627,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/skills/understand/extract-structure.mjs",
+      "language": "javascript",
+      "sizeLines": 334,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/skills/understand/merge-batch-graphs.py",
+      "language": "python",
+      "sizeLines": 1164,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/skills/understand/merge-subdomain-graphs.py",
+      "language": "python",
+      "sizeLines": 308,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/skills/understand/scan-project.mjs",
+      "language": "javascript",
+      "sizeLines": 802,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".agents/skills/understand/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 860,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/understand-chat/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 55,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/understand-dashboard/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 105,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/understand-diff/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 72,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/understand-domain/extract-domain-context.py",
+      "language": "python",
+      "sizeLines": 428,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".claude/skills/understand-domain/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 140,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/understand-explain/SKILL.md",
+      "language": "markdown",
+      "sizeLines": 58,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/understand-knowledge/merge-knowledge-graph.py",
+      "language": "python",
+      "sizeLines": 397,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    ".agents/skills/understand-chat/SKILL.md": [],
+    ".agents/skills/understand-dashboard/SKILL.md": [],
+    ".agents/skills/understand-diff/SKILL.md": [],
+    ".agents/skills/understand-domain/extract-domain-context.py": [],
+    ".agents/skills/understand-domain/SKILL.md": [],
+    ".agents/skills/understand-explain/SKILL.md": [],
+    ".agents/skills/understand-knowledge/merge-knowledge-graph.py": [],
+    ".agents/skills/understand-knowledge/parse-knowledge-base.py": [],
+    ".agents/skills/understand-knowledge/SKILL.md": [],
+    ".agents/skills/understand-onboard/SKILL.md": [],
+    ".agents/skills/understand/build-fingerprints.mjs": [],
+    ".agents/skills/understand/compute-batches.mjs": [],
+    ".agents/skills/understand/extract-import-map.mjs": [],
+    ".agents/skills/understand/extract-structure.mjs": [],
+    ".agents/skills/understand/merge-batch-graphs.py": [],
+    ".agents/skills/understand/merge-subdomain-graphs.py": [],
+    ".agents/skills/understand/scan-project.mjs": [],
+    ".agents/skills/understand/SKILL.md": [],
+    ".claude/skills/understand-chat/SKILL.md": [],
+    ".claude/skills/understand-dashboard/SKILL.md": [],
+    ".claude/skills/understand-diff/SKILL.md": [],
+    ".claude/skills/understand-domain/extract-domain-context.py": [],
+    ".claude/skills/understand-domain/SKILL.md": [],
+    ".claude/skills/understand-explain/SKILL.md": [],
+    ".claude/skills/understand-knowledge/merge-knowledge-graph.py": []
+  }
+}

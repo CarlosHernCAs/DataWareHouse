@@ -1,0 +1,4578 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 31,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "app/api/cc/activity/route.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 56,
+      "nonEmptyLines": 52,
+      "functions": [
+        {
+          "name": "clamp",
+          "startLine": 12,
+          "endLine": 15,
+          "params": [
+            "n",
+            "lo",
+            "hi"
+          ]
+        },
+        {
+          "name": "GET",
+          "startLine": 17,
+          "endLine": 56,
+          "params": [
+            "req"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "GET",
+          "line": 17,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "clamp",
+          "callee": "Number.isFinite",
+          "lineNumber": 13
+        },
+        {
+          "caller": "clamp",
+          "callee": "Math.min",
+          "lineNumber": 14
+        },
+        {
+          "caller": "clamp",
+          "callee": "Math.max",
+          "lineNumber": 14
+        },
+        {
+          "caller": "clamp",
+          "callee": "Math.floor",
+          "lineNumber": 14
+        },
+        {
+          "caller": "GET",
+          "callee": "clamp",
+          "lineNumber": 19
+        },
+        {
+          "caller": "GET",
+          "callee": "Number",
+          "lineNumber": 19
+        },
+        {
+          "caller": "GET",
+          "callee": "url.searchParams.get",
+          "lineNumber": 19
+        },
+        {
+          "caller": "GET",
+          "callee": "await fastapiFetch",
+          "lineNumber": 22
+        },
+        {
+          "caller": "GET",
+          "callee": "z.array(FastApiLogCarga).parse",
+          "lineNumber": 25
+        },
+        {
+          "caller": "GET",
+          "callee": "z.array",
+          "lineNumber": 25
+        },
+        {
+          "caller": "GET",
+          "callee": "parsed.map",
+          "lineNumber": 26
+        },
+        {
+          "caller": "GET",
+          "callee": "isErrored",
+          "lineNumber": 27
+        },
+        {
+          "caller": "GET",
+          "callee": "new Date().toISOString",
+          "lineNumber": 28
+        },
+        {
+          "caller": "GET",
+          "callee": "(c.filas_insertadas ?? 0).toLocaleString",
+          "lineNumber": 31
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 42
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 47
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 51
+        },
+        {
+          "caller": "GET",
+          "callee": "String",
+          "lineNumber": 52
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/api/cc/alerts/[id]/ack/route.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 84,
+      "nonEmptyLines": 75,
+      "functions": [
+        {
+          "name": "validarId",
+          "startLine": 14,
+          "endLine": 19,
+          "params": [
+            "raw"
+          ]
+        },
+        {
+          "name": "POST",
+          "startLine": 21,
+          "endLine": 59,
+          "params": [
+            "req",
+            "ctx"
+          ]
+        },
+        {
+          "name": "DELETE",
+          "startLine": 61,
+          "endLine": 84,
+          "params": [
+            "_req",
+            "ctx"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "POST",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "DELETE",
+          "line": 61,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "validarId",
+          "callee": "raw.trim",
+          "lineNumber": 15
+        },
+        {
+          "caller": "validarId",
+          "callee": "ID_PATTERN.test",
+          "lineNumber": 17
+        },
+        {
+          "caller": "POST",
+          "callee": "validarId",
+          "lineNumber": 26
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 28
+        },
+        {
+          "caller": "POST",
+          "callee": "req.json().catch",
+          "lineNumber": 32
+        },
+        {
+          "caller": "POST",
+          "callee": "req.json",
+          "lineNumber": 32
+        },
+        {
+          "caller": "POST",
+          "callee": "PETICION.parse",
+          "lineNumber": 33
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 35
+        },
+        {
+          "caller": "POST",
+          "callee": "await fastapiFetch",
+          "lineNumber": 42
+        },
+        {
+          "caller": "POST",
+          "callee": "encodeURIComponent",
+          "lineNumber": 43
+        },
+        {
+          "caller": "POST",
+          "callee": "JSON.stringify",
+          "lineNumber": 47
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 50
+        },
+        {
+          "caller": "POST",
+          "callee": "FastApiAccionAck.parse",
+          "lineNumber": 50
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 53
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 54
+        },
+        {
+          "caller": "POST",
+          "callee": "String",
+          "lineNumber": 55
+        },
+        {
+          "caller": "DELETE",
+          "callee": "validarId",
+          "lineNumber": 66
+        },
+        {
+          "caller": "DELETE",
+          "callee": "NextResponse.json",
+          "lineNumber": 68
+        },
+        {
+          "caller": "DELETE",
+          "callee": "await fastapiFetch",
+          "lineNumber": 71
+        },
+        {
+          "caller": "DELETE",
+          "callee": "encodeURIComponent",
+          "lineNumber": 72
+        },
+        {
+          "caller": "DELETE",
+          "callee": "NextResponse.json",
+          "lineNumber": 75
+        },
+        {
+          "caller": "DELETE",
+          "callee": "FastApiAccionAck.parse",
+          "lineNumber": 75
+        },
+        {
+          "caller": "DELETE",
+          "callee": "NextResponse.json",
+          "lineNumber": 78
+        },
+        {
+          "caller": "DELETE",
+          "callee": "NextResponse.json",
+          "lineNumber": 79
+        },
+        {
+          "caller": "DELETE",
+          "callee": "String",
+          "lineNumber": 80
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/api/cc/alerts/route.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 13,
+      "nonEmptyLines": 11,
+      "functions": [
+        {
+          "name": "GET",
+          "startLine": 6,
+          "endLine": 13,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "GET",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "GET",
+          "callee": "computeAlerts",
+          "lineNumber": 7
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 8
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/api/cc/alerts/stream/route.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 110,
+      "nonEmptyLines": 98,
+      "functions": [
+        {
+          "name": "GET",
+          "startLine": 35,
+          "endLine": 110,
+          "params": [
+            "request"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "runtime",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "GET",
+          "line": 35,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "safeEnqueue",
+          "callee": "controller.enqueue",
+          "lineNumber": 46
+        },
+        {
+          "caller": "safeEnqueue",
+          "callee": "encoder.encode",
+          "lineNumber": 46
+        },
+        {
+          "caller": "start",
+          "callee": "computeAlerts",
+          "lineNumber": 54
+        },
+        {
+          "caller": "start",
+          "callee": "alertsFingerprint",
+          "lineNumber": 55
+        },
+        {
+          "caller": "start",
+          "callee": "safeEnqueue",
+          "lineNumber": 56
+        },
+        {
+          "caller": "start",
+          "callee": "JSON.stringify",
+          "lineNumber": 56
+        },
+        {
+          "caller": "start",
+          "callee": "safeEnqueue",
+          "lineNumber": 60
+        },
+        {
+          "caller": "start",
+          "callee": "JSON.stringify",
+          "lineNumber": 60
+        },
+        {
+          "caller": "start",
+          "callee": "setInterval",
+          "lineNumber": 63
+        },
+        {
+          "caller": "start",
+          "callee": "computeAlerts",
+          "lineNumber": 66
+        },
+        {
+          "caller": "start",
+          "callee": "alertsFingerprint",
+          "lineNumber": 67
+        },
+        {
+          "caller": "start",
+          "callee": "safeEnqueue",
+          "lineNumber": 70
+        },
+        {
+          "caller": "start",
+          "callee": "JSON.stringify",
+          "lineNumber": 71
+        },
+        {
+          "caller": "start",
+          "callee": "setInterval",
+          "lineNumber": 79
+        },
+        {
+          "caller": "start",
+          "callee": "safeEnqueue",
+          "lineNumber": 82
+        },
+        {
+          "caller": "start",
+          "callee": "Date.now",
+          "lineNumber": 82
+        },
+        {
+          "caller": "cleanup",
+          "callee": "clearInterval",
+          "lineNumber": 88
+        },
+        {
+          "caller": "cleanup",
+          "callee": "clearInterval",
+          "lineNumber": 89
+        },
+        {
+          "caller": "cleanup",
+          "callee": "controller.close",
+          "lineNumber": 91
+        },
+        {
+          "caller": "start",
+          "callee": "request.signal.addEventListener",
+          "lineNumber": 97
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/api/cc/catalogos/geografia/route.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 38,
+      "nonEmptyLines": 33,
+      "functions": [
+        {
+          "name": "clamp",
+          "startLine": 14,
+          "endLine": 17,
+          "params": [
+            "n",
+            "lo",
+            "hi",
+            "fb"
+          ]
+        },
+        {
+          "name": "GET",
+          "startLine": 19,
+          "endLine": 38,
+          "params": [
+            "req"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "GET",
+          "line": 19,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "clamp",
+          "callee": "Number.isFinite",
+          "lineNumber": 15
+        },
+        {
+          "caller": "clamp",
+          "callee": "Math.min",
+          "lineNumber": 16
+        },
+        {
+          "caller": "clamp",
+          "callee": "Math.max",
+          "lineNumber": 16
+        },
+        {
+          "caller": "clamp",
+          "callee": "Math.floor",
+          "lineNumber": 16
+        },
+        {
+          "caller": "GET",
+          "callee": "clamp",
+          "lineNumber": 21
+        },
+        {
+          "caller": "GET",
+          "callee": "Number",
+          "lineNumber": 21
+        },
+        {
+          "caller": "GET",
+          "callee": "url.searchParams.get",
+          "lineNumber": 21
+        },
+        {
+          "caller": "GET",
+          "callee": "clamp",
+          "lineNumber": 22
+        },
+        {
+          "caller": "GET",
+          "callee": "Number",
+          "lineNumber": 22
+        },
+        {
+          "caller": "GET",
+          "callee": "url.searchParams.get",
+          "lineNumber": 22
+        },
+        {
+          "caller": "GET",
+          "callee": "String",
+          "lineNumber": 22
+        },
+        {
+          "caller": "GET",
+          "callee": "await fastapiFetch",
+          "lineNumber": 25
+        },
+        {
+          "caller": "GET",
+          "callee": "FastApiGeografiaPagina.parse",
+          "lineNumber": 28
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 29
+        },
+        {
+          "caller": "GET",
+          "callee": "mapPagina",
+          "lineNumber": 29
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 32
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 33
+        },
+        {
+          "caller": "GET",
+          "callee": "String",
+          "lineNumber": 34
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/api/cc/catalogos/personal/route.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 38,
+      "nonEmptyLines": 33,
+      "functions": [
+        {
+          "name": "clamp",
+          "startLine": 14,
+          "endLine": 17,
+          "params": [
+            "n",
+            "lo",
+            "hi",
+            "fb"
+          ]
+        },
+        {
+          "name": "GET",
+          "startLine": 19,
+          "endLine": 38,
+          "params": [
+            "req"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "GET",
+          "line": 19,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "clamp",
+          "callee": "Number.isFinite",
+          "lineNumber": 15
+        },
+        {
+          "caller": "clamp",
+          "callee": "Math.min",
+          "lineNumber": 16
+        },
+        {
+          "caller": "clamp",
+          "callee": "Math.max",
+          "lineNumber": 16
+        },
+        {
+          "caller": "clamp",
+          "callee": "Math.floor",
+          "lineNumber": 16
+        },
+        {
+          "caller": "GET",
+          "callee": "clamp",
+          "lineNumber": 21
+        },
+        {
+          "caller": "GET",
+          "callee": "Number",
+          "lineNumber": 21
+        },
+        {
+          "caller": "GET",
+          "callee": "url.searchParams.get",
+          "lineNumber": 21
+        },
+        {
+          "caller": "GET",
+          "callee": "clamp",
+          "lineNumber": 22
+        },
+        {
+          "caller": "GET",
+          "callee": "Number",
+          "lineNumber": 22
+        },
+        {
+          "caller": "GET",
+          "callee": "url.searchParams.get",
+          "lineNumber": 22
+        },
+        {
+          "caller": "GET",
+          "callee": "String",
+          "lineNumber": 22
+        },
+        {
+          "caller": "GET",
+          "callee": "await fastapiFetch",
+          "lineNumber": 25
+        },
+        {
+          "caller": "GET",
+          "callee": "FastApiPersonalPagina.parse",
+          "lineNumber": 28
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 29
+        },
+        {
+          "caller": "GET",
+          "callee": "mapPagina",
+          "lineNumber": 29
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 32
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 33
+        },
+        {
+          "caller": "GET",
+          "callee": "String",
+          "lineNumber": 34
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/api/cc/catalogos/variedades-dim/[id]/desactivar/route.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 30,
+      "nonEmptyLines": 27,
+      "functions": [
+        {
+          "name": "PATCH",
+          "startLine": 7,
+          "endLine": 30,
+          "params": [
+            "_req",
+            "ctx"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "PATCH",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "PATCH",
+          "callee": "Number.parseInt",
+          "lineNumber": 12
+        },
+        {
+          "caller": "PATCH",
+          "callee": "Number.isFinite",
+          "lineNumber": 13
+        },
+        {
+          "caller": "PATCH",
+          "callee": "NextResponse.json",
+          "lineNumber": 14
+        },
+        {
+          "caller": "PATCH",
+          "callee": "await fastapiFetch",
+          "lineNumber": 17
+        },
+        {
+          "caller": "PATCH",
+          "callee": "NextResponse.json",
+          "lineNumber": 21
+        },
+        {
+          "caller": "PATCH",
+          "callee": "FastApiOperacionVariedad.parse",
+          "lineNumber": 21
+        },
+        {
+          "caller": "PATCH",
+          "callee": "NextResponse.json",
+          "lineNumber": 24
+        },
+        {
+          "caller": "PATCH",
+          "callee": "NextResponse.json",
+          "lineNumber": 25
+        },
+        {
+          "caller": "PATCH",
+          "callee": "String",
+          "lineNumber": 26
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/api/cc/catalogos/variedades-dim/[id]/reactivar/route.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 30,
+      "nonEmptyLines": 27,
+      "functions": [
+        {
+          "name": "PATCH",
+          "startLine": 7,
+          "endLine": 30,
+          "params": [
+            "_req",
+            "ctx"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "PATCH",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "PATCH",
+          "callee": "Number.parseInt",
+          "lineNumber": 12
+        },
+        {
+          "caller": "PATCH",
+          "callee": "Number.isFinite",
+          "lineNumber": 13
+        },
+        {
+          "caller": "PATCH",
+          "callee": "NextResponse.json",
+          "lineNumber": 14
+        },
+        {
+          "caller": "PATCH",
+          "callee": "await fastapiFetch",
+          "lineNumber": 17
+        },
+        {
+          "caller": "PATCH",
+          "callee": "NextResponse.json",
+          "lineNumber": 21
+        },
+        {
+          "caller": "PATCH",
+          "callee": "FastApiOperacionVariedad.parse",
+          "lineNumber": 21
+        },
+        {
+          "caller": "PATCH",
+          "callee": "NextResponse.json",
+          "lineNumber": 24
+        },
+        {
+          "caller": "PATCH",
+          "callee": "NextResponse.json",
+          "lineNumber": 25
+        },
+        {
+          "caller": "PATCH",
+          "callee": "String",
+          "lineNumber": 26
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/api/cc/catalogos/variedades-dim/route.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 77,
+      "nonEmptyLines": 69,
+      "functions": [
+        {
+          "name": "clamp",
+          "startLine": 16,
+          "endLine": 19,
+          "params": [
+            "n",
+            "lo",
+            "hi",
+            "fb"
+          ]
+        },
+        {
+          "name": "GET",
+          "startLine": 21,
+          "endLine": 40,
+          "params": [
+            "req"
+          ]
+        },
+        {
+          "name": "POST",
+          "startLine": 42,
+          "endLine": 77,
+          "params": [
+            "req"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "GET",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "POST",
+          "line": 42,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "clamp",
+          "callee": "Number.isFinite",
+          "lineNumber": 17
+        },
+        {
+          "caller": "clamp",
+          "callee": "Math.min",
+          "lineNumber": 18
+        },
+        {
+          "caller": "clamp",
+          "callee": "Math.max",
+          "lineNumber": 18
+        },
+        {
+          "caller": "clamp",
+          "callee": "Math.floor",
+          "lineNumber": 18
+        },
+        {
+          "caller": "GET",
+          "callee": "clamp",
+          "lineNumber": 23
+        },
+        {
+          "caller": "GET",
+          "callee": "Number",
+          "lineNumber": 23
+        },
+        {
+          "caller": "GET",
+          "callee": "url.searchParams.get",
+          "lineNumber": 23
+        },
+        {
+          "caller": "GET",
+          "callee": "clamp",
+          "lineNumber": 24
+        },
+        {
+          "caller": "GET",
+          "callee": "Number",
+          "lineNumber": 24
+        },
+        {
+          "caller": "GET",
+          "callee": "url.searchParams.get",
+          "lineNumber": 24
+        },
+        {
+          "caller": "GET",
+          "callee": "String",
+          "lineNumber": 24
+        },
+        {
+          "caller": "GET",
+          "callee": "await fastapiFetch",
+          "lineNumber": 27
+        },
+        {
+          "caller": "GET",
+          "callee": "FastApiVariedadDimPagina.parse",
+          "lineNumber": 30
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 31
+        },
+        {
+          "caller": "GET",
+          "callee": "mapPagina",
+          "lineNumber": 31
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 34
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 35
+        },
+        {
+          "caller": "GET",
+          "callee": "String",
+          "lineNumber": 36
+        },
+        {
+          "caller": "POST",
+          "callee": "req.json",
+          "lineNumber": 45
+        },
+        {
+          "caller": "POST",
+          "callee": "CrearVariedadInput.parse",
+          "lineNumber": 46
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 48
+        },
+        {
+          "caller": "POST",
+          "callee": "await fastapiFetch",
+          "lineNumber": 57
+        },
+        {
+          "caller": "POST",
+          "callee": "JSON.stringify",
+          "lineNumber": 62
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 68
+        },
+        {
+          "caller": "POST",
+          "callee": "FastApiOperacionVariedad.parse",
+          "lineNumber": 68
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 71
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 72
+        },
+        {
+          "caller": "POST",
+          "callee": "String",
+          "lineNumber": 73
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/api/cc/catalogos/variedades/route.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 38,
+      "nonEmptyLines": 33,
+      "functions": [
+        {
+          "name": "clamp",
+          "startLine": 14,
+          "endLine": 17,
+          "params": [
+            "n",
+            "lo",
+            "hi",
+            "fb"
+          ]
+        },
+        {
+          "name": "GET",
+          "startLine": 19,
+          "endLine": 38,
+          "params": [
+            "req"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "GET",
+          "line": 19,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "clamp",
+          "callee": "Number.isFinite",
+          "lineNumber": 15
+        },
+        {
+          "caller": "clamp",
+          "callee": "Math.min",
+          "lineNumber": 16
+        },
+        {
+          "caller": "clamp",
+          "callee": "Math.max",
+          "lineNumber": 16
+        },
+        {
+          "caller": "clamp",
+          "callee": "Math.floor",
+          "lineNumber": 16
+        },
+        {
+          "caller": "GET",
+          "callee": "clamp",
+          "lineNumber": 21
+        },
+        {
+          "caller": "GET",
+          "callee": "Number",
+          "lineNumber": 21
+        },
+        {
+          "caller": "GET",
+          "callee": "url.searchParams.get",
+          "lineNumber": 21
+        },
+        {
+          "caller": "GET",
+          "callee": "clamp",
+          "lineNumber": 22
+        },
+        {
+          "caller": "GET",
+          "callee": "Number",
+          "lineNumber": 22
+        },
+        {
+          "caller": "GET",
+          "callee": "url.searchParams.get",
+          "lineNumber": 22
+        },
+        {
+          "caller": "GET",
+          "callee": "String",
+          "lineNumber": 22
+        },
+        {
+          "caller": "GET",
+          "callee": "await fastapiFetch",
+          "lineNumber": 25
+        },
+        {
+          "caller": "GET",
+          "callee": "FastApiVariedadMdmPagina.parse",
+          "lineNumber": 28
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 29
+        },
+        {
+          "caller": "GET",
+          "callee": "mapPagina",
+          "lineNumber": 29
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 32
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 33
+        },
+        {
+          "caller": "GET",
+          "callee": "String",
+          "lineNumber": 34
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/api/cc/configuracion/parametros/[nombre]/route.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 56,
+      "nonEmptyLines": 51,
+      "functions": [
+        {
+          "name": "PATCH",
+          "startLine": 12,
+          "endLine": 56,
+          "params": [
+            "req",
+            "ctx"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "PATCH",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "PATCH",
+          "callee": "NOMBRE_PATTERN.test",
+          "lineNumber": 20
+        },
+        {
+          "caller": "PATCH",
+          "callee": "NextResponse.json",
+          "lineNumber": 22
+        },
+        {
+          "caller": "PATCH",
+          "callee": "ActualizarParametroInput.parse",
+          "lineNumber": 30
+        },
+        {
+          "caller": "PATCH",
+          "callee": "req.json",
+          "lineNumber": 30
+        },
+        {
+          "caller": "PATCH",
+          "callee": "NextResponse.json",
+          "lineNumber": 32
+        },
+        {
+          "caller": "PATCH",
+          "callee": "await fastapiFetch",
+          "lineNumber": 39
+        },
+        {
+          "caller": "PATCH",
+          "callee": "encodeURIComponent",
+          "lineNumber": 40
+        },
+        {
+          "caller": "PATCH",
+          "callee": "JSON.stringify",
+          "lineNumber": 44
+        },
+        {
+          "caller": "PATCH",
+          "callee": "NextResponse.json",
+          "lineNumber": 47
+        },
+        {
+          "caller": "PATCH",
+          "callee": "FastApiMensaje.parse",
+          "lineNumber": 47
+        },
+        {
+          "caller": "PATCH",
+          "callee": "NextResponse.json",
+          "lineNumber": 50
+        },
+        {
+          "caller": "PATCH",
+          "callee": "NextResponse.json",
+          "lineNumber": 51
+        },
+        {
+          "caller": "PATCH",
+          "callee": "String",
+          "lineNumber": 52
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/api/cc/configuracion/parametros/route.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 43,
+      "nonEmptyLines": 38,
+      "functions": [
+        {
+          "name": "clamp",
+          "startLine": 13,
+          "endLine": 16,
+          "params": [
+            "n",
+            "lo",
+            "hi",
+            "fb"
+          ]
+        },
+        {
+          "name": "GET",
+          "startLine": 18,
+          "endLine": 43,
+          "params": [
+            "req"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "GET",
+          "line": 18,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "clamp",
+          "callee": "Number.isFinite",
+          "lineNumber": 14
+        },
+        {
+          "caller": "clamp",
+          "callee": "Math.min",
+          "lineNumber": 15
+        },
+        {
+          "caller": "clamp",
+          "callee": "Math.max",
+          "lineNumber": 15
+        },
+        {
+          "caller": "clamp",
+          "callee": "Math.floor",
+          "lineNumber": 15
+        },
+        {
+          "caller": "GET",
+          "callee": "clamp",
+          "lineNumber": 20
+        },
+        {
+          "caller": "GET",
+          "callee": "Number",
+          "lineNumber": 20
+        },
+        {
+          "caller": "GET",
+          "callee": "url.searchParams.get",
+          "lineNumber": 20
+        },
+        {
+          "caller": "GET",
+          "callee": "clamp",
+          "lineNumber": 21
+        },
+        {
+          "caller": "GET",
+          "callee": "Number",
+          "lineNumber": 21
+        },
+        {
+          "caller": "GET",
+          "callee": "url.searchParams.get",
+          "lineNumber": 21
+        },
+        {
+          "caller": "GET",
+          "callee": "await fastapiFetch",
+          "lineNumber": 24
+        },
+        {
+          "caller": "GET",
+          "callee": "FastApiParametrosPagina.parse",
+          "lineNumber": 27
+        },
+        {
+          "caller": "GET",
+          "callee": "parsed.datos.map",
+          "lineNumber": 32
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 34
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 37
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 38
+        },
+        {
+          "caller": "GET",
+          "callee": "String",
+          "lineNumber": 39
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/api/cc/configuracion/perfil/clave/route.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 42,
+      "nonEmptyLines": 38,
+      "functions": [
+        {
+          "name": "POST",
+          "startLine": 13,
+          "endLine": 42,
+          "params": [
+            "req"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "POST",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "POST",
+          "callee": "PETICION.parse",
+          "lineNumber": 16
+        },
+        {
+          "caller": "POST",
+          "callee": "req.json",
+          "lineNumber": 16
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 18
+        },
+        {
+          "caller": "POST",
+          "callee": "await fastapiFetch",
+          "lineNumber": 25
+        },
+        {
+          "caller": "POST",
+          "callee": "JSON.stringify",
+          "lineNumber": 28
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 33
+        },
+        {
+          "caller": "POST",
+          "callee": "FastApiMensaje.parse",
+          "lineNumber": 33
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 36
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 37
+        },
+        {
+          "caller": "POST",
+          "callee": "String",
+          "lineNumber": 38
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/api/cc/configuracion/perfil/route.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 17,
+      "functions": [
+        {
+          "name": "GET",
+          "startLine": 7,
+          "endLine": 19,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "GET",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "GET",
+          "callee": "await fastapiFetch",
+          "lineNumber": 9
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 10
+        },
+        {
+          "caller": "GET",
+          "callee": "mapPerfil",
+          "lineNumber": 10
+        },
+        {
+          "caller": "GET",
+          "callee": "FastApiPerfil.parse",
+          "lineNumber": 10
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 13
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 14
+        },
+        {
+          "caller": "GET",
+          "callee": "String",
+          "lineNumber": 15
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/api/cc/configuracion/reglas/route.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 44,
+      "nonEmptyLines": 39,
+      "functions": [
+        {
+          "name": "clamp",
+          "startLine": 13,
+          "endLine": 16,
+          "params": [
+            "n",
+            "lo",
+            "hi",
+            "fb"
+          ]
+        },
+        {
+          "name": "GET",
+          "startLine": 18,
+          "endLine": 44,
+          "params": [
+            "req"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "GET",
+          "line": 18,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "clamp",
+          "callee": "Number.isFinite",
+          "lineNumber": 14
+        },
+        {
+          "caller": "clamp",
+          "callee": "Math.min",
+          "lineNumber": 15
+        },
+        {
+          "caller": "clamp",
+          "callee": "Math.max",
+          "lineNumber": 15
+        },
+        {
+          "caller": "clamp",
+          "callee": "Math.floor",
+          "lineNumber": 15
+        },
+        {
+          "caller": "GET",
+          "callee": "clamp",
+          "lineNumber": 20
+        },
+        {
+          "caller": "GET",
+          "callee": "Number",
+          "lineNumber": 20
+        },
+        {
+          "caller": "GET",
+          "callee": "url.searchParams.get",
+          "lineNumber": 20
+        },
+        {
+          "caller": "GET",
+          "callee": "clamp",
+          "lineNumber": 21
+        },
+        {
+          "caller": "GET",
+          "callee": "Number",
+          "lineNumber": 21
+        },
+        {
+          "caller": "GET",
+          "callee": "url.searchParams.get",
+          "lineNumber": 21
+        },
+        {
+          "caller": "GET",
+          "callee": "await fastapiFetch",
+          "lineNumber": 24
+        },
+        {
+          "caller": "GET",
+          "callee": "FastApiReglasPagina.parse",
+          "lineNumber": 27
+        },
+        {
+          "caller": "GET",
+          "callee": "parsed.datos.map",
+          "lineNumber": 33
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 35
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 38
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 39
+        },
+        {
+          "caller": "GET",
+          "callee": "String",
+          "lineNumber": 40
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/api/cc/configuracion/usuarios/[nombre]/activar/route.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 31,
+      "functions": [
+        {
+          "name": "POST",
+          "startLine": 9,
+          "endLine": 35,
+          "params": [
+            "_req",
+            "ctx"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "POST",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "POST",
+          "callee": "PATTERN.test",
+          "lineNumber": 14
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 15
+        },
+        {
+          "caller": "POST",
+          "callee": "await fastapiFetch",
+          "lineNumber": 22
+        },
+        {
+          "caller": "POST",
+          "callee": "encodeURIComponent",
+          "lineNumber": 23
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 26
+        },
+        {
+          "caller": "POST",
+          "callee": "FastApiMensaje.parse",
+          "lineNumber": 26
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 29
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 30
+        },
+        {
+          "caller": "POST",
+          "callee": "String",
+          "lineNumber": 31
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/api/cc/configuracion/usuarios/[nombre]/desactivar/route.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 31,
+      "functions": [
+        {
+          "name": "POST",
+          "startLine": 9,
+          "endLine": 35,
+          "params": [
+            "_req",
+            "ctx"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "POST",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "POST",
+          "callee": "PATTERN.test",
+          "lineNumber": 14
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 15
+        },
+        {
+          "caller": "POST",
+          "callee": "await fastapiFetch",
+          "lineNumber": 22
+        },
+        {
+          "caller": "POST",
+          "callee": "encodeURIComponent",
+          "lineNumber": 23
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 26
+        },
+        {
+          "caller": "POST",
+          "callee": "FastApiMensaje.parse",
+          "lineNumber": 26
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 29
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 30
+        },
+        {
+          "caller": "POST",
+          "callee": "String",
+          "lineNumber": 31
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/api/cc/configuracion/usuarios/route.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 61,
+      "nonEmptyLines": 56,
+      "functions": [
+        {
+          "name": "GET",
+          "startLine": 12,
+          "endLine": 25,
+          "params": []
+        },
+        {
+          "name": "POST",
+          "startLine": 27,
+          "endLine": 61,
+          "params": [
+            "req"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "GET",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "POST",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "GET",
+          "callee": "await fastapiFetch",
+          "lineNumber": 14
+        },
+        {
+          "caller": "GET",
+          "callee": "z.array(FastApiUsuario).parse",
+          "lineNumber": 15
+        },
+        {
+          "caller": "GET",
+          "callee": "z.array",
+          "lineNumber": 15
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 16
+        },
+        {
+          "caller": "GET",
+          "callee": "parsed.map",
+          "lineNumber": 16
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 19
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 20
+        },
+        {
+          "caller": "GET",
+          "callee": "String",
+          "lineNumber": 21
+        },
+        {
+          "caller": "POST",
+          "callee": "CrearUsuarioInput.parse",
+          "lineNumber": 30
+        },
+        {
+          "caller": "POST",
+          "callee": "req.json",
+          "lineNumber": 30
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 32
+        },
+        {
+          "caller": "POST",
+          "callee": "await fastapiFetch",
+          "lineNumber": 41
+        },
+        {
+          "caller": "POST",
+          "callee": "JSON.stringify",
+          "lineNumber": 44
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 52
+        },
+        {
+          "caller": "POST",
+          "callee": "mapUsuario",
+          "lineNumber": 52
+        },
+        {
+          "caller": "POST",
+          "callee": "FastApiUsuario.parse",
+          "lineNumber": 52
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 55
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 56
+        },
+        {
+          "caller": "POST",
+          "callee": "String",
+          "lineNumber": 57
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/api/cc/dwh/explorer/route.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 235,
+      "nonEmptyLines": 215,
+      "functions": [
+        {
+          "name": "statsFor",
+          "startLine": 39,
+          "endLine": 67,
+          "params": [
+            "tableName",
+            "corridas",
+            "now"
+          ]
+        },
+        {
+          "name": "deriveStatus",
+          "startLine": 69,
+          "endLine": 86,
+          "params": [
+            "stats",
+            "now"
+          ]
+        },
+        {
+          "name": "shortName",
+          "startLine": 88,
+          "endLine": 91,
+          "params": [
+            "full"
+          ]
+        },
+        {
+          "name": "GET",
+          "startLine": 93,
+          "endLine": 235,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "GET",
+          "line": 93,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "statsFor",
+          "callee": "new Date(when).getTime",
+          "lineNumber": 49
+        },
+        {
+          "caller": "statsFor",
+          "callee": "Number.isFinite",
+          "lineNumber": 50
+        },
+        {
+          "caller": "statsFor",
+          "callee": "new Date(stats.lastLoadAt).getTime",
+          "lineNumber": 56
+        },
+        {
+          "caller": "statsFor",
+          "callee": "isErrored",
+          "lineNumber": 59
+        },
+        {
+          "caller": "statsFor",
+          "callee": "new Date(stats.lastFailedAt).getTime",
+          "lineNumber": 60
+        },
+        {
+          "caller": "statsFor",
+          "callee": "isSuccess",
+          "lineNumber": 64
+        },
+        {
+          "caller": "deriveStatus",
+          "callee": "new Date(stats.lastLoadAt).getTime",
+          "lineNumber": 71
+        },
+        {
+          "caller": "deriveStatus",
+          "callee": "new Date(stats.lastFailedAt).getTime",
+          "lineNumber": 73
+        },
+        {
+          "caller": "deriveStatus",
+          "callee": "new Date(stats.lastFailedAt).getTime",
+          "lineNumber": 77
+        },
+        {
+          "caller": "deriveStatus",
+          "callee": "new Date(stats.lastLoadAt).getTime",
+          "lineNumber": 78
+        },
+        {
+          "caller": "shortName",
+          "callee": "full.indexOf",
+          "lineNumber": 89
+        },
+        {
+          "caller": "shortName",
+          "callee": "full.slice",
+          "lineNumber": 90
+        },
+        {
+          "caller": "GET",
+          "callee": "Promise.all",
+          "lineNumber": 94
+        },
+        {
+          "caller": "GET",
+          "callee": "fastapiFetchSafe",
+          "lineNumber": 95
+        },
+        {
+          "caller": "GET",
+          "callee": "fastapiFetchSafe",
+          "lineNumber": 96
+        },
+        {
+          "caller": "GET",
+          "callee": "z.array(FastApiFact).safeParse",
+          "lineNumber": 99
+        },
+        {
+          "caller": "GET",
+          "callee": "z.array",
+          "lineNumber": 99
+        },
+        {
+          "caller": "GET",
+          "callee": "z.array(FastApiLogCarga).safeParse",
+          "lineNumber": 101
+        },
+        {
+          "caller": "GET",
+          "callee": "z.array",
+          "lineNumber": 101
+        },
+        {
+          "caller": "GET",
+          "callee": "Date.now",
+          "lineNumber": 106
+        },
+        {
+          "caller": "GET",
+          "callee": "silverMap.has",
+          "lineNumber": 116
+        },
+        {
+          "caller": "GET",
+          "callee": "silverMap.set",
+          "lineNumber": 116
+        },
+        {
+          "caller": "GET",
+          "callee": "silverMap.get(f.tabla_destino)!.add",
+          "lineNumber": 117
+        },
+        {
+          "caller": "GET",
+          "callee": "silverMap.get",
+          "lineNumber": 117
+        },
+        {
+          "caller": "GET",
+          "callee": "bronceMap.has",
+          "lineNumber": 121
+        },
+        {
+          "caller": "GET",
+          "callee": "bronceMap.set",
+          "lineNumber": 121
+        },
+        {
+          "caller": "GET",
+          "callee": "bronceMap.get(b)!.add",
+          "lineNumber": 122
+        },
+        {
+          "caller": "GET",
+          "callee": "bronceMap.get",
+          "lineNumber": 122
+        },
+        {
+          "caller": "GET",
+          "callee": "edges.push",
+          "lineNumber": 123
+        },
+        {
+          "caller": "GET",
+          "callee": "goldMap.has",
+          "lineNumber": 128
+        },
+        {
+          "caller": "GET",
+          "callee": "goldMap.set",
+          "lineNumber": 128
+        },
+        {
+          "caller": "GET",
+          "callee": "goldMap.get(g)!.add",
+          "lineNumber": 129
+        },
+        {
+          "caller": "GET",
+          "callee": "goldMap.get",
+          "lineNumber": 129
+        },
+        {
+          "caller": "GET",
+          "callee": "edges.push",
+          "lineNumber": 130
+        },
+        {
+          "caller": "GET",
+          "callee": "facts.find",
+          "lineNumber": 135
+        },
+        {
+          "caller": "GET",
+          "callee": "edges.push",
+          "lineNumber": 137
+        },
+        {
+          "caller": "buildNode",
+          "callee": "statsFor",
+          "lineNumber": 154
+        },
+        {
+          "caller": "buildNode",
+          "callee": "facts.find",
+          "lineNumber": 158
+        },
+        {
+          "caller": "buildNode",
+          "callee": "statsFor",
+          "lineNumber": 160
+        },
+        {
+          "caller": "buildNode",
+          "callee": "shortName",
+          "lineNumber": 176
+        },
+        {
+          "caller": "buildNode",
+          "callee": "Array.from(factsForTable).sort",
+          "lineNumber": 178
+        },
+        {
+          "caller": "buildNode",
+          "callee": "Array.from",
+          "lineNumber": 178
+        },
+        {
+          "caller": "buildNode",
+          "callee": "deriveStatus",
+          "lineNumber": 182
+        },
+        {
+          "caller": "GET",
+          "callee": "Array.from(bronceMap.entries())\n      .sort(([a], [b]) => a.localeCompare(b))\n      .map",
+          "lineNumber": 187
+        },
+        {
+          "caller": "GET",
+          "callee": "Array.from(bronceMap.entries())\n      .sort",
+          "lineNumber": 187
+        },
+        {
+          "caller": "GET",
+          "callee": "Array.from",
+          "lineNumber": 187
+        },
+        {
+          "caller": "GET",
+          "callee": "bronceMap.entries",
+          "lineNumber": 187
+        },
+        {
+          "caller": "GET",
+          "callee": "a.localeCompare",
+          "lineNumber": 188
+        },
+        {
+          "caller": "GET",
+          "callee": "buildNode",
+          "lineNumber": 189
+        },
+        {
+          "caller": "GET",
+          "callee": "Array.from(silverMap.entries())\n      .sort(([a], [b]) => {\n        const fa = facts.find((x) => x.tabla_destino === a)?.orden ?? 999;\n        const fb = facts.find((x) => x.tabla_destino === b)?.orden ?? 999;\n        return fa - fb;\n      })\n      .map",
+          "lineNumber": 190
+        },
+        {
+          "caller": "GET",
+          "callee": "Array.from(silverMap.entries())\n      .sort",
+          "lineNumber": 190
+        },
+        {
+          "caller": "GET",
+          "callee": "Array.from",
+          "lineNumber": 190
+        },
+        {
+          "caller": "GET",
+          "callee": "silverMap.entries",
+          "lineNumber": 190
+        },
+        {
+          "caller": "GET",
+          "callee": "facts.find",
+          "lineNumber": 192
+        },
+        {
+          "caller": "GET",
+          "callee": "facts.find",
+          "lineNumber": 193
+        },
+        {
+          "caller": "GET",
+          "callee": "buildNode",
+          "lineNumber": 196
+        },
+        {
+          "caller": "GET",
+          "callee": "Array.from(goldMap.entries())\n      .sort(([a], [b]) => a.localeCompare(b))\n      .map",
+          "lineNumber": 197
+        },
+        {
+          "caller": "GET",
+          "callee": "Array.from(goldMap.entries())\n      .sort",
+          "lineNumber": 197
+        },
+        {
+          "caller": "GET",
+          "callee": "Array.from",
+          "lineNumber": 197
+        },
+        {
+          "caller": "GET",
+          "callee": "goldMap.entries",
+          "lineNumber": 197
+        },
+        {
+          "caller": "GET",
+          "callee": "a.localeCompare",
+          "lineNumber": 198
+        },
+        {
+          "caller": "GET",
+          "callee": "buildNode",
+          "lineNumber": 199
+        },
+        {
+          "caller": "GET",
+          "callee": "facts\n    .map((f) => {\n      const s = statsFor(f.tabla_destino, corridas, now);\n      return {\n        nombre: f.nombre_fact,\n        orden: f.orden,\n        tablaDestino: f.tabla_destino,\n        fuentesBronce: f.fuentes_bronce,\n        dependencias: f.dependencias,\n        marts: f.marts,\n        estrategiaRerun: f.estrategia_rerun,\n        rowsLast24h: s.rowsLast24h,\n        rejectedLast24h: s.rejectedLast24h,\n        lastLoadAt: s.lastLoadAt,\n        status: deriveStatus(s, now),\n      };\n    })\n    .sort",
+          "lineNumber": 202
+        },
+        {
+          "caller": "GET",
+          "callee": "facts\n    .map",
+          "lineNumber": 202
+        },
+        {
+          "caller": "GET",
+          "callee": "statsFor",
+          "lineNumber": 204
+        },
+        {
+          "caller": "GET",
+          "callee": "deriveStatus",
+          "lineNumber": 216
+        },
+        {
+          "caller": "GET",
+          "callee": "new Date(now).toISOString",
+          "lineNumber": 222
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 234
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 2,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/api/cc/dwh/route.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 59,
+      "nonEmptyLines": 52,
+      "functions": [
+        {
+          "name": "GET",
+          "startLine": 13,
+          "endLine": 59,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "GET",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "GET",
+          "callee": "Promise.all",
+          "lineNumber": 14
+        },
+        {
+          "caller": "GET",
+          "callee": "fastapiFetchSafe",
+          "lineNumber": 15
+        },
+        {
+          "caller": "GET",
+          "callee": "fastapiFetchSafe",
+          "lineNumber": 16
+        },
+        {
+          "caller": "GET",
+          "callee": "z.array(FastApiFact).safeParse",
+          "lineNumber": 19
+        },
+        {
+          "caller": "GET",
+          "callee": "z.array",
+          "lineNumber": 19
+        },
+        {
+          "caller": "GET",
+          "callee": "z.array(FastApiLogCarga).safeParse",
+          "lineNumber": 21
+        },
+        {
+          "caller": "GET",
+          "callee": "z.array",
+          "lineNumber": 21
+        },
+        {
+          "caller": "GET",
+          "callee": "Date.now",
+          "lineNumber": 27
+        },
+        {
+          "caller": "GET",
+          "callee": "new Date(when).getTime",
+          "lineNumber": 37
+        },
+        {
+          "caller": "GET",
+          "callee": "isErrored",
+          "lineNumber": 42
+        },
+        {
+          "caller": "GET",
+          "callee": "isSuccess",
+          "lineNumber": 44
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 56
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/api/cc/etl/runs/[id]/route.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 98,
+      "nonEmptyLines": 92,
+      "functions": [
+        {
+          "name": "durSec",
+          "startLine": 15,
+          "endLine": 24,
+          "params": [
+            "start",
+            "end"
+          ]
+        },
+        {
+          "name": "GET",
+          "startLine": 26,
+          "endLine": 78,
+          "params": [
+            "_req",
+            "ctx"
+          ]
+        },
+        {
+          "name": "DELETE",
+          "startLine": 80,
+          "endLine": 98,
+          "params": [
+            "_req",
+            "ctx"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "GET",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "DELETE",
+          "line": 80,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "durSec",
+          "callee": "new Date(start).getTime",
+          "lineNumber": 20
+        },
+        {
+          "caller": "durSec",
+          "callee": "new Date(end).getTime",
+          "lineNumber": 21
+        },
+        {
+          "caller": "durSec",
+          "callee": "Number.isFinite",
+          "lineNumber": 22
+        },
+        {
+          "caller": "durSec",
+          "callee": "Number.isFinite",
+          "lineNumber": 22
+        },
+        {
+          "caller": "durSec",
+          "callee": "Math.max",
+          "lineNumber": 23
+        },
+        {
+          "caller": "durSec",
+          "callee": "Math.round",
+          "lineNumber": 23
+        },
+        {
+          "caller": "GET",
+          "callee": "await fastapiFetch",
+          "lineNumber": 29
+        },
+        {
+          "caller": "GET",
+          "callee": "encodeURIComponent",
+          "lineNumber": 30
+        },
+        {
+          "caller": "GET",
+          "callee": "FastApiDetalleCorrida.parse",
+          "lineNumber": 32
+        },
+        {
+          "caller": "GET",
+          "callee": "mapCorridaStatus",
+          "lineNumber": 36
+        },
+        {
+          "caller": "GET",
+          "callee": "durSec",
+          "lineNumber": 44
+        },
+        {
+          "caller": "GET",
+          "callee": "d.pasos.map",
+          "lineNumber": 55
+        },
+        {
+          "caller": "GET",
+          "callee": "mapCorridaStatus",
+          "lineNumber": 59
+        },
+        {
+          "caller": "GET",
+          "callee": "durSec",
+          "lineNumber": 62
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 66
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 69
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 73
+        },
+        {
+          "caller": "GET",
+          "callee": "String",
+          "lineNumber": 74
+        },
+        {
+          "caller": "DELETE",
+          "callee": "fastapiFetch",
+          "lineNumber": 83
+        },
+        {
+          "caller": "DELETE",
+          "callee": "encodeURIComponent",
+          "lineNumber": 83
+        },
+        {
+          "caller": "DELETE",
+          "callee": "NextResponse.json",
+          "lineNumber": 86
+        },
+        {
+          "caller": "DELETE",
+          "callee": "NextResponse.json",
+          "lineNumber": 89
+        },
+        {
+          "caller": "DELETE",
+          "callee": "NextResponse.json",
+          "lineNumber": 93
+        },
+        {
+          "caller": "DELETE",
+          "callee": "String",
+          "lineNumber": 94
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/api/cc/etl/runs/route.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 97,
+      "nonEmptyLines": 90,
+      "functions": [
+        {
+          "name": "clamp",
+          "startLine": 14,
+          "endLine": 17,
+          "params": [
+            "n",
+            "lo",
+            "hi"
+          ]
+        },
+        {
+          "name": "GET",
+          "startLine": 19,
+          "endLine": 53,
+          "params": [
+            "req"
+          ]
+        },
+        {
+          "name": "POST",
+          "startLine": 55,
+          "endLine": 97,
+          "params": [
+            "req"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "GET",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "POST",
+          "line": 55,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "clamp",
+          "callee": "Number.isFinite",
+          "lineNumber": 15
+        },
+        {
+          "caller": "clamp",
+          "callee": "Math.min",
+          "lineNumber": 16
+        },
+        {
+          "caller": "clamp",
+          "callee": "Math.max",
+          "lineNumber": 16
+        },
+        {
+          "caller": "clamp",
+          "callee": "Math.floor",
+          "lineNumber": 16
+        },
+        {
+          "caller": "GET",
+          "callee": "clamp",
+          "lineNumber": 21
+        },
+        {
+          "caller": "GET",
+          "callee": "Number",
+          "lineNumber": 21
+        },
+        {
+          "caller": "GET",
+          "callee": "url.searchParams.get",
+          "lineNumber": 21
+        },
+        {
+          "caller": "GET",
+          "callee": "await fastapiFetch",
+          "lineNumber": 24
+        },
+        {
+          "caller": "GET",
+          "callee": "z.array(FastApiLogCarga).parse",
+          "lineNumber": 27
+        },
+        {
+          "caller": "GET",
+          "callee": "z.array",
+          "lineNumber": 27
+        },
+        {
+          "caller": "GET",
+          "callee": "parsed.map",
+          "lineNumber": 28
+        },
+        {
+          "caller": "GET",
+          "callee": "String",
+          "lineNumber": 29
+        },
+        {
+          "caller": "GET",
+          "callee": "mapCorridaStatus",
+          "lineNumber": 32
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 41
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 44
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 48
+        },
+        {
+          "caller": "GET",
+          "callee": "String",
+          "lineNumber": 49
+        },
+        {
+          "caller": "POST",
+          "callee": "LanzarCorridaInput.parse",
+          "lineNumber": 58
+        },
+        {
+          "caller": "POST",
+          "callee": "req.json",
+          "lineNumber": 58
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 60
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 68
+        },
+        {
+          "caller": "POST",
+          "callee": "await fastapiFetch",
+          "lineNumber": 75
+        },
+        {
+          "caller": "POST",
+          "callee": "JSON.stringify",
+          "lineNumber": 78
+        },
+        {
+          "caller": "POST",
+          "callee": "FastApiCorridaIniciada.parse",
+          "lineNumber": 87
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 88
+        },
+        {
+          "caller": "POST",
+          "callee": "mapCorridaIniciada",
+          "lineNumber": 88
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 91
+        },
+        {
+          "caller": "POST",
+          "callee": "NextResponse.json",
+          "lineNumber": 92
+        },
+        {
+          "caller": "POST",
+          "callee": "String",
+          "lineNumber": 93
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/api/cc/etl/trend/route.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 71,
+      "nonEmptyLines": 64,
+      "functions": [
+        {
+          "name": "pad",
+          "startLine": 12,
+          "endLine": 14,
+          "params": [
+            "n"
+          ]
+        },
+        {
+          "name": "toKey",
+          "startLine": 15,
+          "endLine": 17,
+          "params": [
+            "d"
+          ]
+        },
+        {
+          "name": "clamp",
+          "startLine": 18,
+          "endLine": 21,
+          "params": [
+            "n",
+            "lo",
+            "hi"
+          ]
+        },
+        {
+          "name": "GET",
+          "startLine": 23,
+          "endLine": 71,
+          "params": [
+            "req"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "GET",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "pad",
+          "callee": "n.toString().padStart",
+          "lineNumber": 13
+        },
+        {
+          "caller": "pad",
+          "callee": "n.toString",
+          "lineNumber": 13
+        },
+        {
+          "caller": "toKey",
+          "callee": "d.getFullYear",
+          "lineNumber": 16
+        },
+        {
+          "caller": "toKey",
+          "callee": "pad",
+          "lineNumber": 16
+        },
+        {
+          "caller": "toKey",
+          "callee": "d.getMonth",
+          "lineNumber": 16
+        },
+        {
+          "caller": "toKey",
+          "callee": "pad",
+          "lineNumber": 16
+        },
+        {
+          "caller": "toKey",
+          "callee": "d.getDate",
+          "lineNumber": 16
+        },
+        {
+          "caller": "clamp",
+          "callee": "Number.isFinite",
+          "lineNumber": 19
+        },
+        {
+          "caller": "clamp",
+          "callee": "Math.min",
+          "lineNumber": 20
+        },
+        {
+          "caller": "clamp",
+          "callee": "Math.max",
+          "lineNumber": 20
+        },
+        {
+          "caller": "clamp",
+          "callee": "Math.floor",
+          "lineNumber": 20
+        },
+        {
+          "caller": "GET",
+          "callee": "clamp",
+          "lineNumber": 25
+        },
+        {
+          "caller": "GET",
+          "callee": "Number",
+          "lineNumber": 25
+        },
+        {
+          "caller": "GET",
+          "callee": "url.searchParams.get",
+          "lineNumber": 25
+        },
+        {
+          "caller": "GET",
+          "callee": "await fastapiFetch",
+          "lineNumber": 28
+        },
+        {
+          "caller": "GET",
+          "callee": "z.array(FastApiLogCarga).parse",
+          "lineNumber": 31
+        },
+        {
+          "caller": "GET",
+          "callee": "z.array",
+          "lineNumber": 31
+        },
+        {
+          "caller": "GET",
+          "callee": "today.setHours",
+          "lineNumber": 35
+        },
+        {
+          "caller": "GET",
+          "callee": "d.setDate",
+          "lineNumber": 38
+        },
+        {
+          "caller": "GET",
+          "callee": "d.getDate",
+          "lineNumber": 38
+        },
+        {
+          "caller": "GET",
+          "callee": "buckets.set",
+          "lineNumber": 39
+        },
+        {
+          "caller": "GET",
+          "callee": "toKey",
+          "lineNumber": 39
+        },
+        {
+          "caller": "GET",
+          "callee": "toKey",
+          "lineNumber": 45
+        },
+        {
+          "caller": "GET",
+          "callee": "buckets.get",
+          "lineNumber": 46
+        },
+        {
+          "caller": "GET",
+          "callee": "isErrored",
+          "lineNumber": 48
+        },
+        {
+          "caller": "GET",
+          "callee": "isSuccess",
+          "lineNumber": 49
+        },
+        {
+          "caller": "GET",
+          "callee": "[...buckets.entries()].map",
+          "lineNumber": 52
+        },
+        {
+          "caller": "GET",
+          "callee": "buckets.entries",
+          "lineNumber": 52
+        },
+        {
+          "caller": "GET",
+          "callee": "key.slice",
+          "lineNumber": 53
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 57
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 62
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 66
+        },
+        {
+          "caller": "GET",
+          "callee": "String",
+          "lineNumber": 67
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 2,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/api/cc/health/route.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 111,
+      "nonEmptyLines": 99,
+      "functions": [
+        {
+          "name": "GET",
+          "startLine": 27,
+          "endLine": 97,
+          "params": []
+        },
+        {
+          "name": "parseOr",
+          "startLine": 99,
+          "endLine": 111,
+          "params": [
+            "schema",
+            "raw",
+            "fallback"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "GET",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "GET",
+          "callee": "Promise.all",
+          "lineNumber": 28
+        },
+        {
+          "caller": "GET",
+          "callee": "fastapiFetchSafe",
+          "lineNumber": 29
+        },
+        {
+          "caller": "GET",
+          "callee": "fastapiFetchSafe",
+          "lineNumber": 30
+        },
+        {
+          "caller": "GET",
+          "callee": "fastapiFetchSafe",
+          "lineNumber": 31
+        },
+        {
+          "caller": "GET",
+          "callee": "parseOr",
+          "lineNumber": 34
+        },
+        {
+          "caller": "GET",
+          "callee": "parseOr",
+          "lineNumber": 35
+        },
+        {
+          "caller": "GET",
+          "callee": "parseOr",
+          "lineNumber": 36
+        },
+        {
+          "caller": "GET",
+          "callee": "all.includes",
+          "lineNumber": 60
+        },
+        {
+          "caller": "GET",
+          "callee": "all.includes",
+          "lineNumber": 62
+        },
+        {
+          "caller": "GET",
+          "callee": "all.includes",
+          "lineNumber": 69
+        },
+        {
+          "caller": "GET",
+          "callee": "new Date().toISOString",
+          "lineNumber": 86
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 92
+        },
+        {
+          "caller": "parseOr",
+          "callee": "schema.safeParse",
+          "lineNumber": 105
+        },
+        {
+          "caller": "parseOr",
+          "callee": "console.error",
+          "lineNumber": 107
+        },
+        {
+          "caller": "parseOr",
+          "callee": "r.error.issues.slice",
+          "lineNumber": 107
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/api/cc/quality/route.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 37,
+      "nonEmptyLines": 35,
+      "functions": [
+        {
+          "name": "GET",
+          "startLine": 10,
+          "endLine": 37,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "dynamic",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "GET",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "GET",
+          "callee": "await fastapiFetch",
+          "lineNumber": 12
+        },
+        {
+          "caller": "GET",
+          "callee": "FastApiResumenCuarentena.parse",
+          "lineNumber": 13
+        },
+        {
+          "caller": "GET",
+          "callee": "Number",
+          "lineNumber": 21
+        },
+        {
+          "caller": "GET",
+          "callee": "rate.toFixed",
+          "lineNumber": 21
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 23
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 28
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 32
+        },
+        {
+          "caller": "GET",
+          "callee": "String",
+          "lineNumber": 33
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/api/server-fetch.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 175,
+      "nonEmptyLines": 161,
+      "functions": [
+        {
+          "name": "fastapiFetch",
+          "startLine": 43,
+          "endLine": 108,
+          "params": [
+            "path",
+            "init"
+          ]
+        },
+        {
+          "name": "safeJson",
+          "startLine": 110,
+          "endLine": 116,
+          "params": [
+            "text"
+          ]
+        },
+        {
+          "name": "formatFastApiError",
+          "startLine": 128,
+          "endLine": 160,
+          "params": [
+            "parsed"
+          ]
+        },
+        {
+          "name": "fastapiFetchSafe",
+          "startLine": 166,
+          "endLine": 175,
+          "params": [
+            "path",
+            "init"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "FastApiError",
+          "startLine": 23,
+          "endLine": 33,
+          "methods": [
+            "constructor"
+          ],
+          "properties": [
+            "status",
+            "body",
+            "path"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "FastApiError",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "fastapiFetch",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "fastapiFetchSafe",
+          "line": 166,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "constructor",
+          "callee": "super",
+          "lineNumber": 28
+        },
+        {
+          "caller": "fastapiFetch",
+          "callee": "cookies",
+          "lineNumber": 48
+        },
+        {
+          "caller": "fastapiFetch",
+          "callee": "store.get",
+          "lineNumber": 49
+        },
+        {
+          "caller": "fastapiFetch",
+          "callee": "setTimeout",
+          "lineNumber": 52
+        },
+        {
+          "caller": "fastapiFetch",
+          "callee": "controller.abort",
+          "lineNumber": 52
+        },
+        {
+          "caller": "fastapiFetch",
+          "callee": "fetch",
+          "lineNumber": 55
+        },
+        {
+          "caller": "fastapiFetch",
+          "callee": "res.text",
+          "lineNumber": 68
+        },
+        {
+          "caller": "fastapiFetch",
+          "callee": "safeJson",
+          "lineNumber": 69
+        },
+        {
+          "caller": "fastapiFetch",
+          "callee": "formatFastApiError",
+          "lineNumber": 72
+        },
+        {
+          "caller": "fastapiFetch",
+          "callee": "formatFastApiError",
+          "lineNumber": 76
+        },
+        {
+          "caller": "fastapiFetch",
+          "callee": "text.slice",
+          "lineNumber": 77
+        },
+        {
+          "caller": "fastapiFetch",
+          "callee": "console.error",
+          "lineNumber": 79
+        },
+        {
+          "caller": "fastapiFetch",
+          "callee": "console.error",
+          "lineNumber": 90
+        },
+        {
+          "caller": "fastapiFetch",
+          "callee": "console.error",
+          "lineNumber": 98
+        },
+        {
+          "caller": "fastapiFetch",
+          "callee": "String",
+          "lineNumber": 101
+        },
+        {
+          "caller": "fastapiFetch",
+          "callee": "clearTimeout",
+          "lineNumber": 106
+        },
+        {
+          "caller": "safeJson",
+          "callee": "JSON.parse",
+          "lineNumber": 112
+        },
+        {
+          "caller": "formatFastApiError",
+          "callee": "Array.isArray",
+          "lineNumber": 138
+        },
+        {
+          "caller": "formatFastApiError",
+          "callee": "detail\n      .map((item) => {\n        if (!item || typeof item !== \"object\") return String(item);\n        const it = item as { loc?: unknown; msg?: unknown; type?: unknown };\n        const loc = Array.isArray(it.loc)\n          ? it.loc.filter((p) => p !== \"body\").join(\".\")\n          : \"\";\n        const msg = typeof it.msg === \"string\" ? it.msg : \"\";\n        return loc ? `${loc}: ${msg}` : msg;\n      })\n      .filter(Boolean)\n      .join",
+          "lineNumber": 139
+        },
+        {
+          "caller": "formatFastApiError",
+          "callee": "detail\n      .map((item) => {\n        if (!item || typeof item !== \"object\") return String(item);\n        const it = item as { loc?: unknown; msg?: unknown; type?: unknown };\n        const loc = Array.isArray(it.loc)\n          ? it.loc.filter((p) => p !== \"body\").join(\".\")\n          : \"\";\n        const msg = typeof it.msg === \"string\" ? it.msg : \"\";\n        return loc ? `${loc}: ${msg}` : msg;\n      })\n      .filter",
+          "lineNumber": 139
+        },
+        {
+          "caller": "formatFastApiError",
+          "callee": "detail\n      .map",
+          "lineNumber": 139
+        },
+        {
+          "caller": "formatFastApiError",
+          "callee": "String",
+          "lineNumber": 141
+        },
+        {
+          "caller": "formatFastApiError",
+          "callee": "Array.isArray",
+          "lineNumber": 143
+        },
+        {
+          "caller": "formatFastApiError",
+          "callee": "it.loc.filter((p) => p !== \"body\").join",
+          "lineNumber": 144
+        },
+        {
+          "caller": "formatFastApiError",
+          "callee": "it.loc.filter",
+          "lineNumber": 144
+        },
+        {
+          "caller": "formatFastApiError",
+          "callee": "JSON.stringify",
+          "lineNumber": 154
+        },
+        {
+          "caller": "formatFastApiError",
+          "callee": "String",
+          "lineNumber": 159
+        },
+        {
+          "caller": "fastapiFetchSafe",
+          "callee": "await fastapiFetch",
+          "lineNumber": 171
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "lib/control-center/compute-alerts.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 158,
+      "nonEmptyLines": 142,
+      "functions": [
+        {
+          "name": "obtenerIndiceAcks",
+          "startLine": 33,
+          "endLine": 51,
+          "params": []
+        },
+        {
+          "name": "aplicarAck",
+          "startLine": 53,
+          "endLine": 62,
+          "params": [
+            "alert",
+            "idx"
+          ]
+        },
+        {
+          "name": "computeAlerts",
+          "startLine": 64,
+          "endLine": 147,
+          "params": []
+        },
+        {
+          "name": "alertsFingerprint",
+          "startLine": 153,
+          "endLine": 158,
+          "params": [
+            "alerts"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "computeAlerts",
+          "line": 64,
+          "isDefault": false
+        },
+        {
+          "name": "alertsFingerprint",
+          "line": 153,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "obtenerIndiceAcks",
+          "callee": "await fastapiFetchSafe",
+          "lineNumber": 34
+        },
+        {
+          "caller": "obtenerIndiceAcks",
+          "callee": "z.array(FastApiAckAlerta).safeParse",
+          "lineNumber": 42
+        },
+        {
+          "caller": "obtenerIndiceAcks",
+          "callee": "z.array",
+          "lineNumber": 42
+        },
+        {
+          "caller": "obtenerIndiceAcks",
+          "callee": "idx.acked.add",
+          "lineNumber": 45
+        },
+        {
+          "caller": "obtenerIndiceAcks",
+          "callee": "idx.by.set",
+          "lineNumber": 46
+        },
+        {
+          "caller": "obtenerIndiceAcks",
+          "callee": "idx.at.set",
+          "lineNumber": 47
+        },
+        {
+          "caller": "obtenerIndiceAcks",
+          "callee": "idx.comment.set",
+          "lineNumber": 48
+        },
+        {
+          "caller": "aplicarAck",
+          "callee": "idx.acked.has",
+          "lineNumber": 54
+        },
+        {
+          "caller": "aplicarAck",
+          "callee": "idx.by.get",
+          "lineNumber": 58
+        },
+        {
+          "caller": "aplicarAck",
+          "callee": "idx.at.get",
+          "lineNumber": 59
+        },
+        {
+          "caller": "aplicarAck",
+          "callee": "idx.comment.get",
+          "lineNumber": 60
+        },
+        {
+          "caller": "computeAlerts",
+          "callee": "Promise.all",
+          "lineNumber": 65
+        },
+        {
+          "caller": "computeAlerts",
+          "callee": "fastapiFetchSafe",
+          "lineNumber": 66
+        },
+        {
+          "caller": "computeAlerts",
+          "callee": "fastapiFetchSafe",
+          "lineNumber": 67
+        },
+        {
+          "caller": "computeAlerts",
+          "callee": "obtenerIndiceAcks",
+          "lineNumber": 68
+        },
+        {
+          "caller": "computeAlerts",
+          "callee": "z.array(FastApiLogCarga).safeParse",
+          "lineNumber": 72
+        },
+        {
+          "caller": "computeAlerts",
+          "callee": "z.array",
+          "lineNumber": 72
+        },
+        {
+          "caller": "computeAlerts",
+          "callee": "FastApiResumenCuarentena.safeParse",
+          "lineNumber": 75
+        },
+        {
+          "caller": "computeAlerts",
+          "callee": "Date.now",
+          "lineNumber": 84
+        },
+        {
+          "caller": "computeAlerts",
+          "callee": "isErrored",
+          "lineNumber": 88
+        },
+        {
+          "caller": "computeAlerts",
+          "callee": "new Date(when).getTime",
+          "lineNumber": 91
+        },
+        {
+          "caller": "computeAlerts",
+          "callee": "alerts.push",
+          "lineNumber": 92
+        },
+        {
+          "caller": "computeAlerts",
+          "callee": "aplicarAck",
+          "lineNumber": 93
+        },
+        {
+          "caller": "computeAlerts",
+          "callee": "alerts.push",
+          "lineNumber": 109
+        },
+        {
+          "caller": "computeAlerts",
+          "callee": "aplicarAck",
+          "lineNumber": 110
+        },
+        {
+          "caller": "computeAlerts",
+          "callee": "new Date().toISOString",
+          "lineNumber": 116
+        },
+        {
+          "caller": "computeAlerts",
+          "callee": "alerts.unshift",
+          "lineNumber": 125
+        },
+        {
+          "caller": "computeAlerts",
+          "callee": "aplicarAck",
+          "lineNumber": 126
+        },
+        {
+          "caller": "computeAlerts",
+          "callee": "new Date().toISOString",
+          "lineNumber": 133
+        },
+        {
+          "caller": "computeAlerts",
+          "callee": "alerts.sort",
+          "lineNumber": 141
+        },
+        {
+          "caller": "computeAlerts",
+          "callee": "new Date(b.createdAt).getTime",
+          "lineNumber": 143
+        },
+        {
+          "caller": "computeAlerts",
+          "callee": "new Date(a.createdAt).getTime",
+          "lineNumber": 143
+        },
+        {
+          "caller": "alertsFingerprint",
+          "callee": "alerts\n    .map((a) => `${a.id}:${a.severity}:${a.acknowledged ? 1 : 0}`)\n    .sort()\n    .join",
+          "lineNumber": 154
+        },
+        {
+          "caller": "alertsFingerprint",
+          "callee": "alerts\n    .map((a) => `${a.id}:${a.severity}:${a.acknowledged ? 1 : 0}`)\n    .sort",
+          "lineNumber": 154
+        },
+        {
+          "caller": "alertsFingerprint",
+          "callee": "alerts\n    .map",
+          "lineNumber": 154
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 2,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/control-center/etl-status.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 50,
+      "nonEmptyLines": 44,
+      "functions": [
+        {
+          "name": "mapCorridaStatus",
+          "startLine": 29,
+          "endLine": 37,
+          "params": [
+            "estado"
+          ]
+        },
+        {
+          "name": "isErrored",
+          "startLine": 39,
+          "endLine": 41,
+          "params": [
+            "estado"
+          ]
+        },
+        {
+          "name": "isSuccess",
+          "startLine": 43,
+          "endLine": 45,
+          "params": [
+            "estado"
+          ]
+        },
+        {
+          "name": "isTerminal",
+          "startLine": 47,
+          "endLine": 50,
+          "params": [
+            "estado"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "TERMINAL_OK",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "TERMINAL_ERR",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "TERMINAL_CANCEL",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "RUNNING",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "PENDING",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "mapCorridaStatus",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "isErrored",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "isSuccess",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "isTerminal",
+          "line": 47,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "mapCorridaStatus",
+          "callee": "estado.toUpperCase",
+          "lineNumber": 30
+        },
+        {
+          "caller": "mapCorridaStatus",
+          "callee": "TERMINAL_OK.has",
+          "lineNumber": 31
+        },
+        {
+          "caller": "mapCorridaStatus",
+          "callee": "TERMINAL_ERR.has",
+          "lineNumber": 32
+        },
+        {
+          "caller": "mapCorridaStatus",
+          "callee": "TERMINAL_CANCEL.has",
+          "lineNumber": 33
+        },
+        {
+          "caller": "mapCorridaStatus",
+          "callee": "RUNNING.has",
+          "lineNumber": 34
+        },
+        {
+          "caller": "mapCorridaStatus",
+          "callee": "PENDING.has",
+          "lineNumber": 35
+        },
+        {
+          "caller": "isErrored",
+          "callee": "TERMINAL_ERR.has",
+          "lineNumber": 40
+        },
+        {
+          "caller": "isErrored",
+          "callee": "estado.toUpperCase",
+          "lineNumber": 40
+        },
+        {
+          "caller": "isSuccess",
+          "callee": "TERMINAL_OK.has",
+          "lineNumber": 44
+        },
+        {
+          "caller": "isSuccess",
+          "callee": "estado.toUpperCase",
+          "lineNumber": 44
+        },
+        {
+          "caller": "isTerminal",
+          "callee": "estado.toUpperCase",
+          "lineNumber": 48
+        },
+        {
+          "caller": "isTerminal",
+          "callee": "TERMINAL_OK.has",
+          "lineNumber": 49
+        },
+        {
+          "caller": "isTerminal",
+          "callee": "TERMINAL_ERR.has",
+          "lineNumber": 49
+        },
+        {
+          "caller": "isTerminal",
+          "callee": "TERMINAL_CANCEL.has",
+          "lineNumber": 49
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/schemas/catalogos.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 212,
+      "nonEmptyLines": 188,
+      "functions": [
+        {
+          "name": "fastApiPagina",
+          "startLine": 17,
+          "endLine": 23,
+          "params": [
+            "filaSchema"
+          ]
+        },
+        {
+          "name": "mapVariedadMdm",
+          "startLine": 50,
+          "endLine": 58,
+          "params": [
+            "r"
+          ]
+        },
+        {
+          "name": "mapVariedadDim",
+          "startLine": 84,
+          "endLine": 95,
+          "params": [
+            "r"
+          ]
+        },
+        {
+          "name": "mapGeografia",
+          "startLine": 144,
+          "endLine": 158,
+          "params": [
+            "r"
+          ]
+        },
+        {
+          "name": "mapPersonal",
+          "startLine": 186,
+          "endLine": 196,
+          "params": [
+            "r"
+          ]
+        },
+        {
+          "name": "mapPagina",
+          "startLine": 202,
+          "endLine": 212,
+          "params": [
+            "raw",
+            "fn"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "FastApiVariedadMdm",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "FastApiVariedadMdmPagina",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "VariedadMdm",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "mapVariedadMdm",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "FastApiVariedadDim",
+          "line": 64,
+          "isDefault": false
+        },
+        {
+          "name": "FastApiVariedadDimPagina",
+          "line": 72,
+          "isDefault": false
+        },
+        {
+          "name": "VariedadDim",
+          "line": 74,
+          "isDefault": false
+        },
+        {
+          "name": "mapVariedadDim",
+          "line": 84,
+          "isDefault": false
+        },
+        {
+          "name": "CrearVariedadInput",
+          "line": 97,
+          "isDefault": false
+        },
+        {
+          "name": "FastApiOperacionVariedad",
+          "line": 107,
+          "isDefault": false
+        },
+        {
+          "name": "FastApiGeografia",
+          "line": 118,
+          "isDefault": false
+        },
+        {
+          "name": "FastApiGeografiaPagina",
+          "line": 129,
+          "isDefault": false
+        },
+        {
+          "name": "Geografia",
+          "line": 131,
+          "isDefault": false
+        },
+        {
+          "name": "mapGeografia",
+          "line": 144,
+          "isDefault": false
+        },
+        {
+          "name": "FastApiPersonal",
+          "line": 164,
+          "isDefault": false
+        },
+        {
+          "name": "FastApiPersonalPagina",
+          "line": 173,
+          "isDefault": false
+        },
+        {
+          "name": "Personal",
+          "line": 175,
+          "isDefault": false
+        },
+        {
+          "name": "mapPersonal",
+          "line": 186,
+          "isDefault": false
+        },
+        {
+          "name": "mapPagina",
+          "line": 202,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "fastApiPagina",
+          "callee": "z.object",
+          "lineNumber": 18
+        },
+        {
+          "caller": "fastApiPagina",
+          "callee": "z.number().int().nonnegative",
+          "lineNumber": 19
+        },
+        {
+          "caller": "fastApiPagina",
+          "callee": "z.number().int",
+          "lineNumber": 19
+        },
+        {
+          "caller": "fastApiPagina",
+          "callee": "z.number",
+          "lineNumber": 19
+        },
+        {
+          "caller": "fastApiPagina",
+          "callee": "z.number().int().positive",
+          "lineNumber": 20
+        },
+        {
+          "caller": "fastApiPagina",
+          "callee": "z.number().int",
+          "lineNumber": 20
+        },
+        {
+          "caller": "fastApiPagina",
+          "callee": "z.number",
+          "lineNumber": 20
+        },
+        {
+          "caller": "fastApiPagina",
+          "callee": "z.number().int().positive",
+          "lineNumber": 21
+        },
+        {
+          "caller": "fastApiPagina",
+          "callee": "z.number().int",
+          "lineNumber": 21
+        },
+        {
+          "caller": "fastApiPagina",
+          "callee": "z.number",
+          "lineNumber": 21
+        },
+        {
+          "caller": "fastApiPagina",
+          "callee": "z.array",
+          "lineNumber": 22
+        },
+        {
+          "caller": "mapPagina",
+          "callee": "raw.datos.map",
+          "lineNumber": 210
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 19,
+        "functionCount": 6,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/schemas/configuracion.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 275,
+      "nonEmptyLines": 244,
+      "functions": [
+        {
+          "name": "tieneRolMinimo",
+          "startLine": 32,
+          "endLine": 34,
+          "params": [
+            "rol",
+            "requerido"
+          ]
+        },
+        {
+          "name": "mapPerfil",
+          "startLine": 62,
+          "endLine": 70,
+          "params": [
+            "raw"
+          ]
+        },
+        {
+          "name": "mapParametro",
+          "startLine": 134,
+          "endLine": 141,
+          "params": [
+            "raw"
+          ]
+        },
+        {
+          "name": "mapRegla",
+          "startLine": 197,
+          "endLine": 207,
+          "params": [
+            "raw"
+          ]
+        },
+        {
+          "name": "mapUsuario",
+          "startLine": 236,
+          "endLine": 248,
+          "params": [
+            "raw"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "BackendRol",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "tieneRolMinimo",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "ROL_LABEL",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "FastApiPerfil",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "Perfil",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "mapPerfil",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "CambiarClaveInput",
+          "line": 76,
+          "isDefault": false
+        },
+        {
+          "name": "FastApiMensaje",
+          "line": 95,
+          "isDefault": false
+        },
+        {
+          "name": "FastApiParametro",
+          "line": 104,
+          "isDefault": false
+        },
+        {
+          "name": "FastApiParametrosPagina",
+          "line": 111,
+          "isDefault": false
+        },
+        {
+          "name": "Parametro",
+          "line": 118,
+          "isDefault": false
+        },
+        {
+          "name": "ParametrosPagina",
+          "line": 126,
+          "isDefault": false
+        },
+        {
+          "name": "mapParametro",
+          "line": 134,
+          "isDefault": false
+        },
+        {
+          "name": "ActualizarParametroInput",
+          "line": 143,
+          "isDefault": false
+        },
+        {
+          "name": "FastApiRegla",
+          "line": 151,
+          "isDefault": false
+        },
+        {
+          "name": "FastApiReglasPagina",
+          "line": 161,
+          "isDefault": false
+        },
+        {
+          "name": "Regla",
+          "line": 173,
+          "isDefault": false
+        },
+        {
+          "name": "ReglasPagina",
+          "line": 184,
+          "isDefault": false
+        },
+        {
+          "name": "mapRegla",
+          "line": 197,
+          "isDefault": false
+        },
+        {
+          "name": "FastApiUsuario",
+          "line": 213,
+          "isDefault": false
+        },
+        {
+          "name": "Usuario",
+          "line": 224,
+          "isDefault": false
+        },
+        {
+          "name": "mapUsuario",
+          "line": 236,
+          "isDefault": false
+        },
+        {
+          "name": "CrearUsuarioInput",
+          "line": 250,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "mapPerfil",
+          "callee": "BackendRol.safeParse",
+          "lineNumber": 63
+        },
+        {
+          "caller": "mapUsuario",
+          "callee": "BackendRol.safeParse",
+          "lineNumber": 237
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 23,
+        "functionCount": 5,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/schemas/control-center.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 244,
+      "nonEmptyLines": 223,
+      "exports": [
+        {
+          "name": "StatusLevel",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "SystemHealth",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "EtlRun",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "CorridaPaso",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "CorridaDetail",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "EtlTrendPoint",
+          "line": 82,
+          "isDefault": false
+        },
+        {
+          "name": "QualityKpis",
+          "line": 94,
+          "isDefault": false
+        },
+        {
+          "name": "DwhState",
+          "line": 108,
+          "isDefault": false
+        },
+        {
+          "name": "Alert",
+          "line": 117,
+          "isDefault": false
+        },
+        {
+          "name": "FastApiAckAlerta",
+          "line": 133,
+          "isDefault": false
+        },
+        {
+          "name": "FastApiAccionAck",
+          "line": 141,
+          "isDefault": false
+        },
+        {
+          "name": "ActivityEvent",
+          "line": 148,
+          "isDefault": false
+        },
+        {
+          "name": "FastApiLogCarga",
+          "line": 161,
+          "isDefault": false
+        },
+        {
+          "name": "FastApiPasoCorrida",
+          "line": 177,
+          "isDefault": false
+        },
+        {
+          "name": "FastApiDetalleCorrida",
+          "line": 188,
+          "isDefault": false
+        },
+        {
+          "name": "FastApiFact",
+          "line": 211,
+          "isDefault": false
+        },
+        {
+          "name": "FastApiResumenCuarentena",
+          "line": 222,
+          "isDefault": false
+        },
+        {
+          "name": "FastApiHealth",
+          "line": 229,
+          "isDefault": false
+        },
+        {
+          "name": "FastApiFallosRecientes",
+          "line": 239,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 19,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

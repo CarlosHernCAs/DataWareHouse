@@ -1,0 +1,70 @@
+{
+  "nodes": [
+    {
+      "id": "file:backend/.env.example",
+      "type": "config",
+      "name": ".env.example",
+      "filePath": "backend/.env.example",
+      "summary": "File mapped from backend/.env.example with category config.",
+      "tags": [
+        "config",
+        "config",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:backend/.env.template",
+      "type": "config",
+      "name": ".env.template",
+      "filePath": "backend/.env.template",
+      "summary": "File mapped from backend/.env.template with category config.",
+      "tags": [
+        "config",
+        "config",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:backend/README.backend.md",
+      "type": "document",
+      "name": "README.backend.md",
+      "filePath": "backend/README.backend.md",
+      "summary": "File mapped from backend/README.backend.md with category docs.",
+      "tags": [
+        "docs",
+        "markdown",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:backend/RUNBOOK_CONTROL_PLANE_ETL.md",
+      "type": "document",
+      "name": "RUNBOOK_CONTROL_PLANE_ETL.md",
+      "filePath": "backend/RUNBOOK_CONTROL_PLANE_ETL.md",
+      "summary": "File mapped from backend/RUNBOOK_CONTROL_PLANE_ETL.md with category docs.",
+      "tags": [
+        "docs",
+        "markdown",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:backend/requirements.txt",
+      "type": "document",
+      "name": "requirements.txt",
+      "filePath": "backend/requirements.txt",
+      "summary": "File mapped from backend/requirements.txt with category docs.",
+      "tags": [
+        "docs",
+        "txt",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

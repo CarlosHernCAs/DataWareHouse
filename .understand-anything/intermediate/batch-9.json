@@ -1,0 +1,265 @@
+{
+  "nodes": [
+    {
+      "id": "file:ETL/sql_migrations/fase38_renombrar_mart_ciclo_poda.sql",
+      "type": "table",
+      "name": "fase38_renombrar_mart_ciclo_poda.sql",
+      "filePath": "ETL/sql_migrations/fase38_renombrar_mart_ciclo_poda.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase38_renombrar_mart_ciclo_poda.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase39_peso_baya_nullable_historico.sql",
+      "type": "table",
+      "name": "fase39_peso_baya_nullable_historico.sql",
+      "filePath": "ETL/sql_migrations/fase39_peso_baya_nullable_historico.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase39_peso_baya_nullable_historico.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase40_cuarentena_estricta_dims.sql",
+      "type": "table",
+      "name": "fase40_cuarentena_estricta_dims.sql",
+      "filePath": "ETL/sql_migrations/fase40_cuarentena_estricta_dims.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase40_cuarentena_estricta_dims.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase45_eliminar_bridge_geografia_cama.sql",
+      "type": "table",
+      "name": "fase45_eliminar_bridge_geografia_cama.sql",
+      "filePath": "ETL/sql_migrations/fase45_eliminar_bridge_geografia_cama.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase45_eliminar_bridge_geografia_cama.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase46_dim_campana_seed_fechas.sql",
+      "type": "table",
+      "name": "fase46_dim_campana_seed_fechas.sql",
+      "filePath": "ETL/sql_migrations/fase46_dim_campana_seed_fechas.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase46_dim_campana_seed_fechas.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase47_bridge_geo_campana_resolver.sql",
+      "type": "table",
+      "name": "fase47_bridge_geo_campana_resolver.sql",
+      "filePath": "ETL/sql_migrations/fase47_bridge_geo_campana_resolver.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase47_bridge_geo_campana_resolver.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase47b_bridge_geo_campana_fix_columnas.sql",
+      "type": "table",
+      "name": "fase47b_bridge_geo_campana_fix_columnas.sql",
+      "filePath": "ETL/sql_migrations/fase47b_bridge_geo_campana_fix_columnas.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase47b_bridge_geo_campana_fix_columnas.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase47c_bridge_fix_cte.sql",
+      "type": "table",
+      "name": "fase47c_bridge_fix_cte.sql",
+      "filePath": "ETL/sql_migrations/fase47c_bridge_fix_cte.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase47c_bridge_fix_cte.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase48a_resolver_campana_por_fecha.sql",
+      "type": "table",
+      "name": "fase48a_resolver_campana_por_fecha.sql",
+      "filePath": "ETL/sql_migrations/fase48a_resolver_campana_por_fecha.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase48a_resolver_campana_por_fecha.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase48b_bridge_geografia_campana.sql",
+      "type": "table",
+      "name": "fase48b_bridge_geografia_campana.sql",
+      "filePath": "ETL/sql_migrations/fase48b_bridge_geografia_campana.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase48b_bridge_geografia_campana.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase48c_v2_vista_gold_vegetativa.sql",
+      "type": "table",
+      "name": "fase48c_v2_vista_gold_vegetativa.sql",
+      "filePath": "ETL/sql_migrations/fase48c_v2_vista_gold_vegetativa.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase48c_v2_vista_gold_vegetativa.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase48c_vista_gold_vegetativa.sql",
+      "type": "table",
+      "name": "fase48c_vista_gold_vegetativa.sql",
+      "filePath": "ETL/sql_migrations/fase48c_vista_gold_vegetativa.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase48c_vista_gold_vegetativa.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase49_dim_tiempo_campana.sql",
+      "type": "table",
+      "name": "fase49_dim_tiempo_campana.sql",
+      "filePath": "ETL/sql_migrations/fase49_dim_tiempo_campana.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase49_dim_tiempo_campana.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase49b_dim_tiempo_id_campana_fix.sql",
+      "type": "table",
+      "name": "fase49b_dim_tiempo_id_campana_fix.sql",
+      "filePath": "ETL/sql_migrations/fase49b_dim_tiempo_id_campana_fix.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase49b_dim_tiempo_id_campana_fix.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase50_dim_condicion_organico_convencional.sql",
+      "type": "table",
+      "name": "fase50_dim_condicion_organico_convencional.sql",
+      "filePath": "ETL/sql_migrations/fase50_dim_condicion_organico_convencional.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase50_dim_condicion_organico_convencional.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase51_seed_variedad_sin_variedad.sql",
+      "type": "table",
+      "name": "fase51_seed_variedad_sin_variedad.sql",
+      "filePath": "ETL/sql_migrations/fase51_seed_variedad_sin_variedad.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase51_seed_variedad_sin_variedad.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase51a_auditoria_pre_cosecha_historico.sql",
+      "type": "table",
+      "name": "fase51a_auditoria_pre_cosecha_historico.sql",
+      "filePath": "ETL/sql_migrations/fase51a_auditoria_pre_cosecha_historico.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase51a_auditoria_pre_cosecha_historico.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase51b_poblar_bridge_condicion_cosecha.sql",
+      "type": "table",
+      "name": "fase51b_poblar_bridge_condicion_cosecha.sql",
+      "filePath": "ETL/sql_migrations/fase51b_poblar_bridge_condicion_cosecha.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase51b_poblar_bridge_condicion_cosecha.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase52a_conteo_fenologico_id_campana_backfill.sql",
+      "type": "table",
+      "name": "fase52a_conteo_fenologico_id_campana_backfill.sql",
+      "filePath": "ETL/sql_migrations/fase52a_conteo_fenologico_id_campana_backfill.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase52a_conteo_fenologico_id_campana_backfill.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase52b_poblar_bridge_geo_campana_conteo_fenologico.sql",
+      "type": "table",
+      "name": "fase52b_poblar_bridge_geo_campana_conteo_fenologico.sql",
+      "filePath": "ETL/sql_migrations/fase52b_poblar_bridge_geo_campana_conteo_fenologico.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase52b_poblar_bridge_geo_campana_conteo_fenologico.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": []
+}

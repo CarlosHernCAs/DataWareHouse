@@ -1,0 +1,882 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 20,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".claude/skills/understand/languages/cpp.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 47,
+      "nonEmptyLines": 37,
+      "sections": [
+        {
+          "heading": "C++ Language Prompt Snippet",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Key Concepts",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Import Patterns",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "File Patterns",
+          "level": 2,
+          "line": 24
+        },
+        {
+          "heading": "Common Frameworks",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Example Language Notes",
+          "level": 2,
+          "line": 40
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".claude/skills/understand/languages/csharp.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 46,
+      "nonEmptyLines": 36,
+      "sections": [
+        {
+          "heading": "C# Language Prompt Snippet",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Key Concepts",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Import Patterns",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "File Patterns",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Common Frameworks",
+          "level": 2,
+          "line": 31
+        },
+        {
+          "heading": "Example Language Notes",
+          "level": 2,
+          "line": 39
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".claude/skills/understand/languages/css.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 37,
+      "nonEmptyLines": 29,
+      "sections": [
+        {
+          "heading": "CSS Language Prompt Snippet",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Key Concepts",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Notable File Patterns",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Edge Patterns",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "Summary Style",
+          "level": 2,
+          "line": 33
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": ".claude/skills/understand/languages/dockerfile.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 34,
+      "nonEmptyLines": 26,
+      "sections": [
+        {
+          "heading": "Dockerfile Language Prompt Snippet",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Key Concepts",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Notable File Patterns",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Edge Patterns",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Summary Style",
+          "level": 2,
+          "line": 30
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": ".claude/skills/understand/languages/go.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 47,
+      "nonEmptyLines": 37,
+      "sections": [
+        {
+          "heading": "Go Language Prompt Snippet",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Key Concepts",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Import Patterns",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "File Patterns",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Common Frameworks",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Example Language Notes",
+          "level": 2,
+          "line": 40
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".claude/skills/understand/languages/graphql.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 35,
+      "nonEmptyLines": 27,
+      "sections": [
+        {
+          "heading": "GraphQL Language Prompt Snippet",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Key Concepts",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Notable File Patterns",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Edge Patterns",
+          "level": 2,
+          "line": 24
+        },
+        {
+          "heading": "Summary Style",
+          "level": 2,
+          "line": 31
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": ".claude/skills/understand/languages/html.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 34,
+      "nonEmptyLines": 26,
+      "sections": [
+        {
+          "heading": "HTML Language Prompt Snippet",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Key Concepts",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Notable File Patterns",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Edge Patterns",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Summary Style",
+          "level": 2,
+          "line": 30
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": ".claude/skills/understand/languages/java.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 45,
+      "nonEmptyLines": 35,
+      "sections": [
+        {
+          "heading": "Java Language Prompt Snippet",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Key Concepts",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Import Patterns",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "File Patterns",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "Common Frameworks",
+          "level": 2,
+          "line": 30
+        },
+        {
+          "heading": "Example Language Notes",
+          "level": 2,
+          "line": 38
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".claude/skills/understand/languages/javascript.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 46,
+      "nonEmptyLines": 36,
+      "sections": [
+        {
+          "heading": "JavaScript Language Prompt Snippet",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Key Concepts",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Import Patterns",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "File Patterns",
+          "level": 2,
+          "line": 24
+        },
+        {
+          "heading": "Common Frameworks",
+          "level": 2,
+          "line": 31
+        },
+        {
+          "heading": "Example Language Notes",
+          "level": 2,
+          "line": 39
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".claude/skills/understand/languages/json.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 34,
+      "nonEmptyLines": 26,
+      "sections": [
+        {
+          "heading": "JSON Language Prompt Snippet",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Key Concepts",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Notable File Patterns",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Edge Patterns",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Summary Style",
+          "level": 2,
+          "line": 30
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": ".claude/skills/understand/languages/kotlin.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 45,
+      "nonEmptyLines": 35,
+      "sections": [
+        {
+          "heading": "Kotlin Language Prompt Snippet",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Key Concepts",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Import Patterns",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "File Patterns",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "Common Frameworks",
+          "level": 2,
+          "line": 30
+        },
+        {
+          "heading": "Example Language Notes",
+          "level": 2,
+          "line": 38
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".claude/skills/understand/languages/markdown.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 34,
+      "nonEmptyLines": 26,
+      "sections": [
+        {
+          "heading": "Markdown Language Prompt Snippet",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Key Concepts",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Notable File Patterns",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "Edge Patterns",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Summary Style",
+          "level": 2,
+          "line": 30
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": ".claude/skills/understand/languages/php.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 46,
+      "nonEmptyLines": 36,
+      "sections": [
+        {
+          "heading": "PHP Language Prompt Snippet",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Key Concepts",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Import Patterns",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "File Patterns",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Common Frameworks",
+          "level": 2,
+          "line": 31
+        },
+        {
+          "heading": "Example Language Notes",
+          "level": 2,
+          "line": 39
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".claude/skills/understand/languages/protobuf.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 34,
+      "nonEmptyLines": 26,
+      "sections": [
+        {
+          "heading": "Protobuf Language Prompt Snippet",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Key Concepts",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Notable File Patterns",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Edge Patterns",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Summary Style",
+          "level": 2,
+          "line": 30
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": ".claude/skills/understand/languages/python.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 48,
+      "nonEmptyLines": 38,
+      "sections": [
+        {
+          "heading": "Python Language Prompt Snippet",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Key Concepts",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Import Patterns",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "File Patterns",
+          "level": 2,
+          "line": 24
+        },
+        {
+          "heading": "Common Frameworks",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Example Language Notes",
+          "level": 2,
+          "line": 41
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".claude/skills/understand/languages/ruby.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 46,
+      "nonEmptyLines": 36,
+      "sections": [
+        {
+          "heading": "Ruby Language Prompt Snippet",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Key Concepts",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Import Patterns",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "File Patterns",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "Common Frameworks",
+          "level": 2,
+          "line": 31
+        },
+        {
+          "heading": "Example Language Notes",
+          "level": 2,
+          "line": 39
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".claude/skills/understand/languages/rust.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 47,
+      "nonEmptyLines": 37,
+      "sections": [
+        {
+          "heading": "Rust Language Prompt Snippet",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Key Concepts",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Import Patterns",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "File Patterns",
+          "level": 2,
+          "line": 24
+        },
+        {
+          "heading": "Common Frameworks",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Example Language Notes",
+          "level": 2,
+          "line": 40
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".claude/skills/understand/languages/shell.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 35,
+      "nonEmptyLines": 27,
+      "sections": [
+        {
+          "heading": "Shell Language Prompt Snippet",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Key Concepts",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Notable File Patterns",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Edge Patterns",
+          "level": 2,
+          "line": 24
+        },
+        {
+          "heading": "Summary Style",
+          "level": 2,
+          "line": 31
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": ".claude/skills/understand/languages/sql.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 36,
+      "nonEmptyLines": 28,
+      "sections": [
+        {
+          "heading": "SQL Language Prompt Snippet",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Key Concepts",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Notable File Patterns",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Edge Patterns",
+          "level": 2,
+          "line": 25
+        },
+        {
+          "heading": "Summary Style",
+          "level": 2,
+          "line": 32
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": ".claude/skills/understand/languages/swift.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 46,
+      "nonEmptyLines": 36,
+      "sections": [
+        {
+          "heading": "Swift Language Prompt Snippet",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Key Concepts",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Import Patterns",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "File Patterns",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Common Frameworks",
+          "level": 2,
+          "line": 31
+        },
+        {
+          "heading": "Example Language Notes",
+          "level": 2,
+          "line": 39
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    }
+  ]
+}

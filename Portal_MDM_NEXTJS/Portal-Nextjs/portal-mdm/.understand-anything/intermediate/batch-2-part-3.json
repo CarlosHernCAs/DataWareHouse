@@ -1,0 +1,2720 @@
+{
+  "nodes": [
+    {
+      "id": "function:app/(admin)/alerts/alerts-client.tsx:AlertsClient",
+      "type": "function",
+      "name": "AlertsClient",
+      "summary": "Function AlertsClient implementing specific routines inside alerts-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        40,
+        325
+      ]
+    },
+    {
+      "id": "function:app/(admin)/alerts/alerts-client.tsx:SummaryTile",
+      "type": "function",
+      "name": "SummaryTile",
+      "summary": "Function SummaryTile implementing specific routines inside alerts-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        327,
+        354
+      ]
+    },
+    {
+      "id": "function:app/(admin)/alerts/alerts-client.tsx:EmptyState",
+      "type": "function",
+      "name": "EmptyState",
+      "summary": "Function EmptyState implementing specific routines inside alerts-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        364,
+        414
+      ]
+    },
+    {
+      "id": "function:app/(admin)/alerts/alerts-client.tsx:AlertRow",
+      "type": "function",
+      "name": "AlertRow",
+      "summary": "Function AlertRow implementing specific routines inside alerts-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        416,
+        516
+      ]
+    },
+    {
+      "id": "function:app/(admin)/etl-monitor/[id]/etl-run-detail-client.tsx:EtlRunDetailClient",
+      "type": "function",
+      "name": "EtlRunDetailClient",
+      "summary": "Function EtlRunDetailClient implementing specific routines inside etl-run-detail-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        25,
+        232
+      ]
+    },
+    {
+      "id": "function:app/(admin)/etl-monitor/[id]/etl-run-detail-client.tsx:Meta",
+      "type": "function",
+      "name": "Meta",
+      "summary": "Function Meta implementing specific routines inside etl-run-detail-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        252,
+        276
+      ]
+    },
+    {
+      "id": "function:app/(admin)/etl-monitor/[id]/etl-run-detail-client.tsx:PipelineFlow",
+      "type": "function",
+      "name": "PipelineFlow",
+      "summary": "Function PipelineFlow implementing specific routines inside etl-run-detail-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        280,
+        306
+      ]
+    },
+    {
+      "id": "function:app/(admin)/etl-monitor/[id]/etl-run-detail-client.tsx:PasoChip",
+      "type": "function",
+      "name": "PasoChip",
+      "summary": "Function PasoChip implementing specific routines inside etl-run-detail-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        308,
+        345
+      ]
+    },
+    {
+      "id": "function:app/(admin)/etl-monitor/[id]/etl-run-detail-client.tsx:pasoTone",
+      "type": "function",
+      "name": "pasoTone",
+      "summary": "Function pasoTone implementing specific routines inside etl-run-detail-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        347,
+        381
+      ]
+    },
+    {
+      "id": "function:app/(admin)/etl-monitor/[id]/etl-run-detail-client.tsx:PasosTable",
+      "type": "function",
+      "name": "PasosTable",
+      "summary": "Function PasosTable implementing specific routines inside etl-run-detail-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        385,
+        445
+      ]
+    },
+    {
+      "id": "function:app/(admin)/etl-monitor/[id]/page.tsx:EtlRunDetailPage",
+      "type": "function",
+      "name": "EtlRunDetailPage",
+      "summary": "Function EtlRunDetailPage implementing specific routines inside page.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        8,
+        26
+      ]
+    },
+    {
+      "id": "function:app/(admin)/etl-monitor/etl-monitor-client.tsx:EtlMonitorClient",
+      "type": "function",
+      "name": "EtlMonitorClient",
+      "summary": "Function EtlMonitorClient implementing specific routines inside etl-monitor-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        36,
+        90
+      ]
+    },
+    {
+      "id": "function:app/(admin)/etl-monitor/etl-monitor-client.tsx:LiveTab",
+      "type": "function",
+      "name": "LiveTab",
+      "summary": "Function LiveTab implementing specific routines inside etl-monitor-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        94,
+        155
+      ]
+    },
+    {
+      "id": "function:app/(admin)/etl-monitor/etl-monitor-client.tsx:EmptyLive",
+      "type": "function",
+      "name": "EmptyLive",
+      "summary": "Function EmptyLive implementing specific routines inside etl-monitor-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        157,
+        181
+      ]
+    },
+    {
+      "id": "function:app/(admin)/etl-monitor/etl-monitor-client.tsx:HistoryTab",
+      "type": "function",
+      "name": "HistoryTab",
+      "summary": "Function HistoryTab implementing specific routines inside etl-monitor-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        185,
+        363
+      ]
+    },
+    {
+      "id": "function:app/(admin)/etl-monitor/etl-monitor-client.tsx:ErrorPanel",
+      "type": "function",
+      "name": "ErrorPanel",
+      "summary": "Function ErrorPanel implementing specific routines inside etl-monitor-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        367,
+        390
+      ]
+    },
+    {
+      "id": "function:app/(admin)/etl-monitor/etl-monitor-client.tsx:DurationCell",
+      "type": "function",
+      "name": "DurationCell",
+      "summary": "Function DurationCell implementing specific routines inside etl-monitor-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        392,
+        403
+      ]
+    },
+    {
+      "id": "function:app/(admin)/etl-monitor/etl-monitor-client.tsx:ErrorPill",
+      "type": "function",
+      "name": "ErrorPill",
+      "summary": "Function ErrorPill implementing specific routines inside etl-monitor-client.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        405,
+        415
+      ]
+    },
+    {
+      "id": "function:app/(admin)/etl-monitor/page.tsx:EtlMonitorPage",
+      "type": "function",
+      "name": "EtlMonitorPage",
+      "summary": "Function EtlMonitorPage implementing specific routines inside page.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        10,
+        28
+      ]
+    },
+    {
+      "id": "function:app/error.tsx:GlobalError",
+      "type": "function",
+      "name": "GlobalError",
+      "summary": "Function GlobalError implementing specific routines inside error.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        7,
+        46
+      ]
+    },
+    {
+      "id": "function:app/not-found.tsx:NotFound",
+      "type": "function",
+      "name": "NotFound",
+      "summary": "Function NotFound implementing specific routines inside not-found.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        5,
+        31
+      ]
+    },
+    {
+      "id": "function:components/control-center/active-run-card.tsx:ActiveRunCard",
+      "type": "function",
+      "name": "ActiveRunCard",
+      "summary": "Function ActiveRunCard implementing specific routines inside active-run-card.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        41,
+        180
+      ]
+    },
+    {
+      "id": "function:components/control-center/active-run-card.tsx:PipelineStrip",
+      "type": "function",
+      "name": "PipelineStrip",
+      "summary": "Function PipelineStrip implementing specific routines inside active-run-card.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        184,
+        213
+      ]
+    },
+    {
+      "id": "function:components/control-center/active-run-card.tsx:pasoBg",
+      "type": "function",
+      "name": "pasoBg",
+      "summary": "Function pasoBg implementing specific routines inside active-run-card.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        215,
+        228
+      ]
+    },
+    {
+      "id": "function:components/control-center/active-run-card.tsx:toneBorderLeft",
+      "type": "function",
+      "name": "toneBorderLeft",
+      "summary": "Function toneBorderLeft implementing specific routines inside active-run-card.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        230,
+        243
+      ]
+    },
+    {
+      "id": "function:components/control-center/active-run-card.tsx:mapCorridaStatus",
+      "type": "function",
+      "name": "mapCorridaStatus",
+      "summary": "Function mapCorridaStatus implementing specific routines inside active-run-card.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        246,
+        269
+      ]
+    },
+    {
+      "id": "function:components/control-center/dashboard-card-frame.tsx:DashboardCardFrame",
+      "type": "function",
+      "name": "DashboardCardFrame",
+      "summary": "Function DashboardCardFrame implementing specific routines inside dashboard-card-frame.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        27,
+        107
+      ]
+    },
+    {
+      "id": "function:components/control-center/dashboard-cards.tsx:timeAgo",
+      "type": "function",
+      "name": "timeAgo",
+      "summary": "Function timeAgo implementing specific routines inside dashboard-cards.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        56,
+        67
+      ]
+    },
+    {
+      "id": "function:components/control-center/dashboard-cards.tsx:toneClasses",
+      "type": "function",
+      "name": "toneClasses",
+      "summary": "Function toneClasses implementing specific routines inside dashboard-cards.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        69,
+        87
+      ]
+    },
+    {
+      "id": "function:components/control-center/dashboard-cards.tsx:ErrorState",
+      "type": "function",
+      "name": "ErrorState",
+      "summary": "Function ErrorState implementing specific routines inside dashboard-cards.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        89,
+        118
+      ]
+    },
+    {
+      "id": "function:components/control-center/dashboard-cards.tsx:GlobalStatusCard",
+      "type": "function",
+      "name": "GlobalStatusCard",
+      "summary": "Function GlobalStatusCard implementing specific routines inside dashboard-cards.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        133,
+        160
+      ]
+    },
+    {
+      "id": "function:components/control-center/dashboard-cards.tsx:StatusTile",
+      "type": "function",
+      "name": "StatusTile",
+      "summary": "Function StatusTile implementing specific routines inside dashboard-cards.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        162,
+        181
+      ]
+    },
+    {
+      "id": "function:components/control-center/dashboard-cards.tsx:RecentActivityCard",
+      "type": "function",
+      "name": "RecentActivityCard",
+      "summary": "Function RecentActivityCard implementing specific routines inside dashboard-cards.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        185,
+        237
+      ]
+    },
+    {
+      "id": "function:components/control-center/dashboard-cards.tsx:ActivityDot",
+      "type": "function",
+      "name": "ActivityDot",
+      "summary": "Function ActivityDot implementing specific routines inside dashboard-cards.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        239,
+        256
+      ]
+    },
+    {
+      "id": "function:components/control-center/dashboard-cards.tsx:ActiveAlertsCard",
+      "type": "function",
+      "name": "ActiveAlertsCard",
+      "summary": "Function ActiveAlertsCard implementing specific routines inside dashboard-cards.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        260,
+        340
+      ]
+    },
+    {
+      "id": "function:components/control-center/dashboard-cards.tsx:EtlTrendCard",
+      "type": "function",
+      "name": "EtlTrendCard",
+      "summary": "Function EtlTrendCard implementing specific routines inside dashboard-cards.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        344,
+        365
+      ]
+    },
+    {
+      "id": "function:components/control-center/dashboard-cards.tsx:DwhStateCard",
+      "type": "function",
+      "name": "DwhStateCard",
+      "summary": "Function DwhStateCard implementing specific routines inside dashboard-cards.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        369,
+        428
+      ]
+    },
+    {
+      "id": "function:components/control-center/dashboard-cards.tsx:Stat",
+      "type": "function",
+      "name": "Stat",
+      "summary": "Function Stat implementing specific routines inside dashboard-cards.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        430,
+        457
+      ]
+    },
+    {
+      "id": "function:components/control-center/dashboard-cards.tsx:QualitySummaryCard",
+      "type": "function",
+      "name": "QualitySummaryCard",
+      "summary": "Function QualitySummaryCard implementing specific routines inside dashboard-cards.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        461,
+        520
+      ]
+    },
+    {
+      "id": "function:components/control-center/dashboard-cards.tsx:LastSyncBadge",
+      "type": "function",
+      "name": "LastSyncBadge",
+      "summary": "Function LastSyncBadge implementing specific routines inside dashboard-cards.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        534,
+        560
+      ]
+    },
+    {
+      "id": "function:components/control-center/dashboard-cards.tsx:EmptyState",
+      "type": "function",
+      "name": "EmptyState",
+      "summary": "Function EmptyState implementing specific routines inside dashboard-cards.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        570,
+        611
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-fact-drawer.tsx:DwhFactDrawer",
+      "type": "function",
+      "name": "DwhFactDrawer",
+      "summary": "Function DwhFactDrawer implementing specific routines inside dwh-fact-drawer.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        42,
+        67
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-fact-drawer.tsx:DrawerBody",
+      "type": "function",
+      "name": "DrawerBody",
+      "summary": "Function DrawerBody implementing specific routines inside dwh-fact-drawer.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        75,
+        145
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-fact-drawer.tsx:FactDetail",
+      "type": "function",
+      "name": "FactDetail",
+      "summary": "Function FactDetail implementing specific routines inside dwh-fact-drawer.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        149,
+        184
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-fact-drawer.tsx:NonFactDetail",
+      "type": "function",
+      "name": "NonFactDetail",
+      "summary": "Function NonFactDetail implementing specific routines inside dwh-fact-drawer.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        186,
+        209
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-fact-drawer.tsx:Metric",
+      "type": "function",
+      "name": "Metric",
+      "summary": "Function Metric implementing specific routines inside dwh-fact-drawer.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        220,
+        243
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-fact-drawer.tsx:Section",
+      "type": "function",
+      "name": "Section",
+      "summary": "Function Section implementing specific routines inside dwh-fact-drawer.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        245,
+        263
+      ]
+    },
+    {
+      "id": "function:components/control-center/dwh-fact-drawer.tsx:TableList",
+      "type": "function",
+      "name": "TableList",
+      "summary": "Function TableList implementing specific routines inside dwh-fact-drawer.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        265,
+        279
+      ]
+    },
+    {
+      "id": "function:components/control-center/hero-kpis.tsx:HeroKpis",
+      "type": "function",
+      "name": "HeroKpis",
+      "summary": "Function HeroKpis implementing specific routines inside hero-kpis.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        49,
+        159
+      ]
+    },
+    {
+      "id": "function:components/control-center/hero-kpis.tsx:KpiTile",
+      "type": "function",
+      "name": "KpiTile",
+      "summary": "Function KpiTile implementing specific routines inside hero-kpis.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        165,
+        253
+      ]
+    },
+    {
+      "id": "function:components/control-center/hero-kpis.tsx:DeltaChip",
+      "type": "function",
+      "name": "DeltaChip",
+      "summary": "Function DeltaChip implementing specific routines inside hero-kpis.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        255,
+        275
+      ]
+    },
+    {
+      "id": "function:components/control-center/hero-kpis.tsx:toneTextClass",
+      "type": "function",
+      "name": "toneTextClass",
+      "summary": "Function toneTextClass implementing specific routines inside hero-kpis.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        277,
+        288
+      ]
+    },
+    {
+      "id": "function:components/control-center/hero-kpis.tsx:toneBgClass",
+      "type": "function",
+      "name": "toneBgClass",
+      "summary": "Function toneBgClass implementing specific routines inside hero-kpis.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        290,
+        301
+      ]
+    },
+    {
+      "id": "function:components/control-center/hero-kpis.tsx:toneBorderClass",
+      "type": "function",
+      "name": "toneBorderClass",
+      "summary": "Function toneBorderClass implementing specific routines inside hero-kpis.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        303,
+        314
+      ]
+    },
+    {
+      "id": "function:components/control-center/hero-kpis.tsx:deltaFromCounts",
+      "type": "function",
+      "name": "deltaFromCounts",
+      "summary": "Function deltaFromCounts implementing specific routines inside hero-kpis.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        316,
+        329
+      ]
+    },
+    {
+      "id": "function:components/control-center/live-heartbeat.tsx:LiveHeartbeat",
+      "type": "function",
+      "name": "LiveHeartbeat",
+      "summary": "Function LiveHeartbeat implementing specific routines inside live-heartbeat.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        48,
+        88
+      ]
+    },
+    {
+      "id": "function:components/control-center/live-heartbeat.tsx:deriveStatus",
+      "type": "function",
+      "name": "deriveStatus",
+      "summary": "Function deriveStatus implementing specific routines inside live-heartbeat.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        92,
+        105
+      ]
+    },
+    {
+      "id": "function:components/control-center/live-heartbeat.tsx:computeLabel",
+      "type": "function",
+      "name": "computeLabel",
+      "summary": "Function computeLabel implementing specific routines inside live-heartbeat.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        107,
+        119
+      ]
+    },
+    {
+      "id": "function:components/control-center/live-heartbeat.tsx:statusDotClass",
+      "type": "function",
+      "name": "statusDotClass",
+      "summary": "Function statusDotClass implementing specific routines inside live-heartbeat.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        121,
+        132
+      ]
+    },
+    {
+      "id": "function:components/control-center/live-heartbeat.tsx:statusTextClass",
+      "type": "function",
+      "name": "statusTextClass",
+      "summary": "Function statusTextClass implementing specific routines inside live-heartbeat.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        134,
+        145
+      ]
+    },
+    {
+      "id": "function:components/control-center/live-heartbeat.tsx:ariaLabel",
+      "type": "function",
+      "name": "ariaLabel",
+      "summary": "Function ariaLabel implementing specific routines inside live-heartbeat.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        147,
+        158
+      ]
+    },
+    {
+      "id": "function:components/data-table/data-table.tsx:DataTable",
+      "type": "function",
+      "name": "DataTable",
+      "summary": "Function DataTable implementing specific routines inside data-table.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        33,
+        200
+      ]
+    },
+    {
+      "id": "function:components/data-table/data-view.tsx:DataView",
+      "type": "function",
+      "name": "DataView",
+      "summary": "Function DataView implementing specific routines inside data-view.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        43,
+        84
+      ]
+    },
+    {
+      "id": "function:components/data-table/data-view.tsx:exportToCsv",
+      "type": "function",
+      "name": "exportToCsv",
+      "summary": "Function exportToCsv implementing specific routines inside data-view.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        90,
+        113
+      ]
+    },
+    {
+      "id": "function:components/layout/command-palette.tsx:CommandPalette",
+      "type": "function",
+      "name": "CommandPalette",
+      "summary": "Function CommandPalette implementing specific routines inside command-palette.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        40,
+        313
+      ]
+    },
+    {
+      "id": "function:components/layout/command-palette.tsx:PaletteItem",
+      "type": "function",
+      "name": "PaletteItem",
+      "summary": "Function PaletteItem implementing specific routines inside command-palette.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        315,
+        357
+      ]
+    },
+    {
+      "id": "function:components/layout/command-palette.tsx:CommandPaletteTrigger",
+      "type": "function",
+      "name": "CommandPaletteTrigger",
+      "summary": "Function CommandPaletteTrigger implementing specific routines inside command-palette.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        372,
+        403
+      ]
+    },
+    {
+      "id": "file:components/layout/role-shell.tsx",
+      "type": "file",
+      "name": "role-shell.tsx",
+      "filePath": "components/layout/role-shell.tsx",
+      "summary": "Source code file implementing components or logic for role-shell.tsx.",
+      "tags": [
+        "code",
+        "typescript",
+        "ui-component"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:components/layout/role-shell.tsx:RoleShell",
+      "type": "function",
+      "name": "RoleShell",
+      "summary": "Function RoleShell implementing specific routines inside role-shell.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        59,
+        192
+      ]
+    },
+    {
+      "id": "function:components/layout/role-shell.tsx:SystemStatusStrip",
+      "type": "function",
+      "name": "SystemStatusStrip",
+      "summary": "Function SystemStatusStrip implementing specific routines inside role-shell.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        194,
+        260
+      ]
+    },
+    {
+      "id": "function:components/layout/role-shell.tsx:StatusDot",
+      "type": "function",
+      "name": "StatusDot",
+      "summary": "Function StatusDot implementing specific routines inside role-shell.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        262,
+        274
+      ]
+    },
+    {
+      "id": "function:components/layout/role-shell.tsx:toneFor",
+      "type": "function",
+      "name": "toneFor",
+      "summary": "Function toneFor implementing specific routines inside role-shell.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        276,
+        294
+      ]
+    },
+    {
+      "id": "file:components/ui/async-boundary.tsx",
+      "type": "file",
+      "name": "async-boundary.tsx",
+      "filePath": "components/ui/async-boundary.tsx",
+      "summary": "Source code file implementing components or logic for async-boundary.tsx.",
+      "tags": [
+        "code",
+        "typescript",
+        "ui-component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:components/ui/async-boundary.tsx:AsyncBoundary",
+      "type": "function",
+      "name": "AsyncBoundary",
+      "summary": "Function AsyncBoundary implementing specific routines inside async-boundary.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        57,
+        100
+      ]
+    },
+    {
+      "id": "function:components/ui/async-boundary.tsx:DefaultSkeleton",
+      "type": "function",
+      "name": "DefaultSkeleton",
+      "summary": "Function DefaultSkeleton implementing specific routines inside async-boundary.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        106,
+        114
+      ]
+    },
+    {
+      "id": "function:components/ui/async-boundary.tsx:DefaultError",
+      "type": "function",
+      "name": "DefaultError",
+      "summary": "Function DefaultError implementing specific routines inside async-boundary.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        116,
+        148
+      ]
+    },
+    {
+      "id": "function:components/ui/async-boundary.tsx:EmptyState",
+      "type": "function",
+      "name": "EmptyState",
+      "summary": "Function EmptyState implementing specific routines inside async-boundary.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        150,
+        179
+      ]
+    },
+    {
+      "id": "file:components/ui/button.tsx",
+      "type": "file",
+      "name": "button.tsx",
+      "filePath": "components/ui/button.tsx",
+      "summary": "Source code file implementing components or logic for button.tsx.",
+      "tags": [
+        "code",
+        "typescript",
+        "ui-component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:components/ui/dialog.tsx",
+      "type": "file",
+      "name": "dialog.tsx",
+      "filePath": "components/ui/dialog.tsx",
+      "summary": "Source code file implementing components or logic for dialog.tsx.",
+      "tags": [
+        "code",
+        "typescript",
+        "ui-component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:components/ui/dialog.tsx:DialogHeader",
+      "type": "function",
+      "name": "DialogHeader",
+      "summary": "Function DialogHeader implementing specific routines inside dialog.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        57,
+        61
+      ]
+    },
+    {
+      "id": "function:components/ui/dialog.tsx:DialogFooter",
+      "type": "function",
+      "name": "DialogFooter",
+      "summary": "Function DialogFooter implementing specific routines inside dialog.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        63,
+        70
+      ]
+    },
+    {
+      "id": "file:components/ui/dropdown-menu.tsx",
+      "type": "file",
+      "name": "dropdown-menu.tsx",
+      "filePath": "components/ui/dropdown-menu.tsx",
+      "summary": "Source code file implementing components or logic for dropdown-menu.tsx.",
+      "tags": [
+        "code",
+        "typescript",
+        "ui-component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:components/ui/progress.tsx",
+      "type": "file",
+      "name": "progress.tsx",
+      "filePath": "components/ui/progress.tsx",
+      "summary": "Source code file implementing components or logic for progress.tsx.",
+      "tags": [
+        "code",
+        "typescript",
+        "ui-component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:components/ui/segment-error.tsx",
+      "type": "file",
+      "name": "segment-error.tsx",
+      "filePath": "components/ui/segment-error.tsx",
+      "summary": "Source code file implementing components or logic for segment-error.tsx.",
+      "tags": [
+        "code",
+        "typescript",
+        "ui-component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:components/ui/segment-error.tsx:SegmentError",
+      "type": "function",
+      "name": "SegmentError",
+      "summary": "Function SegmentError implementing specific routines inside segment-error.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        7,
+        36
+      ]
+    },
+    {
+      "id": "file:components/ui/skeleton.tsx",
+      "type": "file",
+      "name": "skeleton.tsx",
+      "filePath": "components/ui/skeleton.tsx",
+      "summary": "Source code file implementing components or logic for skeleton.tsx.",
+      "tags": [
+        "code",
+        "typescript",
+        "ui-component"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:components/ui/skeleton.tsx:Skeleton",
+      "type": "function",
+      "name": "Skeleton",
+      "summary": "Function Skeleton implementing specific routines inside skeleton.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        3,
+        10
+      ]
+    },
+    {
+      "id": "function:components/ui/skeleton.tsx:KpiSkeleton",
+      "type": "function",
+      "name": "KpiSkeleton",
+      "summary": "Function KpiSkeleton implementing specific routines inside skeleton.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        12,
+        25
+      ]
+    },
+    {
+      "id": "function:components/ui/skeleton.tsx:TableSkeleton",
+      "type": "function",
+      "name": "TableSkeleton",
+      "summary": "Function TableSkeleton implementing specific routines inside skeleton.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        27,
+        46
+      ]
+    },
+    {
+      "id": "function:components/ui/skeleton.tsx:ChartSkeleton",
+      "type": "function",
+      "name": "ChartSkeleton",
+      "summary": "Function ChartSkeleton implementing specific routines inside skeleton.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        48,
+        59
+      ]
+    },
+    {
+      "id": "function:hooks/use-control-center.ts:fetchAndParse",
+      "type": "function",
+      "name": "fetchAndParse",
+      "summary": "Function fetchAndParse implementing specific routines inside use-control-center.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        36,
+        64
+      ]
+    },
+    {
+      "id": "function:hooks/use-control-center.ts:useSystemHealth",
+      "type": "function",
+      "name": "useSystemHealth",
+      "summary": "Function useSystemHealth implementing specific routines inside use-control-center.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        74,
+        82
+      ]
+    },
+    {
+      "id": "function:hooks/use-control-center.ts:useActiveCorridas",
+      "type": "function",
+      "name": "useActiveCorridas",
+      "summary": "Function useActiveCorridas implementing specific routines inside use-control-center.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        91,
+        102
+      ]
+    },
+    {
+      "id": "function:hooks/use-control-center.ts:useEtlRuns",
+      "type": "function",
+      "name": "useEtlRuns",
+      "summary": "Function useEtlRuns implementing specific routines inside use-control-center.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        104,
+        113
+      ]
+    },
+    {
+      "id": "function:hooks/use-control-center.ts:useEtlTrend",
+      "type": "function",
+      "name": "useEtlTrend",
+      "summary": "Function useEtlTrend implementing specific routines inside use-control-center.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        115,
+        124
+      ]
+    },
+    {
+      "id": "function:hooks/use-control-center.ts:useQualityKpis",
+      "type": "function",
+      "name": "useQualityKpis",
+      "summary": "Function useQualityKpis implementing specific routines inside use-control-center.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        126,
+        134
+      ]
+    },
+    {
+      "id": "function:hooks/use-control-center.ts:useDwhState",
+      "type": "function",
+      "name": "useDwhState",
+      "summary": "Function useDwhState implementing specific routines inside use-control-center.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        136,
+        144
+      ]
+    },
+    {
+      "id": "function:hooks/use-control-center.ts:useActiveAlerts",
+      "type": "function",
+      "name": "useActiveAlerts",
+      "summary": "Function useActiveAlerts implementing specific routines inside use-control-center.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        146,
+        156
+      ]
+    },
+    {
+      "id": "function:hooks/use-control-center.ts:useCorridaDetail",
+      "type": "function",
+      "name": "useCorridaDetail",
+      "summary": "Function useCorridaDetail implementing specific routines inside use-control-center.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        158,
+        174
+      ]
+    },
+    {
+      "id": "function:hooks/use-control-center.ts:useCancelCorrida",
+      "type": "function",
+      "name": "useCancelCorrida",
+      "summary": "Function useCancelCorrida implementing specific routines inside use-control-center.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        176,
+        211
+      ]
+    },
+    {
+      "id": "function:hooks/use-control-center.ts:useRecentActivity",
+      "type": "function",
+      "name": "useRecentActivity",
+      "summary": "Function useRecentActivity implementing specific routines inside use-control-center.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        213,
+        227
+      ]
+    },
+    {
+      "id": "function:hooks/use-control-center.ts:fetchOk",
+      "type": "function",
+      "name": "fetchOk",
+      "summary": "Function fetchOk implementing specific routines inside use-control-center.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        244,
+        266
+      ]
+    },
+    {
+      "id": "function:hooks/use-control-center.ts:useAckAlert",
+      "type": "function",
+      "name": "useAckAlert",
+      "summary": "Function useAckAlert implementing specific routines inside use-control-center.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        272,
+        306
+      ]
+    },
+    {
+      "id": "function:hooks/use-control-center.ts:useUnackAlert",
+      "type": "function",
+      "name": "useUnackAlert",
+      "summary": "Function useUnackAlert implementing specific routines inside use-control-center.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        311,
+        351
+      ]
+    },
+    {
+      "id": "function:hooks/use-ticking-now.ts:useTickingNow",
+      "type": "function",
+      "name": "useTickingNow",
+      "summary": "Function useTickingNow implementing specific routines inside use-ticking-now.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        17,
+        24
+      ]
+    },
+    {
+      "id": "function:hooks/use-ticking-now.ts:formatElapsed",
+      "type": "function",
+      "name": "formatElapsed",
+      "summary": "Function formatElapsed implementing specific routines inside use-ticking-now.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        27,
+        38
+      ]
+    },
+    {
+      "id": "function:hooks/use-ticking-now.ts:formatRelativeAgo",
+      "type": "function",
+      "name": "formatRelativeAgo",
+      "summary": "Function formatRelativeAgo implementing specific routines inside use-ticking-now.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        41,
+        50
+      ]
+    },
+    {
+      "id": "function:lib/format.ts:formatDate",
+      "type": "function",
+      "name": "formatDate",
+      "summary": "Function formatDate implementing specific routines inside format.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        17,
+        23
+      ]
+    },
+    {
+      "id": "function:lib/format.ts:formatDateTime",
+      "type": "function",
+      "name": "formatDateTime",
+      "summary": "Function formatDateTime implementing specific routines inside format.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        25,
+        31
+      ]
+    },
+    {
+      "id": "function:lib/format.ts:formatNumber",
+      "type": "function",
+      "name": "formatNumber",
+      "summary": "Function formatNumber implementing specific routines inside format.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        33,
+        35
+      ]
+    },
+    {
+      "id": "function:lib/format.ts:formatPercent",
+      "type": "function",
+      "name": "formatPercent",
+      "summary": "Function formatPercent implementing specific routines inside format.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        37,
+        39
+      ]
+    },
+    {
+      "id": "function:lib/utils.ts:cn",
+      "type": "function",
+      "name": "cn",
+      "summary": "Function cn implementing specific routines inside utils.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        4,
+        6
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "function:app/(admin)/alerts/alerts-client.tsx:AlertsClient",
+      "target": "function:hooks/use-control-center.ts:useActiveAlerts",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/alerts/alerts-client.tsx:AlertsClient",
+      "target": "function:hooks/use-control-center.ts:useAckAlert",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/alerts/alerts-client.tsx:AlertsClient",
+      "target": "function:hooks/use-control-center.ts:useUnackAlert",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/alerts/alerts-client.tsx:AlertsClient",
+      "target": "function:hooks/use-toast.ts:useToast",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/alerts/alerts-client.tsx:AlertsClient",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/alerts/alerts-client.tsx:SummaryTile",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/alerts/alerts-client.tsx:EmptyState",
+      "target": "function:lib/format.ts:formatDateTime",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/alerts/alerts-client.tsx:AlertRow",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/alerts/alerts-client.tsx:AlertRow",
+      "target": "function:lib/format.ts:formatDateTime",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/alerts/alerts-client.tsx:AlertRow",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/alerts/alerts-client.tsx:AlertRow",
+      "target": "function:lib/format.ts:formatDateTime",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/alerts/alerts-client.tsx:AlertRow",
+      "target": "function:lib/format.ts:formatDateTime",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/etl-monitor/[id]/etl-run-detail-client.tsx:EtlRunDetailClient",
+      "target": "function:hooks/use-control-center.ts:useCorridaDetail",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/etl-monitor/[id]/etl-run-detail-client.tsx:EtlRunDetailClient",
+      "target": "function:hooks/use-control-center.ts:useCancelCorrida",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/etl-monitor/[id]/etl-run-detail-client.tsx:Meta",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/etl-monitor/[id]/etl-run-detail-client.tsx:PasoChip",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/etl-monitor/[id]/etl-run-detail-client.tsx:PasoChip",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/etl-monitor/etl-monitor-client.tsx:EtlMonitorClient",
+      "target": "function:hooks/use-control-center.ts:useActiveCorridas",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/etl-monitor/etl-monitor-client.tsx:LiveTab",
+      "target": "function:hooks/use-control-center.ts:useActiveCorridas",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/etl-monitor/etl-monitor-client.tsx:LiveTab",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/etl-monitor/etl-monitor-client.tsx:LiveTab",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/etl-monitor/etl-monitor-client.tsx:HistoryTab",
+      "target": "function:hooks/use-control-center.ts:useEtlRuns",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/etl-monitor/etl-monitor-client.tsx:HistoryTab",
+      "target": "function:lib/format.ts:formatDateTime",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/etl-monitor/etl-monitor-client.tsx:HistoryTab",
+      "target": "function:lib/format.ts:formatNumber",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/etl-monitor/etl-monitor-client.tsx:HistoryTab",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/etl-monitor/etl-monitor-client.tsx:HistoryTab",
+      "target": "function:lib/format.ts:formatNumber",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/(admin)/etl-monitor/etl-monitor-client.tsx:HistoryTab",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/active-run-card.tsx:ActiveRunCard",
+      "target": "function:hooks/use-control-center.ts:useCorridaDetail",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/active-run-card.tsx:ActiveRunCard",
+      "target": "function:hooks/use-control-center.ts:useCancelCorrida",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/active-run-card.tsx:ActiveRunCard",
+      "target": "function:hooks/use-ticking-now.ts:useTickingNow",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/active-run-card.tsx:ActiveRunCard",
+      "target": "function:lib/status.ts:toneFromCorrida",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/active-run-card.tsx:ActiveRunCard",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/active-run-card.tsx:ActiveRunCard",
+      "target": "function:hooks/use-ticking-now.ts:formatElapsed",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/active-run-card.tsx:PipelineStrip",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dashboard-card-frame.tsx:DashboardCardFrame",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dashboard-card-frame.tsx:DashboardCardFrame",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dashboard-card-frame.tsx:DashboardCardFrame",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dashboard-cards.tsx:GlobalStatusCard",
+      "target": "function:hooks/use-control-center.ts:useSystemHealth",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dashboard-cards.tsx:StatusTile",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dashboard-cards.tsx:StatusTile",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dashboard-cards.tsx:RecentActivityCard",
+      "target": "function:hooks/use-control-center.ts:useRecentActivity",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dashboard-cards.tsx:ActivityDot",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dashboard-cards.tsx:ActiveAlertsCard",
+      "target": "function:hooks/use-control-center.ts:useSystemHealth",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dashboard-cards.tsx:ActiveAlertsCard",
+      "target": "function:hooks/use-control-center.ts:useActiveAlerts",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dashboard-cards.tsx:ActiveAlertsCard",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dashboard-cards.tsx:EtlTrendCard",
+      "target": "function:hooks/use-control-center.ts:useSystemHealth",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dashboard-cards.tsx:EtlTrendCard",
+      "target": "function:hooks/use-control-center.ts:useEtlTrend",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dashboard-cards.tsx:DwhStateCard",
+      "target": "function:hooks/use-control-center.ts:useSystemHealth",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dashboard-cards.tsx:DwhStateCard",
+      "target": "function:hooks/use-control-center.ts:useDwhState",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dashboard-cards.tsx:DwhStateCard",
+      "target": "function:lib/format.ts:formatNumber",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dashboard-cards.tsx:DwhStateCard",
+      "target": "function:lib/format.ts:formatNumber",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dashboard-cards.tsx:DwhStateCard",
+      "target": "function:lib/format.ts:formatNumber",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dashboard-cards.tsx:DwhStateCard",
+      "target": "function:lib/format.ts:formatNumber",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dashboard-cards.tsx:Stat",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dashboard-cards.tsx:QualitySummaryCard",
+      "target": "function:hooks/use-control-center.ts:useSystemHealth",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dashboard-cards.tsx:QualitySummaryCard",
+      "target": "function:hooks/use-control-center.ts:useQualityKpis",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dashboard-cards.tsx:QualitySummaryCard",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dashboard-cards.tsx:QualitySummaryCard",
+      "target": "function:lib/format.ts:formatNumber",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dashboard-cards.tsx:LastSyncBadge",
+      "target": "function:hooks/use-control-center.ts:useSystemHealth",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dashboard-cards.tsx:EmptyState",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-fact-drawer.tsx:DwhFactDrawer",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-fact-drawer.tsx:DwhFactDrawer",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-fact-drawer.tsx:DrawerBody",
+      "target": "function:lib/format.ts:formatNumber",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-fact-drawer.tsx:DrawerBody",
+      "target": "function:lib/format.ts:formatNumber",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-fact-drawer.tsx:DrawerBody",
+      "target": "function:lib/format.ts:formatNumber",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-fact-drawer.tsx:DrawerBody",
+      "target": "function:lib/format.ts:formatDateTime",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-fact-drawer.tsx:Metric",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/dwh-fact-drawer.tsx:Metric",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/hero-kpis.tsx:HeroKpis",
+      "target": "function:hooks/use-control-center.ts:useEtlTrend",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/hero-kpis.tsx:HeroKpis",
+      "target": "function:hooks/use-control-center.ts:useDwhState",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/hero-kpis.tsx:HeroKpis",
+      "target": "function:hooks/use-control-center.ts:useQualityKpis",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/hero-kpis.tsx:HeroKpis",
+      "target": "function:hooks/use-control-center.ts:useActiveAlerts",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/hero-kpis.tsx:HeroKpis",
+      "target": "function:lib/format.ts:formatNumber",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/hero-kpis.tsx:HeroKpis",
+      "target": "function:lib/format.ts:formatNumber",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/hero-kpis.tsx:HeroKpis",
+      "target": "function:lib/format.ts:formatNumber",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/hero-kpis.tsx:HeroKpis",
+      "target": "function:lib/format.ts:formatNumber",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/hero-kpis.tsx:KpiTile",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/hero-kpis.tsx:KpiTile",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/hero-kpis.tsx:KpiTile",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/hero-kpis.tsx:DeltaChip",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/live-heartbeat.tsx:LiveHeartbeat",
+      "target": "function:hooks/use-ticking-now.ts:useTickingNow",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/live-heartbeat.tsx:LiveHeartbeat",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/live-heartbeat.tsx:LiveHeartbeat",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/live-heartbeat.tsx:LiveHeartbeat",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/live-heartbeat.tsx:computeLabel",
+      "target": "function:hooks/use-ticking-now.ts:formatRelativeAgo",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/control-center/live-heartbeat.tsx:ariaLabel",
+      "target": "function:hooks/use-ticking-now.ts:formatRelativeAgo",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/data-table/data-table.tsx:DataTable",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/data-table/data-view.tsx:DataView",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/layout/command-palette.tsx:CommandPalette",
+      "target": "function:hooks/use-toast.ts:useToast",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/layout/command-palette.tsx:CommandPalette",
+      "target": "function:components/providers/preferencias-provider.tsx:usePreferencias",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/layout/command-palette.tsx:CommandPalette",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/layout/command-palette.tsx:CommandPalette",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/layout/command-palette.tsx:CommandPalette",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/layout/command-palette.tsx:CommandPalette",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/layout/command-palette.tsx:PaletteItem",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/layout/command-palette.tsx:CommandPaletteTrigger",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:components/layout/role-shell.tsx",
+      "target": "function:components/layout/role-shell.tsx:RoleShell",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/layout/role-shell.tsx",
+      "target": "function:components/layout/role-shell.tsx:RoleShell",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:components/layout/role-shell.tsx",
+      "target": "function:components/layout/role-shell.tsx:SystemStatusStrip",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/layout/role-shell.tsx",
+      "target": "function:components/layout/role-shell.tsx:StatusDot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/layout/role-shell.tsx",
+      "target": "function:components/layout/role-shell.tsx:toneFor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/layout/role-shell.tsx",
+      "target": "file:components/layout/command-palette.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/layout/role-shell.tsx",
+      "target": "file:components/ui/dropdown-menu.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/layout/role-shell.tsx",
+      "target": "file:hooks/use-control-center.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/layout/role-shell.tsx",
+      "target": "file:lib/auth/rbac.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/layout/role-shell.tsx",
+      "target": "file:lib/schemas/control-center.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/layout/role-shell.tsx",
+      "target": "file:lib/utils.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "function:components/layout/role-shell.tsx:RoleShell",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/layout/role-shell.tsx:RoleShell",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/layout/role-shell.tsx:SystemStatusStrip",
+      "target": "function:hooks/use-control-center.ts:useSystemHealth",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/layout/role-shell.tsx:StatusDot",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:components/ui/async-boundary.tsx",
+      "target": "function:components/ui/async-boundary.tsx:AsyncBoundary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/ui/async-boundary.tsx",
+      "target": "function:components/ui/async-boundary.tsx:AsyncBoundary",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:components/ui/async-boundary.tsx",
+      "target": "function:components/ui/async-boundary.tsx:DefaultSkeleton",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/ui/async-boundary.tsx",
+      "target": "function:components/ui/async-boundary.tsx:DefaultSkeleton",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:components/ui/async-boundary.tsx",
+      "target": "function:components/ui/async-boundary.tsx:DefaultError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/ui/async-boundary.tsx",
+      "target": "function:components/ui/async-boundary.tsx:DefaultError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:components/ui/async-boundary.tsx",
+      "target": "function:components/ui/async-boundary.tsx:EmptyState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/ui/async-boundary.tsx",
+      "target": "function:components/ui/async-boundary.tsx:EmptyState",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:components/ui/async-boundary.tsx",
+      "target": "file:components/ui/button.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/ui/async-boundary.tsx",
+      "target": "file:lib/utils.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "function:components/ui/async-boundary.tsx:DefaultSkeleton",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/ui/async-boundary.tsx:DefaultError",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/ui/async-boundary.tsx:EmptyState",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:components/ui/button.tsx",
+      "target": "file:lib/utils.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/ui/dialog.tsx",
+      "target": "function:components/ui/dialog.tsx:DialogHeader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/ui/dialog.tsx",
+      "target": "function:components/ui/dialog.tsx:DialogHeader",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:components/ui/dialog.tsx",
+      "target": "function:components/ui/dialog.tsx:DialogFooter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/ui/dialog.tsx",
+      "target": "function:components/ui/dialog.tsx:DialogFooter",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:components/ui/dialog.tsx",
+      "target": "file:lib/utils.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "function:components/ui/dialog.tsx:DialogHeader",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:components/ui/dialog.tsx:DialogFooter",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:components/ui/dropdown-menu.tsx",
+      "target": "file:lib/utils.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/ui/progress.tsx",
+      "target": "file:lib/utils.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/ui/segment-error.tsx",
+      "target": "function:components/ui/segment-error.tsx:SegmentError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/ui/segment-error.tsx",
+      "target": "function:components/ui/segment-error.tsx:SegmentError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:components/ui/segment-error.tsx",
+      "target": "file:components/ui/button.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/ui/skeleton.tsx",
+      "target": "function:components/ui/skeleton.tsx:Skeleton",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/ui/skeleton.tsx",
+      "target": "function:components/ui/skeleton.tsx:Skeleton",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:components/ui/skeleton.tsx",
+      "target": "function:components/ui/skeleton.tsx:KpiSkeleton",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/ui/skeleton.tsx",
+      "target": "function:components/ui/skeleton.tsx:KpiSkeleton",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:components/ui/skeleton.tsx",
+      "target": "function:components/ui/skeleton.tsx:TableSkeleton",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/ui/skeleton.tsx",
+      "target": "function:components/ui/skeleton.tsx:TableSkeleton",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:components/ui/skeleton.tsx",
+      "target": "function:components/ui/skeleton.tsx:ChartSkeleton",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/ui/skeleton.tsx",
+      "target": "function:components/ui/skeleton.tsx:ChartSkeleton",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:components/ui/skeleton.tsx",
+      "target": "file:lib/utils.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "function:components/ui/skeleton.tsx:Skeleton",
+      "target": "function:lib/utils.ts:cn",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:hooks/use-control-center.ts:fetchAndParse",
+      "target": "function:lib/api/session-events.ts:dispatchSessionExpired",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:hooks/use-control-center.ts:useCancelCorrida",
+      "target": "function:lib/api/session-events.ts:dispatchSessionExpired",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:hooks/use-control-center.ts:fetchOk",
+      "target": "function:lib/api/session-events.ts:dispatchSessionExpired",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

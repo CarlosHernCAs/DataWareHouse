@@ -1,0 +1,147 @@
+{
+  "projectRoot": "d:\\\\Proyecto2026\\\\ACP_DWH\\\\ACP Proyecciones",
+  "batchFiles": [
+    {
+      "path": ".agents/skills/impeccable/reference/adapt.md",
+      "language": "markdown",
+      "sizeLines": 190,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/animate.md",
+      "language": "markdown",
+      "sizeLines": 175,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/audit.md",
+      "language": "markdown",
+      "sizeLines": 133,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/bolder.md",
+      "language": "markdown",
+      "sizeLines": 113,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/brand.md",
+      "language": "markdown",
+      "sizeLines": 114,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/clarify.md",
+      "language": "markdown",
+      "sizeLines": 174,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/cognitive-load.md",
+      "language": "markdown",
+      "sizeLines": 106,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/color-and-contrast.md",
+      "language": "markdown",
+      "sizeLines": 105,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/colorize.md",
+      "language": "markdown",
+      "sizeLines": 154,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/craft.md",
+      "language": "markdown",
+      "sizeLines": 193,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/critique.md",
+      "language": "markdown",
+      "sizeLines": 213,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/delight.md",
+      "language": "markdown",
+      "sizeLines": 302,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/distill.md",
+      "language": "markdown",
+      "sizeLines": 111,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/document.md",
+      "language": "markdown",
+      "sizeLines": 427,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/extract.md",
+      "language": "markdown",
+      "sizeLines": 69,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/harden.md",
+      "language": "markdown",
+      "sizeLines": 347,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/heuristics-scoring.md",
+      "language": "markdown",
+      "sizeLines": 234,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/interaction-design.md",
+      "language": "markdown",
+      "sizeLines": 195,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/layout.md",
+      "language": "markdown",
+      "sizeLines": 141,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/skills/impeccable/reference/live.md",
+      "language": "markdown",
+      "sizeLines": 622,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".agents/skills/impeccable/reference/adapt.md": [],
+    ".agents/skills/impeccable/reference/animate.md": [],
+    ".agents/skills/impeccable/reference/audit.md": [],
+    ".agents/skills/impeccable/reference/bolder.md": [],
+    ".agents/skills/impeccable/reference/brand.md": [],
+    ".agents/skills/impeccable/reference/clarify.md": [],
+    ".agents/skills/impeccable/reference/cognitive-load.md": [],
+    ".agents/skills/impeccable/reference/color-and-contrast.md": [],
+    ".agents/skills/impeccable/reference/colorize.md": [],
+    ".agents/skills/impeccable/reference/craft.md": [],
+    ".agents/skills/impeccable/reference/critique.md": [],
+    ".agents/skills/impeccable/reference/delight.md": [],
+    ".agents/skills/impeccable/reference/distill.md": [],
+    ".agents/skills/impeccable/reference/document.md": [],
+    ".agents/skills/impeccable/reference/extract.md": [],
+    ".agents/skills/impeccable/reference/harden.md": [],
+    ".agents/skills/impeccable/reference/heuristics-scoring.md": [],
+    ".agents/skills/impeccable/reference/interaction-design.md": [],
+    ".agents/skills/impeccable/reference/layout.md": [],
+    ".agents/skills/impeccable/reference/live.md": []
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "skills": {
+    "understand": {
+      "source": "lum1104/understand-anything",
+      "sourceType": "github",
+      "skillPath": "understand-anything-plugin/skills/understand/SKILL.md",
+      "computedHash": "2ff2227505bea65b91f06dadc44ae726e94c0198384570197eebfa8c0492951c"
+    },
+    "understand-chat": {
+      "source": "lum1104/understand-anything",
+      "sourceType": "github",
+      "skillPath": "understand-anything-plugin/skills/understand-chat/SKILL.md",
+      "computedHash": "ce766cc9e8eda776f915d0fc425afe1fb6370dfc066be910c82ccad20d866e77"
+    },
+    "understand-dashboard": {
+      "source": "lum1104/understand-anything",
+      "sourceType": "github",
+      "skillPath": "understand-anything-plugin/skills/understand-dashboard/SKILL.md",
+      "computedHash": "e7c6c80a3a16bc77a5b2f2f99bf47f3f970a277857b2e30e419572bc10185415"
+    },
+    "understand-diff": {
+      "source": "lum1104/understand-anything",
+      "sourceType": "github",
+      "skillPath": "understand-anything-plugin/skills/understand-diff/SKILL.md",
+      "computedHash": "ea23eb5163ed6353941edbd87267255b140f6169611b265b8ed156389da9f729"
+    },
+    "understand-domain": {
+      "source": "lum1104/understand-anything",
+      "sourceType": "github",
+      "skillPath": "understand-anything-plugin/skills/understand-domain/SKILL.md",
+      "computedHash": "43409a42eac97a8076c509807136458f6362f29133ad38ac6dc04821b59762ed"
+    },
+    "understand-explain": {
+      "source": "lum1104/understand-anything",
+      "sourceType": "github",
+      "skillPath": "understand-anything-plugin/skills/understand-explain/SKILL.md",
+      "computedHash": "4137790e48ed07f67596dff63531f4a71bfac032cd2f8a991237c728e110518a"
+    },
+    "understand-knowledge": {
+      "source": "lum1104/understand-anything",
+      "sourceType": "github",
+      "skillPath": "understand-anything-plugin/skills/understand-knowledge/SKILL.md",
+      "computedHash": "b1045179d2ce80b786b58792b784c68bbaabb3a47bf9ccc44c4e00daa32b16ba"
+    },
+    "understand-onboard": {
+      "source": "lum1104/understand-anything",
+      "sourceType": "github",
+      "skillPath": "understand-anything-plugin/skills/understand-onboard/SKILL.md",
+      "computedHash": "5b2c172b028f3f286d8eb43570b73b7e5ef6ff284843d1f51f67fc22c3d0aa5f"
+    }
+  }
+}

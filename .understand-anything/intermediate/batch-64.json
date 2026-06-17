@@ -1,0 +1,630 @@
+{
+  "nodes": [
+    {
+      "id": "file:scratch/inspect_induccion_varieties.py",
+      "type": "file",
+      "name": "inspect_induccion_varieties.py",
+      "filePath": "scratch/inspect_induccion_varieties.py",
+      "summary": "File mapped from scratch/inspect_induccion_varieties.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/inspect_induccion_varieties.py:inspect_induccion_varieties",
+      "type": "function",
+      "name": "inspect_induccion_varieties",
+      "filePath": "scratch/inspect_induccion_varieties.py",
+      "lineRange": [
+        10,
+        23
+      ],
+      "summary": "Function inspect_induccion_varieties defined in scratch/inspect_induccion_varieties.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/inspect_raw_excels.py",
+      "type": "file",
+      "name": "inspect_raw_excels.py",
+      "filePath": "scratch/inspect_raw_excels.py",
+      "summary": "File mapped from scratch/inspect_raw_excels.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/inspect_resumen.py",
+      "type": "file",
+      "name": "inspect_resumen.py",
+      "filePath": "scratch/inspect_resumen.py",
+      "summary": "File mapped from scratch/inspect_resumen.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/inspect_resumen.py:inspect_resumen",
+      "type": "function",
+      "name": "inspect_resumen",
+      "filePath": "scratch/inspect_resumen.py",
+      "lineRange": [
+        4,
+        24
+      ],
+      "summary": "Function inspect_resumen defined in scratch/inspect_resumen.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/inspect_rows.py",
+      "type": "file",
+      "name": "inspect_rows.py",
+      "filePath": "scratch/inspect_rows.py",
+      "summary": "File mapped from scratch/inspect_rows.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/inspect_rows.py:inspect",
+      "type": "function",
+      "name": "inspect",
+      "filePath": "scratch/inspect_rows.py",
+      "lineRange": [
+        4,
+        11
+      ],
+      "summary": "Function inspect defined in scratch/inspect_rows.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/inspect_rules.py",
+      "type": "file",
+      "name": "inspect_rules.py",
+      "filePath": "scratch/inspect_rules.py",
+      "summary": "File mapped from scratch/inspect_rules.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/inspect_rules.py:test",
+      "type": "function",
+      "name": "test",
+      "filePath": "scratch/inspect_rules.py",
+      "lineRange": [
+        4,
+        22
+      ],
+      "summary": "Function test defined in scratch/inspect_rules.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/inspect_schema.py",
+      "type": "file",
+      "name": "inspect_schema.py",
+      "filePath": "scratch/inspect_schema.py",
+      "summary": "File mapped from scratch/inspect_schema.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/inspect_sheet_data.py",
+      "type": "file",
+      "name": "inspect_sheet_data.py",
+      "filePath": "scratch/inspect_sheet_data.py",
+      "summary": "File mapped from scratch/inspect_sheet_data.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/inspect_sheet_slice.py",
+      "type": "file",
+      "name": "inspect_sheet_slice.py",
+      "filePath": "scratch/inspect_sheet_slice.py",
+      "summary": "File mapped from scratch/inspect_sheet_slice.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/inspect_silver_all_geos.py",
+      "type": "file",
+      "name": "inspect_silver_all_geos.py",
+      "filePath": "scratch/inspect_silver_all_geos.py",
+      "summary": "File mapped from scratch/inspect_silver_all_geos.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/inspect_silver_any_tasa_for_geo.py",
+      "type": "file",
+      "name": "inspect_silver_any_tasa_for_geo.py",
+      "filePath": "scratch/inspect_silver_any_tasa_for_geo.py",
+      "summary": "File mapped from scratch/inspect_silver_any_tasa_for_geo.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/inspect_silver_any_tasa.py",
+      "type": "file",
+      "name": "inspect_silver_any_tasa.py",
+      "filePath": "scratch/inspect_silver_any_tasa.py",
+      "summary": "File mapped from scratch/inspect_silver_any_tasa.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/inspect_silver_tc_direct.py",
+      "type": "file",
+      "name": "inspect_silver_tc_direct.py",
+      "filePath": "scratch/inspect_silver_tc_direct.py",
+      "summary": "File mapped from scratch/inspect_silver_tc_direct.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/inspect_silver_tc.py",
+      "type": "file",
+      "name": "inspect_silver_tc.py",
+      "filePath": "scratch/inspect_silver_tc.py",
+      "summary": "File mapped from scratch/inspect_silver_tc.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/inspect_tasa_data_detail.py",
+      "type": "file",
+      "name": "inspect_tasa_data_detail.py",
+      "filePath": "scratch/inspect_tasa_data_detail.py",
+      "summary": "File mapped from scratch/inspect_tasa_data_detail.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/inspect_tasa_excels.py",
+      "type": "file",
+      "name": "inspect_tasa_excels.py",
+      "filePath": "scratch/inspect_tasa_excels.py",
+      "summary": "File mapped from scratch/inspect_tasa_excels.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/inspect_tasa_excels.py:inspect_file",
+      "type": "function",
+      "name": "inspect_file",
+      "filePath": "scratch/inspect_tasa_excels.py",
+      "lineRange": [
+        13,
+        36
+      ],
+      "summary": "Function inspect_file defined in scratch/inspect_tasa_excels.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/kill_blocks.py",
+      "type": "file",
+      "name": "kill_blocks.py",
+      "filePath": "scratch/kill_blocks.py",
+      "summary": "File mapped from scratch/kill_blocks.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/leer_columnas_excel.py",
+      "type": "file",
+      "name": "leer_columnas_excel.py",
+      "filePath": "scratch/leer_columnas_excel.py",
+      "summary": "File mapped from scratch/leer_columnas_excel.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/leer_columnas_excel.py:inspect_excel",
+      "type": "function",
+      "name": "inspect_excel",
+      "filePath": "scratch/leer_columnas_excel.py",
+      "lineRange": [
+        4,
+        20
+      ],
+      "summary": "Function inspect_excel defined in scratch/leer_columnas_excel.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/limpiar_excel_2025.py",
+      "type": "file",
+      "name": "limpiar_excel_2025.py",
+      "filePath": "scratch/limpiar_excel_2025.py",
+      "summary": "File mapped from scratch/limpiar_excel_2025.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/limpiar_excel_2025.py:read_excel_fast",
+      "type": "function",
+      "name": "read_excel_fast",
+      "filePath": "scratch/limpiar_excel_2025.py",
+      "lineRange": [
+        5,
+        18
+      ],
+      "summary": "Function read_excel_fast defined in scratch/limpiar_excel_2025.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/list_induccion_excels.py",
+      "type": "file",
+      "name": "list_induccion_excels.py",
+      "filePath": "scratch/list_induccion_excels.py",
+      "summary": "File mapped from scratch/list_induccion_excels.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/list_induccion_excels.py:list_excels",
+      "type": "function",
+      "name": "list_excels",
+      "filePath": "scratch/list_induccion_excels.py",
+      "lineRange": [
+        4,
+        9
+      ],
+      "summary": "Function list_excels defined in scratch/list_induccion_excels.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/list_sheets.py",
+      "type": "file",
+      "name": "list_sheets.py",
+      "filePath": "scratch/list_sheets.py",
+      "summary": "File mapped from scratch/list_sheets.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/list_sheets.py:list_sheets",
+      "type": "function",
+      "name": "list_sheets",
+      "filePath": "scratch/list_sheets.py",
+      "lineRange": [
+        4,
+        12
+      ],
+      "summary": "Function list_sheets defined in scratch/list_sheets.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/match_natural_keys.py",
+      "type": "file",
+      "name": "match_natural_keys.py",
+      "filePath": "scratch/match_natural_keys.py",
+      "summary": "File mapped from scratch/match_natural_keys.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/migrar_valores_raw_tasa.py",
+      "type": "file",
+      "name": "migrar_valores_raw_tasa.py",
+      "filePath": "scratch/migrar_valores_raw_tasa.py",
+      "summary": "File mapped from scratch/migrar_valores_raw_tasa.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scratch/migrar_valores_raw_tasa.py:parsear_valores_raw",
+      "type": "function",
+      "name": "parsear_valores_raw",
+      "filePath": "scratch/migrar_valores_raw_tasa.py",
+      "lineRange": [
+        16,
+        28
+      ],
+      "summary": "Function parsear_valores_raw defined in scratch/migrar_valores_raw_tasa.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/migrar_valores_raw_tasa.py:migrar",
+      "type": "function",
+      "name": "migrar",
+      "filePath": "scratch/migrar_valores_raw_tasa.py",
+      "lineRange": [
+        31,
+        92
+      ],
+      "summary": "Function migrar defined in scratch/migrar_valores_raw_tasa.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:scratch/modify_graph_html.py",
+      "type": "file",
+      "name": "modify_graph_html.py",
+      "filePath": "scratch/modify_graph_html.py",
+      "summary": "File mapped from scratch/modify_graph_html.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scratch/prepare_induccion_reload.py",
+      "type": "file",
+      "name": "prepare_induccion_reload.py",
+      "filePath": "scratch/prepare_induccion_reload.py",
+      "summary": "File mapped from scratch/prepare_induccion_reload.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/read_etl_progress.py",
+      "type": "file",
+      "name": "read_etl_progress.py",
+      "filePath": "scratch/read_etl_progress.py",
+      "summary": "File mapped from scratch/read_etl_progress.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/read_etl_progress.py:robust_decode",
+      "type": "function",
+      "name": "robust_decode",
+      "filePath": "scratch/read_etl_progress.py",
+      "lineRange": [
+        5,
+        10
+      ],
+      "summary": "Function robust_decode defined in scratch/read_etl_progress.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/read_etl_progress.py:read_latest_log",
+      "type": "function",
+      "name": "read_latest_log",
+      "filePath": "scratch/read_etl_progress.py",
+      "lineRange": [
+        12,
+        47
+      ],
+      "summary": "Function read_latest_log defined in scratch/read_etl_progress.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:scratch/inspect_induccion_varieties.py",
+      "target": "function:scratch/inspect_induccion_varieties.py:inspect_induccion_varieties",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/inspect_resumen.py",
+      "target": "function:scratch/inspect_resumen.py:inspect_resumen",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/inspect_rows.py",
+      "target": "function:scratch/inspect_rows.py:inspect",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/inspect_rules.py",
+      "target": "function:scratch/inspect_rules.py:test",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/inspect_tasa_excels.py",
+      "target": "function:scratch/inspect_tasa_excels.py:inspect_file",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/leer_columnas_excel.py",
+      "target": "function:scratch/leer_columnas_excel.py:inspect_excel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/limpiar_excel_2025.py",
+      "target": "function:scratch/limpiar_excel_2025.py:read_excel_fast",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/list_induccion_excels.py",
+      "target": "function:scratch/list_induccion_excels.py:list_excels",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/list_sheets.py",
+      "target": "function:scratch/list_sheets.py:list_sheets",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/migrar_valores_raw_tasa.py",
+      "target": "function:scratch/migrar_valores_raw_tasa.py:parsear_valores_raw",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/migrar_valores_raw_tasa.py",
+      "target": "function:scratch/migrar_valores_raw_tasa.py:migrar",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/read_etl_progress.py",
+      "target": "function:scratch/read_etl_progress.py:robust_decode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/read_etl_progress.py",
+      "target": "function:scratch/read_etl_progress.py:read_latest_log",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    }
+  ]
+}

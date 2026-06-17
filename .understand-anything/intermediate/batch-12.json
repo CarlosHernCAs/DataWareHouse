@@ -1,0 +1,122 @@
+{
+  "nodes": [
+    {
+      "id": "file:ETL_ARCHITECTURE_FLOWS.txt",
+      "type": "document",
+      "name": "ETL_ARCHITECTURE_FLOWS.txt",
+      "filePath": "ETL_ARCHITECTURE_FLOWS.txt",
+      "summary": "File mapped from ETL_ARCHITECTURE_FLOWS.txt with category docs.",
+      "tags": [
+        "docs",
+        "txt",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:ETL_CATALOG_HUMANIZED.md",
+      "type": "document",
+      "name": "ETL_CATALOG_HUMANIZED.md",
+      "filePath": "ETL_CATALOG_HUMANIZED.md",
+      "summary": "File mapped from ETL_CATALOG_HUMANIZED.md with category docs.",
+      "tags": [
+        "docs",
+        "markdown",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:ETL_TABLE_CATALOG.json",
+      "type": "config",
+      "name": "ETL_TABLE_CATALOG.json",
+      "filePath": "ETL_TABLE_CATALOG.json",
+      "summary": "File mapped from ETL_TABLE_CATALOG.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:INICIAR ACP.bat",
+      "type": "file",
+      "name": "INICIAR ACP.bat",
+      "filePath": "INICIAR ACP.bat",
+      "summary": "File mapped from INICIAR ACP.bat with category script.",
+      "tags": [
+        "script",
+        "batch",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:NOTAS_REVISION.md",
+      "type": "document",
+      "name": "NOTAS_REVISION.md",
+      "filePath": "NOTAS_REVISION.md",
+      "summary": "File mapped from NOTAS_REVISION.md with category docs.",
+      "tags": [
+        "docs",
+        "markdown",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:README_ETL_CATALOG.md",
+      "type": "document",
+      "name": "README_ETL_CATALOG.md",
+      "filePath": "README_ETL_CATALOG.md",
+      "summary": "File mapped from README_ETL_CATALOG.md with category docs.",
+      "tags": [
+        "docs",
+        "markdown",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:ejecutar_etl_acp.bat",
+      "type": "file",
+      "name": "ejecutar_etl_acp.bat",
+      "filePath": "ejecutar_etl_acp.bat",
+      "summary": "File mapped from ejecutar_etl_acp.bat with category script.",
+      "tags": [
+        "script",
+        "batch",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:requirements.txt",
+      "type": "document",
+      "name": "requirements.txt",
+      "filePath": "requirements.txt",
+      "summary": "File mapped from requirements.txt with category docs.",
+      "tags": [
+        "docs",
+        "txt",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:skills-lock.json",
+      "type": "config",
+      "name": "skills-lock.json",
+      "filePath": "skills-lock.json",
+      "summary": "File mapped from skills-lock.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

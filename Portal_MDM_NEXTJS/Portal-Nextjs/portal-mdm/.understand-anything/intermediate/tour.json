@@ -1,0 +1,50 @@
+[
+  {
+    "order": 1,
+    "title": "Project Overview",
+    "description": "Overview of the Portal MDM structure and developer guides.",
+    "nodeIds": [
+      "document:README.md"
+    ]
+  },
+  {
+    "order": 2,
+    "title": "Root Layout",
+    "description": "Initial HTML setup and global style hydration.",
+    "nodeIds": [
+      "file:app/layout.tsx"
+    ]
+  },
+  {
+    "order": 3,
+    "title": "Application Landing",
+    "description": "Core routing point redirecting users based on session role.",
+    "nodeIds": [
+      "file:app/page.tsx"
+    ]
+  },
+  {
+    "order": 4,
+    "title": "Navigation Shell",
+    "description": "Main UI sidebar navigation frame rendering dynamic widgets by role.",
+    "nodeIds": [
+      "file:components/layout/role-shell.tsx"
+    ]
+  },
+  {
+    "order": 5,
+    "title": "Admin Dashboard",
+    "description": "Main Control Center dashboard for ETL observability.",
+    "nodeIds": [
+      "file:app/(admin)/dashboard/page.tsx"
+    ]
+  },
+  {
+    "order": 6,
+    "title": "End-to-End Tests",
+    "description": "Playwright testing framework configuration.",
+    "nodeIds": [
+      "file:playwright.config.ts"
+    ]
+  }
+]

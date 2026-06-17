@@ -1,0 +1,1696 @@
+{
+  "nodes": [
+    {
+      "id": "file:app/api/cc/activity/route.ts",
+      "type": "file",
+      "name": "route.ts",
+      "filePath": "app/api/cc/activity/route.ts",
+      "summary": "Source code file implementing components or logic for route.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "api-route"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/api/cc/activity/route.ts:GET",
+      "type": "function",
+      "name": "GET",
+      "summary": "Function GET implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        17,
+        56
+      ]
+    },
+    {
+      "id": "file:app/api/cc/alerts/[id]/ack/route.ts",
+      "type": "file",
+      "name": "route.ts",
+      "filePath": "app/api/cc/alerts/[id]/ack/route.ts",
+      "summary": "Source code file implementing components or logic for route.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "api-route"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/api/cc/alerts/[id]/ack/route.ts:POST",
+      "type": "function",
+      "name": "POST",
+      "summary": "Function POST implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        21,
+        59
+      ]
+    },
+    {
+      "id": "function:app/api/cc/alerts/[id]/ack/route.ts:DELETE",
+      "type": "function",
+      "name": "DELETE",
+      "summary": "Function DELETE implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        61,
+        84
+      ]
+    },
+    {
+      "id": "file:app/api/cc/alerts/route.ts",
+      "type": "file",
+      "name": "route.ts",
+      "filePath": "app/api/cc/alerts/route.ts",
+      "summary": "Source code file implementing components or logic for route.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "api-route"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/api/cc/alerts/route.ts:GET",
+      "type": "function",
+      "name": "GET",
+      "summary": "Function GET implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        6,
+        13
+      ]
+    },
+    {
+      "id": "file:app/api/cc/alerts/stream/route.ts",
+      "type": "file",
+      "name": "route.ts",
+      "filePath": "app/api/cc/alerts/stream/route.ts",
+      "summary": "Source code file implementing components or logic for route.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "api-route"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/api/cc/alerts/stream/route.ts:GET",
+      "type": "function",
+      "name": "GET",
+      "summary": "Function GET implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        35,
+        110
+      ]
+    },
+    {
+      "id": "file:app/api/cc/catalogos/geografia/route.ts",
+      "type": "file",
+      "name": "route.ts",
+      "filePath": "app/api/cc/catalogos/geografia/route.ts",
+      "summary": "Source code file implementing components or logic for route.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "api-route"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/api/cc/catalogos/geografia/route.ts:GET",
+      "type": "function",
+      "name": "GET",
+      "summary": "Function GET implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        19,
+        38
+      ]
+    },
+    {
+      "id": "file:app/api/cc/catalogos/personal/route.ts",
+      "type": "file",
+      "name": "route.ts",
+      "filePath": "app/api/cc/catalogos/personal/route.ts",
+      "summary": "Source code file implementing components or logic for route.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "api-route"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/api/cc/catalogos/personal/route.ts:GET",
+      "type": "function",
+      "name": "GET",
+      "summary": "Function GET implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        19,
+        38
+      ]
+    },
+    {
+      "id": "file:app/api/cc/catalogos/variedades-dim/[id]/desactivar/route.ts",
+      "type": "file",
+      "name": "route.ts",
+      "filePath": "app/api/cc/catalogos/variedades-dim/[id]/desactivar/route.ts",
+      "summary": "Source code file implementing components or logic for route.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "api-route"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/api/cc/catalogos/variedades-dim/[id]/desactivar/route.ts:PATCH",
+      "type": "function",
+      "name": "PATCH",
+      "summary": "Function PATCH implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        7,
+        30
+      ]
+    },
+    {
+      "id": "file:app/api/cc/catalogos/variedades-dim/[id]/reactivar/route.ts",
+      "type": "file",
+      "name": "route.ts",
+      "filePath": "app/api/cc/catalogos/variedades-dim/[id]/reactivar/route.ts",
+      "summary": "Source code file implementing components or logic for route.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "api-route"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/api/cc/catalogos/variedades-dim/[id]/reactivar/route.ts:PATCH",
+      "type": "function",
+      "name": "PATCH",
+      "summary": "Function PATCH implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        7,
+        30
+      ]
+    },
+    {
+      "id": "file:app/api/cc/catalogos/variedades-dim/route.ts",
+      "type": "file",
+      "name": "route.ts",
+      "filePath": "app/api/cc/catalogos/variedades-dim/route.ts",
+      "summary": "Source code file implementing components or logic for route.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "api-route"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/api/cc/catalogos/variedades-dim/route.ts:GET",
+      "type": "function",
+      "name": "GET",
+      "summary": "Function GET implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        21,
+        40
+      ]
+    },
+    {
+      "id": "function:app/api/cc/catalogos/variedades-dim/route.ts:POST",
+      "type": "function",
+      "name": "POST",
+      "summary": "Function POST implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        42,
+        77
+      ]
+    },
+    {
+      "id": "file:app/api/cc/catalogos/variedades/route.ts",
+      "type": "file",
+      "name": "route.ts",
+      "filePath": "app/api/cc/catalogos/variedades/route.ts",
+      "summary": "Source code file implementing components or logic for route.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "api-route"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/api/cc/catalogos/variedades/route.ts:GET",
+      "type": "function",
+      "name": "GET",
+      "summary": "Function GET implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        19,
+        38
+      ]
+    },
+    {
+      "id": "file:app/api/cc/configuracion/parametros/[nombre]/route.ts",
+      "type": "file",
+      "name": "route.ts",
+      "filePath": "app/api/cc/configuracion/parametros/[nombre]/route.ts",
+      "summary": "Source code file implementing components or logic for route.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "api-route"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:app/api/cc/configuracion/parametros/[nombre]/route.ts:PATCH",
+      "type": "function",
+      "name": "PATCH",
+      "summary": "Function PATCH implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        12,
+        56
+      ]
+    },
+    {
+      "id": "file:app/api/cc/configuracion/parametros/route.ts",
+      "type": "file",
+      "name": "route.ts",
+      "filePath": "app/api/cc/configuracion/parametros/route.ts",
+      "summary": "Source code file implementing components or logic for route.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "api-route"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/api/cc/configuracion/parametros/route.ts:GET",
+      "type": "function",
+      "name": "GET",
+      "summary": "Function GET implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        18,
+        43
+      ]
+    },
+    {
+      "id": "file:app/api/cc/configuracion/perfil/clave/route.ts",
+      "type": "file",
+      "name": "route.ts",
+      "filePath": "app/api/cc/configuracion/perfil/clave/route.ts",
+      "summary": "Source code file implementing components or logic for route.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "api-route"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/api/cc/configuracion/perfil/clave/route.ts:POST",
+      "type": "function",
+      "name": "POST",
+      "summary": "Function POST implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        13,
+        42
+      ]
+    },
+    {
+      "id": "file:app/api/cc/configuracion/perfil/route.ts",
+      "type": "file",
+      "name": "route.ts",
+      "filePath": "app/api/cc/configuracion/perfil/route.ts",
+      "summary": "Source code file implementing components or logic for route.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "api-route"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/api/cc/configuracion/perfil/route.ts:GET",
+      "type": "function",
+      "name": "GET",
+      "summary": "Function GET implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        7,
+        19
+      ]
+    },
+    {
+      "id": "file:app/api/cc/configuracion/reglas/route.ts",
+      "type": "file",
+      "name": "route.ts",
+      "filePath": "app/api/cc/configuracion/reglas/route.ts",
+      "summary": "Source code file implementing components or logic for route.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "api-route"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/api/cc/configuracion/reglas/route.ts:GET",
+      "type": "function",
+      "name": "GET",
+      "summary": "Function GET implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        18,
+        44
+      ]
+    },
+    {
+      "id": "file:app/api/cc/configuracion/usuarios/[nombre]/activar/route.ts",
+      "type": "file",
+      "name": "route.ts",
+      "filePath": "app/api/cc/configuracion/usuarios/[nombre]/activar/route.ts",
+      "summary": "Source code file implementing components or logic for route.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "api-route"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:app/api/cc/configuracion/usuarios/[nombre]/activar/route.ts:POST",
+      "type": "function",
+      "name": "POST",
+      "summary": "Function POST implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        9,
+        35
+      ]
+    },
+    {
+      "id": "function:app/api/cc/configuracion/usuarios/[nombre]/desactivar/route.ts:POST",
+      "type": "function",
+      "name": "POST",
+      "summary": "Function POST implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        9,
+        35
+      ]
+    },
+    {
+      "id": "function:app/api/cc/configuracion/usuarios/route.ts:GET",
+      "type": "function",
+      "name": "GET",
+      "summary": "Function GET implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        12,
+        25
+      ]
+    },
+    {
+      "id": "function:app/api/cc/configuracion/usuarios/route.ts:POST",
+      "type": "function",
+      "name": "POST",
+      "summary": "Function POST implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        27,
+        61
+      ]
+    },
+    {
+      "id": "function:app/api/cc/dwh/explorer/route.ts:statsFor",
+      "type": "function",
+      "name": "statsFor",
+      "summary": "Function statsFor implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        39,
+        67
+      ]
+    },
+    {
+      "id": "function:app/api/cc/dwh/explorer/route.ts:deriveStatus",
+      "type": "function",
+      "name": "deriveStatus",
+      "summary": "Function deriveStatus implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        69,
+        86
+      ]
+    },
+    {
+      "id": "function:app/api/cc/dwh/explorer/route.ts:GET",
+      "type": "function",
+      "name": "GET",
+      "summary": "Function GET implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        93,
+        235
+      ]
+    },
+    {
+      "id": "function:app/api/cc/dwh/route.ts:GET",
+      "type": "function",
+      "name": "GET",
+      "summary": "Function GET implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        13,
+        59
+      ]
+    },
+    {
+      "id": "function:app/api/cc/etl/runs/[id]/route.ts:GET",
+      "type": "function",
+      "name": "GET",
+      "summary": "Function GET implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        26,
+        78
+      ]
+    },
+    {
+      "id": "function:app/api/cc/etl/runs/[id]/route.ts:DELETE",
+      "type": "function",
+      "name": "DELETE",
+      "summary": "Function DELETE implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        80,
+        98
+      ]
+    },
+    {
+      "id": "function:app/api/cc/etl/runs/route.ts:GET",
+      "type": "function",
+      "name": "GET",
+      "summary": "Function GET implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        19,
+        53
+      ]
+    },
+    {
+      "id": "function:app/api/cc/etl/runs/route.ts:POST",
+      "type": "function",
+      "name": "POST",
+      "summary": "Function POST implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        55,
+        97
+      ]
+    },
+    {
+      "id": "function:app/api/cc/etl/trend/route.ts:GET",
+      "type": "function",
+      "name": "GET",
+      "summary": "Function GET implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        23,
+        71
+      ]
+    },
+    {
+      "id": "function:app/api/cc/health/route.ts:GET",
+      "type": "function",
+      "name": "GET",
+      "summary": "Function GET implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        27,
+        97
+      ]
+    },
+    {
+      "id": "function:app/api/cc/health/route.ts:parseOr",
+      "type": "function",
+      "name": "parseOr",
+      "summary": "Function parseOr implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        99,
+        111
+      ]
+    },
+    {
+      "id": "function:app/api/cc/quality/route.ts:GET",
+      "type": "function",
+      "name": "GET",
+      "summary": "Function GET implementing specific routines inside route.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        10,
+        37
+      ]
+    },
+    {
+      "id": "function:lib/api/server-fetch.ts:fastapiFetch",
+      "type": "function",
+      "name": "fastapiFetch",
+      "summary": "Function fastapiFetch implementing specific routines inside server-fetch.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        43,
+        108
+      ]
+    },
+    {
+      "id": "function:lib/api/server-fetch.ts:formatFastApiError",
+      "type": "function",
+      "name": "formatFastApiError",
+      "summary": "Function formatFastApiError implementing specific routines inside server-fetch.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        128,
+        160
+      ]
+    },
+    {
+      "id": "function:lib/api/server-fetch.ts:fastapiFetchSafe",
+      "type": "function",
+      "name": "fastapiFetchSafe",
+      "summary": "Function fastapiFetchSafe implementing specific routines inside server-fetch.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        166,
+        175
+      ]
+    },
+    {
+      "id": "class:lib/api/server-fetch.ts:FastApiError",
+      "type": "class",
+      "name": "FastApiError",
+      "summary": "Class FastApiError defining object structures inside server-fetch.ts.",
+      "tags": [
+        "class",
+        "object-model"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        23,
+        33
+      ]
+    },
+    {
+      "id": "function:lib/control-center/compute-alerts.ts:obtenerIndiceAcks",
+      "type": "function",
+      "name": "obtenerIndiceAcks",
+      "summary": "Function obtenerIndiceAcks implementing specific routines inside compute-alerts.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        33,
+        51
+      ]
+    },
+    {
+      "id": "function:lib/control-center/compute-alerts.ts:computeAlerts",
+      "type": "function",
+      "name": "computeAlerts",
+      "summary": "Function computeAlerts implementing specific routines inside compute-alerts.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        64,
+        147
+      ]
+    },
+    {
+      "id": "function:lib/control-center/compute-alerts.ts:alertsFingerprint",
+      "type": "function",
+      "name": "alertsFingerprint",
+      "summary": "Function alertsFingerprint implementing specific routines inside compute-alerts.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        153,
+        158
+      ]
+    },
+    {
+      "id": "function:lib/control-center/etl-status.ts:mapCorridaStatus",
+      "type": "function",
+      "name": "mapCorridaStatus",
+      "summary": "Function mapCorridaStatus implementing specific routines inside etl-status.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        29,
+        37
+      ]
+    },
+    {
+      "id": "function:lib/control-center/etl-status.ts:isErrored",
+      "type": "function",
+      "name": "isErrored",
+      "summary": "Function isErrored implementing specific routines inside etl-status.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        39,
+        41
+      ]
+    },
+    {
+      "id": "function:lib/control-center/etl-status.ts:isSuccess",
+      "type": "function",
+      "name": "isSuccess",
+      "summary": "Function isSuccess implementing specific routines inside etl-status.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        43,
+        45
+      ]
+    },
+    {
+      "id": "function:lib/control-center/etl-status.ts:isTerminal",
+      "type": "function",
+      "name": "isTerminal",
+      "summary": "Function isTerminal implementing specific routines inside etl-status.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        47,
+        50
+      ]
+    },
+    {
+      "id": "function:lib/schemas/catalogos.ts:mapVariedadMdm",
+      "type": "function",
+      "name": "mapVariedadMdm",
+      "summary": "Function mapVariedadMdm implementing specific routines inside catalogos.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        50,
+        58
+      ]
+    },
+    {
+      "id": "function:lib/schemas/catalogos.ts:mapVariedadDim",
+      "type": "function",
+      "name": "mapVariedadDim",
+      "summary": "Function mapVariedadDim implementing specific routines inside catalogos.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        84,
+        95
+      ]
+    },
+    {
+      "id": "function:lib/schemas/catalogos.ts:mapGeografia",
+      "type": "function",
+      "name": "mapGeografia",
+      "summary": "Function mapGeografia implementing specific routines inside catalogos.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        144,
+        158
+      ]
+    },
+    {
+      "id": "function:lib/schemas/catalogos.ts:mapPersonal",
+      "type": "function",
+      "name": "mapPersonal",
+      "summary": "Function mapPersonal implementing specific routines inside catalogos.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        186,
+        196
+      ]
+    },
+    {
+      "id": "function:lib/schemas/catalogos.ts:mapPagina",
+      "type": "function",
+      "name": "mapPagina",
+      "summary": "Function mapPagina implementing specific routines inside catalogos.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        202,
+        212
+      ]
+    },
+    {
+      "id": "function:lib/schemas/configuracion.ts:tieneRolMinimo",
+      "type": "function",
+      "name": "tieneRolMinimo",
+      "summary": "Function tieneRolMinimo implementing specific routines inside configuracion.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        32,
+        34
+      ]
+    },
+    {
+      "id": "function:lib/schemas/configuracion.ts:mapPerfil",
+      "type": "function",
+      "name": "mapPerfil",
+      "summary": "Function mapPerfil implementing specific routines inside configuracion.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        62,
+        70
+      ]
+    },
+    {
+      "id": "function:lib/schemas/configuracion.ts:mapParametro",
+      "type": "function",
+      "name": "mapParametro",
+      "summary": "Function mapParametro implementing specific routines inside configuracion.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        134,
+        141
+      ]
+    },
+    {
+      "id": "function:lib/schemas/configuracion.ts:mapRegla",
+      "type": "function",
+      "name": "mapRegla",
+      "summary": "Function mapRegla implementing specific routines inside configuracion.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        197,
+        207
+      ]
+    },
+    {
+      "id": "function:lib/schemas/configuracion.ts:mapUsuario",
+      "type": "function",
+      "name": "mapUsuario",
+      "summary": "Function mapUsuario implementing specific routines inside configuracion.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        236,
+        248
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:app/api/cc/activity/route.ts",
+      "target": "function:app/api/cc/activity/route.ts:GET",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/api/cc/activity/route.ts",
+      "target": "function:app/api/cc/activity/route.ts:GET",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/api/cc/activity/route.ts",
+      "target": "file:lib/api/server-fetch.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/api/cc/activity/route.ts",
+      "target": "file:lib/control-center/etl-status.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/api/cc/activity/route.ts",
+      "target": "file:lib/schemas/control-center.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "function:app/api/cc/activity/route.ts:GET",
+      "target": "function:lib/control-center/etl-status.ts:isErrored",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/api/cc/alerts/[id]/ack/route.ts",
+      "target": "function:app/api/cc/alerts/[id]/ack/route.ts:POST",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/api/cc/alerts/[id]/ack/route.ts",
+      "target": "function:app/api/cc/alerts/[id]/ack/route.ts:POST",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/api/cc/alerts/[id]/ack/route.ts",
+      "target": "function:app/api/cc/alerts/[id]/ack/route.ts:DELETE",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/api/cc/alerts/[id]/ack/route.ts",
+      "target": "function:app/api/cc/alerts/[id]/ack/route.ts:DELETE",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/api/cc/alerts/[id]/ack/route.ts",
+      "target": "file:lib/api/server-fetch.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/api/cc/alerts/[id]/ack/route.ts",
+      "target": "file:lib/schemas/control-center.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/api/cc/alerts/route.ts",
+      "target": "function:app/api/cc/alerts/route.ts:GET",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/api/cc/alerts/route.ts",
+      "target": "function:app/api/cc/alerts/route.ts:GET",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/api/cc/alerts/route.ts",
+      "target": "file:lib/control-center/compute-alerts.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "function:app/api/cc/alerts/route.ts:GET",
+      "target": "function:lib/control-center/compute-alerts.ts:computeAlerts",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/api/cc/alerts/stream/route.ts",
+      "target": "function:app/api/cc/alerts/stream/route.ts:GET",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/api/cc/alerts/stream/route.ts",
+      "target": "function:app/api/cc/alerts/stream/route.ts:GET",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/api/cc/alerts/stream/route.ts",
+      "target": "file:lib/control-center/compute-alerts.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/api/cc/catalogos/geografia/route.ts",
+      "target": "function:app/api/cc/catalogos/geografia/route.ts:GET",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/api/cc/catalogos/geografia/route.ts",
+      "target": "function:app/api/cc/catalogos/geografia/route.ts:GET",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/api/cc/catalogos/geografia/route.ts",
+      "target": "file:lib/api/server-fetch.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/api/cc/catalogos/geografia/route.ts",
+      "target": "file:lib/schemas/catalogos.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "function:app/api/cc/catalogos/geografia/route.ts:GET",
+      "target": "function:lib/schemas/catalogos.ts:mapPagina",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/api/cc/catalogos/personal/route.ts",
+      "target": "function:app/api/cc/catalogos/personal/route.ts:GET",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/api/cc/catalogos/personal/route.ts",
+      "target": "function:app/api/cc/catalogos/personal/route.ts:GET",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/api/cc/catalogos/personal/route.ts",
+      "target": "file:lib/api/server-fetch.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/api/cc/catalogos/personal/route.ts",
+      "target": "file:lib/schemas/catalogos.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "function:app/api/cc/catalogos/personal/route.ts:GET",
+      "target": "function:lib/schemas/catalogos.ts:mapPagina",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/api/cc/catalogos/variedades-dim/[id]/desactivar/route.ts",
+      "target": "function:app/api/cc/catalogos/variedades-dim/[id]/desactivar/route.ts:PATCH",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/api/cc/catalogos/variedades-dim/[id]/desactivar/route.ts",
+      "target": "function:app/api/cc/catalogos/variedades-dim/[id]/desactivar/route.ts:PATCH",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/api/cc/catalogos/variedades-dim/[id]/desactivar/route.ts",
+      "target": "file:lib/api/server-fetch.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/api/cc/catalogos/variedades-dim/[id]/desactivar/route.ts",
+      "target": "file:lib/schemas/catalogos.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/api/cc/catalogos/variedades-dim/[id]/reactivar/route.ts",
+      "target": "function:app/api/cc/catalogos/variedades-dim/[id]/reactivar/route.ts:PATCH",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/api/cc/catalogos/variedades-dim/[id]/reactivar/route.ts",
+      "target": "function:app/api/cc/catalogos/variedades-dim/[id]/reactivar/route.ts:PATCH",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/api/cc/catalogos/variedades-dim/[id]/reactivar/route.ts",
+      "target": "file:lib/api/server-fetch.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/api/cc/catalogos/variedades-dim/[id]/reactivar/route.ts",
+      "target": "file:lib/schemas/catalogos.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/api/cc/catalogos/variedades-dim/route.ts",
+      "target": "function:app/api/cc/catalogos/variedades-dim/route.ts:GET",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/api/cc/catalogos/variedades-dim/route.ts",
+      "target": "function:app/api/cc/catalogos/variedades-dim/route.ts:GET",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/api/cc/catalogos/variedades-dim/route.ts",
+      "target": "function:app/api/cc/catalogos/variedades-dim/route.ts:POST",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/api/cc/catalogos/variedades-dim/route.ts",
+      "target": "function:app/api/cc/catalogos/variedades-dim/route.ts:POST",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/api/cc/catalogos/variedades-dim/route.ts",
+      "target": "file:lib/api/server-fetch.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/api/cc/catalogos/variedades-dim/route.ts",
+      "target": "file:lib/schemas/catalogos.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "function:app/api/cc/catalogos/variedades-dim/route.ts:GET",
+      "target": "function:lib/schemas/catalogos.ts:mapPagina",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/api/cc/catalogos/variedades/route.ts",
+      "target": "function:app/api/cc/catalogos/variedades/route.ts:GET",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/api/cc/catalogos/variedades/route.ts",
+      "target": "function:app/api/cc/catalogos/variedades/route.ts:GET",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/api/cc/catalogos/variedades/route.ts",
+      "target": "file:lib/api/server-fetch.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/api/cc/catalogos/variedades/route.ts",
+      "target": "file:lib/schemas/catalogos.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "function:app/api/cc/catalogos/variedades/route.ts:GET",
+      "target": "function:lib/schemas/catalogos.ts:mapPagina",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/api/cc/configuracion/parametros/[nombre]/route.ts",
+      "target": "function:app/api/cc/configuracion/parametros/[nombre]/route.ts:PATCH",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/api/cc/configuracion/parametros/[nombre]/route.ts",
+      "target": "function:app/api/cc/configuracion/parametros/[nombre]/route.ts:PATCH",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/api/cc/configuracion/parametros/[nombre]/route.ts",
+      "target": "file:lib/api/server-fetch.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/api/cc/configuracion/parametros/[nombre]/route.ts",
+      "target": "file:lib/schemas/configuracion.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/api/cc/configuracion/parametros/route.ts",
+      "target": "function:app/api/cc/configuracion/parametros/route.ts:GET",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/api/cc/configuracion/parametros/route.ts",
+      "target": "function:app/api/cc/configuracion/parametros/route.ts:GET",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/api/cc/configuracion/parametros/route.ts",
+      "target": "file:lib/api/server-fetch.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/api/cc/configuracion/parametros/route.ts",
+      "target": "file:lib/schemas/configuracion.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/api/cc/configuracion/perfil/clave/route.ts",
+      "target": "function:app/api/cc/configuracion/perfil/clave/route.ts:POST",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/api/cc/configuracion/perfil/clave/route.ts",
+      "target": "function:app/api/cc/configuracion/perfil/clave/route.ts:POST",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/api/cc/configuracion/perfil/clave/route.ts",
+      "target": "file:lib/api/server-fetch.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/api/cc/configuracion/perfil/clave/route.ts",
+      "target": "file:lib/schemas/configuracion.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/api/cc/configuracion/perfil/route.ts",
+      "target": "function:app/api/cc/configuracion/perfil/route.ts:GET",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/api/cc/configuracion/perfil/route.ts",
+      "target": "function:app/api/cc/configuracion/perfil/route.ts:GET",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/api/cc/configuracion/perfil/route.ts",
+      "target": "file:lib/api/server-fetch.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/api/cc/configuracion/perfil/route.ts",
+      "target": "file:lib/schemas/configuracion.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "function:app/api/cc/configuracion/perfil/route.ts:GET",
+      "target": "function:lib/schemas/configuracion.ts:mapPerfil",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/api/cc/configuracion/reglas/route.ts",
+      "target": "function:app/api/cc/configuracion/reglas/route.ts:GET",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/api/cc/configuracion/reglas/route.ts",
+      "target": "function:app/api/cc/configuracion/reglas/route.ts:GET",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/api/cc/configuracion/reglas/route.ts",
+      "target": "file:lib/api/server-fetch.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/api/cc/configuracion/reglas/route.ts",
+      "target": "file:lib/schemas/configuracion.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/api/cc/configuracion/usuarios/[nombre]/activar/route.ts",
+      "target": "function:app/api/cc/configuracion/usuarios/[nombre]/activar/route.ts:POST",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:app/api/cc/configuracion/usuarios/[nombre]/activar/route.ts",
+      "target": "function:app/api/cc/configuracion/usuarios/[nombre]/activar/route.ts:POST",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:app/api/cc/configuracion/usuarios/[nombre]/activar/route.ts",
+      "target": "file:lib/api/server-fetch.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:app/api/cc/configuracion/usuarios/[nombre]/activar/route.ts",
+      "target": "file:lib/schemas/configuracion.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "function:app/api/cc/configuracion/usuarios/route.ts:POST",
+      "target": "function:lib/schemas/configuracion.ts:mapUsuario",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/api/cc/dwh/explorer/route.ts:statsFor",
+      "target": "function:lib/control-center/etl-status.ts:isErrored",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/api/cc/dwh/explorer/route.ts:statsFor",
+      "target": "function:lib/control-center/etl-status.ts:isSuccess",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/api/cc/dwh/explorer/route.ts:GET",
+      "target": "function:lib/api/server-fetch.ts:fastapiFetchSafe",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/api/cc/dwh/explorer/route.ts:GET",
+      "target": "function:lib/api/server-fetch.ts:fastapiFetchSafe",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/api/cc/dwh/route.ts:GET",
+      "target": "function:lib/api/server-fetch.ts:fastapiFetchSafe",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/api/cc/dwh/route.ts:GET",
+      "target": "function:lib/api/server-fetch.ts:fastapiFetchSafe",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/api/cc/dwh/route.ts:GET",
+      "target": "function:lib/control-center/etl-status.ts:isErrored",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/api/cc/dwh/route.ts:GET",
+      "target": "function:lib/control-center/etl-status.ts:isSuccess",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/api/cc/etl/runs/[id]/route.ts:GET",
+      "target": "function:lib/control-center/etl-status.ts:mapCorridaStatus",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/api/cc/etl/runs/[id]/route.ts:GET",
+      "target": "function:lib/control-center/etl-status.ts:mapCorridaStatus",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/api/cc/etl/runs/[id]/route.ts:DELETE",
+      "target": "function:lib/api/server-fetch.ts:fastapiFetch",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/api/cc/etl/runs/route.ts:GET",
+      "target": "function:lib/control-center/etl-status.ts:mapCorridaStatus",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/api/cc/etl/runs/route.ts:POST",
+      "target": "function:lib/schemas/etl-launch.ts:mapCorridaIniciada",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/api/cc/etl/trend/route.ts:GET",
+      "target": "function:lib/control-center/etl-status.ts:isErrored",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/api/cc/etl/trend/route.ts:GET",
+      "target": "function:lib/control-center/etl-status.ts:isSuccess",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/api/cc/health/route.ts:GET",
+      "target": "function:lib/api/server-fetch.ts:fastapiFetchSafe",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/api/cc/health/route.ts:GET",
+      "target": "function:lib/api/server-fetch.ts:fastapiFetchSafe",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:app/api/cc/health/route.ts:GET",
+      "target": "function:lib/api/server-fetch.ts:fastapiFetchSafe",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:lib/control-center/compute-alerts.ts:computeAlerts",
+      "target": "function:lib/api/server-fetch.ts:fastapiFetchSafe",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:lib/control-center/compute-alerts.ts:computeAlerts",
+      "target": "function:lib/api/server-fetch.ts:fastapiFetchSafe",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:lib/control-center/compute-alerts.ts:computeAlerts",
+      "target": "function:lib/control-center/etl-status.ts:isErrored",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

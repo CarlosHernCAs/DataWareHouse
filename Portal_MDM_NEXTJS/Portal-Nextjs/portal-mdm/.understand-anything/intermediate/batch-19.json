@@ -1,0 +1,83 @@
+{
+  "nodes": [
+    {
+      "id": "document:.claude/skills/understand/locales/en.md",
+      "type": "document",
+      "name": "en.md",
+      "filePath": ".claude/skills/understand/locales/en.md",
+      "summary": "Documentation file outlining specifications and guides in en.md.",
+      "tags": [
+        "docs",
+        "documentation",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/understand/locales/ja.md",
+      "type": "document",
+      "name": "ja.md",
+      "filePath": ".claude/skills/understand/locales/ja.md",
+      "summary": "Documentation file outlining specifications and guides in ja.md.",
+      "tags": [
+        "docs",
+        "documentation",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/understand/locales/ko.md",
+      "type": "document",
+      "name": "ko.md",
+      "filePath": ".claude/skills/understand/locales/ko.md",
+      "summary": "Documentation file outlining specifications and guides in ko.md.",
+      "tags": [
+        "docs",
+        "documentation",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/understand/locales/ru.md",
+      "type": "document",
+      "name": "ru.md",
+      "filePath": ".claude/skills/understand/locales/ru.md",
+      "summary": "Documentation file outlining specifications and guides in ru.md.",
+      "tags": [
+        "docs",
+        "documentation",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/understand/locales/zh-TW.md",
+      "type": "document",
+      "name": "zh-TW.md",
+      "filePath": ".claude/skills/understand/locales/zh-TW.md",
+      "summary": "Documentation file outlining specifications and guides in zh-TW.md.",
+      "tags": [
+        "docs",
+        "documentation",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.claude/skills/understand/locales/zh.md",
+      "type": "document",
+      "name": "zh.md",
+      "filePath": ".claude/skills/understand/locales/zh.md",
+      "summary": "Documentation file outlining specifications and guides in zh.md.",
+      "tags": [
+        "docs",
+        "documentation",
+        "module"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

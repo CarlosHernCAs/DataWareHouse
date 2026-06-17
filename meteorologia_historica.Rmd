@@ -1,0 +1,76 @@
+---
+title: "Histórico Meteorología"
+author: "Tomas Rodriguez"
+date: "2026-04-15"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(readxl)
+library(writexl)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+suppressWarnings(df_clima_2025 <- read_excel("G:/Unidades compartidas/Compartido Proyecciones/11.- Variables Meteorológicas/2026/Resumen de Variables Meteorológicas/Sem 11/Variables Meteorológicas F7_09-03-2026.xlsx", sheet = "BD ", skip = 2, col_names = TRUE, col_types = c(rep("guess", 6), rep("numeric", 16),rep("skip",8))))
+
+suppressWarnings(df_clima_2026 <- read_excel("G:/Unidades compartidas/Compartido Proyecciones/11.- Variables Meteorológicas/2026/5.- Actualización Diaria/F-RI.123 Variables Estación Metereológica F7 - 2026.xls", sheet = "Consolidado", col_names = TRUE, col_types = c("date", "date", rep("numeric",6), "text", "text", "numeric", "numeric", "text", rep("numeric",28))))
+```
+
+```{r pressure, echo=FALSE}
+df_weather_2025 <- df_clima_2025 %>% 
+  mutate(DateTime = as.POSIXct(paste(Fecha, format(Hora, "%H:%M:%S")), format = "%Y-%m-%d %H:%M:%S")) %>% 
+  filter(Año != 2026) %>% 
+  select(-Año, -Abreviatura, -Mes, -Fecha, -Hora, -c(16,18:22))
+```
+
+```{r}
+diamult <- floor(nrow(df_clima_2026)/49)
+xmult <- 0:diamult
+xfiles <- xmult*49+1
+
+df_weather_2026 <- df_clima_2026 %>% 
+  slice(-xfiles) %>% 
+  mutate(
+    DateTime = as.POSIXct(paste(Fecha, format(Hora, "%H:%M:%S")), format = "%Y-%m-%d %H:%M:%S"),
+    Semana = isoweek(Fecha)) %>%
+  select(-c(1,2, 8:11, 13, 14, 16, 17, 18, 22, 23, 25:31, 33, 34, 36:41))
+```
+
+```{r}
+names(df_weather_2025) <- c("Semana", "t_ext", "t_max", "t_min", "humid", "dewpt", "v_max", "rain", "solar", "uv", "evotransp", "DateTime")
+
+names(df_weather_2026) <- c("t_ext", "t_max", "t_min", "humid", "dewpt", "v_max", "heat_idx", "rain", "rain_i", "solar", "uv", "heat", "evotransp", "DateTime", "Semana")
+```
+
+```{r}
+df_weather_hist <- df_weather_2025 %>% 
+  bind_rows(df_weather_2026)
+```
+
+```{r}
+df_weather_hist <- df_weather_hist %>% 
+  arrange(DateTime) %>% 
+  mutate(
+    gdd = (t_ext-10)*as.numeric(difftime(DateTime,lag(DateTime),units="days")),
+    v_max_ms = v_max/3.6
+  )
+```
+
+```{r}
+names(df_weather_hist) <- c("Semana", "Temp. Exterior  (C°)", "Temp. Maxima (C°)", "Temp. Minima (C°)", "Humedad Externa (%)", "Punto Rocio (C°)", "Velocida Max (km/hr)", "Lluvia (mm)", "Radiacion Solar (w/m2)", "Indice Rayos UV F7", "Evapotranspiracion (mm)", "FechaHora", "Indice de Calor", "Intensidad de Lluvia (mm/hr)", "Calor", "Grados Día", "Velocidad Max (m/s)")
+```
+
+```{r}
+write_xlsx(df_weather_hist, "G:/Unidades compartidas/Compartido Proyecciones/11.- Variables Meteorológicas/2026/5.- Actualización Diaria/Meteorologia_Historica.xlsx")
+```
+
+
+
+

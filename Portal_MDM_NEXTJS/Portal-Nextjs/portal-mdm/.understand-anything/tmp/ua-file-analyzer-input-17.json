@@ -1,0 +1,147 @@
+{
+  "projectRoot": "d:/Proyecto2026/ACP_DWH/ACP Proyecciones/Portal_MDM_NEXTJS/Portal-Nextjs/portal-mdm",
+  "batchFiles": [
+    {
+      "path": ".claude/skills/understand/languages/cpp.md",
+      "language": "markdown",
+      "sizeLines": 47,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/understand/languages/csharp.md",
+      "language": "markdown",
+      "sizeLines": 46,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/understand/languages/css.md",
+      "language": "markdown",
+      "sizeLines": 37,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/understand/languages/dockerfile.md",
+      "language": "markdown",
+      "sizeLines": 34,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/understand/languages/go.md",
+      "language": "markdown",
+      "sizeLines": 47,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/understand/languages/graphql.md",
+      "language": "markdown",
+      "sizeLines": 35,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/understand/languages/html.md",
+      "language": "markdown",
+      "sizeLines": 34,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/understand/languages/java.md",
+      "language": "markdown",
+      "sizeLines": 45,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/understand/languages/javascript.md",
+      "language": "markdown",
+      "sizeLines": 46,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/understand/languages/json.md",
+      "language": "markdown",
+      "sizeLines": 34,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/understand/languages/kotlin.md",
+      "language": "markdown",
+      "sizeLines": 45,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/understand/languages/markdown.md",
+      "language": "markdown",
+      "sizeLines": 34,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/understand/languages/php.md",
+      "language": "markdown",
+      "sizeLines": 46,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/understand/languages/protobuf.md",
+      "language": "markdown",
+      "sizeLines": 34,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/understand/languages/python.md",
+      "language": "markdown",
+      "sizeLines": 48,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/understand/languages/ruby.md",
+      "language": "markdown",
+      "sizeLines": 46,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/understand/languages/rust.md",
+      "language": "markdown",
+      "sizeLines": 47,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/understand/languages/shell.md",
+      "language": "markdown",
+      "sizeLines": 35,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/understand/languages/sql.md",
+      "language": "markdown",
+      "sizeLines": 36,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".claude/skills/understand/languages/swift.md",
+      "language": "markdown",
+      "sizeLines": 46,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    ".claude/skills/understand/languages/cpp.md": [],
+    ".claude/skills/understand/languages/csharp.md": [],
+    ".claude/skills/understand/languages/css.md": [],
+    ".claude/skills/understand/languages/dockerfile.md": [],
+    ".claude/skills/understand/languages/go.md": [],
+    ".claude/skills/understand/languages/graphql.md": [],
+    ".claude/skills/understand/languages/html.md": [],
+    ".claude/skills/understand/languages/java.md": [],
+    ".claude/skills/understand/languages/javascript.md": [],
+    ".claude/skills/understand/languages/json.md": [],
+    ".claude/skills/understand/languages/kotlin.md": [],
+    ".claude/skills/understand/languages/markdown.md": [],
+    ".claude/skills/understand/languages/php.md": [],
+    ".claude/skills/understand/languages/protobuf.md": [],
+    ".claude/skills/understand/languages/python.md": [],
+    ".claude/skills/understand/languages/ruby.md": [],
+    ".claude/skills/understand/languages/rust.md": [],
+    ".claude/skills/understand/languages/shell.md": [],
+    ".claude/skills/understand/languages/sql.md": [],
+    ".claude/skills/understand/languages/swift.md": []
+  }
+}

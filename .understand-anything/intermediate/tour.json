@@ -1,0 +1,42 @@
+[
+  {
+    "order": 1,
+    "title": "Arquitectura del Proyecto",
+    "description": "Este proyecto es una plataforma MDM que combina un Data Warehouse (DWH) en SQL Server con una carga ETL en Python y un portal de administración moderno en Next.js.",
+    "nodeIds": [
+      "document:README.md"
+    ]
+  },
+  {
+    "order": 2,
+    "title": "Orquestador de ETL en Python",
+    "description": "El punto de entrada de la ingesta de datos. Coordina las fases de Bronce, Silver y Gold para leer archivos Excel de inducción floral y climatología.",
+    "nodeIds": [
+      "file:ETL/pipeline.py"
+    ]
+  },
+  {
+    "order": 3,
+    "title": "Cargador Bronce",
+    "description": "Lee y procesa la data cruda desde los archivos Excel mapeando las cabeceras de columnas variables en base de datos.",
+    "nodeIds": [
+      "file:ETL/bronce/cargador.py"
+    ]
+  },
+  {
+    "order": 4,
+    "title": "Servidor API FastAPI Backend",
+    "description": "Servidor REST en Python que proporciona endpoints de monitoreo de calidad, administración de parámetros y reinyección de cuarentena.",
+    "nodeIds": [
+      "file:backend/main.py"
+    ]
+  },
+  {
+    "order": 5,
+    "title": "Portal de visualización Next.js",
+    "description": "Interfaz de usuario construida en React que consume la API del backend para dar seguimiento visual de la ETL en tiempo real.",
+    "nodeIds": [
+      "file:Portal_MDM_NEXTJS/Portal-Nextjs/portal-mdm/components/data-table/data-view.tsx"
+    ]
+  }
+]

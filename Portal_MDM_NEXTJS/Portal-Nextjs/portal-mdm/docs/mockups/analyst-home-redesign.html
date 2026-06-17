@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mockup · Home Analista (rediseño)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --color-bg:#0f172a; --color-surface:#1e293b; --color-surface-2:#334155; --color-border:#1e3a5f;
+    --color-primary:#2563eb; --color-primary-2:#0369a1; --color-primary-foreground:#f8fafc;
+    --color-warning:#d97706; --color-success:#059669; --color-destructive:#dc2626; --color-info:#0284c7;
+    --color-text:#f8fafc; --color-text-muted:#94a3b8; --color-ring:#60a5fa;
+    --radius-sm:4px; --radius-md:8px; --radius-lg:12px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Inter,system-ui,sans-serif;background:var(--color-bg);color:var(--color-text);
+    font-feature-settings:"ss01","cv02","cv11";-webkit-font-smoothing:antialiased;line-height:1.5}
+  .mono{font-family:"JetBrains Mono",monospace}
+  .tnum{font-variant-numeric:tabular-nums}
+
+  /* ---- App shell ---- */
+  .app{display:grid;grid-template-columns:240px 1fr;min-height:100vh}
+  .sidebar{background:#0b1322;border-right:1px solid var(--color-border);padding:18px 14px;display:flex;flex-direction:column;gap:6px}
+  .brand{display:flex;align-items:center;gap:10px;padding:6px 8px 18px}
+  .brand .logo{width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,var(--color-primary),var(--color-primary-2));display:grid;place-items:center;font-weight:800;font-size:15px}
+  .brand b{font-size:14px;letter-spacing:.2px}
+  .brand small{display:block;color:var(--color-text-muted);font-size:11px;font-weight:500}
+  .navlabel{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--color-text-muted);padding:14px 10px 6px;font-weight:700}
+  .nav a{display:flex;align-items:center;gap:11px;padding:9px 10px;border-radius:var(--radius-md);color:var(--color-text-muted);text-decoration:none;font-size:13.5px;font-weight:500;transition:background .15s,color .15s}
+  .nav a svg{width:17px;height:17px;opacity:.9}
+  .nav a:hover{background:var(--color-surface);color:var(--color-text)}
+  .nav a.active{background:color-mix(in oklab,var(--color-primary) 18%,transparent);color:#fff}
+  .nav a.active svg{color:var(--color-ring)}
+  .sidebar .user{margin-top:auto;display:flex;align-items:center;gap:10px;padding:10px;border-top:1px solid var(--color-border)}
+  .avatar{width:30px;height:30px;border-radius:50%;background:var(--color-surface-2);display:grid;place-items:center;font-size:12px;font-weight:700}
+
+  .main{display:flex;flex-direction:column;min-width:0}
+  .topbar{height:56px;border-bottom:1px solid var(--color-border);display:flex;align-items:center;gap:14px;padding:0 24px;background:color-mix(in oklab,var(--color-bg) 80%,#000)}
+  .topbar .crumb{color:var(--color-text-muted);font-size:13px}
+  .topbar .crumb b{color:var(--color-text);font-weight:600}
+  .topsearch{margin-left:auto;display:flex;align-items:center;gap:8px;background:var(--color-surface);border:1px solid var(--color-border);border-radius:999px;padding:7px 13px;color:var(--color-text-muted);font-size:12.5px;width:220px}
+  .icon-btn{width:34px;height:34px;border-radius:9px;border:1px solid var(--color-border);background:var(--color-surface);color:var(--color-text-muted);display:grid;place-items:center;cursor:pointer}
+
+  .content{padding:24px;display:flex;flex-direction:column;gap:20px;max-width:1320px;width:100%}
+
+  /* ---- Hero ---- */
+  .hero{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap}
+  .hero h1{font-size:24px;font-weight:800;letter-spacing:-.4px}
+  .hero h1 .wave{font-weight:400}
+  .hero .sub{margin-top:5px;color:var(--color-text-muted);font-size:13.5px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .pill{display:inline-flex;align-items:center;gap:6px;padding:3px 9px;border-radius:999px;font-size:11.5px;font-weight:600;border:1px solid var(--color-border);background:var(--color-surface)}
+  .pill.saved{color:#6ee7b7;border-color:color-mix(in oklab,var(--color-success) 45%,transparent);background:color-mix(in oklab,var(--color-success) 14%,transparent)}
+  .dot{width:6px;height:6px;border-radius:50%;background:currentColor;display:inline-block}
+
+  .actions{display:flex;align-items:center;gap:10px}
+  .seg{display:inline-flex;background:var(--color-surface);border:1px solid var(--color-border);border-radius:10px;padding:3px}
+  .seg button{border:0;background:transparent;color:var(--color-text-muted);font:inherit;font-size:12.5px;font-weight:600;padding:7px 14px;border-radius:7px;cursor:pointer;display:flex;align-items:center;gap:7px}
+  .seg button.on{background:var(--color-primary);color:#fff;box-shadow:0 1px 2px rgba(0,0,0,.3)}
+  .btn{display:inline-flex;align-items:center;gap:7px;border-radius:9px;font-size:12.5px;font-weight:600;padding:8px 14px;cursor:pointer;border:1px solid transparent}
+  .btn svg{width:15px;height:15px}
+  .btn.primary{background:var(--color-primary);color:#fff}
+  .btn.ghost{background:var(--color-surface);border-color:var(--color-border);color:var(--color-text)}
+
+  /* ---- KPI strip ---- */
+  .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .kpi{position:relative;overflow:hidden;background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:15px 16px}
+  .kpi .k-top{display:flex;align-items:center;justify-content:space-between;color:var(--color-text-muted);font-size:11.5px;font-weight:600;text-transform:uppercase;letter-spacing:.07em}
+  .kpi .k-ico{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;background:color-mix(in oklab,var(--color-primary) 16%,transparent);color:var(--color-ring)}
+  .kpi .k-val{font-size:26px;font-weight:800;letter-spacing:-.5px;margin-top:10px}
+  .kpi .k-val small{font-size:13px;font-weight:600;color:var(--color-text-muted)}
+  .kpi .k-delta{font-size:12px;font-weight:700;margin-top:3px;display:flex;align-items:center;gap:5px}
+  .up{color:#34d399}.down{color:#f87171}
+  .kpi .spark{position:absolute;right:0;bottom:0;width:120px;height:46px;opacity:.55}
+
+  /* ---- Widget grid ---- */
+  .section-row{display:flex;align-items:center;justify-content:space-between}
+  .section-row h2{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--color-text-muted)}
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;grid-auto-rows:172px}
+  .card{display:flex;flex-direction:column;background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);overflow:hidden;transition:border-color .18s,box-shadow .18s,transform .18s}
+  .card:hover{border-color:color-mix(in oklab,var(--color-primary) 55%,var(--color-border));box-shadow:0 8px 28px -12px rgba(0,0,0,.6)}
+  .card .head{display:flex;align-items:center;gap:9px;padding:11px 13px;border-bottom:1px solid var(--color-border)}
+  .chip{display:inline-flex;align-items:center;gap:5px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:3px 7px;border-radius:6px;background:var(--color-surface-2);color:var(--color-text-muted)}
+  .chip.line{color:#93c5fd;background:color-mix(in oklab,#3b82f6 18%,transparent)}
+  .chip.bar{color:#a7f3d0;background:color-mix(in oklab,#10b981 18%,transparent)}
+  .chip.pie{color:#fcd34d;background:color-mix(in oklab,#f59e0b 18%,transparent)}
+  .chip.fc{color:#c4b5fd;background:color-mix(in oklab,#8b5cf6 18%,transparent)}
+  .chip.tbl{color:#fda4af;background:color-mix(in oklab,#f43f5e 18%,transparent)}
+  .card .title{font-size:13px;font-weight:600;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .card .grip{color:var(--color-text-muted);opacity:.0;transition:opacity .15s}
+  .card:hover .grip{opacity:.5}
+  .card .body{flex:1;padding:12px 13px;min-height:0;display:flex;flex-direction:column;justify-content:center}
+  .col-1{grid-column:span 1}.col-2{grid-column:span 2}.row-2{grid-row:span 2}
+
+  /* KPI-type widget big number */
+  .bignum{font-size:40px;font-weight:800;letter-spacing:-1px;line-height:1}
+  .bignum small{font-size:15px;color:var(--color-text-muted);font-weight:600}
+  .subtle{color:var(--color-text-muted);font-size:12px;margin-top:6px}
+
+  /* faux table */
+  table.mini{width:100%;border-collapse:collapse;font-size:12px}
+  table.mini th{text-align:left;color:var(--color-text-muted);font-size:10px;text-transform:uppercase;letter-spacing:.06em;padding:5px 6px;border-bottom:1px solid var(--color-border)}
+  table.mini td{padding:6px;border-bottom:1px solid color-mix(in oklab,var(--color-border) 60%,transparent)}
+  table.mini td.num{text-align:right;font-family:"JetBrains Mono",monospace}
+
+  /* edit mode block */
+  .editwrap{border:1px dashed color-mix(in oklab,var(--color-primary) 50%,var(--color-border));background:color-mix(in oklab,var(--color-primary) 6%,transparent);border-radius:var(--radius-lg);padding:18px}
+  .add-tile{border:2px dashed color-mix(in oklab,var(--color-text-muted) 40%,transparent);border-radius:var(--radius-lg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:var(--color-text-muted);cursor:pointer;transition:.15s}
+  .add-tile:hover{border-color:var(--color-primary);color:var(--color-ring);background:color-mix(in oklab,var(--color-primary) 8%,transparent)}
+  .card.editing .head{cursor:grab}
+  .card.editing .grip{opacity:.7}
+  .editbtns{display:flex;gap:4px}
+  .ebtn{width:24px;height:24px;border-radius:6px;border:1px solid var(--color-border);background:var(--color-surface-2);display:grid;place-items:center;color:var(--color-text-muted);cursor:pointer}
+  .ebtn.del{color:#f87171}
+
+  /* empty state */
+  .empty{border:1px solid var(--color-border);border-radius:var(--radius-lg);background:var(--color-surface);padding:34px;text-align:center}
+  .templates{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px;max-width:560px;margin-left:auto;margin-right:auto}
+  .tpl{border:1px solid var(--color-border);border-radius:var(--radius-md);padding:14px;text-align:left;cursor:pointer;transition:.15s;background:var(--color-bg)}
+  .tpl:hover{border-color:var(--color-primary);transform:translateY(-2px)}
+  .tpl b{font-size:12.5px}.tpl p{color:var(--color-text-muted);font-size:11px;margin-top:3px}
+
+  .note{background:var(--color-surface);border:1px solid var(--color-border);border-left:3px solid var(--color-primary);border-radius:var(--radius-md);padding:13px 16px;font-size:13px;color:var(--color-text-muted);max-width:1320px}
+  .note b{color:var(--color-text)}
+  .divider{height:1px;background:var(--color-border);margin:6px 0}
+  .badge-mini{font-size:10px;font-weight:700;padding:2px 7px;border-radius:999px;background:color-mix(in oklab,var(--color-primary) 18%,transparent);color:var(--color-ring)}
+  @media (max-width:1100px){.kpis{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div class="app">
+  <!-- Sidebar (contexto del portal) -->
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="logo">A</div>
+      <div><b>ACP DWH</b><small>Portal MDM</small></div>
+    </div>
+    <div class="navlabel">Analista</div>
+    <nav class="nav">
+      <a class="active" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Mi Workspace</a>
+      <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>Proyecciones</a>
+      <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>Explorar</a>
+      <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>Modelos</a>
+      <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/></svg>Reportes</a>
+    </nav>
+    <div class="user">
+      <div class="avatar">CL</div>
+      <div style="min-width:0"><div style="font-size:12.5px;font-weight:600">Carlo López</div><div style="font-size:11px;color:var(--color-text-muted)">Analista</div></div>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <div class="main">
+    <div class="topbar">
+      <div class="crumb">Analista / <b>Mi Workspace</b></div>
+      <div class="topsearch"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>Buscar…</div>
+      <div class="icon-btn">☾</div>
+      <div class="icon-btn">🔔</div>
+    </div>
+
+    <div class="content">
+
+      <!-- HERO -->
+      <div class="hero">
+        <div>
+          <h1><span class="wave">👋</span> Buenos días, Carlo</h1>
+          <div class="sub">
+            <span>Lunes 16 de junio, 2026</span>
+            <span class="dot" style="opacity:.4"></span>
+            <span>8 widgets activos</span>
+            <span class="pill saved"><span class="dot"></span> Guardado hace 5 min</span>
+          </div>
+        </div>
+        <div class="actions">
+          <div class="seg">
+            <button class="on"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>Ver</button>
+            <button><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>Editar</button>
+          </div>
+          <button class="btn ghost"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-9-9c2.5 0 4.8 1 6.4 2.6L21 8"/><path d="M21 3v5h-5"/></svg>Actualizar</button>
+        </div>
+      </div>
+
+      <!-- KPI STRIP -->
+      <div class="kpis">
+        <div class="kpi">
+          <div class="k-top"><span>Cosecha total</span><span class="k-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v8"/><path d="M5 10c0 4 3 7 7 7s7-3 7-7"/><path d="M12 17v5"/></svg></span></div>
+          <div class="k-val tnum">1,284<small> t</small></div>
+          <div class="k-delta up">▲ 12.4% <span style="color:var(--color-text-muted);font-weight:500">vs. campaña ant.</span></div>
+          <svg class="spark" viewBox="0 0 120 46" preserveAspectRatio="none"><polyline fill="none" stroke="#34d399" stroke-width="2" points="0,40 15,34 30,36 45,26 60,28 75,18 90,20 105,10 120,8"/></svg>
+        </div>
+        <div class="kpi">
+          <div class="k-top"><span>Rendimiento</span><span class="k-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></span></div>
+          <div class="k-val tnum">2.31<small> kg/pl</small></div>
+          <div class="k-delta up">▲ 3.1%</div>
+          <svg class="spark" viewBox="0 0 120 46" preserveAspectRatio="none"><polyline fill="none" stroke="#60a5fa" stroke-width="2" points="0,30 15,28 30,32 45,24 60,26 75,22 90,18 105,20 120,14"/></svg>
+        </div>
+        <div class="kpi">
+          <div class="k-top"><span>Proyección 30d</span><span class="k-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span></div>
+          <div class="k-val tnum">+418<small> t</small></div>
+          <div class="k-delta up">▲ 8.0%</div>
+          <svg class="spark" viewBox="0 0 120 46" preserveAspectRatio="none"><polyline fill="none" stroke="#c4b5fd" stroke-width="2" stroke-dasharray="3 3" points="0,34 20,30 40,32 60,22 80,24 100,14 120,10"/></svg>
+        </div>
+        <div class="kpi">
+          <div class="k-top"><span>Calidad datos</span><span class="k-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg></span></div>
+          <div class="k-val tnum">98.2<small>%</small></div>
+          <div class="k-delta down">▼ 0.4% <span style="color:var(--color-text-muted);font-weight:500">42 en cuarentena</span></div>
+          <svg class="spark" viewBox="0 0 120 46" preserveAspectRatio="none"><polyline fill="none" stroke="#fbbf24" stroke-width="2" points="0,12 20,10 40,14 60,12 80,16 100,14 120,18"/></svg>
+        </div>
+      </div>
+
+      <!-- WIDGET GRID (view mode) -->
+      <div class="section-row">
+        <h2>Mis widgets</h2>
+        <span class="pill"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>Grid adaptable</span>
+      </div>
+
+      <div class="grid">
+        <!-- KPI card widget -->
+        <div class="card col-1">
+          <div class="head"><span class="chip">KPI</span><span class="title">Hectáreas activas</span><span class="grip">⋮⋮</span></div>
+          <div class="body">
+            <div class="bignum tnum">342<small> ha</small></div>
+            <div class="subtle">en 7 fundos · 18 sectores</div>
+          </div>
+        </div>
+
+        <!-- Line chart -->
+        <div class="card col-2">
+          <div class="head"><span class="chip line"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>Línea</span><span class="title">Cosecha diaria por variedad</span><span class="grip">⋮⋮</span></div>
+          <div class="body" style="padding:6px 8px">
+            <svg viewBox="0 0 320 110" preserveAspectRatio="none" style="width:100%;height:100%">
+              <g stroke="var(--color-border)" stroke-width="1"><line x1="0" y1="28" x2="320" y2="28"/><line x1="0" y1="56" x2="320" y2="56"/><line x1="0" y1="84" x2="320" y2="84"/></g>
+              <polyline fill="none" stroke="#60a5fa" stroke-width="2.5" points="0,80 40,72 80,76 120,58 160,64 200,44 240,50 280,30 320,34"/>
+              <polyline fill="none" stroke="#34d399" stroke-width="2.5" points="0,92 40,88 80,82 120,86 160,70 200,74 240,60 280,64 320,52"/>
+              <polyline fill="none" stroke="#fbbf24" stroke-width="2.5" points="0,98 40,96 80,90 120,94 160,88 200,82 240,86 280,78 320,80"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Donut -->
+        <div class="card col-1">
+          <div class="head"><span class="chip pie"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 12A9 9 0 1 1 12 3v9z"/></svg>Donut</span><span class="title">Mix variedad</span><span class="grip">⋮⋮</span></div>
+          <div class="body" style="align-items:center;flex-direction:row;gap:12px">
+            <svg width="84" height="84" viewBox="0 0 42 42">
+              <circle cx="21" cy="21" r="15.9" fill="none" stroke="var(--color-surface-2)" stroke-width="6"/>
+              <circle cx="21" cy="21" r="15.9" fill="none" stroke="#60a5fa" stroke-width="6" stroke-dasharray="45 55" stroke-dashoffset="25"/>
+              <circle cx="21" cy="21" r="15.9" fill="none" stroke="#34d399" stroke-width="6" stroke-dasharray="30 70" stroke-dashoffset="-20"/>
+              <circle cx="21" cy="21" r="15.9" fill="none" stroke="#fbbf24" stroke-width="6" stroke-dasharray="25 75" stroke-dashoffset="-50"/>
+            </svg>
+            <div style="font-size:11px;display:flex;flex-direction:column;gap:5px">
+              <span><span class="dot" style="color:#60a5fa"></span> Sekoya 45%</span>
+              <span><span class="dot" style="color:#34d399"></span> Rocío 30%</span>
+              <span><span class="dot" style="color:#fbbf24"></span> Otras 25%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bar chart -->
+        <div class="card col-2">
+          <div class="head"><span class="chip bar"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 3v18h18"/><rect x="7" y="10" width="3" height="7"/><rect x="12" y="6" width="3" height="11"/><rect x="17" y="13" width="3" height="4"/></svg>Barras</span><span class="title">Top fundos por rendimiento</span><span class="grip">⋮⋮</span></div>
+          <div class="body" style="padding:8px 12px">
+            <svg viewBox="0 0 320 110" preserveAspectRatio="none" style="width:100%;height:100%">
+              <g fill="#2563eb">
+                <rect x="6"  y="40" width="40" height="70" rx="3"/>
+                <rect x="58" y="22" width="40" height="88" rx="3" fill="#3b82f6"/>
+                <rect x="110" y="56" width="40" height="54" rx="3"/>
+                <rect x="162" y="68" width="40" height="42" rx="3"/>
+                <rect x="214" y="34" width="40" height="76" rx="3" fill="#3b82f6"/>
+                <rect x="266" y="78" width="40" height="32" rx="3"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Forecast (big) -->
+        <div class="card col-2 row-2">
+          <div class="head"><span class="chip fc"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Forecast</span><span class="title">Proyección de cosecha · próximas 8 semanas</span><span class="badge-mini">Holt-Winters</span><span class="grip">⋮⋮</span></div>
+          <div class="body" style="padding:10px 12px">
+            <svg viewBox="0 0 320 230" preserveAspectRatio="none" style="width:100%;height:100%">
+              <g stroke="var(--color-border)" stroke-width="1"><line x1="0" y1="55" x2="320" y2="55"/><line x1="0" y1="110" x2="320" y2="110"/><line x1="0" y1="165" x2="320" y2="165"/></g>
+              <!-- confidence band -->
+              <path d="M170,120 L210,96 L250,104 L290,70 L320,60 L320,120 L290,128 L250,150 L210,142 L170,150 Z" fill="color-mix(in oklab,#8b5cf6 22%,transparent)"/>
+              <!-- history -->
+              <polyline fill="none" stroke="#60a5fa" stroke-width="2.5" points="0,180 30,168 60,172 90,150 120,156 150,132 170,135"/>
+              <!-- forecast -->
+              <polyline fill="none" stroke="#a78bfa" stroke-width="2.5" stroke-dasharray="5 4" points="170,135 210,118 250,126 290,98 320,90"/>
+              <circle cx="170" cy="135" r="3.5" fill="#a78bfa"/>
+            </svg>
+            <div class="subtle" style="display:flex;gap:16px;margin-top:8px">
+              <span><span class="dot" style="color:#60a5fa"></span> Histórico</span>
+              <span><span class="dot" style="color:#a78bfa"></span> Proyectado</span>
+              <span style="color:var(--color-text-muted)">Banda de confianza 80%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- KPI card 2 -->
+        <div class="card col-1">
+          <div class="head"><span class="chip">KPI</span><span class="title">Jornales / ha</span><span class="grip">⋮⋮</span></div>
+          <div class="body">
+            <div class="bignum tnum">7.8</div>
+            <div class="subtle"><span class="up" style="font-weight:700">▼ 5%</span> más eficiente</div>
+          </div>
+        </div>
+
+        <!-- Table -->
+        <div class="card col-1">
+          <div class="head"><span class="chip tbl"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>Tabla</span><span class="title">Últimos lotes</span><span class="grip">⋮⋮</span></div>
+          <div class="body" style="padding:0">
+            <table class="mini">
+              <thead><tr><th>Lote</th><th style="text-align:right">Kg</th></tr></thead>
+              <tbody>
+                <tr><td>L-0421</td><td class="num">1,204</td></tr>
+                <tr><td>L-0420</td><td class="num">988</td></tr>
+                <tr><td>L-0419</td><td class="num">1,512</td></tr>
+                <tr><td>L-0418</td><td class="num">760</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- EDIT MODE PREVIEW -->
+      <div class="section-row" style="margin-top:8px">
+        <h2>Modo edición <span class="badge-mini">vista previa</span></h2>
+      </div>
+      <div class="editwrap">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+          <span style="font-size:13px;color:var(--color-text-muted)">Arrastra para reordenar · edita o elimina cada widget</span>
+          <div style="display:flex;gap:8px">
+            <button class="btn ghost"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5v14"/></svg>Agregar widget</button>
+            <button class="btn primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2Z"/><path d="M17 21v-8H7v8M7 3v5h8"/></svg>Guardar layout</button>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="card editing col-2">
+            <div class="head"><span class="grip">⋮⋮</span><span class="chip line">Línea</span><span class="title">Cosecha diaria por variedad</span>
+              <div class="editbtns"><span class="ebtn">✎</span><span class="ebtn del">🗑</span></div>
+            </div>
+            <div class="body" style="padding:6px 8px;opacity:.8">
+              <svg viewBox="0 0 320 90" preserveAspectRatio="none" style="width:100%;height:100%"><polyline fill="none" stroke="#60a5fa" stroke-width="2.5" points="0,70 60,58 120,62 180,40 240,46 320,26"/></svg>
+            </div>
+          </div>
+          <div class="card editing col-1">
+            <div class="head"><span class="grip">⋮⋮</span><span class="chip">KPI</span><span class="title">Hectáreas</span>
+              <div class="editbtns"><span class="ebtn">✎</span><span class="ebtn del">🗑</span></div>
+            </div>
+            <div class="body"><div class="bignum tnum">342<small> ha</small></div></div>
+          </div>
+          <div class="add-tile col-1">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5v14"/></svg>
+            <span style="font-size:12px;font-weight:600">Agregar</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- EMPTY STATE PREVIEW -->
+      <div class="section-row" style="margin-top:8px">
+        <h2>Estado vacío <span class="badge-mini">vista previa</span></h2>
+      </div>
+      <div class="empty">
+        <div style="width:48px;height:48px;border-radius:14px;background:color-mix(in oklab,var(--color-primary) 16%,transparent);display:grid;place-items:center;margin:0 auto 14px;color:var(--color-ring)">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+        </div>
+        <div style="font-size:16px;font-weight:700">Construye tu workspace</div>
+        <p style="color:var(--color-text-muted);font-size:13px;margin-top:5px">Empieza con una plantilla o crea un widget desde cero.</p>
+        <div class="templates">
+          <div class="tpl"><b>📈 Resumen de cosecha</b><p>KPIs + tendencia diaria</p></div>
+          <div class="tpl"><b>🔮 Proyección</b><p>Forecast por variedad</p></div>
+          <div class="tpl"><b>🗺 Por fundo</b><p>Comparativa de rendimiento</p></div>
+        </div>
+      </div>
+
+      <div class="note">
+        <b>Nota:</b> Este es un mockup estático para validar dirección de diseño. Los gráficos reales seguirán renderizándose con Plotly; aquí se simulan con SVG. La paleta, tipografía (Inter) y radios coinciden con los tokens reales del portal (<span class="mono">--color-*</span> en <span class="mono">globals.css</span>).
+      </div>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>

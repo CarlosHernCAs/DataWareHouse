@@ -1,0 +1,768 @@
+{
+  "nodes": [
+    {
+      "id": "file:scratch/run_pesos_only.py",
+      "type": "file",
+      "name": "run_pesos_only.py",
+      "filePath": "scratch/run_pesos_only.py",
+      "summary": "File mapped from scratch/run_pesos_only.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/run_pipeline_2.py",
+      "type": "file",
+      "name": "run_pipeline_2.py",
+      "filePath": "scratch/run_pipeline_2.py",
+      "summary": "File mapped from scratch/run_pipeline_2.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/run_pipeline.py",
+      "type": "file",
+      "name": "run_pipeline.py",
+      "filePath": "scratch/run_pipeline.py",
+      "summary": "File mapped from scratch/run_pipeline.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/search_avg.py",
+      "type": "file",
+      "name": "search_avg.py",
+      "filePath": "scratch/search_avg.py",
+      "summary": "File mapped from scratch/search_avg.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/search_cargador.py",
+      "type": "file",
+      "name": "search_cargador.py",
+      "filePath": "scratch/search_cargador.py",
+      "summary": "File mapped from scratch/search_cargador.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/search_excel_cells.py",
+      "type": "file",
+      "name": "search_excel_cells.py",
+      "filePath": "scratch/search_excel_cells.py",
+      "summary": "File mapped from scratch/search_excel_cells.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/simulate_db_insert.py",
+      "type": "file",
+      "name": "simulate_db_insert.py",
+      "filePath": "scratch/simulate_db_insert.py",
+      "summary": "File mapped from scratch/simulate_db_insert.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scratch/simulate_db_insert.py:simulate",
+      "type": "function",
+      "name": "simulate",
+      "filePath": "scratch/simulate_db_insert.py",
+      "lineRange": [
+        10,
+        78
+      ],
+      "summary": "Function simulate defined in scratch/simulate_db_insert.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:scratch/simulate_load.py",
+      "type": "file",
+      "name": "simulate_load.py",
+      "filePath": "scratch/simulate_load.py",
+      "summary": "File mapped from scratch/simulate_load.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scratch/simulate_load.py:simulate",
+      "type": "function",
+      "name": "simulate",
+      "filePath": "scratch/simulate_load.py",
+      "lineRange": [
+        9,
+        100
+      ],
+      "summary": "Function simulate defined in scratch/simulate_load.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:scratch/summarize_sheets.py",
+      "type": "file",
+      "name": "summarize_sheets.py",
+      "filePath": "scratch/summarize_sheets.py",
+      "summary": "File mapped from scratch/summarize_sheets.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scratch/summarize_sheets.py:get_formula_type",
+      "type": "function",
+      "name": "get_formula_type",
+      "filePath": "scratch/summarize_sheets.py",
+      "lineRange": [
+        7,
+        17
+      ],
+      "summary": "Function get_formula_type defined in scratch/summarize_sheets.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/summarize_sheets.py:summarize",
+      "type": "function",
+      "name": "summarize",
+      "filePath": "scratch/summarize_sheets.py",
+      "lineRange": [
+        19,
+        78
+      ],
+      "summary": "Function summarize defined in scratch/summarize_sheets.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:scratch/test_all_marts.py",
+      "type": "file",
+      "name": "test_all_marts.py",
+      "filePath": "scratch/test_all_marts.py",
+      "summary": "File mapped from scratch/test_all_marts.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/test_all_marts.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "scratch/test_all_marts.py",
+      "lineRange": [
+        10,
+        21
+      ],
+      "summary": "Function main defined in scratch/test_all_marts.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/test_carga_fenologia.py",
+      "type": "file",
+      "name": "test_carga_fenologia.py",
+      "filePath": "scratch/test_carga_fenologia.py",
+      "summary": "File mapped from scratch/test_carga_fenologia.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scratch/test_carga_fenologia.py:test_carga",
+      "type": "function",
+      "name": "test_carga",
+      "filePath": "scratch/test_carga_fenologia.py",
+      "lineRange": [
+        12,
+        96
+      ],
+      "summary": "Function test_carga defined in scratch/test_carga_fenologia.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:scratch/test_hello.py",
+      "type": "file",
+      "name": "test_hello.py",
+      "filePath": "scratch/test_hello.py",
+      "summary": "File mapped from scratch/test_hello.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/test_induccion_parsing.py",
+      "type": "file",
+      "name": "test_induccion_parsing.py",
+      "filePath": "scratch/test_induccion_parsing.py",
+      "summary": "File mapped from scratch/test_induccion_parsing.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scratch/test_induccion_parsing.py:test_parsing",
+      "type": "function",
+      "name": "test_parsing",
+      "filePath": "scratch/test_induccion_parsing.py",
+      "lineRange": [
+        11,
+        55
+      ],
+      "summary": "Function test_parsing defined in scratch/test_induccion_parsing.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/test_payload.py",
+      "type": "file",
+      "name": "test_payload.py",
+      "filePath": "scratch/test_payload.py",
+      "summary": "File mapped from scratch/test_payload.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scratch/test_pesos_2.py",
+      "type": "file",
+      "name": "test_pesos_2.py",
+      "filePath": "scratch/test_pesos_2.py",
+      "summary": "File mapped from scratch/test_pesos_2.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/test_pesos_3.py",
+      "type": "file",
+      "name": "test_pesos_3.py",
+      "filePath": "scratch/test_pesos_3.py",
+      "summary": "File mapped from scratch/test_pesos_3.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/test_pesos_4.py",
+      "type": "file",
+      "name": "test_pesos_4.py",
+      "filePath": "scratch/test_pesos_4.py",
+      "summary": "File mapped from scratch/test_pesos_4.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/test_pesos_5.py",
+      "type": "file",
+      "name": "test_pesos_5.py",
+      "filePath": "scratch/test_pesos_5.py",
+      "summary": "File mapped from scratch/test_pesos_5.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/test_pesos.py",
+      "type": "file",
+      "name": "test_pesos.py",
+      "filePath": "scratch/test_pesos.py",
+      "summary": "File mapped from scratch/test_pesos.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/test_pesos.py:safe_float",
+      "type": "function",
+      "name": "safe_float",
+      "filePath": "scratch/test_pesos.py",
+      "lineRange": [
+        4,
+        8
+      ],
+      "summary": "Function safe_float defined in scratch/test_pesos.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/test_resolution.py",
+      "type": "file",
+      "name": "test_resolution.py",
+      "filePath": "scratch/test_resolution.py",
+      "summary": "File mapped from scratch/test_resolution.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scratch/test_resolution.py:test_sp",
+      "type": "function",
+      "name": "test_sp",
+      "filePath": "scratch/test_resolution.py",
+      "lineRange": [
+        4,
+        62
+      ],
+      "summary": "Function test_sp defined in scratch/test_resolution.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:scratch/update_rules.py",
+      "type": "file",
+      "name": "update_rules.py",
+      "filePath": "scratch/update_rules.py",
+      "summary": "File mapped from scratch/update_rules.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/update_rules.py:run_update",
+      "type": "function",
+      "name": "run_update",
+      "filePath": "scratch/update_rules.py",
+      "lineRange": [
+        3,
+        26
+      ],
+      "summary": "Function run_update defined in scratch/update_rules.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/verify_induccion_results.py",
+      "type": "file",
+      "name": "verify_induccion_results.py",
+      "filePath": "scratch/verify_induccion_results.py",
+      "summary": "File mapped from scratch/verify_induccion_results.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scratch/verify_injection.py",
+      "type": "file",
+      "name": "verify_injection.py",
+      "filePath": "scratch/verify_injection.py",
+      "summary": "File mapped from scratch/verify_injection.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/test_projection_logic.py",
+      "type": "file",
+      "name": "test_projection_logic.py",
+      "filePath": "tests/test_projection_logic.py",
+      "summary": "File mapped from tests/test_projection_logic.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/test_projection_logic.py:test_cerrar_matriz",
+      "type": "function",
+      "name": "test_cerrar_matriz",
+      "filePath": "tests/test_projection_logic.py",
+      "lineRange": [
+        18,
+        27
+      ],
+      "summary": "Function test_cerrar_matriz defined in tests/test_projection_logic.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/test_projection_logic.py:test_calcular_pct_productivas",
+      "type": "function",
+      "name": "test_calcular_pct_productivas",
+      "filePath": "tests/test_projection_logic.py",
+      "lineRange": [
+        29,
+        40
+      ],
+      "summary": "Function test_calcular_pct_productivas defined in tests/test_projection_logic.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/test_projection_logic.py:test_kg_unidad_semana",
+      "type": "function",
+      "name": "test_kg_unidad_semana",
+      "filePath": "tests/test_projection_logic.py",
+      "lineRange": [
+        42,
+        56
+      ],
+      "summary": "Function test_kg_unidad_semana defined in tests/test_projection_logic.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tools/extraer_geografia_desde_plano.py",
+      "type": "file",
+      "name": "extraer_geografia_desde_plano.py",
+      "filePath": "tools/extraer_geografia_desde_plano.py",
+      "summary": "File mapped from tools/extraer_geografia_desde_plano.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:tools/extraer_geografia_desde_plano.py:_int_or_none",
+      "type": "function",
+      "name": "_int_or_none",
+      "filePath": "tools/extraer_geografia_desde_plano.py",
+      "lineRange": [
+        33,
+        36
+      ],
+      "summary": "Function _int_or_none defined in tools/extraer_geografia_desde_plano.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tools/extraer_geografia_desde_plano.py:extraer_registros",
+      "type": "function",
+      "name": "extraer_registros",
+      "filePath": "tools/extraer_geografia_desde_plano.py",
+      "lineRange": [
+        39,
+        100
+      ],
+      "summary": "Function extraer_registros defined in tools/extraer_geografia_desde_plano.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:tools/extraer_geografia_desde_plano.py:guardar_csv",
+      "type": "function",
+      "name": "guardar_csv",
+      "filePath": "tools/extraer_geografia_desde_plano.py",
+      "lineRange": [
+        103,
+        117
+      ],
+      "summary": "Function guardar_csv defined in tools/extraer_geografia_desde_plano.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tools/extraer_geografia_desde_plano.py:_sql_valor",
+      "type": "function",
+      "name": "_sql_valor",
+      "filePath": "tools/extraer_geografia_desde_plano.py",
+      "lineRange": [
+        120,
+        125
+      ],
+      "summary": "Function _sql_valor defined in tools/extraer_geografia_desde_plano.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tools/extraer_geografia_desde_plano.py:guardar_sql",
+      "type": "function",
+      "name": "guardar_sql",
+      "filePath": "tools/extraer_geografia_desde_plano.py",
+      "lineRange": [
+        128,
+        190
+      ],
+      "summary": "Function guardar_sql defined in tools/extraer_geografia_desde_plano.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:tools/extraer_geografia_desde_plano.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "tools/extraer_geografia_desde_plano.py",
+      "lineRange": [
+        193,
+        216
+      ],
+      "summary": "Function main defined in tools/extraer_geografia_desde_plano.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:scratch/simulate_db_insert.py",
+      "target": "function:scratch/simulate_db_insert.py:simulate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/simulate_load.py",
+      "target": "function:scratch/simulate_load.py:simulate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/summarize_sheets.py",
+      "target": "function:scratch/summarize_sheets.py:get_formula_type",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/summarize_sheets.py",
+      "target": "function:scratch/summarize_sheets.py:summarize",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/test_all_marts.py",
+      "target": "function:scratch/test_all_marts.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/test_carga_fenologia.py",
+      "target": "function:scratch/test_carga_fenologia.py:test_carga",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/test_induccion_parsing.py",
+      "target": "function:scratch/test_induccion_parsing.py:test_parsing",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/test_pesos.py",
+      "target": "function:scratch/test_pesos.py:safe_float",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/test_resolution.py",
+      "target": "function:scratch/test_resolution.py:test_sp",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/update_rules.py",
+      "target": "function:scratch/update_rules.py:run_update",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/test_projection_logic.py",
+      "target": "function:tests/test_projection_logic.py:test_cerrar_matriz",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/test_projection_logic.py",
+      "target": "function:tests/test_projection_logic.py:test_calcular_pct_productivas",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/test_projection_logic.py",
+      "target": "function:tests/test_projection_logic.py:test_kg_unidad_semana",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tools/extraer_geografia_desde_plano.py",
+      "target": "function:tools/extraer_geografia_desde_plano.py:_int_or_none",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tools/extraer_geografia_desde_plano.py",
+      "target": "function:tools/extraer_geografia_desde_plano.py:extraer_registros",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tools/extraer_geografia_desde_plano.py",
+      "target": "function:tools/extraer_geografia_desde_plano.py:guardar_csv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tools/extraer_geografia_desde_plano.py",
+      "target": "function:tools/extraer_geografia_desde_plano.py:_sql_valor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tools/extraer_geografia_desde_plano.py",
+      "target": "function:tools/extraer_geografia_desde_plano.py:guardar_sql",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tools/extraer_geografia_desde_plano.py",
+      "target": "function:tools/extraer_geografia_desde_plano.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    }
+  ]
+}

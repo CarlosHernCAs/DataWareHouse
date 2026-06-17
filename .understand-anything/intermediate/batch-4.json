@@ -1,0 +1,265 @@
+{
+  "nodes": [
+    {
+      "id": "file:ETL/logs/etl_20260512_160443.json",
+      "type": "config",
+      "name": "etl_20260512_160443.json",
+      "filePath": "ETL/logs/etl_20260512_160443.json",
+      "summary": "File mapped from ETL/logs/etl_20260512_160443.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/logs/etl_20260512_160937.json",
+      "type": "config",
+      "name": "etl_20260512_160937.json",
+      "filePath": "ETL/logs/etl_20260512_160937.json",
+      "summary": "File mapped from ETL/logs/etl_20260512_160937.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/logs/etl_20260512_160955.json",
+      "type": "config",
+      "name": "etl_20260512_160955.json",
+      "filePath": "ETL/logs/etl_20260512_160955.json",
+      "summary": "File mapped from ETL/logs/etl_20260512_160955.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/logs/etl_20260514_151855.json",
+      "type": "config",
+      "name": "etl_20260514_151855.json",
+      "filePath": "ETL/logs/etl_20260514_151855.json",
+      "summary": "File mapped from ETL/logs/etl_20260514_151855.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/logs/etl_20260514_152501.json",
+      "type": "config",
+      "name": "etl_20260514_152501.json",
+      "filePath": "ETL/logs/etl_20260514_152501.json",
+      "summary": "File mapped from ETL/logs/etl_20260514_152501.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/logs/etl_20260514_153257.json",
+      "type": "config",
+      "name": "etl_20260514_153257.json",
+      "filePath": "ETL/logs/etl_20260514_153257.json",
+      "summary": "File mapped from ETL/logs/etl_20260514_153257.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/logs/etl_20260518_070958.json",
+      "type": "config",
+      "name": "etl_20260518_070958.json",
+      "filePath": "ETL/logs/etl_20260518_070958.json",
+      "summary": "File mapped from ETL/logs/etl_20260518_070958.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/logs/etl_20260518_071100.json",
+      "type": "config",
+      "name": "etl_20260518_071100.json",
+      "filePath": "ETL/logs/etl_20260518_071100.json",
+      "summary": "File mapped from ETL/logs/etl_20260518_071100.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/logs/etl_20260518_072921.json",
+      "type": "config",
+      "name": "etl_20260518_072921.json",
+      "filePath": "ETL/logs/etl_20260518_072921.json",
+      "summary": "File mapped from ETL/logs/etl_20260518_072921.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/logs/etl_20260518_081219.json",
+      "type": "config",
+      "name": "etl_20260518_081219.json",
+      "filePath": "ETL/logs/etl_20260518_081219.json",
+      "summary": "File mapped from ETL/logs/etl_20260518_081219.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/logs/etl_20260518_084926.json",
+      "type": "config",
+      "name": "etl_20260518_084926.json",
+      "filePath": "ETL/logs/etl_20260518_084926.json",
+      "summary": "File mapped from ETL/logs/etl_20260518_084926.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/logs/etl_20260518_091111.json",
+      "type": "config",
+      "name": "etl_20260518_091111.json",
+      "filePath": "ETL/logs/etl_20260518_091111.json",
+      "summary": "File mapped from ETL/logs/etl_20260518_091111.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/logs/etl_20260518_093130.json",
+      "type": "config",
+      "name": "etl_20260518_093130.json",
+      "filePath": "ETL/logs/etl_20260518_093130.json",
+      "summary": "File mapped from ETL/logs/etl_20260518_093130.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/logs/etl_20260518_093808.json",
+      "type": "config",
+      "name": "etl_20260518_093808.json",
+      "filePath": "ETL/logs/etl_20260518_093808.json",
+      "summary": "File mapped from ETL/logs/etl_20260518_093808.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/logs/etl_20260518_100102.json",
+      "type": "config",
+      "name": "etl_20260518_100102.json",
+      "filePath": "ETL/logs/etl_20260518_100102.json",
+      "summary": "File mapped from ETL/logs/etl_20260518_100102.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/logs/etl_20260518_101144.json",
+      "type": "config",
+      "name": "etl_20260518_101144.json",
+      "filePath": "ETL/logs/etl_20260518_101144.json",
+      "summary": "File mapped from ETL/logs/etl_20260518_101144.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/logs/etl_20260518_101320.json",
+      "type": "config",
+      "name": "etl_20260518_101320.json",
+      "filePath": "ETL/logs/etl_20260518_101320.json",
+      "summary": "File mapped from ETL/logs/etl_20260518_101320.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/logs/etl_20260518_103546.json",
+      "type": "config",
+      "name": "etl_20260518_103546.json",
+      "filePath": "ETL/logs/etl_20260518_103546.json",
+      "summary": "File mapped from ETL/logs/etl_20260518_103546.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/logs/etl_20260518_104023.json",
+      "type": "config",
+      "name": "etl_20260518_104023.json",
+      "filePath": "ETL/logs/etl_20260518_104023.json",
+      "summary": "File mapped from ETL/logs/etl_20260518_104023.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:ETL/logs/etl_20260518_104231.json",
+      "type": "config",
+      "name": "etl_20260518_104231.json",
+      "filePath": "ETL/logs/etl_20260518_104231.json",
+      "summary": "File mapped from ETL/logs/etl_20260518_104231.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": []
+}

@@ -1,0 +1,4126 @@
+{
+  "nodes": [
+    {
+      "id": "file:.agents/skills/debugging-code/references/advanced-techniques.md",
+      "type": "document",
+      "name": "advanced-techniques.md",
+      "filePath": ".agents/skills/debugging-code/references/advanced-techniques.md",
+      "summary": "File mapped from .agents/skills/debugging-code/references/advanced-techniques.md with category docs.",
+      "tags": [
+        "docs",
+        "markdown",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.agents/skills/debugging-code/references/installing-debuggers.md",
+      "type": "document",
+      "name": "installing-debuggers.md",
+      "filePath": ".agents/skills/debugging-code/references/installing-debuggers.md",
+      "summary": "File mapped from .agents/skills/debugging-code/references/installing-debuggers.md with category docs.",
+      "tags": [
+        "docs",
+        "markdown",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:.agents/skills/debugging-code/scripts/install-dap.sh",
+      "type": "file",
+      "name": "install-dap.sh",
+      "filePath": ".agents/skills/debugging-code/scripts/install-dap.sh",
+      "summary": "File mapped from .agents/skills/debugging-code/scripts/install-dap.sh with category script.",
+      "tags": [
+        "script",
+        "shell",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:.agents/skills/debugging-code/scripts/install-dap.sh:go_install_fallback",
+      "type": "function",
+      "name": "go_install_fallback",
+      "filePath": ".agents/skills/debugging-code/scripts/install-dap.sh",
+      "lineRange": [
+        7,
+        16
+      ],
+      "summary": "Function go_install_fallback defined in .agents/skills/debugging-code/scripts/install-dap.sh.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.agents/skills/debugging-code/SKILL.md",
+      "type": "document",
+      "name": "SKILL.md",
+      "filePath": ".agents/skills/debugging-code/SKILL.md",
+      "summary": "File mapped from .agents/skills/debugging-code/SKILL.md with category docs.",
+      "tags": [
+        "docs",
+        "markdown",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:.agents/skills/impeccable/scripts/cleanup-deprecated.mjs",
+      "type": "file",
+      "name": "cleanup-deprecated.mjs",
+      "filePath": ".agents/skills/impeccable/scripts/cleanup-deprecated.mjs",
+      "summary": "File mapped from .agents/skills/impeccable/scripts/cleanup-deprecated.mjs with category code.",
+      "tags": [
+        "code",
+        "javascript",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/cleanup-deprecated.mjs:findProjectRoot",
+      "type": "function",
+      "name": "findProjectRoot",
+      "filePath": ".agents/skills/impeccable/scripts/cleanup-deprecated.mjs",
+      "lineRange": [
+        75,
+        91
+      ],
+      "summary": "Function findProjectRoot defined in .agents/skills/impeccable/scripts/cleanup-deprecated.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/cleanup-deprecated.mjs:loadLock",
+      "type": "function",
+      "name": "loadLock",
+      "filePath": ".agents/skills/impeccable/scripts/cleanup-deprecated.mjs",
+      "lineRange": [
+        96,
+        104
+      ],
+      "summary": "Function loadLock defined in .agents/skills/impeccable/scripts/cleanup-deprecated.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/cleanup-deprecated.mjs:isImpeccableSkill",
+      "type": "function",
+      "name": "isImpeccableSkill",
+      "filePath": ".agents/skills/impeccable/scripts/cleanup-deprecated.mjs",
+      "lineRange": [
+        114,
+        136
+      ],
+      "summary": "Function isImpeccableSkill defined in .agents/skills/impeccable/scripts/cleanup-deprecated.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/cleanup-deprecated.mjs:buildTargetNames",
+      "type": "function",
+      "name": "buildTargetNames",
+      "filePath": ".agents/skills/impeccable/scripts/cleanup-deprecated.mjs",
+      "lineRange": [
+        142,
+        149
+      ],
+      "summary": "Function buildTargetNames defined in .agents/skills/impeccable/scripts/cleanup-deprecated.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/cleanup-deprecated.mjs:findSkillsDirs",
+      "type": "function",
+      "name": "findSkillsDirs",
+      "filePath": ".agents/skills/impeccable/scripts/cleanup-deprecated.mjs",
+      "lineRange": [
+        155,
+        164
+      ],
+      "summary": "Function findSkillsDirs defined in .agents/skills/impeccable/scripts/cleanup-deprecated.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/cleanup-deprecated.mjs:removeDeprecatedSkills",
+      "type": "function",
+      "name": "removeDeprecatedSkills",
+      "filePath": ".agents/skills/impeccable/scripts/cleanup-deprecated.mjs",
+      "lineRange": [
+        172,
+        214
+      ],
+      "summary": "Function removeDeprecatedSkills defined in .agents/skills/impeccable/scripts/cleanup-deprecated.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/cleanup-deprecated.mjs:cleanSkillsLock",
+      "type": "function",
+      "name": "cleanSkillsLock",
+      "filePath": ".agents/skills/impeccable/scripts/cleanup-deprecated.mjs",
+      "lineRange": [
+        221,
+        252
+      ],
+      "summary": "Function cleanSkillsLock defined in .agents/skills/impeccable/scripts/cleanup-deprecated.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/cleanup-deprecated.mjs:cleanup",
+      "type": "function",
+      "name": "cleanup",
+      "filePath": ".agents/skills/impeccable/scripts/cleanup-deprecated.mjs",
+      "lineRange": [
+        261,
+        267
+      ],
+      "summary": "Function cleanup defined in .agents/skills/impeccable/scripts/cleanup-deprecated.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.agents/skills/impeccable/scripts/command-metadata.json",
+      "type": "config",
+      "name": "command-metadata.json",
+      "filePath": ".agents/skills/impeccable/scripts/command-metadata.json",
+      "summary": "File mapped from .agents/skills/impeccable/scripts/command-metadata.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:.agents/skills/impeccable/scripts/design-parser.mjs",
+      "type": "file",
+      "name": "design-parser.mjs",
+      "filePath": ".agents/skills/impeccable/scripts/design-parser.mjs",
+      "summary": "File mapped from .agents/skills/impeccable/scripts/design-parser.mjs with category code.",
+      "tags": [
+        "code",
+        "javascript",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/design-parser.mjs:parseFrontmatter",
+      "type": "function",
+      "name": "parseFrontmatter",
+      "filePath": ".agents/skills/impeccable/scripts/design-parser.mjs",
+      "lineRange": [
+        20,
+        37
+      ],
+      "summary": "Function parseFrontmatter defined in .agents/skills/impeccable/scripts/design-parser.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/design-parser.mjs:parseYamlSubset",
+      "type": "function",
+      "name": "parseYamlSubset",
+      "filePath": ".agents/skills/impeccable/scripts/design-parser.mjs",
+      "lineRange": [
+        44,
+        79
+      ],
+      "summary": "Function parseYamlSubset defined in .agents/skills/impeccable/scripts/design-parser.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/design-parser.mjs:findTopLevelColon",
+      "type": "function",
+      "name": "findTopLevelColon",
+      "filePath": ".agents/skills/impeccable/scripts/design-parser.mjs",
+      "lineRange": [
+        81,
+        94
+      ],
+      "summary": "Function findTopLevelColon defined in .agents/skills/impeccable/scripts/design-parser.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/design-parser.mjs:parseScalar",
+      "type": "function",
+      "name": "parseScalar",
+      "filePath": ".agents/skills/impeccable/scripts/design-parser.mjs",
+      "lineRange": [
+        96,
+        107
+      ],
+      "summary": "Function parseScalar defined in .agents/skills/impeccable/scripts/design-parser.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/design-parser.mjs:splitSections",
+      "type": "function",
+      "name": "splitSections",
+      "filePath": ".agents/skills/impeccable/scripts/design-parser.mjs",
+      "lineRange": [
+        117,
+        150
+      ],
+      "summary": "Function splitSections defined in .agents/skills/impeccable/scripts/design-parser.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/design-parser.mjs:normalizeApostrophes",
+      "type": "function",
+      "name": "normalizeApostrophes",
+      "filePath": ".agents/skills/impeccable/scripts/design-parser.mjs",
+      "lineRange": [
+        152,
+        154
+      ],
+      "summary": "Function normalizeApostrophes defined in .agents/skills/impeccable/scripts/design-parser.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/design-parser.mjs:matchCanonicalSection",
+      "type": "function",
+      "name": "matchCanonicalSection",
+      "filePath": ".agents/skills/impeccable/scripts/design-parser.mjs",
+      "lineRange": [
+        156,
+        170
+      ],
+      "summary": "Function matchCanonicalSection defined in .agents/skills/impeccable/scripts/design-parser.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/design-parser.mjs:splitSubsections",
+      "type": "function",
+      "name": "splitSubsections",
+      "filePath": ".agents/skills/impeccable/scripts/design-parser.mjs",
+      "lineRange": [
+        174,
+        190
+      ],
+      "summary": "Function splitSubsections defined in .agents/skills/impeccable/scripts/design-parser.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/design-parser.mjs:collectParagraphs",
+      "type": "function",
+      "name": "collectParagraphs",
+      "filePath": ".agents/skills/impeccable/scripts/design-parser.mjs",
+      "lineRange": [
+        194,
+        213
+      ],
+      "summary": "Function collectParagraphs defined in .agents/skills/impeccable/scripts/design-parser.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/design-parser.mjs:collectBullets",
+      "type": "function",
+      "name": "collectBullets",
+      "filePath": ".agents/skills/impeccable/scripts/design-parser.mjs",
+      "lineRange": [
+        215,
+        238
+      ],
+      "summary": "Function collectBullets defined in .agents/skills/impeccable/scripts/design-parser.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/design-parser.mjs:stripBold",
+      "type": "function",
+      "name": "stripBold",
+      "filePath": ".agents/skills/impeccable/scripts/design-parser.mjs",
+      "lineRange": [
+        240,
+        242
+      ],
+      "summary": "Function stripBold defined in .agents/skills/impeccable/scripts/design-parser.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/design-parser.mjs:extractNamedRules",
+      "type": "function",
+      "name": "extractNamedRules",
+      "filePath": ".agents/skills/impeccable/scripts/design-parser.mjs",
+      "lineRange": [
+        244,
+        303
+      ],
+      "summary": "Function extractNamedRules defined in .agents/skills/impeccable/scripts/design-parser.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/design-parser.mjs:extractOverview",
+      "type": "function",
+      "name": "extractOverview",
+      "filePath": ".agents/skills/impeccable/scripts/design-parser.mjs",
+      "lineRange": [
+        307,
+        333
+      ],
+      "summary": "Function extractOverview defined in .agents/skills/impeccable/scripts/design-parser.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/design-parser.mjs:extractColors",
+      "type": "function",
+      "name": "extractColors",
+      "filePath": ".agents/skills/impeccable/scripts/design-parser.mjs",
+      "lineRange": [
+        335,
+        389
+      ],
+      "summary": "Function extractColors defined in .agents/skills/impeccable/scripts/design-parser.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/design-parser.mjs:parseColorBullet",
+      "type": "function",
+      "name": "parseColorBullet",
+      "filePath": ".agents/skills/impeccable/scripts/design-parser.mjs",
+      "lineRange": [
+        391,
+        418
+      ],
+      "summary": "Function parseColorBullet defined in .agents/skills/impeccable/scripts/design-parser.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/design-parser.mjs:extractParenGroup",
+      "type": "function",
+      "name": "extractParenGroup",
+      "filePath": ".agents/skills/impeccable/scripts/design-parser.mjs",
+      "lineRange": [
+        420,
+        431
+      ],
+      "summary": "Function extractParenGroup defined in .agents/skills/impeccable/scripts/design-parser.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/design-parser.mjs:buildColor",
+      "type": "function",
+      "name": "buildColor",
+      "filePath": ".agents/skills/impeccable/scripts/design-parser.mjs",
+      "lineRange": [
+        433,
+        443
+      ],
+      "summary": "Function buildColor defined in .agents/skills/impeccable/scripts/design-parser.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/design-parser.mjs:collectColorValues",
+      "type": "function",
+      "name": "collectColorValues",
+      "filePath": ".agents/skills/impeccable/scripts/design-parser.mjs",
+      "lineRange": [
+        445,
+        456
+      ],
+      "summary": "Function collectColorValues defined in .agents/skills/impeccable/scripts/design-parser.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/design-parser.mjs:detectFormat",
+      "type": "function",
+      "name": "detectFormat",
+      "filePath": ".agents/skills/impeccable/scripts/design-parser.mjs",
+      "lineRange": [
+        458,
+        464
+      ],
+      "summary": "Function detectFormat defined in .agents/skills/impeccable/scripts/design-parser.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/design-parser.mjs:scanInlineColors",
+      "type": "function",
+      "name": "scanInlineColors",
+      "filePath": ".agents/skills/impeccable/scripts/design-parser.mjs",
+      "lineRange": [
+        466,
+        475
+      ],
+      "summary": "Function scanInlineColors defined in .agents/skills/impeccable/scripts/design-parser.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/design-parser.mjs:parseStitchInlineGroups",
+      "type": "function",
+      "name": "parseStitchInlineGroups",
+      "filePath": ".agents/skills/impeccable/scripts/design-parser.mjs",
+      "lineRange": [
+        477,
+        494
+      ],
+      "summary": "Function parseStitchInlineGroups defined in .agents/skills/impeccable/scripts/design-parser.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/design-parser.mjs:extractTypography",
+      "type": "function",
+      "name": "extractTypography",
+      "filePath": ".agents/skills/impeccable/scripts/design-parser.mjs",
+      "lineRange": [
+        496,
+        555
+      ],
+      "summary": "Function extractTypography defined in .agents/skills/impeccable/scripts/design-parser.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/design-parser.mjs:normalizeFontRole",
+      "type": "function",
+      "name": "normalizeFontRole",
+      "filePath": ".agents/skills/impeccable/scripts/design-parser.mjs",
+      "lineRange": [
+        557,
+        568
+      ],
+      "summary": "Function normalizeFontRole defined in .agents/skills/impeccable/scripts/design-parser.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/design-parser.mjs:parseTypeBullet",
+      "type": "function",
+      "name": "parseTypeBullet",
+      "filePath": ".agents/skills/impeccable/scripts/design-parser.mjs",
+      "lineRange": [
+        570,
+        581
+      ],
+      "summary": "Function parseTypeBullet defined in .agents/skills/impeccable/scripts/design-parser.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/design-parser.mjs:extractElevation",
+      "type": "function",
+      "name": "extractElevation",
+      "filePath": ".agents/skills/impeccable/scripts/design-parser.mjs",
+      "lineRange": [
+        583,
+        618
+      ],
+      "summary": "Function extractElevation defined in .agents/skills/impeccable/scripts/design-parser.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/design-parser.mjs:extractInlineShadows",
+      "type": "function",
+      "name": "extractInlineShadows",
+      "filePath": ".agents/skills/impeccable/scripts/design-parser.mjs",
+      "lineRange": [
+        620,
+        651
+      ],
+      "summary": "Function extractInlineShadows defined in .agents/skills/impeccable/scripts/design-parser.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/design-parser.mjs:parseShadowBullet",
+      "type": "function",
+      "name": "parseShadowBullet",
+      "filePath": ".agents/skills/impeccable/scripts/design-parser.mjs",
+      "lineRange": [
+        653,
+        671
+      ],
+      "summary": "Function parseShadowBullet defined in .agents/skills/impeccable/scripts/design-parser.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/design-parser.mjs:extractComponents",
+      "type": "function",
+      "name": "extractComponents",
+      "filePath": ".agents/skills/impeccable/scripts/design-parser.mjs",
+      "lineRange": [
+        673,
+        715
+      ],
+      "summary": "Function extractComponents defined in .agents/skills/impeccable/scripts/design-parser.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/design-parser.mjs:extractDosDonts",
+      "type": "function",
+      "name": "extractDosDonts",
+      "filePath": ".agents/skills/impeccable/scripts/design-parser.mjs",
+      "lineRange": [
+        717,
+        745
+      ],
+      "summary": "Function extractDosDonts defined in .agents/skills/impeccable/scripts/design-parser.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/design-parser.mjs:assessCoverage",
+      "type": "function",
+      "name": "assessCoverage",
+      "filePath": ".agents/skills/impeccable/scripts/design-parser.mjs",
+      "lineRange": [
+        749,
+        800
+      ],
+      "summary": "Function assessCoverage defined in .agents/skills/impeccable/scripts/design-parser.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/design-parser.mjs:parseDesignMd",
+      "type": "function",
+      "name": "parseDesignMd",
+      "filePath": ".agents/skills/impeccable/scripts/design-parser.mjs",
+      "lineRange": [
+        804,
+        818
+      ],
+      "summary": "Function parseDesignMd defined in .agents/skills/impeccable/scripts/design-parser.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.agents/skills/impeccable/scripts/detect-csp.mjs",
+      "type": "file",
+      "name": "detect-csp.mjs",
+      "filePath": ".agents/skills/impeccable/scripts/detect-csp.mjs",
+      "summary": "File mapped from .agents/skills/impeccable/scripts/detect-csp.mjs with category code.",
+      "tags": [
+        "code",
+        "javascript",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/detect-csp.mjs:detectCsp",
+      "type": "function",
+      "name": "detectCsp",
+      "filePath": ".agents/skills/impeccable/scripts/detect-csp.mjs",
+      "lineRange": [
+        87,
+        162
+      ],
+      "summary": "Function detectCsp defined in .agents/skills/impeccable/scripts/detect-csp.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/detect-csp.mjs:walk",
+      "type": "function",
+      "name": "walk",
+      "filePath": ".agents/skills/impeccable/scripts/detect-csp.mjs",
+      "lineRange": [
+        164,
+        191
+      ],
+      "summary": "Function walk defined in .agents/skills/impeccable/scripts/detect-csp.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "type": "file",
+      "name": "impeccable-paths.mjs",
+      "filePath": ".agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "summary": "File mapped from .agents/skills/impeccable/scripts/impeccable-paths.mjs with category code.",
+      "tags": [
+        "code",
+        "javascript",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:getImpeccableDir",
+      "type": "function",
+      "name": "getImpeccableDir",
+      "filePath": ".agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "lineRange": [
+        7,
+        9
+      ],
+      "summary": "Function getImpeccableDir defined in .agents/skills/impeccable/scripts/impeccable-paths.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:getDesignSidecarPath",
+      "type": "function",
+      "name": "getDesignSidecarPath",
+      "filePath": ".agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "lineRange": [
+        11,
+        13
+      ],
+      "summary": "Function getDesignSidecarPath defined in .agents/skills/impeccable/scripts/impeccable-paths.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:getDesignSidecarCandidates",
+      "type": "function",
+      "name": "getDesignSidecarCandidates",
+      "filePath": ".agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "lineRange": [
+        15,
+        23
+      ],
+      "summary": "Function getDesignSidecarCandidates defined in .agents/skills/impeccable/scripts/impeccable-paths.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:resolveDesignSidecarPath",
+      "type": "function",
+      "name": "resolveDesignSidecarPath",
+      "filePath": ".agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "lineRange": [
+        25,
+        27
+      ],
+      "summary": "Function resolveDesignSidecarPath defined in .agents/skills/impeccable/scripts/impeccable-paths.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:getLiveDir",
+      "type": "function",
+      "name": "getLiveDir",
+      "filePath": ".agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "lineRange": [
+        29,
+        31
+      ],
+      "summary": "Function getLiveDir defined in .agents/skills/impeccable/scripts/impeccable-paths.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:getLiveConfigPath",
+      "type": "function",
+      "name": "getLiveConfigPath",
+      "filePath": ".agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "lineRange": [
+        33,
+        35
+      ],
+      "summary": "Function getLiveConfigPath defined in .agents/skills/impeccable/scripts/impeccable-paths.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:getLegacyLiveConfigPath",
+      "type": "function",
+      "name": "getLegacyLiveConfigPath",
+      "filePath": ".agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "lineRange": [
+        37,
+        39
+      ],
+      "summary": "Function getLegacyLiveConfigPath defined in .agents/skills/impeccable/scripts/impeccable-paths.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:resolveLiveConfigPath",
+      "type": "function",
+      "name": "resolveLiveConfigPath",
+      "filePath": ".agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "lineRange": [
+        41,
+        53
+      ],
+      "summary": "Function resolveLiveConfigPath defined in .agents/skills/impeccable/scripts/impeccable-paths.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:getLiveServerPath",
+      "type": "function",
+      "name": "getLiveServerPath",
+      "filePath": ".agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "lineRange": [
+        55,
+        57
+      ],
+      "summary": "Function getLiveServerPath defined in .agents/skills/impeccable/scripts/impeccable-paths.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:getLegacyLiveServerPath",
+      "type": "function",
+      "name": "getLegacyLiveServerPath",
+      "filePath": ".agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "lineRange": [
+        59,
+        61
+      ],
+      "summary": "Function getLegacyLiveServerPath defined in .agents/skills/impeccable/scripts/impeccable-paths.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:readLiveServerInfo",
+      "type": "function",
+      "name": "readLiveServerInfo",
+      "filePath": ".agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "lineRange": [
+        63,
+        72
+      ],
+      "summary": "Function readLiveServerInfo defined in .agents/skills/impeccable/scripts/impeccable-paths.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:writeLiveServerInfo",
+      "type": "function",
+      "name": "writeLiveServerInfo",
+      "filePath": ".agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "lineRange": [
+        74,
+        79
+      ],
+      "summary": "Function writeLiveServerInfo defined in .agents/skills/impeccable/scripts/impeccable-paths.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:removeLiveServerInfo",
+      "type": "function",
+      "name": "removeLiveServerInfo",
+      "filePath": ".agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "lineRange": [
+        81,
+        85
+      ],
+      "summary": "Function removeLiveServerInfo defined in .agents/skills/impeccable/scripts/impeccable-paths.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:getLiveSessionsDir",
+      "type": "function",
+      "name": "getLiveSessionsDir",
+      "filePath": ".agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "lineRange": [
+        87,
+        89
+      ],
+      "summary": "Function getLiveSessionsDir defined in .agents/skills/impeccable/scripts/impeccable-paths.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:getLegacyLiveSessionsDir",
+      "type": "function",
+      "name": "getLegacyLiveSessionsDir",
+      "filePath": ".agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "lineRange": [
+        91,
+        93
+      ],
+      "summary": "Function getLegacyLiveSessionsDir defined in .agents/skills/impeccable/scripts/impeccable-paths.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:getLiveAnnotationsDir",
+      "type": "function",
+      "name": "getLiveAnnotationsDir",
+      "filePath": ".agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "lineRange": [
+        95,
+        97
+      ],
+      "summary": "Function getLiveAnnotationsDir defined in .agents/skills/impeccable/scripts/impeccable-paths.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:getLegacyLiveAnnotationsDir",
+      "type": "function",
+      "name": "getLegacyLiveAnnotationsDir",
+      "filePath": ".agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "lineRange": [
+        99,
+        101
+      ],
+      "summary": "Function getLegacyLiveAnnotationsDir defined in .agents/skills/impeccable/scripts/impeccable-paths.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:firstExisting",
+      "type": "function",
+      "name": "firstExisting",
+      "filePath": ".agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "lineRange": [
+        103,
+        105
+      ],
+      "summary": "Function firstExisting defined in .agents/skills/impeccable/scripts/impeccable-paths.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.agents/skills/impeccable/scripts/is-generated.mjs",
+      "type": "file",
+      "name": "is-generated.mjs",
+      "filePath": ".agents/skills/impeccable/scripts/is-generated.mjs",
+      "summary": "File mapped from .agents/skills/impeccable/scripts/is-generated.mjs with category code.",
+      "tags": [
+        "code",
+        "javascript",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/is-generated.mjs:isGeneratedFile",
+      "type": "function",
+      "name": "isGeneratedFile",
+      "filePath": ".agents/skills/impeccable/scripts/is-generated.mjs",
+      "lineRange": [
+        33,
+        40
+      ],
+      "summary": "Function isGeneratedFile defined in .agents/skills/impeccable/scripts/is-generated.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/is-generated.mjs:isGitIgnored",
+      "type": "function",
+      "name": "isGitIgnored",
+      "filePath": ".agents/skills/impeccable/scripts/is-generated.mjs",
+      "lineRange": [
+        42,
+        54
+      ],
+      "summary": "Function isGitIgnored defined in .agents/skills/impeccable/scripts/is-generated.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/is-generated.mjs:hasGeneratedHeader",
+      "type": "function",
+      "name": "hasGeneratedHeader",
+      "filePath": ".agents/skills/impeccable/scripts/is-generated.mjs",
+      "lineRange": [
+        56,
+        69
+      ],
+      "summary": "Function hasGeneratedHeader defined in .agents/skills/impeccable/scripts/is-generated.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.agents/skills/impeccable/scripts/live-accept.mjs",
+      "type": "file",
+      "name": "live-accept.mjs",
+      "filePath": ".agents/skills/impeccable/scripts/live-accept.mjs",
+      "summary": "File mapped from .agents/skills/impeccable/scripts/live-accept.mjs with category code.",
+      "tags": [
+        "code",
+        "javascript",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-accept.mjs:acceptCli",
+      "type": "function",
+      "name": "acceptCli",
+      "filePath": ".agents/skills/impeccable/scripts/live-accept.mjs",
+      "lineRange": [
+        26,
+        97
+      ],
+      "summary": "Function acceptCli defined in .agents/skills/impeccable/scripts/live-accept.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-accept.mjs:handleDiscard",
+      "type": "function",
+      "name": "handleDiscard",
+      "filePath": ".agents/skills/impeccable/scripts/live-accept.mjs",
+      "lineRange": [
+        103,
+        127
+      ],
+      "summary": "Function handleDiscard defined in .agents/skills/impeccable/scripts/live-accept.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-accept.mjs:handleAccept",
+      "type": "function",
+      "name": "handleAccept",
+      "filePath": ".agents/skills/impeccable/scripts/live-accept.mjs",
+      "lineRange": [
+        133,
+        208
+      ],
+      "summary": "Function handleAccept defined in .agents/skills/impeccable/scripts/live-accept.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-accept.mjs:findMarkerBlock",
+      "type": "function",
+      "name": "findMarkerBlock",
+      "filePath": ".agents/skills/impeccable/scripts/live-accept.mjs",
+      "lineRange": [
+        218,
+        230
+      ],
+      "summary": "Function findMarkerBlock defined in .agents/skills/impeccable/scripts/live-accept.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-accept.mjs:expandReplaceRange",
+      "type": "function",
+      "name": "expandReplaceRange",
+      "filePath": ".agents/skills/impeccable/scripts/live-accept.mjs",
+      "lineRange": [
+        248,
+        296
+      ],
+      "summary": "Function expandReplaceRange defined in .agents/skills/impeccable/scripts/live-accept.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-accept.mjs:stripStyleAndJoin",
+      "type": "function",
+      "name": "stripStyleAndJoin",
+      "filePath": ".agents/skills/impeccable/scripts/live-accept.mjs",
+      "lineRange": [
+        307,
+        339
+      ],
+      "summary": "Function stripStyleAndJoin defined in .agents/skills/impeccable/scripts/live-accept.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-accept.mjs:extractInnerByAttr",
+      "type": "function",
+      "name": "extractInnerByAttr",
+      "filePath": ".agents/skills/impeccable/scripts/live-accept.mjs",
+      "lineRange": [
+        347,
+        373
+      ],
+      "summary": "Function extractInnerByAttr defined in .agents/skills/impeccable/scripts/live-accept.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-accept.mjs:extractOriginal",
+      "type": "function",
+      "name": "extractOriginal",
+      "filePath": ".agents/skills/impeccable/scripts/live-accept.mjs",
+      "lineRange": [
+        379,
+        384
+      ],
+      "summary": "Function extractOriginal defined in .agents/skills/impeccable/scripts/live-accept.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-accept.mjs:extractVariant",
+      "type": "function",
+      "name": "extractVariant",
+      "filePath": ".agents/skills/impeccable/scripts/live-accept.mjs",
+      "lineRange": [
+        390,
+        399
+      ],
+      "summary": "Function extractVariant defined in .agents/skills/impeccable/scripts/live-accept.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-accept.mjs:extractCss",
+      "type": "function",
+      "name": "extractCss",
+      "filePath": ".agents/skills/impeccable/scripts/live-accept.mjs",
+      "lineRange": [
+        411,
+        444
+      ],
+      "summary": "Function extractCss defined in .agents/skills/impeccable/scripts/live-accept.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-accept.mjs:stripJsxTemplateLines",
+      "type": "function",
+      "name": "stripJsxTemplateLines",
+      "filePath": ".agents/skills/impeccable/scripts/live-accept.mjs",
+      "lineRange": [
+        457,
+        490
+      ],
+      "summary": "Function stripJsxTemplateLines defined in .agents/skills/impeccable/scripts/live-accept.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-accept.mjs:stripJsxTemplateWrap",
+      "type": "function",
+      "name": "stripJsxTemplateWrap",
+      "filePath": ".agents/skills/impeccable/scripts/live-accept.mjs",
+      "lineRange": [
+        492,
+        496
+      ],
+      "summary": "Function stripJsxTemplateWrap defined in .agents/skills/impeccable/scripts/live-accept.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-accept.mjs:deindentContent",
+      "type": "function",
+      "name": "deindentContent",
+      "filePath": ".agents/skills/impeccable/scripts/live-accept.mjs",
+      "lineRange": [
+        503,
+        518
+      ],
+      "summary": "Function deindentContent defined in .agents/skills/impeccable/scripts/live-accept.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-accept.mjs:detectCommentSyntax",
+      "type": "function",
+      "name": "detectCommentSyntax",
+      "filePath": ".agents/skills/impeccable/scripts/live-accept.mjs",
+      "lineRange": [
+        520,
+        526
+      ],
+      "summary": "Function detectCommentSyntax defined in .agents/skills/impeccable/scripts/live-accept.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-accept.mjs:findSessionFile",
+      "type": "function",
+      "name": "findSessionFile",
+      "filePath": ".agents/skills/impeccable/scripts/live-accept.mjs",
+      "lineRange": [
+        532,
+        547
+      ],
+      "summary": "Function findSessionFile defined in .agents/skills/impeccable/scripts/live-accept.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-accept.mjs:searchDir",
+      "type": "function",
+      "name": "searchDir",
+      "filePath": ".agents/skills/impeccable/scripts/live-accept.mjs",
+      "lineRange": [
+        549,
+        578
+      ],
+      "summary": "Function searchDir defined in .agents/skills/impeccable/scripts/live-accept.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-accept.mjs:argVal",
+      "type": "function",
+      "name": "argVal",
+      "filePath": ".agents/skills/impeccable/scripts/live-accept.mjs",
+      "lineRange": [
+        584,
+        587
+      ],
+      "summary": "Function argVal defined in .agents/skills/impeccable/scripts/live-accept.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.agents/skills/impeccable/scripts/live-browser-session.js",
+      "type": "file",
+      "name": "live-browser-session.js",
+      "filePath": ".agents/skills/impeccable/scripts/live-browser-session.js",
+      "summary": "File mapped from .agents/skills/impeccable/scripts/live-browser-session.js with category code.",
+      "tags": [
+        "code",
+        "javascript",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:.agents/skills/impeccable/scripts/live-browser.js",
+      "type": "file",
+      "name": "live-browser.js",
+      "filePath": ".agents/skills/impeccable/scripts/live-browser.js",
+      "summary": "File mapped from .agents/skills/impeccable/scripts/live-browser.js with category code.",
+      "tags": [
+        "code",
+        "javascript",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:.agents/skills/impeccable/scripts/live-complete.mjs",
+      "type": "file",
+      "name": "live-complete.mjs",
+      "filePath": ".agents/skills/impeccable/scripts/live-complete.mjs",
+      "summary": "File mapped from .agents/skills/impeccable/scripts/live-complete.mjs with category code.",
+      "tags": [
+        "code",
+        "javascript",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-complete.mjs:parseArgs",
+      "type": "function",
+      "name": "parseArgs",
+      "filePath": ".agents/skills/impeccable/scripts/live-complete.mjs",
+      "lineRange": [
+        9,
+        21
+      ],
+      "summary": "Function parseArgs defined in .agents/skills/impeccable/scripts/live-complete.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-complete.mjs:completeCli",
+      "type": "function",
+      "name": "completeCli",
+      "filePath": ".agents/skills/impeccable/scripts/live-complete.mjs",
+      "lineRange": [
+        23,
+        47
+      ],
+      "summary": "Function completeCli defined in .agents/skills/impeccable/scripts/live-complete.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-complete.mjs:readServerInfo",
+      "type": "function",
+      "name": "readServerInfo",
+      "filePath": ".agents/skills/impeccable/scripts/live-complete.mjs",
+      "lineRange": [
+        49,
+        51
+      ],
+      "summary": "Function readServerInfo defined in .agents/skills/impeccable/scripts/live-complete.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-complete.mjs:completeThroughServer",
+      "type": "function",
+      "name": "completeThroughServer",
+      "filePath": ".agents/skills/impeccable/scripts/live-complete.mjs",
+      "lineRange": [
+        53,
+        70
+      ],
+      "summary": "Function completeThroughServer defined in .agents/skills/impeccable/scripts/live-complete.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.agents/skills/impeccable/scripts/live-completion.mjs",
+      "type": "file",
+      "name": "live-completion.mjs",
+      "filePath": ".agents/skills/impeccable/scripts/live-completion.mjs",
+      "summary": "File mapped from .agents/skills/impeccable/scripts/live-completion.mjs with category code.",
+      "tags": [
+        "code",
+        "javascript",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-completion.mjs:completionTypeForAcceptResult",
+      "type": "function",
+      "name": "completionTypeForAcceptResult",
+      "filePath": ".agents/skills/impeccable/scripts/live-completion.mjs",
+      "lineRange": [
+        1,
+        7
+      ],
+      "summary": "Function completionTypeForAcceptResult defined in .agents/skills/impeccable/scripts/live-completion.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-completion.mjs:completionAckForAcceptResult",
+      "type": "function",
+      "name": "completionAckForAcceptResult",
+      "filePath": ".agents/skills/impeccable/scripts/live-completion.mjs",
+      "lineRange": [
+        9,
+        18
+      ],
+      "summary": "Function completionAckForAcceptResult defined in .agents/skills/impeccable/scripts/live-completion.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.agents/skills/impeccable/scripts/live-inject.mjs",
+      "type": "file",
+      "name": "live-inject.mjs",
+      "filePath": ".agents/skills/impeccable/scripts/live-inject.mjs",
+      "summary": "File mapped from .agents/skills/impeccable/scripts/live-inject.mjs with category code.",
+      "tags": [
+        "code",
+        "javascript",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-inject.mjs:injectCli",
+      "type": "function",
+      "name": "injectCli",
+      "filePath": ".agents/skills/impeccable/scripts/live-inject.mjs",
+      "lineRange": [
+        36,
+        134
+      ],
+      "summary": "Function injectCli defined in .agents/skills/impeccable/scripts/live-inject.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-inject.mjs:resolveFiles",
+      "type": "function",
+      "name": "resolveFiles",
+      "filePath": ".agents/skills/impeccable/scripts/live-inject.mjs",
+      "lineRange": [
+        143,
+        182
+      ],
+      "summary": "Function resolveFiles defined in .agents/skills/impeccable/scripts/live-inject.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-inject.mjs:globToRegex",
+      "type": "function",
+      "name": "globToRegex",
+      "filePath": ".agents/skills/impeccable/scripts/live-inject.mjs",
+      "lineRange": [
+        191,
+        223
+      ],
+      "summary": "Function globToRegex defined in .agents/skills/impeccable/scripts/live-inject.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-inject.mjs:validateConfig",
+      "type": "function",
+      "name": "validateConfig",
+      "filePath": ".agents/skills/impeccable/scripts/live-inject.mjs",
+      "lineRange": [
+        229,
+        254
+      ],
+      "summary": "Function validateConfig defined in .agents/skills/impeccable/scripts/live-inject.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-inject.mjs:commentOpen",
+      "type": "function",
+      "name": "commentOpen",
+      "filePath": ".agents/skills/impeccable/scripts/live-inject.mjs",
+      "lineRange": [
+        256,
+        256
+      ],
+      "summary": "Function commentOpen defined in .agents/skills/impeccable/scripts/live-inject.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-inject.mjs:commentClose",
+      "type": "function",
+      "name": "commentClose",
+      "filePath": ".agents/skills/impeccable/scripts/live-inject.mjs",
+      "lineRange": [
+        257,
+        257
+      ],
+      "summary": "Function commentClose defined in .agents/skills/impeccable/scripts/live-inject.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-inject.mjs:buildTagBlock",
+      "type": "function",
+      "name": "buildTagBlock",
+      "filePath": ".agents/skills/impeccable/scripts/live-inject.mjs",
+      "lineRange": [
+        259,
+        267
+      ],
+      "summary": "Function buildTagBlock defined in .agents/skills/impeccable/scripts/live-inject.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-inject.mjs:insertTag",
+      "type": "function",
+      "name": "insertTag",
+      "filePath": ".agents/skills/impeccable/scripts/live-inject.mjs",
+      "lineRange": [
+        269,
+        287
+      ],
+      "summary": "Function insertTag defined in .agents/skills/impeccable/scripts/live-inject.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-inject.mjs:removeTag",
+      "type": "function",
+      "name": "removeTag",
+      "filePath": ".agents/skills/impeccable/scripts/live-inject.mjs",
+      "lineRange": [
+        300,
+        310
+      ],
+      "summary": "Function removeTag defined in .agents/skills/impeccable/scripts/live-inject.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-inject.mjs:findCspMetaTags",
+      "type": "function",
+      "name": "findCspMetaTags",
+      "filePath": ".agents/skills/impeccable/scripts/live-inject.mjs",
+      "lineRange": [
+        334,
+        344
+      ],
+      "summary": "Function findCspMetaTags defined in .agents/skills/impeccable/scripts/live-inject.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-inject.mjs:getAttr",
+      "type": "function",
+      "name": "getAttr",
+      "filePath": ".agents/skills/impeccable/scripts/live-inject.mjs",
+      "lineRange": [
+        346,
+        350
+      ],
+      "summary": "Function getAttr defined in .agents/skills/impeccable/scripts/live-inject.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-inject.mjs:appendOriginToDirective",
+      "type": "function",
+      "name": "appendOriginToDirective",
+      "filePath": ".agents/skills/impeccable/scripts/live-inject.mjs",
+      "lineRange": [
+        352,
+        364
+      ],
+      "summary": "Function appendOriginToDirective defined in .agents/skills/impeccable/scripts/live-inject.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-inject.mjs:patchCspMeta",
+      "type": "function",
+      "name": "patchCspMeta",
+      "filePath": ".agents/skills/impeccable/scripts/live-inject.mjs",
+      "lineRange": [
+        366,
+        407
+      ],
+      "summary": "Function patchCspMeta defined in .agents/skills/impeccable/scripts/live-inject.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-inject.mjs:revertCspMeta",
+      "type": "function",
+      "name": "revertCspMeta",
+      "filePath": ".agents/skills/impeccable/scripts/live-inject.mjs",
+      "lineRange": [
+        409,
+        434
+      ],
+      "summary": "Function revertCspMeta defined in .agents/skills/impeccable/scripts/live-inject.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.agents/skills/impeccable/scripts/live-poll.mjs",
+      "type": "file",
+      "name": "live-poll.mjs",
+      "filePath": ".agents/skills/impeccable/scripts/live-poll.mjs",
+      "summary": "File mapped from .agents/skills/impeccable/scripts/live-poll.mjs with category code.",
+      "tags": [
+        "code",
+        "javascript",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-poll.mjs:readServerInfo",
+      "type": "function",
+      "name": "readServerInfo",
+      "filePath": ".agents/skills/impeccable/scripts/live-poll.mjs",
+      "lineRange": [
+        23,
+        30
+      ],
+      "summary": "Function readServerInfo defined in .agents/skills/impeccable/scripts/live-poll.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-poll.mjs:buildPollReplyPayload",
+      "type": "function",
+      "name": "buildPollReplyPayload",
+      "filePath": ".agents/skills/impeccable/scripts/live-poll.mjs",
+      "lineRange": [
+        32,
+        34
+      ],
+      "summary": "Function buildPollReplyPayload defined in .agents/skills/impeccable/scripts/live-poll.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-poll.mjs:postReply",
+      "type": "function",
+      "name": "postReply",
+      "filePath": ".agents/skills/impeccable/scripts/live-poll.mjs",
+      "lineRange": [
+        36,
+        46
+      ],
+      "summary": "Function postReply defined in .agents/skills/impeccable/scripts/live-poll.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-poll.mjs:pollCli",
+      "type": "function",
+      "name": "pollCli",
+      "filePath": ".agents/skills/impeccable/scripts/live-poll.mjs",
+      "lineRange": [
+        48,
+        194
+      ],
+      "summary": "Function pollCli defined in .agents/skills/impeccable/scripts/live-poll.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:.agents/skills/impeccable/scripts/live-resume.mjs",
+      "type": "file",
+      "name": "live-resume.mjs",
+      "filePath": ".agents/skills/impeccable/scripts/live-resume.mjs",
+      "summary": "File mapped from .agents/skills/impeccable/scripts/live-resume.mjs with category code.",
+      "tags": [
+        "code",
+        "javascript",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-resume.mjs:parseArgs",
+      "type": "function",
+      "name": "parseArgs",
+      "filePath": ".agents/skills/impeccable/scripts/live-resume.mjs",
+      "lineRange": [
+        8,
+        17
+      ],
+      "summary": "Function parseArgs defined in .agents/skills/impeccable/scripts/live-resume.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-resume.mjs:resumeCli",
+      "type": "function",
+      "name": "resumeCli",
+      "filePath": ".agents/skills/impeccable/scripts/live-resume.mjs",
+      "lineRange": [
+        19,
+        43
+      ],
+      "summary": "Function resumeCli defined in .agents/skills/impeccable/scripts/live-resume.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.agents/skills/impeccable/scripts/live-server.mjs",
+      "type": "file",
+      "name": "live-server.mjs",
+      "filePath": ".agents/skills/impeccable/scripts/live-server.mjs",
+      "summary": "File mapped from .agents/skills/impeccable/scripts/live-server.mjs with category code.",
+      "tags": [
+        "code",
+        "javascript",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-server.mjs:findOpenPort",
+      "type": "function",
+      "name": "findOpenPort",
+      "filePath": ".agents/skills/impeccable/scripts/live-server.mjs",
+      "lineRange": [
+        47,
+        56
+      ],
+      "summary": "Function findOpenPort defined in .agents/skills/impeccable/scripts/live-server.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-server.mjs:enqueueEvent",
+      "type": "function",
+      "name": "enqueueEvent",
+      "filePath": ".agents/skills/impeccable/scripts/live-server.mjs",
+      "lineRange": [
+        78,
+        82
+      ],
+      "summary": "Function enqueueEvent defined in .agents/skills/impeccable/scripts/live-server.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-server.mjs:restorePendingEventsFromStore",
+      "type": "function",
+      "name": "restorePendingEventsFromStore",
+      "filePath": ".agents/skills/impeccable/scripts/live-server.mjs",
+      "lineRange": [
+        84,
+        89
+      ],
+      "summary": "Function restorePendingEventsFromStore defined in .agents/skills/impeccable/scripts/live-server.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-server.mjs:findAvailablePendingEvent",
+      "type": "function",
+      "name": "findAvailablePendingEvent",
+      "filePath": ".agents/skills/impeccable/scripts/live-server.mjs",
+      "lineRange": [
+        91,
+        93
+      ],
+      "summary": "Function findAvailablePendingEvent defined in .agents/skills/impeccable/scripts/live-server.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-server.mjs:leaseEvent",
+      "type": "function",
+      "name": "leaseEvent",
+      "filePath": ".agents/skills/impeccable/scripts/live-server.mjs",
+      "lineRange": [
+        95,
+        103
+      ],
+      "summary": "Function leaseEvent defined in .agents/skills/impeccable/scripts/live-server.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-server.mjs:acknowledgePendingEvent",
+      "type": "function",
+      "name": "acknowledgePendingEvent",
+      "filePath": ".agents/skills/impeccable/scripts/live-server.mjs",
+      "lineRange": [
+        105,
+        112
+      ],
+      "summary": "Function acknowledgePendingEvent defined in .agents/skills/impeccable/scripts/live-server.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-server.mjs:scheduleLeaseFlush",
+      "type": "function",
+      "name": "scheduleLeaseFlush",
+      "filePath": ".agents/skills/impeccable/scripts/live-server.mjs",
+      "lineRange": [
+        114,
+        130
+      ],
+      "summary": "Function scheduleLeaseFlush defined in .agents/skills/impeccable/scripts/live-server.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-server.mjs:flushPendingPolls",
+      "type": "function",
+      "name": "flushPendingPolls",
+      "filePath": ".agents/skills/impeccable/scripts/live-server.mjs",
+      "lineRange": [
+        132,
+        143
+      ],
+      "summary": "Function flushPendingPolls defined in .agents/skills/impeccable/scripts/live-server.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-server.mjs:broadcast",
+      "type": "function",
+      "name": "broadcast",
+      "filePath": ".agents/skills/impeccable/scripts/live-server.mjs",
+      "lineRange": [
+        146,
+        151
+      ],
+      "summary": "Function broadcast defined in .agents/skills/impeccable/scripts/live-server.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-server.mjs:loadBrowserScripts",
+      "type": "function",
+      "name": "loadBrowserScripts",
+      "filePath": ".agents/skills/impeccable/scripts/live-server.mjs",
+      "lineRange": [
+        157,
+        183
+      ],
+      "summary": "Function loadBrowserScripts defined in .agents/skills/impeccable/scripts/live-server.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-server.mjs:hasProjectContext",
+      "type": "function",
+      "name": "hasProjectContext",
+      "filePath": ".agents/skills/impeccable/scripts/live-server.mjs",
+      "lineRange": [
+        185,
+        194
+      ],
+      "summary": "Function hasProjectContext defined in .agents/skills/impeccable/scripts/live-server.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-server.mjs:statOrNull",
+      "type": "function",
+      "name": "statOrNull",
+      "filePath": ".agents/skills/impeccable/scripts/live-server.mjs",
+      "lineRange": [
+        196,
+        198
+      ],
+      "summary": "Function statOrNull defined in .agents/skills/impeccable/scripts/live-server.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-server.mjs:isValidId",
+      "type": "function",
+      "name": "isValidId",
+      "filePath": ".agents/skills/impeccable/scripts/live-server.mjs",
+      "lineRange": [
+        216,
+        216
+      ],
+      "summary": "Function isValidId defined in .agents/skills/impeccable/scripts/live-server.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-server.mjs:isValidVariantId",
+      "type": "function",
+      "name": "isValidVariantId",
+      "filePath": ".agents/skills/impeccable/scripts/live-server.mjs",
+      "lineRange": [
+        217,
+        217
+      ],
+      "summary": "Function isValidVariantId defined in .agents/skills/impeccable/scripts/live-server.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-server.mjs:validateEvent",
+      "type": "function",
+      "name": "validateEvent",
+      "filePath": ".agents/skills/impeccable/scripts/live-server.mjs",
+      "lineRange": [
+        219,
+        258
+      ],
+      "summary": "Function validateEvent defined in .agents/skills/impeccable/scripts/live-server.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-server.mjs:createRequestHandler",
+      "type": "function",
+      "name": "createRequestHandler",
+      "filePath": ".agents/skills/impeccable/scripts/live-server.mjs",
+      "lineRange": [
+        264,
+        590
+      ],
+      "summary": "Function createRequestHandler defined in .agents/skills/impeccable/scripts/live-server.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-server.mjs:handlePollGet",
+      "type": "function",
+      "name": "handlePollGet",
+      "filePath": ".agents/skills/impeccable/scripts/live-server.mjs",
+      "lineRange": [
+        596,
+        630
+      ],
+      "summary": "Function handlePollGet defined in .agents/skills/impeccable/scripts/live-server.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-server.mjs:handlePollPost",
+      "type": "function",
+      "name": "handlePollPost",
+      "filePath": ".agents/skills/impeccable/scripts/live-server.mjs",
+      "lineRange": [
+        632,
+        672
+      ],
+      "summary": "Function handlePollPost defined in .agents/skills/impeccable/scripts/live-server.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-server.mjs:shutdown",
+      "type": "function",
+      "name": "shutdown",
+      "filePath": ".agents/skills/impeccable/scripts/live-server.mjs",
+      "lineRange": [
+        680,
+        693
+      ],
+      "summary": "Function shutdown defined in .agents/skills/impeccable/scripts/live-server.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.agents/skills/impeccable/scripts/live-session-store.mjs",
+      "type": "file",
+      "name": "live-session-store.mjs",
+      "filePath": ".agents/skills/impeccable/scripts/live-session-store.mjs",
+      "summary": "File mapped from .agents/skills/impeccable/scripts/live-session-store.mjs with category code.",
+      "tags": [
+        "code",
+        "javascript",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-session-store.mjs:createLiveSessionStore",
+      "type": "function",
+      "name": "createLiveSessionStore",
+      "filePath": ".agents/skills/impeccable/scripts/live-session-store.mjs",
+      "lineRange": [
+        7,
+        80
+      ],
+      "summary": "Function createLiveSessionStore defined in .agents/skills/impeccable/scripts/live-session-store.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-session-store.mjs:normalizeEvent",
+      "type": "function",
+      "name": "normalizeEvent",
+      "filePath": ".agents/skills/impeccable/scripts/live-session-store.mjs",
+      "lineRange": [
+        82,
+        88
+      ],
+      "summary": "Function normalizeEvent defined in .agents/skills/impeccable/scripts/live-session-store.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-session-store.mjs:getJournalPath",
+      "type": "function",
+      "name": "getJournalPath",
+      "filePath": ".agents/skills/impeccable/scripts/live-session-store.mjs",
+      "lineRange": [
+        90,
+        92
+      ],
+      "summary": "Function getJournalPath defined in .agents/skills/impeccable/scripts/live-session-store.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-session-store.mjs:getSnapshotPath",
+      "type": "function",
+      "name": "getSnapshotPath",
+      "filePath": ".agents/skills/impeccable/scripts/live-session-store.mjs",
+      "lineRange": [
+        94,
+        96
+      ],
+      "summary": "Function getSnapshotPath defined in .agents/skills/impeccable/scripts/live-session-store.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-session-store.mjs:safeSessionId",
+      "type": "function",
+      "name": "safeSessionId",
+      "filePath": ".agents/skills/impeccable/scripts/live-session-store.mjs",
+      "lineRange": [
+        98,
+        101
+      ],
+      "summary": "Function safeSessionId defined in .agents/skills/impeccable/scripts/live-session-store.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-session-store.mjs:baseSnapshot",
+      "type": "function",
+      "name": "baseSnapshot",
+      "filePath": ".agents/skills/impeccable/scripts/live-session-store.mjs",
+      "lineRange": [
+        103,
+        124
+      ],
+      "summary": "Function baseSnapshot defined in .agents/skills/impeccable/scripts/live-session-store.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-session-store.mjs:rebuildSnapshotFromJournal",
+      "type": "function",
+      "name": "rebuildSnapshotFromJournal",
+      "filePath": ".agents/skills/impeccable/scripts/live-session-store.mjs",
+      "lineRange": [
+        126,
+        151
+      ],
+      "summary": "Function rebuildSnapshotFromJournal defined in .agents/skills/impeccable/scripts/live-session-store.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-session-store.mjs:applyEvent",
+      "type": "function",
+      "name": "applyEvent",
+      "filePath": ".agents/skills/impeccable/scripts/live-session-store.mjs",
+      "lineRange": [
+        153,
+        238
+      ],
+      "summary": "Function applyEvent defined in .agents/skills/impeccable/scripts/live-session-store.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-session-store.mjs:toPendingEvent",
+      "type": "function",
+      "name": "toPendingEvent",
+      "filePath": ".agents/skills/impeccable/scripts/live-session-store.mjs",
+      "lineRange": [
+        240,
+        244
+      ],
+      "summary": "Function toPendingEvent defined in .agents/skills/impeccable/scripts/live-session-store.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-session-store.mjs:upsertArtifact",
+      "type": "function",
+      "name": "upsertArtifact",
+      "filePath": ".agents/skills/impeccable/scripts/live-session-store.mjs",
+      "lineRange": [
+        246,
+        250
+      ],
+      "summary": "Function upsertArtifact defined in .agents/skills/impeccable/scripts/live-session-store.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-session-store.mjs:writeSnapshot",
+      "type": "function",
+      "name": "writeSnapshot",
+      "filePath": ".agents/skills/impeccable/scripts/live-session-store.mjs",
+      "lineRange": [
+        252,
+        254
+      ],
+      "summary": "Function writeSnapshot defined in .agents/skills/impeccable/scripts/live-session-store.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.agents/skills/impeccable/scripts/live-status.mjs",
+      "type": "file",
+      "name": "live-status.mjs",
+      "filePath": ".agents/skills/impeccable/scripts/live-status.mjs",
+      "summary": "File mapped from .agents/skills/impeccable/scripts/live-status.mjs with category code.",
+      "tags": [
+        "code",
+        "javascript",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-status.mjs:readServerInfo",
+      "type": "function",
+      "name": "readServerInfo",
+      "filePath": ".agents/skills/impeccable/scripts/live-status.mjs",
+      "lineRange": [
+        9,
+        11
+      ],
+      "summary": "Function readServerInfo defined in .agents/skills/impeccable/scripts/live-status.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-status.mjs:fetchServerStatus",
+      "type": "function",
+      "name": "fetchServerStatus",
+      "filePath": ".agents/skills/impeccable/scripts/live-status.mjs",
+      "lineRange": [
+        13,
+        22
+      ],
+      "summary": "Function fetchServerStatus defined in .agents/skills/impeccable/scripts/live-status.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-status.mjs:statusCli",
+      "type": "function",
+      "name": "statusCli",
+      "filePath": ".agents/skills/impeccable/scripts/live-status.mjs",
+      "lineRange": [
+        24,
+        42
+      ],
+      "summary": "Function statusCli defined in .agents/skills/impeccable/scripts/live-status.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.agents/skills/impeccable/scripts/live-wrap.mjs",
+      "type": "file",
+      "name": "live-wrap.mjs",
+      "filePath": ".agents/skills/impeccable/scripts/live-wrap.mjs",
+      "summary": "File mapped from .agents/skills/impeccable/scripts/live-wrap.mjs with category code.",
+      "tags": [
+        "code",
+        "javascript",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-wrap.mjs:wrapCli",
+      "type": "function",
+      "name": "wrapCli",
+      "filePath": ".agents/skills/impeccable/scripts/live-wrap.mjs",
+      "lineRange": [
+        20,
+        279
+      ],
+      "summary": "Function wrapCli defined in .agents/skills/impeccable/scripts/live-wrap.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-wrap.mjs:argVal",
+      "type": "function",
+      "name": "argVal",
+      "filePath": ".agents/skills/impeccable/scripts/live-wrap.mjs",
+      "lineRange": [
+        285,
+        288
+      ],
+      "summary": "Function argVal defined in .agents/skills/impeccable/scripts/live-wrap.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-wrap.mjs:buildSearchQueries",
+      "type": "function",
+      "name": "buildSearchQueries",
+      "filePath": ".agents/skills/impeccable/scripts/live-wrap.mjs",
+      "lineRange": [
+        294,
+        332
+      ],
+      "summary": "Function buildSearchQueries defined in .agents/skills/impeccable/scripts/live-wrap.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-wrap.mjs:detectCommentSyntax",
+      "type": "function",
+      "name": "detectCommentSyntax",
+      "filePath": ".agents/skills/impeccable/scripts/live-wrap.mjs",
+      "lineRange": [
+        334,
+        341
+      ],
+      "summary": "Function detectCommentSyntax defined in .agents/skills/impeccable/scripts/live-wrap.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-wrap.mjs:detectStyleMode",
+      "type": "function",
+      "name": "detectStyleMode",
+      "filePath": ".agents/skills/impeccable/scripts/live-wrap.mjs",
+      "lineRange": [
+        343,
+        355
+      ],
+      "summary": "Function detectStyleMode defined in .agents/skills/impeccable/scripts/live-wrap.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-wrap.mjs:buildCssSelectorPrefixExamples",
+      "type": "function",
+      "name": "buildCssSelectorPrefixExamples",
+      "filePath": ".agents/skills/impeccable/scripts/live-wrap.mjs",
+      "lineRange": [
+        357,
+        360
+      ],
+      "summary": "Function buildCssSelectorPrefixExamples defined in .agents/skills/impeccable/scripts/live-wrap.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-wrap.mjs:buildCssAuthoring",
+      "type": "function",
+      "name": "buildCssAuthoring",
+      "filePath": ".agents/skills/impeccable/scripts/live-wrap.mjs",
+      "lineRange": [
+        362,
+        397
+      ],
+      "summary": "Function buildCssAuthoring defined in .agents/skills/impeccable/scripts/live-wrap.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-wrap.mjs:findFileWithQuery",
+      "type": "function",
+      "name": "findFileWithQuery",
+      "filePath": ".agents/skills/impeccable/scripts/live-wrap.mjs",
+      "lineRange": [
+        403,
+        414
+      ],
+      "summary": "Function findFileWithQuery defined in .agents/skills/impeccable/scripts/live-wrap.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-wrap.mjs:searchDir",
+      "type": "function",
+      "name": "searchDir",
+      "filePath": ".agents/skills/impeccable/scripts/live-wrap.mjs",
+      "lineRange": [
+        416,
+        452
+      ],
+      "summary": "Function searchDir defined in .agents/skills/impeccable/scripts/live-wrap.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-wrap.mjs:minLeadingSpaces",
+      "type": "function",
+      "name": "minLeadingSpaces",
+      "filePath": ".agents/skills/impeccable/scripts/live-wrap.mjs",
+      "lineRange": [
+        477,
+        485
+      ],
+      "summary": "Function minLeadingSpaces defined in .agents/skills/impeccable/scripts/live-wrap.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-wrap.mjs:findElement",
+      "type": "function",
+      "name": "findElement",
+      "filePath": ".agents/skills/impeccable/scripts/live-wrap.mjs",
+      "lineRange": [
+        487,
+        505
+      ],
+      "summary": "Function findElement defined in .agents/skills/impeccable/scripts/live-wrap.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-wrap.mjs:findAllElements",
+      "type": "function",
+      "name": "findAllElements",
+      "filePath": ".agents/skills/impeccable/scripts/live-wrap.mjs",
+      "lineRange": [
+        514,
+        530
+      ],
+      "summary": "Function findAllElements defined in .agents/skills/impeccable/scripts/live-wrap.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-wrap.mjs:filterByText",
+      "type": "function",
+      "name": "filterByText",
+      "filePath": ".agents/skills/impeccable/scripts/live-wrap.mjs",
+      "lineRange": [
+        547,
+        568
+      ],
+      "summary": "Function filterByText defined in .agents/skills/impeccable/scripts/live-wrap.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-wrap.mjs:findOpenerLine",
+      "type": "function",
+      "name": "findOpenerLine",
+      "filePath": ".agents/skills/impeccable/scripts/live-wrap.mjs",
+      "lineRange": [
+        579,
+        594
+      ],
+      "summary": "Function findOpenerLine defined in .agents/skills/impeccable/scripts/live-wrap.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live-wrap.mjs:findClosingLine",
+      "type": "function",
+      "name": "findClosingLine",
+      "filePath": ".agents/skills/impeccable/scripts/live-wrap.mjs",
+      "lineRange": [
+        600,
+        623
+      ],
+      "summary": "Function findClosingLine defined in .agents/skills/impeccable/scripts/live-wrap.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.agents/skills/impeccable/scripts/live.mjs",
+      "type": "file",
+      "name": "live.mjs",
+      "filePath": ".agents/skills/impeccable/scripts/live.mjs",
+      "summary": "File mapped from .agents/skills/impeccable/scripts/live.mjs with category code.",
+      "tags": [
+        "code",
+        "javascript",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live.mjs:liveCli",
+      "type": "function",
+      "name": "liveCli",
+      "filePath": ".agents/skills/impeccable/scripts/live.mjs",
+      "lineRange": [
+        30,
+        107
+      ],
+      "summary": "Function liveCli defined in .agents/skills/impeccable/scripts/live.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live.mjs:scanForDrift",
+      "type": "function",
+      "name": "scanForDrift",
+      "filePath": ".agents/skills/impeccable/scripts/live.mjs",
+      "lineRange": [
+        119,
+        167
+      ],
+      "summary": "Function scanForDrift defined in .agents/skills/impeccable/scripts/live.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live.mjs:globToRegex",
+      "type": "function",
+      "name": "globToRegex",
+      "filePath": ".agents/skills/impeccable/scripts/live.mjs",
+      "lineRange": [
+        174,
+        199
+      ],
+      "summary": "Function globToRegex defined in .agents/skills/impeccable/scripts/live.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live.mjs:runScript",
+      "type": "function",
+      "name": "runScript",
+      "filePath": ".agents/skills/impeccable/scripts/live.mjs",
+      "lineRange": [
+        205,
+        214
+      ],
+      "summary": "Function runScript defined in .agents/skills/impeccable/scripts/live.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live.mjs:safeParse",
+      "type": "function",
+      "name": "safeParse",
+      "filePath": ".agents/skills/impeccable/scripts/live.mjs",
+      "lineRange": [
+        216,
+        218
+      ],
+      "summary": "Function safeParse defined in .agents/skills/impeccable/scripts/live.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/live.mjs:ensureServerRunning",
+      "type": "function",
+      "name": "ensureServerRunning",
+      "filePath": ".agents/skills/impeccable/scripts/live.mjs",
+      "lineRange": [
+        223,
+        238
+      ],
+      "summary": "Function ensureServerRunning defined in .agents/skills/impeccable/scripts/live.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.agents/skills/impeccable/scripts/load-context.mjs",
+      "type": "file",
+      "name": "load-context.mjs",
+      "filePath": ".agents/skills/impeccable/scripts/load-context.mjs",
+      "summary": "File mapped from .agents/skills/impeccable/scripts/load-context.mjs with category code.",
+      "tags": [
+        "code",
+        "javascript",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/load-context.mjs:resolveContextDir",
+      "type": "function",
+      "name": "resolveContextDir",
+      "filePath": ".agents/skills/impeccable/scripts/load-context.mjs",
+      "lineRange": [
+        46,
+        72
+      ],
+      "summary": "Function resolveContextDir defined in .agents/skills/impeccable/scripts/load-context.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/load-context.mjs:loadContext",
+      "type": "function",
+      "name": "loadContext",
+      "filePath": ".agents/skills/impeccable/scripts/load-context.mjs",
+      "lineRange": [
+        74,
+        115
+      ],
+      "summary": "Function loadContext defined in .agents/skills/impeccable/scripts/load-context.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/load-context.mjs:firstExisting",
+      "type": "function",
+      "name": "firstExisting",
+      "filePath": ".agents/skills/impeccable/scripts/load-context.mjs",
+      "lineRange": [
+        117,
+        123
+      ],
+      "summary": "Function firstExisting defined in .agents/skills/impeccable/scripts/load-context.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/load-context.mjs:safeRead",
+      "type": "function",
+      "name": "safeRead",
+      "filePath": ".agents/skills/impeccable/scripts/load-context.mjs",
+      "lineRange": [
+        125,
+        127
+      ],
+      "summary": "Function safeRead defined in .agents/skills/impeccable/scripts/load-context.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:.agents/skills/impeccable/scripts/load-context.mjs:cli",
+      "type": "function",
+      "name": "cli",
+      "filePath": ".agents/skills/impeccable/scripts/load-context.mjs",
+      "lineRange": [
+        133,
+        136
+      ],
+      "summary": "Function cli defined in .agents/skills/impeccable/scripts/load-context.mjs.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.agents/skills/impeccable/scripts/modern-screenshot.umd.js",
+      "type": "file",
+      "name": "modern-screenshot.umd.js",
+      "filePath": ".agents/skills/impeccable/scripts/modern-screenshot.umd.js",
+      "summary": "File mapped from .agents/skills/impeccable/scripts/modern-screenshot.umd.js with category code.",
+      "tags": [
+        "code",
+        "javascript",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:.agents/skills/debugging-code/scripts/install-dap.sh",
+      "target": "function:.agents/skills/debugging-code/scripts/install-dap.sh:go_install_fallback",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/cleanup-deprecated.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/cleanup-deprecated.mjs:findProjectRoot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/cleanup-deprecated.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/cleanup-deprecated.mjs:loadLock",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/cleanup-deprecated.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/cleanup-deprecated.mjs:isImpeccableSkill",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/cleanup-deprecated.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/cleanup-deprecated.mjs:buildTargetNames",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/cleanup-deprecated.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/cleanup-deprecated.mjs:findSkillsDirs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/cleanup-deprecated.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/cleanup-deprecated.mjs:removeDeprecatedSkills",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/cleanup-deprecated.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/cleanup-deprecated.mjs:cleanSkillsLock",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/cleanup-deprecated.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/cleanup-deprecated.mjs:cleanup",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/design-parser.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/design-parser.mjs:parseFrontmatter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/design-parser.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/design-parser.mjs:parseYamlSubset",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/design-parser.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/design-parser.mjs:findTopLevelColon",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/design-parser.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/design-parser.mjs:parseScalar",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/design-parser.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/design-parser.mjs:splitSections",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/design-parser.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/design-parser.mjs:normalizeApostrophes",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/design-parser.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/design-parser.mjs:matchCanonicalSection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/design-parser.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/design-parser.mjs:splitSubsections",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/design-parser.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/design-parser.mjs:collectParagraphs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/design-parser.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/design-parser.mjs:collectBullets",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/design-parser.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/design-parser.mjs:stripBold",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/design-parser.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/design-parser.mjs:extractNamedRules",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/design-parser.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/design-parser.mjs:extractOverview",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/design-parser.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/design-parser.mjs:extractColors",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/design-parser.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/design-parser.mjs:parseColorBullet",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/design-parser.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/design-parser.mjs:extractParenGroup",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/design-parser.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/design-parser.mjs:buildColor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/design-parser.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/design-parser.mjs:collectColorValues",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/design-parser.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/design-parser.mjs:detectFormat",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/design-parser.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/design-parser.mjs:scanInlineColors",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/design-parser.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/design-parser.mjs:parseStitchInlineGroups",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/design-parser.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/design-parser.mjs:extractTypography",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/design-parser.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/design-parser.mjs:normalizeFontRole",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/design-parser.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/design-parser.mjs:parseTypeBullet",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/design-parser.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/design-parser.mjs:extractElevation",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/design-parser.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/design-parser.mjs:extractInlineShadows",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/design-parser.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/design-parser.mjs:parseShadowBullet",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/design-parser.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/design-parser.mjs:extractComponents",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/design-parser.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/design-parser.mjs:extractDosDonts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/design-parser.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/design-parser.mjs:assessCoverage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/design-parser.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/design-parser.mjs:parseDesignMd",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/detect-csp.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/detect-csp.mjs:detectCsp",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/detect-csp.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/detect-csp.mjs:walk",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:getImpeccableDir",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:getDesignSidecarPath",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:getDesignSidecarCandidates",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:resolveDesignSidecarPath",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:getLiveDir",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:getLiveConfigPath",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:getLegacyLiveConfigPath",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:resolveLiveConfigPath",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:getLiveServerPath",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:getLegacyLiveServerPath",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:readLiveServerInfo",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:writeLiveServerInfo",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:removeLiveServerInfo",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:getLiveSessionsDir",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:getLegacyLiveSessionsDir",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:getLiveAnnotationsDir",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:getLegacyLiveAnnotationsDir",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/impeccable-paths.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/impeccable-paths.mjs:firstExisting",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/is-generated.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/is-generated.mjs:isGeneratedFile",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/is-generated.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/is-generated.mjs:isGitIgnored",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/is-generated.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/is-generated.mjs:hasGeneratedHeader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-accept.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-accept.mjs:acceptCli",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-accept.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-accept.mjs:handleDiscard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-accept.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-accept.mjs:handleAccept",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-accept.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-accept.mjs:findMarkerBlock",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-accept.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-accept.mjs:expandReplaceRange",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-accept.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-accept.mjs:stripStyleAndJoin",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-accept.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-accept.mjs:extractInnerByAttr",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-accept.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-accept.mjs:extractOriginal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-accept.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-accept.mjs:extractVariant",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-accept.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-accept.mjs:extractCss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-accept.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-accept.mjs:stripJsxTemplateLines",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-accept.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-accept.mjs:stripJsxTemplateWrap",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-accept.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-accept.mjs:deindentContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-accept.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-accept.mjs:detectCommentSyntax",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-accept.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-accept.mjs:findSessionFile",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-accept.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-accept.mjs:searchDir",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-accept.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-accept.mjs:argVal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-complete.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-complete.mjs:parseArgs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-complete.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-complete.mjs:completeCli",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-complete.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-complete.mjs:readServerInfo",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-complete.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-complete.mjs:completeThroughServer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-completion.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-completion.mjs:completionTypeForAcceptResult",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-completion.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-completion.mjs:completionAckForAcceptResult",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-inject.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-inject.mjs:injectCli",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-inject.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-inject.mjs:resolveFiles",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-inject.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-inject.mjs:globToRegex",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-inject.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-inject.mjs:validateConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-inject.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-inject.mjs:commentOpen",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-inject.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-inject.mjs:commentClose",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-inject.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-inject.mjs:buildTagBlock",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-inject.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-inject.mjs:insertTag",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-inject.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-inject.mjs:removeTag",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-inject.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-inject.mjs:findCspMetaTags",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-inject.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-inject.mjs:getAttr",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-inject.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-inject.mjs:appendOriginToDirective",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-inject.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-inject.mjs:patchCspMeta",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-inject.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-inject.mjs:revertCspMeta",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-poll.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-poll.mjs:readServerInfo",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-poll.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-poll.mjs:buildPollReplyPayload",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-poll.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-poll.mjs:postReply",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-poll.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-poll.mjs:pollCli",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-resume.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-resume.mjs:parseArgs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-resume.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-resume.mjs:resumeCli",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-server.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-server.mjs:findOpenPort",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-server.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-server.mjs:enqueueEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-server.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-server.mjs:restorePendingEventsFromStore",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-server.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-server.mjs:findAvailablePendingEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-server.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-server.mjs:leaseEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-server.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-server.mjs:acknowledgePendingEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-server.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-server.mjs:scheduleLeaseFlush",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-server.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-server.mjs:flushPendingPolls",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-server.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-server.mjs:broadcast",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-server.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-server.mjs:loadBrowserScripts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-server.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-server.mjs:hasProjectContext",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-server.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-server.mjs:statOrNull",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-server.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-server.mjs:isValidId",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-server.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-server.mjs:isValidVariantId",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-server.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-server.mjs:validateEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-server.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-server.mjs:createRequestHandler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-server.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-server.mjs:handlePollGet",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-server.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-server.mjs:handlePollPost",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-server.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-server.mjs:shutdown",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-session-store.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-session-store.mjs:createLiveSessionStore",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-session-store.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-session-store.mjs:normalizeEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-session-store.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-session-store.mjs:getJournalPath",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-session-store.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-session-store.mjs:getSnapshotPath",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-session-store.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-session-store.mjs:safeSessionId",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-session-store.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-session-store.mjs:baseSnapshot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-session-store.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-session-store.mjs:rebuildSnapshotFromJournal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-session-store.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-session-store.mjs:applyEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-session-store.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-session-store.mjs:toPendingEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-session-store.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-session-store.mjs:upsertArtifact",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-session-store.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-session-store.mjs:writeSnapshot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-status.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-status.mjs:readServerInfo",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-status.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-status.mjs:fetchServerStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-status.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-status.mjs:statusCli",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-wrap.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-wrap.mjs:wrapCli",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-wrap.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-wrap.mjs:argVal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-wrap.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-wrap.mjs:buildSearchQueries",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-wrap.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-wrap.mjs:detectCommentSyntax",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-wrap.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-wrap.mjs:detectStyleMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-wrap.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-wrap.mjs:buildCssSelectorPrefixExamples",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-wrap.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-wrap.mjs:buildCssAuthoring",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-wrap.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-wrap.mjs:findFileWithQuery",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-wrap.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-wrap.mjs:searchDir",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-wrap.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-wrap.mjs:minLeadingSpaces",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-wrap.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-wrap.mjs:findElement",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-wrap.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-wrap.mjs:findAllElements",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-wrap.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-wrap.mjs:filterByText",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-wrap.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-wrap.mjs:findOpenerLine",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live-wrap.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live-wrap.mjs:findClosingLine",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live.mjs:liveCli",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live.mjs:scanForDrift",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live.mjs:globToRegex",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live.mjs:runScript",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live.mjs:safeParse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/live.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/live.mjs:ensureServerRunning",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/load-context.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/load-context.mjs:resolveContextDir",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/load-context.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/load-context.mjs:loadContext",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/load-context.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/load-context.mjs:firstExisting",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/load-context.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/load-context.mjs:safeRead",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:.agents/skills/impeccable/scripts/load-context.mjs",
+      "target": "function:.agents/skills/impeccable/scripts/load-context.mjs:cli",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    }
+  ]
+}

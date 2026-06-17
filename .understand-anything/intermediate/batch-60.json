@@ -1,0 +1,2010 @@
+{
+  "nodes": [
+    {
+      "id": "file:ETL/tools/run_pipeline_and_audit.py",
+      "type": "file",
+      "name": "run_pipeline_and_audit.py",
+      "filePath": "ETL/tools/run_pipeline_and_audit.py",
+      "summary": "File mapped from ETL/tools/run_pipeline_and_audit.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/run_pipeline_and_audit.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "ETL/tools/run_pipeline_and_audit.py",
+      "lineRange": [
+        4,
+        15
+      ],
+      "summary": "Function main defined in ETL/tools/run_pipeline_and_audit.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/tools/search_ddl.py",
+      "type": "file",
+      "name": "search_ddl.py",
+      "filePath": "ETL/tools/search_ddl.py",
+      "summary": "File mapped from ETL/tools/search_ddl.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/search_ddl.py:search_text",
+      "type": "function",
+      "name": "search_text",
+      "filePath": "ETL/tools/search_ddl.py",
+      "lineRange": [
+        4,
+        19
+      ],
+      "summary": "Function search_text defined in ETL/tools/search_ddl.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/tools/test_campana_fisiologia.py",
+      "type": "file",
+      "name": "test_campana_fisiologia.py",
+      "filePath": "ETL/tools/test_campana_fisiologia.py",
+      "summary": "File mapped from ETL/tools/test_campana_fisiologia.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/tools/test_resolver_campana_fase48.py",
+      "type": "file",
+      "name": "test_resolver_campana_fase48.py",
+      "filePath": "ETL/tools/test_resolver_campana_fase48.py",
+      "summary": "File mapped from ETL/tools/test_resolver_campana_fase48.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:ETL/tools/test_resolver_campana_fase48.py:engine",
+      "type": "function",
+      "name": "engine",
+      "filePath": "ETL/tools/test_resolver_campana_fase48.py",
+      "lineRange": [
+        35,
+        36
+      ],
+      "summary": "Function engine defined in ETL/tools/test_resolver_campana_fase48.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/test_resolver_campana_fase48.py:_anio_de",
+      "type": "function",
+      "name": "_anio_de",
+      "filePath": "ETL/tools/test_resolver_campana_fase48.py",
+      "lineRange": [
+        49,
+        57
+      ],
+      "summary": "Function _anio_de defined in ETL/tools/test_resolver_campana_fase48.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/test_resolver_campana_fase48.py:test_sql_function",
+      "type": "function",
+      "name": "test_sql_function",
+      "filePath": "ETL/tools/test_resolver_campana_fase48.py",
+      "lineRange": [
+        60,
+        76
+      ],
+      "summary": "Function test_sql_function defined in ETL/tools/test_resolver_campana_fase48.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/test_resolver_campana_fase48.py:test_python_anual",
+      "type": "function",
+      "name": "test_python_anual",
+      "filePath": "ETL/tools/test_resolver_campana_fase48.py",
+      "lineRange": [
+        79,
+        90
+      ],
+      "summary": "Function test_python_anual defined in ETL/tools/test_resolver_campana_fase48.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/test_resolver_campana_fase48.py:test_python_via_obtener_id_campana",
+      "type": "function",
+      "name": "test_python_via_obtener_id_campana",
+      "filePath": "ETL/tools/test_resolver_campana_fase48.py",
+      "lineRange": [
+        93,
+        105
+      ],
+      "summary": "Function test_python_via_obtener_id_campana defined in ETL/tools/test_resolver_campana_fase48.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/test_resolver_campana_fase48.py:test_no_regresion_fact_actual",
+      "type": "function",
+      "name": "test_no_regresion_fact_actual",
+      "filePath": "ETL/tools/test_resolver_campana_fase48.py",
+      "lineRange": [
+        108,
+        127
+      ],
+      "summary": "Function test_no_regresion_fact_actual defined in ETL/tools/test_resolver_campana_fase48.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/tools/test_resolver_campana_fase48.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "ETL/tools/test_resolver_campana_fase48.py",
+      "lineRange": [
+        130,
+        143
+      ],
+      "summary": "Function main defined in ETL/tools/test_resolver_campana_fase48.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/trace_queries.py",
+      "type": "file",
+      "name": "trace_queries.py",
+      "filePath": "ETL/trace_queries.py",
+      "summary": "File mapped from ETL/trace_queries.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/trace_queries.py:trace_running_queries",
+      "type": "function",
+      "name": "trace_running_queries",
+      "filePath": "ETL/trace_queries.py",
+      "lineRange": [
+        8,
+        37
+      ],
+      "summary": "Function trace_running_queries defined in ETL/trace_queries.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/utils/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "ETL/utils/__init__.py",
+      "summary": "File mapped from ETL/utils/__init__.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/utils/circuit_breaker.py",
+      "type": "file",
+      "name": "circuit_breaker.py",
+      "filePath": "ETL/utils/circuit_breaker.py",
+      "summary": "File mapped from ETL/utils/circuit_breaker.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:ETL/utils/circuit_breaker.py:evaluar",
+      "type": "function",
+      "name": "evaluar",
+      "filePath": "ETL/utils/circuit_breaker.py",
+      "lineRange": [
+        62,
+        118
+      ],
+      "summary": "Function evaluar defined in ETL/utils/circuit_breaker.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:ETL/utils/circuit_breaker.py:lanzar_si_bloqueado",
+      "type": "function",
+      "name": "lanzar_si_bloqueado",
+      "filePath": "ETL/utils/circuit_breaker.py",
+      "lineRange": [
+        121,
+        126
+      ],
+      "summary": "Function lanzar_si_bloqueado defined in ETL/utils/circuit_breaker.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:ETL/utils/circuit_breaker.py:UmbralesCircuitBreaker",
+      "type": "class",
+      "name": "UmbralesCircuitBreaker",
+      "filePath": "ETL/utils/circuit_breaker.py",
+      "lineRange": [
+        33,
+        49
+      ],
+      "summary": "Class UmbralesCircuitBreaker defined in ETL/utils/circuit_breaker.py.",
+      "tags": [
+        "class",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:ETL/utils/circuit_breaker.py:ResultadoCircuitBreaker",
+      "type": "class",
+      "name": "ResultadoCircuitBreaker",
+      "filePath": "ETL/utils/circuit_breaker.py",
+      "lineRange": [
+        53,
+        59
+      ],
+      "summary": "Class ResultadoCircuitBreaker defined in ETL/utils/circuit_breaker.py.",
+      "tags": [
+        "class",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/utils/contexto_transaccional.py",
+      "type": "file",
+      "name": "contexto_transaccional.py",
+      "filePath": "ETL/utils/contexto_transaccional.py",
+      "summary": "File mapped from ETL/utils/contexto_transaccional.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:ETL/utils/contexto_transaccional.py:_es_conexion_db",
+      "type": "function",
+      "name": "_es_conexion_db",
+      "filePath": "ETL/utils/contexto_transaccional.py",
+      "lineRange": [
+        12,
+        15
+      ],
+      "summary": "Function _es_conexion_db defined in ETL/utils/contexto_transaccional.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/contexto_transaccional.py:administrar_recurso_db",
+      "type": "function",
+      "name": "administrar_recurso_db",
+      "filePath": "ETL/utils/contexto_transaccional.py",
+      "lineRange": [
+        19,
+        25
+      ],
+      "summary": "Function administrar_recurso_db defined in ETL/utils/contexto_transaccional.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:ETL/utils/contexto_transaccional.py:ContextoTransaccionalETL",
+      "type": "class",
+      "name": "ContextoTransaccionalETL",
+      "filePath": "ETL/utils/contexto_transaccional.py",
+      "lineRange": [
+        28,
+        97
+      ],
+      "summary": "Class ContextoTransaccionalETL defined in ETL/utils/contexto_transaccional.py.",
+      "tags": [
+        "class",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/utils/dni.py",
+      "type": "file",
+      "name": "dni.py",
+      "filePath": "ETL/utils/dni.py",
+      "summary": "File mapped from ETL/utils/dni.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:ETL/utils/dni.py:limpiar_dni",
+      "type": "function",
+      "name": "limpiar_dni",
+      "filePath": "ETL/utils/dni.py",
+      "lineRange": [
+        15,
+        38
+      ],
+      "summary": "Function limpiar_dni defined in ETL/utils/dni.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/dni.py:es_dni_valido",
+      "type": "function",
+      "name": "es_dni_valido",
+      "filePath": "ETL/utils/dni.py",
+      "lineRange": [
+        41,
+        47
+      ],
+      "summary": "Function es_dni_valido defined in ETL/utils/dni.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/dni.py:procesar_dni",
+      "type": "function",
+      "name": "procesar_dni",
+      "filePath": "ETL/utils/dni.py",
+      "lineRange": [
+        50,
+        57
+      ],
+      "summary": "Function procesar_dni defined in ETL/utils/dni.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/utils/ejecucion.py",
+      "type": "file",
+      "name": "ejecucion.py",
+      "filePath": "ETL/utils/ejecucion.py",
+      "summary": "File mapped from ETL/utils/ejecucion.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:ETL/utils/ejecucion.py:obtener_facts_disponibles",
+      "type": "function",
+      "name": "obtener_facts_disponibles",
+      "filePath": "ETL/utils/ejecucion.py",
+      "lineRange": [
+        182,
+        183
+      ],
+      "summary": "Function obtener_facts_disponibles defined in ETL/utils/ejecucion.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/ejecucion.py:obtener_tablas_bronce_por_dependencias",
+      "type": "function",
+      "name": "obtener_tablas_bronce_por_dependencias",
+      "filePath": "ETL/utils/ejecucion.py",
+      "lineRange": [
+        186,
+        199
+      ],
+      "summary": "Function obtener_tablas_bronce_por_dependencias defined in ETL/utils/ejecucion.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/ejecucion.py:obtener_facts_con_marts",
+      "type": "function",
+      "name": "obtener_facts_con_marts",
+      "filePath": "ETL/utils/ejecucion.py",
+      "lineRange": [
+        202,
+        207
+      ],
+      "summary": "Function obtener_facts_con_marts defined in ETL/utils/ejecucion.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/ejecucion.py:construir_catalogo_facts",
+      "type": "function",
+      "name": "construir_catalogo_facts",
+      "filePath": "ETL/utils/ejecucion.py",
+      "lineRange": [
+        210,
+        229
+      ],
+      "summary": "Function construir_catalogo_facts defined in ETL/utils/ejecucion.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/ejecucion.py:obtener_catalogo_facts",
+      "type": "function",
+      "name": "obtener_catalogo_facts",
+      "filePath": "ETL/utils/ejecucion.py",
+      "lineRange": [
+        232,
+        245
+      ],
+      "summary": "Function obtener_catalogo_facts defined in ETL/utils/ejecucion.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/ejecucion.py:normalizar_facts_solicitadas",
+      "type": "function",
+      "name": "normalizar_facts_solicitadas",
+      "filePath": "ETL/utils/ejecucion.py",
+      "lineRange": [
+        248,
+        276
+      ],
+      "summary": "Function normalizar_facts_solicitadas defined in ETL/utils/ejecucion.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/ejecucion.py:resolver_plan_reproceso",
+      "type": "function",
+      "name": "resolver_plan_reproceso",
+      "filePath": "ETL/utils/ejecucion.py",
+      "lineRange": [
+        279,
+        328
+      ],
+      "summary": "Function resolver_plan_reproceso defined in ETL/utils/ejecucion.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/utils/errores.py",
+      "type": "file",
+      "name": "errores.py",
+      "filePath": "ETL/utils/errores.py",
+      "summary": "File mapped from ETL/utils/errores.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:ETL/utils/errores.py:ErrorCircuitBreakerCritico",
+      "type": "class",
+      "name": "ErrorCircuitBreakerCritico",
+      "filePath": "ETL/utils/errores.py",
+      "lineRange": [
+        9,
+        13
+      ],
+      "summary": "Class ErrorCircuitBreakerCritico defined in ETL/utils/errores.py.",
+      "tags": [
+        "class",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:ETL/utils/errores.py:ErrorCircuitBreakerError",
+      "type": "class",
+      "name": "ErrorCircuitBreakerError",
+      "filePath": "ETL/utils/errores.py",
+      "lineRange": [
+        16,
+        21
+      ],
+      "summary": "Class ErrorCircuitBreakerError defined in ETL/utils/errores.py.",
+      "tags": [
+        "class",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/utils/fechas.py",
+      "type": "file",
+      "name": "fechas.py",
+      "filePath": "ETL/utils/fechas.py",
+      "summary": "File mapped from ETL/utils/fechas.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:ETL/utils/fechas.py:_obtener_rango_campana_configurado",
+      "type": "function",
+      "name": "_obtener_rango_campana_configurado",
+      "filePath": "ETL/utils/fechas.py",
+      "lineRange": [
+        56,
+        67
+      ],
+      "summary": "Function _obtener_rango_campana_configurado defined in ETL/utils/fechas.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/fechas.py:obtener_politica_fecha",
+      "type": "function",
+      "name": "obtener_politica_fecha",
+      "filePath": "ETL/utils/fechas.py",
+      "lineRange": [
+        70,
+        88
+      ],
+      "summary": "Function obtener_politica_fecha defined in ETL/utils/fechas.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/fechas.py:resolver_dominio_fecha",
+      "type": "function",
+      "name": "resolver_dominio_fecha",
+      "filePath": "ETL/utils/fechas.py",
+      "lineRange": [
+        91,
+        111
+      ],
+      "summary": "Function resolver_dominio_fecha defined in ETL/utils/fechas.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/fechas.py:describir_rango_campana",
+      "type": "function",
+      "name": "describir_rango_campana",
+      "filePath": "ETL/utils/fechas.py",
+      "lineRange": [
+        114,
+        127
+      ],
+      "summary": "Function describir_rango_campana defined in ETL/utils/fechas.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/fechas.py:parsear_serie_fechas",
+      "type": "function",
+      "name": "parsear_serie_fechas",
+      "filePath": "ETL/utils/fechas.py",
+      "lineRange": [
+        130,
+        179
+      ],
+      "summary": "Function parsear_serie_fechas defined in ETL/utils/fechas.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/fechas.py:parsear_fecha",
+      "type": "function",
+      "name": "parsear_fecha",
+      "filePath": "ETL/utils/fechas.py",
+      "lineRange": [
+        182,
+        236
+      ],
+      "summary": "Function parsear_fecha defined in ETL/utils/fechas.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:ETL/utils/fechas.py:_parsear_fecha_corta_ambigua",
+      "type": "function",
+      "name": "_parsear_fecha_corta_ambigua",
+      "filePath": "ETL/utils/fechas.py",
+      "lineRange": [
+        239,
+        278
+      ],
+      "summary": "Function _parsear_fecha_corta_ambigua defined in ETL/utils/fechas.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/fechas.py:obtener_semana_iso",
+      "type": "function",
+      "name": "obtener_semana_iso",
+      "filePath": "ETL/utils/fechas.py",
+      "lineRange": [
+        281,
+        287
+      ],
+      "summary": "Function obtener_semana_iso defined in ETL/utils/fechas.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/fechas.py:obtener_id_tiempo",
+      "type": "function",
+      "name": "obtener_id_tiempo",
+      "filePath": "ETL/utils/fechas.py",
+      "lineRange": [
+        290,
+        297
+      ],
+      "summary": "Function obtener_id_tiempo defined in ETL/utils/fechas.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/fechas.py:es_fecha_valida_campana",
+      "type": "function",
+      "name": "es_fecha_valida_campana",
+      "filePath": "ETL/utils/fechas.py",
+      "lineRange": [
+        300,
+        324
+      ],
+      "summary": "Function es_fecha_valida_campana defined in ETL/utils/fechas.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/fechas.py:procesar_fecha",
+      "type": "function",
+      "name": "procesar_fecha",
+      "filePath": "ETL/utils/fechas.py",
+      "lineRange": [
+        327,
+        357
+      ],
+      "summary": "Function procesar_fecha defined in ETL/utils/fechas.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/utils/metricas.py",
+      "type": "file",
+      "name": "metricas.py",
+      "filePath": "ETL/utils/metricas.py",
+      "summary": "File mapped from ETL/utils/metricas.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:ETL/utils/metricas.py:normalizar_resultado_fact",
+      "type": "function",
+      "name": "normalizar_resultado_fact",
+      "filePath": "ETL/utils/metricas.py",
+      "lineRange": [
+        12,
+        48
+      ],
+      "summary": "Function normalizar_resultado_fact defined in ETL/utils/metricas.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/metricas.py:formatear_resumen_fact",
+      "type": "function",
+      "name": "formatear_resumen_fact",
+      "filePath": "ETL/utils/metricas.py",
+      "lineRange": [
+        51,
+        72
+      ],
+      "summary": "Function formatear_resumen_fact defined in ETL/utils/metricas.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/metricas.py:construir_reporte_dq_operativo",
+      "type": "function",
+      "name": "construir_reporte_dq_operativo",
+      "filePath": "ETL/utils/metricas.py",
+      "lineRange": [
+        75,
+        88
+      ],
+      "summary": "Function construir_reporte_dq_operativo defined in ETL/utils/metricas.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/utils/sql_lotes.py",
+      "type": "file",
+      "name": "sql_lotes.py",
+      "filePath": "ETL/utils/sql_lotes.py",
+      "summary": "File mapped from ETL/utils/sql_lotes.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:ETL/utils/sql_lotes.py:_normalizar_sentencia",
+      "type": "function",
+      "name": "_normalizar_sentencia",
+      "filePath": "ETL/utils/sql_lotes.py",
+      "lineRange": [
+        21,
+        22
+      ],
+      "summary": "Function _normalizar_sentencia defined in ETL/utils/sql_lotes.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/sql_lotes.py:crear_e_insertar_temp",
+      "type": "function",
+      "name": "crear_e_insertar_temp",
+      "filePath": "ETL/utils/sql_lotes.py",
+      "lineRange": [
+        33,
+        87
+      ],
+      "summary": "Function crear_e_insertar_temp defined in ETL/utils/sql_lotes.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:ETL/utils/sql_lotes.py:ejecutar_en_lotes",
+      "type": "function",
+      "name": "ejecutar_en_lotes",
+      "filePath": "ETL/utils/sql_lotes.py",
+      "lineRange": [
+        92,
+        105
+      ],
+      "summary": "Function ejecutar_en_lotes defined in ETL/utils/sql_lotes.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/sql_lotes.py:ejecutar_en_lotes_con_recurso",
+      "type": "function",
+      "name": "ejecutar_en_lotes_con_recurso",
+      "filePath": "ETL/utils/sql_lotes.py",
+      "lineRange": [
+        108,
+        118
+      ],
+      "summary": "Function ejecutar_en_lotes_con_recurso defined in ETL/utils/sql_lotes.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/sql_lotes.py:ejecutar_en_lotes_con_engine",
+      "type": "function",
+      "name": "ejecutar_en_lotes_con_engine",
+      "filePath": "ETL/utils/sql_lotes.py",
+      "lineRange": [
+        121,
+        127
+      ],
+      "summary": "Function ejecutar_en_lotes_con_engine defined in ETL/utils/sql_lotes.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/sql_lotes.py:marcar_estado_carga_por_ids",
+      "type": "function",
+      "name": "marcar_estado_carga_por_ids",
+      "filePath": "ETL/utils/sql_lotes.py",
+      "lineRange": [
+        130,
+        166
+      ],
+      "summary": "Function marcar_estado_carga_por_ids defined in ETL/utils/sql_lotes.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/utils/texto.py",
+      "type": "file",
+      "name": "texto.py",
+      "filePath": "ETL/utils/texto.py",
+      "summary": "File mapped from ETL/utils/texto.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:ETL/utils/texto.py:normalizar_espacio",
+      "type": "function",
+      "name": "normalizar_espacio",
+      "filePath": "ETL/utils/texto.py",
+      "lineRange": [
+        13,
+        19
+      ],
+      "summary": "Function normalizar_espacio defined in ETL/utils/texto.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/texto.py:titulo",
+      "type": "function",
+      "name": "titulo",
+      "filePath": "ETL/utils/texto.py",
+      "lineRange": [
+        22,
+        30
+      ],
+      "summary": "Function titulo defined in ETL/utils/texto.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/texto.py:mayusculas",
+      "type": "function",
+      "name": "mayusculas",
+      "filePath": "ETL/utils/texto.py",
+      "lineRange": [
+        33,
+        39
+      ],
+      "summary": "Function mayusculas defined in ETL/utils/texto.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/texto.py:quitar_tildes",
+      "type": "function",
+      "name": "quitar_tildes",
+      "filePath": "ETL/utils/texto.py",
+      "lineRange": [
+        42,
+        52
+      ],
+      "summary": "Function quitar_tildes defined in ETL/utils/texto.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/texto.py:normalizar_variedad",
+      "type": "function",
+      "name": "normalizar_variedad",
+      "filePath": "ETL/utils/texto.py",
+      "lineRange": [
+        55,
+        64
+      ],
+      "summary": "Function normalizar_variedad defined in ETL/utils/texto.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/texto.py:normalizar_variedad_para_match",
+      "type": "function",
+      "name": "normalizar_variedad_para_match",
+      "filePath": "ETL/utils/texto.py",
+      "lineRange": [
+        67,
+        98
+      ],
+      "summary": "Function normalizar_variedad_para_match defined in ETL/utils/texto.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/texto.py:compactar_variedad_para_match",
+      "type": "function",
+      "name": "compactar_variedad_para_match",
+      "filePath": "ETL/utils/texto.py",
+      "lineRange": [
+        101,
+        115
+      ],
+      "summary": "Function compactar_variedad_para_match defined in ETL/utils/texto.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/texto.py:normalizar_nombre_persona",
+      "type": "function",
+      "name": "normalizar_nombre_persona",
+      "filePath": "ETL/utils/texto.py",
+      "lineRange": [
+        118,
+        127
+      ],
+      "summary": "Function normalizar_nombre_persona defined in ETL/utils/texto.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/texto.py:normalizar_modulo",
+      "type": "function",
+      "name": "normalizar_modulo",
+      "filePath": "ETL/utils/texto.py",
+      "lineRange": [
+        130,
+        143
+      ],
+      "summary": "Function normalizar_modulo defined in ETL/utils/texto.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/texto.py:es_test_block",
+      "type": "function",
+      "name": "es_test_block",
+      "filePath": "ETL/utils/texto.py",
+      "lineRange": [
+        146,
+        152
+      ],
+      "summary": "Function es_test_block defined in ETL/utils/texto.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/texto.py:limpiar_numerico_texto",
+      "type": "function",
+      "name": "limpiar_numerico_texto",
+      "filePath": "ETL/utils/texto.py",
+      "lineRange": [
+        155,
+        166
+      ],
+      "summary": "Function limpiar_numerico_texto defined in ETL/utils/texto.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/texto.py:normalizar_componente_geografico",
+      "type": "function",
+      "name": "normalizar_componente_geografico",
+      "filePath": "ETL/utils/texto.py",
+      "lineRange": [
+        169,
+        204
+      ],
+      "summary": "Function normalizar_componente_geografico defined in ETL/utils/texto.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/utils/tipos.py",
+      "type": "file",
+      "name": "tipos.py",
+      "filePath": "ETL/utils/tipos.py",
+      "summary": "File mapped from ETL/utils/tipos.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:ETL/utils/tipos.py:a_entero",
+      "type": "function",
+      "name": "a_entero",
+      "filePath": "ETL/utils/tipos.py",
+      "lineRange": [
+        6,
+        36
+      ],
+      "summary": "Function a_entero defined in ETL/utils/tipos.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/tipos.py:a_entero_no_negativo",
+      "type": "function",
+      "name": "a_entero_no_negativo",
+      "filePath": "ETL/utils/tipos.py",
+      "lineRange": [
+        39,
+        41
+      ],
+      "summary": "Function a_entero_no_negativo defined in ETL/utils/tipos.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/tipos.py:a_decimal",
+      "type": "function",
+      "name": "a_decimal",
+      "filePath": "ETL/utils/tipos.py",
+      "lineRange": [
+        44,
+        74
+      ],
+      "summary": "Function a_decimal defined in ETL/utils/tipos.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/tipos.py:texto_nulo",
+      "type": "function",
+      "name": "texto_nulo",
+      "filePath": "ETL/utils/tipos.py",
+      "lineRange": [
+        77,
+        84
+      ],
+      "summary": "Function texto_nulo defined in ETL/utils/tipos.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/utils/tipos.py:obtener_valor_raw",
+      "type": "function",
+      "name": "obtener_valor_raw",
+      "filePath": "ETL/utils/tipos.py",
+      "lineRange": [
+        87,
+        99
+      ],
+      "summary": "Function obtener_valor_raw defined in ETL/utils/tipos.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/utils/verificacion_esquema.py",
+      "type": "file",
+      "name": "verificacion_esquema.py",
+      "filePath": "ETL/utils/verificacion_esquema.py",
+      "summary": "File mapped from ETL/utils/verificacion_esquema.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:ETL/utils/verificacion_esquema.py:verificar_objetos_criticos",
+      "type": "function",
+      "name": "verificar_objetos_criticos",
+      "filePath": "ETL/utils/verificacion_esquema.py",
+      "lineRange": [
+        46,
+        93
+      ],
+      "summary": "Function verificar_objetos_criticos defined in ETL/utils/verificacion_esquema.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:graphify-out/.graphify_root",
+      "type": "file",
+      "name": ".graphify_root",
+      "filePath": "graphify-out/.graphify_root",
+      "summary": "File mapped from graphify-out/.graphify_root with category code.",
+      "tags": [
+        "code",
+        "unknown",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:graphify-out/cache/stat-index.json",
+      "type": "config",
+      "name": "stat-index.json",
+      "filePath": "graphify-out/cache/stat-index.json",
+      "summary": "File mapped from graphify-out/cache/stat-index.json with category config.",
+      "tags": [
+        "config",
+        "json",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:meteorologia_historica.Rmd",
+      "type": "file",
+      "name": "meteorologia_historica.Rmd",
+      "filePath": "meteorologia_historica.Rmd",
+      "summary": "File mapped from meteorologia_historica.Rmd with category code.",
+      "tags": [
+        "code",
+        "rmd",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scratch/analisis_duplicados.py",
+      "type": "file",
+      "name": "analisis_duplicados.py",
+      "filePath": "scratch/analisis_duplicados.py",
+      "summary": "File mapped from scratch/analisis_duplicados.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scratch/analisis_duplicados.py:read_excel_fast",
+      "type": "function",
+      "name": "read_excel_fast",
+      "filePath": "scratch/analisis_duplicados.py",
+      "lineRange": [
+        4,
+        16
+      ],
+      "summary": "Function read_excel_fast defined in scratch/analisis_duplicados.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/analisis_duplicados.py:sum_peso",
+      "type": "function",
+      "name": "sum_peso",
+      "filePath": "scratch/analisis_duplicados.py",
+      "lineRange": [
+        25,
+        31
+      ],
+      "summary": "Function sum_peso defined in scratch/analisis_duplicados.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/analyze_budget_excel.py",
+      "type": "file",
+      "name": "analyze_budget_excel.py",
+      "filePath": "scratch/analyze_budget_excel.py",
+      "summary": "File mapped from scratch/analyze_budget_excel.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scratch/analyze_budget_excel.py:normalizar_formula",
+      "type": "function",
+      "name": "normalizar_formula",
+      "filePath": "scratch/analyze_budget_excel.py",
+      "lineRange": [
+        8,
+        20
+      ],
+      "summary": "Function normalizar_formula defined in scratch/analyze_budget_excel.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/analyze_budget_excel.py:analizar",
+      "type": "function",
+      "name": "analizar",
+      "filePath": "scratch/analyze_budget_excel.py",
+      "lineRange": [
+        22,
+        92
+      ],
+      "summary": "Function analizar defined in scratch/analyze_budget_excel.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:scratch/aplicar_fase65.py",
+      "type": "file",
+      "name": "aplicar_fase65.py",
+      "filePath": "scratch/aplicar_fase65.py",
+      "summary": "File mapped from scratch/aplicar_fase65.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/aplicar_fase65.py:ejecutar_script_sql",
+      "type": "function",
+      "name": "ejecutar_script_sql",
+      "filePath": "scratch/aplicar_fase65.py",
+      "lineRange": [
+        10,
+        30
+      ],
+      "summary": "Function ejecutar_script_sql defined in scratch/aplicar_fase65.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/audit_tables.py",
+      "type": "file",
+      "name": "audit_tables.py",
+      "filePath": "scratch/audit_tables.py",
+      "summary": "File mapped from scratch/audit_tables.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/buscar_archivos.py",
+      "type": "file",
+      "name": "buscar_archivos.py",
+      "filePath": "scratch/buscar_archivos.py",
+      "summary": "File mapped from scratch/buscar_archivos.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/buscar_archivos.py:find_files",
+      "type": "function",
+      "name": "find_files",
+      "filePath": "scratch/buscar_archivos.py",
+      "lineRange": [
+        4,
+        7
+      ],
+      "summary": "Function find_files defined in scratch/buscar_archivos.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:ETL/tools/run_pipeline_and_audit.py",
+      "target": "function:ETL/tools/run_pipeline_and_audit.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/search_ddl.py",
+      "target": "function:ETL/tools/search_ddl.py:search_text",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/test_resolver_campana_fase48.py",
+      "target": "function:ETL/tools/test_resolver_campana_fase48.py:engine",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/test_resolver_campana_fase48.py",
+      "target": "function:ETL/tools/test_resolver_campana_fase48.py:_anio_de",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/test_resolver_campana_fase48.py",
+      "target": "function:ETL/tools/test_resolver_campana_fase48.py:test_sql_function",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/test_resolver_campana_fase48.py",
+      "target": "function:ETL/tools/test_resolver_campana_fase48.py:test_python_anual",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/test_resolver_campana_fase48.py",
+      "target": "function:ETL/tools/test_resolver_campana_fase48.py:test_python_via_obtener_id_campana",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/test_resolver_campana_fase48.py",
+      "target": "function:ETL/tools/test_resolver_campana_fase48.py:test_no_regresion_fact_actual",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/tools/test_resolver_campana_fase48.py",
+      "target": "function:ETL/tools/test_resolver_campana_fase48.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/trace_queries.py",
+      "target": "function:ETL/trace_queries.py:trace_running_queries",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/circuit_breaker.py",
+      "target": "function:ETL/utils/circuit_breaker.py:evaluar",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/circuit_breaker.py",
+      "target": "function:ETL/utils/circuit_breaker.py:lanzar_si_bloqueado",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/circuit_breaker.py",
+      "target": "class:ETL/utils/circuit_breaker.py:UmbralesCircuitBreaker",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/circuit_breaker.py",
+      "target": "class:ETL/utils/circuit_breaker.py:ResultadoCircuitBreaker",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/contexto_transaccional.py",
+      "target": "function:ETL/utils/contexto_transaccional.py:_es_conexion_db",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/contexto_transaccional.py",
+      "target": "function:ETL/utils/contexto_transaccional.py:administrar_recurso_db",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/contexto_transaccional.py",
+      "target": "class:ETL/utils/contexto_transaccional.py:ContextoTransaccionalETL",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/dni.py",
+      "target": "function:ETL/utils/dni.py:limpiar_dni",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/dni.py",
+      "target": "function:ETL/utils/dni.py:es_dni_valido",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/dni.py",
+      "target": "function:ETL/utils/dni.py:procesar_dni",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/ejecucion.py",
+      "target": "function:ETL/utils/ejecucion.py:obtener_facts_disponibles",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/ejecucion.py",
+      "target": "function:ETL/utils/ejecucion.py:obtener_tablas_bronce_por_dependencias",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/ejecucion.py",
+      "target": "function:ETL/utils/ejecucion.py:obtener_facts_con_marts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/ejecucion.py",
+      "target": "function:ETL/utils/ejecucion.py:construir_catalogo_facts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/ejecucion.py",
+      "target": "function:ETL/utils/ejecucion.py:obtener_catalogo_facts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/ejecucion.py",
+      "target": "function:ETL/utils/ejecucion.py:normalizar_facts_solicitadas",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/ejecucion.py",
+      "target": "function:ETL/utils/ejecucion.py:resolver_plan_reproceso",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/errores.py",
+      "target": "class:ETL/utils/errores.py:ErrorCircuitBreakerCritico",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/errores.py",
+      "target": "class:ETL/utils/errores.py:ErrorCircuitBreakerError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/fechas.py",
+      "target": "function:ETL/utils/fechas.py:_obtener_rango_campana_configurado",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/fechas.py",
+      "target": "function:ETL/utils/fechas.py:obtener_politica_fecha",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/fechas.py",
+      "target": "function:ETL/utils/fechas.py:resolver_dominio_fecha",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/fechas.py",
+      "target": "function:ETL/utils/fechas.py:describir_rango_campana",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/fechas.py",
+      "target": "function:ETL/utils/fechas.py:parsear_serie_fechas",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/fechas.py",
+      "target": "function:ETL/utils/fechas.py:parsear_fecha",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/fechas.py",
+      "target": "function:ETL/utils/fechas.py:_parsear_fecha_corta_ambigua",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/fechas.py",
+      "target": "function:ETL/utils/fechas.py:obtener_semana_iso",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/fechas.py",
+      "target": "function:ETL/utils/fechas.py:obtener_id_tiempo",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/fechas.py",
+      "target": "function:ETL/utils/fechas.py:es_fecha_valida_campana",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/fechas.py",
+      "target": "function:ETL/utils/fechas.py:procesar_fecha",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/metricas.py",
+      "target": "function:ETL/utils/metricas.py:normalizar_resultado_fact",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/metricas.py",
+      "target": "function:ETL/utils/metricas.py:formatear_resumen_fact",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/metricas.py",
+      "target": "function:ETL/utils/metricas.py:construir_reporte_dq_operativo",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/sql_lotes.py",
+      "target": "function:ETL/utils/sql_lotes.py:_normalizar_sentencia",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/sql_lotes.py",
+      "target": "function:ETL/utils/sql_lotes.py:crear_e_insertar_temp",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/sql_lotes.py",
+      "target": "function:ETL/utils/sql_lotes.py:ejecutar_en_lotes",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/sql_lotes.py",
+      "target": "function:ETL/utils/sql_lotes.py:ejecutar_en_lotes_con_recurso",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/sql_lotes.py",
+      "target": "function:ETL/utils/sql_lotes.py:ejecutar_en_lotes_con_engine",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/sql_lotes.py",
+      "target": "function:ETL/utils/sql_lotes.py:marcar_estado_carga_por_ids",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/texto.py",
+      "target": "function:ETL/utils/texto.py:normalizar_espacio",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/texto.py",
+      "target": "function:ETL/utils/texto.py:titulo",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/texto.py",
+      "target": "function:ETL/utils/texto.py:mayusculas",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/texto.py",
+      "target": "function:ETL/utils/texto.py:quitar_tildes",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/texto.py",
+      "target": "function:ETL/utils/texto.py:normalizar_variedad",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/texto.py",
+      "target": "function:ETL/utils/texto.py:normalizar_variedad_para_match",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/texto.py",
+      "target": "function:ETL/utils/texto.py:compactar_variedad_para_match",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/texto.py",
+      "target": "function:ETL/utils/texto.py:normalizar_nombre_persona",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/texto.py",
+      "target": "function:ETL/utils/texto.py:normalizar_modulo",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/texto.py",
+      "target": "function:ETL/utils/texto.py:es_test_block",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/texto.py",
+      "target": "function:ETL/utils/texto.py:limpiar_numerico_texto",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/texto.py",
+      "target": "function:ETL/utils/texto.py:normalizar_componente_geografico",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/tipos.py",
+      "target": "function:ETL/utils/tipos.py:a_entero",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/tipos.py",
+      "target": "function:ETL/utils/tipos.py:a_entero_no_negativo",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/tipos.py",
+      "target": "function:ETL/utils/tipos.py:a_decimal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/tipos.py",
+      "target": "function:ETL/utils/tipos.py:texto_nulo",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/tipos.py",
+      "target": "function:ETL/utils/tipos.py:obtener_valor_raw",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/utils/verificacion_esquema.py",
+      "target": "function:ETL/utils/verificacion_esquema.py:verificar_objetos_criticos",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/analisis_duplicados.py",
+      "target": "function:scratch/analisis_duplicados.py:read_excel_fast",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/analisis_duplicados.py",
+      "target": "function:scratch/analisis_duplicados.py:sum_peso",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/analyze_budget_excel.py",
+      "target": "function:scratch/analyze_budget_excel.py:normalizar_formula",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/analyze_budget_excel.py",
+      "target": "function:scratch/analyze_budget_excel.py:analizar",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/aplicar_fase65.py",
+      "target": "function:scratch/aplicar_fase65.py:ejecutar_script_sql",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/buscar_archivos.py",
+      "target": "function:scratch/buscar_archivos.py:find_files",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    }
+  ]
+}

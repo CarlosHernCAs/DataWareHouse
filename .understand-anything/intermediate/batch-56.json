@@ -1,0 +1,2171 @@
+{
+  "nodes": [
+    {
+      "id": "file:ETL/bronce/cargador.py",
+      "type": "file",
+      "name": "cargador.py",
+      "filePath": "ETL/bronce/cargador.py",
+      "summary": "File mapped from ETL/bronce/cargador.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:_alias",
+      "type": "function",
+      "name": "_alias",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        490,
+        494
+      ],
+      "summary": "Function _alias defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:_normalizar_nombre_columna_base",
+      "type": "function",
+      "name": "_normalizar_nombre_columna_base",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        497,
+        512
+      ],
+      "summary": "Function _normalizar_nombre_columna_base defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:_consolidar_columnas_duplicadas",
+      "type": "function",
+      "name": "_consolidar_columnas_duplicadas",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        515,
+        537
+      ],
+      "summary": "Function _consolidar_columnas_duplicadas defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:normalizar_columnas",
+      "type": "function",
+      "name": "normalizar_columnas",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        540,
+        555
+      ],
+      "summary": "Function normalizar_columnas defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:castear_todo_a_texto",
+      "type": "function",
+      "name": "castear_todo_a_texto",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        558,
+        572
+      ],
+      "summary": "Function castear_todo_a_texto defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:agregar_columnas_sistema",
+      "type": "function",
+      "name": "agregar_columnas_sistema",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        575,
+        587
+      ],
+      "summary": "Function agregar_columnas_sistema defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:insertar_en_bronce",
+      "type": "function",
+      "name": "insertar_en_bronce",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        590,
+        628
+      ],
+      "summary": "Function insertar_en_bronce defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:_crear_copia_temporal_excel",
+      "type": "function",
+      "name": "_crear_copia_temporal_excel",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        631,
+        636
+      ],
+      "summary": "Function _crear_copia_temporal_excel defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:_ruta_marca_archivo",
+      "type": "function",
+      "name": "_ruta_marca_archivo",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        639,
+        640
+      ],
+      "summary": "Function _ruta_marca_archivo defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:_marcar_archivo_local",
+      "type": "function",
+      "name": "_marcar_archivo_local",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        643,
+        666
+      ],
+      "summary": "Function _marcar_archivo_local defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:_archivar_o_marcar",
+      "type": "function",
+      "name": "_archivar_o_marcar",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        669,
+        686
+      ],
+      "summary": "Function _archivar_o_marcar defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:archivar_archivo",
+      "type": "function",
+      "name": "archivar_archivo",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        689,
+        701
+      ],
+      "summary": "Function archivar_archivo defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:archivar_archivo_rechazado",
+      "type": "function",
+      "name": "archivar_archivo_rechazado",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        704,
+        720
+      ],
+      "summary": "Function archivar_archivo_rechazado defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:_obtener_columnas_bronce",
+      "type": "function",
+      "name": "_obtener_columnas_bronce",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        723,
+        746
+      ],
+      "summary": "Function _obtener_columnas_bronce defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:_columnas_normalizadas_excel",
+      "type": "function",
+      "name": "_columnas_normalizadas_excel",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        749,
+        766
+      ],
+      "summary": "Function _columnas_normalizadas_excel defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:_extraer_sector_climatico_desde_archivo",
+      "type": "function",
+      "name": "_extraer_sector_climatico_desde_archivo",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        769,
+        771
+      ],
+      "summary": "Function _extraer_sector_climatico_desde_archivo defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:_leer_excel_especial",
+      "type": "function",
+      "name": "_leer_excel_especial",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        774,
+        796
+      ],
+      "summary": "Function _leer_excel_especial defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:_leer_excel_hojas",
+      "type": "function",
+      "name": "_leer_excel_hojas",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        799,
+        812
+      ],
+      "summary": "Function _leer_excel_hojas defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:_leer_excel_clima_bd",
+      "type": "function",
+      "name": "_leer_excel_clima_bd",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        815,
+        828
+      ],
+      "summary": "Function _leer_excel_clima_bd defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:_leer_excel_peladas_bd",
+      "type": "function",
+      "name": "_leer_excel_peladas_bd",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        831,
+        863
+      ],
+      "summary": "Function _leer_excel_peladas_bd defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:_proyectar_dataframe_conteo_bronce",
+      "type": "function",
+      "name": "_proyectar_dataframe_conteo_bronce",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        866,
+        915
+      ],
+      "summary": "Function _proyectar_dataframe_conteo_bronce defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:_proyectar_dataframe_peladas_bronce",
+      "type": "function",
+      "name": "_proyectar_dataframe_peladas_bronce",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        918,
+        984
+      ],
+      "summary": "Function _proyectar_dataframe_peladas_bronce defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:_serie_o_nulos",
+      "type": "function",
+      "name": "_serie_o_nulos",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        987,
+        990
+      ],
+      "summary": "Function _serie_o_nulos defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:_proyectar_dataframe_clima_bronce",
+      "type": "function",
+      "name": "_proyectar_dataframe_clima_bronce",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        993,
+        1025
+      ],
+      "summary": "Function _proyectar_dataframe_clima_bronce defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:_proyectar_dataframe_induccion_floral_bronce",
+      "type": "function",
+      "name": "_proyectar_dataframe_induccion_floral_bronce",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        1028,
+        1122
+      ],
+      "summary": "Function _proyectar_dataframe_induccion_floral_bronce defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:_proyectar_dataframe_tasa_crecimiento_brotes_bronce",
+      "type": "function",
+      "name": "_proyectar_dataframe_tasa_crecimiento_brotes_bronce",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        1125,
+        1238
+      ],
+      "summary": "Function _proyectar_dataframe_tasa_crecimiento_brotes_bronce defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:_proyectar_dataframe_censo_plantas_bronce",
+      "type": "function",
+      "name": "_proyectar_dataframe_censo_plantas_bronce",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        1241,
+        1303
+      ],
+      "summary": "Function _proyectar_dataframe_censo_plantas_bronce defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:_proyectar_dataframe_telemetria_clima_bronce",
+      "type": "function",
+      "name": "_proyectar_dataframe_telemetria_clima_bronce",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        1306,
+        1344
+      ],
+      "summary": "Function _proyectar_dataframe_telemetria_clima_bronce defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:_detectar_hoja_y_header",
+      "type": "function",
+      "name": "_detectar_hoja_y_header",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        1347,
+        1377
+      ],
+      "summary": "Function _detectar_hoja_y_header defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:_serializar_valores_extra",
+      "type": "function",
+      "name": "_serializar_valores_extra",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        1380,
+        1404
+      ],
+      "summary": "Function _serializar_valores_extra defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:_formatear_columnas_extra",
+      "type": "function",
+      "name": "_formatear_columnas_extra",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        1407,
+        1421
+      ],
+      "summary": "Function _formatear_columnas_extra defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:_alinear_dataframe_a_tabla",
+      "type": "function",
+      "name": "_alinear_dataframe_a_tabla",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        1424,
+        1497
+      ],
+      "summary": "Function _alinear_dataframe_a_tabla defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:_detectar_ruta_sugerida",
+      "type": "function",
+      "name": "_detectar_ruta_sugerida",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        1500,
+        1521
+      ],
+      "summary": "Function _detectar_ruta_sugerida defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:_score_ruta_actual",
+      "type": "function",
+      "name": "_score_ruta_actual",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        1524,
+        1537
+      ],
+      "summary": "Function _score_ruta_actual defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:_validar_layout_critico",
+      "type": "function",
+      "name": "_validar_layout_critico",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        1540,
+        1600
+      ],
+      "summary": "Function _validar_layout_critico defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:_validar_enrutamiento_global",
+      "type": "function",
+      "name": "_validar_enrutamiento_global",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        1603,
+        1633
+      ],
+      "summary": "Function _validar_enrutamiento_global defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:cargar_archivo",
+      "type": "function",
+      "name": "cargar_archivo",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        1636,
+        1753
+      ],
+      "summary": "Function cargar_archivo defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:ETL/bronce/cargador.py:ejecutar_carga_bronce",
+      "type": "function",
+      "name": "ejecutar_carga_bronce",
+      "filePath": "ETL/bronce/cargador.py",
+      "lineRange": [
+        1756,
+        1788
+      ],
+      "summary": "Function ejecutar_carga_bronce defined in ETL/bronce/cargador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/bronce/rutas.py",
+      "type": "file",
+      "name": "rutas.py",
+      "filePath": "ETL/bronce/rutas.py",
+      "summary": "File mapped from ETL/bronce/rutas.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:ETL/bronce/rutas.py:_normalizar_nombre",
+      "type": "function",
+      "name": "_normalizar_nombre",
+      "filePath": "ETL/bronce/rutas.py",
+      "lineRange": [
+        73,
+        85
+      ],
+      "summary": "Function _normalizar_nombre defined in ETL/bronce/rutas.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/rutas.py:_resolver_carpeta_canonica",
+      "type": "function",
+      "name": "_resolver_carpeta_canonica",
+      "filePath": "ETL/bronce/rutas.py",
+      "lineRange": [
+        96,
+        97
+      ],
+      "summary": "Function _resolver_carpeta_canonica defined in ETL/bronce/rutas.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/rutas.py:_inferir_carpeta_por_archivo",
+      "type": "function",
+      "name": "_inferir_carpeta_por_archivo",
+      "filePath": "ETL/bronce/rutas.py",
+      "lineRange": [
+        100,
+        120
+      ],
+      "summary": "Function _inferir_carpeta_por_archivo defined in ETL/bronce/rutas.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/rutas.py:obtener_archivo_mas_reciente",
+      "type": "function",
+      "name": "obtener_archivo_mas_reciente",
+      "filePath": "ETL/bronce/rutas.py",
+      "lineRange": [
+        123,
+        137
+      ],
+      "summary": "Function obtener_archivo_mas_reciente defined in ETL/bronce/rutas.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/rutas.py:_ruta_marca_archivo",
+      "type": "function",
+      "name": "_ruta_marca_archivo",
+      "filePath": "ETL/bronce/rutas.py",
+      "lineRange": [
+        140,
+        141
+      ],
+      "summary": "Function _ruta_marca_archivo defined in ETL/bronce/rutas.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/rutas.py:_archivo_tiene_marca_vigente",
+      "type": "function",
+      "name": "_archivo_tiene_marca_vigente",
+      "filePath": "ETL/bronce/rutas.py",
+      "lineRange": [
+        144,
+        159
+      ],
+      "summary": "Function _archivo_tiene_marca_vigente defined in ETL/bronce/rutas.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/rutas.py:listar_carpetas_con_archivos",
+      "type": "function",
+      "name": "listar_carpetas_con_archivos",
+      "filePath": "ETL/bronce/rutas.py",
+      "lineRange": [
+        162,
+        208
+      ],
+      "summary": "Function listar_carpetas_con_archivos defined in ETL/bronce/rutas.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/bronce/rutas.py:crear_estructura_carpetas",
+      "type": "function",
+      "name": "crear_estructura_carpetas",
+      "filePath": "ETL/bronce/rutas.py",
+      "lineRange": [
+        211,
+        221
+      ],
+      "summary": "Function crear_estructura_carpetas defined in ETL/bronce/rutas.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/check_bronce.py",
+      "type": "file",
+      "name": "check_bronce.py",
+      "filePath": "ETL/check_bronce.py",
+      "summary": "File mapped from ETL/check_bronce.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/check_bronce.py:check_bronce",
+      "type": "function",
+      "name": "check_bronce",
+      "filePath": "ETL/check_bronce.py",
+      "lineRange": [
+        8,
+        20
+      ],
+      "summary": "Function check_bronce defined in ETL/check_bronce.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/check_cols.py",
+      "type": "file",
+      "name": "check_cols.py",
+      "filePath": "ETL/check_cols.py",
+      "summary": "File mapped from ETL/check_cols.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/check_cols.py:check_cols",
+      "type": "function",
+      "name": "check_cols",
+      "filePath": "ETL/check_cols.py",
+      "lineRange": [
+        8,
+        18
+      ],
+      "summary": "Function check_cols defined in ETL/check_cols.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/check_facts.py",
+      "type": "file",
+      "name": "check_facts.py",
+      "filePath": "ETL/check_facts.py",
+      "summary": "File mapped from ETL/check_facts.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/check_facts.py:check_facts",
+      "type": "function",
+      "name": "check_facts",
+      "filePath": "ETL/check_facts.py",
+      "lineRange": [
+        8,
+        20
+      ],
+      "summary": "Function check_facts defined in ETL/check_facts.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/check_locks.py",
+      "type": "file",
+      "name": "check_locks.py",
+      "filePath": "ETL/check_locks.py",
+      "summary": "File mapped from ETL/check_locks.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/check_locks.py:check_locks",
+      "type": "function",
+      "name": "check_locks",
+      "filePath": "ETL/check_locks.py",
+      "lineRange": [
+        8,
+        23
+      ],
+      "summary": "Function check_locks defined in ETL/check_locks.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/check_schema_fact.py",
+      "type": "file",
+      "name": "check_schema_fact.py",
+      "filePath": "ETL/check_schema_fact.py",
+      "summary": "File mapped from ETL/check_schema_fact.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/check_schema_fact.py:check_schema",
+      "type": "function",
+      "name": "check_schema",
+      "filePath": "ETL/check_schema_fact.py",
+      "lineRange": [
+        8,
+        17
+      ],
+      "summary": "Function check_schema defined in ETL/check_schema_fact.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/check_schema.py",
+      "type": "file",
+      "name": "check_schema.py",
+      "filePath": "ETL/check_schema.py",
+      "summary": "File mapped from ETL/check_schema.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/check_schema.py:check_schema",
+      "type": "function",
+      "name": "check_schema",
+      "filePath": "ETL/check_schema.py",
+      "lineRange": [
+        8,
+        18
+      ],
+      "summary": "Function check_schema defined in ETL/check_schema.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/check_tables.py",
+      "type": "file",
+      "name": "check_tables.py",
+      "filePath": "ETL/check_tables.py",
+      "summary": "File mapped from ETL/check_tables.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/check_tables.py:check_tables",
+      "type": "function",
+      "name": "check_tables",
+      "filePath": "ETL/check_tables.py",
+      "lineRange": [
+        9,
+        32
+      ],
+      "summary": "Function check_tables defined in ETL/check_tables.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/config/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "ETL/config/__init__.py",
+      "summary": "File mapped from ETL/config/__init__.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/config/.env.template",
+      "type": "config",
+      "name": ".env.template",
+      "filePath": "ETL/config/.env.template",
+      "summary": "File mapped from ETL/config/.env.template with category config.",
+      "tags": [
+        "config",
+        "config",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/config/conexion.py",
+      "type": "file",
+      "name": "conexion.py",
+      "filePath": "ETL/config/conexion.py",
+      "summary": "File mapped from ETL/config/conexion.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:ETL/config/conexion.py:verificar_conexion",
+      "type": "function",
+      "name": "verificar_conexion",
+      "filePath": "ETL/config/conexion.py",
+      "lineRange": [
+        27,
+        36
+      ],
+      "summary": "Function verificar_conexion defined in ETL/config/conexion.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/config/conexion.py:limpiar_sesiones_huerfanas",
+      "type": "function",
+      "name": "limpiar_sesiones_huerfanas",
+      "filePath": "ETL/config/conexion.py",
+      "lineRange": [
+        38,
+        73
+      ],
+      "summary": "Function limpiar_sesiones_huerfanas defined in ETL/config/conexion.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/config/parametros.py",
+      "type": "file",
+      "name": "parametros.py",
+      "filePath": "ETL/config/parametros.py",
+      "summary": "File mapped from ETL/config/parametros.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:ETL/config/parametros.py:_resolver_columna_parametro",
+      "type": "function",
+      "name": "_resolver_columna_parametro",
+      "filePath": "ETL/config/parametros.py",
+      "lineRange": [
+        24,
+        49
+      ],
+      "summary": "Function _resolver_columna_parametro defined in ETL/config/parametros.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/config/parametros.py:cargar_parametros",
+      "type": "function",
+      "name": "cargar_parametros",
+      "filePath": "ETL/config/parametros.py",
+      "lineRange": [
+        52,
+        75
+      ],
+      "summary": "Function cargar_parametros defined in ETL/config/parametros.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/config/parametros.py:obtener",
+      "type": "function",
+      "name": "obtener",
+      "filePath": "ETL/config/parametros.py",
+      "lineRange": [
+        78,
+        84
+      ],
+      "summary": "Function obtener defined in ETL/config/parametros.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/config/parametros.py:obtener_int",
+      "type": "function",
+      "name": "obtener_int",
+      "filePath": "ETL/config/parametros.py",
+      "lineRange": [
+        87,
+        94
+      ],
+      "summary": "Function obtener_int defined in ETL/config/parametros.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/config/parametros.py:obtener_float",
+      "type": "function",
+      "name": "obtener_float",
+      "filePath": "ETL/config/parametros.py",
+      "lineRange": [
+        97,
+        104
+      ],
+      "summary": "Function obtener_float defined in ETL/config/parametros.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/config/parametros.py:obtener_bool",
+      "type": "function",
+      "name": "obtener_bool",
+      "filePath": "ETL/config/parametros.py",
+      "lineRange": [
+        107,
+        116
+      ],
+      "summary": "Function obtener_bool defined in ETL/config/parametros.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/config/parametros.py:obtener_lista",
+      "type": "function",
+      "name": "obtener_lista",
+      "filePath": "ETL/config/parametros.py",
+      "lineRange": [
+        119,
+        139
+      ],
+      "summary": "Function obtener_lista defined in ETL/config/parametros.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/config/parametros.py:limpiar_cache",
+      "type": "function",
+      "name": "limpiar_cache",
+      "filePath": "ETL/config/parametros.py",
+      "lineRange": [
+        142,
+        147
+      ],
+      "summary": "Function limpiar_cache defined in ETL/config/parametros.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/data/rechazados/ciclos_fenologicos/Evaluación Vegetativa Arándano _RUTA_CONTENIDO_INCOMPATIBLE_20260326_120606.xlsx",
+      "type": "file",
+      "name": "Evaluación Vegetativa Arándano _RUTA_CONTENIDO_INCOMPATIBLE_20260326_120606.xlsx",
+      "filePath": "ETL/data/rechazados/ciclos_fenologicos/Evaluación Vegetativa Arándano _RUTA_CONTENIDO_INCOMPATIBLE_20260326_120606.xlsx",
+      "summary": "File mapped from ETL/data/rechazados/ciclos_fenologicos/Evaluación Vegetativa Arándano _RUTA_CONTENIDO_INCOMPATIBLE_20260326_120606.xlsx with category code.",
+      "tags": [
+        "code",
+        "xlsx",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/data/rechazados/ciclos_fenologicos/Evaluación Vegetativa Arándanos .xlsx",
+      "type": "file",
+      "name": "Evaluación Vegetativa Arándanos .xlsx",
+      "filePath": "ETL/data/rechazados/ciclos_fenologicos/Evaluación Vegetativa Arándanos .xlsx",
+      "summary": "File mapped from ETL/data/rechazados/ciclos_fenologicos/Evaluación Vegetativa Arándanos .xlsx with category code.",
+      "tags": [
+        "code",
+        "xlsx",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/data/rechazados/evaluacion_vegetativa/Evaluación Vegetativa Arándano_LAYOUT_INCOMPATIBLE_20260326_115413.xlsx",
+      "type": "file",
+      "name": "Evaluación Vegetativa Arándano_LAYOUT_INCOMPATIBLE_20260326_115413.xlsx",
+      "filePath": "ETL/data/rechazados/evaluacion_vegetativa/Evaluación Vegetativa Arándano_LAYOUT_INCOMPATIBLE_20260326_115413.xlsx",
+      "summary": "File mapped from ETL/data/rechazados/evaluacion_vegetativa/Evaluación Vegetativa Arándano_LAYOUT_INCOMPATIBLE_20260326_115413.xlsx with category code.",
+      "tags": [
+        "code",
+        "xlsx",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/data/rechazados/evaluacion_vegetativa/Evaluación Vegetativa Arándanos .xlsx",
+      "type": "file",
+      "name": "Evaluación Vegetativa Arándanos .xlsx",
+      "filePath": "ETL/data/rechazados/evaluacion_vegetativa/Evaluación Vegetativa Arándanos .xlsx",
+      "summary": "File mapped from ETL/data/rechazados/evaluacion_vegetativa/Evaluación Vegetativa Arándanos .xlsx with category code.",
+      "tags": [
+        "code",
+        "xlsx",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/data/salida/fase5_backlog_geografia/backlog_geografia_fase5_20260324_143739.xlsx",
+      "type": "file",
+      "name": "backlog_geografia_fase5_20260324_143739.xlsx",
+      "filePath": "ETL/data/salida/fase5_backlog_geografia/backlog_geografia_fase5_20260324_143739.xlsx",
+      "summary": "File mapped from ETL/data/salida/fase5_backlog_geografia/backlog_geografia_fase5_20260324_143739.xlsx with category code.",
+      "tags": [
+        "code",
+        "xlsx",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:ETL/docs/esquema_autoritativo.md",
+      "type": "document",
+      "name": "esquema_autoritativo.md",
+      "filePath": "ETL/docs/esquema_autoritativo.md",
+      "summary": "File mapped from ETL/docs/esquema_autoritativo.md with category docs.",
+      "tags": [
+        "docs",
+        "markdown",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/dq/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "ETL/dq/__init__.py",
+      "summary": "File mapped from ETL/dq/__init__.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/dq/cuarentena.py",
+      "type": "file",
+      "name": "cuarentena.py",
+      "filePath": "ETL/dq/cuarentena.py",
+      "summary": "File mapped from ETL/dq/cuarentena.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:ETL/dq/cuarentena.py:_normalizar_payload_cuarentena",
+      "type": "function",
+      "name": "_normalizar_payload_cuarentena",
+      "filePath": "ETL/dq/cuarentena.py",
+      "lineRange": [
+        15,
+        31
+      ],
+      "summary": "Function _normalizar_payload_cuarentena defined in ETL/dq/cuarentena.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/dq/cuarentena.py:_clave_dedupe_pendiente",
+      "type": "function",
+      "name": "_clave_dedupe_pendiente",
+      "filePath": "ETL/dq/cuarentena.py",
+      "lineRange": [
+        34,
+        41
+      ],
+      "summary": "Function _clave_dedupe_pendiente defined in ETL/dq/cuarentena.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/dq/cuarentena.py:_deduplicar_payload_pendiente",
+      "type": "function",
+      "name": "_deduplicar_payload_pendiente",
+      "filePath": "ETL/dq/cuarentena.py",
+      "lineRange": [
+        44,
+        53
+      ],
+      "summary": "Function _deduplicar_payload_pendiente defined in ETL/dq/cuarentena.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/dq/cuarentena.py:enviar_a_cuarentena",
+      "type": "function",
+      "name": "enviar_a_cuarentena",
+      "filePath": "ETL/dq/cuarentena.py",
+      "lineRange": [
+        56,
+        141
+      ],
+      "summary": "Function enviar_a_cuarentena defined in ETL/dq/cuarentena.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:ETL/dq/reglas.py",
+      "type": "file",
+      "name": "reglas.py",
+      "filePath": "ETL/dq/reglas.py",
+      "summary": "File mapped from ETL/dq/reglas.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:ETL/dq/reglas.py:cargar_reglas",
+      "type": "function",
+      "name": "cargar_reglas",
+      "filePath": "ETL/dq/reglas.py",
+      "lineRange": [
+        14,
+        35
+      ],
+      "summary": "Function cargar_reglas defined in ETL/dq/reglas.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/dq/reglas.py:aplicar_regla_rango",
+      "type": "function",
+      "name": "aplicar_regla_rango",
+      "filePath": "ETL/dq/reglas.py",
+      "lineRange": [
+        38,
+        83
+      ],
+      "summary": "Function aplicar_regla_rango defined in ETL/dq/reglas.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/dq/reglas.py:aplicar_regla_formato",
+      "type": "function",
+      "name": "aplicar_regla_formato",
+      "filePath": "ETL/dq/reglas.py",
+      "lineRange": [
+        86,
+        114
+      ],
+      "summary": "Function aplicar_regla_formato defined in ETL/dq/reglas.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/dq/reglas.py:aplicar_reglas",
+      "type": "function",
+      "name": "aplicar_reglas",
+      "filePath": "ETL/dq/reglas.py",
+      "lineRange": [
+        117,
+        161
+      ],
+      "summary": "Function aplicar_reglas defined in ETL/dq/reglas.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/dq/validador.py",
+      "type": "file",
+      "name": "validador.py",
+      "filePath": "ETL/dq/validador.py",
+      "summary": "File mapped from ETL/dq/validador.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:ETL/dq/validador.py:_error",
+      "type": "function",
+      "name": "_error",
+      "filePath": "ETL/dq/validador.py",
+      "lineRange": [
+        30,
+        37
+      ],
+      "summary": "Function _error defined in ETL/dq/validador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/dq/validador.py:validar_dni",
+      "type": "function",
+      "name": "validar_dni",
+      "filePath": "ETL/dq/validador.py",
+      "lineRange": [
+        42,
+        54
+      ],
+      "summary": "Function validar_dni defined in ETL/dq/validador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/dq/validador.py:validar_fecha",
+      "type": "function",
+      "name": "validar_fecha",
+      "filePath": "ETL/dq/validador.py",
+      "lineRange": [
+        57,
+        84
+      ],
+      "summary": "Function validar_fecha defined in ETL/dq/validador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/dq/validador.py:validar_peso_baya",
+      "type": "function",
+      "name": "validar_peso_baya",
+      "filePath": "ETL/dq/validador.py",
+      "lineRange": [
+        87,
+        111
+      ],
+      "summary": "Function validar_peso_baya defined in ETL/dq/validador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/dq/validador.py:validar_muestras",
+      "type": "function",
+      "name": "validar_muestras",
+      "filePath": "ETL/dq/validador.py",
+      "lineRange": [
+        114,
+        134
+      ],
+      "summary": "Function validar_muestras defined in ETL/dq/validador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/dq/validador.py:validar_total_plantas",
+      "type": "function",
+      "name": "validar_total_plantas",
+      "filePath": "ETL/dq/validador.py",
+      "lineRange": [
+        137,
+        158
+      ],
+      "summary": "Function validar_total_plantas defined in ETL/dq/validador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/dq/validador.py:normalizar_humedad",
+      "type": "function",
+      "name": "normalizar_humedad",
+      "filePath": "ETL/dq/validador.py",
+      "lineRange": [
+        161,
+        186
+      ],
+      "summary": "Function normalizar_humedad defined in ETL/dq/validador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:ETL/dq/validador.py:validar_dataframe",
+      "type": "function",
+      "name": "validar_dataframe",
+      "filePath": "ETL/dq/validador.py",
+      "lineRange": [
+        191,
+        273
+      ],
+      "summary": "Function validar_dataframe defined in ETL/dq/validador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:ETL/dq/validador.py:hay_criticos",
+      "type": "function",
+      "name": "hay_criticos",
+      "filePath": "ETL/dq/validador.py",
+      "lineRange": [
+        276,
+        281
+      ],
+      "summary": "Function hay_criticos defined in ETL/dq/validador.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/Gold/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "ETL/Gold/__init__.py",
+      "summary": "File mapped from ETL/Gold/__init__.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/Gold/ddl_marts_v2.sql",
+      "type": "table",
+      "name": "ddl_marts_v2.sql",
+      "filePath": "ETL/Gold/ddl_marts_v2.sql",
+      "summary": "File mapped from ETL/Gold/ddl_marts_v2.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:_alias",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:_normalizar_nombre_columna_base",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:_consolidar_columnas_duplicadas",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:normalizar_columnas",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:castear_todo_a_texto",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:agregar_columnas_sistema",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:insertar_en_bronce",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:_crear_copia_temporal_excel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:_ruta_marca_archivo",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:_marcar_archivo_local",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:_archivar_o_marcar",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:archivar_archivo",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:archivar_archivo_rechazado",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:_obtener_columnas_bronce",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:_columnas_normalizadas_excel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:_extraer_sector_climatico_desde_archivo",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:_leer_excel_especial",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:_leer_excel_hojas",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:_leer_excel_clima_bd",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:_leer_excel_peladas_bd",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:_proyectar_dataframe_conteo_bronce",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:_proyectar_dataframe_peladas_bronce",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:_serie_o_nulos",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:_proyectar_dataframe_clima_bronce",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:_proyectar_dataframe_induccion_floral_bronce",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:_proyectar_dataframe_tasa_crecimiento_brotes_bronce",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:_proyectar_dataframe_censo_plantas_bronce",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:_proyectar_dataframe_telemetria_clima_bronce",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:_detectar_hoja_y_header",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:_serializar_valores_extra",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:_formatear_columnas_extra",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:_alinear_dataframe_a_tabla",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:_detectar_ruta_sugerida",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:_score_ruta_actual",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:_validar_layout_critico",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:_validar_enrutamiento_global",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:cargar_archivo",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/cargador.py",
+      "target": "function:ETL/bronce/cargador.py:ejecutar_carga_bronce",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/rutas.py",
+      "target": "function:ETL/bronce/rutas.py:_normalizar_nombre",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/rutas.py",
+      "target": "function:ETL/bronce/rutas.py:_resolver_carpeta_canonica",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/rutas.py",
+      "target": "function:ETL/bronce/rutas.py:_inferir_carpeta_por_archivo",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/rutas.py",
+      "target": "function:ETL/bronce/rutas.py:obtener_archivo_mas_reciente",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/rutas.py",
+      "target": "function:ETL/bronce/rutas.py:_ruta_marca_archivo",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/rutas.py",
+      "target": "function:ETL/bronce/rutas.py:_archivo_tiene_marca_vigente",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/rutas.py",
+      "target": "function:ETL/bronce/rutas.py:listar_carpetas_con_archivos",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/bronce/rutas.py",
+      "target": "function:ETL/bronce/rutas.py:crear_estructura_carpetas",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/check_bronce.py",
+      "target": "function:ETL/check_bronce.py:check_bronce",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/check_cols.py",
+      "target": "function:ETL/check_cols.py:check_cols",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/check_facts.py",
+      "target": "function:ETL/check_facts.py:check_facts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/check_locks.py",
+      "target": "function:ETL/check_locks.py:check_locks",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/check_schema_fact.py",
+      "target": "function:ETL/check_schema_fact.py:check_schema",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/check_schema.py",
+      "target": "function:ETL/check_schema.py:check_schema",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/check_tables.py",
+      "target": "function:ETL/check_tables.py:check_tables",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/config/conexion.py",
+      "target": "function:ETL/config/conexion.py:verificar_conexion",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/config/conexion.py",
+      "target": "function:ETL/config/conexion.py:limpiar_sesiones_huerfanas",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/config/parametros.py",
+      "target": "function:ETL/config/parametros.py:_resolver_columna_parametro",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/config/parametros.py",
+      "target": "function:ETL/config/parametros.py:cargar_parametros",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/config/parametros.py",
+      "target": "function:ETL/config/parametros.py:obtener",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/config/parametros.py",
+      "target": "function:ETL/config/parametros.py:obtener_int",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/config/parametros.py",
+      "target": "function:ETL/config/parametros.py:obtener_float",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/config/parametros.py",
+      "target": "function:ETL/config/parametros.py:obtener_bool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/config/parametros.py",
+      "target": "function:ETL/config/parametros.py:obtener_lista",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/config/parametros.py",
+      "target": "function:ETL/config/parametros.py:limpiar_cache",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/dq/cuarentena.py",
+      "target": "function:ETL/dq/cuarentena.py:_normalizar_payload_cuarentena",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/dq/cuarentena.py",
+      "target": "function:ETL/dq/cuarentena.py:_clave_dedupe_pendiente",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/dq/cuarentena.py",
+      "target": "function:ETL/dq/cuarentena.py:_deduplicar_payload_pendiente",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/dq/cuarentena.py",
+      "target": "function:ETL/dq/cuarentena.py:enviar_a_cuarentena",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/dq/reglas.py",
+      "target": "function:ETL/dq/reglas.py:cargar_reglas",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/dq/reglas.py",
+      "target": "function:ETL/dq/reglas.py:aplicar_regla_rango",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/dq/reglas.py",
+      "target": "function:ETL/dq/reglas.py:aplicar_regla_formato",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/dq/reglas.py",
+      "target": "function:ETL/dq/reglas.py:aplicar_reglas",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/dq/validador.py",
+      "target": "function:ETL/dq/validador.py:_error",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/dq/validador.py",
+      "target": "function:ETL/dq/validador.py:validar_dni",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/dq/validador.py",
+      "target": "function:ETL/dq/validador.py:validar_fecha",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/dq/validador.py",
+      "target": "function:ETL/dq/validador.py:validar_peso_baya",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/dq/validador.py",
+      "target": "function:ETL/dq/validador.py:validar_muestras",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/dq/validador.py",
+      "target": "function:ETL/dq/validador.py:validar_total_plantas",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/dq/validador.py",
+      "target": "function:ETL/dq/validador.py:normalizar_humedad",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/dq/validador.py",
+      "target": "function:ETL/dq/validador.py:validar_dataframe",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:ETL/dq/validador.py",
+      "target": "function:ETL/dq/validador.py:hay_criticos",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    }
+  ]
+}

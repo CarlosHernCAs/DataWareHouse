@@ -1,0 +1,311 @@
+{
+  "projectRoot": "d:/Proyecto2026/ACP_DWH/ACP Proyecciones/Portal_MDM_NEXTJS/Portal-Nextjs/portal-mdm",
+  "batchFiles": [
+    {
+      "path": "app/api/cc/activity/route.ts",
+      "language": "typescript",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/api/cc/alerts/[id]/ack/route.ts",
+      "language": "typescript",
+      "sizeLines": 84,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/api/cc/alerts/route.ts",
+      "language": "typescript",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/api/cc/alerts/stream/route.ts",
+      "language": "typescript",
+      "sizeLines": 110,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/api/cc/catalogos/geografia/route.ts",
+      "language": "typescript",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/api/cc/catalogos/personal/route.ts",
+      "language": "typescript",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/api/cc/catalogos/variedades-dim/[id]/desactivar/route.ts",
+      "language": "typescript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/api/cc/catalogos/variedades-dim/[id]/reactivar/route.ts",
+      "language": "typescript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/api/cc/catalogos/variedades-dim/route.ts",
+      "language": "typescript",
+      "sizeLines": 77,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/api/cc/catalogos/variedades/route.ts",
+      "language": "typescript",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/api/cc/configuracion/parametros/[nombre]/route.ts",
+      "language": "typescript",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/api/cc/configuracion/parametros/route.ts",
+      "language": "typescript",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/api/cc/configuracion/perfil/clave/route.ts",
+      "language": "typescript",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/api/cc/configuracion/perfil/route.ts",
+      "language": "typescript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/api/cc/configuracion/reglas/route.ts",
+      "language": "typescript",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/api/cc/configuracion/usuarios/[nombre]/activar/route.ts",
+      "language": "typescript",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/api/cc/configuracion/usuarios/[nombre]/desactivar/route.ts",
+      "language": "typescript",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/api/cc/configuracion/usuarios/route.ts",
+      "language": "typescript",
+      "sizeLines": 61,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/api/cc/dwh/explorer/route.ts",
+      "language": "typescript",
+      "sizeLines": 235,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/api/cc/dwh/route.ts",
+      "language": "typescript",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/api/cc/etl/runs/[id]/route.ts",
+      "language": "typescript",
+      "sizeLines": 98,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/api/cc/etl/runs/route.ts",
+      "language": "typescript",
+      "sizeLines": 97,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/api/cc/etl/trend/route.ts",
+      "language": "typescript",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/api/cc/health/route.ts",
+      "language": "typescript",
+      "sizeLines": 111,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/api/cc/quality/route.ts",
+      "language": "typescript",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "lib/api/server-fetch.ts",
+      "language": "typescript",
+      "sizeLines": 175,
+      "fileCategory": "code"
+    },
+    {
+      "path": "lib/control-center/compute-alerts.ts",
+      "language": "typescript",
+      "sizeLines": 158,
+      "fileCategory": "code"
+    },
+    {
+      "path": "lib/control-center/etl-status.ts",
+      "language": "typescript",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "lib/schemas/catalogos.ts",
+      "language": "typescript",
+      "sizeLines": 212,
+      "fileCategory": "code"
+    },
+    {
+      "path": "lib/schemas/configuracion.ts",
+      "language": "typescript",
+      "sizeLines": 275,
+      "fileCategory": "code"
+    },
+    {
+      "path": "lib/schemas/control-center.ts",
+      "language": "typescript",
+      "sizeLines": 244,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "app/api/cc/activity/route.ts": [
+      "lib/api/server-fetch.ts",
+      "lib/control-center/etl-status.ts",
+      "lib/schemas/control-center.ts"
+    ],
+    "app/api/cc/alerts/[id]/ack/route.ts": [
+      "lib/api/server-fetch.ts",
+      "lib/schemas/control-center.ts"
+    ],
+    "app/api/cc/alerts/route.ts": [
+      "lib/control-center/compute-alerts.ts"
+    ],
+    "app/api/cc/alerts/stream/route.ts": [
+      "lib/control-center/compute-alerts.ts"
+    ],
+    "app/api/cc/catalogos/geografia/route.ts": [
+      "lib/api/server-fetch.ts",
+      "lib/schemas/catalogos.ts"
+    ],
+    "app/api/cc/catalogos/personal/route.ts": [
+      "lib/api/server-fetch.ts",
+      "lib/schemas/catalogos.ts"
+    ],
+    "app/api/cc/catalogos/variedades-dim/[id]/desactivar/route.ts": [
+      "lib/api/server-fetch.ts",
+      "lib/schemas/catalogos.ts"
+    ],
+    "app/api/cc/catalogos/variedades-dim/[id]/reactivar/route.ts": [
+      "lib/api/server-fetch.ts",
+      "lib/schemas/catalogos.ts"
+    ],
+    "app/api/cc/catalogos/variedades-dim/route.ts": [
+      "lib/api/server-fetch.ts",
+      "lib/schemas/catalogos.ts"
+    ],
+    "app/api/cc/catalogos/variedades/route.ts": [
+      "lib/api/server-fetch.ts",
+      "lib/schemas/catalogos.ts"
+    ],
+    "app/api/cc/configuracion/parametros/[nombre]/route.ts": [
+      "lib/api/server-fetch.ts",
+      "lib/schemas/configuracion.ts"
+    ],
+    "app/api/cc/configuracion/parametros/route.ts": [
+      "lib/api/server-fetch.ts",
+      "lib/schemas/configuracion.ts"
+    ],
+    "app/api/cc/configuracion/perfil/clave/route.ts": [
+      "lib/api/server-fetch.ts",
+      "lib/schemas/configuracion.ts"
+    ],
+    "app/api/cc/configuracion/perfil/route.ts": [
+      "lib/api/server-fetch.ts",
+      "lib/schemas/configuracion.ts"
+    ],
+    "app/api/cc/configuracion/reglas/route.ts": [
+      "lib/api/server-fetch.ts",
+      "lib/schemas/configuracion.ts"
+    ],
+    "app/api/cc/configuracion/usuarios/[nombre]/activar/route.ts": [
+      "lib/api/server-fetch.ts",
+      "lib/schemas/configuracion.ts"
+    ],
+    "app/api/cc/configuracion/usuarios/[nombre]/desactivar/route.ts": [
+      "lib/api/server-fetch.ts",
+      "lib/schemas/configuracion.ts"
+    ],
+    "app/api/cc/configuracion/usuarios/route.ts": [
+      "lib/api/server-fetch.ts",
+      "lib/schemas/configuracion.ts"
+    ],
+    "app/api/cc/dwh/explorer/route.ts": [
+      "lib/api/server-fetch.ts",
+      "lib/control-center/etl-status.ts",
+      "lib/schemas/control-center.ts",
+      "lib/schemas/dwh.ts"
+    ],
+    "app/api/cc/dwh/route.ts": [
+      "lib/api/server-fetch.ts",
+      "lib/control-center/etl-status.ts",
+      "lib/schemas/control-center.ts"
+    ],
+    "app/api/cc/etl/runs/[id]/route.ts": [
+      "lib/api/server-fetch.ts",
+      "lib/control-center/etl-status.ts",
+      "lib/schemas/control-center.ts"
+    ],
+    "app/api/cc/etl/runs/route.ts": [
+      "lib/api/server-fetch.ts",
+      "lib/control-center/etl-status.ts",
+      "lib/schemas/control-center.ts",
+      "lib/schemas/etl-launch.ts"
+    ],
+    "app/api/cc/etl/trend/route.ts": [
+      "lib/api/server-fetch.ts",
+      "lib/control-center/etl-status.ts",
+      "lib/schemas/control-center.ts"
+    ],
+    "app/api/cc/health/route.ts": [
+      "lib/api/server-fetch.ts",
+      "lib/schemas/control-center.ts"
+    ],
+    "app/api/cc/quality/route.ts": [
+      "lib/api/server-fetch.ts",
+      "lib/schemas/control-center.ts"
+    ],
+    "lib/api/server-fetch.ts": [
+      "lib/auth/session.ts"
+    ],
+    "lib/control-center/compute-alerts.ts": [
+      "lib/api/server-fetch.ts",
+      "lib/control-center/etl-status.ts",
+      "lib/schemas/control-center.ts"
+    ],
+    "lib/control-center/etl-status.ts": [],
+    "lib/schemas/catalogos.ts": [],
+    "lib/schemas/configuracion.ts": [],
+    "lib/schemas/control-center.ts": []
+  }
+}

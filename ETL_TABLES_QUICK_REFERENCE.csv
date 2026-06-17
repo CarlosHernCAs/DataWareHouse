@@ -1,0 +1,74 @@
+schema,table_name,category,description_es,source_es,grain_es,primary_use_es
+Bronce,Calibres,Frutas,Diámetros de bayas para clasificación comercial,Excel calibres,fecha+modulo+turno+variedad,Proyección oferta por calibre
+Bronce,Censo_Plantas,Sanidad,Conteo poblacional plantas (buenas/regulares/malas/muertas),Excel censo_plantas,fecha+modulo+turno+valvula+variedad+estado,Monitoreo salud & replanta planning
+Bronce,Ciclos_Fenologicos,Fenología,Etapa fenológica por color de cinta marcadora,Excel ciclos_fenologicos,fecha+modulo+turno+valvula+organo+color,Seguimiento maduración fruta
+Bronce,Cierre_Mapas_Cosecha,Cosecha,Cierre de bloques de cosecha (completitud),Excel cierre_mapas,fecha+modulo+variedad,Validación integridad cosecha
+Bronce,Consolidado_Tareos,Labor,Horas trabajadas por persona actividad labor,SAP tareos,fecha+dni+modulo+turno+actividad+labor,Costo labor & productividad
+Bronce,Conteo_Fruta,Fenología,Conteo de frutos por etapa (botones/flores/pequeñas/grandes/creams/maduras/cosechables),Excel conteo_fruta,fecha+modulo+turno+valvula+punto+variedad,Core input forecasting 6 semanas
+Bronce,Cosecha_SAP,Cosecha,Cosecha real SAP: kg_total area plantas,SAP cosecha,fecha+semana+modulo+turno+valvula+variedad,Source-of-truth cosecha para validar forecasts
+Bronce,Data_SAP,Post-Cosecha,Post-cosecha SAP: cliente material lote almacen pesos remisión,SAP warehouse,fecha_cosecha+consumidor+variedad+lote+almacen,Trazabilidad post-cosecha & supply chain
+Bronce,Evaluacion_Calidad_Poda,Estructura,Calidad de poda: tallos diámetro cortes defectuosos altura,Excel evaluacion_poda,fecha+modulo+turno+valvula+variedad+tipo_eval,QA poda ejecutada
+Bronce,Evaluacion_Pesos,Pesos,Peso de bayas por etapa (g/baya) + muestra,Excel evaluacion_pesos,fecha+modulo+turno+valvula+variedad,Curva de peso & yield forecasting
+Bronce,Evaluacion_Vegetativa,Estructura,Estructura vegetal por piso: brotes productivos diámetro altura tallos basales,Excel evaluacion_vegetativa,fecha+modulo+turno+valvula+cama+variedad+piso,Predicción enfermedad & validación madurez
+Bronce,Fiscalizacion,Auditoría,Auditorías operativas de cumplimiento,Excel fiscalizacion,fecha+dni+modulo+turno,Compliance tracking
+Bronce,Fisiologia,Estructura,Estado fisiológico yemas (hinchadas/productivas por tercio),Excel fisiologia,fecha+modulo+turno+valvula+tercio+variedad,Predicción potencial floración
+Bronce,Floracion,Fenología,Plantas en flor vs evaluadas,Excel floracion (subset evaluacion_vegetativa),fecha+modulo+turno+valvula+cama+variedad,Detección ventana polinización
+Bronce,Induccion_Floral,Fenología,Resultados inducción floración fuera estación (plantas % con inducción y flores),Excel induccion_floral,fecha+modulo+turno+valvula+cama+variedad,Validación protocolo inducción counter-season
+Bronce,Maduracion,Fenología,Maduración de fruta marcada (color + días desde marcado),Excel maduracion,fecha+modulo+turno+valvula+variedad+organo+color,Ripeness tracking & harvest scheduling
+Bronce,Peladas,Sanidad,Frutas desnudadas (expuestas por enfermedad/daño) por etapa,Excel peladas,fecha+modulo+turno+valvula+punto+variedad,Detección urgencia sanitaria
+Bronce,Pintado_Flores,Experimental,Flores marcadas/pintadas para experimentos controlados,Excel pintado_flores,fecha+modulo+turno+valvula+variedad,Pollination experiments
+Bronce,Proyeccion_Pesos,Modelo,Proyección de peso promedio para modelo forecasting,Excel proyeccion_pesos,fecha+modulo+variedad,Seed para curva de peso del modelo
+Bronce,Reporte_Clima,Clima,Reporte diario clima (T_max T_min humedad precipitación),Excel reporte_clima,fecha+hora+sector,Fallback cuando telemetría no disponible
+Bronce,Reporte_Cosecha,Cosecha,Reporte cosecha diaria: kg neto jabas,Excel reporte_cosecha,fecha+modulo+turno+valvula+variedad,Real-time harvest volume tracking
+Bronce,Seguimiento_Errores,Sanidad,Seguimiento de plantas muertas/pérdidas y problemas fitosanitarios,Excel seguimiento_errores,fecha+modulo+variedad+tipo_error,Field health incident tracking
+Bronce,Tasa_Crecimiento_Brotes,Estructura,Tasa elongación brotes (cm/día) desde poda,Excel tasa_crecimiento,fecha+modulo+turno+valvula+cama+tipo_tallo+ensayo,Vigor vegetativo & pruning timing
+Bronce,Variables_Meteorologicas,Clima,Variables meteorológicas VPD radiación (esporádicas),Excel telemetria (fallback),fecha+modulo+sector,Fallback crop physiology modeling
+Bronce,Telemetria_Clima,Clima,Telemetría horaria continua: T humedad lluvia radiación UV VPD GDD,Logger automático por sector,fecha_hora+sector,Continuous crop physiology 24/7 + DSS
+Silver,Dim_Actividad_Operativa,Catálogo,Catálogo actividades laborales + códigos SAP + labor,Bronce.Consolidado_Tareos deduplicated,actividad+labor,Labor cost allocation
+Silver,Dim_Cama_Catalogo,Catálogo,Catálogo de camas (líneas plantación) normalizadas,Bronce.[all] unique cama_raw → MDM,cama,Geography sub-grain
+Silver,Dim_Campana,Catálogo,Campañas/temporadas de cosecha (año + nombre + estado),Config Parametros_Pipeline,campana_id,Campaign scoping
+Silver,Dim_Cinta,Catálogo,Colores de cinta para marcar frutos (rojo/naranja/amarillo/etc),Bronce.Ciclos_Fenologicos unique colors,color,Ripeness stage coding
+Silver,Dim_Condicion_Cultivo,Catálogo,Condiciones cultivo: sustrato (suelo/hidro/coco) + certificación (orgánico/conv),Manual catalog,sustrato+certificacion,Yield model stratification
+Silver,Dim_Escenario_Proyeccion,Catálogo,Escenarios proyección: Conservador/Base/Optimista + horizonte semanas,Config Parametros_Pipeline,escenario,Forecast ensemble
+Silver,Dim_Estado_Fenologico,Catálogo,Etapas fenológicas ordenadas (botones→flores→frutos→maduros) con orden,Bronce.Conteo_Fruta unique estados + ordering,estado_fenologico,Fruit stage classification
+Silver,Dim_Estado_Workflow,Catálogo,Estados workflow proyecciones (draft→validado→override→publicado→rechazado),Portal workflow,estado,Projection approval flow
+Silver,Dim_Fundo_Catalogo,Catálogo,Fundos (Las Cruces San Martín etc),Bronce.[all] unique fundo_raw → MDM,fundo,Estate-level geography
+Silver,Dim_Geografia,Geografía,Jerarquía completa denormalizada: Fundo→Sector→Modulo→Turno→Valvula→Cama + flags,JOIN 6 catalogs,fundo+sector+modulo+turno+valvula+cama,Normalized geography key para facts
+Silver,Dim_Modulo_Catalogo,Catálogo,Módulos (secciones cultivo) + tipo conducción (espalier/sombrilla),Bronce.[all] unique modulo_raw → MDM,modulo+tipo_conduccion,Plot-level geography
+Silver,Dim_Personal,Catálogo,Directorio empleados: DNI nombre rol sexo planilla asertivity % ausentismo,Bronce.Consolidado_Tareos deduplicated,dni,Labor KPI tracking
+Silver,Dim_Sector_Catalogo,Catálogo,Sectores dentro de fundos,Bronce.[all] unique sector_raw → MDM,sector,Mid-level geography
+Silver,Dim_Tiempo,Calendario,Calendario gregoriano + semana ISO + semana cosecha + día semana + mes,Config calendar builder (2020-2035),fecha,Time-based aggregation
+Silver,Dim_Turno_Catalogo,Catálogo,Turnos (1/2/3 o A/B/C),Bronce.[all] unique turno_raw → MDM,turno,Shift-level analytics
+Silver,Dim_Valvula_Catalogo,Catálogo,Válvulas de riego (zonas agua),Bronce.[all] unique valvula_raw → MDM,valvula,Irrigation zone reference
+Silver,Dim_Variedad,Catálogo,Catálogo variedades blueberry + breeder,Bronce.[all] unique variedad_raw → MDM,variedad,Variety-specific models
+Silver,Fact_areas_plantas,Hecho,Área (hectáreas) + cantidad plantas por geografía variedad fecha,Bronce.Cosecha_SAP (area + plantas),fecha+geografia+variedad+condicion,Per-plant & per-hectare yield normalization
+Silver,Fact_Censo_Plantas,Hecho,Censo plantas: conteo por estado (buena/regular/mala),Bronce.Censo_Plantas → parse estado,fecha+geografia+variedad+campana,Field health monitoring & replant planning
+Silver,Fact_Ciclo_Poda,Hecho,Calidad poda: tallos longitud diámetro defectos,Bronce.Evaluacion_Calidad_Poda,fecha+geografia+variedad+tipo_eval+campana,Pruning QA
+Silver,Fact_Ciclos_Fenologicos,Hecho,Maduración frutas marcadas con cinta: color + días desde marcado,Bronce.Maduracion → JOIN Dim_Cinta,fecha+geografia+variedad+cinta+organo+estado_feno+campana,Harvest timing optimization
+Silver,Fact_Conteo_Fenologico,Hecho,Conteo frutas por etapa fenológica (core forecast input),Bronce.Conteo_Fruta → parse estado,fecha+geografia+variedad+estado_feno+personal+punto+campana,Weekly fruit stage progression → 6-week forecast
+Silver,Fact_Cosecha_SAP,Hecho,Cosecha real SAP: kg_neto_mp por geografía variedad fecha condición,Bronce.Cosecha_SAP → parse + JOIN Dim_Condicion,fecha+geografia+variedad+condicion+campana,Source-of-truth harvest for forecast validation
+Silver,Fact_Evaluacion_Pesos,Hecho,Peso baya por etapa (g/baya) + proyección cosecha + muestra,Bronce.Evaluacion_Pesos → clean + fit curve,fecha+geografia+variedad+personal+campana,Berry weight trajectory modeling & yield projection
+Silver,Fact_Evaluacion_Vegetativa,Hecho,Estructura vegetal por piso: brotes productivos diámetro altura,Bronce.Evaluacion_Vegetativa → parse pisos,fecha+geografia+variedad+piso+semanas_poda+campana,Plant structure for disease prediction
+Silver,Fact_Fisiologia,Hecho,Fisiología yemas: hinchadas/productivas por tercio,Bronce.Fisiologia → parse tercio,fecha+geografia+variedad+tercio+campana,Flowering potential prediction
+Silver,Fact_Floracion,Hecho,Evento floración: plantas en flor vs evaluadas,Bronce.Floracion → parse,fecha+geografia+variedad+personal+campana,Bloom window detection
+Silver,Fact_Induccion_Floral,Hecho,Éxito inducción floración fuera estación (% plantas % brotes con flores),Bronce.Induccion_Floral → calc %,fecha+geografia+variedad+personal+campana,Off-season flowering control validation
+Silver,Fact_Tareo,Hecho,Horas trabajadas por persona actividad labor fecha geografía,Bronce.Consolidado_Tareos → JOIN dims,fecha+personal+actividad+geografia+campana,Labor cost allocation & productivity KPIs
+Silver,Fact_Tasa_Crecimiento_Brotes,Hecho,Tasa elongación brotes (cm/día) desde poda,Bronce.Tasa_Crecimiento → calc dias + rate,fecha+geografia+variedad+personal+condicion+ensayo+campana,Vegetative vigor & pruning timing
+Silver,Fact_Telemetria_Clima,Hecho,Telemetría horaria: T humedad lluvia radiación VPD GDD calculado,Bronce.Telemetria_Clima (hourly),fecha_hora+sector+id_tiempo+campana,Continuous crop physiology 24/7 + disease risk + irrigation DSS
+Silver,Bridge_Geografia_Cama,Puente,M:M relación geografía ↔ cama (bed)puede estar en múltiples geografías,Bronce facts → extract unique (geo cama),geografia+cama (activos),Plot-level geography flexibility
+Silver,Bridge_Geografia_Campana_Condicion,Puente,M:M relación geografía ↔ campaña ↔ condición cultivo,Config + Bronce facts,geografia+campana+condicion (activos),Multi-season growing method tracking
+Silver,Bridge_Modulo_Campana,Puente,M:M relación módulo ↔ variedad ↔ campaña (planting plan),Config Parametros + SAP,modulo+variedad+campana,Planting plan reference
+Gold,Mart_Administrativo,Dashboard,Labor KPIs: horas trabajadas asertivity % días trabajados obs SAP supervisor por semana,Fact_Tareo + Dim_Personal agg by semana_iso,semana_iso+dni+actividad+campana,Weekly labor dashboard para HR/Operations
+Gold,Mart_Ciclo_Poda,Dashboard,Calidad poda: avg tallos longitud diámetro defectos por geografía semana,Fact_Ciclo_Poda agg by semana+modulo,semana_iso+geografia+variedad+campana,Pruning QA dashboard
+Gold,Mart_Clima,Dashboard,Clima diario: T_avg T_max T_min VPD humedad lluvia GDD por sector semana,Fact_Telemetria (daily agg Tetens+GDD),id_tiempo+sector+semana_iso+campana,Climate-crop physiology DSS (disease risk & irrigation)
+Gold,Mart_Cosecha,Dashboard,Cosecha semanal: kg_real vs kg_proyectados cumplimiento % jabas,Fact_Cosecha_SAP + Fact_Proyecciones join,semana_iso+geografia+variedad+campana,Supply/Sales weekly tracking & forecast accuracy
+Gold,Mart_Evaluacion_Vegetativa,Dashboard,Estructura vegetal por piso: avg altura brotes productivos diámetro ratio por semana,Fact_Evaluacion_Vegetativa agg by semana+piso,semana_iso+piso+geografia+variedad+campana,Plant vigor dashboard & disease risk prediction
+Gold,Mart_Fenologia,Dashboard,Progresión fenológica semanal: conteo por etapa + brotes productivos + color cinta,Fact_Conteo_Fenologico + Fact_Fisiologia + Fact_Ciclos agg,semana_iso+modulo+variedad+estado_feno+campana,Harvest forecasting & ripeness tracking dashboard
+Gold,Mart_Induccion_Floral,Dashboard,Eficacia inducción floración: % plantas % brotes con flores,Fact_Induccion_Floral agg,geografia+variedad+campana,Off-season flowering success rate
+Gold,Mart_Pesos_Calibres,Dashboard,Análisis peso baya por etapa + calibre (pequeño mediano grande): avg g/baya distribución,Fact_Evaluacion_Pesos + Bronce.Calibres,semana_iso+geografia+variedad+campana,Harvest quality dashboard (weight progression caliber distribution)
+Gold,Mart_Proyecciones,Dashboard,Forecast ejecutivo: kg_proyectados (escenario base) MAPE override audit estado workflow,Fact_Proyecciones (filtered base scenario) join actuals,semana_iso+geografia+variedad+escenario+campana,Executive forecast dashboard & model accuracy audit
+Gold,Mart_Tasa_Crecimiento,Dashboard,Tasa crecimiento brotes: avg cm/día por condición (experimento/control) geografía,Fact_Tasa_Crecimiento_Brotes agg by semana+condicion,semana_iso+geografia+variedad+condicion+campana,Pruning timing DSS
+Control,Parametros_Pipeline,Configuración,Configuración ETL: facts_bloqueantes escenario_oficial_id horizonte_semanas umbral_rechazo_%,Config parametros.py,key,ETL logic feature flags
+Auditoria,Carga_Archivos,Auditoría,Línea de trazabilidad: archivo → tabla → fecha → estado (OK/ERROR) → filas → errores,ETL logging module,archivo+tabla+fecha,Data lineage & ETL audit trail
+Seguridad,Roles_Acceso,Acceso,Control acceso: (rol tabla permiso) → Portal MDM user groups & permissions,Portal MDM,rol+tabla+permiso,Data access control
+Config,Homologacion_MDM,Maestría,Data homologation rules: raw → normalized mappings para todos catálogos,Manual MDM + Portal edits,tabla_destino+valor_raw,Raw field data standardization

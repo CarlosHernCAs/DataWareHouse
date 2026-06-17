@@ -1,0 +1,57 @@
+{
+  "nodes": [
+    {
+      "id": "file:ETL/sql/refactor_bronce_2026_05.sql",
+      "type": "table",
+      "name": "refactor_bronce_2026_05.sql",
+      "filePath": "ETL/sql/refactor_bronce_2026_05.sql",
+      "summary": "File mapped from ETL/sql/refactor_bronce_2026_05.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:ETL/sql/refactor_silver_2026_05.sql",
+      "type": "table",
+      "name": "refactor_silver_2026_05.sql",
+      "filePath": "ETL/sql/refactor_silver_2026_05.sql",
+      "summary": "File mapped from ETL/sql/refactor_silver_2026_05.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/sql/refactor_telemetria_clima_2026_05.sql",
+      "type": "table",
+      "name": "refactor_telemetria_clima_2026_05.sql",
+      "filePath": "ETL/sql/refactor_telemetria_clima_2026_05.sql",
+      "summary": "File mapped from ETL/sql/refactor_telemetria_clima_2026_05.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/sql/refactor_telemetria_clima_silver_horario.sql",
+      "type": "table",
+      "name": "refactor_telemetria_clima_silver_horario.sql",
+      "filePath": "ETL/sql/refactor_telemetria_clima_silver_horario.sql",
+      "summary": "File mapped from ETL/sql/refactor_telemetria_clima_silver_horario.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": []
+}

@@ -1,0 +1,377 @@
+{
+  "nodes": [
+    {
+      "id": "file:scratch/check_100_percent.py",
+      "type": "file",
+      "name": "check_100_percent.py",
+      "filePath": "scratch/check_100_percent.py",
+      "summary": "File mapped from scratch/check_100_percent.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/check_2023_cols.py",
+      "type": "file",
+      "name": "check_2023_cols.py",
+      "filePath": "scratch/check_2023_cols.py",
+      "summary": "File mapped from scratch/check_2023_cols.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/check_bronce_cols.py",
+      "type": "file",
+      "name": "check_bronce_cols.py",
+      "filePath": "scratch/check_bronce_cols.py",
+      "summary": "File mapped from scratch/check_bronce_cols.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/check_bronce_columns.py",
+      "type": "file",
+      "name": "check_bronce_columns.py",
+      "filePath": "scratch/check_bronce_columns.py",
+      "summary": "File mapped from scratch/check_bronce_columns.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/check_bronce_count.py",
+      "type": "file",
+      "name": "check_bronce_count.py",
+      "filePath": "scratch/check_bronce_count.py",
+      "summary": "File mapped from scratch/check_bronce_count.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/check_bronce_schema.py",
+      "type": "file",
+      "name": "check_bronce_schema.py",
+      "filePath": "scratch/check_bronce_schema.py",
+      "summary": "File mapped from scratch/check_bronce_schema.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/check_bronce_status.py",
+      "type": "file",
+      "name": "check_bronce_status.py",
+      "filePath": "scratch/check_bronce_status.py",
+      "summary": "File mapped from scratch/check_bronce_status.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/check_cinta_schema.py",
+      "type": "file",
+      "name": "check_cinta_schema.py",
+      "filePath": "scratch/check_cinta_schema.py",
+      "summary": "File mapped from scratch/check_cinta_schema.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/check_columns.py",
+      "type": "file",
+      "name": "check_columns.py",
+      "filePath": "scratch/check_columns.py",
+      "summary": "File mapped from scratch/check_columns.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/check_counts.py",
+      "type": "file",
+      "name": "check_counts.py",
+      "filePath": "scratch/check_counts.py",
+      "summary": "File mapped from scratch/check_counts.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/check_daily_report.py",
+      "type": "file",
+      "name": "check_daily_report.py",
+      "filePath": "scratch/check_daily_report.py",
+      "summary": "File mapped from scratch/check_daily_report.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/check_dim_cinta.py",
+      "type": "file",
+      "name": "check_dim_cinta.py",
+      "filePath": "scratch/check_dim_cinta.py",
+      "summary": "File mapped from scratch/check_dim_cinta.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/check_dim_estado.py",
+      "type": "file",
+      "name": "check_dim_estado.py",
+      "filePath": "scratch/check_dim_estado.py",
+      "summary": "File mapped from scratch/check_dim_estado.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/check_dimgeo_columns.py",
+      "type": "file",
+      "name": "check_dimgeo_columns.py",
+      "filePath": "scratch/check_dimgeo_columns.py",
+      "summary": "File mapped from scratch/check_dimgeo_columns.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/check_equality_by_date.py",
+      "type": "file",
+      "name": "check_equality_by_date.py",
+      "filePath": "scratch/check_equality_by_date.py",
+      "summary": "File mapped from scratch/check_equality_by_date.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/check_excel_columns.py",
+      "type": "file",
+      "name": "check_excel_columns.py",
+      "filePath": "scratch/check_excel_columns.py",
+      "summary": "File mapped from scratch/check_excel_columns.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/check_excel_columns.py:print_cols",
+      "type": "function",
+      "name": "print_cols",
+      "filePath": "scratch/check_excel_columns.py",
+      "lineRange": [
+        4,
+        19
+      ],
+      "summary": "Function print_cols defined in scratch/check_excel_columns.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/check_excel_equality.py",
+      "type": "file",
+      "name": "check_excel_equality.py",
+      "filePath": "scratch/check_excel_equality.py",
+      "summary": "File mapped from scratch/check_excel_equality.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/check_greater_100_rows.py",
+      "type": "file",
+      "name": "check_greater_100_rows.py",
+      "filePath": "scratch/check_greater_100_rows.py",
+      "summary": "File mapped from scratch/check_greater_100_rows.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/check_greater_100.py",
+      "type": "file",
+      "name": "check_greater_100.py",
+      "filePath": "scratch/check_greater_100.py",
+      "summary": "File mapped from scratch/check_greater_100.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/check_json.py",
+      "type": "file",
+      "name": "check_json.py",
+      "filePath": "scratch/check_json.py",
+      "summary": "File mapped from scratch/check_json.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/check_json.py:check_json",
+      "type": "function",
+      "name": "check_json",
+      "filePath": "scratch/check_json.py",
+      "lineRange": [
+        5,
+        14
+      ],
+      "summary": "Function check_json defined in scratch/check_json.py.",
+      "tags": [
+        "function",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/check_locks.py",
+      "type": "file",
+      "name": "check_locks.py",
+      "filePath": "scratch/check_locks.py",
+      "summary": "File mapped from scratch/check_locks.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/check_log.py",
+      "type": "file",
+      "name": "check_log.py",
+      "filePath": "scratch/check_log.py",
+      "summary": "File mapped from scratch/check_log.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/check_logs.py",
+      "type": "file",
+      "name": "check_logs.py",
+      "filePath": "scratch/check_logs.py",
+      "summary": "File mapped from scratch/check_logs.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/check_older_logs.py",
+      "type": "file",
+      "name": "check_older_logs.py",
+      "filePath": "scratch/check_older_logs.py",
+      "summary": "File mapped from scratch/check_older_logs.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/check_percentages.py",
+      "type": "file",
+      "name": "check_percentages.py",
+      "filePath": "scratch/check_percentages.py",
+      "summary": "File mapped from scratch/check_percentages.py with category code.",
+      "tags": [
+        "code",
+        "python",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:scratch/check_excel_columns.py",
+      "target": "function:scratch/check_excel_columns.py:print_cols",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/check_json.py",
+      "target": "function:scratch/check_json.py:check_json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+ID_Proyeccion,Escenario,Fecha,Valor,Comentario
+101,Optimista,2026-01-01,150000.50,Ajuste manual Q1 valido
+102,Pesimista,2026-02-01,-5000.00,Fila con error (Valor negativo no permitido)
+103,Base,2026-03-01,,Fila con error (Valor vacío)
+104,Optimista,2026-04-01,250000.00,Ajuste Q2 valido
+105,Pesimista,2026-05-01,TextoInvalido,Fila con error (Valor no es numerico)

@@ -1,0 +1,2967 @@
+{
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\debugging-code\\scripts\\install-dap.sh": {
+    "mtime": 1780320780.8408604,
+    "ast_hash": "3476f8df8530f44c7ce01480d8d5bec3",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\scripts\\cleanup-deprecated.mjs": {
+    "mtime": 1778588337.6710947,
+    "ast_hash": "51208407b06e051bb6d8ceab244db39c",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\scripts\\command-metadata.json": {
+    "mtime": 1778588337.6710947,
+    "ast_hash": "b25ed9a4d6c24c83d5af46ec69b99a97",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\scripts\\design-parser.mjs": {
+    "mtime": 1778588337.6710947,
+    "ast_hash": "df65268bfe73ad8202ca309c2da3805c",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\scripts\\detect-csp.mjs": {
+    "mtime": 1778588337.6710947,
+    "ast_hash": "0d3243060e66ba0d0a64684f9684ecc7",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\scripts\\impeccable-paths.mjs": {
+    "mtime": 1778588337.6710947,
+    "ast_hash": "481a7e7626773e285361f0e6f55078d5",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\scripts\\is-generated.mjs": {
+    "mtime": 1778588337.677307,
+    "ast_hash": "81ada1894b5f562b0993fdff1756d82c",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\scripts\\live-accept.mjs": {
+    "mtime": 1778588337.677307,
+    "ast_hash": "feee297789fa52b5901e21bb354e8a4f",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\scripts\\live-browser-session.js": {
+    "mtime": 1778588337.677307,
+    "ast_hash": "e54c01fe1a8287f757161759beaab916",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\scripts\\live-browser.js": {
+    "mtime": 1778588337.6816435,
+    "ast_hash": "09d5959c4f68346ac3e032a1e16f8924",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\scripts\\live-complete.mjs": {
+    "mtime": 1778588337.6836526,
+    "ast_hash": "0ed6226feb3d80adf38f2098b6d7efd4",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\scripts\\live-completion.mjs": {
+    "mtime": 1778588337.6852553,
+    "ast_hash": "c51f1de5c7aae5aa3f2c67f5d9875d3e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\scripts\\live-inject.mjs": {
+    "mtime": 1778588337.6852553,
+    "ast_hash": "01365c3718e920dbeee5eeb9159093fa",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\scripts\\live-poll.mjs": {
+    "mtime": 1778588337.687268,
+    "ast_hash": "7b78710647b202a90d99852bdb7a5135",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\scripts\\live-resume.mjs": {
+    "mtime": 1778588337.687268,
+    "ast_hash": "9187fc4ae434c0573b7c84c95b05f744",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\scripts\\live-server.mjs": {
+    "mtime": 1778588337.6897972,
+    "ast_hash": "c53653a715262a584dbca8e08f2c1dc0",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\scripts\\live-session-store.mjs": {
+    "mtime": 1778588337.6897972,
+    "ast_hash": "b0c628113419432d164204b18587d681",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\scripts\\live-status.mjs": {
+    "mtime": 1778588337.6918113,
+    "ast_hash": "f7f787396f44ef06c890f97c45d0ba75",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\scripts\\live-wrap.mjs": {
+    "mtime": 1778588337.6923244,
+    "ast_hash": "9612f1254ce763221690053592892110",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\scripts\\live.mjs": {
+    "mtime": 1778588337.6923244,
+    "ast_hash": "073965c7d10925f8ad9651a336220ee8",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\scripts\\load-context.mjs": {
+    "mtime": 1778588337.69434,
+    "ast_hash": "f96317a92230153a77069e4f81bd8e11",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\scripts\\modern-screenshot.umd.js": {
+    "mtime": 1778588337.6953862,
+    "ast_hash": "c6afaf6ebceb162206f6a2e5b0ed653c",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\scripts\\pin.mjs": {
+    "mtime": 1778588337.6953862,
+    "ast_hash": "59e1f8315c2083fb7997e5ff3edfcb57",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.claude\\launch.json": {
+    "mtime": 1777921355.0297804,
+    "ast_hash": "2d2c311187895a4a9bdd034d276361da",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\auditoria\\__init__.py": {
+    "mtime": 1773940819.2749743,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\auditoria\\log.py": {
+    "mtime": 1779819129.9479592,
+    "ast_hash": "7ba488abafa2472593b260036b3d7815",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\auditoria\\notificador.py": {
+    "mtime": 1779819129.9501572,
+    "ast_hash": "7e7a86d7bcee62418e883def0e1cb645",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\bronce\\__init__.py": {
+    "mtime": 1773940819.2700243,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\bronce\\cargador.py": {
+    "mtime": 1780593340.9656956,
+    "ast_hash": "f03fc499881d1918879ecb343115908b",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\bronce\\rutas.py": {
+    "mtime": 1779899336.1302495,
+    "ast_hash": "2ab240646380db50897290f8c8123b4f",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\check_bronce.py": {
+    "mtime": 1779995676.1877384,
+    "ast_hash": "f01e5988c220b162a180ce253ee0efbd",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\check_cols.py": {
+    "mtime": 1779995824.347184,
+    "ast_hash": "6c93678fa36e8a0cfbe9d5d1abc3c5c0",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\check_facts.py": {
+    "mtime": 1779995516.0792112,
+    "ast_hash": "5a44cbd3afedf3126a471dcba63a285c",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\check_locks.py": {
+    "mtime": 1779996046.3874786,
+    "ast_hash": "8960c8425ba9cbb5430dc912f09cd740",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\check_schema.py": {
+    "mtime": 1779996103.2091556,
+    "ast_hash": "3565408dfe3189a732315daf2ea3a2de",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\check_schema_fact.py": {
+    "mtime": 1779996240.9069898,
+    "ast_hash": "a7889283cf055140cd50a3dd35492b21",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\check_tables.py": {
+    "mtime": 1779995484.845309,
+    "ast_hash": "08ec4584d40b0efb31f1ca098e890891",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\config\\__init__.py": {
+    "mtime": 1773940819.2749743,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\config\\conexion.py": {
+    "mtime": 1779819956.842349,
+    "ast_hash": "86a517120fd53fb528c474ff7f6bb87e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\config\\parametros.py": {
+    "mtime": 1779819129.973999,
+    "ast_hash": "48468e30c75768f1b3172bb5e69fdc43",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\dq\\__init__.py": {
+    "mtime": 1773940819.272764,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\dq\\cuarentena.py": {
+    "mtime": 1779819131.7001643,
+    "ast_hash": "81175e4bab9a090ff66d120486091243",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\dq\\reglas.py": {
+    "mtime": 1779819131.7021685,
+    "ast_hash": "06aacac9b0e77d611cf43eea34988a4c",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\dq\\validador.py": {
+    "mtime": 1779819131.7112775,
+    "ast_hash": "f98dea84f98d1db2c240c30d18d2c9b3",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\gold\\__init__.py": {
+    "mtime": 1773940819.2717555,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\gold\\ddl_marts_v2.sql": {
+    "mtime": 1779819129.867288,
+    "ast_hash": "fc55920686813a2934ae7128b7525e13",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\gold\\marts.py": {
+    "mtime": 1780578767.9980567,
+    "ast_hash": "f387db93b5fe7961d2469ae3fcac985b",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\mdm\\__init__.py": {
+    "mtime": 1773940819.2745552,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\mdm\\bridges_tasa_crecimiento.py": {
+    "mtime": 1780427886.80966,
+    "ast_hash": "95bb07df99b97bda2fa3ea68818e55db",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\mdm\\cuarentena.py": {
+    "mtime": 1780338972.1253,
+    "ast_hash": "afea0a4396c14d2d70aa9ed3dffa8b09",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\mdm\\homologador.py": {
+    "mtime": 1778602976.1139846,
+    "ast_hash": "06a5dbc61eb1796087be746c01950a03",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\mdm\\lookup.py": {
+    "mtime": 1780502998.3291738,
+    "ast_hash": "3389307d2411721f278cf4a48361d854",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\pipeline.py": {
+    "mtime": 1780498589.5844393,
+    "ast_hash": "8dba6c3ce83c33645cf8e595c5147ba7",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\silver\\__init__.py": {
+    "mtime": 1773940819.1811633,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\silver\\dims\\__init__.py": {
+    "mtime": 1773940819.2482305,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\silver\\dims\\dim_geografia.py": {
+    "mtime": 1779908888.529142,
+    "ast_hash": "0364481807a78a787f76fa685f58cdf4",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\silver\\dims\\dim_geografia_v2.py": {
+    "mtime": 1779908888.529142,
+    "ast_hash": "f13a3f230bbb6f620c3e7830204a413e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\silver\\dims\\dim_personal.py": {
+    "mtime": 1779908888.5399249,
+    "ast_hash": "d7d83b6ccb19656ddc077df64a312d6a",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\silver\\facts\\__init__.py": {
+    "mtime": 1773940819.2607691,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\silver\\facts\\_base_processor.py": {
+    "mtime": 1780602024.7195032,
+    "ast_hash": "939fc7ab820cd04dc05873ef0993f545",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\silver\\facts\\_helpers_fact_comunes.py": {
+    "mtime": 1779992742.8590083,
+    "ast_hash": "30d5588b01b189284e231cc68535a17c",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\silver\\facts\\fact_areas_plantas.py": {
+    "mtime": 1780602701.9317644,
+    "ast_hash": "b0973724833c9d2351918f49389d32f3",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\silver\\facts\\fact_censo_plantas.py": {
+    "mtime": 1780602745.287794,
+    "ast_hash": "af1647023a3ffd640c9712cb64357d7f",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\silver\\facts\\fact_ciclo_poda.py": {
+    "mtime": 1780602713.7716854,
+    "ast_hash": "00cb0687f5687681614707811e842993",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\silver\\facts\\fact_ciclos_fenologicos.py": {
+    "mtime": 1780602756.6318314,
+    "ast_hash": "85be654a4ca0d4517af5d59ba164e730",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\silver\\facts\\fact_conteo_fenologico.py": {
+    "mtime": 1780602767.226001,
+    "ast_hash": "1d3201b1724387b141c3e9f46a6999a7",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\silver\\facts\\fact_cosecha_sap.py": {
+    "mtime": 1780602846.9817717,
+    "ast_hash": "42aa6697cd4d10afa777d696b24a7f92",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\silver\\facts\\fact_evaluacion_pesos.py": {
+    "mtime": 1780602796.1777585,
+    "ast_hash": "7246420bf602247133775a0fb0633abf",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\silver\\facts\\fact_evaluacion_vegetativa.py": {
+    "mtime": 1780602721.975108,
+    "ast_hash": "10769af4abed9f3c97c1cac29f04ed02",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\silver\\facts\\fact_fisiologia.py": {
+    "mtime": 1780601571.7924867,
+    "ast_hash": "b43e127d8b9d30fb825aac19b0c18a68",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\silver\\facts\\fact_floracion.py": {
+    "mtime": 1780602811.4439056,
+    "ast_hash": "121aba4891e235ea3979d7549362426c",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\silver\\facts\\fact_induccion_floral.py": {
+    "mtime": 1780601589.5986238,
+    "ast_hash": "2922906e063d6fe4eb9e9027ed7edded",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\silver\\facts\\fact_peladas.py": {
+    "mtime": 1780602827.7381787,
+    "ast_hash": "cfbc93a73eb4705b298954b949cfb637",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\silver\\facts\\fact_tareo.py": {
+    "mtime": 1780602861.0616472,
+    "ast_hash": "d70060395fd343d0ec3d9d4994961582",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\silver\\facts\\fact_tasa_crecimiento_brotes.py": {
+    "mtime": 1780602877.6936862,
+    "ast_hash": "6f74f67d1e412d5372fef887f6fea359",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\silver\\facts\\fact_telemetria_clima.py": {
+    "mtime": 1780602893.7983105,
+    "ast_hash": "11295b8372d4eb145bf9d9e3e8a0ea24",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql\\refactor_bronce_2026_05.sql": {
+    "mtime": 1779304136.6587794,
+    "ast_hash": "dce91da2b97320b2dc2bb96f125d589e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql\\refactor_silver_2026_05.sql": {
+    "mtime": 1779307402.136317,
+    "ast_hash": "4801fedaaa90e5333389417f2ff6b0d9",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql\\refactor_telemetria_clima_2026_05.sql": {
+    "mtime": 1779506531.3799179,
+    "ast_hash": "f1a22bb55a3a5e69465bd73a1a0cdd91",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql\\refactor_telemetria_clima_silver_horario.sql": {
+    "mtime": 1779506915.8449657,
+    "ast_hash": "0ddffa899eb608b5ce8e721cc3d9af23",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\2026_05_19_limpieza_columnas_redundantes_bronce.sql": {
+    "mtime": 1779224410.0496752,
+    "ast_hash": "8012f28ca014e05072b8b530260f90d8",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\2026_05_19_nuevas_tablas_y_fixes_bronce.sql": {
+    "mtime": 1779225820.947463,
+    "ast_hash": "9ec102538ac732b5de85e7975b4d0858",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\2026_05_20_fenologia_y_conteo_frutas.sql": {
+    "mtime": 1779295811.397085,
+    "ast_hash": "a5210195cdf0a127086aa91aeea1ce9c",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\2026_05_20_separar_base_plantas_area.sql": {
+    "mtime": 1779293535.17792,
+    "ast_hash": "f67a0d0692e63b72d6d10847280823d7",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\2026_05_24_crear_fact_ciclos_fenologicos.sql": {
+    "mtime": 1779601096.5154572,
+    "ast_hash": "cd0b9c5962b53263cea6fd2a9258a789",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\2026_05_25_repair_post_fixes.sql": {
+    "mtime": 1779718127.7796965,
+    "ast_hash": "380595d37d9c4971971c64563742e5b2",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\DDL_DataWarehose_Proyecciones_v3.sql": {
+    "mtime": 1779288671.0990148,
+    "ast_hash": "706fd259a63e17dccb780f349b662622",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\_verificar_fase20.py": {
+    "mtime": 1780510534.5082052,
+    "ast_hash": "3fe59ee89cc1c9cc1fb488b61925903e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\alter_fact_proyecciones_sixweek.sql": {
+    "mtime": 1777585148.919506,
+    "ast_hash": "2e039c56ed2b3c0ee913c8a8366a3f73",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\clear_all_data.sql": {
+    "mtime": 1779118093.7552357,
+    "ast_hash": "187e21f5b9f33a3a461349d0d45e12fc",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\consultas_dq_operativas.sql": {
+    "mtime": 1775581262.810572,
+    "ast_hash": "680aa36f068d243eae516f4dbfd53be1",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\crear_auditoria_cambios_portal.sql": {
+    "mtime": 1774530652.537542,
+    "ast_hash": "c254e984a0f6ff3d8268800f041997b5",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\crear_tablas_control.sql": {
+    "mtime": 1775480610.3867326,
+    "ast_hash": "e9c4b16f0e114532c8054f1bdc70646e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\crear_tablas_seguridad.sql": {
+    "mtime": 1775478098.3000145,
+    "ast_hash": "bb68c3f64dc52c766c629df76e062c5f",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase17_reglas_modulo_raw_11_13_14.sql": {
+    "mtime": 1775668842.4274,
+    "ast_hash": "4282155d4a347b159a87e3cf919f6881",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase18_fact_maduracion_y_cinta.sql": {
+    "mtime": 1774553702.2021966,
+    "ast_hash": "12f3547f475becc33af20adc4397bbbc",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase19_ajuste_fact_clima_sector_climatico.sql": {
+    "mtime": 1774900015.394181,
+    "ast_hash": "b8d4e658237f1a4d791a44bdf1d70244",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase20_backfill_dim_tiempo_historico.sql": {
+    "mtime": 1775668906.3836398,
+    "ast_hash": "248ad9a1adf1539b7fe07ee4b21f962c",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase20_vistas_powerbi.sql": {
+    "mtime": 1780510534.5117035,
+    "ast_hash": "c3f6c79f3d05687f1ab51e2cc495be31",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase21_endurecimiento_control_plane.sql": {
+    "mtime": 1775580347.9128597,
+    "ast_hash": "56edd4846d85b23d0182f336aafce05b",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase22_retencion_control_plane.sql": {
+    "mtime": 1775583346.0177443,
+    "ast_hash": "8094f673591977661ff1d618a295e833",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase23_bronce_maduracion_estado_carga.sql": {
+    "mtime": 1776173225.9183278,
+    "ast_hash": "1475abc7d6fd92e1005f2b4c542d0a50",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase24_unique_indexes_silver_facts.sql": {
+    "mtime": 1776700858.2889557,
+    "ast_hash": "fe5f527b2df8818296e9d3389995e389",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase25_versionar_ddl_geografia_catalogos.sql": {
+    "mtime": 1776805873.8490725,
+    "ast_hash": "81e1741ff20939d1f5a1d034cd40d17b",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase26_crear_vista_dim_geografia_emuladora.sql": {
+    "mtime": 1776805903.9720402,
+    "ast_hash": "874d07467df8cf77a0ad1e10531ea3a1",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase27_conteo_fenologico_timestamp.sql": {
+    "mtime": 1776876462.281708,
+    "ast_hash": "c4cd59089e3cdc4f0e9664fc7b3af77b",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase28_redirigir_fk_geografia_nueva.sql": {
+    "mtime": 1776882737.733562,
+    "ast_hash": "fafa5139c29935b7d8ae406edcc72ea1",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase29_fix_sp_upsert_cama_nueva_arquitectura.sql": {
+    "mtime": 1776883916.9584477,
+    "ast_hash": "838c3774ad79ddcd8a883a5d0ae75d50",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase30_registro_migraciones.sql": {
+    "mtime": 1776885146.8858027,
+    "ast_hash": "2f6eacf2a446badbc4ff1511d57a86b8",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase31_corregir_fk_geografia_faltantes.sql": {
+    "mtime": 1777300524.31768,
+    "ast_hash": "387f2ff4f5e63b6c15ce14b4b0b2f65a",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase32_limpieza_objetos_obsoletos.sql": {
+    "mtime": 1777304594.8706882,
+    "ast_hash": "884d3952782e9b3f557d3a68c4ae472c",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase33_redirigir_fk_restantes.sql": {
+    "mtime": 1777304665.0564716,
+    "ast_hash": "0c04a1fa47d3f924e7054e0b18825202",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase34_optimizaciones_db.sql": {
+    "mtime": 1777320875.774013,
+    "ast_hash": "659caba1ff8368a52c7880f7f91eb6bf",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase35_ix_logcarga_fecha_inicio.sql": {
+    "mtime": 1779219724.9473338,
+    "ast_hash": "000d877c3e96b95fcb7f32aee33747ff",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase35_optimizaciones_etl.sql": {
+    "mtime": 1778171148.7240865,
+    "ast_hash": "0c3022ed5862ce1aa5c64e9539940105",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase35_renombrar_facts.sql": {
+    "mtime": 1779219724.9499488,
+    "ast_hash": "2f25a01b7250823b429a6d4c94f96c56",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase36_rebuild_conteo_fruta.sql": {
+    "mtime": 1779110139.4229925,
+    "ast_hash": "3527f859a565da72ecab586daf534629",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase36_renombrar_pks_facts.sql": {
+    "mtime": 1779219724.951975,
+    "ast_hash": "04be6c41ba456d510d0cd638dbfffbc6",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase37_bridges_tasa_crecimiento.sql": {
+    "mtime": 1779128292.9298463,
+    "ast_hash": "0d693097058cf745d619e5caf48bff19",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase37_restructurar_ciclo_poda.sql": {
+    "mtime": 1779219724.9540603,
+    "ast_hash": "937fd6f242db7e3e7c9ff6e5c2099557",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase38_bridge_geo_campana_condicion.sql": {
+    "mtime": 1779219724.9595296,
+    "ast_hash": "58af36abb389f538ea9eb2a92460ddd7",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase38_renombrar_mart_ciclo_poda.sql": {
+    "mtime": 1779219724.9620423,
+    "ast_hash": "5665388a965ffb1c8ce53fcc534b2c16",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase39_peso_baya_nullable_historico.sql": {
+    "mtime": 1779312233.7397661,
+    "ast_hash": "3e9cb86d3df064feea1589673a387b41",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase40_cuarentena_estricta_dims.sql": {
+    "mtime": 1779667252.5120432,
+    "ast_hash": "4d62fe5494f65331893e30b1d886a7cd",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase45_eliminar_bridge_geografia_cama.sql": {
+    "mtime": 1779718356.555151,
+    "ast_hash": "12d5bb60916a5110aa6c6f9a5e57e87a",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase46_dim_campana_seed_fechas.sql": {
+    "mtime": 1779740242.4673932,
+    "ast_hash": "ad3fe089cc6c038366ccb3b335768ca2",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase47_bridge_geo_campana_resolver.sql": {
+    "mtime": 1779740450.0598547,
+    "ast_hash": "4262a7b0dc1fda4dcc5c05dd9056f9fb",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase47b_bridge_geo_campana_fix_columnas.sql": {
+    "mtime": 1779740607.2139692,
+    "ast_hash": "d51ebea544594b6aecdb6d7e34f42a3b",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase47c_bridge_fix_cte.sql": {
+    "mtime": 1779740725.806867,
+    "ast_hash": "e29de0fda262b1413103fb09596ca083",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase48a_resolver_campana_por_fecha.sql": {
+    "mtime": 1779740999.3824003,
+    "ast_hash": "362bee7037bcfd2d23a735a9d8e2efdc",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase48b_bridge_geografia_campana.sql": {
+    "mtime": 1779741373.6885731,
+    "ast_hash": "6c816077c77c36df75db0aa5dc75eb8b",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase48c_v2_vista_gold_vegetativa.sql": {
+    "mtime": 1779797643.5142052,
+    "ast_hash": "9c53a65de5dd693a167e9cef1a015ff3",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase48c_vista_gold_vegetativa.sql": {
+    "mtime": 1779743211.4078476,
+    "ast_hash": "df6a58cf0cc147bee710a7097fb270f7",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase49_dim_tiempo_campana.sql": {
+    "mtime": 1779743522.4754546,
+    "ast_hash": "f912427953fd226af31b74f7dc975a4b",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase49b_dim_tiempo_id_campana_fix.sql": {
+    "mtime": 1779797227.557853,
+    "ast_hash": "fe416adf5efa23b4e1f338e193728a82",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase50_dim_condicion_organico_convencional.sql": {
+    "mtime": 1779797904.7922528,
+    "ast_hash": "d906cedf60530b7af6a74a1895d2de44",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase51_seed_variedad_sin_variedad.sql": {
+    "mtime": 1779995345.30213,
+    "ast_hash": "653b7245a8d105f73a985a31a36e96ea",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase51a_auditoria_pre_cosecha_historico.sql": {
+    "mtime": 1779802751.2745895,
+    "ast_hash": "6a5c7ccfb4e7be1fa71604fe617e9d10",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase51b_poblar_bridge_condicion_cosecha.sql": {
+    "mtime": 1779803187.3152354,
+    "ast_hash": "4b2cf469fce8caa3e3de9c99ee9ae858",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase52a_conteo_fenologico_id_campana_backfill.sql": {
+    "mtime": 1779804425.313722,
+    "ast_hash": "9395593cccaf9e5d037cca9883a459e6",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase52b_poblar_bridge_geo_campana_conteo_fenologico.sql": {
+    "mtime": 1779815321.5847824,
+    "ast_hash": "e971aba1cbacdc8e50e78803eaaaf42d",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase53a_auditoria_dim_geografia_scd2.sql": {
+    "mtime": 1779820470.4941385,
+    "ast_hash": "abcf4255ba07112fccd41e1af2c91e7a",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase53b_fix_dim_geografia_scd2_cerrar_duplicados.sql": {
+    "mtime": 1779818894.781319,
+    "ast_hash": "1f5c39eb984a148eb41182dff9550f35",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase54_backfill_fundo_fact_cosecha_sap.sql": {
+    "mtime": 1779821381.5996635,
+    "ast_hash": "f0506d70b8264a290e7fc52b541af035",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase55_diagnostico_estado_carga_cosecha_sap.sql": {
+    "mtime": 1779820537.1469939,
+    "ast_hash": "20cd7ed754959c290c82d8ba03495d5b",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase56a_evaluacion_pesos_id_campana_backfill.sql": {
+    "mtime": 1779821881.898785,
+    "ast_hash": "5ca3e3d1383f71a109b6810fccb776ca",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase56b_poblar_bridge_geo_campana_evaluacion_pesos.sql": {
+    "mtime": 1779821916.5070965,
+    "ast_hash": "45cd8311c8d046b30f12436d5da1957b",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase57a_censo_plantas_id_campana_backfill.sql": {
+    "mtime": 1779821941.7185564,
+    "ast_hash": "53e1dd3ff3dec2cb045b50b829164128",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase57b_poblar_bridge_geo_campana_censo_plantas.sql": {
+    "mtime": 1779821975.8712268,
+    "ast_hash": "8cf6eabc3feb7b605a4ca559f0efb6e6",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase58a_floracion_id_campana_backfill.sql": {
+    "mtime": 1779821999.3707936,
+    "ast_hash": "32c8048fbef2205f2281c0679c44e51c",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase58b_poblar_bridge_geo_campana_floracion.sql": {
+    "mtime": 1779822033.369548,
+    "ast_hash": "7fbfe40a18e0b3c1e938e3151c9497e0",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase59a_fisiologia_id_campana_backfill.sql": {
+    "mtime": 1779822057.9078994,
+    "ast_hash": "9232b4f3c85ddc067af6cdf5a3b26aa7",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase59b_poblar_bridge_geo_campana_fisiologia.sql": {
+    "mtime": 1779822091.0047083,
+    "ast_hash": "fa67dfd4dee6dd7a1ca7f0774869efa6",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase59c_poblar_bridge_geo_campana_tasa_crecimiento.sql": {
+    "mtime": 1780498562.1410334,
+    "ast_hash": "f5893d8c8e4d87e38f5a967a6c756eb4",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase60_add_missing_columns.sql": {
+    "mtime": 1779830312.1221468,
+    "ast_hash": "0e4b527b57e0d88fa8a36a217aa2095d",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase61_update_grain_cosecha_sap.sql": {
+    "mtime": 1779888291.1229632,
+    "ast_hash": "8ccd0385d6adbf640635093534a6d9d2",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase62_rediseno_mart_clima.sql": {
+    "mtime": 1779920664.6759417,
+    "ast_hash": "e8c2c4b6482cfe9404c8366c6f03d222",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase63_reintentar_cuarentena.sql": {
+    "mtime": 1779975172.7776673,
+    "ast_hash": "6b2da152684f8df1a27f96f4ddfd52db",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase64_columnas_bronce_faltantes.sql": {
+    "mtime": 1779976042.474471,
+    "ast_hash": "af442e268d0b1f267d8c4cd5c8c9f59f",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase65_fact_ciclos_fenologicos_color_cinta.sql": {
+    "mtime": 1780499867.1515982,
+    "ast_hash": "e479f07100adb0c000bf80463fc085c5",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase66_ciclos_fenologicos_ids_dimensionales.sql": {
+    "mtime": 1780502973.188587,
+    "ast_hash": "e3c7a0d4b89c1e437298d0ecda79eb6e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase67_purgar_columnas_ciclos_fenologicos.sql": {
+    "mtime": 1780511678.091705,
+    "ast_hash": "e68dea3abceb5548b906433af651224a",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\test.py": {
+    "mtime": 1779999511.659084,
+    "ast_hash": "84f86b55862bf4a96011cdc168fae92c",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\test_bottleneck.py": {
+    "mtime": 1779996602.0784588,
+    "ast_hash": "19060d1b9e37ff4cb5a6fbf722000d6f",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\test_homologador_batch.py": {
+    "mtime": 1779996129.8868842,
+    "ast_hash": "8a73847b0e0f4f6751d96932244e0096",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\test_sp_campana.py": {
+    "mtime": 1779995456.332638,
+    "ast_hash": "46adc2ce7bb5b10e9cd16ca69968c749",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tests\\test_base_processor_puro.py": {
+    "mtime": 1779218973.6401107,
+    "ast_hash": "408630188e6046e73bc8b42585cc1131",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tests\\test_cargador_cosecha_kg.py": {
+    "mtime": 1779716881.6493185,
+    "ast_hash": "5148c8d57009e0ee393898bd76e638fc",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tests\\test_censo_linea_cama.py": {
+    "mtime": 1779717243.6440897,
+    "ast_hash": "b4c89664cf74f54039e935afb53f5620",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tests\\test_ciclo_poda_punto.py": {
+    "mtime": 1779717779.587186,
+    "ast_hash": "14bdfd31235d3d5bdaab1fe47a14a3b6",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tests\\test_circuit_breaker.py": {
+    "mtime": 1779884243.6588843,
+    "ast_hash": "f4997e7bf83e3c3097dff2b9e2503dca",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tests\\test_contrato_id_origen.py": {
+    "mtime": 1779992794.6417518,
+    "ast_hash": "65ef32de6db731852c5ce65fe05174c9",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tests\\test_cuarentena_estricta.py": {
+    "mtime": 1779667368.7754407,
+    "ast_hash": "f6e5a93c71d387086171c21294496cc1",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tests\\test_dedup_vectorizado.py": {
+    "mtime": 1779666017.8662379,
+    "ast_hash": "8b53fd027861b945680453a8a3b2c961",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tests\\test_tiebreaker_conteo_fenologico.py": {
+    "mtime": 1779218973.6416154,
+    "ast_hash": "649a766ec543617f51f3d93bec4f4768",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tests\\test_utils_capa1.py": {
+    "mtime": 1779666041.7559686,
+    "ast_hash": "6b222cfb794275db5929c4bc9660e668",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tools\\audit_ev.py": {
+    "mtime": 1779813148.389472,
+    "ast_hash": "5a67702a4531135d11e739547e187d64",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tools\\audit_ev2.py": {
+    "mtime": 1779813207.009994,
+    "ast_hash": "b2120a067d6ca34f40240e17c3205de3",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tools\\audit_ev3.py": {
+    "mtime": 1779814266.54565,
+    "ast_hash": "83e43f9fb1baa0fdf82d1f2ed01a537c",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tools\\audit_gold_all.py": {
+    "mtime": 1779804429.5094614,
+    "ast_hash": "828ea80fcaabf8d96ab27cd9a28ff3bc",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tools\\audit_gold_json.py": {
+    "mtime": 1779802303.744244,
+    "ast_hash": "4c5d2c4f1c7a0f4b459ed6c10ed24d38",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tools\\auditar_campanas.py": {
+    "mtime": 1777414450.826683,
+    "ast_hash": "5cccc17f71367f956f2dc67790517108",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tools\\auditor_columnas_conteo.py": {
+    "mtime": 1776369311.7744079,
+    "ast_hash": "ac98cb2d54fe01e2d3c155c4d41d72bf",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tools\\auditoria_detalle.py": {
+    "mtime": 1779974119.2819443,
+    "ast_hash": "4bdc5e19e141cc294526a4ed0ad0eca4",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tools\\auditoria_flujo_bronce_silver_gold.py": {
+    "mtime": 1779973998.6874053,
+    "ast_hash": "37f9bbc553a442e9e39b22829d85cbfb",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tools\\check_nulls.py": {
+    "mtime": 1779798845.1774611,
+    "ast_hash": "b1bbb38c47be1ab8e4fdec31310f6536",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tools\\check_nulls_gold.py": {
+    "mtime": 1779801985.069169,
+    "ast_hash": "43f9c60201d4d2c4de1c4467dfeeed57",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tools\\fix_evaluacion_vegetativa.py": {
+    "mtime": 1780517530.200192,
+    "ast_hash": "af4399b2b2f30810b1fcab88e7d92619",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tools\\generate_docs.py": {
+    "mtime": 1779288647.212265,
+    "ast_hash": "e78746a242374ee13e126d3ef8102755",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tools\\infer_carpeta.py": {
+    "mtime": 1779804918.361957,
+    "ast_hash": "b9d6d0ab851285f4f1df1505ddda2335",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tools\\inventario_db_completo.py": {
+    "mtime": 1776369424.4521654,
+    "ast_hash": "e4efa91b4c8cae21a39a4ce47d63f0d9",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tools\\liberar_cuarentena.py": {
+    "mtime": 1779892726.8408654,
+    "ast_hash": "2e2f4fc3b1c69da11ad4f88e1d2898e7",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tools\\list_fact_tables.py": {
+    "mtime": 1779803760.0280285,
+    "ast_hash": "e5e58346189294930c09cd09de40a51a",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tools\\list_gold_tables.py": {
+    "mtime": 1779804401.8068461,
+    "ast_hash": "2ca0536512fe24c3520412b4b6982716",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tools\\metrics_gold.py": {
+    "mtime": 1779803119.7221751,
+    "ast_hash": "ee19811b900a7737417fff888fed65f7",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tools\\migration_runner.py": {
+    "mtime": 1776885185.666585,
+    "ast_hash": "81c030319ca29bfab95d5876ec1188f8",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tools\\refresh_gold_only.py": {
+    "mtime": 1779804520.9777665,
+    "ast_hash": "d8dbcb0228d97baf43a51b271192c4f3",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tools\\reproceso_historico.py": {
+    "mtime": 1779892788.96294,
+    "ast_hash": "5187e49bf725dcc6cc847c79e09573d2",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tools\\reproceso_post_fixes_20260525.py": {
+    "mtime": 1779718169.6672769,
+    "ast_hash": "c63b4626d9291bbf9c87504a24703885",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tools\\restaurar_todos_los_excels.py": {
+    "mtime": 1779831437.978037,
+    "ast_hash": "f491e92a3047328542e65d2fff8367e2",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tools\\run_pipeline_and_audit.py": {
+    "mtime": 1779799098.550067,
+    "ast_hash": "6ca24696d3fc98f44c255dfe30dcf1d2",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tools\\search_ddl.py": {
+    "mtime": 1779827251.3262568,
+    "ast_hash": "7caca57e0721eae45c369f64f72c8886",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tools\\test_campana_fisiologia.py": {
+    "mtime": 1777405234.6315567,
+    "ast_hash": "c9f912679b65c17fc88c7240bd65fb06",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\tools\\test_resolver_campana_fase48.py": {
+    "mtime": 1779741264.2514846,
+    "ast_hash": "4797e577f60c7e5f8c62cd3e7f506455",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\trace_queries.py": {
+    "mtime": 1779996715.232034,
+    "ast_hash": "ee7f693511291248a10d889436e69331",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\utils\\__init__.py": {
+    "mtime": 1773940819.2749743,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\utils\\circuit_breaker.py": {
+    "mtime": 1779799931.7316518,
+    "ast_hash": "28469a50ceb06d8efd80a6e3b5e953db",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\utils\\contexto_transaccional.py": {
+    "mtime": 1776084891.477483,
+    "ast_hash": "1556e501f02dbe905f237c94aba63db5",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\utils\\dni.py": {
+    "mtime": 1779819136.4035006,
+    "ast_hash": "d4fea642b224fe88a55490729eb31a93",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\utils\\ejecucion.py": {
+    "mtime": 1779999917.7466426,
+    "ast_hash": "e5885146964465f945b555e24fb53c82",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\utils\\errores.py": {
+    "mtime": 1778611109.3047135,
+    "ast_hash": "a9a98d1bd33000a514c0ca50fb46153a",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\utils\\fechas.py": {
+    "mtime": 1779970630.8119357,
+    "ast_hash": "2ce0e68224de3abfa8f20d6b7a744424",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\utils\\metricas.py": {
+    "mtime": 1779819136.547684,
+    "ast_hash": "6313e8e9d1f7d4b7700935e0306f98f7",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\utils\\sql_lotes.py": {
+    "mtime": 1780518426.113421,
+    "ast_hash": "dc6be5b23b3c65c7c2565a2acfdabb28",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\utils\\texto.py": {
+    "mtime": 1779819136.6941414,
+    "ast_hash": "8f864456c09cb9ba366ee56dd514e5f1",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\utils\\tipos.py": {
+    "mtime": 1779819136.7505944,
+    "ast_hash": "45306d2a6902952cda043b1453b8060c",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\utils\\verificacion_esquema.py": {
+    "mtime": 1779824522.2571394,
+    "ast_hash": "adc89e7bc0adda3bf74acbf94674fc3e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL_TABLE_CATALOG.json": {
+    "mtime": 1780516431.3469117,
+    "ast_hash": "6fe63240f91f2a75515ce858dafe20b3",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\__init__.py": {
+    "mtime": 1773663987.7867932,
+    "ast_hash": "02c1d8b0ff0741c28242c224da61287b",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\app.py": {
+    "mtime": 1779219724.9865503,
+    "ast_hash": "5e2e638e62cc460a65def1b6f09400a9",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\paginas\\__init__.py": {
+    "mtime": 1773671780.231178,
+    "ast_hash": "66be34ee5015b5b8e38c8ce7e23ba6d5",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\paginas\\auditoria.py": {
+    "mtime": 1779219724.994544,
+    "ast_hash": "e7d0b87e3f503ca6780b4a222ab7bae1",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\paginas\\catalogos\\__init__.py": {
+    "mtime": 1773671782.2632723,
+    "ast_hash": "4ea3355f4b7b66845a2287347a87c373",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\paginas\\catalogos\\geografia.py": {
+    "mtime": 1776200700.0927863,
+    "ast_hash": "47ba33ea4e8898e590094754af7248f8",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\paginas\\catalogos\\personal.py": {
+    "mtime": 1776200700.0959404,
+    "ast_hash": "cc4fc246262c4c5110ac5124b35355b4",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\paginas\\catalogos\\variedades.py": {
+    "mtime": 1778605920.1270864,
+    "ast_hash": "4076d22a8438a8aa4ae92ecf2cc5d65e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\paginas\\configuracion\\__init__.py": {
+    "mtime": 1773671784.2884398,
+    "ast_hash": "49531e116c2873d65b7418c66a59edd1",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\paginas\\configuracion\\consola_admin.py": {
+    "mtime": 1779819136.8600912,
+    "ast_hash": "a83f830b6488960bdbeddb93fb00f1e1",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\paginas\\configuracion\\parametros_pipeline.py": {
+    "mtime": 1776370888.134598,
+    "ast_hash": "8665a0b9eb6506b26c641e32a62e4259",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\paginas\\configuracion\\reglas_validacion.py": {
+    "mtime": 1776289448.192555,
+    "ast_hash": "f41aa226e536b43a03d707e57e04dd87",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\paginas\\cuarentena.py": {
+    "mtime": 1779219725.0019505,
+    "ast_hash": "142706faa4d172c93adac1a208735ee1",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\paginas\\homologacion.py": {
+    "mtime": 1779219725.0088108,
+    "ast_hash": "1ab39aaa966bb01d587ab4cae31ba45a",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\paginas\\inicio.py": {
+    "mtime": 1779819136.8699987,
+    "ast_hash": "f2b77add9d85f055f83c571c3fb70912",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\paginas\\proyecciones.py": {
+    "mtime": 1778595905.7986042,
+    "ast_hash": "b55625b7acdac2a3e872adddaa53fe58",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\paginas\\sistema.py": {
+    "mtime": 1779819136.881215,
+    "ast_hash": "1e8cf586735ace45557dfb3f92e0a5a8",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\analizar_calculo_headers.py": {
+    "mtime": 1778162695.4863424,
+    "ast_hash": "ad7c1273161a52715f19c15a897c3409",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\analizar_excel_calculo.py": {
+    "mtime": 1778162658.980906,
+    "ast_hash": "493a80f8afe910d7dfc4589ef10e97aa",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\apply_indexes.py": {
+    "mtime": 1778170432.773097,
+    "ast_hash": "ccbebe18522aa0e023e7657e13f1df28",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\audit_w16.py": {
+    "mtime": 1778518307.414664,
+    "ast_hash": "a1052617e7d19849d04be054216849cc",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\buscar_filas_kg.py": {
+    "mtime": 1778162780.703173,
+    "ast_hash": "e42b93b9b548d43e9960f0ae3964bdb2",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\check_catalogs.py": {
+    "mtime": 1778170724.5906782,
+    "ast_hash": "e9af6150f7dd0e593950f64a1dd1b418",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\check_cols.py": {
+    "mtime": 1778170707.9257398,
+    "ast_hash": "7dc0368d8d5f26625d3375ad15ad1304",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\check_data_w25.py": {
+    "mtime": 1778516370.6116827,
+    "ast_hash": "1199fa22a3dfc49c262ed7190b2af615",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\check_dim_tiempo.py": {
+    "mtime": 1778517672.562662,
+    "ast_hash": "525e4d73140520ee6f5516e1e0f1c0a1",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\check_etl_indexes.py": {
+    "mtime": 1778170876.3102818,
+    "ast_hash": "18a628eb5358fcad24b522454201c2fc",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\check_granular_db.py": {
+    "mtime": 1778615960.292647,
+    "ast_hash": "819308df1a5725c2128ef1f733a21f44",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\check_identity.py": {
+    "mtime": 1778160188.9463313,
+    "ast_hash": "2e07851a3f6ed1301573c31f46179e6a",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\check_recent_conteos.py": {
+    "mtime": 1778516391.398576,
+    "ast_hash": "bb69a9d8f7f2949c2b95af1684c8f145",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\check_schema.py": {
+    "mtime": 1778170672.4629657,
+    "ast_hash": "349371f1ab8f71c56a25d96e20e92f88",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\check_units.py": {
+    "mtime": 1778170144.2217727,
+    "ast_hash": "0e3e6d8bcc6fb3ddce714e30d4524609",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\db_indexes.py": {
+    "mtime": 1778170118.5638125,
+    "ast_hash": "0b7cb074d4b3e91be00846fe36e4bd40",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\db_stats.py": {
+    "mtime": 1778170075.6734025,
+    "ast_hash": "1f433d724ca81b6b04701ca67cb0e1d9",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\debug_motor.py": {
+    "mtime": 1778617844.237728,
+    "ast_hash": "f562a03018f5f7cbcdeda8cff7db1659",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\deep_clean_future.py": {
+    "mtime": 1778517277.442817,
+    "ast_hash": "5b0cdf921ab777581093ea2c54120cc0",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\delete_future_pesos.py": {
+    "mtime": 1778517071.9625587,
+    "ast_hash": "e0cf8236c60f1fca575b3c072b1d1e26",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\diagnose_sql.py": {
+    "mtime": 1778170691.5088117,
+    "ast_hash": "7c99a8fe71d94459bbc8345820804c6a",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\diagnostico_kilos_bajos.py": {
+    "mtime": 1778163800.3475792,
+    "ast_hash": "3c00acbbb45eb2dd8f89ee46b2f76930",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\final_audit_future.py": {
+    "mtime": 1778517086.6947117,
+    "ast_hash": "77502ee04e853e4ee0871c18f19d5c2e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\find_peak_load.py": {
+    "mtime": 1778617535.7388952,
+    "ast_hash": "4cd726770744e7c7ec39df3120ccb388",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\identificar_faltantes.py": {
+    "mtime": 1778618600.0156555,
+    "ast_hash": "5d62323ee588418aefe173a14d111c2f",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\identify_future_pesos.py": {
+    "mtime": 1778516899.324183,
+    "ast_hash": "b129f1d23ef45bb6a12b2e369bbfd477",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\inspect_june_data.py": {
+    "mtime": 1778516762.061061,
+    "ast_hash": "7378ab1c0e49725d7265d721184e5a7d",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\inspect_peladas_future.py": {
+    "mtime": 1778517101.846742,
+    "ast_hash": "e17f23b898c77c0eac0ed73504a7467d",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\leer_datos_calculo.py": {
+    "mtime": 1778162739.4589765,
+    "ast_hash": "c74f92e7512e12ee67be306f0baf6dd8",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\leer_excel_proyecciones.py": {
+    "mtime": 1778162625.0164535,
+    "ast_hash": "8cf63b263be668224835dff3ae677a38",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\nemesis_population.py": {
+    "mtime": 1778504154.5649307,
+    "ast_hash": "c7403b01f49e3d1204f3b7c5417f9fc2",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\poblar_modulos_especificos.py": {
+    "mtime": 1778164514.8480096,
+    "ast_hash": "cd67c146d6e92050109da8b4d01472fd",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\poblar_sistema_proyecciones.py": {
+    "mtime": 1778160220.8626344,
+    "ast_hash": "c3081d56fde9233a078e17596340bef2",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\probar_sixweek_db.py": {
+    "mtime": 1778617887.184436,
+    "ast_hash": "41707056b05327b2e8ef9cc02fb774c9",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\run_migration_fase35.py": {
+    "mtime": 1778171165.835017,
+    "ast_hash": "0b888aadae83d6b1fadc6ca786c60da3",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\scan_catalogs.py": {
+    "mtime": 1778159881.3063974,
+    "ast_hash": "f79c36ce14185fab4e315e0cbd116baf",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\search_similar_week.py": {
+    "mtime": 1778617587.1888578,
+    "ast_hash": "bc77e3289ee8efc7d2c06263b0f2b600",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\simular_excel.py": {
+    "mtime": 1778614559.231089,
+    "ast_hash": "d18517ad7e413669ca3fadfb6d2c42e7",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\super_poblamiento.py": {
+    "mtime": 1778164265.2624776,
+    "ast_hash": "929e04e9d1a83153b68add318002dd4a",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\test_etl_optimizations.py": {
+    "mtime": 1778171294.37431,
+    "ast_hash": "7626db8dd8b2d1084d6ec525b380ff73",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\test_event_bus.py": {
+    "mtime": 1778506622.079049,
+    "ast_hash": "f8b97934fda463998fc2e39147961dbb",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\test_performance.py": {
+    "mtime": 1778515241.65104,
+    "ast_hash": "7d418c3b0cf66273a35e1e558f0617e9",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\test_proyeccion_w11.py": {
+    "mtime": 1778535799.2586992,
+    "ast_hash": "b8fa4cdc0bbf453d5a90ee818e5c6197",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\test_sql_directo.py": {
+    "mtime": 1778170754.1300535,
+    "ast_hash": "4af0527ecb3779ce811febd7e72bacf7",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\test_weekly_sql.py": {
+    "mtime": 1778517702.0893602,
+    "ast_hash": "aac76df618693ac095fa1fd79dbc662b",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\verificar_fix_lookup.py": {
+    "mtime": 1778618945.5032382,
+    "ast_hash": "701211695f7e439f2074b40345ff41e7",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\verificar_poblamiento.py": {
+    "mtime": 1778160263.7090173,
+    "ast_hash": "c32328317527ad3842a96a44520ca153",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch_explore.py": {
+    "mtime": 1777989406.6850631,
+    "ast_hash": "cdca0f6972b07ef4198eeea7d5296386",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch_fase_234.py": {
+    "mtime": 1778515236.8670282,
+    "ast_hash": "4d70b662068ec44bcc56ac1c4ff1bb8a",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\utils\\__init__.py": {
+    "mtime": 1774529164.5527384,
+    "ast_hash": "05131c9a1b07e042e2bea436176362b4",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\utils\\api_client.py": {
+    "mtime": 1779819136.8857267,
+    "ast_hash": "24b246c8601a5ef7326a9bb20052051b",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\utils\\auth.py": {
+    "mtime": 1779819136.9313216,
+    "ast_hash": "93476ac4d22538fb4016c04256d7d513",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\utils\\catalogos.py": {
+    "mtime": 1777495367.5106926,
+    "ast_hash": "68d7f4935347b5e4ae6420d4e50523d4",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\utils\\componentes.py": {
+    "mtime": 1779219725.0367737,
+    "ast_hash": "aee65fdae1409565bdfc0ccf468d7da6",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\utils\\constantes.py": {
+    "mtime": 1779219725.040749,
+    "ast_hash": "94e06c5bf57034c8ac87d039de3eb29f",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\utils\\db.py": {
+    "mtime": 1779819136.9439073,
+    "ast_hash": "518d263b3b1478037fff9d0a4f80d502",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\utils\\formato.py": {
+    "mtime": 1779219725.0554068,
+    "ast_hash": "c42a4bba18cd4a4bf128f3fcfd39d643",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\utils\\motor_proyecciones.py": {
+    "mtime": 1779218973.6578927,
+    "ast_hash": "c043d299291576727a7193fdc676221b",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\utils\\sidebar_badges.py": {
+    "mtime": 1779819137.186099,
+    "ast_hash": "f231ed36093af2a73d851c809e53cb19",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_start.py": {
+    "mtime": 1780402487.370873,
+    "ast_hash": "c80c367e7a93f06fcabdbba5adcbed30",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\api\\__init__.py": {
+    "mtime": 1774986635.8335044,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\api\\rutas_alertas.py": {
+    "mtime": 1780405438.258893,
+    "ast_hash": "b24ab3b153c39ea2886dc62bd8eff208",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\api\\rutas_auditoria.py": {
+    "mtime": 1780403695.261567,
+    "ast_hash": "3e90859d75f6fd16800c7afdca0eaadb",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\api\\rutas_auth.py": {
+    "mtime": 1776694333.1682758,
+    "ast_hash": "e2ee69d9c3ac7a2ca2c40b3dbb58a935",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\api\\rutas_catalogos.py": {
+    "mtime": 1778518070.752573,
+    "ast_hash": "004b2ec391f25661757a4f0be4163d42",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\api\\rutas_config.py": {
+    "mtime": 1778602614.0409653,
+    "ast_hash": "b0d60da1295de178fba9a4dba44fd001",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\api\\rutas_cuarentena.py": {
+    "mtime": 1780331338.4304683,
+    "ast_hash": "902e19f120be4ef52f978d5e3ea7e3d3",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\api\\rutas_etl.py": {
+    "mtime": 1780598697.3652492,
+    "ast_hash": "cad28b44b86df18a83c35925d1d2f8a2",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\api\\rutas_health.py": {
+    "mtime": 1779219725.0977125,
+    "ast_hash": "7c9fddb0cc99a892f88dbdf27fecdae9",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\api\\rutas_reinyeccion.py": {
+    "mtime": 1778533645.5648725,
+    "ast_hash": "b0451985609b202ed11337a285a9a46f",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\main.py": {
+    "mtime": 1780597571.9999728,
+    "ast_hash": "f56a32c281ff35fca25d859fc6795aba",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\nucleo\\__init__.py": {
+    "mtime": 1774986635.8225625,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\nucleo\\api_response.py": {
+    "mtime": 1776344178.794762,
+    "ast_hash": "6200b94a5e913d09dd768744af7669d6",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\nucleo\\auditoria.py": {
+    "mtime": 1775081685.8040724,
+    "ast_hash": "fe934fcf6919f6a4e52d63f780bc5a66",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\nucleo\\auth.py": {
+    "mtime": 1779219725.1155672,
+    "ast_hash": "6615d60a12e12b58d85cd2e2ec58a298",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\nucleo\\cache.py": {
+    "mtime": 1780341953.053252,
+    "ast_hash": "0acbaf234af04e03bd2d0002795b211f",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\nucleo\\conexion.py": {
+    "mtime": 1780328451.9250574,
+    "ast_hash": "e202d68295937b4495d1a6b891896686",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\nucleo\\etl_argumentos.py": {
+    "mtime": 1775576484.766554,
+    "ast_hash": "d9ab1026a6c44c6a8b95d29ce81789da",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\nucleo\\etl_catalogo.py": {
+    "mtime": 1779819143.993993,
+    "ast_hash": "6eb936ce83036e9d6492bd5ff6ec8bf4",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\nucleo\\excepciones.py": {
+    "mtime": 1780593671.279354,
+    "ast_hash": "ed71f5d31770bc15446be7d79c85c3f8",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\nucleo\\http_utils.py": {
+    "mtime": 1775658524.4911869,
+    "ast_hash": "e3f6cd57c2ec005344fa4e826cd39fe5",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\nucleo\\logging.py": {
+    "mtime": 1780593296.2981114,
+    "ast_hash": "aa28da7fb89cd592e91aa4ac086b90ad",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\nucleo\\middleware.py": {
+    "mtime": 1775081586.6012468,
+    "ast_hash": "ec2b07e2fb3a3c9f40187d24af73a988",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\nucleo\\rate_limit.py": {
+    "mtime": 1780598734.3318946,
+    "ast_hash": "22717182dc40b64200d6eccbcf528186",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\nucleo\\settings.py": {
+    "mtime": 1779819144.1809514,
+    "ast_hash": "1fbed51bf9cd2a6a81b4eefaf82e2aef",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\repositorios\\__init__.py": {
+    "mtime": 1775081594.2199683,
+    "ast_hash": "f40a3470d72303e17938ac5c22e219f8",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\repositorios\\repo_alertas.py": {
+    "mtime": 1780405358.6981504,
+    "ast_hash": "8dd6732f00ed230575bd106ed91448a7",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\repositorios\\repo_auditoria.py": {
+    "mtime": 1780434353.042605,
+    "ast_hash": "f5400ae9d686cc5c872f5f5539588dec",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\repositorios\\repo_calidad.py": {
+    "mtime": 1777489802.7296057,
+    "ast_hash": "214eeb4aae738823359d5bdc6a4b8695",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\repositorios\\repo_catalogos.py": {
+    "mtime": 1778590683.323507,
+    "ast_hash": "9e93d062f3799e53cdb1ba75392d0732",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\repositorios\\repo_comandos.py": {
+    "mtime": 1776692595.9053051,
+    "ast_hash": "442985d3717133adba65f3d97d73e704",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\repositorios\\repo_config.py": {
+    "mtime": 1776692677.509903,
+    "ast_hash": "4ca109371b8e546541bee5533eb9564b",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\repositorios\\repo_corridas.py": {
+    "mtime": 1779219725.139988,
+    "ast_hash": "ca3e8de571341fef398f983354c4a8f2",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\repositorios\\repo_cuarentena.py": {
+    "mtime": 1780341988.094037,
+    "ast_hash": "31494be1636799968c3c4e31d53763b9",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\repositorios\\repo_locks.py": {
+    "mtime": 1776692586.3865182,
+    "ast_hash": "49c43a2412b729443ecccac624fa664b",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\repositorios\\repo_log_acceso.py": {
+    "mtime": 1775478212.427438,
+    "ast_hash": "8072479b549948a4dc103921ef12b2b3",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\repositorios\\repo_reinyeccion.py": {
+    "mtime": 1779892740.0048432,
+    "ast_hash": "19099dc02e3366898254e283dbed8529",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\repositorios\\repo_usuarios.py": {
+    "mtime": 1775478196.944384,
+    "ast_hash": "9c1f913f97749ff316650f1417cfb3b6",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\runner\\__init__.py": {
+    "mtime": 1775480769.6818604,
+    "ast_hash": "ca3dca0abffaefe30fe4ebf1fc54b3cd",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\runner\\ejecutor.py": {
+    "mtime": 1779219725.1552641,
+    "ast_hash": "e3f170ae39556673d065daccad10aebf",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\runner\\runner.py": {
+    "mtime": 1779819144.2788198,
+    "ast_hash": "3f3074073757127ba7b3bd4db36339c0",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\schemas\\__init__.py": {
+    "mtime": 1774986635.8225625,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\schemas\\alertas\\__init__.py": {
+    "mtime": 1780405397.2915177,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\schemas\\alertas\\peticion.py": {
+    "mtime": 1780405384.9227483,
+    "ast_hash": "939f4883531ce789ccac88de02a8b7ce",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\schemas\\alertas\\respuesta.py": {
+    "mtime": 1780405391.5065122,
+    "ast_hash": "cfabb70fac4509a5d6d26cef4b9d1771",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\schemas\\auditoria\\__init__.py": {
+    "mtime": 1774986635.8279464,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\schemas\\auditoria\\respuesta.py": {
+    "mtime": 1780403603.10631,
+    "ast_hash": "d38e6c42e9ed0814e340737c98846392",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\schemas\\auth\\__init__.py": {
+    "mtime": 1775478265.1099403,
+    "ast_hash": "77f17b229425dcc11390c806f7a79b43",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\schemas\\auth\\peticion.py": {
+    "mtime": 1775478245.719786,
+    "ast_hash": "2e05b3ad0951cfd1043aeebd6b3bed9a",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\schemas\\auth\\respuesta.py": {
+    "mtime": 1775685052.4592943,
+    "ast_hash": "a20bee6746871ae8ae20fa38dc4d33ff",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\schemas\\catalogos\\__init__.py": {
+    "mtime": 1774986635.8279464,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\schemas\\catalogos\\peticion.py": {
+    "mtime": 1777482412.5656483,
+    "ast_hash": "1885051be72485edd853a84f010a18bc",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\schemas\\catalogos\\respuesta.py": {
+    "mtime": 1777482996.6981611,
+    "ast_hash": "75250211bfe6b853a971a411151d73b1",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\schemas\\config\\__init__.py": {
+    "mtime": 1776266664.481,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\schemas\\config\\peticion.py": {
+    "mtime": 1776692871.141351,
+    "ast_hash": "4671051449c021f9aa9f5b19e8becef2",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\schemas\\config\\respuesta.py": {
+    "mtime": 1776266670.5167007,
+    "ast_hash": "b504823e5be2ae44e24e781ba77793a0",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\schemas\\cuarentena\\__init__.py": {
+    "mtime": 1774986635.8279464,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\schemas\\cuarentena\\peticion.py": {
+    "mtime": 1775684863.991717,
+    "ast_hash": "014678ad9284cd32b3b2f0c215a39ed5",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\schemas\\cuarentena\\respuesta.py": {
+    "mtime": 1779219725.1631372,
+    "ast_hash": "3da6b634a6b7e22afd03561816a7df5e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\schemas\\etl\\__init__.py": {
+    "mtime": 1774986635.8279464,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\schemas\\etl\\peticion.py": {
+    "mtime": 1779219725.1699283,
+    "ast_hash": "046899ba9a010174f8ad4179a590604b",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\schemas\\etl\\respuesta.py": {
+    "mtime": 1780334284.0695968,
+    "ast_hash": "5ed87c4f775eed13d81b861231277e4e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\schemas\\reinyeccion\\__init__.py": {
+    "mtime": 1776287252.131054,
+    "ast_hash": "5439110b372844d54e7442b8b11ca030",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\schemas\\reinyeccion\\respuesta.py": {
+    "mtime": 1778533640.54893,
+    "ast_hash": "e1bab33b03ab4eedf9ad40534ded94ac",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\scratch\\sql_alertas.sql": {
+    "mtime": 1780405340.933671,
+    "ast_hash": "ab4ef8a2efc1a2b8f3ef52b821b8da2c",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\scratch\\sql_indices_auditoria.sql": {
+    "mtime": 1780438662.9431522,
+    "ast_hash": "7e7d4987bfea2c9b1a33a0931bffeb3e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\scratch\\sql_indices_cuarentena.sql": {
+    "mtime": 1780342033.054986,
+    "ast_hash": "3d09b7d07de9107048e2018c53b0f5b8",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\servicios\\__init__.py": {
+    "mtime": 1774986635.8279464,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\servicios\\event_bus.py": {
+    "mtime": 1778517950.3935525,
+    "ast_hash": "727156e1043904f5663ce13abbffc6a2",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\servicios\\listeners.py": {
+    "mtime": 1778533674.767797,
+    "ast_hash": "d3110edde5cd6fa0c4d83444b3bcbfb8",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\servicios\\servicio_alertas.py": {
+    "mtime": 1780405408.8065891,
+    "ast_hash": "7f373af2d7d4c96f4747ba45e9169a71",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\servicios\\servicio_auditoria.py": {
+    "mtime": 1780403615.5640278,
+    "ast_hash": "5771cc647d43af64a58e4e761bc473f1",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\servicios\\servicio_auth.py": {
+    "mtime": 1778533159.2271073,
+    "ast_hash": "0a4d10adcad3b3e6495e70f99d1fd9a9",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\servicios\\servicio_catalogos.py": {
+    "mtime": 1778517976.8429096,
+    "ast_hash": "3307c1601a7c01a96e2d3cecb0935e03",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\servicios\\servicio_config.py": {
+    "mtime": 1778602603.4930382,
+    "ast_hash": "af4db20d870b8b357ee7941c9eee000f",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\servicios\\servicio_cuarentena.py": {
+    "mtime": 1780342005.999196,
+    "ast_hash": "dea0913d3617bdc351cda7c800793f3e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\servicios\\servicio_etl.py": {
+    "mtime": 1780592652.7345924,
+    "ast_hash": "2f808fd6afcb9413f0d0100d506c6881",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\servicios\\servicio_reinyeccion.py": {
+    "mtime": 1778518028.0631797,
+    "ast_hash": "495162091ead3347b81866f770dcee25",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\comun\\__init__.py": {
+    "mtime": 1779219725.1920414,
+    "ast_hash": "461b43b5653f1f1fe1a44c0b89d750f5",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\comun\\conexion.py": {
+    "mtime": 1780439744.2237217,
+    "ast_hash": "5fb1fd33d37f5be03879ce9924ddcd0c",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\comun\\sql_utils.py": {
+    "mtime": 1779219725.1982005,
+    "ast_hash": "9912c8bb287ffe43fd21e539da40164d",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\comun\\validacion.py": {
+    "mtime": 1779219725.2003405,
+    "ast_hash": "ae0f5816f36209fbad18c95e14734921",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\analisis_duplicados.py": {
+    "mtime": 1780351147.1895497,
+    "ast_hash": "4b3c3d7d8cde58cb91b54ea9e712ef2b",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\aplicar_fase65.py": {
+    "mtime": 1780499878.0090609,
+    "ast_hash": "9f0fa4d2aca98d46ee668cc5cf883cf3",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\audit_tables.py": {
+    "mtime": 1780404612.1468227,
+    "ast_hash": "a1f510b1da010f3ac16835c58816d4dc",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\check_2023_cols.py": {
+    "mtime": 1780402679.2890272,
+    "ast_hash": "0238d762d3897f11235837d6c5962647",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\check_bronce_cols.py": {
+    "mtime": 1780438280.7106507,
+    "ast_hash": "166465e592cff5ca2d1f44ad2c73e490",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\check_bronce_count.py": {
+    "mtime": 1780352388.7332315,
+    "ast_hash": "765b7f913f11beb568b81ef2bb6c66ae",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\check_bronce_status.py": {
+    "mtime": 1780404015.0484188,
+    "ast_hash": "c8e91a305c28023e2c61408dd1027a67",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\check_cinta_schema.py": {
+    "mtime": 1780502468.4312725,
+    "ast_hash": "836a17cb1e91dcc8d12594b941aa1443",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\check_counts.py": {
+    "mtime": 1780403074.456074,
+    "ast_hash": "d55b5c216cf0604ba1a4f0f4ed5b1b41",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\check_excel_columns.py": {
+    "mtime": 1780348896.6037016,
+    "ast_hash": "756d254ba88331c1d7f30a485c377a07",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\check_log.py": {
+    "mtime": 1780346257.3696787,
+    "ast_hash": "d99bdcfb1af5bed0050b4f13d83dc9cf",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\check_quarantine.py": {
+    "mtime": 1780405439.1598847,
+    "ast_hash": "6192d3cc55b5b869b01e488e2d230660",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\check_row_counts.py": {
+    "mtime": 1780352985.1040802,
+    "ast_hash": "b44a4223ba0fd89696655f6f43358b61",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\clear_and_reload.py": {
+    "mtime": 1780428445.1270504,
+    "ast_hash": "ca7e8f05b3c06f324b4d5ce122047266",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\clear_tables.py": {
+    "mtime": 1780352427.9876595,
+    "ast_hash": "e1e8ce53714c214d4aa91d5cab0ab008",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\consolidar_pesos.py": {
+    "mtime": 1780350753.5096674,
+    "ast_hash": "bf53682ed9e9352813b58db9f28dc487",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\consolidar_pesos_openpyxl.py": {
+    "mtime": 1780350908.4223285,
+    "ast_hash": "0c2406b4bc51470b664a29cfc250ff72",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\ejecutar_fase66.py": {
+    "mtime": 1780503149.5248725,
+    "ast_hash": "48c5d9806c1dc9f3106f60b6553b4e48",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\ejecutar_fase67.py": {
+    "mtime": 1780511684.7948065,
+    "ast_hash": "ba8b301e04b519275622a931c4d3eb29",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\get_pesos_cols.py": {
+    "mtime": 1780402797.1201766,
+    "ast_hash": "e8fb3f0c75b325b2bacd3b3ff8faaf47",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\inspeccionar_archivos_bronce.py": {
+    "mtime": 1780499667.2548678,
+    "ast_hash": "d1fda2fcea85a83d59f247a7628818d7",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\inspeccionar_bronce_cols_valores.py": {
+    "mtime": 1780499709.051036,
+    "ast_hash": "9d860f7365293e8d77e9d615a75a8985",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\inspeccionar_ciclos_valores.py": {
+    "mtime": 1780511084.8582492,
+    "ast_hash": "c158a5c28f1e0199727e2f5951e1f0e4",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\inspeccionar_claves_valores_raw.py": {
+    "mtime": 1780499542.712995,
+    "ast_hash": "bcb85e23f7a869eef2cbbf41cbf2d2fe",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\inspeccionar_color_cinta.py": {
+    "mtime": 1780499528.0059729,
+    "ast_hash": "c3b606884773cb3a785db52deae1c1e5",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\inspeccionar_dim_cinta.py": {
+    "mtime": 1780499558.5465164,
+    "ast_hash": "1b55385e6f212cf41b2897a2c5b31714",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\inspeccionar_fenologia.py": {
+    "mtime": 1780499463.2634177,
+    "ast_hash": "155a840b1d4e40420d64f1277d9a78ab",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\inspect_bd_documentation.py": {
+    "mtime": 1780516159.2552452,
+    "ast_hash": "33b687aa9f6e50f4b62f8a4aafb3622c",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\inspect_db.py": {
+    "mtime": 1780516734.6767297,
+    "ast_hash": "75e71cb8c3c2f4820cbd4e4aa339648e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\inspect_indexes.py": {
+    "mtime": 1780425137.739693,
+    "ast_hash": "43fa54184dd9758a9688d450ae7c65f5",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\inspect_tasa_excels.py": {
+    "mtime": 1780491342.580349,
+    "ast_hash": "0043662c74ecbee98918b34c26732993",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\kill_blocks.py": {
+    "mtime": 1780345959.7081597,
+    "ast_hash": "c3173448aa478cbece80cbc111d4ac89",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\leer_columnas_excel.py": {
+    "mtime": 1780514412.7942097,
+    "ast_hash": "7b5a4b26f73d06489a412f45a7dc2ded",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\limpiar_excel_2025.py": {
+    "mtime": 1780353024.416254,
+    "ast_hash": "ded748646f9b77953dd3e62e21df88a0",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\limpiar_floracion.sql": {
+    "mtime": 1780409017.6005025,
+    "ast_hash": "6a9d2d65ee6b2d1187fa691e9e30e0ac",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\migrar_valores_raw_tasa.py": {
+    "mtime": 1780439017.6749644,
+    "ast_hash": "d3dddae88d37a708fa7239a4097fdf30",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\reprocesar_corregidos.py": {
+    "mtime": 1780524994.2905772,
+    "ast_hash": "51ca4b493cf324602dd7a08191472c16",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\reset_and_run_tasa.py": {
+    "mtime": 1780576472.2132664,
+    "ast_hash": "4b47dac082a63e37ad4beefdae066d6e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\reset_bronce.py": {
+    "mtime": 1780506846.936688,
+    "ast_hash": "bca52bff5db4d0134049bc6970b9e50b",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\reset_bronce.sql": {
+    "mtime": 1780407258.8291786,
+    "ast_hash": "7b596a222246a6d691e96602ad106f7a",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\reset_induccion.py": {
+    "mtime": 1780425736.8491187,
+    "ast_hash": "bdf12f1aaa610270deecbcc0c85f5c2d",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\reset_tasa.py": {
+    "mtime": 1780437448.4572055,
+    "ast_hash": "bfca5397ebbed786e9303df9b0b93f63",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\reset_tasa_cargado.py": {
+    "mtime": 1780437604.8612554,
+    "ast_hash": "d684ef39396cf6dda3ce137978c52fff",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\restaurar_tasa_only.py": {
+    "mtime": 1780489742.6834893,
+    "ast_hash": "91fe8d7a54399cdf8c54620fda3409f9",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\run_3_facts.py": {
+    "mtime": 1780409229.1869102,
+    "ast_hash": "61d0cb69324e8d1960969ec5f96d933b",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\run_all_pesos.py": {
+    "mtime": 1780403386.902063,
+    "ast_hash": "1f6897d5255083c4ce75243cefd5fe36",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\run_bridges.py": {
+    "mtime": 1780409849.6212208,
+    "ast_hash": "0cf89efab4a7e0b511899e7bb94c48b8",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\run_cargador.py": {
+    "mtime": 1780409189.2085938,
+    "ast_hash": "015822fd2159c716b8eec651e3eac42d",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\run_full_pesos.py": {
+    "mtime": 1780402100.9146695,
+    "ast_hash": "cfa913eabffa736000d886d65827b3a3",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\run_full_pesos2.py": {
+    "mtime": 1780402170.3292391,
+    "ast_hash": "9a81274bcfcd6deb817074d58d9efcc4",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\run_full_pesos3.py": {
+    "mtime": 1780402470.9075854,
+    "ast_hash": "5cc3047d468b938e2536cfc689570208",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\run_full_pesos4.py": {
+    "mtime": 1780402603.9807816,
+    "ast_hash": "d3e72c8abece91a23293727b433ed8ed",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\run_pesos_only.py": {
+    "mtime": 1780401797.4919136,
+    "ast_hash": "2d73b0a611a971307421e6ceccd457d6",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\run_pipeline.py": {
+    "mtime": 1780343451.845846,
+    "ast_hash": "31dc66baae953ae00699387f6300e8fc",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\run_pipeline_2.py": {
+    "mtime": 1780345781.7421548,
+    "ast_hash": "5a48c875ae0864d111207352009809dc",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\test_carga_fenologia.py": {
+    "mtime": 1780500592.3569355,
+    "ast_hash": "b266df9457bc4fb37454e6c3ce8530aa",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\test_hello.py": {
+    "mtime": 1780345990.06701,
+    "ast_hash": "a97c0affb458a65d8682bf0a48f36e63",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\test_payload.py": {
+    "mtime": 1780518292.5615938,
+    "ast_hash": "3165c1974b8679e6f0c45e37e24d2a84",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\test_pesos.py": {
+    "mtime": 1780341421.6279733,
+    "ast_hash": "2dbbf1e46b38297fbd0bca01ed99c727",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\test_pesos_2.py": {
+    "mtime": 1780341664.6713228,
+    "ast_hash": "6dc94dd9e7f2bfdfa4bc59b1afa76f43",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\test_pesos_3.py": {
+    "mtime": 1780341730.3916671,
+    "ast_hash": "1137bc5885b2f0297de11791ff62fd39",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\test_pesos_4.py": {
+    "mtime": 1780342027.963105,
+    "ast_hash": "2f94c6e28bc2c18c85807a92147e32fb",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\test_pesos_5.py": {
+    "mtime": 1780342260.6062691,
+    "ast_hash": "ba6abe4819ead9b7462782d7afe9832e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\skills-lock.json": {
+    "mtime": 1780320781.8615646,
+    "ast_hash": "b065f3491afcf80008afd7efcedb6af7",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tests\\test_projection_logic.py": {
+    "mtime": 1777925803.924932,
+    "ast_hash": "8547339d4cc22103688fdcc28c68966e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\extraer_geografia_desde_plano.py": {
+    "mtime": 1773953035.8877182,
+    "ast_hash": "32ee71bce3e864e52dda3cd38986c3a3",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\generar_baseline_operativo_20260406.py": {
+    "mtime": 1779819144.580457,
+    "ast_hash": "942a41d5be29ba82e17b5d496ff80b96",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\generar_pdf_directiva_20260408.py": {
+    "mtime": 1775673247.5451336,
+    "ast_hash": "5ceed252baadbba8e8013b59830e806e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\poblar_usuarios.py": {
+    "mtime": 1775496865.9133222,
+    "ast_hash": "4e204ad6cf59e550b9d10861ab40c990",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-data-engineer\\scripts\\data_quality_validator.py": {
+    "mtime": 1773668182.536087,
+    "ast_hash": "c4525151d6e35cfbf61020264f76e23c",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-data-engineer\\scripts\\etl_performance_optimizer.py": {
+    "mtime": 1773668182.5383668,
+    "ast_hash": "6e614acad2f98ac9e6b68dd286c0973a",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-data-engineer\\scripts\\pipeline_orchestrator.py": {
+    "mtime": 1773668182.5404077,
+    "ast_hash": "f611f5bb119854ae1670c1eecb9d97f0",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-data-scientist\\scripts\\experiment_designer.py": {
+    "mtime": 1773668182.5581472,
+    "ast_hash": "f21a984b474704c2be342e0fbb3eb64b",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-data-scientist\\scripts\\feature_engineering_pipeline.py": {
+    "mtime": 1773668182.5581472,
+    "ast_hash": "b24017d96b5e49e92a2ca372d2114e1d",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-data-scientist\\scripts\\model_evaluation_suite.py": {
+    "mtime": 1773668182.5636582,
+    "ast_hash": "4d7a379636be0d4aeebb2d93d260b8cf",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-frontend\\scripts\\bundle_analyzer.py": {
+    "mtime": 1773668182.5953703,
+    "ast_hash": "8628565ca96873c8ba9c46683e6d247c",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-frontend\\scripts\\component_generator.py": {
+    "mtime": 1773668182.5953703,
+    "ast_hash": "3e0de8c69cccafebccd8f699a414b4a1",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-frontend\\scripts\\frontend_scaffolder.py": {
+    "mtime": 1773668182.5953703,
+    "ast_hash": "90f8acab20f743f7250527dc663f904c",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-ml-engineer\\scripts\\ml_monitoring_suite.py": {
+    "mtime": 1773668182.627965,
+    "ast_hash": "8989da90b55204a18abf15a754c26064",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-ml-engineer\\scripts\\model_deployment_pipeline.py": {
+    "mtime": 1773668182.627965,
+    "ast_hash": "0ae4162a62f61b7a606fe301ffad6178",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-ml-engineer\\scripts\\rag_system_builder.py": {
+    "mtime": 1773668182.627965,
+    "ast_hash": "902a89df69091842a82b24e8f4f46441",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-prompt-engineer\\scripts\\agent_orchestrator.py": {
+    "mtime": 1773668182.641622,
+    "ast_hash": "3b26f0b84d7304703af196f456dc3088",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-prompt-engineer\\scripts\\prompt_optimizer.py": {
+    "mtime": 1773668182.6476321,
+    "ast_hash": "33822d764d4970083afb94003bfd4eb9",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-prompt-engineer\\scripts\\rag_evaluator.py": {
+    "mtime": 1773668182.6491747,
+    "ast_hash": "bf2e58df473ae59bfa3e3e832bf4459a",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\debugging-code\\SKILL.md": {
+    "mtime": 1780320780.8350844,
+    "ast_hash": "9b9eb7d1505911db7c3af773571b0529",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\debugging-code\\references\\advanced-techniques.md": {
+    "mtime": 1780320780.8398428,
+    "ast_hash": "abf6ab9786c1e7bf99ee24dad64d3ab4",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\debugging-code\\references\\installing-debuggers.md": {
+    "mtime": 1780320780.8398428,
+    "ast_hash": "1a9e734cf1f2afb3b44e9627c258ed0a",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\SKILL.md": {
+    "mtime": 1778588337.6296859,
+    "ast_hash": "7ab880a0b7f1e9878db2da6179f12b4f",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\adapt.md": {
+    "mtime": 1778588337.6296859,
+    "ast_hash": "27c29f5a41c6104b89a5ac22d6476853",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\animate.md": {
+    "mtime": 1778588337.6355295,
+    "ast_hash": "b62d806becc589f6e322568dbf1643ec",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\audit.md": {
+    "mtime": 1778588337.6355295,
+    "ast_hash": "bfa673574701e2910ca2b3473aa1c6ad",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\bolder.md": {
+    "mtime": 1778588337.6370423,
+    "ast_hash": "633d0f931184a8aac040a37ba0c2c0f6",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\brand.md": {
+    "mtime": 1778588337.6370423,
+    "ast_hash": "fa63f8e91d849d6c7a94990d39750f6e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\clarify.md": {
+    "mtime": 1778588337.6390548,
+    "ast_hash": "9dc6a767d5bbd31e9117d36d06e1261e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\cognitive-load.md": {
+    "mtime": 1778588337.6390548,
+    "ast_hash": "464d1b1b3566c74909fadcd2c13bc544",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\color-and-contrast.md": {
+    "mtime": 1778588337.6390548,
+    "ast_hash": "c51e5bca12b63f220ad15454852a8594",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\colorize.md": {
+    "mtime": 1778588337.6390548,
+    "ast_hash": "c9702b3f0c17fa6846747d369ad82699",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\craft.md": {
+    "mtime": 1778588337.6390548,
+    "ast_hash": "0a0a3c127bd0f9b6d77337c1d28f0877",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\critique.md": {
+    "mtime": 1778588337.6450965,
+    "ast_hash": "4a46140123112a26a7a6e406f0ae744e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\delight.md": {
+    "mtime": 1778588337.6450965,
+    "ast_hash": "c302379f6c88c20d4886636aaf5e6dde",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\distill.md": {
+    "mtime": 1778588337.6471083,
+    "ast_hash": "15b690d4b8f6bf9c8a0d5208f1f6f1fb",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\document.md": {
+    "mtime": 1778588337.6486144,
+    "ast_hash": "8faba1b504418148860d159448194fc9",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\extract.md": {
+    "mtime": 1778588337.6486144,
+    "ast_hash": "bcbed7005945d9de131f69985cbc5e6f",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\harden.md": {
+    "mtime": 1778588337.6511338,
+    "ast_hash": "b8c6ce7f60733c8dab39b12c7957750b",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\heuristics-scoring.md": {
+    "mtime": 1778588337.652149,
+    "ast_hash": "f1606921268571e14591682483b595ef",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\interaction-design.md": {
+    "mtime": 1778588337.652149,
+    "ast_hash": "ea39b98601f17b5a87f7de799b953000",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\layout.md": {
+    "mtime": 1778588337.6546826,
+    "ast_hash": "400e8cbbc0688d27d288f80c5b52314a",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\live.md": {
+    "mtime": 1778588337.6546826,
+    "ast_hash": "443d531ec715bb64e48b660671e3ad78",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\motion-design.md": {
+    "mtime": 1778588337.6546826,
+    "ast_hash": "95de769ab6e30a4214a969ebb25ebe89",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\onboard.md": {
+    "mtime": 1778588337.6566963,
+    "ast_hash": "8def483b066f2c7fb906c313e3653c10",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\optimize.md": {
+    "mtime": 1778588337.6577067,
+    "ast_hash": "613f211310d45abd984d0bd610abc1fb",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\overdrive.md": {
+    "mtime": 1778588337.6587262,
+    "ast_hash": "891190b0148e5156aa007ca5917a0bb4",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\personas.md": {
+    "mtime": 1778588337.6592555,
+    "ast_hash": "3022b396ec3f0977be627875594bfa81",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\polish.md": {
+    "mtime": 1778588337.6592555,
+    "ast_hash": "a118edef862f848ed55cf8eed3f19fe3",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\product.md": {
+    "mtime": 1778588337.661276,
+    "ast_hash": "c073e67bbcec51f31af4ba132730aca9",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\quieter.md": {
+    "mtime": 1778588337.661276,
+    "ast_hash": "9b34ed291f042b1dad31f66f487c4137",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\responsive-design.md": {
+    "mtime": 1778588337.661276,
+    "ast_hash": "3a0e2834961edfe9d44cef19ffc84737",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\shape.md": {
+    "mtime": 1778588337.6638,
+    "ast_hash": "4390d3c884c60ebd60a913fc54b6de46",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\spatial-design.md": {
+    "mtime": 1778588337.6643379,
+    "ast_hash": "28fd3d7f36c9ad72fdc5c3a90c7f5505",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\teach.md": {
+    "mtime": 1778588337.6643379,
+    "ast_hash": "ab273dd5cd15e248ebdf7f52671e3f81",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\typeset.md": {
+    "mtime": 1778588337.6658607,
+    "ast_hash": "3b4d239361890c9db44b5484d002f2d2",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\typography.md": {
+    "mtime": 1778588337.6694405,
+    "ast_hash": "841fa5dc3d8cf998ecb63b211b766c7c",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\.agents\\skills\\impeccable\\reference\\ux-writing.md": {
+    "mtime": 1778588337.6694405,
+    "ast_hash": "74e4aac960c114a7b8761210f80a8cc5",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\docs\\esquema_autoritativo.md": {
+    "mtime": 1779219724.9333346,
+    "ast_hash": "cc1c23d55075e133a67e1ba10fce0ee3",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL_ARCHITECTURE_FLOWS.txt": {
+    "mtime": 1780516647.2536888,
+    "ast_hash": "3a8c9c0ec260b890a4f2f6c1034e06eb",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL_CATALOG_HUMANIZED.md": {
+    "mtime": 1780516516.4542947,
+    "ast_hash": "52652c89d7ef5c60349c985a6dd35144",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\NOTAS_REVISION.md": {
+    "mtime": 1779906344.914065,
+    "ast_hash": "81bfa98ab0891513b9cea1006ca82452",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\README_ETL_CATALOG.md": {
+    "mtime": 1780516693.7342455,
+    "ast_hash": "f743fd1cacc944f5c9f75a0e331976fe",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\PRODUCT.md": {
+    "mtime": 1778591335.2334383,
+    "ast_hash": "3870ef05ab1146a9e4123a0d86f03909",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\docs\\roadmap_futuro_analytics.md": {
+    "mtime": 1778165464.3464334,
+    "ast_hash": "334f1181cc3cdd3bc3466566cfc30575",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\scratch\\cols.txt": {
+    "mtime": 1778614369.8531268,
+    "ast_hash": "c66d35093def68c4528b252ebe20988b",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\acp_mdm_portal\\utils\\formulas_semanales.txt": {
+    "mtime": 1777924038.9111662,
+    "ast_hash": "e70ba07ade5dd36ac256bee38ced11bc",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\README.backend.md": {
+    "mtime": 1775583830.5646768,
+    "ast_hash": "45eaceb101b3bab0298ad6a54ab00f83",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\RUNBOOK_CONTROL_PLANE_ETL.md": {
+    "mtime": 1775583882.6682885,
+    "ast_hash": "aea2ae96cd9d02595dc54b3ff0b91e07",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\backend\\requirements.txt": {
+    "mtime": 1779819144.2681634,
+    "ast_hash": "aff8c9d1fd9d6b466f6702e7a2dbe765",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\docs\\superpowers\\plans\\2026-06-03-vistas-powerbi-gold.md": {
+    "mtime": 1780506967.3834095,
+    "ast_hash": "b992bc4c4f400f28b1dfc53a3235e2ec",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\docs\\superpowers\\specs\\2026-06-03-vistas-powerbi-gold-design.md": {
+    "mtime": 1780506743.8277884,
+    "ast_hash": "c579fdcdfee6c764075d6a717e2f82bf",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\requirements.txt": {
+    "mtime": 1779819144.562893,
+    "ast_hash": "b0dda9f32d26e964bea237d0a558c4b4",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\log_pesos.txt": {
+    "mtime": 1780350974.271912,
+    "ast_hash": "5595ffab63ce3b0533be29d635bba797",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\pesos_log.txt": {
+    "mtime": 1780402446.393026,
+    "ast_hash": "b21b4e48f3d5436fda75f4fbd2bb7b0b",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\README_HERRAMIENTAS.md": {
+    "mtime": 1775673923.710415,
+    "ast_hash": "64223a937924344a75e9207c9cf5fc2a",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-data-engineer\\SKILL.md": {
+    "mtime": 1773668182.515691,
+    "ast_hash": "a43c3fa36c1107e9b41b3ad30863d068",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-data-engineer\\references\\data_modeling_patterns.md": {
+    "mtime": 1773668182.5216973,
+    "ast_hash": "2e5a24d95557dfcbb387b01fac26de16",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-data-engineer\\references\\data_pipeline_architecture.md": {
+    "mtime": 1773668182.528109,
+    "ast_hash": "2d110b8d42b83f8071ef2ae3477e49e9",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-data-engineer\\references\\dataops_best_practices.md": {
+    "mtime": 1773668182.528109,
+    "ast_hash": "15cb6d537664918f473f82fb2ad39330",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-data-engineer\\references\\troubleshooting.md": {
+    "mtime": 1773668182.532575,
+    "ast_hash": "cb3b1359ca053d851ced0ea8a4a56805",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-data-engineer\\references\\workflows.md": {
+    "mtime": 1773668182.5335782,
+    "ast_hash": "888f450ab27b8382cd51173ad1b4ca7f",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-data-scientist\\SKILL.md": {
+    "mtime": 1773668182.5475366,
+    "ast_hash": "ab83ccf31669c3d7452aa16474542c7c",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-data-scientist\\references\\experiment_design_frameworks.md": {
+    "mtime": 1773668182.5565865,
+    "ast_hash": "8b07d5b45bd0cade122f103a881e3e31",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-data-scientist\\references\\feature_engineering_patterns.md": {
+    "mtime": 1773668182.5581472,
+    "ast_hash": "0bc8972a53d93eead40def94fbc7c195",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-data-scientist\\references\\statistical_methods_advanced.md": {
+    "mtime": 1773668182.5581472,
+    "ast_hash": "412020db9b545bf80c87bb7bc3ad8232",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-frontend\\SKILL.md": {
+    "mtime": 1773668182.5885246,
+    "ast_hash": "bfe2623fc3a44e2e7723faa4e5adfca3",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-frontend\\references\\frontend_best_practices.md": {
+    "mtime": 1773668182.5885246,
+    "ast_hash": "ec9840842b41db36c1af3a8b8ae97c62",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-frontend\\references\\nextjs_optimization_guide.md": {
+    "mtime": 1773668182.5885246,
+    "ast_hash": "15ec5ef3a764927efefda6fe64e63f08",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-frontend\\references\\react_patterns.md": {
+    "mtime": 1773668182.5885246,
+    "ast_hash": "a3d3f6a9f60d0899799d5fb08e86f24e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-ml-engineer\\SKILL.md": {
+    "mtime": 1773668182.6189795,
+    "ast_hash": "4c39455674d647ee996c27745752afd6",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-ml-engineer\\references\\llm_integration_guide.md": {
+    "mtime": 1773668182.6221058,
+    "ast_hash": "99d877d07345433111e9f2de12e8cceb",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-ml-engineer\\references\\mlops_production_patterns.md": {
+    "mtime": 1773668182.6221058,
+    "ast_hash": "98b74c02cee9679008dfa7c973bc3a28",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-ml-engineer\\references\\rag_system_architecture.md": {
+    "mtime": 1773668182.6221058,
+    "ast_hash": "74f39ed899e09e8e39f9acb4b2f8af26",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-prompt-engineer\\SKILL.md": {
+    "mtime": 1773668182.6385894,
+    "ast_hash": "429308d0ac21c2f40667e9cf32c0a46d",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-prompt-engineer\\references\\agentic_system_design.md": {
+    "mtime": 1773668182.6406128,
+    "ast_hash": "f1e161ef52b6cf2a28973842d2352f60",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-prompt-engineer\\references\\llm_evaluation_frameworks.md": {
+    "mtime": 1773668182.641622,
+    "ast_hash": "c5f06c0cde0f4f9436c1f9def2fc3732",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\tools\\senior-prompt-engineer\\references\\prompt_engineering_patterns.md": {
+    "mtime": 1773668182.641622,
+    "ast_hash": "53b96d0872574a0308a1dfe486ccfe0e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\ETL\\sql_migrations\\fase68_gold_marts_a_vistas.sql": {
+    "mtime": 1780578706.4913368,
+    "ast_hash": "dedff1c8005e8129b33ce1f825519a62",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\check_logs.py": {
+    "mtime": 1780526890.8313897,
+    "ast_hash": "69e8b43fba4207bfb10b70a1f3e42688",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\check_older_logs.py": {
+    "mtime": 1780526909.5791297,
+    "ast_hash": "88f9278ebd4eafd666ee2f3657336c99",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\check_tasa_dates.py": {
+    "mtime": 1780575941.4701953,
+    "ast_hash": "71cf25a929b3e9fce282fbc5f8138b29",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\check_tasa_duplicados.py": {
+    "mtime": 1780575811.8578823,
+    "ast_hash": "2a67d3ef5e180e4199a188186b2f6639",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\check_variedades_cargadas.py": {
+    "mtime": 1780583647.2208464,
+    "ast_hash": "2b5a7b7fc7946cced1323cf2e8f69be6",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\db_locks.py": {
+    "mtime": 1780583137.533112,
+    "ast_hash": "048a29f3175eb0ecddd7afb8925c6282",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\diag_induccion.py": {
+    "mtime": 1780591143.196838,
+    "ast_hash": "0bf360568f4670ce90e35a624688b5fb",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\extract_lookup_calls.py": {
+    "mtime": 1780602377.230117,
+    "ast_hash": "c6caed53163c5bbe1a161aaf8f19124f",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\extract_payloads.py": {
+    "mtime": 1780602395.3138766,
+    "ast_hash": "bb2adba33487050ed9c3d6febe7efcc8",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\find_all_excels_system.py": {
+    "mtime": 1780526845.921519,
+    "ast_hash": "ddde214af4cf224fa67b3489c13b78e5",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\find_and_inspect_claudefiles.py": {
+    "mtime": 1780574476.0449271,
+    "ast_hash": "ff967bf5601977e230e7bcd5196ecd18",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\find_xlsx.py": {
+    "mtime": 1780526594.2053514,
+    "ast_hash": "f3eff0f62a0631aacea1c2b48f9f049d",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\insert_varieties.py": {
+    "mtime": 1780581742.4349492,
+    "ast_hash": "cb60a2cb275186315ed696513efd366c",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\inspect_all_db_counts.py": {
+    "mtime": 1780574431.3684738,
+    "ast_hash": "7dc45bbdf909180e181b6ee147b2a909",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\inspect_all_ev_excels.py": {
+    "mtime": 1780526662.9631438,
+    "ast_hash": "d63320f4baa28ecf16f3c4502dd24045",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\inspect_bronce_log_details.py": {
+    "mtime": 1780526929.2662294,
+    "ast_hash": "b92e5a2f1ee78f692d3f4aac45bad19a",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\inspect_bronce_silver_tc_mismatch.py": {
+    "mtime": 1780575956.7589095,
+    "ast_hash": "ccef7af667a9050caa53d77d7cca85f3",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\inspect_data_dir.py": {
+    "mtime": 1780526651.7797303,
+    "ast_hash": "d842f059dd6eadc56ba2b77ea0a3fd94",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\inspect_ev_bronce.py": {
+    "mtime": 1780526576.9555745,
+    "ast_hash": "0f83dace073e5ef70beab35cb1ed588d",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\inspect_formulas.py": {
+    "mtime": 1780600112.7792628,
+    "ast_hash": "049e17db344df353400c6c9b976e4e04",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\inspect_geo.py": {
+    "mtime": 1780575971.8808591,
+    "ast_hash": "f7c3a2c53607b06d99c09d2a5670dc4d",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\inspect_graph.py": {
+    "mtime": 1780525813.832892,
+    "ast_hash": "d3262a6bc1b3e8f5f9c4139c1841826d",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\inspect_historico_veg.py": {
+    "mtime": 1780526499.502176,
+    "ast_hash": "f39b2cdb51661f4597d25a27bf687258",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\inspect_induccion_varieties.py": {
+    "mtime": 1780589900.0386393,
+    "ast_hash": "cf1d7bdcffdf0fda48025dfdffd630cb",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\inspect_resumen.py": {
+    "mtime": 1780600161.5618815,
+    "ast_hash": "98b254a51cbb5e6449d2d2681e66092a",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\inspect_rules.py": {
+    "mtime": 1780582723.464662,
+    "ast_hash": "d7285ca399192747a04b67fb209df198",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\inspect_schema.py": {
+    "mtime": 1780601859.4083831,
+    "ast_hash": "dbcfc3c7ccf5768d572a333010d77f62",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\inspect_silver_all_geos.py": {
+    "mtime": 1780575876.867036,
+    "ast_hash": "4d5b9928839d9387687cd16a986d3201",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\inspect_silver_any_tasa.py": {
+    "mtime": 1780575891.2161875,
+    "ast_hash": "1e0887c0af0df649678b98aa49f5d23f",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\inspect_silver_any_tasa_for_geo.py": {
+    "mtime": 1780575926.2012596,
+    "ast_hash": "e60680e27999d440ae0c46c9b6a34936",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\inspect_silver_tc.py": {
+    "mtime": 1780575844.992344,
+    "ast_hash": "4f4f7b614b2fc14022b7655e70bab49d",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\inspect_silver_tc_direct.py": {
+    "mtime": 1780575860.5524507,
+    "ast_hash": "996a040bb33224f0e0da643821f0e56e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\inspect_tasa_data_detail.py": {
+    "mtime": 1780575906.5741787,
+    "ast_hash": "19d24ecce65c39704f5dc5891360e565",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\list_induccion_excels.py": {
+    "mtime": 1780599257.414636,
+    "ast_hash": "8f97f28a288b2561513b54937bcc179e",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\list_sheets.py": {
+    "mtime": 1780600152.3091974,
+    "ast_hash": "d27987e7ea9ef370b109d20fc00de955",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\modify_graph_html.py": {
+    "mtime": 1780525850.5597398,
+    "ast_hash": "f67c556b4b286e63b3692f560a549045",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\prepare_induccion_reload.py": {
+    "mtime": 1780593354.4605002,
+    "ast_hash": "cbe58c75e56e133a94868047d360f9a0",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\read_etl_progress.py": {
+    "mtime": 1780588684.0482965,
+    "ast_hash": "5b7c9a2b185923202e6ea50fd4102c7b",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\read_lines.py": {
+    "mtime": 1780525820.5944493,
+    "ast_hash": "787c83fa15ee6dd493104713829ca421",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\read_lines2.py": {
+    "mtime": 1780525862.210466,
+    "ast_hash": "d538d6e4b353a01e63c7f8ec84676e32",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\read_sidebar.py": {
+    "mtime": 1780525835.225024,
+    "ast_hash": "6bd683ff913b9e2cd4f16977f5720631",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\reprocess_quarantine.py": {
+    "mtime": 1780581946.065983,
+    "ast_hash": "977186676c1314bc7c3befab95e3b855",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\restore_induccion_file.py": {
+    "mtime": 1780590054.7370644,
+    "ast_hash": "28782d520e29d8889bbd9b6ea6123244",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\run_and_time_refactor.py": {
+    "mtime": 1780601615.896349,
+    "ast_hash": "2f6e6beecb6838892950efab3cb93077",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\run_full_verification.py": {
+    "mtime": 1780603085.7461445,
+    "ast_hash": "6986dc91567db1975f8f6c4f6aa89d67",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\search_avg.py": {
+    "mtime": 1780597649.0783086,
+    "ast_hash": "b125823e9dce83a3ec847eecbf371de8",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\search_cargador.py": {
+    "mtime": 1780600139.2245698,
+    "ast_hash": "f922c348f40cea4084c09a5dfabbe78a",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\test_all_marts.py": {
+    "mtime": 1780578890.3506594,
+    "ast_hash": "512141978ad208e5953b13aec894ddc5",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\test_induccion_parsing.py": {
+    "mtime": 1780590127.9232104,
+    "ast_hash": "b758a55396f35a8e1394f004b0f5b994",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\test_resolution.py": {
+    "mtime": 1780581241.9948342,
+    "ast_hash": "b17185fa0584f77e314a7e9bc9f546ca",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\update_rules.py": {
+    "mtime": 1780581205.4521337,
+    "ast_hash": "db72272ec0659068dc01eecbcf67f684",
+    "semantic_hash": ""
+  },
+  "D:\\Proyecto2026\\ACP_DWH\\ACP Proyecciones\\scratch\\verify_injection.py": {
+    "mtime": 1780525869.57969,
+    "ast_hash": "3a53e7abf31ceeac3647ae7a4b43656e",
+    "semantic_hash": ""
+  }
+}

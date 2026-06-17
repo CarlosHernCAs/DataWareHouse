@@ -1,0 +1,1479 @@
+{
+  "nodes": [
+    {
+      "id": "function:.claude/skills/understand-knowledge/parse-knowledge-base.py:detect_format",
+      "type": "function",
+      "name": "detect_format",
+      "summary": "Function detect_format implementing specific routines inside parse-knowledge-base.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        38,
+        69
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand-knowledge/parse-knowledge-base.py:extract_frontmatter",
+      "type": "function",
+      "name": "extract_frontmatter",
+      "summary": "Function extract_frontmatter implementing specific routines inside parse-knowledge-base.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        76,
+        86
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand-knowledge/parse-knowledge-base.py:extract_wikilinks",
+      "type": "function",
+      "name": "extract_wikilinks",
+      "summary": "Function extract_wikilinks implementing specific routines inside parse-knowledge-base.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        89,
+        97
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand-knowledge/parse-knowledge-base.py:extract_headings",
+      "type": "function",
+      "name": "extract_headings",
+      "summary": "Function extract_headings implementing specific routines inside parse-knowledge-base.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        100,
+        105
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand-knowledge/parse-knowledge-base.py:extract_code_blocks",
+      "type": "function",
+      "name": "extract_code_blocks",
+      "summary": "Function extract_code_blocks implementing specific routines inside parse-knowledge-base.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        108,
+        110
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand-knowledge/parse-knowledge-base.py:extract_first_paragraph",
+      "type": "function",
+      "name": "extract_first_paragraph",
+      "summary": "Function extract_first_paragraph implementing specific routines inside parse-knowledge-base.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        113,
+        154
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand-knowledge/parse-knowledge-base.py:extract_h1",
+      "type": "function",
+      "name": "extract_h1",
+      "summary": "Function extract_h1 implementing specific routines inside parse-knowledge-base.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        157,
+        163
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand-knowledge/parse-knowledge-base.py:parse_index",
+      "type": "function",
+      "name": "parse_index",
+      "summary": "Function parse_index implementing specific routines inside parse-knowledge-base.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        170,
+        194
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand-knowledge/parse-knowledge-base.py:parse_log",
+      "type": "function",
+      "name": "parse_log",
+      "summary": "Function parse_log implementing specific routines inside parse-knowledge-base.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        201,
+        216
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand-knowledge/parse-knowledge-base.py:build_name_to_stem_map",
+      "type": "function",
+      "name": "build_name_to_stem_map",
+      "summary": "Function build_name_to_stem_map implementing specific routines inside parse-knowledge-base.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        223,
+        249
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand-knowledge/parse-knowledge-base.py:resolve_wikilink",
+      "type": "function",
+      "name": "resolve_wikilink",
+      "summary": "Function resolve_wikilink implementing specific routines inside parse-knowledge-base.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        252,
+        275
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand-knowledge/parse-knowledge-base.py:parse_wiki",
+      "type": "function",
+      "name": "parse_wiki",
+      "summary": "Function parse_wiki implementing specific routines inside parse-knowledge-base.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        278,
+        479
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand-knowledge/parse-knowledge-base.py:main",
+      "type": "function",
+      "name": "main",
+      "summary": "Function main implementing specific routines inside parse-knowledge-base.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        482,
+        505
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/build-fingerprints.mjs:main",
+      "type": "function",
+      "name": "main",
+      "summary": "Function main implementing specific routines inside build-fingerprints.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        55,
+        88
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/compute-batches.mjs:extractExports",
+      "type": "function",
+      "name": "extractExports",
+      "summary": "Function extractExports implementing specific routines inside compute-batches.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        51,
+        121
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/compute-batches.mjs:buildNonCodeBatches",
+      "type": "function",
+      "name": "buildNonCodeBatches",
+      "summary": "Function buildNonCodeBatches implementing specific routines inside compute-batches.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        131,
+        215
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/compute-batches.mjs:runLouvain",
+      "type": "function",
+      "name": "runLouvain",
+      "summary": "Function runLouvain implementing specific routines inside compute-batches.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        234,
+        249
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/compute-batches.mjs:mergeSmallBatches",
+      "type": "function",
+      "name": "mergeSmallBatches",
+      "summary": "Function mergeSmallBatches implementing specific routines inside compute-batches.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        278,
+        332
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/compute-batches.mjs:main",
+      "type": "function",
+      "name": "main",
+      "summary": "Function main implementing specific routines inside compute-batches.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        335,
+        558
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/extract-import-map.mjs:readFilesParallel",
+      "type": "function",
+      "name": "readFilesParallel",
+      "summary": "Function readFilesParallel implementing specific routines inside extract-import-map.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        51,
+        62
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/extract-import-map.mjs:resolveRelative",
+      "type": "function",
+      "name": "resolveRelative",
+      "summary": "Function resolveRelative implementing specific routines inside extract-import-map.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        104,
+        119
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/extract-import-map.mjs:parseTsConfigText",
+      "type": "function",
+      "name": "parseTsConfigText",
+      "summary": "Function parseTsConfigText implementing specific routines inside extract-import-map.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        149,
+        177
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/extract-import-map.mjs:loadTsConfigs",
+      "type": "function",
+      "name": "loadTsConfigs",
+      "summary": "Function loadTsConfigs implementing specific routines inside extract-import-map.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        206,
+        243
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/extract-import-map.mjs:loadGoModules",
+      "type": "function",
+      "name": "loadGoModules",
+      "summary": "Function loadGoModules implementing specific routines inside extract-import-map.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        269,
+        300
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/extract-import-map.mjs:findNearestConfigDir",
+      "type": "function",
+      "name": "findNearestConfigDir",
+      "summary": "Function findNearestConfigDir implementing specific routines inside extract-import-map.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        316,
+        327
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/extract-import-map.mjs:buildResolutionContext",
+      "type": "function",
+      "name": "buildResolutionContext",
+      "summary": "Function buildResolutionContext implementing specific routines inside extract-import-map.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        344,
+        406
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/extract-import-map.mjs:resolveTsJsImport",
+      "type": "function",
+      "name": "resolveTsJsImport",
+      "summary": "Function resolveTsJsImport implementing specific routines inside extract-import-map.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        452,
+        509
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/extract-import-map.mjs:matchTsAlias",
+      "type": "function",
+      "name": "matchTsAlias",
+      "summary": "Function matchTsAlias implementing specific routines inside extract-import-map.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        517,
+        529
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/extract-import-map.mjs:resolvePythonImport",
+      "type": "function",
+      "name": "resolvePythonImport",
+      "summary": "Function resolvePythonImport implementing specific routines inside extract-import-map.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        645,
+        721
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/extract-import-map.mjs:resolvePythonProbe",
+      "type": "function",
+      "name": "resolvePythonProbe",
+      "summary": "Function resolvePythonProbe implementing specific routines inside extract-import-map.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        729,
+        764
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/extract-import-map.mjs:resolveGoImport",
+      "type": "function",
+      "name": "resolveGoImport",
+      "summary": "Function resolveGoImport implementing specific routines inside extract-import-map.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        791,
+        839
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/extract-import-map.mjs:buildSuffixIndex",
+      "type": "function",
+      "name": "buildSuffixIndex",
+      "summary": "Function buildSuffixIndex implementing specific routines inside extract-import-map.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        866,
+        884
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/extract-import-map.mjs:resolveJavaImport",
+      "type": "function",
+      "name": "resolveJavaImport",
+      "summary": "Function resolveJavaImport implementing specific routines inside extract-import-map.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        911,
+        913
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/extract-import-map.mjs:resolveKotlinImport",
+      "type": "function",
+      "name": "resolveKotlinImport",
+      "summary": "Function resolveKotlinImport implementing specific routines inside extract-import-map.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        923,
+        925
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/extract-import-map.mjs:resolveCSharpImport",
+      "type": "function",
+      "name": "resolveCSharpImport",
+      "summary": "Function resolveCSharpImport implementing specific routines inside extract-import-map.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        936,
+        938
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/extract-import-map.mjs:parseRubyImports",
+      "type": "function",
+      "name": "parseRubyImports",
+      "summary": "Function parseRubyImports implementing specific routines inside extract-import-map.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        976,
+        988
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/extract-import-map.mjs:resolveRubyImport",
+      "type": "function",
+      "name": "resolveRubyImport",
+      "summary": "Function resolveRubyImport implementing specific routines inside extract-import-map.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        996,
+        1012
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/extract-import-map.mjs:parseComposerAutoloadText",
+      "type": "function",
+      "name": "parseComposerAutoloadText",
+      "summary": "Function parseComposerAutoloadText implementing specific routines inside extract-import-map.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        1042,
+        1068
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/extract-import-map.mjs:loadPhpAutoloads",
+      "type": "function",
+      "name": "loadPhpAutoloads",
+      "summary": "Function loadPhpAutoloads implementing specific routines inside extract-import-map.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        1086,
+        1121
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/extract-import-map.mjs:resolvePhpImport",
+      "type": "function",
+      "name": "resolvePhpImport",
+      "summary": "Function resolvePhpImport implementing specific routines inside extract-import-map.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        1133,
+        1177
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/extract-import-map.mjs:findRustCrateSrc",
+      "type": "function",
+      "name": "findRustCrateSrc",
+      "summary": "Function findRustCrateSrc implementing specific routines inside extract-import-map.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        1227,
+        1237
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/extract-import-map.mjs:resolveRustImport",
+      "type": "function",
+      "name": "resolveRustImport",
+      "summary": "Function resolveRustImport implementing specific routines inside extract-import-map.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        1239,
+        1296
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/extract-import-map.mjs:extractRustModSources",
+      "type": "function",
+      "name": "extractRustModSources",
+      "summary": "Function extractRustModSources implementing specific routines inside extract-import-map.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        1305,
+        1319
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/extract-import-map.mjs:resolveCppImport",
+      "type": "function",
+      "name": "resolveCppImport",
+      "summary": "Function resolveCppImport implementing specific routines inside extract-import-map.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        1340,
+        1356
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/extract-import-map.mjs:resolveImport",
+      "type": "function",
+      "name": "resolveImport",
+      "summary": "Function resolveImport implementing specific routines inside extract-import-map.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        1380,
+        1415
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/extract-import-map.mjs:extractExtraImportSources",
+      "type": "function",
+      "name": "extractExtraImportSources",
+      "summary": "Function extractExtraImportSources implementing specific routines inside extract-import-map.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        1422,
+        1435
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/extract-import-map.mjs:main",
+      "type": "function",
+      "name": "main",
+      "summary": "Function main implementing specific routines inside extract-import-map.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        1440,
+        1597
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/extract-structure.mjs:main",
+      "type": "function",
+      "name": "main",
+      "summary": "Function main implementing specific routines inside extract-structure.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        49,
+        140
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/extract-structure.mjs:buildResult",
+      "type": "function",
+      "name": "buildResult",
+      "summary": "Function buildResult implementing specific routines inside extract-structure.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        146,
+        304
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/merge-batch-graphs.py:normalize_direction",
+      "type": "function",
+      "name": "normalize_direction",
+      "summary": "Function normalize_direction implementing specific routines inside merge-batch-graphs.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        115,
+        121
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/merge-batch-graphs.py:_num",
+      "type": "function",
+      "name": "_num",
+      "summary": "Function _num implementing specific routines inside merge-batch-graphs.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        124,
+        129
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/merge-batch-graphs.py:load_batch",
+      "type": "function",
+      "name": "load_batch",
+      "summary": "Function load_batch implementing specific routines inside merge-batch-graphs.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        134,
+        149
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/merge-batch-graphs.py:classify_id_fix",
+      "type": "function",
+      "name": "classify_id_fix",
+      "summary": "Function classify_id_fix implementing specific routines inside merge-batch-graphs.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        154,
+        175
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/merge-batch-graphs.py:normalize_node_id",
+      "type": "function",
+      "name": "normalize_node_id",
+      "summary": "Function normalize_node_id implementing specific routines inside merge-batch-graphs.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        178,
+        221
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/merge-batch-graphs.py:normalize_complexity",
+      "type": "function",
+      "name": "normalize_complexity",
+      "summary": "Function normalize_complexity implementing specific routines inside merge-batch-graphs.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        224,
+        249
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/merge-batch-graphs.py:_path_segments",
+      "type": "function",
+      "name": "_path_segments",
+      "summary": "Function _path_segments implementing specific routines inside merge-batch-graphs.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        278,
+        280
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/merge-batch-graphs.py:_basename",
+      "type": "function",
+      "name": "_basename",
+      "summary": "Function _basename implementing specific routines inside merge-batch-graphs.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        283,
+        284
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/merge-batch-graphs.py:is_test_path",
+      "type": "function",
+      "name": "is_test_path",
+      "summary": "Function is_test_path implementing specific routines inside merge-batch-graphs.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        287,
+        307
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/merge-batch-graphs.py:_strip_test_infix",
+      "type": "function",
+      "name": "_strip_test_infix",
+      "summary": "Function _strip_test_infix implementing specific routines inside merge-batch-graphs.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        310,
+        316
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/merge-batch-graphs.py:_join",
+      "type": "function",
+      "name": "_join",
+      "summary": "Function _join implementing specific routines inside merge-batch-graphs.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        319,
+        322
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/merge-batch-graphs.py:_add_unique",
+      "type": "function",
+      "name": "_add_unique",
+      "summary": "Function _add_unique implementing specific routines inside merge-batch-graphs.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        325,
+        328
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/merge-batch-graphs.py:_js_ts_sibling_candidates",
+      "type": "function",
+      "name": "_js_ts_sibling_candidates",
+      "summary": "Function _js_ts_sibling_candidates implementing specific routines inside merge-batch-graphs.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        331,
+        337
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/merge-batch-graphs.py:production_candidates",
+      "type": "function",
+      "name": "production_candidates",
+      "summary": "Function production_candidates implementing specific routines inside merge-batch-graphs.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        340,
+        506
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/merge-batch-graphs.py:_file_node_path",
+      "type": "function",
+      "name": "_file_node_path",
+      "summary": "Function _file_node_path implementing specific routines inside merge-batch-graphs.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        509,
+        517
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/merge-batch-graphs.py:_swap_tested_by_in_place",
+      "type": "function",
+      "name": "_swap_tested_by_in_place",
+      "summary": "Function _swap_tested_by_in_place implementing specific routines inside merge-batch-graphs.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        520,
+        535
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/merge-batch-graphs.py:_ensure_tested_tag",
+      "type": "function",
+      "name": "_ensure_tested_tag",
+      "summary": "Function _ensure_tested_tag implementing specific routines inside merge-batch-graphs.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        538,
+        553
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/merge-batch-graphs.py:link_tests",
+      "type": "function",
+      "name": "link_tests",
+      "summary": "Function link_tests implementing specific routines inside merge-batch-graphs.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        556,
+        719
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/merge-batch-graphs.py:merge_and_normalize",
+      "type": "function",
+      "name": "merge_and_normalize",
+      "summary": "Function merge_and_normalize implementing specific routines inside merge-batch-graphs.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        724,
+        908
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/merge-batch-graphs.py:recover_imports_from_scan",
+      "type": "function",
+      "name": "recover_imports_from_scan",
+      "summary": "Function recover_imports_from_scan implementing specific routines inside merge-batch-graphs.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        913,
+        998
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/merge-batch-graphs.py:main",
+      "type": "function",
+      "name": "main",
+      "summary": "Function main implementing specific routines inside merge-batch-graphs.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        1003,
+        1160
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/merge-subdomain-graphs.py:_num",
+      "type": "function",
+      "name": "_num",
+      "summary": "Function _num implementing specific routines inside merge-subdomain-graphs.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        28,
+        33
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/merge-subdomain-graphs.py:load_graph",
+      "type": "function",
+      "name": "load_graph",
+      "summary": "Function load_graph implementing specific routines inside merge-subdomain-graphs.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        36,
+        49
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/merge-subdomain-graphs.py:merge_graphs",
+      "type": "function",
+      "name": "merge_graphs",
+      "summary": "Function merge_graphs implementing specific routines inside merge-subdomain-graphs.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        52,
+        232
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/merge-subdomain-graphs.py:main",
+      "type": "function",
+      "name": "main",
+      "summary": "Function main implementing specific routines inside merge-subdomain-graphs.py.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        235,
+        304
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/scan-project.mjs:detectLanguage",
+      "type": "function",
+      "name": "detectLanguage",
+      "summary": "Function detectLanguage implementing specific routines inside scan-project.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        221,
+        248
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/scan-project.mjs:detectCategory",
+      "type": "function",
+      "name": "detectCategory",
+      "summary": "Function detectCategory implementing specific routines inside scan-project.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        373,
+        417
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/scan-project.mjs:estimateComplexity",
+      "type": "function",
+      "name": "estimateComplexity",
+      "summary": "Function estimateComplexity implementing specific routines inside scan-project.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        435,
+        440
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/scan-project.mjs:enumerateViaGit",
+      "type": "function",
+      "name": "enumerateViaGit",
+      "summary": "Function enumerateViaGit implementing specific routines inside scan-project.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        466,
+        488
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/scan-project.mjs:enumerateViaWalk",
+      "type": "function",
+      "name": "enumerateViaWalk",
+      "summary": "Function enumerateViaWalk implementing specific routines inside scan-project.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        499,
+        544
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/scan-project.mjs:buildDefaultsOnlyFilter",
+      "type": "function",
+      "name": "buildDefaultsOnlyFilter",
+      "summary": "Function buildDefaultsOnlyFilter implementing specific routines inside scan-project.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        585,
+        595
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/scan-project.mjs:countLines",
+      "type": "function",
+      "name": "countLines",
+      "summary": "Function countLines implementing specific routines inside scan-project.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        622,
+        639
+      ]
+    },
+    {
+      "id": "function:.claude/skills/understand/scan-project.mjs:main",
+      "type": "function",
+      "name": "main",
+      "summary": "Function main implementing specific routines inside scan-project.mjs.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        645,
+        765
+      ]
+    },
+    {
+      "id": "file:app/(analyst)/error.tsx",
+      "type": "file",
+      "name": "error.tsx",
+      "filePath": "app/(analyst)/error.tsx",
+      "summary": "Source code file implementing components or logic for error.tsx.",
+      "tags": [
+        "code",
+        "typescript",
+        "analyst-view"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:app/(executive)/error.tsx",
+      "type": "file",
+      "name": "error.tsx",
+      "filePath": "app/(executive)/error.tsx",
+      "summary": "Source code file implementing components or logic for error.tsx.",
+      "tags": [
+        "code",
+        "typescript",
+        "executive-view"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:app/globals.css",
+      "type": "file",
+      "name": "globals.css",
+      "filePath": "app/globals.css",
+      "summary": "Source code file implementing components or logic for globals.css.",
+      "tags": [
+        "code",
+        "css",
+        "module"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:components/control-center/kpi-sparkline.tsx",
+      "type": "file",
+      "name": "kpi-sparkline.tsx",
+      "filePath": "components/control-center/kpi-sparkline.tsx",
+      "summary": "Source code file implementing components or logic for kpi-sparkline.tsx.",
+      "tags": [
+        "code",
+        "typescript",
+        "ui-component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:components/control-center/kpi-sparkline.tsx:KpiSparkline",
+      "type": "function",
+      "name": "KpiSparkline",
+      "summary": "Function KpiSparkline implementing specific routines inside kpi-sparkline.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        19,
+        41
+      ]
+    },
+    {
+      "id": "file:components/layout/page-placeholder.tsx",
+      "type": "file",
+      "name": "page-placeholder.tsx",
+      "filePath": "components/layout/page-placeholder.tsx",
+      "summary": "Source code file implementing components or logic for page-placeholder.tsx.",
+      "tags": [
+        "code",
+        "typescript",
+        "ui-component"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:components/layout/page-placeholder.tsx:PagePlaceholder",
+      "type": "function",
+      "name": "PagePlaceholder",
+      "summary": "Function PagePlaceholder implementing specific routines inside page-placeholder.tsx.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        9,
+        29
+      ]
+    },
+    {
+      "id": "file:eslint.config.mjs",
+      "type": "file",
+      "name": "eslint.config.mjs",
+      "filePath": "eslint.config.mjs",
+      "summary": "Source code file implementing components or logic for eslint.config.mjs.",
+      "tags": [
+        "code",
+        "javascript",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:hooks/use-table-query-state.ts",
+      "type": "file",
+      "name": "use-table-query-state.ts",
+      "filePath": "hooks/use-table-query-state.ts",
+      "summary": "Source code file implementing components or logic for use-table-query-state.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "react-hook"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:hooks/use-table-query-state.ts:useTableQueryState",
+      "type": "function",
+      "name": "useTableQueryState",
+      "summary": "Function useTableQueryState implementing specific routines inside use-table-query-state.ts.",
+      "tags": [
+        "function",
+        "subroutine"
+      ],
+      "complexity": "simple",
+      "lineRange": [
+        31,
+        93
+      ]
+    },
+    {
+      "id": "file:lib/mock/audit.ts",
+      "type": "file",
+      "name": "audit.ts",
+      "filePath": "lib/mock/audit.ts",
+      "summary": "Source code file implementing components or logic for audit.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "library"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:lib/mock/workflows.ts",
+      "type": "file",
+      "name": "workflows.ts",
+      "filePath": "lib/mock/workflows.ts",
+      "summary": "Source code file implementing components or logic for workflows.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "library"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:next.config.ts",
+      "type": "file",
+      "name": "next.config.ts",
+      "filePath": "next.config.ts",
+      "summary": "Source code file implementing components or logic for next.config.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:playwright.config.ts",
+      "type": "file",
+      "name": "playwright.config.ts",
+      "filePath": "playwright.config.ts",
+      "summary": "Source code file implementing components or logic for playwright.config.ts.",
+      "tags": [
+        "code",
+        "typescript",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:postcss.config.mjs",
+      "type": "file",
+      "name": "postcss.config.mjs",
+      "filePath": "postcss.config.mjs",
+      "summary": "Source code file implementing components or logic for postcss.config.mjs.",
+      "tags": [
+        "code",
+        "javascript",
+        "module"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:components/control-center/kpi-sparkline.tsx",
+      "target": "function:components/control-center/kpi-sparkline.tsx:KpiSparkline",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/control-center/kpi-sparkline.tsx",
+      "target": "function:components/control-center/kpi-sparkline.tsx:KpiSparkline",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:components/layout/page-placeholder.tsx",
+      "target": "function:components/layout/page-placeholder.tsx:PagePlaceholder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:components/layout/page-placeholder.tsx",
+      "target": "function:components/layout/page-placeholder.tsx:PagePlaceholder",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:hooks/use-table-query-state.ts",
+      "target": "function:hooks/use-table-query-state.ts:useTableQueryState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:hooks/use-table-query-state.ts",
+      "target": "function:hooks/use-table-query-state.ts:useTableQueryState",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

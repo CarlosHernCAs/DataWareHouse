@@ -1,0 +1,265 @@
+{
+  "nodes": [
+    {
+      "id": "file:ETL/sql_migrations/fase53a_auditoria_dim_geografia_scd2.sql",
+      "type": "table",
+      "name": "fase53a_auditoria_dim_geografia_scd2.sql",
+      "filePath": "ETL/sql_migrations/fase53a_auditoria_dim_geografia_scd2.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase53a_auditoria_dim_geografia_scd2.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase53b_fix_dim_geografia_scd2_cerrar_duplicados.sql",
+      "type": "table",
+      "name": "fase53b_fix_dim_geografia_scd2_cerrar_duplicados.sql",
+      "filePath": "ETL/sql_migrations/fase53b_fix_dim_geografia_scd2_cerrar_duplicados.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase53b_fix_dim_geografia_scd2_cerrar_duplicados.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase54_backfill_fundo_fact_cosecha_sap.sql",
+      "type": "table",
+      "name": "fase54_backfill_fundo_fact_cosecha_sap.sql",
+      "filePath": "ETL/sql_migrations/fase54_backfill_fundo_fact_cosecha_sap.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase54_backfill_fundo_fact_cosecha_sap.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase55_diagnostico_estado_carga_cosecha_sap.sql",
+      "type": "table",
+      "name": "fase55_diagnostico_estado_carga_cosecha_sap.sql",
+      "filePath": "ETL/sql_migrations/fase55_diagnostico_estado_carga_cosecha_sap.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase55_diagnostico_estado_carga_cosecha_sap.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase56a_evaluacion_pesos_id_campana_backfill.sql",
+      "type": "table",
+      "name": "fase56a_evaluacion_pesos_id_campana_backfill.sql",
+      "filePath": "ETL/sql_migrations/fase56a_evaluacion_pesos_id_campana_backfill.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase56a_evaluacion_pesos_id_campana_backfill.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase56b_poblar_bridge_geo_campana_evaluacion_pesos.sql",
+      "type": "table",
+      "name": "fase56b_poblar_bridge_geo_campana_evaluacion_pesos.sql",
+      "filePath": "ETL/sql_migrations/fase56b_poblar_bridge_geo_campana_evaluacion_pesos.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase56b_poblar_bridge_geo_campana_evaluacion_pesos.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase57a_censo_plantas_id_campana_backfill.sql",
+      "type": "table",
+      "name": "fase57a_censo_plantas_id_campana_backfill.sql",
+      "filePath": "ETL/sql_migrations/fase57a_censo_plantas_id_campana_backfill.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase57a_censo_plantas_id_campana_backfill.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase57b_poblar_bridge_geo_campana_censo_plantas.sql",
+      "type": "table",
+      "name": "fase57b_poblar_bridge_geo_campana_censo_plantas.sql",
+      "filePath": "ETL/sql_migrations/fase57b_poblar_bridge_geo_campana_censo_plantas.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase57b_poblar_bridge_geo_campana_censo_plantas.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase58a_floracion_id_campana_backfill.sql",
+      "type": "table",
+      "name": "fase58a_floracion_id_campana_backfill.sql",
+      "filePath": "ETL/sql_migrations/fase58a_floracion_id_campana_backfill.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase58a_floracion_id_campana_backfill.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase58b_poblar_bridge_geo_campana_floracion.sql",
+      "type": "table",
+      "name": "fase58b_poblar_bridge_geo_campana_floracion.sql",
+      "filePath": "ETL/sql_migrations/fase58b_poblar_bridge_geo_campana_floracion.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase58b_poblar_bridge_geo_campana_floracion.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase59a_fisiologia_id_campana_backfill.sql",
+      "type": "table",
+      "name": "fase59a_fisiologia_id_campana_backfill.sql",
+      "filePath": "ETL/sql_migrations/fase59a_fisiologia_id_campana_backfill.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase59a_fisiologia_id_campana_backfill.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase59b_poblar_bridge_geo_campana_fisiologia.sql",
+      "type": "table",
+      "name": "fase59b_poblar_bridge_geo_campana_fisiologia.sql",
+      "filePath": "ETL/sql_migrations/fase59b_poblar_bridge_geo_campana_fisiologia.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase59b_poblar_bridge_geo_campana_fisiologia.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase59c_poblar_bridge_geo_campana_tasa_crecimiento.sql",
+      "type": "table",
+      "name": "fase59c_poblar_bridge_geo_campana_tasa_crecimiento.sql",
+      "filePath": "ETL/sql_migrations/fase59c_poblar_bridge_geo_campana_tasa_crecimiento.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase59c_poblar_bridge_geo_campana_tasa_crecimiento.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase60_add_missing_columns.sql",
+      "type": "table",
+      "name": "fase60_add_missing_columns.sql",
+      "filePath": "ETL/sql_migrations/fase60_add_missing_columns.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase60_add_missing_columns.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase61_update_grain_cosecha_sap.sql",
+      "type": "table",
+      "name": "fase61_update_grain_cosecha_sap.sql",
+      "filePath": "ETL/sql_migrations/fase61_update_grain_cosecha_sap.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase61_update_grain_cosecha_sap.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase62_rediseno_mart_clima.sql",
+      "type": "table",
+      "name": "fase62_rediseno_mart_clima.sql",
+      "filePath": "ETL/sql_migrations/fase62_rediseno_mart_clima.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase62_rediseno_mart_clima.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase63_reintentar_cuarentena.sql",
+      "type": "table",
+      "name": "fase63_reintentar_cuarentena.sql",
+      "filePath": "ETL/sql_migrations/fase63_reintentar_cuarentena.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase63_reintentar_cuarentena.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase64_columnas_bronce_faltantes.sql",
+      "type": "table",
+      "name": "fase64_columnas_bronce_faltantes.sql",
+      "filePath": "ETL/sql_migrations/fase64_columnas_bronce_faltantes.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase64_columnas_bronce_faltantes.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase65_fact_ciclos_fenologicos_color_cinta.sql",
+      "type": "table",
+      "name": "fase65_fact_ciclos_fenologicos_color_cinta.sql",
+      "filePath": "ETL/sql_migrations/fase65_fact_ciclos_fenologicos_color_cinta.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase65_fact_ciclos_fenologicos_color_cinta.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:ETL/sql_migrations/fase66_ciclos_fenologicos_ids_dimensionales.sql",
+      "type": "table",
+      "name": "fase66_ciclos_fenologicos_ids_dimensionales.sql",
+      "filePath": "ETL/sql_migrations/fase66_ciclos_fenologicos_ids_dimensionales.sql",
+      "summary": "File mapped from ETL/sql_migrations/fase66_ciclos_fenologicos_ids_dimensionales.sql with category data.",
+      "tags": [
+        "data",
+        "sql",
+        "auto-generated"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": []
+}
