@@ -58,6 +58,40 @@ export function HeroKpis() {
 
   const activeCount = (activeCorridas.data ?? []).length;
 
+  /**
+   * Color del sparkline según la tendencia real de la serie.
+   *
+   *  - `isGoodWhenHigher = true`  → más volumen = bueno (filas, éxitos).
+   *  - `isGoodWhenHigher = false` → más volumen = malo  (fallos).
+   *
+   * Comparamos el promedio de los últimos 3 puntos vs los anteriores.
+   * Si el delta relativo está por debajo de ±10%, la serie está "estable"
+   * y mostramos color informativo neutro. Si supera ese umbral, coloreamos
+   * según si la dirección es buena o mala. Antes el sparkline de "filas
+   * insertadas" siempre era verde aunque la tendencia bajara fuerte.
+   */
+  function trendColor(serie: number[], isGoodWhenHigher: boolean): string {
+    if (serie.length < 4) return RECHARTS_THEME.info;
+    const recientes = serie.slice(-3);
+    const previos = serie.slice(0, -3);
+    const promedio = (xs: number[]) =>
+      xs.reduce((a, b) => a + b, 0) / Math.max(xs.length, 1);
+    const recent = promedio(recientes);
+    const baseline = promedio(previos);
+    if (baseline === 0 && recent === 0) return RECHARTS_THEME.info;
+    const delta = (recent - baseline) / Math.max(baseline, 1);
+    if (Math.abs(delta) < 0.1) return RECHARTS_THEME.info;
+    const rising = delta > 0;
+    const ok = isGoodWhenHigher ? rising : !rising;
+    return ok ? RECHARTS_THEME.success : RECHARTS_THEME.destructive;
+  }
+
+  const trendData = trend.data ?? [];
+  const filasSerie = trendData.map((p) => p.success);
+  const fallosSerie = trendData.map((p) => p.failed);
+  const filasSparkColor = trendColor(filasSerie, true);
+  const fallosSparkColor = trendColor(fallosSerie, false);
+
   const criticalCount = useMemo(() => {
     // Date.now() impuro: el cutoff de 48h se recalcula a cada render del
     // memo, pero solo se invalida cuando cambia `alerts.data`. El drift
@@ -120,8 +154,8 @@ export function HeroKpis() {
         icon={<Database aria-hidden className="h-4 w-4" />}
         iconTone="info"
         value={dwh.data ? formatNumber(dwh.data.rowsLast24h) : "—"}
-        sparkline={trend.data?.map((p) => ({ value: p.success })) ?? []}
-        sparklineColor={RECHARTS_THEME.success}
+        sparkline={filasSerie.map((v) => ({ value: v }))}
+        sparklineColor={filasSparkColor}
       />
 
       <KpiTile
@@ -137,8 +171,8 @@ export function HeroKpis() {
             ? deltaFromCounts(fallosInfo.hoy, fallosInfo.ayer)
             : undefined
         }
-        sparkline={trend.data?.map((p) => ({ value: p.failed })) ?? []}
-        sparklineColor={RECHARTS_THEME.destructive}
+        sparkline={fallosSerie.map((v) => ({ value: v }))}
+        sparklineColor={fallosSparkColor}
       />
 
       <KpiTile
