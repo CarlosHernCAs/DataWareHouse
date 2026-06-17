@@ -119,7 +119,7 @@ export function EtlHealthHeatmap() {
     <div className="overflow-x-auto">
       <table
         className="w-full border-collapse"
-        aria-label="Mapa de salud ETL — últimos 14 días"
+        aria-label="Mapa de salud ETL · últimos 14 días"
       >
         <thead>
           <tr>

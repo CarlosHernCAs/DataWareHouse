@@ -24,7 +24,7 @@ export function QualitySummaryCard() {
 
   return (
     <DashboardCardFrame
-      title="Calidad — Cuarentena"
+      title="Calidad · cuarentena"
       description="Estado de los registros en MDM.Cuarentena"
       href="/quality"
       level={level}

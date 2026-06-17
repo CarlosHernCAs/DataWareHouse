@@ -19,8 +19,8 @@ const jetBrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    template: "%s — Portal MDM ACP",
-    default: "Portal MDM — ACP",
+    template: "%s · Portal MDM ACP",
+    default: "Portal MDM · ACP",
   },
   description:
     "Portal de gestión de datos maestros (MDM) para analistas, administradores y ejecutivos de ACP.",

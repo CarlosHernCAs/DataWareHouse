@@ -51,7 +51,7 @@ export default function ReportsPage() {
       <Badge
         variant="warning"
         className="w-fit gap-1.5"
-        title="Plantillas de ejemplo — la generación real de reportes está en roadmap"
+        title="Plantillas de ejemplo. La generación real de reportes está en roadmap."
       >
         <FlaskConical aria-hidden className="h-3 w-3" />
         Datos de demostración

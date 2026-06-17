@@ -3,7 +3,7 @@ import { requireRole } from "@/lib/auth/require-role";
 import { PageHeader } from "@/components/ui/page-header";
 import { ConfiguracionClient } from "./configuracion-client";
 
-export const metadata: Metadata = { title: "Configuración — Portal MDM" };
+export const metadata: Metadata = { title: "Configuración" };
 export const dynamic = "force-dynamic";
 
 export default async function ConfiguracionPage() {

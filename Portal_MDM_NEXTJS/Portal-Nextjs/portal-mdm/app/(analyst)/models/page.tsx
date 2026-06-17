@@ -128,7 +128,7 @@ export default function ModelsListPage() {
           <h2 className="text-sm font-bold uppercase tracking-wide text-[var(--color-text-muted)]">
             Propuestos para desarrollo
           </h2>
-          <Badge variant="warning" className="gap-1.5" title="Hoja de ruta — aún no entrenados">
+          <Badge variant="warning" className="gap-1.5" title="Hoja de ruta · aún no entrenados">
             <FlaskConical aria-hidden className="h-3 w-3" />
             Roadmap · {PROPOSED_MODELS.length} candidatos
           </Badge>

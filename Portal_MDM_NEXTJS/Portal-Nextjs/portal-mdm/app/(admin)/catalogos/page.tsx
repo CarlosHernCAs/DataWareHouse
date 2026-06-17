@@ -3,7 +3,7 @@ import { PageHeader } from "@/components/ui/page-header";
 import { CatalogosClient } from "./catalogos-client";
 import { getSession } from "@/lib/auth/session";
 
-export const metadata: Metadata = { title: "Catálogos — Portal MDM" };
+export const metadata: Metadata = { title: "Catálogos" };
 export const dynamic = "force-dynamic";
 
 export default async function CatalogosPage() {

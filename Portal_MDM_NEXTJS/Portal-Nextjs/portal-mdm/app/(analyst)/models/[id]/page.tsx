@@ -63,7 +63,7 @@ export default async function ModelDetailPage({ params }: PageProps) {
       <Badge
         variant="warning"
         className="w-fit gap-1.5"
-        title="Backend de modelos en roadmap — los datos mostrados son de ejemplo"
+        title="Backend de modelos en roadmap. Los datos mostrados son de ejemplo."
       >
         <FlaskConical aria-hidden className="h-3 w-3" />
         Datos de demostración

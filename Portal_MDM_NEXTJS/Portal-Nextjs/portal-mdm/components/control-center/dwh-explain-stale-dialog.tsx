@@ -267,7 +267,7 @@ export function DwhExplainStaleDialog({
               variant="ghost"
               size="sm"
               disabled
-              title="Pendiente — requiere endpoint /alerts/silence"
+              title="Pendiente · requiere endpoint /alerts/silence"
             >
               <BellOff aria-hidden className="h-4 w-4" />
               Silenciar alerta

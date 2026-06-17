@@ -56,7 +56,7 @@ export function NuevaVariedadDialog() {
             label="Nombre de la variedad"
             required
             error={form.formState.errors.nombreVariedad?.message}
-            help="Texto único — debe coincidir con el nombre oficial de la variedad."
+            help="Texto único. Debe coincidir con el nombre oficial de la variedad."
           >
             <Input
               autoFocus

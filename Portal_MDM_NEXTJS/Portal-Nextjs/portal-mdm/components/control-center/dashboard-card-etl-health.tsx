@@ -12,7 +12,7 @@ const EtlHealthHeatmap = dynamic(
 export function EtlHealthCard() {
   return (
     <DashboardCardFrame
-      title="Salud ETL — últimos 14 días"
+      title="Salud ETL · últimos 14 días"
       description="Un cuadrado por proceso y día (últimos 14 días): verde = éxito, rojo = fallo."
       href="/etl-monitor"
     >

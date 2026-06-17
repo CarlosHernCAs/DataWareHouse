@@ -7,7 +7,7 @@ import { LoginForm } from "./login-form";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Iniciar sesión — Portal MDM",
+  title: "Iniciar sesión",
 };
 
 export default async function LoginPage() {

@@ -139,7 +139,7 @@ export function ActiveRunCard({ corrida }: ActiveRunCardProps) {
       ) : (
         <p className="text-xs italic text-[var(--color-text-muted)]">
           {status === "queued"
-            ? "Corrida en cola — el runner la tomará en breve"
+            ? "Corrida en cola. El runner la tomará en breve."
             : status === "running"
               ? "Runner activo, publicando primer paso…"
               : "Sin pasos registrados aún"}

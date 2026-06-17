@@ -28,7 +28,7 @@ export default function OverviewPage() {
       <Badge
         variant="warning"
         className="w-fit gap-1.5"
-        title="Vista de ejemplo — los indicadores aún no están conectados al backend"
+        title="Vista de ejemplo. Los indicadores aún no están conectados al backend."
       >
         <FlaskConical aria-hidden className="h-3 w-3" />
         Datos de demostración
