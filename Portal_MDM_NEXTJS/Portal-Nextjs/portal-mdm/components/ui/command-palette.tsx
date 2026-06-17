@@ -1,27 +1,33 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import { useQueryClient } from "@tanstack/react-query";
 import { Command } from "cmdk";
 import {
-  Bell,
   Compass,
   Database,
   FileText,
   FlaskConical,
-  GitPullRequestArrow,
   History,
   LayoutDashboard,
+  LogOut,
+  Moon,
   Network,
   PlayCircle,
+  RefreshCw,
+  Rows2,
   Settings,
   ShieldAlert,
   ShieldCheck,
   Telescope,
+  Trash2,
   Workflow,
   type LucideIcon,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { isRoleAllowed, type Role } from "@/lib/auth/rbac";
+import { usePreferencias } from "@/components/providers/preferencias-provider";
+import { useToast } from "@/hooks/use-toast";
 
 /* ----------------------------------------------------------------- data */
 
@@ -36,7 +42,18 @@ interface PaletteItem {
   keywords?: string;
 }
 
-function buildItems(router: ReturnType<typeof useRouter>): PaletteItem[] {
+interface BuildItemsCtx {
+  router: ReturnType<typeof useRouter>;
+  densidad: "compacta" | "comoda";
+  setDensidad: (d: "compacta" | "comoda") => void;
+  tema: "oscuro" | "sistema";
+  setTema: (t: "oscuro" | "sistema") => void;
+  clearCache: () => void;
+  logout: () => void;
+}
+
+function buildItems(ctx: BuildItemsCtx): PaletteItem[] {
+  const { router, densidad, setDensidad, tema, setTema, clearCache, logout } = ctx;
   return [
     // ── Operaciones ────────────────────────────────────────────────
     {
@@ -93,14 +110,16 @@ function buildItems(router: ReturnType<typeof useRouter>): PaletteItem[] {
       group: "Operaciones",
       keywords: "tablas columnas lineage explorer",
     },
+    // Workflows fue migrado a /quality; el ítem queda como alias para que
+    // la memoria muscular del usuario siga funcionando.
     {
       id: "workflows",
-      label: "Workflows MDM",
-      description: "Procesos de homologación y reinyección",
-      icon: GitPullRequestArrow,
-      href: "/workflows",
+      label: "Homologación",
+      description: "Workflows MDM dentro de Calidad",
+      icon: Workflow,
+      href: "/quality",
       group: "Operaciones",
-      keywords: "homologacion workflows mdm",
+      keywords: "homologacion workflows mdm reinyeccion",
     },
     // ── Gobierno ───────────────────────────────────────────────────
     {
@@ -168,14 +187,51 @@ function buildItems(router: ReturnType<typeof useRouter>): PaletteItem[] {
       group: "Gobierno",
       keywords: "ejecutivo overview kpis gerencia",
     },
-    // ── Actions ────────────────────────────────────────────────────
+    // ── Acciones rápidas ───────────────────────────────────────────
     {
       id: "reload",
       label: "Recargar página",
-      icon: Bell,
+      icon: RefreshCw,
       action: () => router.refresh(),
       group: "Acciones rápidas",
-      keywords: "reload refresh",
+      keywords: "reload refresh recargar",
+    },
+    {
+      id: "clear-cache",
+      label: "Limpiar cache de queries",
+      description: "Fuerza un refetch de todos los datos en pantalla",
+      icon: Trash2,
+      action: clearCache,
+      group: "Acciones rápidas",
+      keywords: "cache invalidate refetch limpiar",
+    },
+    // ── Preferencias ──────────────────────────────────────────────
+    {
+      id: "toggle-density",
+      label: densidad === "compacta" ? "Densidad: cómoda" : "Densidad: compacta",
+      description: "Cambia el alto de filas en tablas",
+      icon: Rows2,
+      action: () => setDensidad(densidad === "compacta" ? "comoda" : "compacta"),
+      group: "Preferencias",
+      keywords: "density compact comfortable filas",
+    },
+    {
+      id: "toggle-theme",
+      label: tema === "oscuro" ? "Tema: usar sistema" : "Tema: forzar oscuro",
+      description: "Sincroniza con prefers-color-scheme o fija dark",
+      icon: Moon,
+      action: () => setTema(tema === "oscuro" ? "sistema" : "oscuro"),
+      group: "Preferencias",
+      keywords: "theme dark light tema",
+    },
+    // ── Sesión ────────────────────────────────────────────────────
+    {
+      id: "logout",
+      label: "Cerrar sesión",
+      icon: LogOut,
+      action: logout,
+      group: "Sesión",
+      keywords: "logout salir cerrar sesion exit",
     },
   ];
 }
@@ -191,10 +247,35 @@ interface CommandPaletteProps {
 
 export function CommandPalette({ open, onOpenChange, role }: CommandPaletteProps) {
   const router = useRouter();
+  const qc = useQueryClient();
+  const { toast } = useToast();
+  const { densidad, setDensidad, tema, setTema } = usePreferencias();
+
+  function clearCache() {
+    qc.clear();
+    toast({ title: "Cache de queries limpiada", variant: "success" });
+  }
+
+  function logout() {
+    // Mismo patrón que el dropdown del sidebar: POST form al endpoint
+    // de logout para que limpie la cookie httpOnly del JWT.
+    const form = document.createElement("form");
+    form.method = "post";
+    form.action = "/api/auth/logout";
+    document.body.appendChild(form);
+    form.submit();
+  }
+
   // Solo mostramos rutas permitidas para el rol (acciones sin href siempre).
-  const items = buildItems(router).filter(
-    (it) => !it.href || isRoleAllowed(role, it.href),
-  );
+  const items = buildItems({
+    router,
+    densidad,
+    setDensidad,
+    tema,
+    setTema,
+    clearCache,
+    logout,
+  }).filter((it) => !it.href || isRoleAllowed(role, it.href));
 
   // Group items by group key preserving insertion order
   const groups: Record<string, PaletteItem[]> = {};
