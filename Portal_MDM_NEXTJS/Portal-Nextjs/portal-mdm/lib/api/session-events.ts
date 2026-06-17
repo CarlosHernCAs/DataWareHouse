@@ -33,24 +33,8 @@ export function resetSessionExpired(): void {
 }
 
 /**
- * Error sentinela para 401. Quien lo lance ya disparó el evento;
- * los componentes que lo capturen NO deben mostrar su propio toast
- * destructive — el handler global ya muestra el mensaje canónico.
+ * `UnauthorizedError` y su type guard `isUnauthorizedError` viven ahora
+ * en `lib/api/errors.ts` (jerarquía única). Se re-exportan acá para no
+ * romper imports históricos.
  */
-export class UnauthorizedError extends Error {
-  readonly isUnauthorized = true as const;
-  constructor(path: string) {
-    super(`Sesión expirada al consultar ${path}`);
-    this.name = "UnauthorizedError";
-  }
-}
-
-export function isUnauthorizedError(err: unknown): err is UnauthorizedError {
-  return (
-    err instanceof UnauthorizedError ||
-    (typeof err === "object" &&
-      err !== null &&
-      "isUnauthorized" in err &&
-      (err as { isUnauthorized?: boolean }).isUnauthorized === true)
-  );
-}
+export { UnauthorizedError, isUnauthorizedError } from "./errors";

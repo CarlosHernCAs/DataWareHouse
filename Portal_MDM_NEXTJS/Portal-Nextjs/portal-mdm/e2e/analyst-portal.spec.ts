@@ -89,7 +89,8 @@ test.describe("Portal Analista — smoke tests", () => {
     expect(url.includes("/home") || url.includes("/login")).toBeTruthy();
   });
 
-  test("página de notificaciones carga sin errores", async ({ page }) => {
+  // TODO: /notifications fue removida del portal. Test desactivado.
+  test.skip("página de notificaciones carga sin errores", async ({ page }) => {
     await page.goto("/notifications");
     await expect(page).toHaveURL("/notifications");
     await expect(page.getByText("Notificaciones")).toBeVisible();

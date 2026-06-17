@@ -1,7 +1,12 @@
 import { test, expect } from "@playwright/test";
 import { loginAs } from "./helpers/auth";
 
-test.describe("Módulo Admin — Workflows", () => {
+// TODO: la ruta `/workflows` fue migrada a `/quality` (homologación vive
+// ahora dentro de Gobierno y Calidad). Estos tests apuntan a una ruta
+// que ya no existe; el suite queda `.skip` hasta que el módulo se
+// reescriba contra `/quality`. Ver e2e/admin-routes.spec.ts para los
+// tests vigentes de calidad.
+test.describe.skip("Módulo Admin — Workflows (legacy, ruta migrada a /quality)", () => {
   test.beforeEach(async ({ page }) => {
     await loginAs(page, "admin");
     await page.goto("/workflows");

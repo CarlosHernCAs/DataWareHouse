@@ -31,14 +31,28 @@ export async function prefetchDashboard(qc: QueryClient): Promise<void> {
 
   const cookieHeader = await getCookieHeader();
 
+  /**
+   * Timeout por prefetch — si una query lenta del backend se demora,
+   * NO debe arrastrar al primer paint del dashboard. La query restante
+   * se hidratará client-side con su propio skeleton.
+   *
+   * Antes: 6 queries en paralelo, una lenta de 8s → 10s+ de TTFB.
+   * Ahora: si una pasa de 1.5s, el server skipea su prefetch y el
+   * cliente la pide a su ritmo. El usuario ve el dashboard en ≤2s.
+   */
+  const PREFETCH_TIMEOUT_MS = 1500;
+
   async function prefetch<T>(
     key: readonly unknown[],
     path: string,
     schema: z.ZodType<T>,
   ) {
+    const controller = new AbortController();
+    const t = setTimeout(() => controller.abort(), PREFETCH_TIMEOUT_MS);
     try {
       const res = await fetch(`${origin}${path}`, {
         cache: "no-store",
+        signal: controller.signal,
         headers: cookieHeader ? { cookie: cookieHeader } : undefined,
       });
       if (!res.ok) return;
@@ -46,10 +60,12 @@ export async function prefetchDashboard(qc: QueryClient): Promise<void> {
       if (!parsed.success) return;
       qc.setQueryData(key, parsed.data);
     } catch (err) {
-      console.warn(
-        `[prefetch] Query falló:`,
-        err instanceof Error ? err.message : String(err)
-      );
+      // Timeout o downstream error: silent skip — el cliente hidrata normal.
+      if (err instanceof Error && err.name !== "AbortError") {
+        console.warn(`[prefetch] ${path} falló:`, err.message);
+      }
+    } finally {
+      clearTimeout(t);
     }
   }
 

@@ -2,18 +2,14 @@
  * Thin fetch wrapper for the FastAPI backend.
  * - Server-side: forwards the JWT cookie automatically.
  * - Client-side: relies on the httpOnly cookie set at /api/auth/login.
+ *
+ * Para tipos de error usa `@/lib/api/errors` — `ApiError` se re-exporta
+ * desde acá por compat histórica con callers que ya hacen `instanceof`.
  */
 const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
-export class ApiError extends Error {
-  status: number;
-  body: unknown;
-  constructor(status: number, message: string, body: unknown) {
-    super(message);
-    this.status = status;
-    this.body = body;
-  }
-}
+export { ApiError, isApiError } from "./errors";
+import { ApiError } from "./errors";
 
 type Json = Record<string, unknown> | unknown[] | string | number | boolean | null;
 

@@ -18,7 +18,7 @@
  * dependencias extra.
  */
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import * as Dialog from "@radix-ui/react-dialog";
 import { Search } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -50,13 +50,17 @@ export function DwhQuickSearch({
   onSelect,
 }: DwhQuickSearchProps) {
   const [q, setQ] = useState("");
+  // El input se mantiene "fresco" (controlado por `q`); el filtrado pesado
+  // usa `deferredQ`, que React puede saltarse si llega un keystroke más.
+  // Resultado: typeo fluido en listas grandes de nodos.
+  const deferredQ = useDeferredValue(q);
   const [active, setActive] = useState(0);
   const inputRef = useRef<HTMLInputElement | null>(null);
   const listRef = useRef<HTMLUListElement | null>(null);
 
   // Resultados rankeados: exact-prefix > substring fullName > substring facts.
   const results = useMemo(() => {
-    const lower = q.trim().toLowerCase();
+    const lower = deferredQ.trim().toLowerCase();
     if (!lower) return nodes.slice(0, MAX_RESULTS);
     const scored: { node: DwhNode; score: number }[] = [];
     for (const n of nodes) {
@@ -74,7 +78,7 @@ export function DwhQuickSearch({
       .sort((a, b) => b.score - a.score)
       .slice(0, MAX_RESULTS)
       .map((s) => s.node);
-  }, [nodes, q]);
+  }, [nodes, deferredQ]);
 
   // Reset al abrir.
   useEffect(() => {

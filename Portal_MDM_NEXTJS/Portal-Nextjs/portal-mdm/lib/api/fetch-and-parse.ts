@@ -17,10 +17,8 @@
  */
 
 import type { z } from "zod";
-import {
-  UnauthorizedError,
-  dispatchSessionExpired,
-} from "./session-events";
+import { dispatchSessionExpired } from "./session-events";
+import { HttpError, UnauthorizedError } from "./errors";
 
 interface FetchOptions extends RequestInit {
   /**
@@ -28,19 +26,6 @@ interface FetchOptions extends RequestInit {
    * Útil para chequeos opcionales (ej. polling de notifs en login).
    */
   skipSessionDispatch?: boolean;
-}
-
-/**
- * Error con `status` adjunto. Algunos hooks (ej. cuarentena) leen
- * `err.status` para diferenciar 404 de 5xx en la UI.
- */
-class HttpError extends Error {
-  status: number;
-  constructor(status: number, message: string) {
-    super(message);
-    this.name = "HttpError";
-    this.status = status;
-  }
 }
 
 async function extractDetail(res: Response): Promise<string> {
@@ -123,4 +108,4 @@ export async function fetchJson<T = unknown>(
   return (await res.json()) as T;
 }
 
-export { HttpError };
+export { HttpError, UnauthorizedError, isApiError, isHttpStatus } from "./errors";

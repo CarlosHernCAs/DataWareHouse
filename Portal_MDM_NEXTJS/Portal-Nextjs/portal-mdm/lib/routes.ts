@@ -12,7 +12,6 @@
  * grita; si la ruta queda sin grupo, no aparece en la sidebar. Único
  * sitio donde el portal sabe qué existe.
  */
-
 import {
   Bell,
   Compass,

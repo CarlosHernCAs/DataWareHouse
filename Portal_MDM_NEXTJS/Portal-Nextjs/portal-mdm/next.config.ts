@@ -1,4 +1,16 @@
 import type { NextConfig } from "next";
+import bundleAnalyzer from "@next/bundle-analyzer";
+
+/**
+ * Bundle analyzer activado bajo `ANALYZE=true`. Corre:
+ *   ANALYZE=true npm run build
+ * Genera HTML interactivo en `.next/analyze/` con cliente + servidor.
+ * Útil para ver si lucide-react se tree-shake bien, si Plotly se quedó
+ * fuera del bundle inicial, y quién está pesando.
+ */
+const withBundleAnalyzer = bundleAnalyzer({
+  enabled: process.env.ANALYZE === "true",
+});
 
 const securityHeaders = [
   { key: "X-Content-Type-Options", value: "nosniff" },
@@ -32,4 +44,4 @@ const nextConfig: NextConfig = {
   allowedDevOrigins: ["172.16.50.30", "localhost"],
 } as any;
 
-export default nextConfig;
+export default withBundleAnalyzer(nextConfig);

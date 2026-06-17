@@ -1,4 +1,5 @@
 import { PageHeader } from "@/components/ui/page-header";
+import { ErrorBoundary } from "@/components/ui/error-boundary";
 import { HeroKpis } from "./hero-kpis";
 import {
   DwhStateCard,
@@ -45,28 +46,42 @@ export function Dashboard({ title, description }: DashboardProps) {
         }
       />
 
-      {/* Zone 2: Hero KPIs */}
-      <HeroKpis />
+      {/* Zone 2: Hero KPIs — boundary aislado por tile vía HeroKpis interno */}
+      <ErrorBoundary>
+        <HeroKpis />
+      </ErrorBoundary>
 
       {/* Zone 3: ETL Trend — full width for better chart legibility */}
-      <EtlTrendCard />
+      <ErrorBoundary>
+        <EtlTrendCard />
+      </ErrorBoundary>
 
       {/* Zone 4: Live Activity | Quality Summary */}
       <section className="grid grid-cols-1 gap-4 lg:grid-cols-3">
         <div className="flex flex-col gap-4">
-          <LiveRunsPanel />
-          <AlertFeedLive />
+          <ErrorBoundary>
+            <LiveRunsPanel />
+          </ErrorBoundary>
+          <ErrorBoundary>
+            <AlertFeedLive />
+          </ErrorBoundary>
         </div>
         <div className="lg:col-span-2">
-          <QualitySummaryCard />
+          <ErrorBoundary>
+            <QualitySummaryCard />
+          </ErrorBoundary>
         </div>
       </section>
 
       {/* Zone 5: DWH State — full width to show all stats without cramping */}
-      <DwhStateCard />
+      <ErrorBoundary>
+        <DwhStateCard />
+      </ErrorBoundary>
 
       {/* Zone 6: Health Heatmap — full width */}
-      <EtlHealthCard />
+      <ErrorBoundary>
+        <EtlHealthCard />
+      </ErrorBoundary>
     </div>
   );
 }
