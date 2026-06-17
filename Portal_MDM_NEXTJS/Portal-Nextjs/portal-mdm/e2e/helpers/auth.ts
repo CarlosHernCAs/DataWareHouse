@@ -17,7 +17,9 @@ function buildFakeJwt(role: "analyst" | "admin" | "executive", name: string): st
 
   const header = encode({ alg: "HS256", typ: "JWT" });
   const exp = Math.floor(Date.now() / 1000) + 8 * 3600;
-  const payload = encode({ sub: "test-user", role, name, exp });
+  // Usamos 'admin' porque FastAPI verifica que el sub exista en la BD (SQL Server).
+  // Aunque sea 'admin', FastAPI confía en el 'role' que viene en el JWT para el RBAC.
+  const payload = encode({ sub: "admin", role, name, exp });
   
   const secret = process.env.ACP_JWT_SECRETO || "CAMBIAME_POR_UNA_CLAVE_SUPER_SECRETA_DE_32_CHARS";
   const signature = crypto
