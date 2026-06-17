@@ -60,7 +60,11 @@ export function KpiTile({
       href={href}
       aria-label={`${label}: ${value}${valueSuffix ?? ""}. Abrir detalle.`}
       className={cn(
-        "group relative flex min-h-[148px] flex-col justify-between overflow-hidden rounded-lg border bg-[var(--color-surface)] p-4 transition",
+        "group relative flex min-h-[148px] flex-col justify-between overflow-hidden rounded-lg border bg-[var(--color-surface)] p-4",
+        // Misma curva exponencial que dashboard-card-frame para coherencia
+        // del sistema de motion. ease-out-quart consume el var declarado
+        // en globals.css y tipado en design-tokens.ts.
+        "transition duration-[var(--motion-base)] ease-[var(--ease-out-quart)]",
         "border-l-4",
         borderTone,
         bgGlow,
