@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import { PageHeader } from "@/components/ui/page-header";
 import { Badge } from "@/components/ui/badge";
+import { Tooltip, TooltipTrigger, TooltipContent } from "@/components/ui/tooltip";
 import {
   Card,
   CardContent,
@@ -128,10 +129,15 @@ export default function ModelsListPage() {
           <h2 className="text-sm font-bold uppercase tracking-wide text-[var(--color-text-muted)]">
             Propuestos para desarrollo
           </h2>
-          <Badge variant="warning" className="gap-1.5" title="Hoja de ruta · aún no entrenados">
-            <FlaskConical aria-hidden className="h-3 w-3" />
-            Roadmap · {PROPOSED_MODELS.length} candidatos
-          </Badge>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Badge variant="warning" className="gap-1.5">
+                <FlaskConical aria-hidden className="h-3 w-3" />
+                Roadmap · {PROPOSED_MODELS.length} candidatos
+              </Badge>
+            </TooltipTrigger>
+            <TooltipContent>Hoja de ruta · aún no entrenados</TooltipContent>
+          </Tooltip>
         </div>
 
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">

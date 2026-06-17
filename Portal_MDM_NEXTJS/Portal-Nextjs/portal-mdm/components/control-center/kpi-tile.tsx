@@ -3,6 +3,7 @@
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import { Skeleton } from "@/components/ui/skeleton";
+import { Tooltip, TooltipTrigger, TooltipContent } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
 
 /**
@@ -35,6 +36,12 @@ export interface KpiTileProps {
   sparklineColor?: string;
   progressBar?: { value: number; max: number };
   pulseDot?: boolean;
+  /**
+   * Explicación opcional del porqué del tono — aparece como tooltip
+   * Radix al hacer hover/focus sobre el tile. Útil para exponer la
+   * regla detrás de "warning"/"destructive" (ej. "≥ 3 fallos en 24h").
+   */
+  tooltip?: React.ReactNode;
 }
 
 export function KpiTile({
@@ -51,11 +58,12 @@ export function KpiTile({
   sparklineColor,
   progressBar,
   pulseDot,
+  tooltip,
 }: KpiTileProps) {
   const borderTone = tone ? toneBorderClass(tone) : "border-[var(--color-border)]";
   const bgGlow = tone ? toneGlowClass(tone) : "";
 
-  return (
+  const tile = (
     <Link
       href={href}
       aria-label={`${label}: ${value}${valueSuffix ?? ""}. Abrir detalle.`}
@@ -162,6 +170,19 @@ export function KpiTile({
         </div>
       ) : null}
     </Link>
+  );
+
+  // Si no hay tooltip explicativo, retornamos el tile directo — evita
+  // el overhead de Radix Portal cuando no aporta nada.
+  if (!tooltip) return tile;
+
+  return (
+    <Tooltip>
+      <TooltipTrigger asChild>{tile}</TooltipTrigger>
+      <TooltipContent side="top" className="max-w-xs text-center">
+        {tooltip}
+      </TooltipContent>
+    </Tooltip>
   );
 }
 

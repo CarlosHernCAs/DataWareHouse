@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Download, FileText, FlaskConical } from "lucide-react";
 import { PageHeader } from "@/components/ui/page-header";
 import { Badge } from "@/components/ui/badge";
+import { Tooltip, TooltipTrigger, TooltipContent } from "@/components/ui/tooltip";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -48,14 +49,17 @@ export default function ReportsPage() {
         description="Plantillas pre-configuradas para análisis ejecutivo y auditoría."
       />
 
-      <Badge
-        variant="warning"
-        className="w-fit gap-1.5"
-        title="Plantillas de ejemplo. La generación real de reportes está en roadmap."
-      >
-        <FlaskConical aria-hidden className="h-3 w-3" />
-        Datos de demostración
-      </Badge>
+      <Tooltip>
+        <TooltipTrigger asChild>
+          <Badge variant="warning" className="w-fit gap-1.5">
+            <FlaskConical aria-hidden className="h-3 w-3" />
+            Datos de demostración
+          </Badge>
+        </TooltipTrigger>
+        <TooltipContent>
+          Plantillas de ejemplo. La generación real de reportes está en roadmap.
+        </TooltipContent>
+      </Tooltip>
 
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
         {REPORTS.map((r) => (

@@ -11,7 +11,7 @@ export async function GET() {
   if (error) return error;
 
   const raw = await fastapiFetchSafe<unknown>(
-    `/api/v1/cuarentena?pagina=1&tamano=500`,
+    `/api/v1/cuarentena?pagina=1&tamano=200`,
   );
   const parsed = raw ? FastApiQuarantinePage.safeParse(raw) : null;
   const records = parsed?.success ? parsed.data.datos.map(mapQuarantineRecord) : [];

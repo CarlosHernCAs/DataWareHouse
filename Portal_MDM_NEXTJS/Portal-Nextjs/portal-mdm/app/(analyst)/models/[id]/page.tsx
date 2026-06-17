@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, FlaskConical, Sparkles, Target, TrendingUp } from "lucide-react";
 import { PageHeader } from "@/components/ui/page-header";
 import { Badge } from "@/components/ui/badge";
+import { Tooltip, TooltipTrigger, TooltipContent } from "@/components/ui/tooltip";
 import { Button } from "@/components/ui/button";
 import { KpiCard } from "@/components/charts/kpi-card";
 import {
@@ -60,14 +61,17 @@ export default async function ModelDetailPage({ params }: PageProps) {
         }
       />
 
-      <Badge
-        variant="warning"
-        className="w-fit gap-1.5"
-        title="Backend de modelos en roadmap. Los datos mostrados son de ejemplo."
-      >
-        <FlaskConical aria-hidden className="h-3 w-3" />
-        Datos de demostración
-      </Badge>
+      <Tooltip>
+        <TooltipTrigger asChild>
+          <Badge variant="warning" className="w-fit gap-1.5">
+            <FlaskConical aria-hidden className="h-3 w-3" />
+            Datos de demostración
+          </Badge>
+        </TooltipTrigger>
+        <TooltipContent>
+          Backend de modelos en roadmap. Los datos mostrados son de ejemplo.
+        </TooltipContent>
+      </Tooltip>
 
       <section className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <KpiCard

@@ -16,7 +16,7 @@ export async function GET(req: Request) {
   );
 
   const raw = await fastapiFetchSafe<unknown>(
-    `/api/v1/auditoria/bitacora?pagina=1&tamano=500`,
+    `/api/v1/auditoria/bitacora?pagina=1&tamano=200`,
   );
   const parsed = raw ? FastApiBitacoraPagina.safeParse(raw) : null;
   const entries = parsed?.success ? parsed.data.items.map(mapBitacoraEntry) : [];

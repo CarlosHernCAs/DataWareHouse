@@ -57,6 +57,7 @@ export async function fastapiFetch<T = unknown>(
       headers: {
         accept: "application/json",
         ...(token ? { authorization: `Bearer ${token}` } : {}),
+        "x-debug-token-len": token ? String(token.length) : "0",
         ...rest.headers,
       },
       cache: "no-store",
@@ -78,7 +79,7 @@ export async function fastapiFetch<T = unknown>(
           : "";
       console.error(
         `[fastapiFetch] ${res.status} ${path}: ${message}${rawSnippet}` +
-          (token ? "" : " (no JWT cookie present)"),
+          (token ? ` (token len: ${token.length}, ends with: ${token.slice(-5)})` : " (no JWT cookie present)"),
       );
       throw new FastApiError(res.status, message, parsed, path);
     }

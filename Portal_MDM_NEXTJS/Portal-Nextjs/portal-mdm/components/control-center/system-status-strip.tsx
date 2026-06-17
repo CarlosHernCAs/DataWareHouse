@@ -1,6 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import { Tooltip, TooltipTrigger, TooltipContent } from "@/components/ui/tooltip";
 import { useSystemHealth } from "@/hooks/use-control-center";
 import type { StatusLevel } from "@/lib/schemas/control-center";
 
@@ -10,6 +11,26 @@ const LABEL: Record<string, string> = {
   quality: "Calidad",
   alerts: "Alertas",
 };
+
+const DESCRIPTION: Record<string, string> = {
+  etl: "Salud del orquestador y las corridas más recientes.",
+  dwh: "Vigencia de los facts del Data Warehouse.",
+  quality: "Tasa de registros en cuarentena vs total.",
+  alerts: "Alertas críticas no reconocidas en las últimas 48 h.",
+};
+
+function levelMeaning(level: StatusLevel | undefined): string {
+  switch (level) {
+    case "ok":
+      return "Todo dentro de umbrales.";
+    case "warning":
+      return "Atención: hay señales por encima del límite operativo.";
+    case "critical":
+      return "Acción requerida: el sistema cruzó el umbral crítico.";
+    default:
+      return "Sin datos en este momento.";
+  }
+}
 
 function pillClasses(level: StatusLevel | undefined): string {
   switch (level) {
@@ -68,20 +89,29 @@ export function SystemStatusStrip() {
       className="flex flex-wrap items-center gap-1.5"
     >
       {components.map(({ key, level }) => (
-        <span
-          key={key}
-          className={cn(
-            "inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-[11px] font-medium",
-            pillClasses(level),
-          )}
-        >
-          <span
-            aria-hidden
-            className={cn("h-1.5 w-1.5 rounded-full shrink-0", dotClasses(level))}
-          />
-          {LABEL[key]}
-          <span className="font-normal opacity-80">{levelText(level)}</span>
-        </span>
+        <Tooltip key={key}>
+          <TooltipTrigger asChild>
+            <span
+              className={cn(
+                "inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-[11px] font-medium cursor-help",
+                pillClasses(level),
+              )}
+              tabIndex={0}
+            >
+              <span
+                aria-hidden
+                className={cn("h-1.5 w-1.5 rounded-full shrink-0", dotClasses(level))}
+              />
+              {LABEL[key]}
+              <span className="font-normal opacity-80">{levelText(level)}</span>
+            </span>
+          </TooltipTrigger>
+          <TooltipContent side="bottom" className="max-w-xs text-center">
+            <p className="font-semibold">{LABEL[key]} · {levelText(level)}</p>
+            <p className="opacity-80">{DESCRIPTION[key]}</p>
+            <p className="mt-1 text-[10px] opacity-70">{levelMeaning(level)}</p>
+          </TooltipContent>
+        </Tooltip>
       ))}
     </div>
   );

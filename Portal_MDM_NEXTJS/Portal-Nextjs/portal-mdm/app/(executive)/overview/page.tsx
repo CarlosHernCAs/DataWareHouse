@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { FlaskConical } from "lucide-react";
 import { PageHeader } from "@/components/ui/page-header";
 import { Badge } from "@/components/ui/badge";
+import { Tooltip, TooltipTrigger, TooltipContent } from "@/components/ui/tooltip";
 import {
   Card,
   CardContent,
@@ -25,14 +26,17 @@ export default function OverviewPage() {
         description="Indicadores estratégicos de la plataforma de datos maestros."
       />
 
-      <Badge
-        variant="warning"
-        className="w-fit gap-1.5"
-        title="Vista de ejemplo. Los indicadores aún no están conectados al backend."
-      >
-        <FlaskConical aria-hidden className="h-3 w-3" />
-        Datos de demostración
-      </Badge>
+      <Tooltip>
+        <TooltipTrigger asChild>
+          <Badge variant="warning" className="w-fit gap-1.5">
+            <FlaskConical aria-hidden className="h-3 w-3" />
+            Datos de demostración
+          </Badge>
+        </TooltipTrigger>
+        <TooltipContent>
+          Vista de ejemplo. Los indicadores aún no están conectados al backend.
+        </TooltipContent>
+      </Tooltip>
 
       <OverviewKpis />
 

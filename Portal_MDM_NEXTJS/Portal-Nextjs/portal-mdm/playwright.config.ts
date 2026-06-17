@@ -2,9 +2,16 @@ import { defineConfig, devices } from "@playwright/test";
 import dotenv from "dotenv";
 import path from "path";
 
-dotenv.config({ path: path.resolve(__dirname, "../../../.env") });
+import fs from "fs";
+
+const envPath = fs.existsSync(path.resolve(__dirname, "../../../.env.test"))
+  ? path.resolve(__dirname, "../../../.env.test")
+  : path.resolve(__dirname, "../../../.env");
+
+dotenv.config({ path: envPath });
 
 export default defineConfig({
+  globalSetup: require.resolve("./e2e/global.setup"),
   testDir: "./e2e",
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
@@ -19,10 +26,18 @@ export default defineConfig({
   projects: [
     { name: "chromium", use: { ...devices["Desktop Chrome"] } },
   ],
-  webServer: {
-    command: "npm run dev",
-    url: "http://localhost:3000",
-    reuseExistingServer: !process.env.CI,
-    timeout: 120_000,
-  },
+  webServer: [
+    {
+      command: 'cd ../../../backend && "..\\.venv\\Scripts\\python.exe" main.py',
+      url: "http://localhost:8810/health",
+      reuseExistingServer: !process.env.CI,
+      timeout: 120_000,
+    },
+    {
+      command: "npm run dev",
+      url: "http://localhost:3000",
+      reuseExistingServer: !process.env.CI,
+      timeout: 120_000,
+    }
+  ],
 });

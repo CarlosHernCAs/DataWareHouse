@@ -134,6 +134,7 @@ export function HeroKpis() {
         valueSuffix="/100"
         tone={scoreTone}
         progressBar={{ value: healthScore, max: 100 }}
+        tooltip="Score = (corridas exitosas hoy / total). Bajo 70 = crítico, 70–89 = aviso."
       />
 
       <KpiTile
@@ -173,6 +174,7 @@ export function HeroKpis() {
         }
         sparkline={fallosSerie.map((v) => ({ value: v }))}
         sparklineColor={fallosSparkColor}
+        tooltip="Fallos hoy. 1–2 = aviso, ≥ 3 = crítico. Sparkline rojo si la tendencia sube."
       />
 
       <KpiTile
@@ -183,6 +185,7 @@ export function HeroKpis() {
         iconTone={pendientesTone ?? "success"}
         value={formatNumber(pendientes)}
         tone={pendientesTone}
+        tooltip="Registros en cuarentena sin resolver. > 20 = crítico, 1–20 = aviso."
       />
 
       <KpiTile
@@ -200,6 +203,7 @@ export function HeroKpis() {
         value={formatNumber(criticalCount)}
         tone={criticalCount > 0 ? "destructive" : undefined}
         pulseDot={criticalCount > 0}
+        tooltip="Alertas críticas no reconocidas de las últimas 48 horas."
       />
     </section>
   );

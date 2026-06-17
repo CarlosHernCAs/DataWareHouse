@@ -1,12 +1,14 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { ChevronDown, Terminal } from "lucide-react";
+import { ChevronDown, Terminal, ListTree } from "lucide-react";
 import { cn } from "@/lib/utils";
 import type { CorridaPaso } from "@/lib/schemas/control-center";
+import type { LogEvent } from "@/hooks/use-etl-log-stream";
 
 interface EtlExecutionLogProps {
   pasos: CorridaPaso[];
+  logs?: LogEvent[];
   isRunning: boolean;
   className?: string;
 }
@@ -72,19 +74,20 @@ const STATUS_CFG = {
 
 export function EtlExecutionLog({
   pasos,
+  logs = [],
   isRunning,
   className,
 }: EtlExecutionLogProps) {
+  const [activeTab, setActiveTab] = useState<"pasos" | "terminal">("terminal");
   const scrollRef = useRef<HTMLDivElement>(null);
   const [autoScroll, setAutoScroll] = useState(true);
 
   const sorted = [...pasos].sort((a, b) => a.orden - b.orden);
 
-  // Auto-scroll to bottom when new steps arrive while user hasn't scrolled up.
   useEffect(() => {
     if (!autoScroll || !scrollRef.current) return;
     scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
-  }, [pasos.length, autoScroll]);
+  }, [pasos.length, logs.length, autoScroll, activeTab]);
 
   function handleScroll() {
     if (!scrollRef.current) return;
@@ -97,45 +100,101 @@ export function EtlExecutionLog({
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" });
   }
 
+  const renderTerminalLogs = () => {
+    if (logs.length === 0) {
+      return (
+        <p className="px-4 py-6 text-center font-mono text-xs text-[#a1a1aa]">
+          Esperando flujo de terminal...
+        </p>
+      );
+    }
+    
+    return logs.map((log) => {
+      let colorClass = "text-[#d4d4d8]"; // Default gray
+      if (log.type === "error" || log.data.includes("ERROR") || log.data.includes("Exception")) {
+        colorClass = "text-[#f87171]"; // Red
+      } else if (log.data.includes("WARN")) {
+        colorClass = "text-[#fbbf24]"; // Yellow
+      } else if (log.type === "inicio_paso" || log.type === "fin_paso" || log.data.includes("INFO")) {
+        colorClass = "text-[#60a5fa]"; // Blue
+      } else if (log.data.includes("SUCCESS") || log.data.includes("OK")) {
+        colorClass = "text-[#4ade80]"; // Green
+      }
+
+      return (
+        <div key={log.id} className="flex gap-4 px-4 py-1 hover:bg-[#27272a] transition-colors">
+          <span className="w-16 shrink-0 text-[#71717a] tabular-nums select-none">
+            {fmtTime(log.timestamp.toISOString())}
+          </span>
+          <span className={cn("flex-1 break-all", colorClass)}>
+            {log.data}
+          </span>
+        </div>
+      );
+    });
+  };
+
   return (
     <div
       className={cn(
-        "overflow-hidden rounded-md border border-[var(--color-border)]",
+        "flex flex-col overflow-hidden rounded-md border border-[var(--color-border)] shadow-sm",
         className,
       )}
     >
-      {/* ── Terminal chrome ── */}
-      <div className="flex items-center justify-between border-b border-[var(--color-border)] bg-[var(--color-surface-2)] px-3 py-2">
-        <div className="flex items-center gap-3">
-          {/* macOS traffic-light dots — purely decorative */}
-          <div className="flex items-center gap-1.5" aria-hidden>
-            <span className="h-3 w-3 rounded-full bg-[#FF5F57]" />
-            <span className="h-3 w-3 rounded-full bg-[#FFBD2E]" />
-            <span className="h-3 w-3 rounded-full bg-[#28C840]" />
+      {/* ── Tabs and Chrome ── */}
+      <div className="flex items-center justify-between border-b border-[var(--color-border)] bg-[var(--color-surface-2)] px-3 py-1.5">
+        <div className="flex items-center gap-4">
+          {/* macOS dots */}
+          <div className="flex items-center gap-1.5 px-1" aria-hidden>
+            <span className="h-3 w-3 rounded-full bg-[#FF5F57] border border-black/10 shadow-inner" />
+            <span className="h-3 w-3 rounded-full bg-[#FFBD2E] border border-black/10 shadow-inner" />
+            <span className="h-3 w-3 rounded-full bg-[#28C840] border border-black/10 shadow-inner" />
           </div>
-          <div className="flex items-center gap-2 text-xs text-[var(--color-text-muted)]">
-            <Terminal aria-hidden className="h-3.5 w-3.5" />
-            <span className="font-mono">execution.log</span>
-            {isRunning ? (
-              <span className="flex items-center gap-1.5">
-                <span
-                  aria-hidden
-                  className="h-1.5 w-1.5 animate-pulse rounded-full bg-[var(--color-info)]"
-                />
-                <span className="text-[var(--color-info)]">live</span>
-              </span>
-            ) : null}
+          
+          {/* Tab Switcher */}
+          <div className="flex items-center rounded-md bg-[var(--color-surface)] p-0.5 border border-[var(--color-border)]/50">
+            <button
+              onClick={() => setActiveTab("pasos")}
+              className={cn(
+                "flex items-center gap-1.5 rounded-sm px-2.5 py-1 text-xs font-medium transition-all duration-200",
+                activeTab === "pasos" 
+                  ? "bg-[var(--color-surface-2)] text-[var(--color-text)] shadow-sm" 
+                  : "text-[var(--color-text-muted)] hover:text-[var(--color-text)]"
+              )}
+            >
+              <ListTree className="h-3.5 w-3.5" />
+              Pasos
+            </button>
+            <button
+              onClick={() => setActiveTab("terminal")}
+              className={cn(
+                "flex items-center gap-1.5 rounded-sm px-2.5 py-1 text-xs font-medium transition-all duration-200",
+                activeTab === "terminal" 
+                  ? "bg-[var(--color-surface-2)] text-[var(--color-text)] shadow-sm" 
+                  : "text-[var(--color-text-muted)] hover:text-[var(--color-text)]"
+              )}
+            >
+              <Terminal className="h-3.5 w-3.5" />
+              Consola
+            </button>
           </div>
+
+          {isRunning ? (
+            <span className="flex items-center gap-1.5 text-xs">
+              <span aria-hidden className="h-1.5 w-1.5 animate-ping rounded-full bg-[var(--color-info)]" />
+              <span className="text-[var(--color-info)] font-medium">live</span>
+            </span>
+          ) : null}
         </div>
 
         {!autoScroll ? (
           <button
             onClick={scrollToEnd}
-            className="flex items-center gap-1 rounded px-2 py-0.5 text-[10px] text-[var(--color-text-muted)] transition-colors hover:bg-[var(--color-border)] hover:text-[var(--color-text)]"
+            className="flex items-center gap-1 rounded px-2 py-1 text-[10px] uppercase font-bold tracking-wider text-[var(--color-primary)] transition-colors hover:bg-[var(--color-primary)]/10"
             aria-label="Ir al final del log"
           >
             <ChevronDown aria-hidden className="h-3 w-3" />
-            al final
+            Bajar
           </button>
         ) : null}
       </div>
@@ -147,79 +206,72 @@ export function EtlExecutionLog({
         aria-label="Log de ejecución"
         aria-live={isRunning ? "polite" : "off"}
         aria-atomic="false"
-        className="max-h-72 overflow-y-auto bg-[var(--color-surface)]"
+        className={cn(
+          "h-80 overflow-y-auto font-mono text-[11px] leading-relaxed transition-colors duration-300",
+          activeTab === "terminal" ? "bg-[#18181b] text-[#f4f4f5]" : "bg-[var(--color-surface)]"
+        )}
       >
-        {sorted.length === 0 ? (
-          <p className="px-4 py-6 text-center font-mono text-xs text-[var(--color-text-muted)]">
-            Esperando al runner para publicar pasos…
-          </p>
-        ) : (
-          sorted.map((paso, idx) => {
-            const cfg = STATUS_CFG[paso.status];
-            const isLast = idx === sorted.length - 1;
-            return (
-              <div key={paso.idPaso}>
-                <div
-                  className={cn(
-                    "flex items-center gap-3 border-l-2 px-4 py-2.5 font-mono text-xs transition-colors",
-                    cfg.rowCls,
-                    !isLast && "border-b border-[var(--color-border)]/40",
-                  )}
-                >
-                  {/* Step order */}
-                  <span className="w-5 shrink-0 select-none text-right text-[10px] tabular-nums text-[var(--color-text-muted)]">
-                    {paso.orden}
-                  </span>
-
-                  {/* Status icon */}
-                  <span
-                    aria-hidden
-                    className={cn("w-4 shrink-0 text-center text-sm leading-none", cfg.iconCls)}
-                  >
-                    {cfg.icon}
-                  </span>
-
-                  {/* Step name */}
-                  <span className={cn("flex-1 truncate", cfg.nameCls)}>
-                    {paso.nombre}
-                  </span>
-
-                  {/* Timestamp */}
-                  <span className="shrink-0 text-[10px] tabular-nums text-[var(--color-text-muted)]">
-                    {fmtTime(paso.startedAt)}
-                  </span>
-
-                  {/* Duration / status label */}
-                  <span
+        {activeTab === "pasos" ? (
+          sorted.length === 0 ? (
+            <p className="px-4 py-6 text-center text-xs text-[var(--color-text-muted)]">
+              Esperando al runner para publicar pasos…
+            </p>
+          ) : (
+            sorted.map((paso, idx) => {
+              const cfg = STATUS_CFG[paso.status];
+              const isLast = idx === sorted.length - 1;
+              return (
+                <div key={paso.idPaso} className="animate-in fade-in slide-in-from-left-2 duration-300">
+                  <div
                     className={cn(
-                      "w-24 shrink-0 text-right text-[10px] tabular-nums",
-                      cfg.durCls,
+                      "flex items-center gap-3 border-l-2 px-4 py-3 transition-colors hover:bg-[var(--color-surface-2)]",
+                      cfg.rowCls,
+                      !isLast && "border-b border-[var(--color-border)]/40",
                     )}
                   >
-                    {fmtDur(paso.durationSec, paso.status)}
-                  </span>
-                </div>
-
-                {/* Error detail — inline below the failing step */}
-                {paso.error ? (
-                  <div className="border-b border-[var(--color-border)]/40 border-l-2 border-l-[var(--color-destructive)] bg-[color-mix(in_oklab,var(--color-destructive)_5%,transparent)] px-4 py-1.5 pl-[3.25rem] font-mono text-[10px] text-[var(--color-destructive)]">
-                    <span aria-hidden className="mr-2 opacity-50">└─</span>
-                    {paso.error}
+                    <span className="w-5 shrink-0 select-none text-right text-[10px] tabular-nums text-[var(--color-text-muted)]">
+                      {paso.orden}
+                    </span>
+                    <span aria-hidden className={cn("w-4 shrink-0 text-center text-sm leading-none", cfg.iconCls)}>
+                      {cfg.icon}
+                    </span>
+                    <span className={cn("flex-1 truncate", cfg.nameCls)}>
+                      {paso.nombre}
+                    </span>
+                    <span className="shrink-0 tabular-nums text-[var(--color-text-muted)]">
+                      {fmtTime(paso.startedAt)}
+                    </span>
+                    <span className={cn("w-24 shrink-0 text-right tabular-nums", cfg.durCls)}>
+                      {fmtDur(paso.durationSec, paso.status)}
+                    </span>
                   </div>
-                ) : null}
-              </div>
-            );
-          })
+                  {paso.error ? (
+                    <div className="border-b border-[var(--color-border)]/40 border-l-2 border-l-[var(--color-destructive)] bg-[color-mix(in_oklab,var(--color-destructive)_5%,transparent)] px-4 py-2 pl-[3.25rem] text-[var(--color-destructive)]">
+                      <span aria-hidden className="mr-2 opacity-50">└─</span>
+                      {paso.error}
+                    </div>
+                  ) : null}
+                </div>
+              );
+            })
+          )
+        ) : (
+          <div className="py-2">
+            {renderTerminalLogs()}
+          </div>
         )}
 
         {/* Blinking cursor while running */}
         {isRunning ? (
-          <div className="flex items-center gap-3 border-b border-[var(--color-border)]/40 px-4 py-2 font-mono text-[10px] text-[var(--color-text-muted)]">
+          <div className={cn(
+            "flex items-center gap-3 px-4 py-2 opacity-70",
+            activeTab === "terminal" ? "border-none text-[#a1a1aa]" : "border-b border-[var(--color-border)]/40 text-[var(--color-text-muted)]"
+          )}>
             <span className="w-5 shrink-0" />
-            <span aria-hidden className="animate-pulse text-[var(--color-text-muted)]">
+            <span aria-hidden className="animate-pulse">
               ▋
             </span>
-            <span>esperando siguiente paso…</span>
+            <span className="animate-pulse">esperando salida...</span>
           </div>
         ) : null}
       </div>

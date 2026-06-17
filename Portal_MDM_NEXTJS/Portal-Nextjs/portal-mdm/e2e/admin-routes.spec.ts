@@ -91,10 +91,10 @@ test.describe("Rutas admin — smoke", () => {
     await stubAllCc(page);
   });
 
-  test("/bitacora renderiza page header", async ({ page }) => {
-    await page.goto("/bitacora");
+  test("/etl-control renderiza page header", async ({ page }) => {
+    await page.goto("/etl-control");
     await expect(
-      page.getByRole("heading", { name: /^Bitácora$/i, level: 1 }),
+      page.getByRole("heading", { name: /^Control ETL$/i, level: 1 }),
     ).toBeVisible();
   });
 

@@ -48,7 +48,7 @@ _RE_METRICAS = re.compile(
 )
 # Tiempo máximo por paso individual del pipeline.
 # Si un paso activo supera este límite sin producir output, se aborta la corrida.
-_TIMEOUT_PASO_SEGUNDOSUNDOS = 600
+_TIMEOUT_PASO_SEGUNDOS = 600
 
 
 @dataclass

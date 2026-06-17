@@ -14,6 +14,7 @@ const SEMANAL = [1, 2, 3, 4, 5, 6].map((w) => ({
 }));
 
 function stubProyecciones(page: Page): void {
+  void page.route("**/api/cc/**", (r) => r.fulfill({ json: {} }));
   void page.route("**/api/cc/proyecciones/fechas", (r) =>
     r.fulfill({ json: { fechas: [20260610, 20260603] } }),
   );
@@ -51,7 +52,6 @@ function stubProyecciones(page: Page): void {
       },
     }),
   );
-  void page.route("**/api/cc/**", (r) => r.fulfill({ json: {} }));
 }
 
 test.describe("Proyecciones — analyst", () => {
@@ -79,7 +79,7 @@ test.describe("Proyecciones — analyst", () => {
     ).toBeVisible();
     await expect(page.getByText(/21[,\s.]?000/)).toBeVisible();
     await expect(
-      page.getByText(/kg proyectados por semana/i),
+      page.getByRole("heading", { name: /kg proyectados por semana/i, level: 3 }),
     ).toBeVisible();
   });
 

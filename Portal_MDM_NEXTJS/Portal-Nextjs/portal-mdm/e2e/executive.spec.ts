@@ -13,9 +13,9 @@ test.describe("Módulo Ejecutivo", () => {
 
   test("muestra score global y KPIs estratégicos", async ({ page }) => {
     await page.goto("/overview");
-    await expect(page.getByText(/score global MDM/i)).toBeVisible();
-    await expect(page.getByText(/entidades validadas/i)).toBeVisible();
-    await expect(page.getByText(/alertas críticas/i)).toBeVisible();
+    await expect(page.getByText(/Resumen estratégico/i)).toBeVisible();
+    await expect(page.getByText(/Iniciativas activas/i)).toBeVisible();
+    await expect(page.getByText(/Ahorro estimado anual/i)).toBeVisible();
   });
 
   test("ejecutivo no puede acceder a /entities (redirige a /overview)", async ({ page }) => {

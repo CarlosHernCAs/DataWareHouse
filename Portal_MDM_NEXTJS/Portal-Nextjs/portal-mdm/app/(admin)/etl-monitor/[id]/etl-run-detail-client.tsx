@@ -20,6 +20,7 @@ import {
   useCancelCorrida,
   useCorridaDetail,
 } from "@/hooks/use-control-center";
+import { useEtlLogStream } from "@/hooks/use-etl-log-stream";
 import type { CorridaPaso } from "@/lib/schemas/control-center";
 import { formatDateTime } from "@/lib/format";
 import { cn } from "@/lib/utils";
@@ -30,6 +31,9 @@ export function EtlRunDetailClient({ id }: { id: string }) {
   const cancel = useCancelCorrida();
   const [confirmingCancel, setConfirmingCancel] = useState(false);
   const [cancelMotivo, setCancelMotivo] = useState("");
+  
+  const isActive = data?.status === "running" || data?.status === "queued";
+  const logs = useEtlLogStream(id, isActive);
 
   if (isLoading) {
     return (
@@ -62,7 +66,6 @@ export function EtlRunDetailClient({ id }: { id: string }) {
     );
   }
 
-  const isActive = data.status === "running" || data.status === "queued";
 
   return (
     <div className="flex flex-col gap-6">
@@ -255,6 +258,7 @@ export function EtlRunDetailClient({ id }: { id: string }) {
         <CardContent className="p-0">
           <EtlExecutionLog
             pasos={data.pasos}
+            logs={logs}
             isRunning={isActive}
             className="rounded-t-none border-0 border-t border-[var(--color-border)]"
           />

@@ -10,6 +10,8 @@ import type { Page } from "@playwright/test";
 import * as crypto from "crypto";
 
 function buildFakeJwt(role: "analyst" | "admin" | "executive", name: string): string {
+  const secret = process.env.ACP_JWT_SECRETO || "";
+
   const encode = (obj: object) =>
     Buffer.from(JSON.stringify(obj))
       .toString("base64url")
@@ -20,16 +22,16 @@ function buildFakeJwt(role: "analyst" | "admin" | "executive", name: string): st
   // Usamos 'admin' porque FastAPI verifica que el sub exista en la BD (SQL Server).
   // Aunque sea 'admin', FastAPI confía en el 'role' que viene en el JWT para el RBAC.
   const payload = encode({ sub: "admin", role, name, exp });
-  
-  const secret = process.env.ACP_JWT_SECRETO || "CAMBIAME_POR_UNA_CLAVE_SUPER_SECRETA_DE_32_CHARS";
+
   const signature = crypto
     .createHmac("sha256", secret)
     .update(`${header}.${payload}`)
     .digest("base64url")
     .replace(/=/g, "");
-    
+
   return `${header}.${payload}.${signature}`;
 }
+
 
 export async function loginAs(
   page: Page,

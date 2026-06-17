@@ -58,9 +58,9 @@ test.describe("Portal Analista — smoke tests", () => {
   test("analyst accede a /home y ve el workspace", async ({ page }) => {
     await page.goto("/home");
     await expect(page).toHaveURL("/home");
-    await expect(page.getByText("Mi Workspace")).toBeVisible();
+    await expect(page.getByText(/Analista/i).first()).toBeVisible();
     // Workspace vacío — ver empty state o toolbar
-    await expect(page.getByRole("button", { name: /editar layout/i })).toBeVisible();
+    await expect(page.getByRole("tab", { name: /editar/i })).toBeVisible();
   });
 
   test("sidebar del analista muestra rutas correctas", async ({ page }) => {
@@ -74,8 +74,8 @@ test.describe("Portal Analista — smoke tests", () => {
 
   test("analista puede abrir el modal de nuevo widget", async ({ page }) => {
     await page.goto("/home");
-    await page.getByRole("button", { name: /editar layout/i }).click();
-    await page.getByRole("button", { name: /widget/i }).first().click();
+    await page.getByRole("tab", { name: /editar/i }).click();
+    await page.getByRole("button", { name: /añadir widget/i }).click();
     await expect(page.getByRole("dialog")).toBeVisible();
     await expect(page.getByText("Nuevo widget")).toBeVisible();
   });

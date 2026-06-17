@@ -48,8 +48,8 @@ configurar_logging()
 log = obtener_logger("runner")
 
 _STOP_FILE    = Path(__file__).parent / "runner.stop"
-_POLL_COLA_COMANDOS_SEG     = 5      # segundos entre polls
-_LOCK_TTL_VENCIMIENTO_SEG = 120    # segundos antes de considerar lock muerto
+_POLL_COLA_COMANDOS_SEG   = 1      # Segundos entre polls (antes 5s)
+_LOCK_TTL_VENCIMIENTO_SEG = 120    # Segundos antes de considerar lock muerto
 
 _continuar = True
 

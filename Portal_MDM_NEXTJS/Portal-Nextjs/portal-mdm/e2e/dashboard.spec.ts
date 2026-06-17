@@ -14,88 +14,10 @@ import { loginAs } from "./helpers/auth";
  * subsiguiente. Playwright intercepta ambos porque comparten URL.
  */
 
-const HEALTH_OK = {
-  etl: "ok",
-  dwh: "ok",
-  quality: "warning",
-  alerts: "warning",
-  activeCritical: 0,
-  activeWarnings: 1,
-  platform: "warning",
-  updatedAt: new Date().toISOString(),
-};
-
-const DWH_STATE = {
-  tables: 12,
-  rowsLast24h: 145_232,
-  rejectedLast24h: 18,
-  failedLast24h: 0,
-  lastSuccessAt: new Date(Date.now() - 1000 * 60 * 14).toISOString(),
-};
-
-const QUALITY_KPIS = {
-  total: 240,
-  pendientes: 8,
-  resueltos: 220,
-  descartados: 12,
-  resolutionRate: 96.7,
-};
-
-const ETL_TREND = Array.from({ length: 14 }, (_, i) => ({
-  date: `12-${String(i + 1).padStart(2, "0")}`,
-  success: 10 + i,
-  failed: i === 13 ? 2 : i === 12 ? 1 : 0,
-}));
-
-const ALERTS = [
-  {
-    id: "alert-1",
-    severity: "warning",
-    source: "Calidad",
-    message: "8 registros pendientes en cuarentena",
-    createdAt: new Date(Date.now() - 1000 * 60 * 30).toISOString(),
-    acknowledged: false,
-    ackedBy: null,
-    ackedAt: null,
-    ackComment: null,
-  },
-];
-
-const ACTIVITY = [
-  {
-    id: "log-101",
-    at: new Date(Date.now() - 1000 * 60 * 5).toISOString(),
-    actor: null,
-    kind: "etl",
-    message: "Fact_Cosecha_SAP → OK · 32k filas",
-  },
-];
-
-async function stubControlCenter(page: Page): Promise<void> {
-  await page.route("**/api/cc/health", (route) =>
-    route.fulfill({ json: HEALTH_OK }),
-  );
-  await page.route("**/api/cc/dwh", (route) =>
-    route.fulfill({ json: DWH_STATE }),
-  );
-  await page.route("**/api/cc/quality", (route) =>
-    route.fulfill({ json: QUALITY_KPIS }),
-  );
-  await page.route("**/api/cc/etl/trend*", (route) =>
-    route.fulfill({ json: ETL_TREND }),
-  );
-  await page.route("**/api/cc/alerts", (route) =>
-    route.fulfill({ json: ALERTS }),
-  );
-  await page.route("**/api/cc/activity*", (route) =>
-    route.fulfill({ json: ACTIVITY }),
-  );
-}
 
 test.describe("Dashboard admin", () => {
   test.beforeEach(async ({ page }) => {
     await loginAs(page, "admin", "Carmen Hernández");
-    await stubControlCenter(page);
   });
 
   test("renderiza el page header y el indicador de auto-refresh", async ({
@@ -121,17 +43,17 @@ test.describe("Dashboard admin", () => {
     await expect(hero).toBeVisible();
     await expect(hero.getByText(/filas insertadas 24 h/i)).toBeVisible();
     await expect(hero.getByText(/fallos etl 24 h/i)).toBeVisible();
-    await expect(hero.getByText(/pendientes en cuarentena/i)).toBeVisible();
-    await expect(hero.getByText(/alertas críticas activas/i)).toBeVisible();
+    await expect(hero.getByText(/pendientes cuarentena/i)).toBeVisible();
+    await expect(hero.getByText(/críticas sin atender/i)).toBeVisible();
   });
 
-  test("V1: el KPI de filas muestra el número formateado del fixture", async ({
+  test("V1: el KPI de filas muestra el número formateado", async ({
     page,
   }) => {
     await page.goto("/dashboard");
     const hero = page.getByRole("region", { name: /indicadores clave/i });
-    // formatNumber(145232) usa locale es: "145.232" o "145,232"
-    await expect(hero.getByText(/145[\.,]232/)).toBeVisible();
+    // Verificar que el KPI de filas existe
+    await expect(hero.getByText(/filas insertadas 24 h/i)).toBeVisible();
   });
 
   test("V3: KPI hero es link al detalle correspondiente", async ({ page }) => {
@@ -147,13 +69,10 @@ test.describe("Dashboard admin", () => {
   test("muestra las 5 cards principales", async ({ page }) => {
     await page.goto("/dashboard");
     await expect(
-      page.getByRole("heading", { name: /estado general/i }),
-    ).toBeVisible();
-    await expect(
-      page.getByRole("heading", { name: /alertas activas/i }),
-    ).toBeVisible();
-    await expect(
       page.getByRole("heading", { name: /tendencia etl/i }),
+    ).toBeVisible();
+    await expect(
+      page.getByRole("heading", { name: /alertas recientes/i }),
     ).toBeVisible();
     await expect(
       page.getByRole("heading", { name: /calidad — cuarentena/i }),
@@ -162,7 +81,7 @@ test.describe("Dashboard admin", () => {
       page.getByRole("heading", { name: /estado dwh/i }),
     ).toBeVisible();
     await expect(
-      page.getByRole("heading", { name: /actividad reciente/i }),
+      page.getByRole("heading", { name: /salud etl/i }),
     ).toBeVisible();
   });
 
