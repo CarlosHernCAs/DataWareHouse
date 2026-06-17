@@ -143,6 +143,18 @@ body {
   scrollbar-color: var(--color-surface-2) transparent;
 }
 
+/* Densidad — controlada por <html data-density="compacta|comoda">. Aplica
+   sólo a tablas marcadas con `.densable` para evitar afectar layouts
+   sensibles (filtros, dialogs). Comoda es el default y deja los valores
+   intrínsecos de Tailwind sin cambio. */
+html[data-density="compacta"] .densable th,
+html[data-density="compacta"] .densable td {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  font-size: 0.8125rem;
+  line-height: 1.15rem;
+}
+
 /* Reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
   *,

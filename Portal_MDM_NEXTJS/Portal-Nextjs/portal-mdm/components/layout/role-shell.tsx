@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { ChevronDown, LogOut, Search } from "lucide-react";
 import { cn } from "@/lib/utils";
 import type { Role } from "@/lib/auth/rbac";
@@ -51,8 +51,20 @@ function userInitial(name?: string): string {
 
 export function RoleShell({ role, userName, navItems, children }: RoleShellProps) {
   const pathname = usePathname();
+  const router = useRouter();
   const [paletteOpen, setPaletteOpen] = useState(false);
   const pageTitle = findRoute(pathname)?.label ?? "Portal MDM";
+
+  // Dedupe de prefetch por ruta — hover repetido no dispara N requests.
+  const prefetchedRef = useRef<Set<string>>(new Set());
+  const prefetchRoute = useCallback(
+    (href: string) => {
+      if (prefetchedRef.current.has(href)) return;
+      prefetchedRef.current.add(href);
+      router.prefetch(href);
+    },
+    [router],
+  );
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
@@ -91,6 +103,8 @@ export function RoleShell({ role, userName, navItems, children }: RoleShellProps
                 key={item.href}
                 href={item.href}
                 aria-current={active ? "page" : undefined}
+                onMouseEnter={() => prefetchRoute(item.href)}
+                onFocus={() => prefetchRoute(item.href)}
                 className={cn(
                   "flex min-h-[44px] items-center gap-3 rounded-md px-3 py-2 text-sm transition",
                   active
@@ -153,9 +167,9 @@ export function RoleShell({ role, userName, navItems, children }: RoleShellProps
 
       <main id="main-content" className="flex min-h-screen flex-col min-w-0" tabIndex={-1}>
         <header className="bg-surface flex h-14 items-center justify-between gap-4 border-b border-[var(--color-border)] px-6">
-          <h1 className="min-w-0 truncate text-sm font-semibold text-[var(--color-text)]">
+          <span className="min-w-0 truncate text-sm font-semibold text-[var(--color-text)]">
             {pageTitle}
-          </h1>
+          </span>
           <button
             type="button"
             onClick={() => setPaletteOpen(true)}

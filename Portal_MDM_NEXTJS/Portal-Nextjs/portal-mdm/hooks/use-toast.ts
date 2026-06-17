@@ -46,9 +46,23 @@ function reducer(state: ToastItem[], action: Action): ToastItem[] {
 
 export const ToastContext = createContext<ToastContextValue | null>(null);
 
+/**
+ * Ventana de dedupe — si el mismo (title|description|variant) llega
+ * dentro de este intervalo, se reutiliza el toast vigente en vez de
+ * apilar uno idéntico. Evita spam cuando hay cascada de errores
+ * (ej. 3 queries que fallan con el mismo mensaje al perder sesión).
+ */
+const DEDUPE_WINDOW_MS = 3000;
+
+function fingerprint(input: ToastInput): string {
+  return `${input.variant ?? "default"}|${input.title ?? ""}|${input.description ?? ""}`;
+}
+
 export function useToastState(): ToastContextValue {
   const [toasts, dispatch] = useReducer(reducer, []);
   const timersRef = useRef<Map<string, ReturnType<typeof setTimeout>>>(new Map());
+  /** fingerprint → { id, ts } del último toast emitido con esa firma. */
+  const recentRef = useRef<Map<string, { id: string; ts: number }>>(new Map());
 
   const dismiss = useCallback((id: string) => {
     dispatch({ type: "DISMISS", id });
@@ -60,10 +74,21 @@ export function useToastState(): ToastContextValue {
   }, []);
 
   const toast = useCallback(
-    ({ title, description, variant = "default", duration = DEFAULT_DURATION }: ToastInput) => {
+    (input: ToastInput) => {
+      const { title, description, variant = "default", duration = DEFAULT_DURATION } = input;
+      const fp = fingerprint(input);
+      const now = Date.now();
+      const recent = recentRef.current.get(fp);
+      if (recent && now - recent.ts < DEDUPE_WINDOW_MS) {
+        // Toast idéntico aún visible — refrescar timestamp y retornar el id existente.
+        recentRef.current.set(fp, { id: recent.id, ts: now });
+        return recent.id;
+      }
+
       const id = crypto.randomUUID();
       const item: ToastItem = { id, title, description, variant, duration, open: true };
       dispatch({ type: "ADD", item });
+      recentRef.current.set(fp, { id, ts: now });
 
       const timer = setTimeout(() => {
         dismiss(id);
