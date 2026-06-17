@@ -81,6 +81,13 @@ def _normalizar_nombre_paso(descripcion: str) -> str:
     return descripcion.strip().rstrip(".").strip()
 
 
+_RE_ANSI = re.compile(r'\x1b\[.*?m')
+
+def _limpiar_color(linea: str) -> str:
+    """Elimina los códigos de escape ANSI de una cadena."""
+    return _RE_ANSI.sub('', linea)
+
+
 def _extraer_inicio_paso(linea: str) -> tuple[int, str] | None:
     coincidencia = _PATRON_PASO.search(linea.strip())
     if not coincidencia:
@@ -302,38 +309,74 @@ def ejecutar_corrida(
                 estado_final = "TIMEOUT"
                 break
 
-            # ── Leer línea de la cola (con timeout para no bloquear) ──
+            # ── Leer múltiples líneas de la cola (batching) ──
+            lineas = []
             try:
-                linea = cola_stdout.get(timeout=1.0)
+                # Esperamos hasta 1s por la primera línea
+                linea_inicial = cola_stdout.get(timeout=1.0)
+                if linea_inicial is not None:
+                    lineas.append(linea_inicial)
+                    # Drenar el resto de la cola disponible instantáneamente (hasta 500 líneas por ciclo)
+                    while len(lineas) < 500:
+                        try:
+                            l_extra = cola_stdout.get_nowait()
+                            if l_extra is None:
+                                lineas.append(None)
+                                break
+                            lineas.append(l_extra)
+                        except queue.Empty:
+                            break
+                else:
+                    lineas.append(None)
             except queue.Empty:
                 continue  # sin output — volver a chequear heartbeat/timeout
 
-            if linea is None:
-                break  # centinela: stdout cerrado, subprocess terminó
+            # Procesar el batch
+            eventos_batch = []
+            termino_proceso = False
 
-            linea_limpia = linea.rstrip("\n")
+            for linea in lineas:
+                if linea is None:
+                    termino_proceso = True
+                    break
 
-            r_corrida.insertar_evento(id_corrida, linea_limpia, tipo="LOG")
-            inicio_paso = _extraer_inicio_paso(linea_limpia)
-            if inicio_paso is not None:
-                orden_paso, nombre_paso = inicio_paso
-                _cerrar_paso_activo(paso_activo, estado="OK")
-                paso_activo = _abrir_nuevo_paso(id_corrida, orden_paso, nombre_paso)
-                timestamp_inicio_paso = datetime.now()
-                _metricas_paso_actual = {"filas_procesadas": 0, "filas_rechazadas": 0}
-            else:
-                _paso_para_cerrar = paso_activo  # captura referencia antes de cualquier modificación futura
-                es_error_paso, mensaje_error = _linea_es_error_de_paso(linea_limpia, _paso_para_cerrar)
-                if es_error_paso:
-                    _cerrar_paso_activo(
-                        _paso_para_cerrar,
-                        estado="ERROR",
-                        mensaje_error=mensaje_error,
-                    )
-                m_met = _RE_METRICAS.search(linea_limpia)
-                if m_met:
-                    _metricas_paso_actual["filas_procesadas"] = int(m_met.group(1).replace(" ", ""))
-                    _metricas_paso_actual["filas_rechazadas"] = int(m_met.group(2).replace(" ", ""))
+                linea_limpia = _limpiar_color(linea.strip())
+                if not linea_limpia:
+                    continue
+                
+                # Agregamos a la lista de inserción en batch
+                eventos_batch.append({
+                    "id_corrida": id_corrida,
+                    "mensaje": linea_limpia,
+                    "tipo": "LOG"
+                })
+
+                inicio_paso = _extraer_inicio_paso(linea_limpia)
+                if inicio_paso is not None:
+                    orden_paso, nombre_paso = inicio_paso
+                    _cerrar_paso_activo(paso_activo, estado="OK")
+                    paso_activo = _abrir_nuevo_paso(id_corrida, orden_paso, nombre_paso)
+                    timestamp_inicio_paso = datetime.now()
+                    _metricas_paso_actual = {"filas_procesadas": 0, "filas_rechazadas": 0}
+                else:
+                    _paso_para_cerrar = paso_activo  # captura referencia antes de cualquier modificación futura
+                    es_error_paso, mensaje_error = _linea_es_error_de_paso(linea_limpia, _paso_para_cerrar)
+                    if es_error_paso:
+                        _cerrar_paso_activo(
+                            _paso_para_cerrar,
+                            estado="ERROR",
+                            mensaje_error=mensaje_error,
+                        )
+                    m_met = _RE_METRICAS.search(linea_limpia)
+                    if m_met:
+                        _metricas_paso_actual["filas_procesadas"] = int(m_met.group(1).replace(" ", ""))
+                        _metricas_paso_actual["filas_rechazadas"] = int(m_met.group(2).replace(" ", ""))
+
+            if eventos_batch:
+                r_corrida.insertar_eventos_batch(eventos_batch)
+
+            if termino_proceso:
+                break
 
         log.info("[RUNNER] Stdout agotado, esperando fin de proceso", extra={"id_corrida": id_corrida})
         proceso.wait(timeout=10)

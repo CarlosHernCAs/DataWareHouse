@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { AlertTriangle, RefreshCw, RotateCcw, XCircle } from "lucide-react";
+import { AlertTriangle, RefreshCw, RotateCcw, XCircle, CheckCircle2, CircleDashed, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -351,25 +351,15 @@ function PipelineFlow({ pasos }: { pasos: CorridaPaso[] }) {
   }
   const sorted = [...pasos].sort((a, b) => a.orden - b.orden);
   return (
-    <ol className="flex flex-wrap items-stretch gap-2">
+    <div className="relative pl-8 border-l-2 border-[var(--color-border)] space-y-6 py-4 ml-4">
       {sorted.map((p, idx) => (
-        <li key={p.idPaso} className="flex items-center gap-2">
-          <PasoChip paso={p} />
-          {idx < sorted.length - 1 ? (
-            <span
-              aria-hidden
-              className="text-[var(--color-text-muted)] select-none"
-            >
-              →
-            </span>
-          ) : null}
-        </li>
+        <PipelineNode key={p.idPaso} paso={p} />
       ))}
-    </ol>
+    </div>
   );
 }
 
-function PasoChip({ paso }: { paso: CorridaPaso }) {
+function PipelineNode({ paso }: { paso: CorridaPaso }) {
   const tone = pasoTone(paso.status);
   const subtitle =
     paso.durationSec != null
@@ -381,28 +371,41 @@ function PasoChip({ paso }: { paso: CorridaPaso }) {
           : "—";
 
   return (
-    <div
-      className={cn(
-        "min-w-[140px] rounded-md border px-3 py-2",
-        tone.border,
-        tone.bg,
-      )}
-    >
-      <div className="flex items-center gap-2">
-        <span
-          aria-hidden
-          className={cn(
-            "h-2 w-2 rounded-full",
-            tone.dot,
-            paso.status === "running" && "animate-pulse",
-          )}
-        />
-        <span className="text-xs font-medium text-[var(--color-text)]">
-          {paso.nombre}
-        </span>
+    <div className="relative">
+      {/* Node Icon */}
+      <div className={cn(
+        "absolute -left-[45px] top-1 flex h-6 w-6 items-center justify-center rounded-full border-2 bg-[var(--color-surface)]",
+        tone.border, tone.text
+      )}>
+        {paso.status === "success" && <CheckCircle2 className="h-4 w-4" />}
+        {paso.status === "running" && <Loader2 className="h-4 w-4 animate-spin" />}
+        {paso.status === "failed" && <XCircle className="h-4 w-4" />}
+        {(paso.status === "queued" || paso.status === "canceled") && <CircleDashed className="h-4 w-4" />}
       </div>
-      <div className="mt-0.5 text-[11px] tabular-nums text-[var(--color-text-muted)]">
-        {subtitle}
+
+      {/* Content */}
+      <div className={cn("rounded-md border p-3 shadow-sm transition-colors", tone.cardBg, tone.cardBorder)}>
+        <div className="flex items-start justify-between gap-4">
+          <div>
+            <h4 className={cn("text-sm font-medium", tone.titleText)}>
+              {paso.nombre}
+            </h4>
+            <p className="mt-1 text-xs text-[var(--color-text-muted)]">
+              {subtitle}
+            </p>
+          </div>
+          {paso.status === "running" && (
+            <span className="relative flex h-2 w-2 mt-1 mr-1">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--color-info)] opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--color-info)]"></span>
+            </span>
+          )}
+        </div>
+        {paso.error && (
+          <div className="mt-3 rounded-md bg-[var(--color-surface-2)] p-2 text-xs font-mono text-[var(--color-destructive)] overflow-x-auto whitespace-pre-wrap">
+            {paso.error}
+          </div>
+        )}
       </div>
     </div>
   );
@@ -412,34 +415,36 @@ function pasoTone(status: CorridaPaso["status"]) {
   switch (status) {
     case "success":
       return {
-        border: "border-[color-mix(in_oklab,var(--color-success)_30%,transparent)]",
-        bg: "bg-[color-mix(in_oklab,var(--color-success)_10%,transparent)]",
-        dot: "bg-[var(--color-success)]",
+        border: "border-[var(--color-success)]",
+        text: "text-[var(--color-success)]",
+        titleText: "text-[var(--color-text)]",
+        cardBg: "bg-[color-mix(in_oklab,var(--color-success)_5%,transparent)]",
+        cardBorder: "border-[color-mix(in_oklab,var(--color-success)_30%,transparent)]",
       };
     case "running":
       return {
-        border: "border-[color-mix(in_oklab,var(--color-info)_30%,transparent)]",
-        bg: "bg-[color-mix(in_oklab,var(--color-info)_10%,transparent)]",
-        dot: "bg-[var(--color-info)]",
+        border: "border-[var(--color-info)]",
+        text: "text-[var(--color-info)]",
+        titleText: "text-[var(--color-text)]",
+        cardBg: "bg-[color-mix(in_oklab,var(--color-info)_5%,transparent)]",
+        cardBorder: "border-[color-mix(in_oklab,var(--color-info)_40%,transparent)]",
       };
     case "failed":
       return {
-        border:
-          "border-[color-mix(in_oklab,var(--color-destructive)_30%,transparent)]",
-        bg: "bg-[color-mix(in_oklab,var(--color-destructive)_10%,transparent)]",
-        dot: "bg-[var(--color-destructive)]",
+        border: "border-[var(--color-destructive)]",
+        text: "text-[var(--color-destructive)]",
+        titleText: "text-[var(--color-destructive)]",
+        cardBg: "bg-[color-mix(in_oklab,var(--color-destructive)_10%,transparent)]",
+        cardBorder: "border-[color-mix(in_oklab,var(--color-destructive)_40%,transparent)]",
       };
     case "queued":
-      return {
-        border: "border-[var(--color-border)]",
-        bg: "bg-[var(--color-surface-2)]",
-        dot: "bg-[var(--color-warning)]",
-      };
     case "canceled":
       return {
         border: "border-[var(--color-border)]",
-        bg: "bg-[var(--color-surface-2)]",
-        dot: "bg-[var(--color-text-muted)]",
+        text: "text-[var(--color-text-muted)]",
+        titleText: "text-[var(--color-text-muted)]",
+        cardBg: "bg-transparent",
+        cardBorder: "border-[var(--color-border)] opacity-60",
       };
   }
 }

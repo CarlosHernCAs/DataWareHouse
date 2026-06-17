@@ -100,35 +100,71 @@ export function EtlExecutionLog({
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" });
   }
 
+  const parseLogLine = (line: string) => {
+    const levelMatch = line.match(/\[?(INFO|WARN|WARNING|ERROR|DEBUG|SUCCESS|CRITICAL)\]?/i);
+    const level = levelMatch ? levelMatch[1].toUpperCase() : null;
+
+    let levelColor = "text-[#a1a1aa]";
+    let badgeBg = "bg-[#27272a]";
+    
+    if (level === "INFO") {
+      levelColor = "text-[#38bdf8]";
+      badgeBg = "bg-[#38bdf8]/10 border border-[#38bdf8]/20";
+    } else if (level === "WARN" || level === "WARNING") {
+      levelColor = "text-[#fbbf24]";
+      badgeBg = "bg-[#fbbf24]/10 border border-[#fbbf24]/20";
+    } else if (level === "ERROR" || level === "CRITICAL") {
+      levelColor = "text-[#f87171]";
+      badgeBg = "bg-[#f87171]/10 border border-[#f87171]/30";
+    } else if (level === "SUCCESS") {
+      levelColor = "text-[#4ade80]";
+      badgeBg = "bg-[#4ade80]/10 border border-[#4ade80]/20";
+    }
+
+    if (levelMatch && levelMatch[0]) {
+      const parts = line.split(levelMatch[0]);
+      return (
+        <span className="flex-1 break-all flex flex-wrap items-start gap-2">
+          {parts[0] && <span className="text-[#a1a1aa] whitespace-pre-wrap">{parts[0]}</span>}
+          <span className={cn("px-1.5 py-0.5 rounded-[4px] text-[10px] font-bold tracking-wider uppercase leading-none mt-0.5", levelColor, badgeBg)}>
+            {level === "WARNING" ? "WARN" : level}
+          </span>
+          <span className={cn("whitespace-pre-wrap", level === "ERROR" || level === "CRITICAL" ? "text-[#f87171]" : "text-[#e4e4e7]")}>
+            {parts.slice(1).join(levelMatch[0])}
+          </span>
+        </span>
+      );
+    }
+
+    let fallbackColor = "text-[#e4e4e7]";
+    if (line.includes("ERROR") || line.includes("Exception") || line.includes("Traceback")) {
+      fallbackColor = "text-[#f87171]";
+    } else if (line.includes("WARN")) {
+      fallbackColor = "text-[#fbbf24]";
+    }
+    
+    return <span className={cn("flex-1 break-all whitespace-pre-wrap", fallbackColor)}>{line}</span>;
+  };
+
   const renderTerminalLogs = () => {
     if (logs.length === 0) {
       return (
-        <p className="px-4 py-6 text-center font-mono text-xs text-[#a1a1aa]">
+        <p className="px-4 py-6 text-center font-mono text-xs text-[#52525b]">
           Esperando flujo de terminal...
         </p>
       );
     }
     
     return logs.map((log) => {
-      let colorClass = "text-[#d4d4d8]"; // Default gray
-      if (log.type === "error" || log.data.includes("ERROR") || log.data.includes("Exception")) {
-        colorClass = "text-[#f87171]"; // Red
-      } else if (log.data.includes("WARN")) {
-        colorClass = "text-[#fbbf24]"; // Yellow
-      } else if (log.type === "inicio_paso" || log.type === "fin_paso" || log.data.includes("INFO")) {
-        colorClass = "text-[#60a5fa]"; // Blue
-      } else if (log.data.includes("SUCCESS") || log.data.includes("OK")) {
-        colorClass = "text-[#4ade80]"; // Green
-      }
-
       return (
-        <div key={log.id} className="flex gap-4 px-4 py-1 hover:bg-[#27272a] transition-colors">
-          <span className="w-16 shrink-0 text-[#71717a] tabular-nums select-none">
+        <div 
+          key={log.id} 
+          className="flex gap-4 px-4 py-1.5 hover:bg-[#27272a]/50 transition-colors animate-in fade-in slide-in-from-bottom-1 duration-300"
+        >
+          <span className="w-[4.5rem] shrink-0 text-[#71717a] tabular-nums select-none pt-[2px]">
             {fmtTime(log.timestamp.toISOString())}
           </span>
-          <span className={cn("flex-1 break-all", colorClass)}>
-            {log.data}
-          </span>
+          {parseLogLine(log.data)}
         </div>
       );
     });
@@ -208,7 +244,7 @@ export function EtlExecutionLog({
         aria-atomic="false"
         className={cn(
           "h-80 overflow-y-auto font-mono text-[11px] leading-relaxed transition-colors duration-300",
-          activeTab === "terminal" ? "bg-[#18181b] text-[#f4f4f5]" : "bg-[var(--color-surface)]"
+          activeTab === "terminal" ? "bg-[#09090b] text-[#fafafa] selection:bg-[#27272a] selection:text-white" : "bg-[var(--color-surface)]"
         )}
       >
         {activeTab === "pasos" ? (

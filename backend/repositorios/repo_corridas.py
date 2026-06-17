@@ -213,6 +213,36 @@ def insertar_evento(id_corrida: str, mensaje: str, tipo: TipoEvento = "LOG") -> 
             else:
                 log.warning("No se pudo persistir evento tras reintento", extra={"id_corrida": id_corrida})
 
+def insertar_eventos_batch(eventos: list[dict]) -> None:
+    """Inserta una lista de eventos (id_corrida, mensaje, tipo) en batch."""
+    if not eventos:
+        return
+    ahora = datetime.now(tz=timezone.utc)
+    params = [
+        {
+            "id": ev["id_corrida"],
+            "tipo": ev.get("tipo", "LOG"),
+            "msg": ev["mensaje"][:4000],
+            "ahora": ahora,
+        }
+        for ev in eventos
+    ]
+    _sql = text("""
+        INSERT INTO Control.Corrida_Evento
+            (ID_Corrida, Tipo, Mensaje, Fecha_Evento)
+        VALUES (:id, :tipo, :msg, :ahora)
+    """)
+    for intento in range(2):
+        try:
+            with obtener_engine().begin() as con:
+                con.execute(_sql, params)
+            return
+        except SQLAlchemyError:
+            if intento == 0:
+                time.sleep(0.5)
+            else:
+                log.warning("No se pudo persistir lote de eventos", extra={"cantidad": len(eventos)})
+
 def listar_eventos_y_estado(
     id_corrida: str,
     desde_id: int = 0,
