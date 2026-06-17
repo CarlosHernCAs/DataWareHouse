@@ -429,6 +429,7 @@ def _cargar_geografia(engine: Engine) -> pd.DataFrame:
                         'ID_Modulo_Catalogo', 'ID_Turno_Catalogo', 'ID_Valvula_Catalogo',
                         'ID_Cama_Catalogo', 'Es_Test_Block'
                     ]
+                )
         return _cache[clave_cache]
 
 def _cargar_indice_id_geografia_modulo(engine: Engine) -> dict[int, int]:
