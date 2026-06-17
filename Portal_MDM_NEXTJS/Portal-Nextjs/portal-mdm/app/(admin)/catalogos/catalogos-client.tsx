@@ -471,23 +471,18 @@ function VariedadesMdmTabla() {
 /* -------------------------------------------------------------------------- */
 
 /**
- * Sectores conocidos del MDM. Hardcoded porque (a) son <10 valores
- * estables y (b) con paginación server-side ya no podemos derivar la
- * lista desde `items` (solo veríamos los de la página actual).
- *
- * Mantener sincronizado con `Silver.Dim_Sector_Catalogo`. Si el set
- * crece, considerar endpoint /facets.
+ * Centinela del dropdown de sector — equivalente a "sin filtro".
+ * Los valores reales se acumulan en `sectoresVistos` a medida que el
+ * usuario navega páginas (server-side). Si el set crece o requiere
+ * exhaustividad inmediata, considerar endpoint /facets.
  */
-const SECTORES_GEOGRAFIA = [
-  "Todos los sectores",
-  // Los valores reales se conocen al primer fetch — se completan abajo.
-] as const;
+const TODOS_LOS_SECTORES = "Todos los sectores";
 
 function GeografiaSection() {
   const [page, setPage] = useState(1);
   const [pageSize, setPageSize] = useState<PageSize>(50);
   const [filtro, setFiltro] = useState("");
-  const [filtroSector, setFiltroSector] = useState<string>("Todos los sectores");
+  const [filtroSector, setFiltroSector] = useState<string>(TODOS_LOS_SECTORES);
 
   // `useDeferredValue` evita un request por cada keystroke. El input se
   // siente inmediato; el query se dispara cuando el usuario hace una pausa.
@@ -495,7 +490,7 @@ function GeografiaSection() {
 
   const textoServer = filtroDiferido.trim() || undefined;
   const sectorServer =
-    filtroSector !== "Todos los sectores" ? filtroSector : undefined;
+    filtroSector !== TODOS_LOS_SECTORES ? filtroSector : undefined;
 
   const query = useGeografia({
     pagina: page,
@@ -521,7 +516,7 @@ function GeografiaSection() {
   }, [items]);
 
   const sectores = useMemo(
-    () => [SECTORES_GEOGRAFIA[0], ...sectoresVistos],
+    () => [TODOS_LOS_SECTORES, ...sectoresVistos],
     [sectoresVistos],
   );
 

@@ -78,9 +78,13 @@ function NavList({
             onMouseEnter={() => onHoverPrefetch(item.href)}
             onFocus={() => onHoverPrefetch(item.href)}
             className={cn(
-              "flex min-h-[44px] items-center gap-3 rounded-md px-3 py-2 text-sm transition",
+              "relative flex min-h-[44px] items-center gap-3 rounded-md px-3 py-2 text-sm transition",
+              // Indicador del activo en TRES canales — más allá de solo el bg:
+              // (a) barra lateral izquierda (2px primary), (b) bg surface-2,
+              // (c) text fuller + font-medium. WCAG 2.1: state change debe
+              // usar más de un canal visual.
               active
-                ? "bg-[var(--color-surface-2)] text-[var(--color-text)] font-medium"
+                ? "bg-[var(--color-surface-2)] text-[var(--color-text)] font-medium before:absolute before:left-0 before:top-1/2 before:h-5 before:w-[3px] before:-translate-y-1/2 before:rounded-r before:bg-[var(--color-primary)]"
                 : "text-[var(--color-text-muted)] hover:bg-[var(--color-surface-2)] hover:text-[var(--color-text)]",
             )}
           >
@@ -286,8 +290,25 @@ export function RoleShell({ role, userName, navItems, children }: RoleShellProps
               onItemClick={() => setMobileNavOpen(false)}
               onHoverPrefetch={prefetchRoute}
             />
-            <div className="border-t border-[var(--color-border)] p-3 text-xs text-[var(--color-text-muted)]">
-              {userName ?? "Sesión"} · {ROLE_LABELS[role]}
+            <div className="border-t border-[var(--color-border)] p-3">
+              <div className="mb-2 text-xs text-[var(--color-text-muted)]">
+                {userName ?? "Sesión"} · {ROLE_LABELS[role]}
+              </div>
+              {/* Misma forma de logout que el dropdown desktop — POST form
+                  para que la cookie httpOnly se limpie server-side. */}
+              <form method="post" action="/api/auth/logout">
+                <button
+                  type="submit"
+                  className={cn(
+                    "flex w-full min-h-[44px] items-center gap-2 rounded-md px-2 py-2 text-sm text-[var(--color-destructive)] transition",
+                    "hover:bg-[var(--color-destructive-glow)]",
+                    "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-ring)]",
+                  )}
+                >
+                  <LogOut aria-hidden className="h-4 w-4" />
+                  Cerrar sesión
+                </button>
+              </form>
             </div>
           </DialogPrimitive.Content>
         </DialogPrimitive.Portal>

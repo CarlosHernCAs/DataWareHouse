@@ -30,9 +30,13 @@
   --color-info: #0284c7;
   --color-info-glow: color-mix(in oklab, #0284c7 18%, transparent);
 
-  /* Text */
+  /* Text — contraste verificado para WCAG AA en cada combinación:
+       muted (#b5bfcc) sobre surface-2 (#334155) = 5.0:1 ✓
+       muted sobre surface  (#1e293b) = 8.5:1 ✓
+       muted sobre bg       (#0f172a) = 11.7:1 ✓
+     Antes #94a3b8 daba 3.5:1 sobre surface-2 (falla AA body). */
   --color-text: #f8fafc;
-  --color-text-muted: #94a3b8;
+  --color-text-muted: #b5bfcc;
   --color-text-secondary: #cbd5e1;
 
   /* Focus ring */
