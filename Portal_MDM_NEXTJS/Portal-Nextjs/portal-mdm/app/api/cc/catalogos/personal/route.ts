@@ -26,7 +26,9 @@ export async function GET(req: Request) {
       `/api/v1/catalogos/personal?pagina=${pagina}&tamano=${tamano}`,
     );
     const parsed = FastApiPersonalPagina.parse(raw);
-    return NextResponse.json(mapPagina(parsed, mapPersonal));
+    return NextResponse.json(mapPagina(parsed, mapPersonal), {
+      headers: { "cache-control": "private, max-age=30, stale-while-revalidate=120" },
+    });
   } catch (err) {
     if (err instanceof FastApiError)
       return NextResponse.json({ detail: err.message }, { status: err.status });

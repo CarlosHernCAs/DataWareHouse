@@ -26,7 +26,9 @@ export async function GET(req: Request) {
       `/api/v1/catalogos/geografia?pagina=${pagina}&tamano=${tamano}`,
     );
     const parsed = FastApiGeografiaPagina.parse(raw);
-    return NextResponse.json(mapPagina(parsed, mapGeografia));
+    return NextResponse.json(mapPagina(parsed, mapGeografia), {
+      headers: { "cache-control": "private, max-age=30, stale-while-revalidate=120" },
+    });
   } catch (err) {
     if (err instanceof FastApiError)
       return NextResponse.json({ detail: err.message }, { status: err.status });

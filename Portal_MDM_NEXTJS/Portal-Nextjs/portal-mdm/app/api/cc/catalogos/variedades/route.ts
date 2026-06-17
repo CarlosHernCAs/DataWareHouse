@@ -26,7 +26,9 @@ export async function GET(req: Request) {
       `/api/v1/catalogos/variedades?pagina=${pagina}&tamano=${tamano}`,
     );
     const parsed = FastApiVariedadMdmPagina.parse(raw);
-    return NextResponse.json(mapPagina(parsed, mapVariedadMdm));
+    return NextResponse.json(mapPagina(parsed, mapVariedadMdm), {
+      headers: { "cache-control": "private, max-age=30, stale-while-revalidate=120" },
+    });
   } catch (err) {
     if (err instanceof FastApiError)
       return NextResponse.json({ detail: err.message }, { status: err.status });

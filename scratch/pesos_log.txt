@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "d:\Proyecto2026\ACP_DWH\ACP Proyecciones\scratch\run_full_pesos2.py", line 13, in <module>
-    from bronce.cargador import CargadorExcel
-ImportError: cannot import name 'CargadorExcel' from 'bronce.cargador' (d:\Proyecto2026\ACP_DWH\ACP Proyecciones\ETL\bronce\cargador.py)
