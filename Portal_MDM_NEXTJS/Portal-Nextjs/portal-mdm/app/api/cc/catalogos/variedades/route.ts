@@ -9,7 +9,9 @@ import {
 export const dynamic = "force-dynamic";
 
 const DEFAULT_SIZE = 50;
-const MAX_SIZE = 200;
+// Ver nota en variedades-dim/route.ts — alineado con FastAPI (max 10000)
+// para eliminar el silent-truncation a 200 que sufría el cliente.
+const MAX_SIZE = 5000;
 
 function clamp(n: number, lo: number, hi: number, fb: number) {
   if (!Number.isFinite(n)) return fb;

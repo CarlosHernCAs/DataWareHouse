@@ -12,12 +12,8 @@
  */
 
 import { z } from "zod";
-import {
-  QualityKpis,
-  QualityByTable,
-  QuarantinePage,
-  QuarantineActionResult,
-} from "@/lib/schemas/quality";
+import { QualityKpis, QualityByTable } from "@/lib/schemas/control-center";
+import { QuarantinePage, QuarantineActionResult } from "@/lib/schemas/quality";
 import { defineEndpoint } from "../endpoints";
 
 /** GET /api/cc/quality — KPIs agregados de calidad. Sin input. */

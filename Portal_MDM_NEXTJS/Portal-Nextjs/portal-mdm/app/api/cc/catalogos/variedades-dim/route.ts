@@ -12,7 +12,12 @@ import { requireApiRole, requireApiSession } from "@/lib/auth/require-api-role";
 export const dynamic = "force-dynamic";
 
 const DEFAULT_SIZE = 50;
-const MAX_SIZE = 200;
+// FastAPI permite hasta 10000. Subimos el clamp del proxy a 5000 para
+// alinear con el cliente que pide ese tamaño y eliminar el silent-
+// truncation que antes recortaba a 200 sin avisar.
+// TODO(fase-2): mover filtros (texto/breeder/estado) al server y bajar
+// este tope a algo cercano a la página visible (~50–200).
+const MAX_SIZE = 5000;
 
 function clamp(n: number, lo: number, hi: number, fb: number) {
   if (!Number.isFinite(n)) return fb;

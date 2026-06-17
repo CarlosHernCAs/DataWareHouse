@@ -44,6 +44,41 @@ type TabId = "variedades" | "geografia" | "personal";
 const PAGE_SIZES = [25, 50, 100] as const;
 type PageSize = (typeof PAGE_SIZES)[number];
 
+/**
+ * Tope de filas que pedimos al server por catálogo.
+ *
+ * Hoy filtramos y paginamos client-side, así que necesitamos el set
+ * "completo" en memoria. 5000 cubre los catálogos actuales (variedades,
+ * geografía, personal) con margen. Si el total real supera este tope,
+ * `<TruncationWarning>` lo hace visible al usuario en vez de mentirle.
+ *
+ * TODO(fase-2): mover filtros (texto/breeder/estado) al backend FastAPI
+ * y bajar este número a la página visible (~50). Requiere:
+ *   - backend/api/rutas_catalogos.py: aceptar query params de filtro
+ *   - app/api/cc/catalogos/*: propagarlos al proxy
+ *   - hooks/use-catalogos.ts: aceptar filtros tipados
+ *   - este componente: pasar filtros al hook (sin .filter() local)
+ */
+const FETCH_TOPE = 5000;
+
+/**
+ * Aviso cuando los filtros se aplican sobre un set truncado por el server.
+ * Solo se muestra si la BD tiene más filas de las que cargamos.
+ */
+function TruncationWarning({ cargados, total }: { cargados: number; total: number }) {
+  if (total <= cargados) return null;
+  return (
+    <div className="flex items-start gap-2 rounded-md border border-[var(--color-warning)]/40 bg-[var(--color-warning-glow)] px-3 py-2 text-xs text-[var(--color-text)]">
+      <AlertTriangle aria-hidden className="mt-0.5 h-4 w-4 shrink-0 text-[var(--color-warning)]" />
+      <span>
+        Mostrando <strong>{formatNumber(cargados)}</strong> de{" "}
+        <strong>{formatNumber(total)}</strong> registros. Los filtros se aplican
+        sólo a los cargados. Refina la búsqueda en el server para ver más.
+      </span>
+    </div>
+  );
+}
+
 interface CatalogosClientProps {
   isReadOnly?: boolean;
 }
@@ -151,7 +186,7 @@ function VariedadesDimTabla({ isReadOnly = false }: { isReadOnly?: boolean }) {
   const [filtro, setFiltro] = useState("");
   const [filtroBreeder, setFiltroBreeder] = useState("Todas las casas");
   const [filtroEstado, setFiltroEstado] = useState("Todos los estados");
-  const query = useVariedadesDim({ pagina: 1, tamano: 10000 });
+  const query = useVariedadesDim({ pagina: 1, tamano: FETCH_TOPE });
   const { toast } = useToast();
   const desactivar = useDesactivarVariedad();
   const reactivar = useReactivarVariedad();
@@ -212,6 +247,7 @@ function VariedadesDimTabla({ isReadOnly = false }: { isReadOnly?: boolean }) {
       filtro={filtro}
       setFiltro={(val) => { setFiltro(val); setPage(1); }}
       placeholder="Buscar por variedad o breeder…"
+      banner={<TruncationWarning cargados={items.length} total={query.data?.total ?? 0} />}
       onRefresh={() => query.refetch()}
       isFetching={query.isFetching}
       isLoading={query.isLoading}
@@ -331,7 +367,7 @@ function VariedadesMdmTabla() {
   const [filtro, setFiltro] = useState("");
   const [filtroBreeder, setFiltroBreeder] = useState("Todas las casas");
   const [filtroEstado, setFiltroEstado] = useState("Todos los estados");
-  const query = useVariedadesMdm({ pagina: 1, tamano: 10000 });
+  const query = useVariedadesMdm({ pagina: 1, tamano: FETCH_TOPE });
 
   const items = useMemo<VariedadMdm[]>(
     () => query.data?.datos ?? [],
@@ -372,6 +408,7 @@ function VariedadesMdmTabla() {
       filtro={filtro}
       setFiltro={(val) => { setFiltro(val); setPage(1); }}
       placeholder="Buscar por nombre canónico o breeder…"
+      banner={<TruncationWarning cargados={items.length} total={query.data?.total ?? 0} />}
       onRefresh={() => query.refetch()}
       isFetching={query.isFetching}
       isLoading={query.isLoading}
@@ -440,7 +477,7 @@ function GeografiaSection() {
   const [filtroSector, setFiltroSector] = useState("Todos los sectores");
   const [filtroModulo, setFiltroModulo] = useState("Todos los módulos");
   const [filtroValvula, setFiltroValvula] = useState("Todas las válvulas");
-  const query = useGeografia({ pagina: 1, tamano: 10000 });
+  const query = useGeografia({ pagina: 1, tamano: FETCH_TOPE });
 
   const items = useMemo<Geografia[]>(
     () => query.data?.datos ?? [],
@@ -486,6 +523,7 @@ function GeografiaSection() {
         filtro={filtro}
         setFiltro={(val) => { setFiltro(val); setPage(1); }}
         placeholder="Buscar por fundo, sector, válvula, código SAP…"
+        banner={<TruncationWarning cargados={items.length} total={query.data?.total ?? 0} />}
         onRefresh={() => query.refetch()}
         isFetching={query.isFetching}
         isLoading={query.isLoading}
@@ -595,7 +633,7 @@ function PersonalSection() {
   const [filtro, setFiltro] = useState("");
   const [filtroRol, setFiltroRol] = useState("Todos los roles");
   const [filtroPlanilla, setFiltroPlanilla] = useState("Todas las planillas");
-  const query = usePersonal({ pagina: 1, tamano: 10000 });
+  const query = usePersonal({ pagina: 1, tamano: FETCH_TOPE });
 
   const items = useMemo<Personal[]>(
     () => query.data?.datos ?? [],
@@ -639,6 +677,7 @@ function PersonalSection() {
         filtro={filtro}
         setFiltro={(val) => { setFiltro(val); setPage(1); }}
         placeholder="Buscar por DNI, nombre, rol o planilla…"
+        banner={<TruncationWarning cargados={items.length} total={query.data?.total ?? 0} />}
         onRefresh={() => query.refetch()}
         isFetching={query.isFetching}
         isLoading={query.isLoading}
@@ -732,6 +771,8 @@ interface CatalogoLayoutProps {
   isError: boolean;
   error: unknown;
   extraFilters?: React.ReactNode;
+  /** Banner opcional renderizado entre la toolbar y la tabla. */
+  banner?: React.ReactNode;
 }
 
 function CatalogoLayout({
@@ -751,6 +792,7 @@ function CatalogoLayout({
   isError,
   error,
   extraFilters,
+  banner,
 }: CatalogoLayoutProps) {
   const totalPages = Math.max(1, Math.ceil(total / pageSize));
   const desde = total === 0 ? 0 : (page - 1) * pageSize + 1;
@@ -796,6 +838,8 @@ function CatalogoLayout({
           </Button>
         </div>
       </div>
+
+      {banner}
 
       {isError ? (
         <ErrorBlock
