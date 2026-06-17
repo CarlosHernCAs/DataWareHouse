@@ -11,21 +11,29 @@
   --color-surface: #1e293b;
   --color-surface-2: #334155;
   --color-border: #1e3a5f;
+  --color-border-strong: #3b5e8c;
 
   /* Action */
   --color-primary: #2563eb;
   --color-primary-2: #0369a1;
   --color-primary-foreground: #f8fafc;
+  --color-primary-solid: #1d4ed8;
+  --color-on-primary: #f8fafc;
 
   /* State */
   --color-warning: #d97706;
+  --color-warning-glow: color-mix(in oklab, #d97706 18%, transparent);
   --color-success: #059669;
+  --color-success-glow: color-mix(in oklab, #059669 18%, transparent);
   --color-destructive: #dc2626;
+  --color-destructive-glow: color-mix(in oklab, #dc2626 18%, transparent);
   --color-info: #0284c7;
+  --color-info-glow: color-mix(in oklab, #0284c7 18%, transparent);
 
   /* Text */
   --color-text: #f8fafc;
   --color-text-muted: #94a3b8;
+  --color-text-secondary: #cbd5e1;
 
   /* Focus ring */
   --color-ring: #60a5fa;
@@ -39,6 +47,7 @@
   --motion-fast: 150ms;
   --motion-base: 200ms;
   --motion-slow: 300ms;
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 :root[data-theme="light"] {
@@ -46,15 +55,23 @@
   --color-surface: #ffffff;
   --color-surface-2: #f1f5f9;
   --color-border: #e2e8f0;
+  --color-border-strong: #94a3b8;
   --color-primary: #2563eb;
   --color-primary-2: #0369a1;
   --color-primary-foreground: #ffffff;
+  --color-primary-solid: #1d4ed8;
+  --color-on-primary: #ffffff;
   --color-warning: #b45309;
+  --color-warning-glow: color-mix(in oklab, #b45309 14%, transparent);
   --color-success: #047857;
+  --color-success-glow: color-mix(in oklab, #047857 14%, transparent);
   --color-destructive: #b91c1c;
+  --color-destructive-glow: color-mix(in oklab, #b91c1c 14%, transparent);
   --color-info: #0369a1;
+  --color-info-glow: color-mix(in oklab, #0369a1 14%, transparent);
   --color-text: #0f172a;
   --color-text-muted: #475569;
+  --color-text-secondary: #334155;
   --color-ring: #2563eb;
 }
 
