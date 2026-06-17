@@ -7,17 +7,26 @@ import type { Page } from "@playwright/test";
  * Payload: { sub, role, exp: now + 8h }
  * Signed with an empty secret (HS256) — only valid for tests.
  */
+import * as crypto from "crypto";
+
 function buildFakeJwt(role: "analyst" | "admin" | "executive", name: string): string {
   const encode = (obj: object) =>
     Buffer.from(JSON.stringify(obj))
-      .toString("base64url");
+      .toString("base64url")
+      .replace(/=/g, "");
 
   const header = encode({ alg: "HS256", typ: "JWT" });
   const exp = Math.floor(Date.now() / 1000) + 8 * 3600;
   const payload = encode({ sub: "test-user", role, name, exp });
-  // Signature is placeholder — proxy.ts uses optimistic decode without verification
-  const sig = "test-sig";
-  return `${header}.${payload}.${sig}`;
+  
+  const secret = process.env.ACP_JWT_SECRETO || "CAMBIAME_POR_UNA_CLAVE_SUPER_SECRETA_DE_32_CHARS";
+  const signature = crypto
+    .createHmac("sha256", secret)
+    .update(`${header}.${payload}`)
+    .digest("base64url")
+    .replace(/=/g, "");
+    
+  return `${header}.${payload}.${signature}`;
 }
 
 export async function loginAs(
