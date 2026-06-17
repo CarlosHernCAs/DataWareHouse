@@ -119,7 +119,10 @@ export function KpiTile({
         </div>
       )}
 
-      <p className="text-[11px] uppercase tracking-[0.08em] text-[var(--color-text-muted)]">
+      {/* Sentence-case sin uppercase: lectores de pantalla anuncian la
+          palabra completa y el tile gana legibilidad. La jerarquía la
+          carga el contraste de tamaño con el valor (5xl vs xs). */}
+      <p className="text-xs font-medium text-[var(--color-text-muted)]">
         {label}
       </p>
 

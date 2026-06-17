@@ -92,7 +92,7 @@ export function HeroKpis() {
     >
       <KpiTile
         href="/etl-monitor"
-        label="SALUD PIPELINE"
+        label="Salud del pipeline"
         loading={trendToday.isLoading && !trendToday.data}
         icon={<GaugeCircle aria-hidden className="h-4 w-4" />}
         iconTone={scoreTone ?? "success"}
@@ -104,7 +104,7 @@ export function HeroKpis() {
 
       <KpiTile
         href="/etl-monitor"
-        label="EN EJECUCIÓN"
+        label="En ejecución"
         loading={activeCorridas.isLoading && !activeCorridas.data}
         icon={<Zap aria-hidden className="h-4 w-4" />}
         iconTone={activeRunsTone ?? "success"}
@@ -115,7 +115,7 @@ export function HeroKpis() {
 
       <KpiTile
         href="/dwh"
-        label="FILAS INSERTADAS 24 H"
+        label="Filas insertadas 24 h"
         loading={dwh.isLoading && !dwh.data}
         icon={<Database aria-hidden className="h-4 w-4" />}
         iconTone="info"
@@ -126,7 +126,7 @@ export function HeroKpis() {
 
       <KpiTile
         href="/etl-monitor"
-        label="FALLOS ETL 24 H"
+        label="Fallos ETL 24 h"
         loading={trend.isLoading && !trend.data}
         icon={<XCircle aria-hidden className="h-4 w-4" />}
         iconTone={fallosTone ?? "success"}
@@ -143,7 +143,7 @@ export function HeroKpis() {
 
       <KpiTile
         href="/quality"
-        label="PENDIENTES CUARENTENA"
+        label="Pendientes en cuarentena"
         loading={quality.isLoading && !quality.data}
         icon={<ShieldQuestion aria-hidden className="h-4 w-4" />}
         iconTone={pendientesTone ?? "success"}
@@ -153,7 +153,7 @@ export function HeroKpis() {
 
       <KpiTile
         href="/alerts"
-        label="CRÍTICAS SIN ATENDER"
+        label="Críticas sin atender"
         loading={alerts.isLoading && !alerts.data}
         icon={
           criticalCount > 0 ? (
