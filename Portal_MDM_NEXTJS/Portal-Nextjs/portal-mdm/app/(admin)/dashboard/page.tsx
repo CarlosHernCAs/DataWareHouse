@@ -1,33 +1,35 @@
 import type { Metadata } from "next";
-import { HydrationBoundary, QueryClient, dehydrate } from "@tanstack/react-query";
+import { Suspense } from "react";
 import { requireRole } from "@/lib/auth/require-role";
-import { Dashboard } from "@/components/control-center/dashboard";
-import { prefetchDashboard } from "@/lib/control-center/dashboard-prefetch";
+import { PageSkeleton } from "@/components/ui/page-skeleton";
+import { DashboardData } from "./dashboard-data";
 
 export const metadata: Metadata = { title: "Dashboard" };
 export const dynamic = "force-dynamic";
 
 /**
- * Server Component del dashboard admin.
+ * Server Component del dashboard admin con streaming SSR.
  *
- * Nivel 2: prefetchea las 6 queries del Control Center en el server
- * (paralelo con `Promise.allSettled`) y las inyecta vía
- * `HydrationBoundary`. Resultado: **el HTML del primer paint ya trae
- * los datos**, sin parpadeo de skeletons. Si el server falla por
- * algún motivo (timeout, downstream caído), el cliente cae al
- * comportamiento normal: skeleton + fetch en `useEffect`.
+ * El page solo valida RBAC y retorna un shell ligero envuelto en
+ * `<Suspense>`. El prefetch de las 6 queries del Control Center vive
+ * en `<DashboardData/>` (server component async aparte), de manera que
+ * su `await` NO bloquea el TTFB.
+ *
+ * Flujo:
+ *  1. Browser pide /dashboard → Next emite shell + PageSkeleton en <100ms.
+ *  2. En el server, `prefetchDashboard` corre en paralelo.
+ *  3. Cuando termina, Next streamea el HTML hidratado del Dashboard.
+ *  4. React reemplaza el skeleton sin client-side hydration adicional.
  */
 export default async function AdminDashboardPage() {
   await requireRole("admin");
-  const qc = new QueryClient();
-  await prefetchDashboard(qc);
 
   return (
-    <HydrationBoundary state={dehydrate(qc)}>
-      <Dashboard
+    <Suspense fallback={<PageSkeleton template="dashboard" kpiCount={4} cardCount={6} />}>
+      <DashboardData
         title="Dashboard"
         description="Estado del ecosistema de datos en tiempo casi-real."
       />
-    </HydrationBoundary>
+    </Suspense>
   );
 }
