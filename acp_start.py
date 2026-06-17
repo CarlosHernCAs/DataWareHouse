@@ -47,7 +47,10 @@ VENV = BASE / ".venv" / "Scripts"
 load_dotenv(BASE / "backend" / ".env")
 load_dotenv(BASE / ".env")
 _PUERTO_BACKEND = int(os.getenv("ACP_PUERTO", "8810"))
-_PUERTO_STREAMLIT = int(os.getenv("ACP_STREAMLIT_PORT", "8510"))
+# Portal NextJS (reemplaza el Streamlit legacy de acp_mdm_portal).
+# Override con ACP_NEXTJS_PORT si el 3000 está ocupado por otro proyecto.
+_PUERTO_NEXTJS = int(os.getenv("ACP_NEXTJS_PORT", "3000"))
+_DIR_NEXTJS = BASE / "Portal_MDM_NEXTJS" / "Portal-Nextjs" / "portal-mdm"
 
 SERVICIOS = [
     {
@@ -80,16 +83,22 @@ SERVICIOS = [
         "proceso":  None,
     },
     {
-        "nombre":   "Portal MDM",
+        "nombre":   "Portal NextJS",
         "icono":    "🌐",
-        "cmd":      [str(VENV / "streamlit.exe"), "run", "app.py",
-                     "--server.port", str(_PUERTO_STREAMLIT),
-                     "--server.headless", "true"],
-        "cwd":      BASE / "acp_mdm_portal",
-        "health":   f"http://127.0.0.1:{_PUERTO_STREAMLIT}/_stcore/health",
-        "url":      f"http://localhost:{_PUERTO_STREAMLIT}",
-        "log":      BASE / "backend" / "logs" / "portal.stdout.log",
-        "puerto":   _PUERTO_STREAMLIT,
+        # Invocamos directamente `node` con el entrypoint JS de Next en
+        # vez de `npm run dev`. Evita la capa intermedia de cmd.exe que
+        # rompe la propagación de CTRL_BREAK_EVENT al apagar.
+        "cmd":      ["node",
+                     str(_DIR_NEXTJS / "node_modules" / "next" / "dist" / "bin" / "next"),
+                     "dev", "-p", str(_PUERTO_NEXTJS)],
+        "cwd":      _DIR_NEXTJS,
+        # NextJS no expone /health en dev. El root sirve como liveness:
+        # devuelve 200 (página) o 307/308 (redirect a /login según RBAC),
+        # ambos < 500.
+        "health":   f"http://127.0.0.1:{_PUERTO_NEXTJS}/",
+        "url":      f"http://localhost:{_PUERTO_NEXTJS}",
+        "log":      BASE / "backend" / "logs" / "portal-nextjs.stdout.log",
+        "puerto":   _PUERTO_NEXTJS,
         "color":    CYAN,
         "proceso":  None,
     },
@@ -182,32 +191,83 @@ def health_check(url: str, intentos: int = 1, timeout: float = 3.0) -> bool:
 
 # ─── Inicio de servicios ─────────────────────────────────────────────────────
 
-def _liberar_puerto(puerto: int) -> None:
-    """Mata el proceso huérfano que ocupa el puerto."""
+def _pid_en_puerto(puerto: int) -> str | None:
+    """Devuelve el PID (como str) que escucha en el puerto, o None."""
     try:
         r = subprocess.run(["netstat", "-ano"], capture_output=True, text=True)
         for line in r.stdout.splitlines():
             if f":{puerto} " in line and "LISTENING" in line:
                 pid = line.strip().split()[-1]
                 if pid.isdigit() and pid != "0":
-                    subprocess.run(["taskkill", "/F", "/PID", pid], capture_output=True)
-                    log(f"Proceso huérfano {pid} en puerto {puerto} terminado", "WARN")
-                    time.sleep(0.5)
-                    break
+                    return pid
     except Exception:
         pass
+    return None
+
+
+def _liberar_puerto(puerto: int) -> tuple[bool, str | None]:
+    """
+    Intenta matar el proceso huérfano que ocupa el puerto.
+
+    Retorna (liberado, pid_intentado). `liberado=False` puede pasar si el
+    proceso corre con privilegios distintos (SYSTEM, admin) y taskkill
+    no tiene permisos. En ese caso el caller debe abortar, NO continuar
+    como si todo estuviera bien.
+    """
+    pid = _pid_en_puerto(puerto)
+    if pid is None:
+        return True, None
+    try:
+        r = subprocess.run(
+            ["taskkill", "/F", "/PID", pid],
+            capture_output=True,
+            text=True,
+        )
+        time.sleep(0.5)
+        # Verificar que realmente murió — taskkill puede retornar 0 y dejar
+        # el proceso vivo si el SO lo respawnea, o retornar !=0 silenciosamente
+        # cuando no hay permisos.
+        if _pid_en_puerto(puerto) == pid:
+            log(
+                f"Falló taskkill PID {pid} en puerto {puerto}"
+                f" (rc={r.returncode}): {r.stderr.strip() or r.stdout.strip()}",
+                "ERR",
+            )
+            return False, pid
+        log(f"Proceso huérfano {pid} en puerto {puerto} terminado", "WARN")
+        return True, pid
+    except Exception as exc:
+        log(f"Excepción liberando puerto {puerto}: {exc}", "ERR")
+        return False, pid
 
 
 def iniciar_servicio(svc: dict) -> bool:
     nombre = svc["nombre"]
     color  = svc["color"]
 
-    # Verificar si puerto ya está en uso; si es así, liberar el proceso huérfano
+    # Verificar si puerto ya está en uso; si es así, liberar el proceso huérfano.
+    # Si NO logramos liberar (perms insuficientes, respawn), abortamos este
+    # servicio — antes retornábamos True silenciosamente y la app simulaba
+    # estar corriendo, lo que enmascaraba el fallo y daba 0 trazas.
     if svc["puerto"] and puerto_en_uso(svc["puerto"]):
-        _liberar_puerto(svc["puerto"])
-        if puerto_en_uso(svc["puerto"]):
-            log(f"{color}{nombre}{RESET}  puerto {svc['puerto']} sigue ocupado — omitido", "WARN")
-            return True
+        liberado, pid_intentado = _liberar_puerto(svc["puerto"])
+        if not liberado:
+            log(
+                f"{color}{nombre}{RESET}  puerto {svc['puerto']} ocupado por PID"
+                f" {pid_intentado} y NO se pudo liberar. Pasos a probar:",
+                "ERR",
+            )
+            log(
+                f"  1) Abrir PowerShell como Administrador y correr:"
+                f"  Stop-Process -Id {pid_intentado} -Force",
+                "ERR",
+            )
+            log(
+                f"  2) O cambiar el puerto del servicio en .env"
+                f" (var de entorno asociada)",
+                "ERR",
+            )
+            return False
 
     # Crear carpeta de logs
     svc["log"].parent.mkdir(parents=True, exist_ok=True)
@@ -242,6 +302,11 @@ def esperar_health(svc: dict, timeout: int = 30) -> bool:
     cuando el servicio acaba de estar listo, más espaciado luego para no
     saturar (cada 1s tras 5s acumulados).
     """
+    # Si `iniciar_servicio` falló (puerto bloqueado por otro user, etc.)
+    # el proceso nunca se asignó. Abortar inmediatamente para no esperar
+    # 35s polling un servidor que nunca va a aparecer.
+    if svc["proceso"] is None:
+        return False
     if not svc["health"]:
         time.sleep(2)
         return svc["proceso"] is not None and svc["proceso"].poll() is None
@@ -443,10 +508,10 @@ def arrancar_servicios():
     mostrar_estado()
 
     # Abrir navegador solo si los servicios críticos levantaron
-    if resultados.get("Backend FastAPI") and resultados.get("Portal MDM"):
+    if resultados.get("Backend FastAPI") and resultados.get("Portal NextJS"):
         log("Abriendo navegador...", "INFO")
         time.sleep(1)
-        webbrowser.open(f"http://localhost:{_PUERTO_STREAMLIT}")
+        webbrowser.open(f"http://localhost:{_PUERTO_NEXTJS}")
     elif resultados.get("Backend FastAPI"):
         webbrowser.open(f"http://localhost:{_PUERTO_BACKEND}/docs")
     else:
