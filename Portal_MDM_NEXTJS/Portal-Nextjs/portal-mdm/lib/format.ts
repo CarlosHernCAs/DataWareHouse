@@ -45,3 +45,32 @@ export function formatDuration(sec: number | null): string {
   const s = sec % 60;
   return s === 0 ? `${m}m` : `${m}m ${s.toString().padStart(2, "0")}s`;
 }
+
+/**
+ * Normaliza un string para búsquedas case-insensitive y accent-insensitive.
+ *
+ * La medición (ver `docs/decisiones/2026-06-17-catalogos-medicion.md`)
+ * mostró que la collation default del DWH es `Modern_Spanish_CI_AS`
+ * (accent-SENSITIVE). El cliente espejaba el mismo comportamiento al
+ * usar `.toLowerCase().includes()`, así que tipear "garcia" no
+ * encontraba "García". Este helper resuelve el caso client-side:
+ *
+ *   normalizeForSearch("García") === "garcia"
+ *   normalizeForSearch("ÑOÑO")   === "nono"
+ *
+ * Implementación NFD + strip de marcas de combinación Unicode — la
+ * técnica estándar. ~100ns por string en motores modernos, no es
+ * un cuello de botella en filtros client-side.
+ *
+ * Para búsquedas server-side, ver el patrón
+ * `COLLATE Modern_Spanish_CI_AI` aplicado en
+ * `backend/repositorios/repo_catalogos.py::listar_geografia`.
+ */
+export function normalizeForSearch(s: string | null | undefined): string {
+  if (s == null) return "";
+  return s
+    .toString()
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .toLowerCase();
+}

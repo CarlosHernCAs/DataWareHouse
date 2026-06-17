@@ -20,7 +20,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Skeleton } from "@/components/ui/skeleton";
 import { cn } from "@/lib/utils";
-import { formatDateTime, formatNumber, formatPercent } from "@/lib/format";
+import { formatDateTime, formatNumber, formatPercent, normalizeForSearch } from "@/lib/format";
 import {
   useDesactivarVariedad,
   useGeografia,
@@ -1104,7 +1104,9 @@ function filtrarPorTexto<T>(
   filtro: string,
   pluck: (t: T) => string,
 ): T[] {
-  const q = filtro.trim().toLowerCase();
+  // Búsqueda case-insensitive + accent-insensitive — sin esto, tipear
+  // "garcia" no encuentra "García". Ver `normalizeForSearch` para detalles.
+  const q = normalizeForSearch(filtro.trim());
   if (q === "") return items;
-  return items.filter((it) => pluck(it).toLowerCase().includes(q));
+  return items.filter((it) => normalizeForSearch(pluck(it)).includes(q));
 }
