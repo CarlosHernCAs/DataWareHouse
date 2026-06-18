@@ -613,12 +613,21 @@ def _crear_combinacion_geografia(engine: Engine, id_f, id_s, id_m, id_t, id_v, i
             VALUES (:f, :s, :m, :t, :v, :c, :tb, 'AUTO_ETL', GETDATE(), 1)
         """), {"f": id_f, "s": id_s, "m": id_m, "t": id_t, "v": id_v, "c": id_c, "tb": tb})
         new_id = res.scalar()
-        # Limpiar cache para que la proxima vez lo encuentre
+        # Optimización: En lugar de invalidar el caché destructivamente y forzar
+        # a cargar 40K registros desde SQL Server para cada nueva geografía,
+        # agregamos la nueva geografía al índice O(1) directamente.
         with _cache_lock:
-            if 'Silver.Dim_Geografia' in _cache:
-                del _cache['Silver.Dim_Geografia']
-            # Invalidar también el índice de diccionario O(1)
-            _cache_mapas.pop('geo_indice_mtv', None)
+            if 'geo_indice_mtv' in _cache_mapas:
+                clave = (id_m, id_t, id_v, id_c)
+                registro = {
+                    'ID_Geografia': new_id,
+                    'ID_Fundo_Catalogo': id_f,
+                    'ID_Sector_Catalogo': id_s,
+                    'ID_Modulo_Catalogo': id_m,
+                    'Es_Test_Block': tb,
+                }
+                _cache_mapas['geo_indice_mtv'].setdefault(clave, []).append(registro)
+            # Ya no eliminamos _cache['Silver.Dim_Geografia']
         return new_id
 
 

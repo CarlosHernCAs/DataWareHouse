@@ -22,7 +22,7 @@ El procesamiento de datos sigue un modelo de madurez en tres fases principales:
 3. **Capa Oro (Servicio y Agregación):**
    - Los datos totalmente saneados se estructuran en Modelos Dimensionales (Esquema Estrella).
    - Genera tablas de Hechos (Fact Tables) y Dimensiones (Dim Tables) optimizadas para consultas ultra rápidas.
-   - Estos archivos finales (usualmente SQLite o CSV pulidos) son los que el Backend leerá.
+   - Estos resultados finales se materializan en SQL Server (capa de Oro), que es la que el Backend leerá. (SQLite/CSV solo aparecen como mock de test o export puntual, no como almacén de Oro.)
 
 ## Estructura del Directorio
 

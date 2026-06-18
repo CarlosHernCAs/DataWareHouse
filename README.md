@@ -13,7 +13,7 @@ El sistema está dividido en tres componentes principales que trabajan en cadena
    [Leer más sobre el ETL](./ETL/README.md)
 
 2. **Backend (API y Capa de Servicio)**
-   Una API construida en Python (FastAPI) que lee los datos consolidados en la capa de Oro (base de datos SQLite/DuckDB) y los expone de forma segura. Maneja la lógica de validación, cuarentena de datos anómalos y provee la información en tiempo real.
+   Una API construida en Python (FastAPI) que lee los datos consolidados en la capa de Oro (**SQL Server**, vía `ODBC Driver 17 for SQL Server` reutilizando `comun/conexion.py`; SQLite solo se usa como *mock* en el perfil `test`) y los expone de forma segura. Maneja la lógica de validación, cuarentena de datos anómalos y provee la información en tiempo real.
    [Leer más sobre el Backend](./backend/README.md)
 
 3. **Portal MDM (Centro de Control)**

@@ -61,14 +61,14 @@ class ProcesadorEvaluacionVegetativa(BaseFactProcessor):
             return []
 
         # 2. Parsear Valores_Raw en lote para los registros resueltos
-        v_raw_df = pd.DataFrame([self.parsear_raw(x) for x in df_resolved['Valores_Raw']], index=df_resolved.index)
+        lista_v_raw = [self.parsear_raw(x) for x in df_resolved['Valores_Raw']]
 
         payload: list[dict] = []
-        for idx, r in df_resolved.iterrows():
+        registros = df_resolved.to_dict('records')
+
+        for r, v_r in zip(registros, lista_v_raw):
             id_origen = int(r['ID_Evaluacion_Veg'])
             self.ids_procesados.append(id_origen)
-
-            v_r = v_raw_df.loc[idx]
 
             semanas_raw = r.get('Semanas_Poda_Raw') or v_r.get('Semanas_Poda_Raw')
             semanas     = _a_entero_cero(semanas_raw)

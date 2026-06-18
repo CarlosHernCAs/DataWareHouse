@@ -8,7 +8,7 @@ A diferencia del ETL, que es un proceso pesado, en bloque (batch) y de larga dur
 
 ## Características Principales
 
-1. **Lectura de Alto Rendimiento:** Se conecta a la base de datos de salida del ETL (SQLite optimizado) para recuperar las vistas materializadas y dimensiones, entregándolas a la web en formato JSON.
+1. **Lectura de Alto Rendimiento:** Se conecta a la base de datos de salida del ETL — **SQL Server** (vía `ODBC Driver 17 for SQL Server`, reutilizando el engine compartido de `comun/conexion.py`) — para recuperar las vistas materializadas y dimensiones de la Capa Oro, entregándolas a la web en formato JSON. (SQLite solo se usa como *mock* en el perfil de `test`, nunca en `dev`/`prod`.)
 2. **Gestión de Cuarentena (Data Governance):** Proporciona los endpoints para que los auditores revisen, corrijan o descarten desde la web aquellos datos que el ETL haya marcado como anómalos o "sospechosos".
 3. **Explorador DWH:** Contiene la lógica para la exploración jerárquica de datos, permitiendo al usuario navegar entre años, ciclos fenológicos, fincas y lotes.
 
