@@ -39,3 +39,31 @@ def listar_facts_disponibles() -> list[dict]:
             "estrategia_rerun": str(meta.get("estrategia_rerun", "NO_DECLARADA")),
         })
     return catalogo
+
+
+@lru_cache(maxsize=1)
+def tablas_consultables() -> frozenset[str]:
+    """
+    Whitelist de tablas que un usuario puede previsualizar o exportar.
+
+    Se deriva del propio manifiesto ETL: fuentes Bronce, tablas destino Silver
+    y marts Gold declarados en CONFIG_FACTS. Esto excluye por diseño los
+    esquemas sensibles (Seguridad, Auditoria, Control, MDM), cerrando el
+    acceso indirecto a hashes de contraseñas o bitácoras (V-03 / IDOR).
+
+    Los nombres se normalizan a minúsculas para comparación case-insensitive
+    (SQL Server no distingue mayúsculas en identificadores por defecto).
+    """
+    permitidas: set[str] = set()
+    for fact in listar_facts_disponibles():
+        permitidas.add(fact["tabla_destino"].strip().lower())
+        for origen in fact["fuentes_bronce"]:
+            permitidas.add(str(origen).strip().lower())
+        for mart in fact["marts"]:
+            permitidas.add(str(mart).strip().lower())
+    return frozenset(permitidas)
+
+
+def es_tabla_consultable(tabla: str) -> bool:
+    """True si `tabla` está en la whitelist derivada del catálogo ETL."""
+    return tabla.strip().lower() in tablas_consultables()

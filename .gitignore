@@ -54,9 +54,10 @@ logs/
 *.log
 
 # ── Datos / archivos generados por ETL ─────────────────────────────────────
-ETL/data/procesados/
-ETL/data/entrada/
-ETL/data/rechazos/
+# Los datos de negocio (Excel/CSV) NO deben versionarse: inflan el repo y
+# pueden exponer información productiva (V-04). Se conservan en disco local.
+ETL/data/
+!ETL/data/.gitkeep
 
 # ── IDE / OS ───────────────────────────────────────────────────────────────
 .vscode/

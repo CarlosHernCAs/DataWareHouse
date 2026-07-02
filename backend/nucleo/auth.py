@@ -129,7 +129,8 @@ def decodificar_token(token: str) -> dict:
             algorithms=[settings.jwt_algoritmo],
         )
     except JWTError as e:
-        print(f"DEBUG JWT ERROR: {repr(e)} | TOKEN: {token}", flush=True)
+        # No registrar el token ni el detalle del error a nivel INFO/print:
+        # el token en claro en logs es material de robo de sesión (V-02).
         log.warning("Token JWT inválido", extra={"error": str(e)})
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
