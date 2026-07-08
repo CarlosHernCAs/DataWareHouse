@@ -17,7 +17,7 @@ from fastapi import HTTPException
 import repositorios.repo_corridas as r_corrida
 import repositorios.repo_comandos as r_cmd
 import repositorios.repo_locks as r_lock
-from nucleo.etl_catalogo import listar_facts_disponibles
+from nucleo.etl_catalogo import listar_facts_disponibles, es_tabla_consultable
 from nucleo.etl_argumentos import enriquecer_corrida_con_parametros, serializar_comentario_etl
 from nucleo.excepciones import ErrorValidacion
 from nucleo.logging import obtener_logger
@@ -260,16 +260,22 @@ async def listar_catalogo_facts() -> list[dict]:
 async def obtener_vista_previa(tabla: str) -> dict:
     if not re.match(r"^[A-Za-z0-9_.]+$", tabla):
         raise HTTPException(status_code=400, detail="Nombre de tabla invalido")
-    
+
+    # Solo tablas del catálogo ETL (Bronce/Silver/Gold). Cierra el acceso
+    # indirecto a esquemas sensibles como Seguridad.Usuarios (V-03 / IDOR).
+    if not es_tabla_consultable(tabla):
+        raise HTTPException(status_code=403, detail="La tabla no está disponible para previsualización.")
+
     def _query():
         with obtener_engine().connect() as conn:
             result = conn.execute(text(f"SELECT TOP 10 * FROM {tabla}"))
             columns = list(result.keys())
             rows = [dict(r) for r in result.mappings()]
             return {"columns": columns, "rows": rows}
-            
+
     try:
         return await asyncio.to_thread(_query)
     except Exception as e:
+        # No exponer el detalle del motor al cliente (V-07); queda solo en logs.
         log.error(f"Error al obtener vista previa de {tabla}: {e}")
-        raise HTTPException(status_code=500, detail=f"Error al consultar la tabla: {str(e)}")
+        raise HTTPException(status_code=500, detail="Error al consultar la tabla.")

@@ -11,6 +11,7 @@ import re
 from typing import Annotated
 from nucleo.auth import UsuarioActual, obtener_usuario_actual, require_rol
 from nucleo.conexion import obtener_engine
+from nucleo.etl_catalogo import es_tabla_consultable
 from servicios.servicio_ingesta import validar_csv_polars
 
 enrutador_ingesta = APIRouter(prefix="/v1/ingesta", tags=["Ingesta"])
@@ -49,7 +50,12 @@ async def descargar_tabla(
     # Sanitizar el nombre de la tabla para evitar SQL Injection (ej. Schema.Tabla)
     if not re.match(r"^[a-zA-Z0-9_.]+$", tabla):
         raise HTTPException(status_code=400, detail="Nombre de tabla inválido")
-        
+
+    # Whitelist desde el catálogo ETL: impide exportar esquemas sensibles
+    # (Seguridad.Usuarios, Auditoria, Control…) vía este endpoint (V-03 / IDOR).
+    if not es_tabla_consultable(tabla):
+        raise HTTPException(status_code=403, detail="La tabla no está disponible para exportación.")
+
     engine = obtener_engine()
     try:
         import polars as pl
@@ -70,4 +76,7 @@ async def descargar_tabla(
             }
         )
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error al exportar tabla: {str(e)}")
+        # Detalle solo a logs, no al cliente (V-07).
+        import logging
+        logging.getLogger("ACP_Backend").error(f"Error al exportar tabla {tabla}: {e}")
+        raise HTTPException(status_code=500, detail="Error al exportar la tabla.")
