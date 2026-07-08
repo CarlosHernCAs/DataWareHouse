@@ -97,3 +97,20 @@ export type FontToken = "sans" | "mono";
 export function fontToken(name: FontToken): string {
   return `var(--font-${name})`;
 }
+
+/* -------------------------------------------------------------------------- */
+/* Hypr — tokens del compositor estilo Hyprland (solo admin)                   */
+/* -------------------------------------------------------------------------- */
+
+export type GapTileToken = "tile" | "tile-lg";
+export type BlurToken = "sm" | "md" | "lg";
+
+/** Gap entre tiles del mosaico. `var(--gap-tile)` / `var(--gap-tile-lg)`. */
+export function gapTile(name: GapTileToken = "tile"): string {
+  return `var(--gap-${name})`;
+}
+
+/** Radio de blur para superficies translúcidas. `var(--blur-<name>)`. */
+export function blurToken(name: BlurToken): string {
+  return `var(--blur-${name})`;
+}

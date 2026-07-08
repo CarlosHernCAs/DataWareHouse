@@ -25,28 +25,35 @@ import {
 
 export type Densidad = "compacta" | "comoda";
 export type Tema = "oscuro" | "sistema";
+/** Shell del administrador: compositor tiling ("hypr") o sidebar clásico. */
+export type AdminShell = "hypr" | "clasico";
 
 interface Preferencias {
   densidad: Densidad;
   tema: Tema;
   recordarTabs: boolean;
+  adminShell: AdminShell;
 }
 
 interface Context extends Preferencias {
   setDensidad: (d: Densidad) => void;
   setTema: (t: Tema) => void;
   setRecordarTabs: (r: boolean) => void;
+  setAdminShell: (s: AdminShell) => void;
 }
 
 const DEFAULTS: Preferencias = {
   densidad: "comoda",
   tema: "oscuro",
   recordarTabs: true,
+  // El admin arranca en el compositor Hypr por defecto (decisión del plan).
+  adminShell: "hypr",
 };
 
 const KEY_DENSIDAD = "acp.pref.densidad";
 const KEY_TEMA = "acp.pref.tema";
 const KEY_RECORDAR = "acp.pref.recordarTabs";
+const KEY_ADMIN_SHELL = "acp.pref.adminShell";
 
 const STORAGE_EVENT = "acp.pref.changed";
 
@@ -60,16 +67,22 @@ function esTema(v: string | null): v is Tema {
   return v === "oscuro" || v === "sistema";
 }
 
+function esAdminShell(v: string | null): v is AdminShell {
+  return v === "hypr" || v === "clasico";
+}
+
 function leerPrefs(): Preferencias {
   if (typeof window === "undefined") return DEFAULTS;
   try {
     const d = window.localStorage.getItem(KEY_DENSIDAD);
     const t = window.localStorage.getItem(KEY_TEMA);
     const r = window.localStorage.getItem(KEY_RECORDAR);
+    const s = window.localStorage.getItem(KEY_ADMIN_SHELL);
     return {
       densidad: esDensidad(d) ? d : DEFAULTS.densidad,
       tema: esTema(t) ? t : DEFAULTS.tema,
       recordarTabs: r === null ? DEFAULTS.recordarTabs : r === "1",
+      adminShell: esAdminShell(s) ? s : DEFAULTS.adminShell,
     };
   } catch {
     return DEFAULTS;
@@ -154,6 +167,8 @@ export function PreferenciasProvider({
         window.localStorage.setItem(KEY_DENSIDAD, String(v));
       } else if (k === "tema") {
         window.localStorage.setItem(KEY_TEMA, String(v));
+      } else if (k === "adminShell") {
+        window.localStorage.setItem(KEY_ADMIN_SHELL, String(v));
       }
     } catch {
       /* localStorage bloqueado / quota — silenciar */
@@ -167,6 +182,7 @@ export function PreferenciasProvider({
     setDensidad: (d) => escribir("densidad", d),
     setTema: (t) => escribir("tema", t),
     setRecordarTabs: (r) => escribir("recordarTabs", r),
+    setAdminShell: (s) => escribir("adminShell", s),
   };
 
   return (

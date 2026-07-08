@@ -52,6 +52,16 @@
   --motion-base: 200ms;
   --motion-slow: 300ms;
   --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+
+  /* Hypr — compositor estilo Hyprland (solo lado admin).
+     Tokens agnósticos al tema: gaps entre tiles y radios de blur. */
+  --gap-tile: 8px;
+  --gap-tile-lg: 12px;
+  --blur-sm: 4px;
+  --blur-md: 10px;
+  --blur-lg: 18px;
+  /* Grosor e intensidad del borde de foco de ventana ("active window"). */
+  --hypr-window-border: 1.5px;
 }
 
 :root[data-theme="light"] {
@@ -157,6 +167,78 @@ html[data-density="compacta"] .densable td {
   padding-bottom: 0.375rem;
   font-size: 0.8125rem;
   line-height: 1.15rem;
+}
+
+/* =============================================================================
+   Hypr — primitivas de movimiento y ventana del compositor (solo admin)
+   Reemplazan la familia `animate-in/slide-*` de Tailwind que HOY está inerte
+   (no hay plugin que la respalde). Todo respeta `prefers-reduced-motion` vía
+   el bloque global de abajo (selector `*`).
+   ========================================================================== */
+@keyframes hypr-window-open {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes hypr-window-close {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+}
+
+@keyframes hypr-ws-slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(1.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes hypr-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animación de apertura de una ventana en el mosaico. */
+.hypr-anim-window-open {
+  animation: hypr-window-open var(--motion-base) var(--ease-out-quart);
+}
+
+/* Transición al entrar a un workspace. */
+.hypr-anim-ws-in {
+  animation: hypr-ws-slide-in var(--motion-base) var(--ease-out-quart);
+}
+
+/* Borde de "ventana activa" (foco), estilo Hyprland: borde de acento + glow.
+   Se aplica al contenedor de la ventana enfocada. */
+.hypr-window-focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 var(--hypr-window-border) var(--color-primary),
+    0 0 0 4px color-mix(in oklab, var(--color-primary) 22%, transparent);
+}
+
+/* Superficie con blur (overlays flotantes / waybar translúcida). */
+.hypr-blur {
+  backdrop-filter: blur(var(--blur-md));
+  -webkit-backdrop-filter: blur(var(--blur-md));
 }
 
 /* Reduced motion preference */
