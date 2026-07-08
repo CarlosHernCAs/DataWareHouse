@@ -22,6 +22,7 @@ import {
   LayoutDashboard,
   Network,
   Settings,
+  ShieldCheck,
   Workflow,
   type LucideIcon,
 } from "lucide-react";
@@ -31,6 +32,7 @@ export type HyprAppId =
   | "dashboard"
   | "etl-control"
   | "dwh"
+  | "quality"
   | "alerts"
   | "catalogos"
   | "configuracion";
@@ -84,6 +86,15 @@ export const HYPR_APPS: Record<HyprAppId, HyprApp> = {
     Component: lazyNamed(
       () => import("@/app/(admin)/dwh/dwh-client"),
       "DwhExplorerClient",
+    ),
+  },
+  quality: {
+    id: "quality",
+    title: "Calidad",
+    icon: ShieldCheck,
+    Component: lazyNamed(
+      () => import("@/components/hypr/quality-window"),
+      "QualityWindow",
     ),
   },
   alerts: {

@@ -1,15 +1,15 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import type { Role } from "@/lib/auth/rbac";
 import { SessionExpiredHandler } from "@/components/providers/session-expired-handler";
 import { AlertStreamMount } from "@/components/providers/alert-stream-mount";
-import { CommandPalette } from "@/components/ui/command-palette";
 import { HYPR_APP_LIST } from "@/lib/hypr/apps";
+import { HYPR_WORKSPACES, loadLayoutState } from "@/lib/hypr/layout-store";
 import { Waybar } from "./waybar";
-
-const WORKSPACES = [1, 2, 3, 4, 5] as const;
+import { HyprCanvas, type HyprCanvasHandle } from "./hypr-canvas";
+import { HyprLauncher } from "./hypr-launcher";
 
 interface HyprShellProps {
   role: Role;
@@ -19,22 +19,31 @@ interface HyprShellProps {
 }
 
 /**
- * Compositor estilo Hyprland para el administrador.
+ * Compositor estilo Hyprland para el administrador (Fase 1).
  *
- * Fase 0 (scaffold): waybar viva + workspaces conmutables + lanzador (⌘K) +
- * dock de aplicaciones. El montaje real de ventanas en mosaico (dockview)
- * llega en la Fase 1; aquí el canvas muestra el estado vacío del workspace.
- *
- * Reutiliza los mounts globales que hoy viven en `RoleShell`
- * (`SessionExpiredHandler`, `AlertStreamMount`, `CommandPalette`) para no
- * perder sesión-expirada, stream de alertas ni el command palette.
+ * Un mosaico dockview donde las apps admin son ventanas, con workspaces
+ * conmutables (Alt+1..5, layout persistido en localStorage), lanzador (⌘K) y
+ * waybar viva. Reutiliza los mounts globales de `RoleShell`
+ * (`SessionExpiredHandler`, `AlertStreamMount`).
  */
 export function HyprShell({ role, userName, onExitHypr }: HyprShellProps) {
-  const [activeWorkspace, setActiveWorkspace] = useState<number>(1);
-  const [paletteOpen, setPaletteOpen] = useState(false);
+  // Arranca en el workspace persistido (o el 1). Cliente-only: este shell
+  // nunca se renderiza en SSR (el switcher lo gatea a desktop tras montar).
+  const [activeWorkspace, setActiveWorkspace] = useState<number>(
+    () => loadLayoutState().active,
+  );
+  const [launcherOpen, setLauncherOpen] = useState(false);
+  const canvasRef = useRef<HyprCanvasHandle>(null);
 
-  // Keymap global. Sigue la disciplina de `use-dwh-keyboard-nav.ts`: ignora
-  // teclas cuando el foco está en un campo editable y evita robar combos del SO.
+  const openApp = useCallback((appId: string) => {
+    canvasRef.current?.openApp(appId);
+  }, []);
+  const closeActive = useCallback(() => {
+    canvasRef.current?.closeActivePanel();
+  }, []);
+
+  // Keymap global. Disciplina de `use-dwh-keyboard-nav.ts`: ignora teclas en
+  // campos editables y no roba combos del SO.
   useEffect(() => {
     function esEditable(el: EventTarget | null): boolean {
       const node = el as HTMLElement | null;
@@ -52,29 +61,39 @@ export function HyprShell({ role, userName, onExitHypr }: HyprShellProps) {
       // ⌘K / Ctrl+K — alternar lanzador (permitido incluso en inputs).
       if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") {
         e.preventDefault();
-        setPaletteOpen((o) => !o);
+        setLauncherOpen((o) => !o);
         return;
       }
       if (e.key === "Escape") {
-        setPaletteOpen(false);
+        setLauncherOpen(false);
         return;
       }
       if (esEditable(e.target)) return;
-      // Alt+1..5 — cambiar de workspace (leader = Alt, seguro en navegador).
+      // Leader = Alt (seguro en navegador).
       if (e.altKey && !e.ctrlKey && !e.metaKey) {
         const n = Number(e.key);
-        if (Number.isInteger(n) && n >= 1 && n <= WORKSPACES.length) {
+        if (Number.isInteger(n) && n >= 1 && n <= HYPR_WORKSPACES.length) {
           e.preventDefault();
           setActiveWorkspace(n);
+          return;
+        }
+        // Alt+D — lanzador (convención Hyprland).
+        if (e.key.toLowerCase() === "d") {
+          e.preventDefault();
+          setLauncherOpen(true);
+          return;
+        }
+        // Alt+Q — cerrar ventana activa.
+        if (e.key.toLowerCase() === "q") {
+          e.preventDefault();
+          closeActive();
         }
       }
     }
 
     document.addEventListener("keydown", onKey);
     return () => document.removeEventListener("keydown", onKey);
-  }, []);
-
-  const abrirLauncher = useCallback(() => setPaletteOpen(true), []);
+  }, [closeActive]);
 
   return (
     <div className="bg-bg text-text flex h-screen flex-col overflow-hidden">
@@ -84,36 +103,24 @@ export function HyprShell({ role, userName, onExitHypr }: HyprShellProps) {
       <Waybar
         role={role}
         userName={userName}
-        workspaces={WORKSPACES}
+        workspaces={HYPR_WORKSPACES}
         activeWorkspace={activeWorkspace}
         onSwitchWorkspace={setActiveWorkspace}
-        onOpenLauncher={abrirLauncher}
+        onOpenLauncher={() => setLauncherOpen(true)}
         onExitHypr={onExitHypr}
       />
 
-      {/* Canvas del workspace activo. Fase 1 lo reemplaza por el mosaico dockview. */}
+      {/* Canvas del workspace activo — mosaico dockview. */}
       <main
         id="main-content"
         tabIndex={-1}
-        className="hypr-anim-ws-in relative flex flex-1 flex-col items-center justify-center gap-6 p-[var(--gap-tile-lg)]"
+        className="hypr-anim-ws-in relative min-h-0 flex-1"
         aria-label={`Workspace ${activeWorkspace}`}
       >
-        <div className="text-center">
-          <p className="text-sm text-[var(--color-text-muted)]">
-            Workspace {activeWorkspace} · vacío
-          </p>
-          <p className="mt-1 text-xs text-[var(--color-text-muted)]">
-            Abre una aplicación con{" "}
-            <kbd className="rounded border border-[var(--color-border)] px-1">
-              ⌘K
-            </kbd>{" "}
-            o desde el dock inferior.
-          </p>
-        </div>
+        <HyprCanvas ref={canvasRef} activeWorkspace={activeWorkspace} />
       </main>
 
-      {/* Dock de aplicaciones (estilo dock de Hyprland). En Fase 0 abre el
-          lanzador; en Fase 1 abrirá cada app como ventana en el mosaico. */}
+      {/* Dock de aplicaciones — abre cada app como ventana en el mosaico. */}
       <nav
         className="hypr-blur flex shrink-0 items-center justify-center gap-1 border-t border-[var(--color-border)] bg-[color-mix(in_oklab,var(--color-surface)_82%,transparent)] p-1.5"
         aria-label="Dock de aplicaciones"
@@ -124,7 +131,7 @@ export function HyprShell({ role, userName, onExitHypr }: HyprShellProps) {
             <button
               key={app.id}
               type="button"
-              onClick={abrirLauncher}
+              onClick={() => openApp(app.id)}
               title={app.title}
               aria-label={`Abrir ${app.title}`}
               className={cn(
@@ -139,7 +146,14 @@ export function HyprShell({ role, userName, onExitHypr }: HyprShellProps) {
         })}
       </nav>
 
-      <CommandPalette open={paletteOpen} onOpenChange={setPaletteOpen} role={role} />
+      <HyprLauncher
+        open={launcherOpen}
+        onOpenChange={setLauncherOpen}
+        onOpenApp={openApp}
+        onSwitchWorkspace={setActiveWorkspace}
+        onCloseActive={closeActive}
+        onExitHypr={onExitHypr}
+      />
     </div>
   );
 }
