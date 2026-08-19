@@ -44,6 +44,3 @@ Para levantar el ecosistema completo en tu entorno local de forma rápida, puede
 
 3. **Acceder al sistema:**
    Una vez que los servicios estén corriendo, el portal web y la API estarán disponibles en tus puertos locales (usualmente `localhost:3000` para el Portal y `localhost:8000` para el Backend).
-
-## Consideraciones de Desarrollo
-Al contribuir a este repositorio, asegúrate de mantener la separación de responsabilidades. Las reglas de negocio pesadas y cruce de datos pertenecen al **ETL**. La exposición segura y filtros ligeros pertenecen al **Backend**. La presentación e interactividad pertenecen al **Portal**.
