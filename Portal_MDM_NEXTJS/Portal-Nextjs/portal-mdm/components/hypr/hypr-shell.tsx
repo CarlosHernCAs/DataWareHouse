@@ -7,9 +7,12 @@ import { SessionExpiredHandler } from "@/components/providers/session-expired-ha
 import { AlertStreamMount } from "@/components/providers/alert-stream-mount";
 import { HYPR_APP_LIST } from "@/lib/hypr/apps";
 import { HYPR_WORKSPACES, loadLayoutState } from "@/lib/hypr/layout-store";
+import { useHyprConfig } from "@/lib/hypr/config-store";
 import { Waybar } from "./waybar";
-import { HyprCanvas, type HyprCanvasHandle } from "./hypr-canvas";
+import { HyprCanvas, type HyprCanvasHandle, type ResizeDir } from "./hypr-canvas";
 import { HyprLauncher } from "./hypr-launcher";
+import { HyprKeymapHelp } from "./hypr-keymap-help";
+import { HyprSettings } from "./hypr-settings";
 
 interface HyprShellProps {
   role: Role;
@@ -18,22 +21,31 @@ interface HyprShellProps {
   onExitHypr: () => void;
 }
 
+const RESIZE_KEYS: Record<string, ResizeDir> = {
+  ArrowLeft: "left",
+  ArrowRight: "right",
+  ArrowUp: "up",
+  ArrowDown: "down",
+};
+
 /**
- * Compositor estilo Hyprland para el administrador (Fase 1).
+ * Compositor estilo Hyprland para el administrador (Fase 2 + 3).
  *
- * Un mosaico dockview donde las apps admin son ventanas, con workspaces
- * conmutables (Alt+1..5, layout persistido en localStorage), lanzador (⌘K) y
- * waybar viva. Reutiliza los mounts globales de `RoleShell`
- * (`SessionExpiredHandler`, `AlertStreamMount`).
+ * Mosaico dockview con workspaces, launcher, gestos completos de gestor de
+ * ventanas por teclado (mover a workspace Alt+Shift+N, fullscreen Alt+F,
+ * flotar Alt+Shift+F, resize Alt+Ctrl+flechas, hoja de atajos ?) y panel de
+ * configuración (Alt+,).
  */
 export function HyprShell({ role, userName, onExitHypr }: HyprShellProps) {
-  // Arranca en el workspace persistido (o el 1). Cliente-only: este shell
-  // nunca se renderiza en SSR (el switcher lo gatea a desktop tras montar).
   const [activeWorkspace, setActiveWorkspace] = useState<number>(
     () => loadLayoutState().active,
   );
   const [launcherOpen, setLauncherOpen] = useState(false);
+  const [helpOpen, setHelpOpen] = useState(false);
+  const [settingsOpen, setSettingsOpen] = useState(false);
+  const [occupancy, setOccupancy] = useState<Record<number, boolean>>({});
   const canvasRef = useRef<HyprCanvasHandle>(null);
+  const { config } = useHyprConfig();
 
   const openApp = useCallback((appId: string) => {
     canvasRef.current?.openApp(appId);
@@ -41,9 +53,22 @@ export function HyprShell({ role, userName, onExitHypr }: HyprShellProps) {
   const closeActive = useCallback(() => {
     canvasRef.current?.closeActivePanel();
   }, []);
+  const toggleFullscreen = useCallback(() => {
+    canvasRef.current?.toggleFullscreenActive();
+  }, []);
+  const toggleFloat = useCallback(() => {
+    canvasRef.current?.toggleFloatActive();
+  }, []);
+  const moveActiveTo = useCallback((n: number) => {
+    canvasRef.current?.moveActiveToWorkspace(n);
+  }, []);
+  const resizeActive = useCallback((dir: ResizeDir) => {
+    canvasRef.current?.resizeActive(dir);
+  }, []);
 
   // Keymap global. Disciplina de `use-dwh-keyboard-nav.ts`: ignora teclas en
-  // campos editables y no roba combos del SO.
+  // campos editables y no roba combos del SO. Usa `e.code` para los dígitos
+  // (robusto: con Shift, "1" pasa a "!" en el layout US, pero code sigue Digit1).
   useEffect(() => {
     function esEditable(el: EventTarget | null): boolean {
       const node = el as HTMLElement | null;
@@ -66,37 +91,99 @@ export function HyprShell({ role, userName, onExitHypr }: HyprShellProps) {
       }
       if (e.key === "Escape") {
         setLauncherOpen(false);
+        setHelpOpen(false);
+        setSettingsOpen(false);
         return;
       }
+
+      // Alt+, — panel de configuración del compositor. Antes del guard de
+      // editables porque no colisiona con escritura y usa `e.code` estable.
+      if (e.altKey && !e.ctrlKey && !e.metaKey && e.code === "Comma") {
+        e.preventDefault();
+        setSettingsOpen((o) => !o);
+        return;
+      }
+
       if (esEditable(e.target)) return;
-      // Leader = Alt (seguro en navegador).
+
+      // ? — hoja de atajos.
+      if (e.key === "?") {
+        e.preventDefault();
+        setHelpOpen((o) => !o);
+        return;
+      }
+
+      // Alt+Ctrl+flechas — resize de la ventana activa.
+      if (e.altKey && e.ctrlKey && !e.metaKey) {
+        const dir = RESIZE_KEYS[e.code];
+        if (dir) {
+          e.preventDefault();
+          resizeActive(dir);
+        }
+        return;
+      }
+
+      // Leader = Alt (sin Ctrl/Meta).
       if (e.altKey && !e.ctrlKey && !e.metaKey) {
-        const n = Number(e.key);
-        if (Number.isInteger(n) && n >= 1 && n <= HYPR_WORKSPACES.length) {
-          e.preventDefault();
-          setActiveWorkspace(n);
+        const digit = /^Digit([1-9])$/.exec(e.code);
+        if (digit) {
+          const n = Number(digit[1]);
+          if (n >= 1 && n <= HYPR_WORKSPACES.length) {
+            e.preventDefault();
+            if (e.shiftKey) moveActiveTo(n);
+            else setActiveWorkspace(n);
+          }
           return;
         }
-        // Alt+D — lanzador (convención Hyprland).
-        if (e.key.toLowerCase() === "d") {
-          e.preventDefault();
-          setLauncherOpen(true);
+        if (e.shiftKey) {
+          if (e.code === "KeyF") {
+            e.preventDefault();
+            toggleFloat();
+          }
           return;
         }
-        // Alt+Q — cerrar ventana activa.
-        if (e.key.toLowerCase() === "q") {
-          e.preventDefault();
-          closeActive();
+        // Alt (sin Shift)
+        switch (e.code) {
+          case "KeyD":
+            e.preventDefault();
+            setLauncherOpen(true);
+            break;
+          case "KeyF":
+            e.preventDefault();
+            toggleFullscreen();
+            break;
+          case "KeyQ":
+            e.preventDefault();
+            closeActive();
+            break;
         }
       }
     }
 
     document.addEventListener("keydown", onKey);
     return () => document.removeEventListener("keydown", onKey);
-  }, [closeActive]);
+  }, [closeActive, moveActiveTo, resizeActive, toggleFloat, toggleFullscreen]);
+
+  // Config → CSS vars locales al compositor (no tocan el resto del portal):
+  // - blur OFF ⇒ `--blur-md: 0px` neutraliza el `backdrop-filter` de `.hypr-blur`.
+  // - animaciones OFF ⇒ duraciones de motion a 0ms (sin romper el bloque global
+  //   de `prefers-reduced-motion`, que sigue aplicando por su cuenta).
+  const rootStyle: React.CSSProperties = {
+    ...(config.blur ? {} : { ["--blur-md" as string]: "0px" }),
+    ...(config.animaciones
+      ? {}
+      : {
+          ["--motion-fast" as string]: "0ms",
+          ["--motion-base" as string]: "0ms",
+          ["--motion-slow" as string]: "0ms",
+        }),
+  };
 
   return (
-    <div className="bg-bg text-text flex h-screen flex-col overflow-hidden">
+    <div
+      className="bg-bg text-text flex h-screen flex-col overflow-hidden"
+      style={rootStyle}
+    >
       <SessionExpiredHandler />
       <AlertStreamMount />
 
@@ -105,8 +192,12 @@ export function HyprShell({ role, userName, onExitHypr }: HyprShellProps) {
         userName={userName}
         workspaces={HYPR_WORKSPACES}
         activeWorkspace={activeWorkspace}
+        occupancy={occupancy}
+        workspaceNames={config.workspaceNames}
         onSwitchWorkspace={setActiveWorkspace}
         onOpenLauncher={() => setLauncherOpen(true)}
+        onOpenHelp={() => setHelpOpen(true)}
+        onOpenSettings={() => setSettingsOpen(true)}
         onExitHypr={onExitHypr}
       />
 
@@ -117,7 +208,12 @@ export function HyprShell({ role, userName, onExitHypr }: HyprShellProps) {
         className="hypr-anim-ws-in relative min-h-0 flex-1"
         aria-label={`Workspace ${activeWorkspace}`}
       >
-        <HyprCanvas ref={canvasRef} activeWorkspace={activeWorkspace} />
+        <HyprCanvas
+          ref={canvasRef}
+          activeWorkspace={activeWorkspace}
+          onOccupancyChange={setOccupancy}
+          gapTiles={config.gapTiles}
+        />
       </main>
 
       {/* Dock de aplicaciones — abre cada app como ventana en el mosaico. */}
@@ -152,8 +248,12 @@ export function HyprShell({ role, userName, onExitHypr }: HyprShellProps) {
         onOpenApp={openApp}
         onSwitchWorkspace={setActiveWorkspace}
         onCloseActive={closeActive}
+        onOpenSettings={() => setSettingsOpen(true)}
         onExitHypr={onExitHypr}
+        workspaceNames={config.workspaceNames}
       />
+      <HyprKeymapHelp open={helpOpen} onOpenChange={setHelpOpen} />
+      <HyprSettings open={settingsOpen} onOpenChange={setSettingsOpen} />
     </div>
   );
 }
