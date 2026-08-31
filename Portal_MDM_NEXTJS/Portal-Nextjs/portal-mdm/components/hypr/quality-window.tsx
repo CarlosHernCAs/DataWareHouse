@@ -1,31 +1,53 @@
 "use client";
 
+import { useQuery } from "@tanstack/react-query";
 import { QualityShell } from "@/app/(admin)/quality/quality-shell";
 import { PageSkeleton } from "@/components/ui/page-skeleton";
 import { useQuarantineList } from "@/hooks/use-quality";
+import { homologationRecordSchema, type HomologationRecord } from "@/lib/schemas/homologation";
 import type { QuarantineRecord } from "@/lib/schemas/quarantine";
 
 /**
  * Ventana de "Calidad" para el compositor Hypr.
  *
  * `QualityShell` es la única shell admin que hoy recibe datos iniciales desde
- * su server component. Aquí los reconstruimos en cliente vía React Query
- * (`useQuarantineList` → `/api/cc/quality/list`, que devuelve camelCase) y los
- * mapeamos al shape snake_case que espera `QuarantineTable` (no refetchea:
- * vive de `initialData`).
+ * su server component. Aquí los reconstruimos en cliente:
+ *   - Cuarentena: `useQuarantineList` (`/api/cc/quality/list`, camelCase) mapeado
+ *     al shape snake_case que espera `QuarantineTable`.
+ *   - Homologaciones: `/api/cc/quality/homologaciones` (ruta BFF dedicada).
+ *   - Reinyección: `/api/cc/reinyeccion/candidatos` (ruta BFF dedicada).
  *
- * TODO (Fase 2/3): la pestaña Homologación queda vacía en el compositor —
- * `HomologationClient` no tiene aún un fetch de cliente aislado y la
- * reinyección solo expone POST /ejecutar. Para esos flujos el admin puede usar
- * "Vista clásica"; el objetivo es exponer GETs de cliente dedicados.
+ * Con esto la ventana de Calidad queda 100% funcional dentro del compositor,
+ * sin necesidad de caer al shell clásico.
  */
+async function fetchHomologaciones(): Promise<HomologationRecord[]> {
+  const r = await fetch("/api/cc/quality/homologaciones", { credentials: "include" });
+  if (!r.ok) return [];
+  const parsed = homologationRecordSchema.array().safeParse(await r.json());
+  return parsed.success ? parsed.data : [];
+}
+
+async function fetchReinyeccionCount(): Promise<number> {
+  const r = await fetch("/api/cc/reinyeccion/candidatos", { credentials: "include" });
+  if (!r.ok) return 0;
+  const j = (await r.json()) as { candidatos?: unknown };
+  return Number(j?.candidatos ?? 0);
+}
+
 export function QualityWindow() {
-  const { data, isLoading, isError } = useQuarantineList({
-    pagina: 1,
-    tamano: 100,
+  const cuarentena = useQuarantineList({ pagina: 1, tamano: 100 });
+  const homologaciones = useQuery({
+    queryKey: ["hypr", "quality", "homologaciones"],
+    queryFn: fetchHomologaciones,
+    staleTime: 30_000,
+  });
+  const reinyeccion = useQuery({
+    queryKey: ["hypr", "quality", "reinyeccion-candidatos"],
+    queryFn: fetchReinyeccionCount,
+    staleTime: 30_000,
   });
 
-  if (isLoading) {
+  if (cuarentena.isLoading) {
     return (
       <div className="p-4">
         <PageSkeleton template="dashboard-with-table" kpiCount={3} />
@@ -33,8 +55,8 @@ export function QualityWindow() {
     );
   }
 
-  const raw = data?.datos ?? [];
-  const total = data?.total ?? 0;
+  const raw = cuarentena.data?.datos ?? [];
+  const total = cuarentena.data?.total ?? 0;
   const pendientes = raw.filter(
     (r) => String(r.estado).toUpperCase() === "PENDIENTE",
   ).length;
@@ -51,9 +73,11 @@ export function QualityWindow() {
     motivo: r.motivo,
   }));
 
+  const pendingHomologations = homologaciones.data ?? [];
+
   return (
     <div className="p-4">
-      {isError && (
+      {cuarentena.isError && (
         <p className="mb-3 text-sm text-[var(--color-destructive)]">
           No se pudo cargar la cuarentena. Reintentando en segundo plano…
         </p>
@@ -61,9 +85,9 @@ export function QualityWindow() {
       <QualityShell
         cuarentenaTotal={total}
         cuarentenaPendiente={pendientes}
-        reinyeccionCount={0}
+        reinyeccionCount={reinyeccion.data ?? 0}
         initialQuarantineData={initialQuarantineData}
-        pendingHomologations={[]}
+        pendingHomologations={pendingHomologations}
         isReadOnly={false}
       />
     </div>

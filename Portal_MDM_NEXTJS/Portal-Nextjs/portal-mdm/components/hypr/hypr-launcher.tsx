@@ -1,9 +1,10 @@
 "use client";
 
 import { Command } from "cmdk";
-import { LogOut, PanelsTopLeft, SquareX } from "lucide-react";
+import { LogOut, PanelsTopLeft, Settings, SquareX } from "lucide-react";
 import { HYPR_APP_LIST } from "@/lib/hypr/apps";
 import { HYPR_WORKSPACES } from "@/lib/hypr/layout-store";
+import { workspaceLabel } from "@/lib/hypr/config-store";
 
 interface HyprLauncherProps {
   open: boolean;
@@ -11,7 +12,10 @@ interface HyprLauncherProps {
   onOpenApp: (appId: string) => void;
   onSwitchWorkspace: (n: number) => void;
   onCloseActive: () => void;
+  onOpenSettings: () => void;
   onExitHypr: () => void;
+  /** Nombres de workspace configurados (config del compositor). */
+  workspaceNames?: Record<number, string>;
 }
 
 /**
@@ -25,7 +29,9 @@ export function HyprLauncher({
   onOpenApp,
   onSwitchWorkspace,
   onCloseActive,
+  onOpenSettings,
   onExitHypr,
+  workspaceNames = {},
 }: HyprLauncherProps) {
   if (!open) return null;
 
@@ -85,25 +91,38 @@ export function HyprLauncher({
               heading="Workspaces"
               className="[&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-xs [&_[cmdk-group-heading]]:text-[var(--color-text-muted)]"
             >
-              {HYPR_WORKSPACES.map((n) => (
-                <Command.Item
-                  key={n}
-                  value={`workspace ${n}`}
-                  onSelect={() => run(() => onSwitchWorkspace(n))}
-                  className="flex cursor-pointer items-center gap-2 rounded-md px-3 py-2 text-sm text-[var(--color-text)] data-[selected=true]:bg-[var(--color-surface-2)] aria-selected:bg-[var(--color-surface-2)]"
-                >
-                  <span className="flex h-4 w-4 items-center justify-center text-xs tabular">
-                    {n}
-                  </span>
-                  Ir al workspace {n}
-                </Command.Item>
-              ))}
+              {HYPR_WORKSPACES.map((n) => {
+                const etiqueta = workspaceLabel(n, workspaceNames);
+                const nombrado = etiqueta !== String(n);
+                return (
+                  <Command.Item
+                    key={n}
+                    // Incluye número y nombre en el `value` para que ambos filtren.
+                    value={`workspace ${n} ${etiqueta}`}
+                    onSelect={() => run(() => onSwitchWorkspace(n))}
+                    className="flex cursor-pointer items-center gap-2 rounded-md px-3 py-2 text-sm text-[var(--color-text)] data-[selected=true]:bg-[var(--color-surface-2)] aria-selected:bg-[var(--color-surface-2)]"
+                  >
+                    <span className="flex h-4 w-4 items-center justify-center text-xs tabular">
+                      {n}
+                    </span>
+                    {nombrado ? `Ir a: ${etiqueta}` : `Ir al workspace ${n}`}
+                  </Command.Item>
+                );
+              })}
             </Command.Group>
 
             <Command.Group
               heading="Ventana / Sesión"
               className="[&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-xs [&_[cmdk-group-heading]]:text-[var(--color-text-muted)]"
             >
+              <Command.Item
+                value="configuracion del compositor ajustes settings"
+                onSelect={() => run(onOpenSettings)}
+                className="flex cursor-pointer items-center gap-2 rounded-md px-3 py-2 text-sm text-[var(--color-text)] data-[selected=true]:bg-[var(--color-surface-2)] aria-selected:bg-[var(--color-surface-2)]"
+              >
+                <Settings aria-hidden className="h-4 w-4 shrink-0" />
+                Configuración del compositor
+              </Command.Item>
               <Command.Item
                 value="cerrar ventana activa"
                 onSelect={() => run(onCloseActive)}
